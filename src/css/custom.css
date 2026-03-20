@@ -45,3 +45,8 @@
   gap: 0.3rem;
 }
 
+/* Hide sidebar items with sidebar_class_name: hidden */
+.menu__list-item.hidden {
+  display: none;
+}
+
