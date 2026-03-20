@@ -20,6 +20,7 @@ export default function TopNavbar() {
         <ul className={styles.navItems}>
           <li><a href="/src/pricing.html" className={styles.navLink}>Plus</a></li>
           <li><a href="/src/download.html" className={styles.navLink}>Download</a></li>
+          <li><Link to="/release-notes/v1.3" className={styles.navLink}>Release Notes</Link></li>
           <li><Link to="/" className={styles.navLink}>Support</Link></li>
           <li><a href="https://forum.rcloneview.com" className={styles.navLink} target="_blank" rel="noopener">Forum</a></li>
         </ul>
