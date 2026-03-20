@@ -62,7 +62,7 @@ export default function CustomNavbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/support/release-notes/v1.3">
+                <a className="nav-link" href="/support/release-notes/">
                   Release Notes
                 </a>
               </li>
