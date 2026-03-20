@@ -71,6 +71,15 @@ const config = {
 
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'release-notes',
+        path: 'release-notes',
+        routeBasePath: 'release-notes',
+        sidebarPath: require.resolve('./sidebarsReleaseNotes.js'),
+      },
+    ],
   ],
 
   presets: [
