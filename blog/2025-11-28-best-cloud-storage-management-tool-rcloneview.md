@@ -17,9 +17,9 @@ keywords:
   - fast cloud transfer
 tags:
   - RcloneView
-  - Cloud
-  - Sync
-  - Tutorial
+  - cloud
+  - sync
+  - tutorial
   - multi-cloud
   - productivity
 ---

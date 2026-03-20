@@ -12,9 +12,9 @@ keywords:
   - rclone GUI
   - scheduled jobs
 tags:
-  - rcloneview
+  - RcloneView
   - mega
-  - HardDrive
+  - hard-drive
   - cloud-backup
 ---
 

@@ -17,10 +17,10 @@ keywords:
   - mount team drive
 tags:
   - RcloneView
-  - GoogleDrive
-  - Mount
-  - Productivity
-  - Workspace
+  - google-drive
+  - mount
+  - productivity
+  - workspace
 unlisted: true
 ---
 

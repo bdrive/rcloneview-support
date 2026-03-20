@@ -15,10 +15,10 @@ keywords:
   - compliance backup
 tags:
   - RcloneView
-  - Backup
-  - Security
-  - S3
-  - Wasabi
+  - backup
+  - security
+  - s3
+  - wasabi
   - R2
 ---
 

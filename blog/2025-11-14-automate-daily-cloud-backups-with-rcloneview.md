@@ -13,11 +13,11 @@ keywords:
   - backup jobs
 tags:
   - RcloneView
-  - Backup
-  - Automation
-  - GoogleDrive
-  - OneDrive
-  - Dropbox
+  - backup
+  - automation
+  - google-drive
+  - onedrive
+  - dropbox
   - S3
 ---
 

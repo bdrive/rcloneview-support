@@ -16,10 +16,10 @@ keywords:
   - cloud to cloud transfer
 tags:
   - RcloneView
-  - Cloud
-  - Sync
+  - cloud
+  - sync
   - cloud-migration
-  - Tutorial
+  - tutorial
   - yandex
   - google-drive
   - cloud-to-cloud

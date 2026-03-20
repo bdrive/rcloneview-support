@@ -16,13 +16,13 @@ keywords:
   - scheduled sync
   - rclone GUI
 tags:
-  - rcloneview
-  - SynologyNAS
+  - RcloneView
+  - synology
   - cloud-backup
   - s3
   - google-drive
   - Backblaze
-  - Wasabi
+  - wasabi
   - pcloud
 ---
 

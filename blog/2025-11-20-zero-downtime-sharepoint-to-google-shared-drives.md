@@ -17,9 +17,9 @@ keywords:
   - cloud migration blueprint
 tags:
   - RcloneView
-  - SharePoint
-  - GoogleDrive
-  - Migration
+  - sharepoint
+  - google-drive
+  - migration
   - Scheduler
 ---
 

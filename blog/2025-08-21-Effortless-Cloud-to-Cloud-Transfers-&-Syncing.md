@@ -15,7 +15,7 @@ keywords:
   - rclone GUI
   - cloud storage management
 tags:
-  - rcloneview
+  - RcloneView
   - cloud-to-cloud
   - file-management
   - cloud-file-transfer

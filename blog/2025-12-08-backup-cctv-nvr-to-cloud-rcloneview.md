@@ -17,12 +17,12 @@ keywords:
   - disaster recovery
 tags:
   - RcloneView
-  - Cloud
-  - Sync
-  - NAS
-  - CCTV
-  - SFTP
-  - SMB
+  - cloud
+  - sync
+  - nas
+  - cctv
+  - sftp
+  - smb
   - WebDAV
 ---
 

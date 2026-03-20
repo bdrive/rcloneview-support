@@ -12,12 +12,12 @@ keywords:
   - offline first
 tags:
   - RcloneView
-  - OfflineSync
-  - ExternalDrive
-  - Backup
-  - GoogleDrive
-  - OneDrive
-  - Dropbox
+  - offline-sync
+  - external-drive
+  - backup
+  - google-drive
+  - onedrive
+  - dropbox
   - S3
 ---
 

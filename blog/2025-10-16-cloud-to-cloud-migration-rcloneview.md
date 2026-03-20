@@ -17,8 +17,8 @@ keywords:
   - cloud to cloud transfer
 tags:
   - RcloneView
-  - Cloud
-  - Sync
+  - cloud
+  - sync
   - migration
   - google-drive
   - dropbox

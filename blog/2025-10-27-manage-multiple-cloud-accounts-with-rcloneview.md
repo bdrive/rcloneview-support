@@ -16,10 +16,10 @@ keywords:
   - migrate files
 tags:
   - RcloneView
-  - CloudSync
-  - GoogleDrive
-  - OneDrive
-  - Dropbox
+  - cloud-sync
+  - google-drive
+  - onedrive
+  - dropbox
   - S3
 ---
 

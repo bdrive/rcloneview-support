@@ -12,11 +12,11 @@ keywords:
   - cloud file sync tool
 tags:
   - RcloneView
-  - CloudSync
-  - Automation
-  - GoogleDrive
-  - OneDrive
-  - Dropbox
+  - cloud-sync
+  - automation
+  - google-drive
+  - onedrive
+  - dropbox
   - S3
 ---
 

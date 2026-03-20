@@ -17,9 +17,9 @@ keywords:
   - rclone gui
 tags:
   - RcloneView
-  - Cloud
-  - Sync
-  - NAS
+  - cloud
+  - sync
+  - nas
   - mount
   - hybrid-cloud
   - sftp

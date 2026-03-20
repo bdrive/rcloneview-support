@@ -16,9 +16,9 @@ keywords:
   - sync
   - rclone gui
 tags:
-  - rcloneview
+  - RcloneView
   - s3
-  - Wasabi
+  - wasabi
   - cloudflare-r2
   - cloud-storage
   - sync

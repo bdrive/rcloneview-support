@@ -14,7 +14,7 @@ keywords:
   - rclone GUI
   - scheduled sync
 tags:
-  - rcloneview
+  - RcloneView
   - Backblaze
   - dropbox
   - cloud-file-transfer

@@ -13,7 +13,7 @@ keywords:
   - cloudflare r2
   - object storage
 tags:
-  - rcloneview
+  - RcloneView
   - hybrid-cloud
   - s3
   - cloudflare-r2

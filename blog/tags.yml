@@ -1,22 +1,122 @@
+1fichier:
+  label: 1Fichier
+  permalink: /1fichier
+  description: Posts about 1Fichier.
+
+accounting:
+  label: Accounting
+  permalink: /accounting
+  description: Posts about Accounting.
+
+ai:
+  label: AI
+  permalink: /ai
+  description: Posts about AI.
+
+alibaba-cloud:
+  label: Alibaba Cloud
+  permalink: /alibaba-cloud
+  description: Posts about Alibaba Cloud.
+
 amazon-s3:
   label: Amazon S3
   permalink: /amazon-s3
   description: Posts about Amazon S3.
+
+api:
+  label: API
+  permalink: /api
+  description: Posts about API.
+
+architecture:
+  label: Architecture
+  permalink: /architecture
+  description: Posts about Architecture.
+
+archive:
+  label: Archive
+  permalink: /archive
+  description: Posts about Archive.
+
+arm:
+  label: Arm
+  permalink: /arm
+  description: Posts about Arm.
+
+automation:
+  label: Automation
+  permalink: /automation
+  description: Posts about Automation.
 
 aws-s3:
   label: AWS S3
   permalink: /aws-s3
   description: Posts about AWS S3.
 
+azure:
+  label: Azure
+  permalink: /azure
+  description: Posts about Azure.
+
+azure-files:
+  label: Azure Files
+  permalink: /azure-files
+  description: Posts about Azure Files.
+
 Backblaze:
   label: Backblaze
   permalink: /backblaze
   description: Posts about Backblaze.
 
+backblaze-b2:
+  label: Backblaze B2
+  permalink: /backblaze-b2
+  description: Posts about Backblaze B2.
+
 backup:
   label: Backup
   permalink: /backup
   description: Posts about Backup.
+
+best-practices:
+  label: Best Practices
+  permalink: /best-practices
+  description: Posts about Best Practices.
+
+box:
+  label: Box
+  permalink: /box
+  description: Posts about Box.
+
+business:
+  label: Business
+  permalink: /business
+  description: Posts about Business.
+
+cad:
+  label: CAD
+  permalink: /cad
+  description: Posts about CAD.
+
+cctv:
+  label: CCTV
+  permalink: /cctv
+  description: Posts about CCTV.
+
+cleanup:
+  label: Cleanup
+  permalink: /cleanup
+  description: Posts about Cleanup.
+
+cli:
+  label: CLI
+  permalink: /cli
+  description: Posts about CLI.
+
+cloud:
+  label: Cloud
+  permalink: /cloud
+  description: Posts about Cloud.
 
 cloud-backup:
   label: Cloud Backup
@@ -33,6 +133,11 @@ cloud-migration:
   permalink: /cloud-migration
   description: Posts about Cloud Migration.
 
+cloud-security:
+  label: Cloud Security
+  permalink: /cloud-security
+  description: Posts about Cloud Security.
+
 cloud-storage:
   label: Cloud Storage
   permalink: /cloud-storage
@@ -42,6 +147,11 @@ cloud-storage-synchronization:
   label: Cloud Storage Synchronization
   permalink: /cloud-storage-synchronization
   description: Posts about Cloud Storage Synchronization.
+
+cloud-sync:
+  label: Cloud Sync
+  permalink: /cloud-sync
+  description: Posts about Cloud Sync.
 
 cloud-to-cloud:
   label: Cloud To Cloud
@@ -58,30 +168,200 @@ cloudflare-r2:
   permalink: /cloudflare-r2
   description: Posts about Cloudflare R2.
 
-cloud-sync:
-  label: Cloud Sync
-  permalink: /cloud-sync
-  description: Posts about Cloud Sync.
+collaboration:
+  label: Collaboration
+  permalink: /collaboration
+  description: Posts about Collaboration.
+
+compare:
+  label: Compare
+  permalink: /compare
+  description: Posts about Compare.
+
+comparison:
+  label: Comparison
+  permalink: /comparison
+  description: Posts about Comparison.
+
+compliance:
+  label: Compliance
+  permalink: /compliance
+  description: Posts about Compliance.
+
+copy:
+  label: Copy
+  permalink: /copy
+  description: Posts about Copy.
+
+cost-optimization:
+  label: Cost Optimization
+  permalink: /cost-optimization
+  description: Posts about Cost Optimization.
+
+crypt:
+  label: Crypt
+  permalink: /crypt
+  description: Posts about Crypt.
+
+dam:
+  label: Digital Asset Management
+  permalink: /dam
+  description: Posts about Digital Asset Management.
+
+dashboard:
+  label: Dashboard
+  permalink: /dashboard
+  description: Posts about Dashboard.
+
+data-loss:
+  label: Data Loss
+  permalink: /data-loss
+  description: Posts about Data Loss.
+
+data-pipeline:
+  label: Data Pipeline
+  permalink: /data-pipeline
+  description: Posts about Data Pipeline.
+
+data-recovery:
+  label: Data Recovery
+  permalink: /data-recovery
+  description: Posts about Data Recovery.
+
+debian:
+  label: Debian
+  permalink: /debian
+  description: Posts about Debian.
+
+decentralized-storage:
+  label: Decentralized Storage
+  permalink: /decentralized-storage
+  description: Posts about Decentralized Storage.
+
+digital-preservation:
+  label: Digital Preservation
+  permalink: /digital-preservation
+  description: Posts about Digital Preservation.
+
+digitalocean-spaces:
+  label: DigitalOcean Spaces
+  permalink: /digitalocean-spaces
+  description: Posts about DigitalOcean Spaces.
+
+disaster-recovery:
+  label: Disaster Recovery
+  permalink: /disaster-recovery
+  description: Posts about Disaster Recovery.
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Posts about Docker.
+
+drag-and-drop:
+  label: Drag And Drop
+  permalink: /drag-and-drop
+  description: Posts about Drag And Drop.
 
 dropbox:
   label: Dropbox
   permalink: /dropbox
   description: Posts about Dropbox.
 
+duplicates:
+  label: Duplicates
+  permalink: /duplicates
+  description: Posts about Duplicates.
+
+education:
+  label: Education
+  permalink: /education
+  description: Posts about Education.
+
+encryption:
+  label: Encryption
+  permalink: /encryption
+  description: Posts about Encryption.
+
+engineering:
+  label: Engineering
+  permalink: /engineering
+  description: Posts about Engineering.
+
+enterprise:
+  label: Enterprise
+  permalink: /enterprise
+  description: Posts about Enterprise.
+
+european-cloud:
+  label: European Cloud
+  permalink: /european-cloud
+  description: Posts about European Cloud.
+
 external-drive:
   label: External Drive
   permalink: /external-drive
   description: Posts about External Drive.
+
+feature:
+  label: Feature
+  permalink: /feature
+  description: Posts about Feature.
 
 file-management:
   label: File Management
   permalink: /file-management
   description: Posts about File Management.
 
-Gofile:
+filezilla:
+  label: FileZilla
+  permalink: /filezilla
+  description: Posts about FileZilla.
+
+filters:
+  label: Filters
+  permalink: /filters
+  description: Posts about Filters.
+
+finance:
+  label: Finance
+  permalink: /finance
+  description: Posts about Finance.
+
+folder-comparison:
+  label: Folder Comparison
+  permalink: /folder-comparison
+  description: Posts about Folder Comparison.
+
+freefilesync:
+  label: FreeFileSync
+  permalink: /freefilesync
+  description: Posts about FreeFileSync.
+
+ftp:
+  label: FTP
+  permalink: /ftp
+  description: Posts about FTP.
+
+glacier:
+  label: Glacier
+  permalink: /glacier
+  description: Posts about Glacier.
+
+gofile:
   label: Gofile
   permalink: /gofile
   description: Posts about Gofile.
+
+goodsync:
+  label: GoodSync
+  permalink: /goodsync
+  description: Posts about GoodSync.
+
+google-cloud-storage:
+  label: Google Cloud Storage
+  permalink: /google-cloud-storage
+  description: Posts about Google Cloud Storage.
 
 google-drive:
   label: Google Drive
@@ -93,20 +373,130 @@ google-drive-sync:
   permalink: /google-drive-sync
   description: Posts about Google Drive Sync.
 
-google-to-onedrive:
-  label: Google To Onedrive
-  permalink: /google-to-onedrive
-  description: Posts about Google To Onedrive.
+google-photos:
+  label: Google Photos
+  permalink: /google-photos
+  description: Posts about Google Photos.
+
+guide:
+  label: Guide
+  permalink: /guide
+  description: Posts about Guide.
+
+hard-drive:
+  label: Hard Drive
+  permalink: /hard-drive
+  description: Posts about Hard Drive.
 
 hard-drive-backup:
   label: Hard Drive Backup
   permalink: /hard-drive-backup
   description: Posts about Hard Drive Backup.
 
-HardDrive:
-  label: Hard Drive
-  permalink: /hard-drive
-  description: Posts about Hard Drive.
+healthcare:
+  label: Healthcare
+  permalink: /healthcare
+  description: Posts about Healthcare.
+
+hetzner:
+  label: Hetzner
+  permalink: /hetzner
+  description: Posts about Hetzner.
+
+hidrive:
+  label: HiDrive
+  permalink: /hidrive
+  description: Posts about HiDrive.
+
+hipaa:
+  label: HIPAA
+  permalink: /hipaa
+  description: Posts about HIPAA.
+
+history:
+  label: History
+  permalink: /history
+  description: Posts about History.
+
+hubic:
+  label: Hubic
+  permalink: /hubic
+  description: Posts about Hubic.
+
+huggingface:
+  label: HuggingFace
+  permalink: /huggingface
+  description: Posts about HuggingFace.
+
+hybrid-cloud:
+  label: Hybrid Cloud
+  permalink: /hybrid-cloud
+  description: Posts about Hybrid Cloud.
+
+idrive-e2:
+  label: IDrive E2
+  permalink: /idrive-e2
+  description: Posts about IDrive E2.
+
+industry:
+  label: Industry
+  permalink: /industry
+  description: Posts about Industry.
+
+innovation:
+  label: Innovation
+  permalink: /innovation
+  description: Posts about Innovation.
+
+installation:
+  label: Installation
+  permalink: /installation
+  description: Posts about Installation.
+
+internet-archive:
+  label: Internet Archive
+  permalink: /internet-archive
+  description: Posts about Internet Archive.
+
+job-history:
+  label: Job History
+  permalink: /job-history
+  description: Posts about Job History.
+
+job-management:
+  label: Job Management
+  permalink: /job-management
+  description: Posts about Job Management.
+
+jottacloud:
+  label: Jottacloud
+  permalink: /jottacloud
+  description: Posts about Jottacloud.
+
+koofr:
+  label: Koofr
+  permalink: /koofr
+  description: Posts about Koofr.
+
+linode:
+  label: Linode
+  permalink: /linode
+  description: Posts about Linode.
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Posts about Linux.
+
+macos:
+  label: macOS
+  permalink: /macos
+  description: Posts about macOS.
+
+mailru:
+  label: Mail.ru
+  permalink: /mailru
+  description: Posts about Mail.ru.
 
 media:
   label: Media
@@ -114,19 +504,64 @@ media:
   description: Posts about Media.
 
 mega:
-  label: Mega
+  label: MEGA
   permalink: /mega
-  description: Posts about Mega.
+  description: Posts about MEGA.
+
+microsoft-365:
+  label: Microsoft 365
+  permalink: /microsoft-365
+  description: Posts about Microsoft 365.
 
 migration:
   label: Migration
   permalink: /migration
   description: Posts about Migration.
 
-multi-cloud-management:
-  label: Multi Cloud Management
-  permalink: /multi-cloud-management
-  description: Posts about Multi Cloud Management.
+minio:
+  label: MinIO
+  permalink: /minio
+  description: Posts about MinIO.
+
+monitoring:
+  label: Monitoring
+  permalink: /monitoring
+  description: Posts about Monitoring.
+
+mount:
+  label: Mount
+  permalink: /mount
+  description: Posts about Mount.
+
+move:
+  label: Move
+  permalink: /move
+  description: Posts about Move.
+
+multi-cloud:
+  label: Multi Cloud
+  permalink: /multi-cloud
+  description: Posts about Multi Cloud.
+
+nas:
+  label: NAS
+  permalink: /nas
+  description: Posts about NAS.
+
+nextcloud:
+  label: Nextcloud
+  permalink: /nextcloud
+  description: Posts about Nextcloud.
+
+nonprofit:
+  label: Nonprofit
+  permalink: /nonprofit
+  description: Posts about Nonprofit.
+
+object-storage:
+  label: Object Storage
+  permalink: /object-storage
+  description: Posts about Object Storage.
 
 offline-sync:
   label: Offline Sync
@@ -134,61 +569,316 @@ offline-sync:
   description: Posts about Offline Sync.
 
 onedrive:
-  label: One Drive
-  permalink: /one-drive
-  description: Posts about One Drive.
+  label: OneDrive
+  permalink: /onedrive
+  description: Posts about OneDrive.
 
 onedrive-sync:
-  label: Onedrive Sync
+  label: OneDrive Sync
   permalink: /onedrive-sync
-  description: Posts about Onedrive Sync.
+  description: Posts about OneDrive Sync.
 
-onedrive-to-googledrive:
-  label: Onedrive To Googledrive
-  permalink: /onedrive-to-googledrive
-  description: Posts about Onedrive To Googledrive.
+opendrive:
+  label: OpenDrive
+  permalink: /opendrive
+  description: Posts about OpenDrive.
+
+openstack:
+  label: OpenStack
+  permalink: /openstack
+  description: Posts about OpenStack.
+
+optimization:
+  label: Optimization
+  permalink: /optimization
+  description: Posts about Optimization.
+
+oracle-cloud:
+  label: Oracle Cloud
+  permalink: /oracle-cloud
+  description: Posts about Oracle Cloud.
+
+organization:
+  label: Organization
+  permalink: /organization
+  description: Posts about Organization.
 
 pcloud:
-  label: P Cloud
-  permalink: /p-cloud
-  description: Posts about P Cloud.
+  label: pCloud
+  permalink: /pcloud
+  description: Posts about pCloud.
 
-portable-backup:
-  label: Portable Backup
-  permalink: /portable-backup
-  description: Posts about Portable Backup.
+performance:
+  label: Performance
+  permalink: /performance
+  description: Posts about Performance.
+
+photography:
+  label: Photography
+  permalink: /photography
+  description: Posts about Photography.
+
+pikpak:
+  label: PikPak
+  permalink: /pikpak
+  description: Posts about PikPak.
+
+platform:
+  label: Platform
+  permalink: /platform
+  description: Posts about Platform.
+
+plex:
+  label: Plex
+  permalink: /plex
+  description: Posts about Plex.
+
+pricing:
+  label: Pricing
+  permalink: /pricing
+  description: Posts about Pricing.
+
+privacy:
+  label: Privacy
+  permalink: /privacy
+  description: Posts about Privacy.
+
+productivity:
+  label: Productivity
+  permalink: /productivity
+  description: Posts about Productivity.
 
 proton-drive:
   label: Proton Drive
   permalink: /proton-drive
   description: Posts about Proton Drive.
 
-rcloneview:
-  label: Rclone View
-  permalink: /rclone-view
-  description: Posts about Rclone View.
+putio:
+  label: Put.io
+  permalink: /putio
+  description: Posts about Put.io.
+
+qnap:
+  label: QNAP
+  permalink: /qnap
+  description: Posts about QNAP.
+
+quatrix:
+  label: Quatrix
+  permalink: /quatrix
+  description: Posts about Quatrix.
+
+r2:
+  label: R2
+  permalink: /r2
+  description: Posts about R2.
+
+ransomware:
+  label: Ransomware
+  permalink: /ransomware
+  description: Posts about Ransomware.
+
+raspberry-pi:
+  label: Raspberry Pi
+  permalink: /raspberry-pi
+  description: Posts about Raspberry Pi.
+
+rclone:
+  label: Rclone
+  permalink: /rclone
+  description: Posts about Rclone.
+
+rclone-crypt:
+  label: Rclone Crypt
+  permalink: /rclone-crypt
+  description: Posts about Rclone Crypt.
+
+RcloneView:
+  label: RcloneView
+  permalink: /rcloneview
+  description: Posts about RcloneView.
+
+reference:
+  label: Reference
+  permalink: /reference
+  description: Posts about Reference.
+
+remote-work:
+  label: Remote Work
+  permalink: /remote-work
+  description: Posts about Remote Work.
 
 s3:
   label: S3
   permalink: /s3
   description: Posts about S3.
 
+s3-compatible:
+  label: S3 Compatible
+  permalink: /s3-compatible
+  description: Posts about S3 Compatible.
+
+safety:
+  label: Safety
+  permalink: /safety
+  description: Posts about Safety.
+
+seafile:
+  label: Seafile
+  permalink: /seafile
+  description: Posts about Seafile.
+
+security:
+  label: Security
+  permalink: /security
+  description: Posts about Security.
+
+self-hosted:
+  label: Self Hosted
+  permalink: /self-hosted
+  description: Posts about Self Hosted.
+
+sftp:
+  label: SFTP
+  permalink: /sftp
+  description: Posts about SFTP.
+
+sharefile:
+  label: ShareFile
+  permalink: /sharefile
+  description: Posts about ShareFile.
+
+sharepoint:
+  label: SharePoint
+  permalink: /sharepoint
+  description: Posts about SharePoint.
+
+sia:
+  label: Sia
+  permalink: /sia
+  description: Posts about Sia.
+
+slack:
+  label: Slack
+  permalink: /slack
+  description: Posts about Slack.
+
+smb:
+  label: SMB
+  permalink: /smb
+  description: Posts about SMB.
+
 storage-comparison:
   label: Storage Comparison
   permalink: /storage-comparison
   description: Posts about Storage Comparison.
+
+storj:
+  label: Storj
+  permalink: /storj
+  description: Posts about Storj.
+
+sugarsync:
+  label: SugarSync
+  permalink: /sugarsync
+  description: Posts about SugarSync.
+
+swift:
+  label: Swift
+  permalink: /swift
+  description: Posts about Swift.
 
 sync:
   label: Sync
   permalink: /sync
   description: Posts about Sync.
 
-SynologyNAS:
-  label: Synology Nas
-  permalink: /synology-nas
-  description: Posts about Synology Nas.
+synology:
+  label: Synology
+  permalink: /synology
+  description: Posts about Synology.
 
-Wasabi:
+tencent-cos:
+  label: Tencent COS
+  permalink: /tencent-cos
+  description: Posts about Tencent COS.
+
+terabox:
+  label: Terabox
+  permalink: /terabox
+  description: Posts about Terabox.
+
+tips:
+  label: Tips
+  permalink: /tips
+  description: Posts about Tips.
+
+troubleshooting:
+  label: Troubleshooting
+  permalink: /troubleshooting
+  description: Posts about Troubleshooting.
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Posts about Tutorial.
+
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: Posts about Ubuntu.
+
+university:
+  label: University
+  permalink: /university
+  description: Posts about University.
+
+vfs:
+  label: VFS
+  permalink: /vfs
+  description: Posts about VFS.
+
+video-production:
+  label: Video Production
+  permalink: /video-production
+  description: Posts about Video Production.
+
+wasabi:
   label: Wasabi
   permalink: /wasabi
   description: Posts about Wasabi.
+
+webdav:
+  label: WebDAV
+  permalink: /webdav
+  description: Posts about WebDAV.
+
+windows:
+  label: Windows
+  permalink: /windows
+  description: Posts about Windows.
+
+windows-server:
+  label: Windows Server
+  permalink: /windows-server
+  description: Posts about Windows Server.
+
+workspace:
+  label: Workspace
+  permalink: /workspace
+  description: Posts about Workspace.
+
+yandex:
+  label: Yandex
+  permalink: /yandex
+  description: Posts about Yandex.
+
+yandex-disk:
+  label: Yandex Disk
+  permalink: /yandex-disk
+  description: Posts about Yandex Disk.
+
+zoho:
+  label: Zoho
+  permalink: /zoho
+  description: Posts about Zoho.

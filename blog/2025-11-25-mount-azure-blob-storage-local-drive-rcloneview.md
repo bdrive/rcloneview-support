@@ -16,10 +16,10 @@ keywords:
   - macfuse
 tags:
   - RcloneView
-  - Azure
-  - Mount
-  - Windows
-  - macOS
+  - azure
+  - mount
+  - windows
+  - macos
 unlisted: true
 ---
 

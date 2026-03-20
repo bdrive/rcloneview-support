@@ -16,7 +16,7 @@ keywords:
   - scheduled jobs
   - encrypted cloud storage
 tags:
-  - rcloneview
+  - RcloneView
   - proton-drive
   - google-drive
   - onedrive

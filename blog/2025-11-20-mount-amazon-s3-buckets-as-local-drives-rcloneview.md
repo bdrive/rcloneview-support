@@ -17,9 +17,9 @@ keywords:
   - scheduler auto mount
 tags:
   - RcloneView
-  - AmazonS3
-  - Mount
-  - Windows
+  - amazon-s3
+  - mount
+  - windows
   - macOS
 ---
 

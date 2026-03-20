@@ -33,6 +33,8 @@ With Discord Remote Control, RcloneView sends job start, complete, and error ale
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
+<!-- truncate -->
+
 ## What you can do from Discord
 
 - **Real-time Notifications**: Get alerted immediately when a job starts, completes, or encounters an error.

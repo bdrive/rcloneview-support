@@ -14,7 +14,7 @@ keywords:
   - rclone GUI
   - multi-cloud migration
 tags:
-  - rcloneview
+  - RcloneView
   - pcloud
   - google-drive
   - cloud-file-transfer

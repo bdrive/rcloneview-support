@@ -14,7 +14,7 @@ keywords:
   - s3 encryption
   - rcloneview
 tags:
-  - rcloneview
+  - RcloneView
   - encryption
   - rclone-crypt
   - cloud-security

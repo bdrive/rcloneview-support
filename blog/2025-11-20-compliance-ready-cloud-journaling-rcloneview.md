@@ -16,9 +16,9 @@ keywords:
   - finra sec records
 tags:
   - RcloneView
-  - Compliance
-  - Security
-  - Backup
+  - compliance
+  - security
+  - backup
   - Automation
 ---
 

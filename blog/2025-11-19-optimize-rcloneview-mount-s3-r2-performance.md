@@ -14,7 +14,7 @@ keywords:
   - multi-thread streams
   - s3 chunk size
 tags:
-  - rcloneview
+  - RcloneView
   - mount
   - cloudflare-r2
   - aws-s3

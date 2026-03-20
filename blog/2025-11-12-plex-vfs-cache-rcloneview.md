@@ -14,11 +14,11 @@ keywords:
   - rclone mount plex
 tags:
   - RcloneView
-  - Plex
-  - VFS
-  - GoogleDrive
-  - Dropbox
-  - S3
+  - plex
+  - vfs
+  - google-drive
+  - dropbox
+  - s3
   - Wasabi
 ---
 

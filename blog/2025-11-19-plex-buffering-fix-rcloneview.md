@@ -13,7 +13,7 @@ keywords:
   - google drive plex
   - plex 4k streaming
 tags:
-  - rcloneview
+  - RcloneView
   - plex
   - performance
   - troubleshooting

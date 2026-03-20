@@ -17,9 +17,9 @@ keywords:
   - rclone gui
 tags:
   - RcloneView
-  - GoogleDrive
-  - Productivity
-  - Cleanup
+  - google-drive
+  - productivity
+  - cleanup
   - Workflow
 ---
 

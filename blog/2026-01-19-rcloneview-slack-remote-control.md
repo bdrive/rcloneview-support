@@ -33,6 +33,8 @@ With Slack Remote Control, RcloneView sends job start, complete, and error alert
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
+<!-- truncate -->
+
 ## What you can do from Slack
 
 - **Real-time Notifications**: Get alerted immediately when a job starts, completes, or encounters an error.

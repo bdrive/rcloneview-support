@@ -17,10 +17,10 @@ keywords:
   - dropbox backup
 tags:
   - RcloneView
-  - ExternalDrive
-  - Backup
-  - GoogleDrive
-  - OneDrive
+  - external-drive
+  - backup
+  - google-drive
+  - onedrive
   - Dropbox
 ---
 
@@ -47,7 +47,7 @@ RcloneView layers a friendly UI on top of rclone so anyone can mirror Google Dri
 
 ## Blueprint: RcloneView as Your External Drive Control Tower
 
-1. **Connect clouds** via [Remote Manager](/support/howto/rcloneview-basic/remote-manager) and the OAuth guide in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#auto-login-onedrive-box-).
+1. **Connect clouds** via [Remote Manager](/support/howto/rcloneview-basic/remote-manager) and the OAuth guide in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide).
 2. **Harden settings** under [General Settings](/support/howto/rcloneview-basic/general-settings) with config passwords.
 3. **Organize Explorer panes** with friendly names using [Browse and manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage) so each pane matches a cloud drive vs. an external path.
 4. **Design jobs** using [Create sync jobs](/support/howto/rcloneview-basic/create-sync-jobs) or [Synchronize remote storages](/support/howto/rcloneview-basic/synchronize-remote-storages), and preview risk with [Compare folder contents](/support/howto/rcloneview-basic/compare-folder-contents).

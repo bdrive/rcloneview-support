@@ -7,7 +7,7 @@ authors:
   - jay
 tags:
   - reference
-  - rcloneview
+  - RcloneView
   - content-style
 ---
 

@@ -17,11 +17,11 @@ keywords:
   - checksum verification
 tags:
   - RcloneView
-  - Cloud
-  - Sync
+  - cloud
+  - sync
   - cloud-migration
   - backup
-  - Tutorial
+  - tutorial
   - google-drive
   - onedrive
   - s3

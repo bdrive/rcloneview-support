@@ -14,7 +14,7 @@ keywords:
   - cloud backup
   - file synchronization
 tags:
-  - rcloneview
+  - RcloneView
   - cloud-backup
   - offline-sync
   - external-drive

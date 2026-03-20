@@ -14,9 +14,9 @@ keywords:
   - business continuity
 tags:
   - RcloneView
-  - Disaster Recovery
-  - Multi-Cloud
-  - Backup
+  - disaster-recovery
+  - multi-cloud
+  - backup
   - Sync
 ---
 

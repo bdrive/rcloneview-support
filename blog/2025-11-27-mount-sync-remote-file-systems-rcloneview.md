@@ -17,12 +17,12 @@ keywords:
   - sync automation
 tags:
   - RcloneView
-  - Cloud
-  - Sync
+  - cloud
+  - sync
   - mount
-  - NAS
-  - SFTP
-  - WebDAV
+  - nas
+  - sftp
+  - webdav
   - SMB
 ---
 

@@ -17,9 +17,9 @@ keywords:
   - audit logs
 tags:
   - RcloneView
-  - Box
-  - Dropbox
-  - Migration
+  - box
+  - dropbox
+  - migration
   - Scheduler
 ---
 
@@ -47,7 +47,7 @@ RcloneView addresses all of it with Remote Manager, the dual-pane Explorer, Comp
 
 ## RcloneView Migration Blueprint
 
-1. **Connect** Box and Dropbox inside [Remote Manager](/support/howto/rcloneview-basic/remote-manager) using the OAuth wizard documented in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#auto-login-onedrive-box-) for Box and Dropbox.
+1. **Connect** Box and Dropbox inside [Remote Manager](/support/howto/rcloneview-basic/remote-manager) using the OAuth wizard documented in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide) for Box and Dropbox.
 2. **Organize** remotes with color labels and scoped root paths so each job only touches a single Box library or Dropbox team folder. See [Browse and manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage).
 3. **Template** Copy/Sync jobs via [Create sync jobs](/support/howto/rcloneview-basic/create-sync-jobs) and [Synchronize remote storages](/support/howto/rcloneview-basic/synchronize-remote-storages), then preview changes with [Compare folder contents](/support/howto/rcloneview-basic/compare-folder-contents).
 4. **Automate** deltas through [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution) while tracking throughput in [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring).

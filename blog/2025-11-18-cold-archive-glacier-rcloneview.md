@@ -16,10 +16,10 @@ keywords:
   - archive retention
 tags:
   - RcloneView
-  - Backup
-  - Archive
-  - S3
-  - Glacier
+  - backup
+  - archive
+  - s3
+  - glacier
   - Wasabi
 ---
 

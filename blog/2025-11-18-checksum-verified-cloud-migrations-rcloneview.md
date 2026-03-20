@@ -15,10 +15,10 @@ keywords:
   - compare sync
 tags:
   - RcloneView
-  - Migration
-  - Compare
-  - Backup
-  - Sync
+  - migration
+  - compare
+  - backup
+  - sync
   - Integrity
 ---
 

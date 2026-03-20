@@ -20,7 +20,7 @@ tags:
   - cloud-storage
   - sync
   - file-management
-  - CLI
+  - cli
 
 ---
 

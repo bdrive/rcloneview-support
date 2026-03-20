@@ -184,7 +184,7 @@ For full details and additional methods, see:
 - [Method 1: Mount from Remote Explorer](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#method-1-mount-from-remote-explorer)
 - [Method 2: Mount via Mount Manager](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#method-2-mount-via-mount-manager)
 - [View and Manage Mounted Drives](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#view-and-manage-mounted-drives)
-- [Quick Mount from System Tray](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#quick-mount-from-system-tray)
+- [Quick Mount from System Tray](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#view-and-manage-mounted-drives)
 
 ## **🚚 Step 3: Transfer or Sync Files**
 

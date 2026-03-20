@@ -20,7 +20,7 @@ tags:
   - cloud-migration
   - cloud-storage
   - backup
-  - Wasabi
+  - wasabi
   - google-drive
   - sync
 ---

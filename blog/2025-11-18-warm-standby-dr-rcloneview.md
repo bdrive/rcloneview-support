@@ -16,10 +16,10 @@ keywords:
   - wasabi s3
 tags:
   - RcloneView
-  - DR
-  - MultiCloud
-  - Backup
-  - Sync
+  - disaster-recovery
+  - multi-cloud
+  - backup
+  - sync
   - S3
 ---
 

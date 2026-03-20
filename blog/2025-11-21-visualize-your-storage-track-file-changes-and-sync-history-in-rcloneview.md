@@ -14,9 +14,9 @@ keywords:
   - audit logs
 tags:
   - RcloneView
-  - Dashboard
-  - Sync
-  - History
+  - dashboard
+  - sync
+  - history
   - Visualization
 ---
 

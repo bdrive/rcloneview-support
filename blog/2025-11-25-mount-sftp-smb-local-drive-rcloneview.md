@@ -17,9 +17,9 @@ keywords:
   - mount network drive
 tags:
   - RcloneView
-  - Mount
-  - SFTP
-  - SMB
+  - mount
+  - sftp
+  - smb
   - NAS
 ---
 

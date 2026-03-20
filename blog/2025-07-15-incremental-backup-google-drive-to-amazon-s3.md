@@ -12,7 +12,7 @@ keywords:
   - cloud sync
   - rclone gui
 tags:
-  - rcloneview
+  - RcloneView
   - google-drive
   - amazon-s3
   - cloud-backup

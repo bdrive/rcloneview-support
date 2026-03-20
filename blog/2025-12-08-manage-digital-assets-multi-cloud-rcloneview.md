@@ -17,10 +17,10 @@ keywords:
   - creative teams
 tags:
   - RcloneView
-  - Cloud
-  - Sync
+  - cloud
+  - sync
   - multi-cloud
-  - DAM
+  - dam
   - media
   - google-drive
   - dropbox

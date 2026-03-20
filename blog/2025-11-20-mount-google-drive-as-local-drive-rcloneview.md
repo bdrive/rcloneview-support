@@ -17,9 +17,9 @@ keywords:
   - multi cloud explorer
 tags:
   - RcloneView
-  - GoogleDrive
-  - Mount
-  - Windows
+  - google-drive
+  - mount
+  - windows
   - macOS
 ---
 
@@ -58,7 +58,7 @@ import RvCta from '../src/components/RvCta';
 
 ## Step 2 -- Connect Google Drive (and Friends)
 
-- Open Remote Manager and click **Add Remote** -> **Google Drive**. Follow the OAuth prompts described in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#auto-login-onedrive-box-).
+- Open Remote Manager and click **Add Remote** -> **Google Drive**. Follow the OAuth prompts described in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide).
 - Label the remote `gdrive-main` (and optionally add Shared Drives or other clouds like Dropbox, OneDrive, or S3 so you can compare/sync later).
 - Use [Browse and manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage) to create folder presets you will mount frequently (Design, Finance, Shared Drives, etc.).  
 

@@ -14,9 +14,9 @@ keywords:
   - scheduled sync
   - local to cloud
 tags:
-  - rcloneview
+  - RcloneView
   - proton-drive
-  - HardDrive
+  - hard-drive
   - cloud-backup
   - cloud-sync
 ---

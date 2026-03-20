@@ -14,11 +14,11 @@ keywords:
   - vfs cache plex
 tags:
   - RcloneView
-  - Plex
-  - GoogleDrive
-  - OneDrive
-  - Dropbox
-  - S3
+  - plex
+  - google-drive
+  - onedrive
+  - dropbox
+  - s3
   - mount
 ---
 
