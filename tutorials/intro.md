@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 description: Learn how to use RcloneView with Wasabi to browse, back up, sync, and migrate data between local storage and other clouds.
 keywords:
   - rcloneview
