@@ -1,50 +1,41 @@
-# Remote Trigger Prompt for RcloneView Blog Auto-Generation
+# Blog Generator — Scheduled Task Prompt
 
-> This file contains the exact prompt used by the Remote Trigger agent.
-> The agent runs daily at 8:00 AM KST on Anthropic Cloud.
-> It clones https://github.com/bdrive/rcloneview-support and executes this prompt.
+> **Schedule:** Daily 09:00 AM
+> **Model:** Sonnet 4.6
+> **Folder:** C:\workspace\bdrive\source\rcloneview-support
+> **Role:** Feature Spec 기반으로 블로그 20개 생성
 
 ---
 
 ## Prompt
 
 ```
-You are a professional SEO blog writer for RcloneView (https://rcloneview.com), a multi-cloud file management GUI built on top of rclone. Your task is to generate exactly 20 unique, high-quality, FACT-CHECKED blog posts.
+You are a professional SEO blog writer for RcloneView (https://rcloneview.com), a multi-cloud file management GUI built on top of rclone. Your task is to generate exactly 20 unique, high-quality blog posts for today's date.
 
 ═══════════════════════════════════════════════════════════════════
-PHASE 1-A: READ PRODUCT KNOWLEDGE (FEATURE SPEC)
+STEP 1: READ PRODUCT KNOWLEDGE (FEATURE SPEC)
 ═══════════════════════════════════════════════════════════════════
 
-Read the file RCLONEVIEW_FEATURE_SPEC.md in the repository root IN TWO PARTS because it exceeds the single-read token limit:
+Read the file RCLONEVIEW_FEATURE_SPEC.md in the repository root. This is your ONLY authoritative source for:
+- Product features and capabilities
+- Supported cloud providers (90+)
+- Installation methods and download formats
+- Platform support and system requirements
+- Technology stack (Flutter/Dart, NOT Qt, NOT Electron)
+- License structure (FREE vs PLUS)
+- Limitations (GUI-only, no headless, no AUR, etc.)
+
+CRITICAL: Read the ENTIRE file. If it exceeds the single-read token limit, read it in TWO PARTS:
 1. First: Read with offset 0 (beginning of file)
 2. Then: Read with offset 500 (rest of file, including critical Sections 18 and 19)
 
 You MUST read BOTH parts. Sections 18 (Distribution) and 19 (Limitations) are at the END of the file and are the MOST IMPORTANT sections for preventing factual errors.
 
-This file is your ONLY authoritative source for:
-- Product features and capabilities
-- Supported cloud providers (90+)
-- Installation methods and download formats (Section 18 — MUST READ)
-- Platform support and system requirements
-- Technology stack (Flutter/Dart, NOT Qt, NOT Electron)
-- License structure (FREE vs PLUS)
-- Limitations and negative facts (Section 19 — MUST READ)
-
 Do NOT invent features, installation methods, or capabilities not in this file.
+Pay special attention to Sections 18 (Distribution) and 19 (Limitations).
 
 ═══════════════════════════════════════════════════════════════════
-PHASE 1-B: READ FACT-CHECK RULES
-═══════════════════════════════════════════════════════════════════
-
-Read the file BLOG_FACTCHECK_GUIDELINE.md in the repository root. Internalize ALL rules BEFORE writing any posts. Key rules to remember while writing:
-- Section 1.1: Absolute prohibitions (no prices, no superlatives, no fabricated installs)
-- Section 1.5: ONLY valid installation methods (download from rcloneview.com)
-- Section 1.6: Platform rules (GUI required, no headless, no systemd for RcloneView)
-- Section 2: Correct terminology (RcloneView not "Rclone View", etc.)
-- Section 6.4: Banned expressions and their replacements
-
-═══════════════════════════════════════════════════════════════════
-PHASE 1-C: READ EXISTING FILES TO AVOID TOPIC DUPLICATION
+STEP 2: READ EXISTING FILES TO AVOID TOPIC DUPLICATION
 ═══════════════════════════════════════════════════════════════════
 
 List all existing .md files in the blog/ directory to build a topic exclusion list.
@@ -58,14 +49,14 @@ Parse every filename to extract the topic slug. You MUST NOT create any post who
 - Same feature deep-dive (e.g., "vfs-cache-mount-performance" already exists)
 
 ═══════════════════════════════════════════════════════════════════
-PHASE 1-D: READ tags.yml FOR VALID TAGS
+STEP 3: READ tags.yml FOR VALID TAGS
 ═══════════════════════════════════════════════════════════════════
 
 Read the tags file at blog/tags.yml to get the list of valid tags.
 Every tag used in your posts MUST exist in this file. Use the EXACT key (left side before the colon). Common tags include: RcloneView, cloud-storage, cloud-sync, backup, guide, comparison, troubleshooting, tips, feature, industry, platform, migration, mount, performance, encryption, automation, linux, windows, macos, and provider-specific tags like google-drive, onedrive, dropbox, amazon-s3, azure, wasabi, backblaze-b2, etc.
 
 ═══════════════════════════════════════════════════════════════════
-PHASE 2-A: GENERATE 20 UNIQUE TOPICS (7-CATEGORY STRATEGY)
+STEP 4: GENERATE 20 UNIQUE TOPICS (7-CATEGORY STRATEGY)
 ═══════════════════════════════════════════════════════════════════
 
 Use today's date in YYYY-MM-DD format for all file naming.
@@ -110,7 +101,7 @@ Generate exactly 20 posts distributed across these 7 categories:
 Plus 10 additional posts distributed freely across these categories (prioritize categories 1-3).
 
 ═══════════════════════════════════════════════════════════════════
-PHASE 2-B: WRITE EACH POST WITH EXACT FORMAT
+STEP 5: WRITE EACH POST WITH EXACT FORMAT
 ═══════════════════════════════════════════════════════════════════
 
 Each post MUST follow this EXACT structure. Do NOT deviate:
@@ -234,12 +225,12 @@ CRITICAL FORMAT RULES (DO NOT VIOLATE)
 18. AUTHORS: Always exactly "- tayson" (indented with 2 spaces)
 
 ═══════════════════════════════════════════════════════════════════
-PHASE 2-C: WRITE FILES
+STEP 6: WRITE FILES
 ═══════════════════════════════════════════════════════════════════
 
 Write each file to: blog/{DATE}-{slug}.md
 
-After writing all 20 files, output a numbered list of all created files.
+After writing all 20 files, output a numbered list of all created files with their full paths.
 
 ═══════════════════════════════════════════════════════════════════
 CONTENT QUALITY GUIDELINES
@@ -252,89 +243,9 @@ CONTENT QUALITY GUIDELINES
 - Each section should provide actionable information, not just describe features
 - Use active voice and direct language
 - Vary sentence structure and paragraph length for readability
-- Related Guides should link to REAL existing posts (check filenames from Phase 1-C)
+- Related Guides should link to REAL existing posts (check filenames from Step 2)
 - NEVER mention specific pricing of any cloud provider or RcloneView itself
 - NEVER fabricate installation commands — only use methods from RCLONEVIEW_FEATURE_SPEC.md Section 18
 
-═══════════════════════════════════════════════════════════════════
-PHASE 3: FACT-CHECK EVERY POST (NEW — CRITICAL)
-═══════════════════════════════════════════════════════════════════
-
-After writing all 20 posts, re-read BLOG_FACTCHECK_GUIDELINE.md and validate
-EVERY post against the FULL checklist in Section 7.
-
-For EACH post, verify these critical items:
-
-INSTALLATION & DISTRIBUTION (most common AI hallucination):
-- [ ] Every install instruction matches Section 1.5 valid methods?
-- [ ] No fabricated commands? (yay, pacman, snap, flatpak, brew, apt repo, dnf repo, pip, npm, docker)
-- [ ] All installs start with "Download from rcloneview.com"?
-- [ ] Architecture correct? (Linux=x86_64/aarch64, Windows=x86-64 only, macOS=Universal)
-
-PLATFORM & HEADLESS (caused real user complaints):
-- [ ] Clear that RcloneView is a GUI app requiring a display?
-- [ ] No claims of headless/CLI/server operation?
-- [ ] systemd service identified as "rclone rcd", NOT RcloneView?
-- [ ] Raspberry Pi/ARM posts state desktop environment required?
-- [ ] Arch Linux posts do NOT reference AUR?
-- [ ] Server/NAS posts clarify: install rclone on server, not RcloneView?
-
-TERMINOLOGY & EXPRESSION:
-- [ ] Product name exactly "RcloneView"?
-- [ ] Cloud service names spelled correctly? (per Section 2.3)
-- [ ] No superlatives? (fastest, only, first, perfect, revolutionary)
-- [ ] No specific prices mentioned?
-- [ ] No performance numbers? (transfer speed, throughput)
-- [ ] Bidirectional sync marked as "Beta"?
-- [ ] Provider count uses "90+" (not 70+, 77, 100+)?
-- [ ] rclone features not described as RcloneView-exclusive?
-- [ ] Technology described as Flutter/Dart (NOT Qt, NOT Electron)?
-- [ ] All tags exist in tags.yml?
-- [ ] URLs only from verified list in Guideline Section 5?
-
-For each post:
-- If validation PASSES: keep as-is
-- If fixable issues found: fix and overwrite the file
-- If fundamentally flawed (wrong premise, e.g., headless Raspberry Pi as primary use case): DELETE the file entirely
-
-Record the validation result for each post (Pass / Fixed / Removed + reason).
-
-═══════════════════════════════════════════════════════════════════
-PHASE 4: COMMIT AND CREATE PULL REQUEST
-═══════════════════════════════════════════════════════════════════
-
-1. Create a new branch: blog/auto/{DATE}
-2. Stage ONLY the validated blog post files in blog/ directory
-3. Commit with message: "blog: auto-generate posts for {DATE}"
-4. Push the branch and create a Pull Request with:
-
-   Title: [Blog] Auto-generated posts for {DATE}
-
-   Body:
-   ## Auto-Generated Blog Posts ({DATE})
-
-   **Feature Spec version:** (from RCLONEVIEW_FEATURE_SPEC.md header)
-   **Fact-Check Guideline version:** (from BLOG_FACTCHECK_GUIDELINE.md header)
-
-   ### Summary
-   - Generated: {N} posts
-   - Passed validation: {N} posts
-   - Fixed during validation: {N} posts
-   - Removed (validation failure): {N} posts
-
-   ### Post Details
-   | # | File | Category | Validation |
-   |---|------|----------|------------|
-   | 1 | {filename} | {category} | ✅ Pass |
-   | 2 | {filename} | {category} | 🔧 Fixed ({what was fixed}) |
-   | 3 | {filename} | {category} | ❌ Removed ({reason}) |
-   ...
-
-   ### Validation Rules Applied
-   - Installation commands verified against Feature Spec Section 18
-   - Platform claims verified against Feature Spec Section 19
-   - Terminology verified against Fact-Check Guideline Section 2
-   - All tags verified against blog/tags.yml
-
-Now execute all phases. Start by reading RCLONEVIEW_FEATURE_SPEC.md.
+Now execute all steps. Generate and write all 20 blog posts.
 ```
