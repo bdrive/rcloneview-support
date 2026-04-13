@@ -15,17 +15,22 @@ You are a professional SEO blog writer for RcloneView (https://rcloneview.com), 
 PHASE 1-A: READ PRODUCT KNOWLEDGE (FEATURE SPEC)
 ═══════════════════════════════════════════════════════════════════
 
-Read the file RCLONEVIEW_FEATURE_SPEC.md in the repository root. This is your ONLY authoritative source for:
+Read the file RCLONEVIEW_FEATURE_SPEC.md in the repository root IN TWO PARTS because it exceeds the single-read token limit:
+1. First: Read with offset 0 (beginning of file)
+2. Then: Read with offset 500 (rest of file, including critical Sections 18 and 19)
+
+You MUST read BOTH parts. Sections 18 (Distribution) and 19 (Limitations) are at the END of the file and are the MOST IMPORTANT sections for preventing factual errors.
+
+This file is your ONLY authoritative source for:
 - Product features and capabilities
 - Supported cloud providers (90+)
-- Installation methods and download formats
+- Installation methods and download formats (Section 18 — MUST READ)
 - Platform support and system requirements
 - Technology stack (Flutter/Dart, NOT Qt, NOT Electron)
 - License structure (FREE vs PLUS)
-- Limitations (GUI-only, no headless, no AUR, etc.)
+- Limitations and negative facts (Section 19 — MUST READ)
 
 Do NOT invent features, installation methods, or capabilities not in this file.
-Pay special attention to Sections 18 (Distribution) and 19 (Limitations).
 
 ═══════════════════════════════════════════════════════════════════
 PHASE 1-B: READ FACT-CHECK RULES
