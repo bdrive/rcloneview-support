@@ -38,8 +38,15 @@ Pay special attention to Sections 18 (Distribution) and 19 (Limitations).
 STEP 2: READ EXISTING FILES TO AVOID TOPIC DUPLICATION
 ═══════════════════════════════════════════════════════════════════
 
-List all existing .md files in the blog/ directory to build a topic exclusion list.
-Parse every filename to extract the topic slug. You MUST NOT create any post whose topic overlaps with an existing file. This includes:
+CRITICAL: Filenames follow the pattern `YYYY-MM-DD-{slug}.md`. The {slug} portion is what determines the published URL. Two files with different dates but the same slug (e.g., `2026-04-09-manage-box-cloud-sync-backup-rcloneview.md` and `2026-04-13-manage-box-cloud-sync-backup-rcloneview.md`) will both try to publish at the SAME URL, causing duplicate route errors and build failures.
+
+Procedure:
+1. List ALL files in the blog/ directory (not just recent ones)
+2. For EACH existing filename, strip the `YYYY-MM-DD-` prefix to extract the raw slug
+3. Build a "used slugs" set from these extracted slugs
+4. When generating new posts, your chosen slug MUST NOT already exist in this set — regardless of when that existing post was published
+
+You MUST NOT create any post whose slug matches an existing post's slug. This includes:
 - Same remote/provider already covered as a standalone post
 - Same migration pair (e.g., "migrate-X-to-Y" already exists)
 - Same comparison pair (e.g., "rcloneview-vs-X" already exists)
@@ -47,6 +54,8 @@ Parse every filename to extract the topic slug. You MUST NOT create any post who
 - Same industry vertical (e.g., "cloud-storage-law-firms" already exists)
 - Same platform (e.g., "rcloneview-arch-linux" already exists)
 - Same feature deep-dive (e.g., "vfs-cache-mount-performance" already exists)
+
+Before writing each post, verify its slug is NOT in the used-slugs set. If it matches, pick a different topic or differentiate the slug meaningfully (e.g., add a qualifier that reflects different content, not just a date).
 
 ═══════════════════════════════════════════════════════════════════
 STEP 3: READ tags.yml FOR VALID TAGS

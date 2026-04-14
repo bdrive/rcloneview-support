@@ -104,6 +104,24 @@ Removed: {N}
 | 3 | {filename} | REMOVED | {reason} |
 
 ═══════════════════════════════════════════════════════════════════
+STEP 4.5: DUPLICATE SLUG CHECK (CRITICAL — runs BEFORE build)
+═══════════════════════════════════════════════════════════════════
+
+Blog filenames follow `YYYY-MM-DD-{slug}.md`. The {slug} portion determines the published URL. Two files with different dates but the SAME slug will produce a "Duplicate routes found" warning during build and cause the same URL to collide.
+
+Procedure:
+1. List ALL files in blog/ directory
+2. For each filename, strip the `YYYY-MM-DD-` prefix to extract the raw slug
+3. Identify any slugs that appear in MORE than one file
+4. For each duplicate group: KEEP the file with the EARLIEST date (older post has established SEO / backlinks), DELETE all newer files sharing that slug
+
+Example:
+  2026-03-22-rcloneview-arch-linux-cloud-sync.md  ← keep (older)
+  2026-04-13-rcloneview-arch-linux-cloud-sync.md  ← DELETE
+
+After deletion, verify no duplicate slugs remain before proceeding to build.
+
+═══════════════════════════════════════════════════════════════════
 STEP 5: BUILD
 ═══════════════════════════════════════════════════════════════════
 
@@ -112,7 +130,12 @@ Run these commands in the rcloneview-support directory:
   yarn install --frozen-lockfile
   yarn build --out-dir ../rcloneview_www/support
 
-If build fails, report the error and stop. Do not proceed to deployment.
+Watch the build output carefully. Docusaurus build may show WARNINGS (not errors) that still need action:
+
+- "[WARNING] Duplicate routes found!" — This means Step 4.5 missed something. Stop, re-run Step 4.5 to find and remove the remaining duplicates, then rebuild.
+- "[ERROR]" or non-zero exit code — Report the error and stop. Do not proceed to deployment.
+
+Only proceed to Step 6 if the build completes with NO duplicate route warnings.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 6: DEPLOY TO rcloneview_www
