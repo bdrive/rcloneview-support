@@ -13,6 +13,26 @@
 You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and deploy.
 
 ═══════════════════════════════════════════════════════════════════
+STEP 0: SYNC WITH MAIN BRANCH
+═══════════════════════════════════════════════════════════════════
+
+Before reading any files or running any commands, ensure the local repository is up-to-date with main:
+
+In rcloneview-support:
+  git checkout main
+  git pull origin main
+
+Also sync rcloneview_www (needed later for deployment):
+  cd ../rcloneview_www
+  git checkout main
+  git pull origin main
+  cd ../rcloneview-support
+
+If there are local uncommitted changes that prevent checkout or pull, report the issue and stop. Do NOT force-overwrite local changes.
+
+This ensures you work with the latest Fact-Check Guideline, Feature Spec, and blog posts.
+
+═══════════════════════════════════════════════════════════════════
 STEP 1: READ VALIDATION RULES
 ═══════════════════════════════════════════════════════════════════
 
