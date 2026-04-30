@@ -549,7 +549,7 @@
 .show {
   display: none;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 991px) {
   .navbar-collapse {
     display: none; /* 기본은 숨김 */
   }
@@ -628,7 +628,7 @@
   display: none;
 }
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 992px) {
   .docsearch-desktop-only {
     display: block;
   }
@@ -639,7 +639,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #mobile-docsearch {
     display: block;
     margin-right: 0.5rem;

@@ -1,3 +1,21 @@
+/* 데스크톱: 넉넉한 placeholder 폭 (Search 텍스트 + 우측 ⌘K 키 영역) */
 .DocSearch-Button-Placeholder {
   padding: 0 160px 0 10px;
 }
+
+/* 1280px 이하: 우측 여백을 줄여 검색창 폭 축소 */
+@media (max-width: 1279px) {
+  .DocSearch-Button-Placeholder {
+    padding: 0 80px 0 10px;
+  }
+}
+
+/* 1100px 이하: 더 좁게 */
+@media (max-width: 1099px) {
+  .DocSearch-Button-Placeholder {
+    padding: 0 24px 0 8px;
+  }
+}
+
+/* 992px 이하부터는 햄버거 메뉴로 전환되므로 데스크톱 검색창 자체가 사라짐
+   (#mobile-docsearch 가 대신 표시됨) */

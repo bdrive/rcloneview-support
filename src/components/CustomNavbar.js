@@ -9,7 +9,7 @@ import "../css/navbar.css";
 export default function CustomNavbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-md" id="mainNav">
+      <nav className="navbar navbar-expand-lg" id="mainNav">
         <div className="newNav_container">
           {/* Logo */}
           <a href="/index.html" className="navbar-brand" style={{ display: "flex", alignItems: "center" }}>
