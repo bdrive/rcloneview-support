@@ -70,7 +70,7 @@ Enable checksum verification in the sync job to confirm every object transferred
 
 ## Schedule Automated MinIO Backup Jobs (PLUS)
 
-With a PLUS license, RcloneView schedules MinIO backup jobs using cron syntax. Configure incremental backups to run after business hours, weekly full syncs, or real-time mirrors for critical datasets. The job history panel logs every run's statistics, giving operations teams a clear record of on-premises-to-cloud data movement.
+With a PLUS license, RcloneView schedules MinIO backup jobs using cron syntax. Configure incremental backups to run after business hours, weekly full syncs, or continuous mirrors for critical datasets. The job history panel logs every run's statistics, giving operations teams a clear record of on-premises-to-cloud data movement.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling automated MinIO backup sync jobs in RcloneView" class="img-large img-center" />
 

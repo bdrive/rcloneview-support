@@ -54,7 +54,7 @@ Enable the **checksum** option to verify transferred files against source hashes
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a Seafile backup sync job in RcloneView" class="img-large img-center" />
 
-## Real-Time Transfer Monitoring
+## Live Transfer Monitoring
 
 RcloneView's Transfer tab shows live progress for Seafile sync jobs: file name, transfer speed, percentage complete, and total bytes moved. When syncing large Seafile libraries with thousands of files, this visibility helps you estimate completion times and spot any files that stall or fail.
 

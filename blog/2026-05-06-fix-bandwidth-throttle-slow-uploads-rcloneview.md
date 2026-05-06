@@ -50,7 +50,7 @@ For providers like Amazon S3 and Cloudflare R2 that support multipart uploads, a
 
 RcloneView passes Global Rclone Flags from Settings > Embedded Rclone to every operation. Check whether `--bwlimit` or `--bwlimit-file` flags are set there — these cap upload speed to the specified value. If you previously set a bandwidth limit to avoid saturating your connection and forgot to remove it, that flag will silently throttle all your uploads.
 
-Remove or modify the `--bwlimit` flag in Settings > General > Global Rclone Flags, then re-run your sync job to see if speed improves.
+Remove or modify the `--bwlimit` flag in Settings > Embedded Rclone > Global Rclone Flags, then re-run your sync job to see if speed improves.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Checking global rclone flags that might limit upload bandwidth" class="img-large img-center" />
 
