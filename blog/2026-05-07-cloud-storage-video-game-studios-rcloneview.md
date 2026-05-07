@@ -47,7 +47,7 @@ A common workflow is to designate a cloud S3 bucket or Google Drive folder as th
 
 Nightly builds are the heartbeat of a game studio's development cycle. Every night, the CI/CD pipeline compiles a build from the current codebase and produces artifacts — executable binaries, packaged game files, platform-specific bundles — that need to be stored for QA testing and milestone archiving. RcloneView can automate the backup of these artifacts to cloud storage on a schedule.
 
-With a PLUS license, configure a sync job that runs after your nightly build completes, pushing all new artifacts from the build server's local output directory to a cloud bucket. Set the destination to an Amazon S3 or Wasabi bucket with versioning enabled for automatic build history. Job notifications can alert the team via Slack or email when the backup completes or fails — keeping everyone aware of the build state without manually checking a dashboard.
+With a PLUS license, configure a sync job that runs after your nightly build completes, pushing all new artifacts from the build server's local output directory to a cloud bucket. Set the destination to an Amazon S3 or Wasabi bucket with versioning enabled for automatic build history. Job notifications can alert the team via email when the backup completes or fails — keeping everyone aware of the build state without manually checking a dashboard.
 
 <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitoring nightly game build backup to cloud in RcloneView" class="img-large img-center" />
 
@@ -64,7 +64,7 @@ This eliminates the need to write or maintain custom scripts for multi-destinati
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html).
 2. Add your primary cloud asset store (S3, Google Drive, or similar) and team member local paths as remotes.
 3. Create sync jobs for asset distribution using the **Job Wizard** with folder compare for review.
-4. Set up nightly build backup jobs with a PLUS license and configure Slack notifications for build status.
+4. Set up nightly build backup jobs with a PLUS license and configure email notifications for build status.
 5. Use **1:N sync** to push assets and builds to multiple cloud targets in a single job run.
 
 RcloneView removes the scripting overhead from game studio cloud operations, giving technical artists and build engineers a reliable, visual tool for one of their most repetitive workflows.

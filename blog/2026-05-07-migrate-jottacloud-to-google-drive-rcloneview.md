@@ -55,7 +55,7 @@ Create a destination folder in Google Drive before starting the migration — fo
 
 With both remotes configured, open the **Job Wizard** in the Job Manager. Set Jottacloud as the source (select the top-level folder or a specific subfolder you want to migrate) and the Google Drive destination folder as the target. Choose **Copy** mode rather than **Sync** mode for a migration — this ensures files are copied without deleting anything at the source.
 
-Always run a **dry run** first to see exactly which files will be transferred. For large Jottacloud accounts with thousands of files, the dry run output helps you spot any potential issues before committing to the full transfer. Once satisfied, run the live job. RcloneView's **Job Manager** shows real-time progress, and **Job History** records the final transfer count and any errors.
+Always run a **dry run** first to see exactly which files will be transferred. For large Jottacloud accounts with thousands of files, the dry run output helps you spot any potential issues before committing to the full transfer. Once satisfied, run the live job. RcloneView's **Job Manager** shows live progress, and **Job History** records the final transfer count and any errors.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a Jottacloud to Google Drive migration job in RcloneView" class="img-large img-center" />
 

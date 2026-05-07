@@ -55,7 +55,7 @@ Consider creating a dedicated folder in Google Drive — for example, `Seafile M
 
 With both remotes open in the dual-pane view, you can drag individual Seafile libraries across to Google Drive for small migrations. For full server migrations, use the **Job Wizard** to create a sync job: set Seafile as the source and your target Google Drive folder as the destination. The four-step wizard lets you configure transfer options, including whether to preserve modification times.
 
-Run a **dry run** first to preview what will be transferred — this is especially useful for large Seafile instances with thousands of files. After confirming the preview looks correct, start the live transfer. RcloneView's **Job Manager** shows real-time progress, and **Job History** records the outcome for your migration audit trail.
+Run a **dry run** first to preview what will be transferred — this is especially useful for large Seafile instances with thousands of files. After confirming the preview looks correct, start the live transfer. RcloneView's **Job Manager** shows live progress, and **Job History** records the outcome for your migration audit trail.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a Seafile to Google Drive migration job in RcloneView" class="img-large img-center" />
 

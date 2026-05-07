@@ -39,7 +39,7 @@ Files.com provides enterprise-grade managed file transfer with compliance featur
 
 SFTP is the most reliable way to connect RcloneView to Files.com. In RcloneView, click **New Remote** and select **SFTP**. Enter your Files.com hostname (typically `<your-subdomain>.files.com`), your username, and either your password or an SSH key. Files.com supports both authentication methods — SSH key authentication is preferred for automated workflows as it avoids storing passwords.
 
-After saving, the Files.com SFTP remote appears in the dual-pane explorer. Navigate your Files.com folder structure, upload and download files with drag and drop, and manage your enterprise file shares directly from the RcloneView interface. Real-time transfer progress is shown for all operations.
+After saving, the Files.com SFTP remote appears in the dual-pane explorer. Navigate your Files.com folder structure, upload and download files with drag and drop, and manage your enterprise file shares directly from the RcloneView interface. Live transfer progress is shown for all operations.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding Files.com as an SFTP remote in RcloneView" class="img-large img-center" />
 

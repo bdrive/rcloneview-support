@@ -59,7 +59,7 @@ RcloneView also lets you set thresholds for notifications — for example, only 
 
 **Unattended backup monitoring** is the primary use case. If you schedule a nightly backup of your local files to Backblaze B2, configure an email notification to your personal address. If the job fails — due to a network outage, a credential issue, or a full disk — you receive a failure email in the morning rather than discovering the problem weeks later during a recovery attempt.
 
-**Team awareness** is equally valuable. When a shared cloud sync job completes — for example, a weekly sync of a shared project folder to Amazon S3 — notifying the entire team confirms the sync is current without requiring anyone to log into RcloneView. Combined with Slack, Telegram, or Discord notifications (also supported in PLUS), you can route different alerts to different channels based on your team's communication preferences.
+**Team awareness** is equally valuable. When a shared cloud sync job completes — for example, a weekly sync of a shared project folder to Amazon S3 — notifying the entire team confirms the sync is current without requiring anyone to log into RcloneView. You can configure different jobs to notify different recipients, so the right people are informed based on their area of responsibility.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Job history and notification log in RcloneView PLUS" class="img-large img-center" />
 

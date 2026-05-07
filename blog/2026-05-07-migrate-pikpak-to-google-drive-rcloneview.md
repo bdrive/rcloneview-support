@@ -55,7 +55,7 @@ Create a dedicated migration destination folder in Google Drive — for example,
 
 With both remotes open in the dual-pane view, you can drag folders from PikPak directly across to Google Drive for small migrations. For larger migrations, the **Job Wizard** is more reliable. Set PikPak as the source, your Google Drive destination folder as the target, and choose **Copy** mode (to copy files without deleting anything from PikPak).
 
-Always run a **dry run** first. PikPak accounts can contain thousands of files accumulated from offline downloads, and the dry run gives you a clear picture of transfer volume before committing. Once satisfied, run the live job. RcloneView's **Job Manager** shows real-time progress including current file names, transfer speeds, and estimated completion time. Check **Job History** after completion to confirm all files transferred successfully.
+Always run a **dry run** first. PikPak accounts can contain thousands of files accumulated from offline downloads, and the dry run gives you a clear picture of transfer volume before committing. Once satisfied, run the live job. RcloneView's **Job Manager** shows live progress including current file names and transfer counts. Check **Job History** after completion to confirm all files transferred successfully.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a PikPak to Google Drive migration job in RcloneView" class="img-large img-center" />
 

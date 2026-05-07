@@ -46,7 +46,7 @@ In RcloneView, click **New Remote**, select **S3 Compatible Storage**, and choos
 
 ## Browsing Buckets and Managing Files
 
-Once connected, Oracle Cloud Object Storage behaves like any other remote in RcloneView's dual-pane explorer. Navigate through bucket namespaces and object prefixes, upload files with drag and drop, and download objects to your local machine. RcloneView shows real-time transfer metrics so you can monitor large uploads as they progress.
+Once connected, Oracle Cloud Object Storage behaves like any other remote in RcloneView's dual-pane explorer. Navigate through bucket namespaces and object prefixes, upload files with drag and drop, and download objects to your local machine. RcloneView shows live transfer metrics so you can monitor large uploads as they progress.
 
 If you use multiple OCI regions for geographic redundancy, add each regional endpoint as a separate named remote. You can then open them side by side in the explorer and copy objects directly between regions via cloud-to-cloud transfer — no local download required.
 

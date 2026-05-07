@@ -45,7 +45,7 @@ Once the credentials are entered, RcloneView validates the connection and lists 
 
 ## Browsing Buckets and Transferring Files
 
-After adding the remote, the Alibaba OSS remote appears in the dual-pane file explorer. You can browse folders and objects just like a local file system. Drag and drop files from your local drive into an OSS bucket, or move objects between OSS prefixes directly. RcloneView shows real-time transfer progress and speeds so you always know the status of large uploads.
+After adding the remote, the Alibaba OSS remote appears in the dual-pane file explorer. You can browse folders and objects just like a local file system. Drag and drop files from your local drive into an OSS bucket, or move objects between OSS prefixes directly. RcloneView shows live transfer progress so you always know the status of large uploads.
 
 For teams with multiple OSS buckets across regions, you can add each region endpoint as a separate remote and manage them all from one RcloneView window. This makes cross-region data movement straightforward without juggling multiple command-line sessions.
 
