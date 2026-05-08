@@ -2,7 +2,7 @@
 slug: fix-google-photos-sync-errors-rcloneview
 title: "Fix Google Photos Sync Errors — How to Resolve with RcloneView"
 authors:
-  - tayson
+  - steve
 description: "Troubleshoot and fix common Google Photos sync errors in RcloneView — including API quota limits, read-only upload restrictions, and missing media files."
 keywords:
   - Google Photos sync errors RcloneView

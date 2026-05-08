@@ -2,7 +2,7 @@
 slug: migrate-onedrive-to-storj-rcloneview
 title: "Migrate OneDrive to Storj — Transfer Files with RcloneView"
 authors:
-  - tayson
+  - steve
 description: "Step-by-step guide to migrating files from Microsoft OneDrive to Storj decentralized cloud storage using RcloneView — with checksum verification and zero CLI knowledge needed."
 keywords:
   - OneDrive to Storj migration RcloneView

@@ -2,7 +2,7 @@
 slug: rcloneview-macos-sequoia-cloud-sync
 title: "RcloneView on macOS Sequoia — Cloud Storage Sync and Backup"
 authors:
-  - tayson
+  - steve
 description: "Install and configure RcloneView on macOS Sequoia (15.x) for cloud storage sync and backup. Covers installation, permission setup, and mount configuration on Apple Silicon and Intel Macs."
 keywords:
   - RcloneView macOS Sequoia

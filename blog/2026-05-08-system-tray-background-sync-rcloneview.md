@@ -2,7 +2,7 @@
 slug: system-tray-background-sync-rcloneview
 title: "System Tray and Background Sync — Keep Cloud Jobs Running in RcloneView"
 authors:
-  - tayson
+  - steve
 description: "Learn how RcloneView's system tray integration keeps sync jobs running in the background, manages cloud mounts, and sends job completion notifications without keeping the window open."
 keywords:
   - RcloneView system tray background sync

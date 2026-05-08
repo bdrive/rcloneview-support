@@ -2,7 +2,7 @@
 slug: sync-mega-to-wasabi-rcloneview
 title: "Sync Mega to Wasabi — Cloud Backup with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Learn how to sync or migrate files from Mega cloud storage to Wasabi S3-compatible object storage using RcloneView — including checksum verification and transfer monitoring."
 keywords:
   - Mega to Wasabi sync RcloneView

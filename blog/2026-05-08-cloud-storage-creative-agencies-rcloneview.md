@@ -2,7 +2,7 @@
 slug: cloud-storage-creative-agencies-rcloneview
 title: "Cloud Storage for Creative Agencies — Asset Management with RcloneView"
 authors:
-  - tayson
+  - steve
 description: "How creative agencies can use RcloneView to manage large media assets across multiple cloud providers — automating backups, enabling cross-cloud delivery, and cutting storage costs."
 keywords:
   - cloud storage creative agency

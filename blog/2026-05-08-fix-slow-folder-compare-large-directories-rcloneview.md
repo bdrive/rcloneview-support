@@ -2,7 +2,7 @@
 slug: fix-slow-folder-compare-large-directories-rcloneview
 title: "Fix Slow Folder Compare for Large Directories — RcloneView Guide"
 authors:
-  - tayson
+  - jay
 description: "Speed up Folder Compare operations on large directories in RcloneView — covering checker concurrency, filter rules, and strategies for comparing millions of files efficiently."
 keywords:
   - slow folder compare RcloneView

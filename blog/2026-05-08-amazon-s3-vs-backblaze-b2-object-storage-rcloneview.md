@@ -2,7 +2,7 @@
 slug: amazon-s3-vs-backblaze-b2-object-storage-rcloneview
 title: "Amazon S3 vs Backblaze B2 — Object Storage Comparison with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Compare Amazon S3 and Backblaze B2 object storage for backup and archiving workloads, and see how RcloneView makes it easy to use either or both providers."
 keywords:
   - Amazon S3 vs Backblaze B2 comparison

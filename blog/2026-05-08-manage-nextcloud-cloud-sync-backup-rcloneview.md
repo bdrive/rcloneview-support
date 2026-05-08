@@ -2,7 +2,7 @@
 slug: manage-nextcloud-cloud-sync-backup-rcloneview
 title: "Manage Nextcloud Storage — Sync and Backup Files with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Connect your self-hosted or managed Nextcloud instance to RcloneView via WebDAV for GUI-based file management, cross-cloud sync, and automated backups."
 keywords:
   - Nextcloud RcloneView sync

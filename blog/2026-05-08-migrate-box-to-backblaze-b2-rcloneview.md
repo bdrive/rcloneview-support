@@ -2,7 +2,7 @@
 slug: migrate-box-to-backblaze-b2-rcloneview
 title: "Migrate Box to Backblaze B2 — Transfer Files with RcloneView"
 authors:
-  - tayson
+  - steve
 description: "Move your Box cloud storage to Backblaze B2 object storage using RcloneView. A complete guide to migrating files, verifying transfers, and automating future backups."
 keywords:
   - Box to Backblaze B2 migration

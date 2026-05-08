@@ -2,7 +2,7 @@
 slug: fix-cloudflare-r2-upload-errors-rcloneview
 title: "Fix Cloudflare R2 Upload Errors — How to Resolve with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Diagnose and fix Cloudflare R2 upload and sync errors in RcloneView — covering API token permissions, endpoint configuration, multipart upload failures, and rate limit issues."
 keywords:
   - Cloudflare R2 upload errors RcloneView

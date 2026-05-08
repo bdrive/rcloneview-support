@@ -2,7 +2,7 @@
 slug: manage-1fichier-cloud-sync-rcloneview
 title: "Manage 1Fichier Cloud Storage — Sync and Backup Files with RcloneView"
 authors:
-  - tayson
+  - steve
 description: "Connect 1Fichier to RcloneView for GUI-based file management, automated backups, and cross-cloud transfers. Manage your 1Fichier library without command-line tools."
 keywords:
   - 1Fichier RcloneView sync

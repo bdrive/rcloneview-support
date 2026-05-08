@@ -2,7 +2,7 @@
 slug: multi-cloud-cost-optimization-storage-tiers-rcloneview
 title: "Multi-Cloud Cost Optimization — Storage Tiers and Archiving with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Reduce cloud storage costs by tiering data across hot, warm, and cold storage using RcloneView. Move aged files from premium cloud to S3, B2, or Glacier automatically."
 keywords:
   - multi-cloud cost optimization RcloneView

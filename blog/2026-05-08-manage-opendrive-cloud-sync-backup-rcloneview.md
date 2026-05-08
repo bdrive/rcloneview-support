@@ -2,7 +2,7 @@
 slug: manage-opendrive-cloud-sync-backup-rcloneview
 title: "Manage OpenDrive Cloud Storage — Sync and Backup Files with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Connect OpenDrive to RcloneView and manage your files, automate backups, and sync data across clouds with a GUI that requires zero command-line knowledge."
 keywords:
   - OpenDrive cloud storage RcloneView
