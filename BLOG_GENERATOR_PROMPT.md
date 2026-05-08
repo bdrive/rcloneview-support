@@ -260,29 +260,36 @@ CRITICAL FORMAT RULES (DO NOT VIOLATE)
 15. TITLE: Must be in double quotes in frontmatter
 16. EACH POST: Must have 3-5 images distributed throughout the content sections
 17. SLUG: Must NOT include the date prefix — only the topic slug
-18. AUTHORS: Assign author based on the post's position index (1–20) within today's batch.
-    Posts are numbered in the order they are written (first post = 1, second = 2, …).
-    Use this rule (repeating block of 10):
+18. AUTHORS: Assign authors using a strict 8-person round-robin that continues across days.
 
-      block_position = (index - 1) % 10   ← 0-based position within each block of 10
+    ROTATION ORDER (fixed, never changes):
+      Position 0: jay
+      Position 1: steve
+      Position 2: tayson
+      Position 3: kai
+      Position 4: morgan
+      Position 5: casey
+      Position 6: robin
+      Position 7: alex
 
-      block_position 0  → jay
-      block_position 1  → steve
-      block_position 2  → tayson
-      block_position 3–9 → randomly choose one of ALL 8 authors:
-                           jay, steve, tayson, kai, morgan, casey, robin, alex
+    STEP A — Determine today's start index (cross-day continuity):
+      1. List ALL blog/*.md files EXCLUDING today's date, sorted by filename (chronological order)
+      2. Read the MOST RECENT file's frontmatter `authors:` field to get the last author key
+      3. Find that key's position in the rotation order above
+      4. start_index = (last_position + 1) % 8
+      5. If no previous posts exist (first run ever): start_index = 0 (jay)
 
-    Examples for a 20-post batch:
-      Post  1  → jay     (block_position 0, fixed)
-      Post  2  → steve   (block_position 1, fixed)
-      Post  3  → tayson  (block_position 2, fixed)
-      Posts 4–10 → random from all 8 (block_position 3–9)
-      Post 11  → jay     (block_position 0, new block, fixed)
-      Post 12  → steve   (block_position 1, fixed)
-      Post 13  → tayson  (block_position 2, fixed)
-      Posts 14–20 → random from all 8 (block_position 3–9)
+    STEP B — Assign authors to today's posts:
+      Post N (1-based) → rotation[(start_index + N - 1) % 8]
 
-    All 8 keys are valid and defined in blog/authors.yml:
+    EXAMPLE:
+      Yesterday's last post author: morgan (position 4)
+      → start_index = (4 + 1) % 8 = 5
+      → Post 1: casey, Post 2: robin, Post 3: alex, Post 4: jay, Post 5: steve,
+        Post 6: tayson, Post 7: kai, Post 8: morgan, Post 9: casey, Post 10: robin,
+        Post 11: alex, Post 12: jay, …
+
+    All 8 keys are defined in blog/authors.yml:
       jay, steve, tayson, kai, morgan, casey, robin, alex
     Format — exactly one of the following (indented with 2 spaces):
       - jay
