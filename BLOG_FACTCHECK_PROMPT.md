@@ -122,7 +122,7 @@ FORMAT:
 - [ ] No empty lines between frontmatter fields?
 - [ ] Title and description in double quotes?
 - [ ] Slug does NOT include date prefix?
-- [ ] authors: valid key — one of "jay", "steve", or "tayson" (indented with 2 spaces)?
+- [ ] authors: valid key — one of "jay", "steve", "tayson", "kai", "morgan", "casey", "robin", "alex" (indented with 2 spaces)?
 
 For each post:
 - PASS: No issues found — keep as-is

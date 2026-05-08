@@ -269,23 +269,30 @@ CRITICAL FORMAT RULES (DO NOT VIOLATE)
       block_position 0  → jay
       block_position 1  → steve
       block_position 2  → tayson
-      block_position 3–9 → randomly choose one of: jay, steve, tayson
+      block_position 3–9 → randomly choose one of ALL 8 authors:
+                           jay, steve, tayson, kai, morgan, casey, robin, alex
 
     Examples for a 20-post batch:
-      Post  1  → jay     (block_position 0)
-      Post  2  → steve   (block_position 1)
-      Post  3  → tayson  (block_position 2)
-      Posts 4–10 → random (block_position 3–9)
-      Post 11  → jay     (block_position 0, new block)
-      Post 12  → steve   (block_position 1)
-      Post 13  → tayson  (block_position 2)
-      Posts 14–20 → random (block_position 3–9)
+      Post  1  → jay     (block_position 0, fixed)
+      Post  2  → steve   (block_position 1, fixed)
+      Post  3  → tayson  (block_position 2, fixed)
+      Posts 4–10 → random from all 8 (block_position 3–9)
+      Post 11  → jay     (block_position 0, new block, fixed)
+      Post 12  → steve   (block_position 1, fixed)
+      Post 13  → tayson  (block_position 2, fixed)
+      Posts 14–20 → random from all 8 (block_position 3–9)
 
-    All three keys are valid and defined in blog/authors.yml: jay, steve, tayson.
+    All 8 keys are valid and defined in blog/authors.yml:
+      jay, steve, tayson, kai, morgan, casey, robin, alex
     Format — exactly one of the following (indented with 2 spaces):
       - jay
       - steve
       - tayson
+      - kai
+      - morgan
+      - casey
+      - robin
+      - alex
 
 ═══════════════════════════════════════════════════════════════════
 STEP 6: WRITE FILES AND PUSH

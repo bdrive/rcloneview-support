@@ -384,7 +384,7 @@ Final verification checklist before blog publication:
 - [ ] No empty lines between frontmatter fields?
 - [ ] `title` and `description` in double quotes?
 - [ ] `slug` does NOT include the date prefix?
-- [ ] `authors` key is one of the valid values: `jay`, `steve`, or `tayson`?
+- [ ] `authors` key is one of the valid values: `jay`, `steve`, `tayson`, `kai`, `morgan`, `casey`, `robin`, `alex`?
 
 ---
 

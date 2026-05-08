@@ -34,3 +34,63 @@ tayson:
     x: rcloneview
     github: rcloneview
     newsletter: https://rcloneview.com
+
+kai:
+  name: Kai
+  title: Junior Engineer
+  url: https://rcloneview.com
+  image_url: https://avatars.githubusercontent.com/u/17986441?v=4
+  page:
+    permalink: "/all-kai-articles"
+  socials:
+    x: rcloneview
+    github: rcloneview
+    newsletter: https://rcloneview.com
+
+morgan:
+  name: Morgan
+  title: Staff Engineer
+  url: https://rcloneview.com
+  image_url: https://avatars.githubusercontent.com/u/8700442?v=4
+  page:
+    permalink: "/all-morgan-articles"
+  socials:
+    x: rcloneview
+    github: rcloneview
+    newsletter: https://rcloneview.com
+
+casey:
+  name: Casey
+  title: Product Manager
+  url: https://rcloneview.com
+  image_url: https://avatars.githubusercontent.com/u/1301136?v=4
+  page:
+    permalink: "/all-casey-articles"
+  socials:
+    x: rcloneview
+    github: rcloneview
+    newsletter: https://rcloneview.com
+
+robin:
+  name: Robin
+  title: Developer Advocate
+  url: https://rcloneview.com
+  image_url: https://avatars.githubusercontent.com/u/25523?v=4
+  page:
+    permalink: "/all-robin-articles"
+  socials:
+    x: rcloneview
+    github: rcloneview
+    newsletter: https://rcloneview.com
+
+alex:
+  name: Alex
+  title: Principal Engineer
+  url: https://rcloneview.com
+  image_url: https://avatars.githubusercontent.com/u/48327?v=4
+  page:
+    permalink: "/all-alex-articles"
+  socials:
+    x: rcloneview
+    github: rcloneview
+    newsletter: https://rcloneview.com
