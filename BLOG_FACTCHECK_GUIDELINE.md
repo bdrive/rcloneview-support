@@ -374,6 +374,18 @@ Final verification checklist before blog publication:
 - [ ] For Arch Linux posts: Is installation via direct download (NOT AUR)?
 - [ ] For server/NAS posts: Is it clear to install rclone (not RcloneView) on the server?
 
+**Format & Frontmatter:**
+- [ ] All 3 imports present? (`CloudSupportGrid`, `cloudIcons`, `RvCta`)
+- [ ] `<RvCta />` immediately after the intro paragraph?
+- [ ] `<!-- truncate -->` immediately after `<RvCta />`?
+- [ ] `<CloudSupportGrid />` as the very last line?
+- [ ] 3–5 images using HTML `<img>` with `class="img-large img-center"`?
+- [ ] Image paths from the approved list only? (See Generator Prompt Rule 3)
+- [ ] No empty lines between frontmatter fields?
+- [ ] `title` and `description` in double quotes?
+- [ ] `slug` does NOT include the date prefix?
+- [ ] `authors` key is one of the valid values: `jay`, `steve`, or `tayson`?
+
 ---
 
 ## 8. Safe Descriptions
