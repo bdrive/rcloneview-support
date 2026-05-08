@@ -47,7 +47,7 @@ Agencies that deliver large video files to clients often store them in S3 or Clo
 
 A 30-person agency running active projects can't afford to lose a day of work to an accidental deletion or provider outage. RcloneView's scheduled sync jobs (PLUS license) let you set up automatic nightly backups from your primary working storage to a secondary archive. For example, sync Dropbox Business → Backblaze B2 every night at 2 AM, and Google Drive Shared Drives → Amazon S3 Glacier every Sunday.
 
-The 4-step job wizard lets you configure file filters to exclude temporary files, set maximum file age to avoid re-syncing old archives, and choose transfer concurrency to balance speed against API rate limits. Job completion notifications via email or Slack (PLUS) mean someone gets pinged immediately if a backup fails.
+The 4-step job wizard lets you configure file filters to exclude temporary files, set maximum file age to avoid re-syncing old archives, and choose transfer concurrency to balance speed against API rate limits. Job completion notifications mean someone gets pinged immediately if a backup fails.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling nightly asset backup jobs for creative agency workflow" class="img-large img-center" />
 

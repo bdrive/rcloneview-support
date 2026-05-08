@@ -53,11 +53,11 @@ Start with a **Dry Run** to preview which files will be migrated and catch any p
 
 ## Monitoring and Verifying the Transfer
 
-The **Transferring tab** shows real-time progress including transfer speed, file count, and bytes moved. Storj's global node network typically delivers good throughput for parallel transfers — use 8–16 concurrent file transfers for large migrations if your internet connection supports it.
+The **Transferring tab** shows live transfer progress including transfer speed, file count, and bytes moved. For large migrations, use 8–16 concurrent file transfers if your internet connection supports it.
 
 After the migration completes, run a **Folder Compare** between the OneDrive source and Storj destination to confirm every file arrived correctly. Check the **Job History** for the final transfer summary and status.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time monitoring of OneDrive to Storj transfer" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring of OneDrive to Storj transfer" class="img-large img-center" />
 
 ## Getting Started
 

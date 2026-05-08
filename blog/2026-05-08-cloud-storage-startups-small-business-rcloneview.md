@@ -47,7 +47,7 @@ The **Remote Manager** lists all your configured providers, and you can add as m
 
 Many small businesses skip regular cloud backups because setting up automation feels complex. RcloneView's Job Manager makes it accessible: a 4-step wizard guides you through picking source and destination, configuring transfer settings, and — with a PLUS license — scheduling the job on a crontab timer.
 
-A SaaS startup with a 5TB Google Drive Shared Drive, for example, can configure a nightly Sync job to Backblaze B2 in about 10 minutes. The first run does a full copy; subsequent runs are incremental, transferring only changed files. Email or Slack notifications (PLUS) alert the team if a backup fails, so nothing slips through unnoticed.
+A SaaS startup with a 5TB Google Drive Shared Drive, for example, can configure a nightly Sync job to Backblaze B2 in about 10 minutes. The first run does a full copy; subsequent runs are incremental, transferring only changed files. Job completion notifications alert the team if a backup fails, so nothing slips through unnoticed.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling automated cloud backups for a small business" class="img-large img-center" />
 

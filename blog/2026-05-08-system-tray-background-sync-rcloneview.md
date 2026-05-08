@@ -54,7 +54,7 @@ This is particularly valuable for professionals who keep several cloud drives mo
 
 When a sync job finishes — whether scheduled or manually triggered — RcloneView can display a desktop notification showing the job name, duration, and final status. Enable this in **Settings tab → Interfaces & Notifications → Show sync completion notification**.
 
-For PLUS users who have email or Slack notifications configured, job completion alerts also land in your inbox or Slack channel. This means you can kick off a large overnight backup job, put your computer to sleep (or minimize RcloneView to the tray), and receive a confirmation notification when you wake up. If the job errored, you'll know immediately.
+This means you can kick off a large overnight backup job, minimize RcloneView to the tray, and receive a desktop notification when the job completes. If the job errored, you'll know immediately.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Job history showing background sync completions in RcloneView" class="img-large img-center" />
 

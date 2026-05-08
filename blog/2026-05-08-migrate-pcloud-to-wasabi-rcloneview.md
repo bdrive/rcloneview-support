@@ -53,7 +53,7 @@ Set transfer concurrency to match your network capacity (8–16 is a common star
 
 ## Monitoring Progress and Verifying Completion
 
-The **Transferring** tab shows live progress: files transferred, total size, and current throughput. Wasabi's high-performance S3 infrastructure typically delivers excellent speeds for large-scale transfers, so you should see good utilization of your available bandwidth.
+The **Transferring** tab shows live progress: files transferred, total size, and current throughput.
 
 After the job completes, check the **Job History** tab for a full summary. Then use RcloneView's **Folder Compare** feature to run a final side-by-side comparison between pCloud and Wasabi — filter to show only left-only or different files to confirm nothing was missed. If the compare comes back clean, your migration is complete.
 
