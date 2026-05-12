@@ -2,7 +2,7 @@
 
 > **Routine:** Blog Fact-Checker — Cloud Routine
 > **Trigger:** API (Generator 완료 시 자동 호출)
-> **Model:** Sonnet 4.6
+> **Model:** Opus 4.7
 > **Repositories:** bdrive/rcloneview-support + bdrive/rcloneview_www (둘 다 등록)
 > **Last Updated:** 2026-05-08
 

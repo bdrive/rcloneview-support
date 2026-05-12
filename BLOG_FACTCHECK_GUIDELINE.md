@@ -385,6 +385,17 @@ Final verification checklist before blog publication:
 - [ ] `title` and `description` in double quotes?
 - [ ] `slug` does NOT include the date prefix?
 - [ ] `authors` key is one of the valid values: `jay`, `steve`, `tayson`, `kai`, `morgan`, `casey`, `robin`, `alex`?
+- [ ] round-robin order check (state-file based, Generator Rule 18 STEP A–C):
+      1. Read `blog/.rotation-state` from master branch — value LAST_POS (0–7).
+      2. New posts on this branch must be assigned authors in sequence:
+         - Post 1 → rotation[(LAST_POS + 1) % 8]
+         - Post 2 → rotation[(LAST_POS + 2) % 8]
+         - ... etc.
+      3. Verify `blog/.rotation-state` on the Generator's branch was
+         updated to the last position used (Generator STEP C).
+      4. Violations → FAIL.
+      Example: master's .rotation-state = 4 → today's Post 1 = position 5
+      (casey), Post 2 = position 6 (robin). Updated state file = 6.
 
 ---
 

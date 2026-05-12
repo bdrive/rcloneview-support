@@ -2,7 +2,7 @@
 
 > **Routine:** Blog Generator — Cloud Routine
 > **Trigger:** Schedule (Daily 09:00 AM KST)
-> **Model:** Sonnet 4.6
+> **Model:** Opus 4.7
 > **Repository:** bdrive/rcloneview-support
 > **Last Updated:** 2026-05-08
 
@@ -272,22 +272,42 @@ CRITICAL FORMAT RULES (DO NOT VIOLATE)
       Position 6: robin
       Position 7: alex
 
-    STEP A — Determine today's start index (cross-day continuity):
-      1. List ALL blog/*.md files EXCLUDING today's date, sorted by filename (chronological order)
-      2. Read the MOST RECENT file's frontmatter `authors:` field to get the last author key
-      3. Find that key's position in the rotation order above
-      4. start_index = (last_position + 1) % 8
-      5. If no previous posts exist (first run ever): start_index = 0 (jay)
+    STEP A — Determine today's start index (state-file based):
+      1. Read `blog/.rotation-state` — a tracked file containing a single
+         integer 0–7 representing the LAST rotation position used.
+      2. If file exists and content is a valid integer 0–7:
+           start_index = (last_position + 1) % 8
+      3. If file doesn't exist (bootstrap / first ever run):
+           BOOTSTRAP heuristic:
+           - List all blog/*.md files with a rotation-eligible author.
+           - Sort by pubDate (from filename `YYYY-MM-DD-...`) descending;
+             within ties, sort by author rotation position DESCENDING.
+           - Pick the first (= the post probably assigned last in the
+             most recent batch).
+           - start_index = (that_post_position + 1) % 8
+           - If no rotation-eligible posts exist: start_index = 0 (jay).
 
     STEP B — Assign authors to today's posts:
       Post N (1-based) → rotation[(start_index + N - 1) % 8]
 
+    STEP C — Update state file at end (CRITICAL — do BEFORE git push):
+      last_position = (start_index + N - 1) % 8
+      echo "<last_position>" > blog/.rotation-state
+
+      The state file must be committed alongside the new posts so the
+      NEXT routine run reads the correct value.
+
+    Why state-file based: explicit state is the only way to handle
+    wrap-around correctly. Counting posts or sorting by filename are
+    both fragile heuristics. The state file is one integer in a tracked
+    file — minimum overhead, maximum reliability.
+
     EXAMPLE:
-      Yesterday's last post author: morgan (position 4)
-      → start_index = (4 + 1) % 8 = 5
-      → Post 1: casey, Post 2: robin, Post 3: alex, Post 4: jay, Post 5: steve,
-        Post 6: tayson, Post 7: kai, Post 8: morgan, Post 9: casey, Post 10: robin,
-        Post 11: alex, Post 12: jay, …
+      blog/.rotation-state = 4 (last used: morgan)
+      → start_index = 5 (casey)
+      → Post 1: casey, Post 2: robin
+      → Update blog/.rotation-state = 6 (robin)
+      Next day reads 6 → start = 7 (alex)
 
     All 8 keys are defined in blog/authors.yml:
       jay, steve, tayson, kai, morgan, casey, robin, alex

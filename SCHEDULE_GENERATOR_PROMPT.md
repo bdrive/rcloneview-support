@@ -1,7 +1,7 @@
 # Blog Generator — Scheduled Task Prompt
 
 > **Schedule:** Daily 09:00 AM
-> **Model:** Sonnet 4.6
+> **Model:** Opus 4.7
 > **Folder:** C:\workspace\bdrive\source\rcloneview-support
 > **Role:** Feature Spec 기반으로 블로그 2개 생성
 
