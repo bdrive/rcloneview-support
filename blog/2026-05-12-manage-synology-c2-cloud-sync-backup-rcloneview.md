@@ -64,7 +64,7 @@ Before the first live sync, run the built-in Dry Run. It shows exactly which fil
 
 ## Scheduling Automated Backups (PLUS License)
 
-For hands-free data protection, RcloneView's PLUS license unlocks crontab-style scheduling. Set a Synology C2 sync job to run nightly, weekly, or at any custom interval by filling in the Minute, Hour, and Day-of-Week fields in the Schedule step of the job wizard. RcloneView executes the transfer at the configured time and logs the result in Job History. Email, Telegram, Slack, or Discord notifications can alert you the moment a job completes or encounters an error — giving you confidence that backups are running even when you're away from the machine.
+For hands-free data protection, RcloneView's PLUS license unlocks crontab-style scheduling. Set a Synology C2 sync job to run nightly, weekly, or at any custom interval by filling in the Minute, Hour, and Day-of-Week fields in the Schedule step of the job wizard. RcloneView executes the transfer at the configured time and logs the result in Job History — giving you a full audit trail to verify that backups ran and confirming exactly which files were transferred, even when you're away from the machine.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling a Synology C2 backup job in RcloneView" class="img-large img-center" />
 

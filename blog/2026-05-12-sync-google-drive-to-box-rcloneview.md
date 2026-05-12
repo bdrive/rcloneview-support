@@ -64,7 +64,7 @@ Before the first live run, use the Dry Run option to preview exactly which files
 
 ## Automating with Scheduled Sync (PLUS License)
 
-With a PLUS license, you can schedule the Google Drive → Box sync to run automatically on any crontab interval — every night at midnight, every Monday morning, or at a custom cadence your IT policy requires. Fill in the Minute, Hour, and Day-of-Week fields in the Schedule step of the job wizard, then enable Slack or email notifications so your compliance team is alerted the moment a sync completes or encounters an error.
+With a PLUS license, you can schedule the Google Drive → Box sync to run automatically on any crontab interval — every night at midnight, every Monday morning, or at a custom cadence your IT policy requires. Fill in the Minute, Hour, and Day-of-Week fields in the Schedule step of the job wizard. Every run is recorded in Job History with timestamps and status codes, so your compliance team can audit exactly when syncs ran and whether they succeeded.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling a Google Drive to Box automated sync in RcloneView" class="img-large img-center" />
 
