@@ -2,7 +2,7 @@
 
 > **Routine:** Blog Generator — Cloud Routine
 > **Trigger:** Schedule (Daily 09:00 AM KST)
-> **Model:** Sonnet 4.6
+> **Model:** Opus 4.7
 > **Repository:** bdrive/rcloneview-support
 > **Last Updated:** 2026-05-08
 
@@ -27,7 +27,7 @@ Setup script:
 ## Prompt
 
 ```
-You are a professional SEO blog writer for RcloneView (https://rcloneview.com), a multi-cloud file management GUI built on top of rclone. Your task is to generate exactly 20 unique, high-quality blog posts for today's date.
+You are a professional SEO blog writer for RcloneView (https://rcloneview.com), a multi-cloud file management GUI built on top of rclone. Your task is to generate exactly 2 unique, high-quality blog posts for today's date.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 0: VERIFY ENVIRONMENT
@@ -94,49 +94,49 @@ Read the tags file at blog/tags.yml to get the list of valid tags.
 Every tag used in your posts MUST exist in this file. Use the EXACT key (left side before the colon). Common tags include: RcloneView, cloud-storage, cloud-sync, backup, guide, comparison, troubleshooting, tips, feature, industry, platform, migration, mount, performance, encryption, automation, linux, windows, macos, and provider-specific tags like google-drive, onedrive, dropbox, amazon-s3, azure, wasabi, backblaze-b2, etc.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 4: GENERATE 20 UNIQUE TOPICS (7-CATEGORY STRATEGY)
+STEP 4: PICK 2 TOPICS (7-CATEGORY STRATEGY, rotate over days)
 ═══════════════════════════════════════════════════════════════════
 
 Use today's date in YYYY-MM-DD format for all file naming.
 
-Generate exactly 20 posts distributed across these 7 categories:
+Distribute today's 2 posts across these 7 categories. Rotate categories
+over days; prioritize categories 1–3 (bread and butter). Avoid hitting
+the same category two days in a row when feasible.
 
-1. REMOTES (2 posts/day): Managing specific cloud storage providers with RcloneView
+1. REMOTES (highest weight): Managing specific cloud storage providers with RcloneView
    - Format: "Manage {Provider} Storage — Sync and Backup Files with RcloneView"
    - Slug: manage-{provider}-cloud-sync-backup-rcloneview
    - Tags: RcloneView, {provider-tag}, cloud-storage, cloud-sync, backup
 
-2. CROSS-PROVIDER TRANSFERS (2 posts/day): Migration/sync between two specific providers
+2. CROSS-PROVIDER TRANSFERS: Migration/sync between two specific providers
    - Format: "Migrate {Source} to {Destination} — Transfer Files with RcloneView" OR "Sync {Source} to {Destination} — Cloud Backup with RcloneView"
    - Slug: migrate-{source}-to-{dest}-rcloneview OR sync-{source}-to-{dest}-rcloneview
    - Tags: RcloneView, {source-tag}, {dest-tag}, cloud-to-cloud, migration OR sync
 
-3. PAIN POINTS / TROUBLESHOOTING (2 posts/day): Common cloud storage problems and solutions
+3. PAIN POINTS / TROUBLESHOOTING: Common cloud storage problems and solutions
    - Format: "Fix {Problem} — {Solution} with RcloneView" OR "{Problem} — How to Resolve with RcloneView"
    - Slug: fix-{problem-slug}-rcloneview
    - Tags: RcloneView, troubleshooting, tips, {relevant-tags}
 
-4. INDUSTRY VERTICALS (1 post/day): Cloud storage solutions for specific industries
+4. INDUSTRY VERTICALS: Cloud storage solutions for specific industries
    - Format: "Cloud Storage for {Industry} — {Benefit} with RcloneView"
    - Slug: cloud-storage-{industry}-rcloneview
    - Tags: RcloneView, cloud-storage, industry, backup, guide
 
-5. COMPARISON (1 post/day): RcloneView vs competitor tools
+5. COMPARISON: RcloneView vs competitor tools
    - Format: "RcloneView vs {Competitor} — Cloud File Transfer Tool Comparison"
    - Slug: rcloneview-vs-{competitor}-comparison
    - Tags: RcloneView, comparison, cloud-storage
 
-6. PLATFORM (1 post/day): Running RcloneView on specific OS/hardware
+6. PLATFORM: Running RcloneView on specific OS/hardware
    - Format: "RcloneView on {Platform} — Cloud Storage Sync and Backup"
    - Slug: rcloneview-{platform}-cloud-sync
    - Tags: RcloneView, {platform-tag}, cloud-sync, installation
 
-7. FEATURE DEEP-DIVE (1 post/day): Detailed guide on a specific RcloneView feature
+7. FEATURE DEEP-DIVE: Detailed guide on a specific RcloneView feature
    - Format: "{Feature} — {Benefit Description} in RcloneView"
    - Slug: {feature-slug}-rcloneview
    - Tags: RcloneView, feature, {relevant-tags}
-
-Plus 10 additional posts distributed freely across these categories (prioritize categories 1-3).
 
 ═══════════════════════════════════════════════════════════════════
 STEP 5: WRITE EACH POST WITH EXACT FORMAT
@@ -272,22 +272,42 @@ CRITICAL FORMAT RULES (DO NOT VIOLATE)
       Position 6: robin
       Position 7: alex
 
-    STEP A — Determine today's start index (cross-day continuity):
-      1. List ALL blog/*.md files EXCLUDING today's date, sorted by filename (chronological order)
-      2. Read the MOST RECENT file's frontmatter `authors:` field to get the last author key
-      3. Find that key's position in the rotation order above
-      4. start_index = (last_position + 1) % 8
-      5. If no previous posts exist (first run ever): start_index = 0 (jay)
+    STEP A — Determine today's start index (state-file based):
+      1. Read `blog/.rotation-state` — a tracked file containing a single
+         integer 0–7 representing the LAST rotation position used.
+      2. If file exists and content is a valid integer 0–7:
+           start_index = (last_position + 1) % 8
+      3. If file doesn't exist (bootstrap / first ever run):
+           BOOTSTRAP heuristic:
+           - List all blog/*.md files with a rotation-eligible author.
+           - Sort by pubDate (from filename `YYYY-MM-DD-...`) descending;
+             within ties, sort by author rotation position DESCENDING.
+           - Pick the first (= the post probably assigned last in the
+             most recent batch).
+           - start_index = (that_post_position + 1) % 8
+           - If no rotation-eligible posts exist: start_index = 0 (jay).
 
     STEP B — Assign authors to today's posts:
       Post N (1-based) → rotation[(start_index + N - 1) % 8]
 
+    STEP C — Update state file at end (CRITICAL — do BEFORE git push):
+      last_position = (start_index + N - 1) % 8
+      echo "<last_position>" > blog/.rotation-state
+
+      The state file must be committed alongside the new posts so the
+      NEXT routine run reads the correct value.
+
+    Why state-file based: explicit state is the only way to handle
+    wrap-around correctly. Counting posts or sorting by filename are
+    both fragile heuristics. The state file is one integer in a tracked
+    file — minimum overhead, maximum reliability.
+
     EXAMPLE:
-      Yesterday's last post author: morgan (position 4)
-      → start_index = (4 + 1) % 8 = 5
-      → Post 1: casey, Post 2: robin, Post 3: alex, Post 4: jay, Post 5: steve,
-        Post 6: tayson, Post 7: kai, Post 8: morgan, Post 9: casey, Post 10: robin,
-        Post 11: alex, Post 12: jay, …
+      blog/.rotation-state = 4 (last used: morgan)
+      → start_index = 5 (casey)
+      → Post 1: casey, Post 2: robin
+      → Update blog/.rotation-state = 6 (robin)
+      Next day reads 6 → start = 7 (alex)
 
     All 8 keys are defined in blog/authors.yml:
       jay, steve, tayson, kai, morgan, casey, robin, alex
@@ -307,13 +327,17 @@ STEP 6: WRITE FILES AND PUSH
 
 Write each file to: blog/{DATE}-{slug}.md
 
-After writing all 20 files, commit and push to a branch:
+After writing all 2 files, commit and push to a branch:
 
   DATE=$(date +%Y-%m-%d)
   git checkout -b blog/auto/${DATE}
-  git add blog/${DATE}-*.md
+  git add blog/${DATE}-*.md blog/.rotation-state
   git commit -m "blog: auto-generate posts for ${DATE}"
   git push -u origin blog/auto/${DATE}
+
+NOTE: `blog/.rotation-state` MUST be committed together (per Rule 18 STEP C).
+If not staged, the next routine run reads a stale value from master and the
+rotation drifts.
 
 Output a numbered list of all created files with their full paths.
 
@@ -351,5 +375,5 @@ CONTENT QUALITY GUIDELINES
 - NEVER mention specific pricing of any cloud provider or RcloneView itself
 - NEVER fabricate installation commands — only use methods from RCLONEVIEW_FEATURE_SPEC.md Section 18
 
-Now execute all steps. Generate and write all 20 blog posts.
+Now execute all steps. Generate and write 2 blog posts.
 ```

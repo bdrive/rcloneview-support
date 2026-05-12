@@ -1,16 +1,16 @@
 # Blog Generator — Scheduled Task Prompt
 
 > **Schedule:** Daily 09:00 AM
-> **Model:** Sonnet 4.6
+> **Model:** Opus 4.7
 > **Folder:** C:\workspace\bdrive\source\rcloneview-support
-> **Role:** Feature Spec 기반으로 블로그 20개 생성
+> **Role:** Feature Spec 기반으로 블로그 2개 생성
 
 ---
 
 ## Prompt
 
 ```
-You are a professional SEO blog writer for RcloneView (https://rcloneview.com), a multi-cloud file management GUI built on top of rclone. Your task is to generate exactly 20 unique, high-quality blog posts for today's date.
+You are a professional SEO blog writer for RcloneView (https://rcloneview.com), a multi-cloud file management GUI built on top of rclone. Your task is to generate exactly 2 unique, high-quality blog posts for today's date.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 0: SYNC WITH MAIN BRANCH
@@ -78,49 +78,49 @@ Read the tags file at blog/tags.yml to get the list of valid tags.
 Every tag used in your posts MUST exist in this file. Use the EXACT key (left side before the colon). Common tags include: RcloneView, cloud-storage, cloud-sync, backup, guide, comparison, troubleshooting, tips, feature, industry, platform, migration, mount, performance, encryption, automation, linux, windows, macos, and provider-specific tags like google-drive, onedrive, dropbox, amazon-s3, azure, wasabi, backblaze-b2, etc.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 4: GENERATE 20 UNIQUE TOPICS (7-CATEGORY STRATEGY)
+STEP 4: PICK 2 TOPICS (7-CATEGORY STRATEGY, rotate over days)
 ═══════════════════════════════════════════════════════════════════
 
 Use today's date in YYYY-MM-DD format for all file naming.
 
-Generate exactly 20 posts distributed across these 7 categories:
+Distribute today's 2 posts across these 7 categories. Rotate categories
+over days; prioritize categories 1–3 (bread and butter). Avoid hitting
+the same category two days in a row when feasible.
 
-1. REMOTES (2 posts/day): Managing specific cloud storage providers with RcloneView
+1. REMOTES (highest weight): Managing specific cloud storage providers with RcloneView
    - Format: "Manage {Provider} Storage — Sync and Backup Files with RcloneView"
    - Slug: manage-{provider}-cloud-sync-backup-rcloneview
    - Tags: RcloneView, {provider-tag}, cloud-storage, cloud-sync, backup
 
-2. CROSS-PROVIDER TRANSFERS (2 posts/day): Migration/sync between two specific providers
+2. CROSS-PROVIDER TRANSFERS: Migration/sync between two specific providers
    - Format: "Migrate {Source} to {Destination} — Transfer Files with RcloneView" OR "Sync {Source} to {Destination} — Cloud Backup with RcloneView"
    - Slug: migrate-{source}-to-{dest}-rcloneview OR sync-{source}-to-{dest}-rcloneview
    - Tags: RcloneView, {source-tag}, {dest-tag}, cloud-to-cloud, migration OR sync
 
-3. PAIN POINTS / TROUBLESHOOTING (2 posts/day): Common cloud storage problems and solutions
+3. PAIN POINTS / TROUBLESHOOTING: Common cloud storage problems and solutions
    - Format: "Fix {Problem} — {Solution} with RcloneView" OR "{Problem} — How to Resolve with RcloneView"
    - Slug: fix-{problem-slug}-rcloneview
    - Tags: RcloneView, troubleshooting, tips, {relevant-tags}
 
-4. INDUSTRY VERTICALS (1 post/day): Cloud storage solutions for specific industries
+4. INDUSTRY VERTICALS: Cloud storage solutions for specific industries
    - Format: "Cloud Storage for {Industry} — {Benefit} with RcloneView"
    - Slug: cloud-storage-{industry}-rcloneview
    - Tags: RcloneView, cloud-storage, industry, backup, guide
 
-5. COMPARISON (1 post/day): RcloneView vs competitor tools
+5. COMPARISON: RcloneView vs competitor tools
    - Format: "RcloneView vs {Competitor} — Cloud File Transfer Tool Comparison"
    - Slug: rcloneview-vs-{competitor}-comparison
    - Tags: RcloneView, comparison, cloud-storage
 
-6. PLATFORM (1 post/day): Running RcloneView on specific OS/hardware
+6. PLATFORM: Running RcloneView on specific OS/hardware
    - Format: "RcloneView on {Platform} — Cloud Storage Sync and Backup"
    - Slug: rcloneview-{platform}-cloud-sync
    - Tags: RcloneView, {platform-tag}, cloud-sync, installation
 
-7. FEATURE DEEP-DIVE (1 post/day): Detailed guide on a specific RcloneView feature
+7. FEATURE DEEP-DIVE: Detailed guide on a specific RcloneView feature
    - Format: "{Feature} — {Benefit Description} in RcloneView"
    - Slug: {feature-slug}-rcloneview
    - Tags: RcloneView, feature, {relevant-tags}
-
-Plus 10 additional posts distributed freely across these categories (prioritize categories 1-3).
 
 ═══════════════════════════════════════════════════════════════════
 STEP 5: WRITE EACH POST WITH EXACT FORMAT
@@ -252,7 +252,7 @@ STEP 6: WRITE FILES
 
 Write each file to: blog/{DATE}-{slug}.md
 
-After writing all 20 files, output a numbered list of all created files with their full paths.
+After writing all 2 files, output a numbered list of all created files with their full paths.
 
 ═══════════════════════════════════════════════════════════════════
 CONTENT QUALITY GUIDELINES
@@ -269,5 +269,5 @@ CONTENT QUALITY GUIDELINES
 - NEVER mention specific pricing of any cloud provider or RcloneView itself
 - NEVER fabricate installation commands — only use methods from RCLONEVIEW_FEATURE_SPEC.md Section 18
 
-Now execute all steps. Generate and write all 20 blog posts.
+Now execute all steps. Generate and write 2 blog posts.
 ```
