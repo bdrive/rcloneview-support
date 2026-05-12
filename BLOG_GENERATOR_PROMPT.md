@@ -331,9 +331,13 @@ After writing all 2 files, commit and push to a branch:
 
   DATE=$(date +%Y-%m-%d)
   git checkout -b blog/auto/${DATE}
-  git add blog/${DATE}-*.md
+  git add blog/${DATE}-*.md blog/.rotation-state
   git commit -m "blog: auto-generate posts for ${DATE}"
   git push -u origin blog/auto/${DATE}
+
+NOTE: `blog/.rotation-state` MUST be committed together (per Rule 18 STEP C).
+If not staged, the next routine run reads a stale value from master and the
+rotation drifts.
 
 Output a numbered list of all created files with their full paths.
 

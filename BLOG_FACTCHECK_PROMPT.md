@@ -201,13 +201,21 @@ Replace {DATE} with today's date in YYYY-MM-DD format.
 
   cd ../rcloneview-support
   git checkout -b blog/verified/${DATE}
-  git add blog/${DATE}-*.md
+  git add blog/${DATE}-*.md blog/.rotation-state
   git commit -m "blog: verified posts for ${DATE}"
   git push -u origin blog/verified/${DATE}
 
 NOTE: This creates a NEW branch (blog/verified/) separate from the Generator's
 branch (blog/auto/). The verified branch contains the fact-checked versions
 with any fixes applied.
+
+NOTE on `blog/.rotation-state`:
+- Generator set this when writing posts (Generator Rule 18 STEP C).
+- If you classified any post as REMOVE, decrement the state by the number
+  of removed posts (mod 8). The state should reflect the position of the
+  LAST POST THAT SURVIVED (so next day starts at the right slot).
+- If you SWAPPED authors via FIX (same set of positions, different order),
+  state stays as Generator set it.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 7: SUMMARY
