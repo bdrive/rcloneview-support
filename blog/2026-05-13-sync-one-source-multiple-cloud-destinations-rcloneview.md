@@ -2,7 +2,7 @@
 slug: sync-one-source-multiple-cloud-destinations-rcloneview
 title: "1:N Sync — Back Up One Source to Multiple Cloud Destinations with RcloneView"
 authors:
-  - casey
+  - kai
 description: "Use RcloneView's 1:N sync to back up one source folder to multiple cloud destinations simultaneously. Protect your files with redundant multi-cloud backups."
 keywords:
   - 1 to N sync RcloneView
@@ -64,7 +64,7 @@ After execution, the **Job History** tab records start time, duration, total byt
 
 ## Scheduling Automated Multi-Destination Backups
 
-With a PLUS license, attach a cron-style schedule to your 1:N job in Step 4 so it runs automatically at your chosen interval. The **Simulate schedule** button previews upcoming execution times before you save. Once active, RcloneView's system tray integration keeps the job running in the background, and job completion notifications via email or Slack confirm that all destinations received the latest data.
+With a PLUS license, attach a cron-style schedule to your 1:N job in Step 4 so it runs automatically at your chosen interval. The **Simulate schedule** button previews upcoming execution times before you save. Once active, RcloneView's system tray integration keeps the job running in the background, and job completion notifications confirm that all destinations received the latest data.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling 1:N multi-destination backup in RcloneView" class="img-large img-center" />
 

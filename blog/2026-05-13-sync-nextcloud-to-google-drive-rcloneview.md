@@ -2,7 +2,7 @@
 slug: sync-nextcloud-to-google-drive-rcloneview
 title: "Sync Nextcloud to Google Drive — Migrate and Back Up Files with RcloneView"
 authors:
-  - morgan
+  - tayson
 description: "Learn how to sync Nextcloud to Google Drive with RcloneView. Transfer files from your self-hosted Nextcloud server to Google Drive with full automation support."
 keywords:
   - Nextcloud to Google Drive sync
@@ -64,7 +64,7 @@ Before running the job live, use the **Dry Run** option from the Job Manager to 
 
 ## Automating the Sync on a Schedule
 
-Once you've validated the dry run, save the job and — with a PLUS license — attach a schedule in Step 4. A nightly cron-style schedule keeps your Google Drive copy current with each day's changes on Nextcloud without manual intervention. Enable sync completion notifications via email or Slack so your team gets confirmation each run succeeds.
+Once you've validated the dry run, save the job and — with a PLUS license — attach a schedule in Step 4. A nightly cron-style schedule keeps your Google Drive copy current with each day's changes on Nextcloud without manual intervention. Sync completion notifications alert you when each scheduled run succeeds.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling automated Nextcloud to Google Drive sync in RcloneView" class="img-large img-center" />
 
