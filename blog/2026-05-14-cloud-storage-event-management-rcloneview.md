@@ -2,7 +2,7 @@
 slug: cloud-storage-event-management-rcloneview
 title: "Cloud Storage for Event Management — Organize and Backup Media with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "Discover how event planners use RcloneView to sync, backup, and organize event photos, videos, and documents across multiple cloud storage providers with automated scheduled jobs."
 keywords:
   - cloud storage event management

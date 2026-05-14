@@ -2,7 +2,7 @@
 slug: sync-dropbox-to-google-drive-rcloneview
 title: "Sync Dropbox to Google Drive — Automate Cloud Backups with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Learn how to sync Dropbox to Google Drive automatically with RcloneView. Set up recurring cloud-to-cloud backup jobs with scheduling, filtering, and live transfer monitoring."
 keywords:
   - sync Dropbox to Google Drive
@@ -61,7 +61,7 @@ Step 4 is where the automation happens. With a **PLUS license**, set a cron-styl
 
 ## Monitor Live Transfers and Review History
 
-Once your job runs, the **Transferring tab** at the bottom of the app shows real-time progress: file count, transfer speed, total data moved, and a cancel button if you need to halt mid-run. For a creative agency syncing 80 GB of project archives from Dropbox to Google Drive, you can watch each file's status tick by in real time.
+Once your job runs, the **Transferring tab** at the bottom of the app shows live transfer progress: file count, transfer speed, total data moved, and a cancel button if you need to halt mid-run. For a creative agency syncing 80 GB of project archives from Dropbox to Google Drive, you can watch each file's status tick by as transfers complete.
 
 <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time transfer monitoring for Dropbox to Google Drive sync" class="img-large img-center" />
 
