@@ -61,7 +61,7 @@ Animation studios typically operate across multiple cloud providers simultaneous
 
 For final deliverable packages — a ProRes master, a DCP, or a high-resolution texture archive — use the **Folder Compare** feature to verify the delivered copy matches the source before confirming receipt. RcloneView displays a side-by-side diff showing which files are identical, different in size, or present on only one side, replacing the unreliable manual spot-checks most studios depend on today.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time transfer monitoring while syncing animation assets to cloud storage in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring while syncing animation assets to cloud storage in RcloneView" class="img-large img-center" />
 
 ## Archiving Completed Productions with Encryption
 
@@ -76,7 +76,7 @@ For encryption-sensitive archives (client-owned IP, licensed character rigs), pa
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html).
 2. Add your cloud storage providers (Google Drive, Wasabi, Backblaze B2, etc.) via **Remote tab > New Remote**.
 3. Set up render-output sync jobs in the **Job Manager** with file-type filters targeting image sequence formats.
-4. Enable scheduling (PLUS license) to run nightly archive jobs automatically while the render farm is idle.
+4. Enable scheduling (PLUS license) to run nightly archive jobs at a set time while the render farm is idle.
 
 Centralizing cloud storage management inside RcloneView lets production teams focus on the creative work — not on coordinating file transfers across a patchwork of storage providers.
 
