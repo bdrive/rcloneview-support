@@ -53,7 +53,7 @@ Before running the full transfer, use the Dry Run feature to preview exactly whi
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud sync job between Google Photos and Google Drive in RcloneView" class="img-large img-center" />
 
-The Transferring tab at the bottom of the screen monitors the active job in real time—progress percentage, current transfer speed, and file counts—so you can track a large photo migration without guessing how much is left.
+The Transferring tab at the bottom of the screen provides live transfer monitoring—progress percentage, current transfer speed, and file counts—so you can track a large photo migration without guessing how much is left.
 
 ## Scheduling Automatic Photo Syncs (PLUS License)
 
