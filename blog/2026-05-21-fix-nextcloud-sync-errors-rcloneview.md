@@ -2,7 +2,7 @@
 slug: fix-nextcloud-sync-errors-rcloneview
 title: "Fix Nextcloud Sync Errors — Resolve WebDAV and Authentication Issues with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "Troubleshoot Nextcloud sync errors in RcloneView — fix WebDAV authentication failures, 423 file lock conflicts, SSL errors, and slow transfer timeouts."
 keywords:
   - fix Nextcloud sync errors
@@ -53,7 +53,7 @@ Nextcloud uses server-side file locking to prevent concurrent modifications, and
 
 The most reliable fix is timing: schedule RcloneView sync jobs for off-peak hours — overnight or during predictable low-activity windows — using the PLUS license scheduler. In the job's **Advanced Settings**, reduce the number of simultaneous file transfers. Fewer parallel transfers means fewer concurrent lock requests, and transient locks clear faster when RcloneView is not hammering the server from every direction at once.
 
-RcloneView retries failed operations automatically up to your configured retry count (default: 3). After a job completes, check **Job History** to see whether any files show an Errored status. If the error count is small, a manual re-run of the sync job will resolve remaining lock conflicts once the affected files are closed.
+RcloneView retries failed operations up to your configured retry count (default: 3). After a job completes, check **Job History** to see whether any files show an Errored status. If the error count is small, a manual re-run of the sync job will resolve remaining lock conflicts once the affected files are closed.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Reviewing Nextcloud sync job history and error details in RcloneView" class="img-large img-center" />
 

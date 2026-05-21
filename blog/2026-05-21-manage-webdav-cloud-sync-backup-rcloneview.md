@@ -2,7 +2,7 @@
 slug: manage-webdav-cloud-sync-backup-rcloneview
 title: "Manage WebDAV Server Storage — Sync and Backup Files with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Connect, sync, and back up any WebDAV server with RcloneView. Manage Nextcloud, ownCloud, and enterprise WebDAV endpoints alongside 90+ cloud providers."
 keywords:
   - WebDAV sync RcloneView
@@ -59,7 +59,7 @@ The Dry Run feature is worth using before any first sync: it lists exactly which
 
 Manual sync runs cover immediate transfers, but scheduled automation is what makes WebDAV backup dependable. With a PLUS license, RcloneView's crontab-style scheduler lets you configure jobs to run nightly, hourly, or on any custom interval. The schedule simulator previews the next ten execution times before you save, so there are no surprises about when backups fire.
 
-Job History tracks every run's outcome: start time, duration, transfer speed, file count, and status (Completed / Errored / Canceled). If a scheduled job encounters a transient network failure, RcloneView retries up to your configured retry count automatically. For organizations managing large Nextcloud or ownCloud deployments, this produces a reliable audit trail without manual monitoring.
+Job History tracks every run's outcome: start time, duration, transfer speed, file count, and status (Completed / Errored / Canceled). If a scheduled job encounters a transient network failure, RcloneView retries up to your configured retry count before marking the job as errored. For organizations managing large Nextcloud or ownCloud deployments, this produces a reliable audit trail without manual monitoring.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Setting up a scheduled sync job from WebDAV to cloud storage in RcloneView" class="img-large img-center" />
 
