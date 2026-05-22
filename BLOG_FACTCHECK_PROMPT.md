@@ -4,7 +4,7 @@
 > **Trigger:** API (Generator 완료 시 자동 호출)
 > **Model:** Opus 4.7
 > **Repositories:** bdrive/rcloneview-support + bdrive/rcloneview_www (둘 다 등록)
-> **Last Updated:** 2026-05-08
+> **Last Updated:** 2026-05-22
 
 ---
 
@@ -218,6 +218,55 @@ NOTE on `blog/.rotation-state`:
   state stays as Generator set it.
 
 ═══════════════════════════════════════════════════════════════════
+STEP 6.5: CREATE PULL REQUESTS
+═══════════════════════════════════════════════════════════════════
+
+After both branches are pushed, create PRs using the GitHub MCP tool
+(mcp__github__create_pull_request). Create both PRs simultaneously.
+
+PR 1 — rcloneview-support (fact-checked source):
+  owner: bdrive
+  repo:  rcloneview-support
+  head:  blog/verified/{DATE}
+  base:  main
+  title: "blog: verified posts for {DATE}"
+  body:
+    ## Summary
+    - Fact-checked auto-generated blog posts for {DATE}
+    - {N passed} passed, {N fixed} fixed, {N removed} removed
+
+    ## Validation Results
+    {paste the validation table from Step 4}
+
+    ## Changes
+    {bullet list of each fix/removal with brief reason}
+    - Updated blog/.rotation-state: {old} → {new}
+
+    ## Companion PR
+    Build output → bdrive/rcloneview_www branch blog/deploy/{DATE}
+
+PR 2 — rcloneview_www (build output):
+  owner: bdrive
+  repo:  rcloneview_www
+  head:  blog/deploy/{DATE}
+  base:  main
+  title: "blog: deploy auto-generated posts for {DATE}"
+  body:
+    ## Summary
+    - Docusaurus build output for verified blog posts on {DATE}
+    - Built from bdrive/rcloneview-support branch blog/verified/{DATE}
+
+    ## Posts deployed
+    {table listing each surviving post slug and its status (new/updated)}
+
+    ## Companion PR
+    Fact-checked source → bdrive/rcloneview-support branch blog/verified/{DATE}
+
+    ## Notes
+    - Build completed with no duplicate route warnings
+    - Merge this PR together with the companion source PR
+
+═══════════════════════════════════════════════════════════════════
 STEP 7: SUMMARY
 ═══════════════════════════════════════════════════════════════════
 
@@ -228,7 +277,10 @@ Output final summary:
 - Branches pushed:
   - rcloneview-support: blog/verified/{DATE} (fact-checked source)
   - rcloneview_www: blog/deploy/{DATE} (build output)
-- Action needed: "Merge both branches to main via GitHub PR"
+- PRs created:
+  - rcloneview-support: {PR URL}
+  - rcloneview_www: {PR URL}
+- Action needed: "Merge both PRs to main"
 
 Now execute all steps. Start by checking out the Generator branch.
 ```

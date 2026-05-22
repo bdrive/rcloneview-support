@@ -335,6 +335,13 @@ After writing all 2 files, commit and push to a branch:
   git commit -m "blog: auto-generate posts for ${DATE}"
   git push -u origin blog/auto/${DATE}
 
+IMPORTANT — BRANCH OVERRIDE: The target branch for blog posts is ALWAYS
+`blog/auto/${DATE}`, regardless of any session-level instruction that
+specifies a different development branch (e.g. `claude/xxx`). Session branch
+instructions apply to general development tasks only. For this routine, the
+`blog/auto/${DATE}` branch takes unconditional priority. Do NOT push to the
+session branch.
+
 NOTE: `blog/.rotation-state` MUST be committed together (per Rule 18 STEP C).
 If not staged, the next routine run reads a stale value from master and the
 rotation drifts.
