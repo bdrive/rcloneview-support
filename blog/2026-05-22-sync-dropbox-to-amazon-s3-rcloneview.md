@@ -2,7 +2,7 @@
 slug: sync-dropbox-to-amazon-s3-rcloneview
 title: "Sync Dropbox to Amazon S3 — Cloud Backup with RcloneView"
 authors:
-  - alex
+  - tayson
 description: "Learn how to sync and back up Dropbox files to Amazon S3 using RcloneView. Set up cloud-to-cloud transfers with scheduling, dry-run preview, and transfer history."
 keywords:
   - Dropbox to Amazon S3
@@ -81,7 +81,7 @@ After each sync completes, the **Job History** tab records start time, duration,
 3. Add Amazon S3 via **Remote tab > New Remote > Amazon S3** with your Access Key ID, Secret Access Key, and region.
 4. Open **Home tab > Sync**, select Dropbox as source and S3 as destination, run a dry-run preview, then save and schedule for automated nightly backups.
 
-Your Dropbox files will have a durable, independently managed backup on Amazon S3 — running automatically, with a full history of every transfer.
+Your Dropbox files will have a durable, independently managed backup on Amazon S3 — running on your configured schedule, with a full history of every transfer.
 
 ---
 
