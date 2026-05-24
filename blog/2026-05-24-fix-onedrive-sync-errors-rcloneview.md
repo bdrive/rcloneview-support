@@ -2,7 +2,7 @@
 slug: fix-onedrive-sync-errors-rcloneview
 title: "Fix OneDrive Sync Errors — How to Resolve with RcloneView"
 authors:
-  - robin
+  - tayson
 description: "Diagnose and fix common Microsoft OneDrive sync errors in RcloneView — from expired OAuth tokens and rate limits to stalled transfers and checksum mismatches."
 keywords:
   - onedrive sync errors rcloneview
