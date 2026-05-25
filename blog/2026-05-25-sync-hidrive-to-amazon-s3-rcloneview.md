@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 # Sync HiDrive to Amazon S3 — Cloud Backup with RcloneView
 
-> Back up your HiDrive storage to Amazon S3 using RcloneView's visual sync tools — no CLI required, with scheduling, filtering, and real-time transfer monitoring built in.
+> Back up your HiDrive storage to Amazon S3 using RcloneView's visual sync tools — no CLI required, with scheduling, filtering, and live transfer monitoring built in.
 
 HiDrive, Strato's European cloud platform, is popular with businesses that prioritize GDPR-compliant storage. Amazon S3, meanwhile, is the benchmark for object storage durability and ecosystem integration — a natural secondary backup destination for anything mission-critical. Using RcloneView, you can connect both providers in a single interface and run automated, filtered sync jobs that keep your S3 buckets aligned with your HiDrive folders without writing a single command.
 
