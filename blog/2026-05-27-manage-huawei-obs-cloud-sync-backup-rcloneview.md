@@ -61,7 +61,7 @@ Run the dry-run simulation before the first live execution—RcloneView shows ex
 
 With a RcloneView PLUS license, your Huawei OBS backup runs on autopilot using crontab-style scheduling. Configure a nightly differential backup at 02:00 every weekday, a weekly full-bucket sync on Sundays, or any cadence that matches your data lifecycle. The schedule simulator in the wizard previews the next five execution times so you can verify the pattern before committing.
 
-Job history provides a full audit trail for every run—start time, duration, transfer speed, file count, total size transferred, and final status (Completed, Errored, or Canceled). For a team managing compliance archiving across multiple OBS regions, this log doubles as documentation for internal audits. PLUS license holders can also configure email, Slack, or Telegram notifications so the right people are alerted the moment a job completes or fails.
+Job history provides a full audit trail for every run—start time, duration, transfer speed, file count, total size transferred, and final status (Completed, Errored, or Canceled). For a team managing compliance archiving across multiple OBS regions, this log doubles as documentation for internal audits. PLUS license holders can also configure job completion notifications so the right people are alerted the moment a job completes or fails.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling automated Huawei OBS sync jobs in RcloneView" class="img-large img-center" />
 

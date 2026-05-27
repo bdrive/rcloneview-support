@@ -55,13 +55,13 @@ In the Advanced Settings step, configure concurrent transfers to match your conn
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="OneDrive to Hetzner Storage Box sync job configuration in RcloneView" class="img-large img-center" />
 
-Run a dry-run simulation first—RcloneView shows exactly which files would be copied or removed without making any changes. Once satisfied with the preview, execute the job. The **Transferring** tab at the bottom displays real-time progress, transfer speed, and file count throughout the run.
+Run a dry-run simulation first—RcloneView shows exactly which files would be copied or removed without making any changes. Once satisfied with the preview, execute the job. The **Transferring** tab at the bottom displays live transfer progress, transfer speed, and file count throughout the run.
 
 ## Scheduling and Monitoring Automated Backups
 
 With a RcloneView PLUS license, automate your OneDrive-to-Hetzner backup on a crontab schedule. Setting a daily sync at 03:00 AM ensures your OneDrive files are backed up to Hetzner each night without manual intervention. The schedule simulator in the wizard previews the next execution times so you can confirm the pattern before saving the job.
 
-Job history keeps a full audit log—each run records its start time, duration, transfer speed, file count, and outcome. If a backup fails due to a transient network issue, RcloneView's configurable retry logic attempts the job again automatically. Pair this with email, Slack, or Telegram notifications (available with PLUS) and your team gets alerted to any failures before the next business day begins—so no backup window goes silently unnoticed.
+Job history keeps a full audit log—each run records its start time, duration, transfer speed, file count, and outcome. If a backup fails due to a transient network issue, RcloneView's configurable retry logic attempts the job again automatically. With job completion notifications (available with PLUS), your team gets alerted to any failures before the next business day begins—so no backup window goes silently unnoticed.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling daily OneDrive to Hetzner Storage Box sync in RcloneView" class="img-large img-center" />
 
