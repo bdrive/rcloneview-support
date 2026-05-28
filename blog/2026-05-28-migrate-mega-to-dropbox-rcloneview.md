@@ -2,7 +2,7 @@
 slug: migrate-mega-to-dropbox-rcloneview
 title: "Migrate MEGA to Dropbox — Transfer Files with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Move all your files from MEGA to Dropbox with RcloneView's cloud-to-cloud GUI — no downloads, no re-uploads, and no command line required. Verify with Folder Compare."
 keywords:
   - migrate MEGA to Dropbox

@@ -2,7 +2,7 @@
 slug: manage-vultr-object-storage-cloud-sync-backup-rcloneview
 title: "Manage Vultr Object Storage — Sync and Backup Files with RcloneView"
 authors:
-  - steve
+  - alex
 description: "Connect Vultr Object Storage to RcloneView and manage your S3-compatible buckets with a GUI — sync, backup, mount, and automate transfers without any CLI."
 keywords:
   - Vultr Object Storage
@@ -32,7 +32,7 @@ import RvCta from '../src/components/RvCta';
 
 > RcloneView connects to Vultr Object Storage's S3-compatible API, giving you a full GUI for browsing buckets, scheduling backups, and mounting cloud storage as a local drive.
 
-Vultr Object Storage is an S3-compatible object storage service built on the Vultr cloud infrastructure, favored by developers and infrastructure teams who need globally distributed, cost-efficient storage alongside Vultr's compute offerings. While the service is straightforward to configure programmatically, managing files day-to-day through the CLI or writing custom scripts is friction most teams want to avoid. RcloneView resolves this by treating Vultr buckets exactly like any other remote — you browse them in a split-pane file explorer, set up recurring sync jobs through a wizard, and monitor transfers in real time without writing a single rclone command.
+Vultr Object Storage is an S3-compatible object storage service built on the Vultr cloud infrastructure, favored by developers and infrastructure teams who need globally distributed, cost-efficient storage alongside Vultr's compute offerings. While the service is straightforward to configure programmatically, managing files day-to-day through the CLI or writing custom scripts is friction most teams want to avoid. RcloneView resolves this by treating Vultr buckets exactly like any other remote — you browse them in a split-pane file explorer, set up recurring sync jobs through a wizard, and monitor transfers live without writing a single rclone command.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -52,11 +52,11 @@ RcloneView can display up to four Explorer panels simultaneously, which is usefu
 
 Automated backup jobs in RcloneView follow a 4-step wizard. Select your source — a local folder, an external drive, or another cloud remote — and choose the Vultr bucket as the destination. Name the job, pick one-way sync to mirror data into Vultr, then configure filtering and advanced options. Increasing the concurrent transfer count speeds throughput for workloads like a software team backing up nightly build artifacts (hundreds of small files). Enabling checksum comparison ensures every file arrives byte-for-byte identical, which matters when archiving compiled binaries or database dumps.
 
-Before the first live run, click **Dry Run** to preview the full list of files that would be transferred or removed. This safety check prevents unexpected deletions in shared buckets. Once satisfied, click **Run** — the Transferring tab at the bottom of RcloneView shows file count, transfer speed, and total bytes in real time.
+Before the first live run, click **Dry Run** to preview the full list of files that would be transferred or removed. This safety check prevents unexpected deletions in shared buckets. Once satisfied, click **Run** — the Transferring tab at the bottom of RcloneView shows file count, transfer speed, and total bytes with live updates.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a sync job to Vultr Object Storage in RcloneView" class="img-large img-center" />
 
-RcloneView PLUS users can schedule jobs with crontab-style rules — for example, a nightly backup at 03:00 that runs Monday through Friday — and receive completion notifications via email, Telegram, Slack, or Discord.
+RcloneView PLUS users can schedule jobs with crontab-style rules — for example, a nightly backup at 03:00 that runs Monday through Friday — and receive completion notifications.
 
 ## Mounting Vultr Storage as a Local Drive
 
