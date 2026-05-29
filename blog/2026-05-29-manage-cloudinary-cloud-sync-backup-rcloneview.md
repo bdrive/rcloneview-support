@@ -2,7 +2,7 @@
 slug: manage-cloudinary-cloud-sync-backup-rcloneview
 title: "Manage Cloudinary Storage — Sync and Backup Files with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Learn how to manage, sync, and back up your Cloudinary digital assets to Amazon S3, Google Drive, or other cloud storage using RcloneView."
 keywords:
   - manage Cloudinary with RcloneView
@@ -60,7 +60,7 @@ Always run a **Dry Run** first — it previews exactly which files will be trans
 
 For ongoing asset protection, RcloneView PLUS adds crontab-style scheduling to the sync wizard's Step 4. A nightly sync at 2 AM picks up the day's newly uploaded assets while keeping bandwidth usage off peak hours. Use the Simulate schedule preview to verify the next execution times before saving — no surprises when the first scheduled run fires.
 
-Once running, email or Slack notifications alert you on job completion with status, transferred file count, and speed. For teams with dozens of active Cloudinary transformations and uploads per day, this passive alerting means you know the backup ran correctly without logging in to check.
+Once running, job completion notifications alert you with status, transferred file count, and data volume. For teams with dozens of active Cloudinary transformations and uploads per day, this passive alerting means you know the backup ran correctly without logging in to check.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Configuring a nightly scheduled backup of Cloudinary assets in RcloneView" class="img-large img-center" />
 

@@ -2,7 +2,7 @@
 slug: cloud-storage-managed-service-providers-rcloneview
 title: "Cloud Storage for Managed Service Providers — Backup Client Data with RcloneView"
 authors:
-  - steve
+  - alex
 description: "Learn how Managed Service Providers use RcloneView to automate multi-cloud backups across dozens of client environments without writing scripts."
 keywords:
   - managed service provider cloud storage
@@ -57,7 +57,7 @@ The four-step sync wizard also includes the advanced options MSPs need: configur
 
 RcloneView PLUS adds crontab-style scheduling in the sync wizard's Step 4. MSPs can set nightly backups, weekly archives, or custom per-client schedules — all without writing cron scripts or maintaining infrastructure. The Simulate schedule preview shows the next several run times before you commit, so you can verify the schedule is correct before it goes live.
 
-Notifications keep your team informed without manual monitoring. Email alerts use direct SMTP configuration with a per-job size threshold (only trigger when more than X MB transfers), while Slack and Telegram integrations push status updates to your existing team channels. Each completed run is logged automatically in the Job History tab.
+Notifications keep your team informed without manual monitoring. Email alerts can be configured with a per-job size threshold so alerts only fire when a meaningful amount of data transfers. Each completed run is recorded in the Job History tab.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling automated nightly backup jobs for client environments in RcloneView" class="img-large img-center" />
 
