@@ -2,7 +2,7 @@
 slug: fix-scheduled-sync-jobs-not-running-rcloneview
 title: "Fix Scheduled Sync Jobs Not Running — Troubleshoot Cloud Automation with RcloneView"
 authors:
-  - tayson
+  - alex
 description: "Scheduled cloud sync jobs silently skipping? This guide covers the most common causes and fixes for RcloneView automation not triggering as expected."
 keywords:
   - scheduled sync job not running RcloneView
@@ -41,7 +41,7 @@ Scheduled automation is one of the most valuable features RcloneView offers — 
 
 The single most common reason scheduled jobs never fire is that scheduling is a **PLUS license feature**. If you're running RcloneView on a FREE license, the scheduling step (Step 4) in the job wizard appears grayed out or is simply skipped — the job saves without any schedule attached. When you run the job manually it works fine, which makes this easy to miss.
 
-To verify, check the footer bar at the bottom of RcloneView: it shows your current license type. If it shows **FREE License**, scheduling won't activate. Upgrade to PLUS via **Help → Register License Key** and re-open the job in **Job Manager → Edit Job** to set the schedule fields.
+To verify, check the footer bar at the bottom of RcloneView: it shows your current license type. If it shows **FREE License**, scheduling won't activate. Upgrade to PLUS via **Help > Activate License** and re-open the job in **Job Manager → Edit Job** to set the schedule fields.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Job schedule configuration in RcloneView Step 4" class="img-large img-center" />
 
@@ -53,7 +53,7 @@ RcloneView schedules are managed by the running application itself, not by the o
 
 The fix is simple: enable **Launch at login** in **Settings → General**, and configure the app to start minimized to the system tray (**Start minimized** option). This way, RcloneView is always running in the background. The system tray icon confirms the app is active — right-clicking it shows mounted drives and lets you open the main window.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time transfer monitoring in the RcloneView Transferring tab" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring in the RcloneView Transferring tab" class="img-large img-center" />
 
 If you've already confirmed PLUS is active and the app is running, the next step is to actually watch a scheduled window to catch the trigger in real time. Set a test schedule to fire in 2 minutes (e.g., if it's 14:22, set minute to `24`, hour to `14`), then watch the **Transferring tab** at that time. If the job starts, your cron fields were simply misconfigured before. If it still doesn't start, move on to checking the job configuration.
 

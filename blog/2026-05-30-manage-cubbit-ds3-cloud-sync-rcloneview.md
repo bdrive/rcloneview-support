@@ -2,7 +2,7 @@
 slug: manage-cubbit-ds3-cloud-sync-rcloneview
 title: "Manage Cubbit DS3 Storage — Sync and Backup Files with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Learn how to connect Cubbit DS3 distributed object storage to RcloneView and sync, backup, and transfer your files with a full GUI experience."
 keywords:
   - Cubbit DS3 cloud storage
@@ -33,7 +33,7 @@ import RvCta from '../src/components/RvCta';
 
 > Cubbit DS3 brings distributed, S3-compatible object storage to the table — and RcloneView makes it simple to sync, backup, and browse your data without touching the command line.
 
-Cubbit DS3 is a geo-distributed object storage service that uses a decentralized architecture to store your data across a network of nodes. Because it exposes a fully S3-compatible API, you can connect it directly to RcloneView and manage your buckets exactly as you would with Amazon S3 or Cloudflare R2 — with the same GUI-based workflow, scheduled jobs, and real-time transfer monitoring.
+Cubbit DS3 is a geo-distributed object storage service that uses a decentralized architecture to store your data across a network of nodes. Because it exposes a fully S3-compatible API, you can connect it directly to RcloneView and manage your buckets exactly as you would with Amazon S3 or Cloudflare R2 — with the same GUI-based workflow, scheduled jobs, and live transfer monitoring.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
