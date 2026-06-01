@@ -2,7 +2,7 @@
 slug: cloud-storage-cybersecurity-companies-rcloneview
 title: "Cloud Storage for Cybersecurity Companies — Secure Data Management with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Discover how cybersecurity companies use RcloneView to manage encrypted cloud storage, automate log archival, and maintain compliance-ready audit trails."
 keywords:
   - cloud storage for cybersecurity companies
@@ -48,7 +48,7 @@ Click **New Remote** in the Remote tab, select your S3-compatible provider, ente
 
 ## Encrypting Sensitive Data with a Crypt Remote
 
-Incident reports, client findings, and forensic images must be encrypted before reaching any third-party storage provider. RcloneView supports rclone's **Crypt** virtual remote, which wraps any existing S3 bucket or cloud folder with AES-256 CTR encryption. File names and directory structures can be optionally obfuscated, so even a compromised storage credential exposes no intelligible information.
+Incident reports, client findings, and forensic images must be encrypted before reaching any third-party storage provider. RcloneView supports rclone's **Crypt** virtual remote, which wraps any existing S3 bucket or cloud folder with strong encryption. File names and directory structures can be optionally obfuscated, so even a compromised storage credential exposes no intelligible information.
 
 Create a Crypt remote in the New Remote wizard by selecting **Crypt** as the type, pointing it at your existing S3 or cloud remote, and setting a strong password and salt. Analysts interact with the Crypt remote through the standard file browser — encryption and decryption happen transparently so the workflow is identical to any unencrypted remote, just with a strong security boundary underneath.
 
@@ -74,7 +74,7 @@ Enable rclone logging in **Settings > Embedded Rclone** to produce timestamped l
 
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html).
 2. Add an S3-compatible remote (Amazon S3, Wasabi, Backblaze B2, or Cloudflare R2) via **New Remote**.
-3. Create a **Crypt** virtual remote pointing to that S3 bucket for AES-256 encryption.
+3. Create a **Crypt** virtual remote pointing to that S3 bucket for client-side encryption.
 4. Build a scheduled 1:N Sync job to archive logs to both a hot and cold storage tier automatically.
 5. Review **Job History** to maintain an auditable record of every data transfer for compliance reporting.
 

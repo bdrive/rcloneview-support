@@ -2,7 +2,7 @@
 slug: migrate-google-drive-to-proton-drive-rcloneview
 title: "Migrate Google Drive to Proton Drive — Transfer Files Securely with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Migrate files from Google Drive to Proton Drive with RcloneView — the GUI cloud transfer tool that makes privacy migration easy and reliable."
 keywords:
   - migrate google drive to proton drive
@@ -58,7 +58,7 @@ This step is particularly valuable when resuming an interrupted migration: you i
 
 With remotes connected and folders compared, open the **Job Manager** and create a new Copy or Sync job. Set your Google Drive folder as the source and the corresponding Proton Drive folder as the destination. In the Advanced Settings step, enable **checksum** to compare files by hash rather than size alone — this is especially important for Proton Drive, where the encrypted storage format means file sizes reported by the API may differ slightly.
 
-The **Transferring** tab in the bottom panel shows real-time progress: transfer speed, file count, and total data moved. If the job is interrupted by a network drop, simply run it again — rclone's transfer logic skips files that already match and picks up where it left off.
+The **Transferring** tab in the bottom panel shows live transfer progress: file count, data moved, and transfer speed. If the job is interrupted by a network drop, simply run it again — rclone's transfer logic skips files that already match and picks up where it left off.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Real-time cloud-to-cloud transfer progress between Google Drive and Proton Drive in RcloneView" class="img-large img-center" />
 
