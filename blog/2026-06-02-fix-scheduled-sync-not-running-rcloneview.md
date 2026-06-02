@@ -2,7 +2,7 @@
 slug: fix-scheduled-sync-not-running-rcloneview
 title: "Fix Scheduled Sync Not Running — Troubleshoot Automated Cloud Jobs in RcloneView"
 authors:
-  - casey
+  - steve
 description: "Diagnose and fix RcloneView scheduled sync jobs that won't start or run at the wrong time. Covers license checks, cron syntax, startup settings, and log inspection."
 keywords:
   - rcloneview scheduled sync not running

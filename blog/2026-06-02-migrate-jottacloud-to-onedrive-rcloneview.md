@@ -2,7 +2,7 @@
 slug: migrate-jottacloud-to-onedrive-rcloneview
 title: "Migrate Jottacloud to OneDrive — Transfer Files with RcloneView"
 authors:
-  - morgan
+  - tayson
 description: "Step-by-step guide to migrating all your Jottacloud files to Microsoft OneDrive using RcloneView. Move your entire library without any command-line tools."
 keywords:
   - jottacloud to onedrive migration
