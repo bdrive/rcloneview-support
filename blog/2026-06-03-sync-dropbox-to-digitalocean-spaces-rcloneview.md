@@ -61,7 +61,7 @@ Before running the job for the first time, click **Dry Run** to see exactly whic
 
 Once you click **Run Job**, the **Transferring** tab at the bottom of RcloneView shows live progress: file count, transfer speed, and total bytes moved. For a large initial sync — a content studio moving 80,000 files from a full Dropbox account — this view makes it easy to estimate how long the job will take and catch any early errors. You can cancel a running job at any point, and the retry setting (configurable in Step 2) handles transient network hiccups automatically.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time monitoring of Dropbox to DigitalOcean Spaces transfer in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring of Dropbox to DigitalOcean Spaces in RcloneView" class="img-large img-center" />
 
 ## Scheduling Automatic Backups (PLUS License)
 
