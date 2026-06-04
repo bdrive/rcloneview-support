@@ -40,7 +40,7 @@ Medical data demands a higher standard than the average file sync workflow. A ra
 
 ## Encrypting Medical Files Before They Leave Your Network
 
-The most critical step in any healthcare cloud workflow is ensuring data is encrypted before upload — not just encrypted in transit, but encrypted at rest with keys your organization controls. RcloneView supports rclone's **Crypt** virtual remote, which applies AES-256 client-side encryption to any existing cloud remote. File names, folder names, and file contents are all encrypted locally before anything reaches the cloud provider.
+The most critical step in any healthcare cloud workflow is ensuring data is encrypted before upload — not just encrypted in transit, but encrypted at rest with keys your organization controls. RcloneView supports rclone's **Crypt** virtual remote, which applies client-side encryption to any existing cloud remote. File names, folder names, and file contents are all encrypted locally before anything reaches the cloud provider.
 
 Setting up a Crypt remote takes only a few minutes: add your storage provider (Amazon S3, Azure Blob, Backblaze B2, OneDrive, or any of the 90+ supported services), then layer a Crypt remote on top of it. Supply a password and optional salt, and RcloneView will encrypt every file before upload. Even if the cloud provider's infrastructure were compromised, the stored blobs are unreadable without your key. This architecture suits organizations that require client-controlled encryption keys as part of their data governance and regulatory obligations.
 
