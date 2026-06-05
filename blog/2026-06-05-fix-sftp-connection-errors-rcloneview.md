@@ -2,7 +2,7 @@
 slug: fix-sftp-connection-errors-rcloneview
 title: "Fix SFTP Connection Errors — Resolve SSH File Transfer Issues with RcloneView"
 authors:
-  - jay
+  - alex
 description: "Diagnose and fix common SFTP connection errors in RcloneView — authentication failures, host key mismatches, and timeouts — and get SSH transfers working."
 keywords:
   - fix SFTP connection errors RcloneView
