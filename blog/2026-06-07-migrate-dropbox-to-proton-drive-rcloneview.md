@@ -2,7 +2,7 @@
 slug: migrate-dropbox-to-proton-drive-rcloneview
 title: "Migrate Dropbox to Proton Drive — Transfer Files with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Move your Dropbox files to Proton Drive for end-to-end encrypted storage. Learn how to migrate cloud-to-cloud with RcloneView in a few simple steps."
 keywords:
   - migrate Dropbox to Proton Drive
@@ -65,7 +65,7 @@ In Step 2 of the wizard, enable **checksum verification** to confirm every file 
 
 ## Monitoring Progress and Verifying Completion
 
-While the transfer runs, the **Transferring** tab at the bottom of RcloneView displays real-time speed, file count, and percentage complete. Large Dropbox libraries — a law firm's 50,000 client documents, for example — may take several hours; the job continues in the background while RcloneView minimizes to the system tray.
+While the transfer runs, the **Transferring** tab at the bottom of RcloneView displays live transfer speed, file count, and percentage complete. Large Dropbox libraries — a law firm's 50,000 client documents, for example — may take several hours; the job continues in the background while RcloneView minimizes to the system tray.
 
 Once the job finishes, re-run the Folder Compare to confirm zero left-only files. Any item still marked as "left-only" in Dropbox signals a failed transfer that can be re-run selectively. RcloneView's **Job History** logs the full run with start time, total bytes, speed, and status — a permanent record suitable for compliance or IT audits.
 

@@ -2,7 +2,7 @@
 slug: manage-cubbit-ds3-cloud-sync-backup-rcloneview
 title: "Manage Cubbit DS3 Storage — Sync and Backup Files with RcloneView"
 authors:
-  - jay
+  - alex
 description: "Learn how to connect Cubbit DS3 to RcloneView and sync, backup, or manage your geo-distributed European cloud storage from a simple desktop GUI."
 keywords:
   - Cubbit DS3 sync
@@ -49,7 +49,7 @@ The connection takes effect immediately. You can expand your bucket in the folde
 
 ## Uploading and Managing Files in Cubbit DS3
 
-RcloneView's dual-pane layout makes uploading files to Cubbit DS3 straightforward. Open a local folder in one panel and your Cubbit DS3 bucket in the other. Drag a folder — say, a collection of architecture firm CAD drawings — from the left panel into the Cubbit panel on the right. RcloneView handles concurrent multi-threaded uploads automatically, and the transfer monitor at the bottom shows real-time speed, file count, and progress.
+RcloneView's dual-pane layout makes uploading files to Cubbit DS3 straightforward. Open a local folder in one panel and your Cubbit DS3 bucket in the other. Drag a folder — say, a collection of architecture firm CAD drawings — from the left panel into the Cubbit panel on the right. RcloneView handles concurrent multi-threaded uploads automatically, and the transfer monitor at the bottom shows live transfer speed, file count, and progress.
 
 Right-clicking any object in the Cubbit panel exposes the full context menu: Copy, Cut, Delete, Rename, Get Size, and Get Public Link. The **Get Size** option is particularly useful for calculating storage consumption across large bucket folders before deciding on a sync strategy.
 
@@ -59,7 +59,7 @@ Right-clicking any object in the Cubbit panel exposes the full context menu: Cop
 
 For automated backups, use the **Sync** button in the Home tab to launch the 4-step job wizard. Select your local folder or another cloud remote as the source, and your Cubbit DS3 bucket as the destination. In Step 2, increase the number of concurrent file transfers to take full advantage of Cubbit's distributed bandwidth. In Step 3, apply file-type filters — for example, exclude `.tmp` and `.log` files to keep the backup clean.
 
-PLUS license users unlock Step 4: cron-style scheduling. Set a job to run every night at 3 AM, add a max-file-age filter to sync only recently modified files, and configure email or Slack notifications to confirm each run. This is ideal for a research team that needs automatic nightly snapshots of their dataset archive to a compliant European storage backend.
+PLUS license users unlock Step 4: cron-style scheduling. Set a job to run every night at 3 AM, add a max-file-age filter to sync only recently modified files, and configure email notifications to confirm each run. This is ideal for a research team that needs automatic nightly snapshots of their dataset archive to a compliant European storage backend.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling automated sync jobs to Cubbit DS3 in RcloneView" class="img-large img-center" />
 
