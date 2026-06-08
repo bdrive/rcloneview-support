@@ -2,7 +2,7 @@
 slug: fix-backblaze-b2-upload-errors-rcloneview
 title: "Fix Backblaze B2 Upload Errors — Troubleshoot Cloud Transfer Issues with RcloneView"
 authors:
-  - tayson
+  - alex
 description: "Resolve Backblaze B2 upload errors in RcloneView. Fix authentication failures, rate limiting, large file issues, and permission errors when syncing to B2."
 keywords:
   - fix Backblaze B2 upload errors

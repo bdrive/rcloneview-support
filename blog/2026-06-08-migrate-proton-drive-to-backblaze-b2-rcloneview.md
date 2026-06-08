@@ -2,7 +2,7 @@
 slug: migrate-proton-drive-to-backblaze-b2-rcloneview
 title: "Migrate Proton Drive to Backblaze B2 — Secure Cloud Transfer with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Move files from Proton Drive to Backblaze B2 using RcloneView. Step-by-step guide to migrate encrypted cloud storage data to affordable object storage."
 keywords:
   - Proton Drive to Backblaze B2
