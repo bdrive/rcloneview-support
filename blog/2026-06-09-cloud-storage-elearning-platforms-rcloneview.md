@@ -2,7 +2,7 @@
 slug: cloud-storage-elearning-platforms-rcloneview
 title: "Cloud Storage for E-learning Platforms — Manage Course Content with RcloneView"
 authors:
-  - tayson
+  - alex
 description: "Learn how e-learning platforms use RcloneView to sync, back up, and manage course videos, materials, and student files across multiple cloud providers."
 keywords:
   - e-learning cloud storage

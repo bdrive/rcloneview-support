@@ -2,7 +2,7 @@
 slug: migrate-citrix-sharefile-to-google-drive-rcloneview
 title: "Migrate Citrix ShareFile to Google Drive — Transfer Enterprise Files with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Learn how to migrate Citrix ShareFile to Google Drive with RcloneView. Move enterprise documents and folders with a GUI—no scripts or CLI required."
 keywords:
   - Citrix ShareFile to Google Drive migration
