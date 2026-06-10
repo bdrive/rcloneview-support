@@ -2,7 +2,7 @@
 slug: migrate-google-drive-to-pcloud-rcloneview
 title: "Migrate Google Drive to pCloud — Transfer Files with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Move your Google Drive files to pCloud directly with RcloneView. This step-by-step guide covers cloud-to-cloud migration without downloading files locally."
 keywords:
   - migrate Google Drive to pCloud
@@ -61,7 +61,7 @@ Before transferring a large Google Drive account, click **Dry Run** in the Job M
 
 ## Monitor Progress and Review History
 
-Once you are satisfied with the dry run, execute the job. The **Transferring tab** at the bottom of RcloneView shows real-time progress: files transferred, current speed, and remaining work. After the job completes, the **Job History** panel records the run time, total data transferred, and final status — useful for confirming that a scheduled follow-up sync stayed consistent with the initial migration.
+Once you are satisfied with the dry run, execute the job. The **Transferring tab** at the bottom of RcloneView shows live transfer progress: files transferred, current speed, and remaining work. After the job completes, the **Job History** panel records the run time, total data transferred, and final status — useful for confirming that a scheduled follow-up sync stayed consistent with the initial migration.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Job history showing completed Google Drive to pCloud migration in RcloneView" class="img-large img-center" />
 

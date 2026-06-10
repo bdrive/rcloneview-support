@@ -2,7 +2,7 @@
 slug: cloud-storage-human-resources-rcloneview
 title: "Cloud Storage for Human Resources — Manage HR Files Securely with RcloneView"
 authors:
-  - tayson
+  - alex
 description: "HR teams handle sensitive employee records, contracts, and payroll data. RcloneView provides secure multi-cloud backup and encrypted file management for HR departments."
 keywords:
   - cloud storage for human resources
