@@ -2,7 +2,7 @@
 slug: migrate-google-drive-to-storj-rcloneview
 title: "Migrate Google Drive to Storj — Transfer Files with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Learn how to migrate Google Drive files to Storj decentralized storage using RcloneView — a step-by-step guide for cloud-to-cloud transfers."
 keywords:
   - migrate Google Drive to Storj
@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move your entire Google Drive to Storj's decentralized, end-to-end encrypted storage without writing a single command.
 
-Teams storing sensitive project files in Google Drive often reach a point where they want stronger data sovereignty, lower egress costs, or S3-compatible access for their toolchain. Storj distributes file chunks across independent nodes worldwide, delivering end-to-end encryption and geographic redundancy by design. RcloneView makes this migration straightforward: connect both remotes through a browser-authenticated setup, then run a copy job that transfers files directly in the cloud without routing through your local machine.
+Teams storing sensitive project files in Google Drive often reach a point where they want stronger data sovereignty, lower egress costs, or S3-compatible access for their toolchain. Storj distributes file chunks across independent nodes worldwide, delivering end-to-end encryption and geographic redundancy by design. RcloneView makes this migration straightforward: connect both remotes through a browser-authenticated setup, then run a copy job that transfers files from Google Drive to Storj through your local machine.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -58,7 +58,7 @@ Step 3 lets you add filtering rules if you only want to migrate specific file ty
 
 ## Monitor and Verify the Transfer
 
-Once you click **Run**, the Transferring tab at the bottom of RcloneView shows live progress: transfer speed, file count, and total size moved. For large migrations, RcloneView continues the job in the background even if you navigate to other remotes — and if the transfer is interrupted, setting the retry count in Step 2 ensures it resumes automatically.
+Once you click **Run**, the Transferring tab at the bottom of RcloneView shows live progress: transfer speed, file count, and total size moved. For large migrations, RcloneView continues the job in the background even if you navigate to other remotes — and if the transfer is interrupted, setting the retry count in Step 2 ensures it picks up where it left off.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running the Google Drive to Storj migration job in RcloneView" class="img-large img-center" />
 

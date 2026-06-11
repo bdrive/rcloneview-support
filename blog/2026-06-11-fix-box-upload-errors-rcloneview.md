@@ -2,7 +2,7 @@
 slug: fix-box-upload-errors-rcloneview
 title: "Fix Box Upload Errors — How to Resolve Transfer Issues with RcloneView"
 authors:
-  - tayson
+  - alex
 description: "Diagnose and fix Box upload errors using RcloneView — learn how to adjust transfer settings, check logs, and reliably sync Box files."
 keywords:
   - fix Box upload errors
@@ -40,7 +40,7 @@ Box is a widely used enterprise cloud platform, but its API enforces rate limits
 
 Box upload failures generally fall into a few categories. **API rate limiting** is the most frequent culprit: when RcloneView sends too many concurrent requests, Box returns HTTP 429 errors and throttles the connection. Running more than the default number of parallel transfers to Box can trigger this, especially against a Box for Business account with stricter API quotas.
 
-**Expired OAuth tokens** are the second leading cause. Box access tokens expire after a fixed period. If a long-running job is in progress when the token expires, uploads begin failing with authentication errors. RcloneView stores your Box credentials securely and handles token refresh automatically, but if the refresh token itself has expired — typically after extended inactivity — you need to re-authenticate the remote.
+**Expired OAuth tokens** are the second leading cause. Box access tokens expire after a fixed period. If a long-running job is in progress when the token expires, uploads begin failing with authentication errors. RcloneView stores your Box credentials securely and refreshes access tokens when they expire, but if the refresh token itself has expired — typically after extended inactivity — you need to re-authenticate the remote.
 
 **File path and naming issues** also cause errors. Box enforces restrictions on certain special characters and file path lengths. Files with characters that Box doesn't accept will fail silently unless logging is enabled.
 
