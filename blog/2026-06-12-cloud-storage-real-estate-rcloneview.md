@@ -2,7 +2,7 @@
 slug: cloud-storage-real-estate-rcloneview
 title: "Cloud Storage for Real Estate — Manage Property Files with RcloneView"
 authors:
-  - tayson
+  - steve
 description: "Real estate agencies use RcloneView to sync, backup, and manage property photos, floor plans, contracts, and virtual tours across multiple cloud services."
 keywords:
   - cloud storage real estate
@@ -67,7 +67,7 @@ The **Folder Compare** tool is valuable during file audits: compare a local back
 3. Create a sync job in the **Job Manager** to back up your primary listing folder to a secondary cloud on a nightly schedule.
 4. Use **Folder Compare** to verify that all critical property documents and media are fully archived.
 
-With RcloneView, your real estate agency gains reliable, automated multi-cloud protection for the documents and media that drive your business — visible, auditable, and simple to manage.
+With RcloneView, your real estate agency gains reliable, automated multi-cloud protection for the documents and media that drive your business — visible, auditable, and manageable from a single interface.
 
 ---
 
