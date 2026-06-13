@@ -2,7 +2,7 @@
 slug: migrate-icloud-drive-to-google-drive-rcloneview
 title: "Migrate iCloud Drive to Google Drive — Transfer Files with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Migrate iCloud Drive to Google Drive using RcloneView — a step-by-step guide to transfer Apple cloud files to Google without manual downloads."
 keywords:
   - iCloud Drive to Google Drive
@@ -63,7 +63,7 @@ Before committing to the full transfer, run **Dry Run** from the job options. Rc
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a cloud migration job in RcloneView" class="img-large img-center" />
 
-Once satisfied, execute the job and watch progress in the **Transferring** tab at the bottom of the interface. Speed, file count, and percentage complete update in real time. For large libraries, enable checksum verification in the job's Advanced Settings to confirm every file arrived without corruption.
+Once satisfied, execute the job and watch progress in the **Transferring** tab at the bottom of the interface. Speed, file count, and percentage complete update live. For large libraries, enable checksum verification in the job's Advanced Settings to confirm every file arrived without corruption.
 
 ## Getting Started
 

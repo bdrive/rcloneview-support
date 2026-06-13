@@ -2,7 +2,7 @@
 slug: cloud-storage-wedding-photography-rcloneview
 title: "Cloud Storage for Wedding Photographers — Backup and Deliver with RcloneView"
 authors:
-  - tayson
+  - alex
 description: "Discover how wedding photographers can back up large RAW galleries, deliver client files, and automate cloud backups with RcloneView."
 keywords:
   - cloud storage wedding photography
@@ -54,9 +54,9 @@ In the job's Advanced Settings, enable **checksum verification** to confirm ever
 
 ## Delivering Finished Galleries to Clients
 
-Once images are edited and ready for delivery, RcloneView's drag-and-drop interface makes uploading gallery folders fast. Drag a folder of exported JPEGs from Windows Explorer or Finder directly onto a Google Drive panel in RcloneView — the upload begins immediately, with real-time progress visible in the Transferring tab.
+Once images are edited and ready for delivery, RcloneView's drag-and-drop interface makes uploading gallery folders fast. Drag a folder of exported JPEGs from Windows Explorer or Finder directly onto a Google Drive panel in RcloneView — the upload begins immediately, with live transfer progress visible in the Transferring tab.
 
-When the upload completes, use **Get Public Link** from the right-click context menu to generate a shareable link directly from within RcloneView. The link copies to your clipboard and is ready to paste into a client email — no browser, no separate download portal, no extra steps between you and delivery.
+When the upload completes, use **Get Public Link** from the right-click context menu to generate a shareable link directly from within RcloneView, if your cloud provider supports public link generation. The link copies to your clipboard and is ready to paste into a client email — no browser, no separate download portal, no extra steps between you and delivery.
 
 ## Scheduling Archive Runs with PLUS
 
