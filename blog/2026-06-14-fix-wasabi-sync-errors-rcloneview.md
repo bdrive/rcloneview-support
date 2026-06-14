@@ -2,7 +2,7 @@
 slug: fix-wasabi-sync-errors-rcloneview
 title: "Fix Wasabi Sync Errors — Resolve Upload and Connection Issues with RcloneView"
 authors:
-  - tayson
+  - alex
 description: "Fix common Wasabi sync errors in RcloneView — diagnose endpoint mismatches, checksum failures, and rate-limit errors with step-by-step guidance."
 keywords:
   - wasabi sync errors rcloneview

@@ -2,7 +2,7 @@
 slug: migrate-cloudflare-r2-to-google-drive-rcloneview
 title: "Migrate Cloudflare R2 to Google Drive — Transfer Files with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Learn how to migrate files from Cloudflare R2 to Google Drive using RcloneView — no egress surprises, just a guided visual transfer workflow."
 keywords:
   - cloudflare r2 to google drive
