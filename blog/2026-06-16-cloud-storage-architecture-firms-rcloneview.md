@@ -2,7 +2,7 @@
 slug: cloud-storage-architecture-firms-rcloneview
 title: "Cloud Storage for Architecture Firms — Manage CAD and BIM Files with RcloneView"
 authors:
-  - morgan
+  - alex
 description: "Architecture firms can use RcloneView to sync, backup, and manage large CAD and BIM project files across Amazon S3, Google Drive, and other cloud storage services."
 keywords:
   - cloud storage architecture firms
@@ -42,7 +42,7 @@ A mid-sized architecture firm working on a mixed-use development generates enorm
 
 CAD and BIM files share two traits that make standard cloud sync tools struggle: they are large (individual Revit models routinely exceed 1 GB) and they change incrementally as projects evolve. Consumer-grade sync tools often re-upload entire files on every save, burning bandwidth and storage. RcloneView delegates transfers to rclone, which performs size-and-checksum comparisons to transfer only what has genuinely changed — critical when a team member saves a model update over a slow VPN connection from a remote site visit.
 
-RcloneView supports Amazon S3, Google Drive, SharePoint, OneDrive, Backblaze B2, and 90+ other providers from a single interface. A practice can connect S3 for primary project storage, Google Drive for client-sharing, and Backblaze B2 as a low-cost off-site archive — and manage all three from one application window.
+RcloneView supports Amazon S3, Google Drive, SharePoint, OneDrive, Backblaze B2, and dozens more from its 90+ supported providers — all manageable from a single interface. A practice can connect S3 for primary project storage, Google Drive for client-sharing, and Backblaze B2 as a low-cost off-site archive — and manage all three from one application window.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding a cloud storage remote for architecture project files in RcloneView" class="img-large img-center" />
 
