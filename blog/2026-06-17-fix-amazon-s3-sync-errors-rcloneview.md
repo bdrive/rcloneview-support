@@ -2,7 +2,7 @@
 slug: fix-amazon-s3-sync-errors-rcloneview
 title: "Fix Amazon S3 Sync Errors — How to Resolve with RcloneView"
 authors:
-  - morgan
+  - kai
 description: "Troubleshoot common Amazon S3 sync errors with RcloneView. Diagnose permission issues, checksum mismatches, and connection timeouts to keep your S3 backups running smoothly."
 keywords:
   - Amazon S3 sync errors
