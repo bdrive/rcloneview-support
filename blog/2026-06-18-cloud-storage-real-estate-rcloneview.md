@@ -14,6 +14,12 @@ keywords:
   - RcloneView real estate
   - multi-cloud real estate workflow
   - real estate backup automation
+tags:
+  - RcloneView
+  - cloud-storage
+  - industry
+  - backup
+  - business
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -44,7 +50,7 @@ Purchase agreements, inspection reports, and title documents are irreplaceable. 
 
 The folder comparison feature gives compliance managers a side-by-side view of documents on the primary cloud and the backup. Files that exist on one side but not the other are highlighted immediately, turning a manual document audit into a quick visual scan.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time monitoring of contract backup transfers to cloud storage in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring of contract backup transfers to cloud storage in RcloneView" class="img-large img-center" />
 
 ## Syncing Files Across Agents and Offices
 
