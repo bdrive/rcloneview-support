@@ -2,7 +2,7 @@
 slug: cloud-storage-legal-law-firms-rcloneview
 title: "Cloud Storage for Legal Firms — Secure Document Management with RcloneView"
 authors:
-  - tayson
+  - steve
 description: "How law firms and legal teams use RcloneView to back up case files, sync across cloud providers, and protect sensitive documents with client-side encryption."
 keywords:
   - cloud storage for law firms

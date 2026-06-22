@@ -2,7 +2,7 @@
 slug: manage-zoho-workdrive-cloud-sync-backup-rcloneview
 title: "Manage Zoho WorkDrive Storage — Sync and Backup Files with RcloneView"
 authors:
-  - steve
+  - tayson
 description: "Learn how to connect Zoho WorkDrive to RcloneView for seamless file sync, scheduled backups, and cross-cloud transfers from a single desktop GUI."
 keywords:
   - Zoho WorkDrive sync
