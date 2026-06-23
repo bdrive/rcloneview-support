@@ -59,7 +59,7 @@ Create a new Sync job from the **Home** tab. Set iCloud Drive (or a specific sub
 
 Unlike mount-only tools, RcloneView also syncs and compares folders on the FREE license—so the full migration workflow, from dry-run through live transfer to verification, requires no paid upgrade.
 
-Once the dry-run output looks correct, start the live transfer. The **Transferring** tab shows progress, speed, and the current file in real time. If the connection drops, simply re-run the same job: rclone skips files that already exist at the destination with matching size, so the transfer resumes efficiently from where it stopped.
+Once the dry-run output looks correct, start the live transfer. The **Transferring** tab shows live progress, speed, and the current file being transferred. If the connection drops, simply re-run the same job: rclone skips files that already exist at the destination with matching size, so the transfer resumes efficiently from where it stopped.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Folder Compare view in RcloneView confirming iCloud Drive and OneDrive folder contents match after migration" class="img-large img-center" />
 
