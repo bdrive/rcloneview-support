@@ -2,7 +2,7 @@
 slug: migrate-koofr-to-onedrive-rcloneview
 title: "Migrate Koofr to OneDrive — Transfer Files with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Move your files from Koofr to Microsoft OneDrive using RcloneView. A visual, step-by-step guide to secure and accurate cloud-to-cloud migration."
 keywords:
   - Koofr to OneDrive migration
