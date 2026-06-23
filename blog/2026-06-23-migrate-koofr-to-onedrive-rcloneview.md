@@ -48,7 +48,7 @@ Once both remotes are saved, they appear as independent tabs in the dual-pane fi
 
 ## Auditing Content Before the Migration
 
-RcloneView's **Folder Compare** tool, launched from the **Home** tab, is the most effective way to pre-flight a cloud migration. Point it at the Koofr source folder on the left and the corresponding OneDrive destination on the right. The comparison view categorizes every file: left-only (not yet on OneDrive), right-only (already there or from a previous partial run), same (matching by size), or different (size mismatch indicating a potential conflict).
+RcloneView's **Folder Compare** tool, launched from the **Home** tab, is an effective way to pre-flight a cloud migration. Point it at the Koofr source folder on the left and the corresponding OneDrive destination on the right. The comparison view categorizes every file: left-only (not yet on OneDrive), right-only (already there or from a previous partial run), same (matching by size), or different (size mismatch indicating a potential conflict).
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparing Koofr and OneDrive folder contents before migration in RcloneView" class="img-large img-center" />
 
