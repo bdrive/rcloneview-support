@@ -2,9 +2,9 @@
 
 > **Routine:** Blog Generator — Cloud Routine
 > **Trigger:** Schedule (Daily 09:00 AM KST)
-> **Model:** Opus 4.7
+> **Model:** Opus 4.8
 > **Repository:** bdrive/rcloneview-support
-> **Last Updated:** 2026-05-08
+> **Last Updated:** 2026-06-23
 
 ---
 
@@ -37,7 +37,7 @@ This routine runs from a fresh clone of rcloneview-support (main branch).
 Verify the repository is ready:
 
   pwd
-  ls RCLONEVIEW_FEATURE_SPEC.md BLOG_FACTCHECK_GUIDELINE.md blog/tags.yml
+  ls RCLONEVIEW_FEATURE_SPEC.md COMPETITORS_SPEC.md BLOG_FACTCHECK_GUIDELINE.md blog/tags.yml
 
 If any of these files are missing, report the issue and stop.
 
@@ -62,6 +62,23 @@ You MUST read BOTH parts. Sections 18 (Distribution) and 19 (Limitations) are at
 
 Do NOT invent features, installation methods, or capabilities not in this file.
 Pay special attention to Sections 18 (Distribution) and 19 (Limitations).
+
+═══════════════════════════════════════════════════════════════════
+STEP 1.5: READ COMPETITOR KNOWLEDGE (ONLY IF WRITING A COMPARISON POST)
+═══════════════════════════════════════════════════════════════════
+
+If (and only if) one of today's posts is a Category 5 COMPARISON post or an
+"alternatives" listicle, read COMPETITORS_SPEC.md in the repository root. It is
+your ONLY authoritative source for competitor facts (pricing tiers, platform
+support, mount-vs-sync, free-tier limits).
+
+CRITICAL rules from that file:
+- Use competitor facts ONLY from COMPETITORS_SPEC.md. Never invent them.
+- Date-stamp every competitor pricing/tier claim: "as of {Month Year}".
+- NEVER compare against NetDrive (it is a Bdrive sister product, not a competitor).
+- NEVER frame rclone as a rival (it is the engine RcloneView is built on).
+- Honest tone only: acknowledge one genuine competitor strength; no disparagement;
+  banned superlatives (only/fastest/first/best/perfect) STILL apply.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 2: READ EXISTING FILES TO AVOID TOPIC DUPLICATION
@@ -123,10 +140,26 @@ the same category two days in a row when feasible.
    - Slug: cloud-storage-{industry}-rcloneview
    - Tags: RcloneView, cloud-storage, industry, backup, guide
 
-5. COMPARISON: RcloneView vs competitor tools
-   - Format: "RcloneView vs {Competitor} — Cloud File Transfer Tool Comparison"
-   - Slug: rcloneview-vs-{competitor}-comparison
+5. COMPARISON: RcloneView vs competitor tools (FREQUENCY-LIMITED — see note below)
+   - Requires reading COMPETITORS_SPEC.md (STEP 1.5). Facts from that file ONLY.
+   - Valid competitors: RaiDrive, CloudMounter, Mountain Duck, ExpanDrive, Air Explorer.
+     NEVER NetDrive (sister product). NEVER rclone (the engine).
+   - Two sub-formats:
+     a) Head-to-head: "RcloneView vs {Competitor} — Mount and Sync Cloud Storage Compared"
+        Slug: rcloneview-vs-{competitor}
+     b) Alternatives listicle (best for capturing "{competitor} alternative" searches):
+        "Best {Competitor} Alternatives — Cross-Platform Cloud Mount and Sync with RcloneView"
+        Slug: best-{competitor}-alternatives-rcloneview
    - Tags: RcloneView, comparison, cloud-storage
+   - MUST: date-stamp competitor pricing/tiers ("as of {Month Year}"); acknowledge one genuine
+     competitor strength; honest tone, no disparagement, no banned superlatives about RcloneView.
+   - Lead with our verified wins (COMPETITORS_SPEC.md Section 1): cross-platform, free mount +
+     free sync, free S3/Azure/B2 write, 90+ providers, no ads.
+
+   FREQUENCY RULE: Generate a COMPARISON post AT MOST about once per week, never two days in a
+   row. There are only ~5 valid competitors — churning thin comparison posts hurts SEO. Prefer
+   REFRESHING an existing comparison post's facts over creating a near-duplicate. On most days,
+   pick from categories 1–4, 6, 7 instead. Comparison reach is carried mainly by Layer B below.
 
 6. PLATFORM: Running RcloneView on specific OS/hardware
    - Format: "RcloneView on {Platform} — Cloud Storage Sync and Backup"
@@ -260,66 +293,47 @@ CRITICAL FORMAT RULES (DO NOT VIOLATE)
 15. TITLE: Must be in double quotes in frontmatter
 16. EACH POST: Must have 3-5 images distributed throughout the content sections
 17. SLUG: Must NOT include the date prefix — only the topic slug
-18. AUTHORS: Assign authors using a strict 8-person round-robin that continues across days.
+18. AUTHORS: Assign authors using a DATE-DERIVED deterministic formula.
+    Do NOT read or write any state file. Do NOT "remember" who went last.
+    Do NOT pick names yourself. Compute the positions with the shell, then
+    map positions → names. This removes all drift and all model discretion.
 
-    ROTATION ORDER (fixed, never changes):
-      Position 0: jay
-      Position 1: steve
-      Position 2: tayson
-      Position 3: kai
-      Position 4: morgan
-      Position 5: casey
-      Position 6: robin
-      Position 7: alex
+    ROTATION ORDER (fixed array, index = position):
+      0: jay   1: steve   2: tayson   3: kai
+      4: morgan   5: casey   6: robin   7: alex
 
-    STEP A — Determine today's start index (state-file based):
-      1. Read `blog/.rotation-state` — a tracked file containing a single
-         integer 0–7 representing the LAST rotation position used.
-      2. If file exists and content is a valid integer 0–7:
-           start_index = (last_position + 1) % 8
-      3. If file doesn't exist (bootstrap / first ever run):
-           BOOTSTRAP heuristic:
-           - List all blog/*.md files with a rotation-eligible author.
-           - Sort by pubDate (from filename `YYYY-MM-DD-...`) descending;
-             within ties, sort by author rotation position DESCENDING.
-           - Pick the first (= the post probably assigned last in the
-             most recent batch).
-           - start_index = (that_post_position + 1) % 8
-           - If no rotation-eligible posts exist: start_index = 0 (jay).
+    STEP A — Compute today's two positions with the shell (run verbatim):
 
-    STEP B — Assign authors to today's posts:
-      Post N (1-based) → rotation[(start_index + N - 1) % 8]
+      EPOCH_DAY=$(( $(date +%s) / 86400 ))
+      P1=$(( (EPOCH_DAY * 2) % 8 ))        # Post 1 position
+      P2=$(( (EPOCH_DAY * 2 + 1) % 8 ))    # Post 2 position
+      echo "Post1 position=$P1  Post2 position=$P2"
 
-    STEP C — Update state file at end (CRITICAL — do BEFORE git push):
-      last_position = (start_index + N - 1) % 8
-      echo "<last_position>" > blog/.rotation-state
+    STEP B — Map positions → author keys using the ROTATION ORDER above:
+      Post 1 author = ROTATION[P1]
+      Post 2 author = ROTATION[P2]
 
-      The state file must be committed alongside the new posts so the
-      NEXT routine run reads the correct value.
+      You MUST use the P1/P2 values printed by the shell. Do not substitute
+      your own choice. If you only publish 1 post today (e.g. the other was a
+      duplicate), use the Post 1 author (position P1).
 
-    Why state-file based: explicit state is the only way to handle
-    wrap-around correctly. Counting posts or sorting by filename are
-    both fragile heuristics. The state file is one integer in a tracked
-    file — minimum overhead, maximum reliability.
-
-    EXAMPLE:
-      blog/.rotation-state = 4 (last used: morgan)
-      → start_index = 5 (casey)
-      → Post 1: casey, Post 2: robin
-      → Update blog/.rotation-state = 6 (robin)
-      Next day reads 6 → start = 7 (alex)
+    Why date-derived: the author depends ONLY on the calendar date, so it is
+    perfectly even (each author exactly twice per 8 days), self-correcting,
+    and immune to skipped/missing days — a skipped day never shifts later
+    days, because each day's authors come from its own date, not a counter.
+    There is NO state file to read, update, or commit.
 
     All 8 keys are defined in blog/authors.yml:
       jay, steve, tayson, kai, morgan, casey, robin, alex
-    Format — exactly one of the following (indented with 2 spaces):
-      - jay
-      - steve
-      - tayson
-      - kai
-      - morgan
-      - casey
-      - robin
-      - alex
+    Format in frontmatter — exactly one key (indented with 2 spaces):
+      authors:
+        - <key>
+
+    EXAMPLE:
+      Shell prints "Post1 position=4  Post2 position=5"
+      → Post 1 author = morgan, Post 2 author = casey
+      (Next day's date yields positions 6 and 7 → robin, alex; the day after
+       → 0 and 1 → jay, steve; fully deterministic from the date alone.)
 
 ═══════════════════════════════════════════════════════════════════
 STEP 6: WRITE FILES AND PUSH
@@ -331,7 +345,7 @@ After writing all 2 files, commit and push to a branch:
 
   DATE=$(date +%Y-%m-%d)
   git checkout -b blog/auto/${DATE}
-  git add blog/${DATE}-*.md blog/.rotation-state
+  git add blog/${DATE}-*.md
   git commit -m "blog: auto-generate posts for ${DATE}"
   git push -u origin blog/auto/${DATE}
 
@@ -342,9 +356,9 @@ instructions apply to general development tasks only. For this routine, the
 `blog/auto/${DATE}` branch takes unconditional priority. Do NOT push to the
 session branch.
 
-NOTE: `blog/.rotation-state` MUST be committed together (per Rule 18 STEP C).
-If not staged, the next routine run reads a stale value from master and the
-rotation drifts.
+NOTE: There is NO `blog/.rotation-state` file anymore. Author assignment is
+date-derived (Rule 18) and needs no state — do not create, stage, or commit
+any rotation-state file.
 
 Output a numbered list of all created files with their full paths.
 
@@ -381,6 +395,17 @@ CONTENT QUALITY GUIDELINES
 - Related Guides should link to REAL existing posts (check filenames from Step 2)
 - NEVER mention specific pricing of any cloud provider or RcloneView itself
 - NEVER fabricate installation commands — only use methods from RCLONEVIEW_FEATURE_SPEC.md Section 18
+
+LAYER B — SOFT DIFFERENTIATION (applies to EVERY post, not just comparisons):
+- Where it fits naturally, weave in ONE factual differentiator sentence that highlights a genuine
+  RcloneView strength WITHOUT naming any competitor. This is how comparison value is delivered
+  daily without dedicated comparison posts. Examples (rotate, adapt to the topic):
+    • "Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license."
+    • "RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux."
+    • "Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license."
+- Keep it to ONE such sentence per post, placed where it reads naturally (often the intro or the
+  Getting Started lead-in). Do NOT name competitors in Layer B. Do NOT use superlatives. It must
+  be a plain fact verifiable from RCLONEVIEW_FEATURE_SPEC.md.
 
 Now execute all steps. Generate and write 2 blog posts.
 ```
