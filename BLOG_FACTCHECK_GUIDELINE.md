@@ -3,8 +3,8 @@
 > **Purpose:** Post-generation validation guideline to verify expressions, numbers, and terminology in auto-generated RcloneView blog posts.
 > **Companion:** For feature details, refer to `RCLONEVIEW_FEATURE_SPEC.md`. This document focuses on **validation rules only**.
 > **Sources:** Verified against `rcloneview-support/howto`, `rcloneview-support/docs` documentation + full `rclone-navigator` source code analysis.
-> **Last Updated:** 2026-04-13
-> **Guideline Version:** 1.1
+> **Last Updated:** 2026-06-23
+> **Guideline Version:** 1.2
 
 ---
 
@@ -55,7 +55,7 @@ Rules that MUST be followed when auto-generating blog posts.
 | No superlatives: "fastest", "only", "first" | Unverifiable comparative claims |
 | Do not describe future features as confirmed | Includes unimplemented features like "Proxy settings (coming soon)" |
 | Do not make specific security/encryption strength claims | "AES-256" etc. are rclone crypt implementations, not RcloneView features |
-| No direct comparisons with other products | Legal risk and unverifiable claims |
+| Comparisons with other products are allowed ONLY in comparison posts, sourced from `COMPETITORS_SPEC.md` | See Section 9. Outside that scope, no product comparisons (legal + unverifiable risk) |
 | Do not describe rclone features as RcloneView-exclusive | RcloneView is a GUI frontend for rclone |
 | Do not fabricate installation commands or package names | Only use methods from Feature Spec Section 18. See Section 1.5 below |
 | Do not describe RcloneView as headless/CLI/server tool | It is a GUI-only app requiring a display server. See Section 1.6 below |
@@ -213,10 +213,13 @@ RcloneView is a **GUI desktop application**. Every blog post MUST respect these 
 
 ### 3.2 License-Related Claim Prohibitions
 
-- Specific prices (frequently change)
-- Price comparisons with competitors
+- Specific prices for RcloneView itself (frequently change)
 - Subjective evaluations like "free is enough"
 - Specific trial period duration (may change)
+
+> **Exception:** Comparison posts MAY state a competitor's price/tier structure when it is sourced
+> from `COMPETITORS_SPEC.md` and date-stamped ("as of {Month Year}"). This is competitor pricing,
+> not RcloneView pricing. See Section 9.
 
 ---
 
@@ -385,17 +388,17 @@ Final verification checklist before blog publication:
 - [ ] `title` and `description` in double quotes?
 - [ ] `slug` does NOT include the date prefix?
 - [ ] `authors` key is one of the valid values: `jay`, `steve`, `tayson`, `kai`, `morgan`, `casey`, `robin`, `alex`?
-- [ ] round-robin order check (state-file based, Generator Rule 18 STEP A–C):
-      1. Read `blog/.rotation-state` from master branch — value LAST_POS (0–7).
-      2. New posts on this branch must be assigned authors in sequence:
-         - Post 1 → rotation[(LAST_POS + 1) % 8]
-         - Post 2 → rotation[(LAST_POS + 2) % 8]
-         - ... etc.
-      3. Verify `blog/.rotation-state` on the Generator's branch was
-         updated to the last position used (Generator STEP C).
-      4. Violations → FAIL.
-      Example: master's .rotation-state = 4 → today's Post 1 = position 5
-      (casey), Post 2 = position 6 (robin). Updated state file = 6.
+- [ ] author order check (DATE-DERIVED, Generator Rule 18 — no state file):
+      ROTATION = [jay, steve, tayson, kai, morgan, casey, robin, alex] (index = position)
+      1. Recompute the expected positions from today's date:
+           EPOCH_DAY=$(( $(date +%s) / 86400 ))
+           P1=$(( (EPOCH_DAY * 2) % 8 ))
+           P2=$(( (EPOCH_DAY * 2 + 1) % 8 ))
+      2. Post 1 author MUST be ROTATION[P1]; Post 2 author MUST be ROTATION[P2].
+         (If only 1 post survived, it must be ROTATION[P1].)
+      3. Mismatch → FIX the `authors:` field to the correct key.
+      4. There is NO `blog/.rotation-state` file — if one appears in the diff,
+         remove it from the commit. Do not read or update any rotation state.
 
 ---
 
@@ -420,3 +423,55 @@ Pre-verified phrases that can be safely used in blog posts:
 
 **Sync Description:**
 > Use one-way sync to mirror source content to a destination, or bidirectional sync (Beta) to merge changes from both sides. 1:N sync lets you synchronize one source to multiple destinations simultaneously.
+
+---
+
+## 9. Competitor Comparison Validation
+
+> **Scope:** Applies ONLY to comparison posts (Generator Category 5), "best {competitor}
+> alternatives" listicles, and one-line soft differentiators. Facts come exclusively from
+> `COMPETITORS_SPEC.md`. If a competitor claim is not in that file, FLAG it (FIX or REMOVE).
+
+### 9.1 Allowed in comparison posts
+
+- A factual, date-stamped comparison table or paragraph drawn from `COMPETITORS_SPEC.md`.
+- Stating a competitor's verified limitation as fact (e.g., "RaiDrive does not offer a sync
+  feature", "RaiDrive has no macOS app", "the free tier shows ads") — when the row exists in
+  `COMPETITORS_SPEC.md`.
+- Naming the competitor in the title/slug (e.g., `rcloneview-vs-raidrive`).
+- A "neutral" factual word like **"one of the few"** is acceptable; the banned superlatives
+  below are NOT (even in comparison posts).
+
+### 9.2 Still prohibited (even in comparison posts)
+
+| Prohibited | Why |
+|------------|-----|
+| Superlatives: "only", "fastest", "first", "best", "perfect" as a claim about RcloneView | Unverifiable; Section 6.4 still applies |
+| Disparagement: "RaiDrive is bad/broken/a scam/overpriced" | Legal risk; reads as untrustworthy |
+| Any competitor fact NOT in `COMPETITORS_SPEC.md` | Hallucination risk |
+| Undated pricing/tier claims | Competitor pricing changes — must say "as of {Month Year}" |
+| Comparing RcloneView to **NetDrive** | NetDrive is a Bdrive sister product — never target it |
+| Framing **rclone** as a rival | rclone is the engine RcloneView is built on |
+| Claiming an rclone capability as RcloneView-exclusive vs a competitor | Section 1.1 still applies |
+
+### 9.3 Comparison post checklist (in addition to Section 7)
+
+- [ ] Every competitor fact traces to a row in `COMPETITORS_SPEC.md`?
+- [ ] All competitor pricing/tier claims date-stamped "as of {Month Year}"?
+- [ ] At least one genuine competitor STRENGTH acknowledged (balanced tone)?
+- [ ] No banned superlatives about RcloneView (Section 9.2)?
+- [ ] No disparaging language about the competitor?
+- [ ] Post does NOT compare against NetDrive or frame rclone as a rival?
+- [ ] Title/slug uses the competitor name correctly spelled (RaiDrive, CloudMounter, Mountain Duck, ExpanDrive)?
+
+### 9.4 Safe comparison phrasings (pre-verified)
+
+> As of June 2026, RaiDrive focuses on mounting cloud storage as a network drive on Windows and
+> does not include a sync feature. RcloneView adds one-way sync and folder compare on top of
+> mounting, and runs on macOS and Linux as well as Windows.
+
+> RaiDrive's free Standard tier keeps Amazon S3, Azure, and Backblaze B2 read-only and shows ads.
+> With RcloneView, read/write access to those services is available on the FREE license.
+
+> Both tools mount cloud storage well. The practical difference is scope: RcloneView also syncs,
+> compares folders, and supports 90+ providers across Windows, macOS, and Linux.

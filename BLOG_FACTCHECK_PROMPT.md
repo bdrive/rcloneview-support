@@ -2,9 +2,9 @@
 
 > **Routine:** Blog Fact-Checker — Cloud Routine
 > **Trigger:** API (Generator 완료 시 자동 호출)
-> **Model:** Opus 4.7
+> **Model:** Opus 4.8
 > **Repositories:** bdrive/rcloneview-support + bdrive/rcloneview_www (둘 다 등록)
-> **Last Updated:** 2026-05-22
+> **Last Updated:** 2026-06-23
 
 ---
 
@@ -62,7 +62,9 @@ If not found, report the directory structure (ls ../) and stop.
 STEP 1: READ VALIDATION RULES
 ═══════════════════════════════════════════════════════════════════
 
-Read the file BLOG_FACTCHECK_GUIDELINE.md in the repository root completely. This contains all validation rules.
+Read the file BLOG_FACTCHECK_GUIDELINE.md in the repository root completely. This contains all validation rules, including Section 9 (Competitor Comparison Validation).
+
+If any post is a comparison post or "alternatives" listicle, or names a competitor anywhere, ALSO read COMPETITORS_SPEC.md in the repository root. It is the ONLY authoritative source for competitor facts. Any competitor claim not traceable to a row in that file is a violation (FIX or REMOVE).
 
 Also read the file RCLONEVIEW_FEATURE_SPEC.md for ground truth about the product. Read it in TWO PARTS if needed:
 1. First: Read with offset 0 (beginning of file)
@@ -98,6 +100,14 @@ PLATFORM & HEADLESS (caused real user complaints):
 - [ ] Raspberry Pi/ARM posts state desktop environment required?
 - [ ] Arch Linux posts do NOT reference AUR?
 - [ ] Server/NAS posts clarify: install rclone on server, not RcloneView?
+
+COMPETITOR COMPARISON (only if the post names a competitor — Guideline Section 9):
+- [ ] Every competitor fact traces to a row in COMPETITORS_SPEC.md? (else FIX/REMOVE)
+- [ ] All competitor pricing/tier claims date-stamped "as of {Month Year}"?
+- [ ] At least one genuine competitor strength acknowledged (balanced tone)?
+- [ ] No disparagement of the competitor, and no banned superlatives about RcloneView?
+- [ ] Post does NOT compare against NetDrive (sister product) and does NOT frame rclone as a rival?
+- [ ] Competitor name spelled correctly? (RaiDrive, CloudMounter, Mountain Duck, ExpanDrive)
 
 TERMINOLOGY & EXPRESSION:
 - [ ] Product name exactly "RcloneView"?
@@ -201,7 +211,7 @@ Replace {DATE} with today's date in YYYY-MM-DD format.
 
   cd ../rcloneview-support
   git checkout -b blog/verified/${DATE}
-  git add blog/${DATE}-*.md blog/.rotation-state
+  git add blog/${DATE}-*.md
   git commit -m "blog: verified posts for ${DATE}"
   git push -u origin blog/verified/${DATE}
 
@@ -209,13 +219,11 @@ NOTE: This creates a NEW branch (blog/verified/) separate from the Generator's
 branch (blog/auto/). The verified branch contains the fact-checked versions
 with any fixes applied.
 
-NOTE on `blog/.rotation-state`:
-- Generator set this when writing posts (Generator Rule 18 STEP C).
-- If you classified any post as REMOVE, decrement the state by the number
-  of removed posts (mod 8). The state should reflect the position of the
-  LAST POST THAT SURVIVED (so next day starts at the right slot).
-- If you SWAPPED authors via FIX (same set of positions, different order),
-  state stays as Generator set it.
+NOTE on author rotation: authors are DATE-DERIVED (Generator Rule 18) and need
+no state. There is NO `blog/.rotation-state` file — do not stage or commit one.
+A REMOVE never shifts other days' authors, since each day's authors come from
+its own date. Just verify the surviving posts use the date-correct authors
+(Guideline Section 7 author order check) and FIX the `authors:` field if not.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 6.5: CREATE PULL REQUESTS
@@ -240,7 +248,6 @@ PR 1 — rcloneview-support (fact-checked source):
 
     ## Changes
     {bullet list of each fix/removal with brief reason}
-    - Updated blog/.rotation-state: {old} → {new}
 
     ## Companion PR
     Build output → bdrive/rcloneview_www branch blog/deploy/{DATE}
