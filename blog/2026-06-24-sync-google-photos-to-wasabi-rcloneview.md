@@ -53,7 +53,7 @@ Before running the full sync, use **Dry Run** to preview the complete file list.
 
 <img src="/support/images/en/tutorials/wasabi-drag-and-drop.png" alt="Transferring Google Photos files to a Wasabi bucket in RcloneView" class="img-large img-center" />
 
-## Monitor the Transfer in Real Time
+## Monitor Live Transfer Progress
 
 Once the job starts, the **Transferring** tab at the bottom of RcloneView shows live progress: transfer speed, files completed, and total size moved. For a photographer with 80,000+ originals, the initial sync may run for several hours — subsequent runs transfer only new or changed files, keeping the incremental backup fast.
 

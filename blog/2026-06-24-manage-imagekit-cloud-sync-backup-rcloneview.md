@@ -49,8 +49,6 @@ Unlike mount-only tools, RcloneView also lets you sync and compare folders acros
 
 Once connected, ImageKit's folder structure appears in the dual-panel explorer. You can navigate directories, select multiple files using Ctrl+Click or Shift+Click, and drag files between ImageKit and any other connected remote — a local drive, an S3 bucket, or another cloud service. Right-click any file to Download it locally, or drag items from your file manager into RcloneView to upload them directly to ImageKit.
 
-The **Thumbnail View** mode is particularly useful for image-heavy libraries. Toggle it from the view options to see image previews in a grid layout instead of browsing by filename, making it easier to locate and verify specific assets.
-
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a sync job to back up ImageKit media assets" class="img-large img-center" />
 
 ## Set Up Automated Backups from ImageKit
