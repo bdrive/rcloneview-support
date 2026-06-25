@@ -23,8 +23,11 @@ export default function Footer() {
               <a className="link-dark text-decoration-none me-3" href="https://forum.rclone.org/" target="_blank" style={{ color: "#6c757d" }}>
                 Rclone Forum
               </a>
-              <a className="link-dark text-decoration-none" href="/support/blog/" target="_blank" style={{ color: "#6c757d" }}>
+              <a className="link-dark text-decoration-none me-3" href="/support/blog/" target="_blank" style={{ color: "#6c757d" }}>
                 Blog
+              </a>
+              <a className="link-dark text-decoration-none" href="mailto:rcloneview@bdrive.com" style={{ color: "#6c757d" }}>
+                Contact Support
               </a>
             </div>
           </div>
