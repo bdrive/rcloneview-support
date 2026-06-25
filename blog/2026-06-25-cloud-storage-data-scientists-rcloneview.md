@@ -2,7 +2,7 @@
 slug: cloud-storage-data-scientists-rcloneview
 title: "Cloud Storage for Data Scientists — Manage Training Data and Models with RcloneView"
 authors:
-  - kai
+  - alex
 description: "Manage machine learning datasets, model checkpoints, and experiment files across S3, Google Drive, and more with RcloneView — built for data science teams."
 keywords:
   - cloud storage for data scientists
@@ -49,11 +49,11 @@ RcloneView manages 90+ cloud providers — S3, Google Drive, Backblaze B2, and m
 
 A computer vision team processing 200 GB of annotated images can connect their annotation shared drive and their S3 training bucket simultaneously, then copy only new batches by browsing both panels and selecting changed directories. Public datasets shared via institutional WebDAV or Google Drive work as remotes too, sitting alongside private S3 buckets in the same session.
 
-## Transfer Large Model Files with Real-Time Monitoring
+## Transfer Large Model Files with Live Transfer Monitoring
 
 Uploading a 15 GB checkpoint file or syncing a multi-part dataset to S3 demands reliable feedback. RcloneView's **Transferring tab** shows per-transfer speed, bytes completed, and file count for every active job. The configurable multi-thread transfer setting splits large file uploads into parallel streams, which can meaningfully accelerate uploads to S3-compatible providers like Wasabi or Cloudflare R2 where per-file overhead adds up quickly.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time transfer monitoring for large ML dataset uploads in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring for large ML dataset uploads in RcloneView" class="img-large img-center" />
 
 If a transfer is interrupted by a network blip or a VPN timeout, rerunning the sync job picks up where it stopped: RcloneView skips files already transferred and resumes from the remainder. For terabyte-scale datasets, this avoids wasting hours on redundant retries.
 

@@ -2,7 +2,7 @@
 slug: sync-nextcloud-to-wasabi-rcloneview
 title: "Sync Nextcloud to Wasabi — Cloud Backup with RcloneView"
 authors:
-  - tayson
+  - jay
 description: "Sync your Nextcloud instance to Wasabi S3 with RcloneView — connect WebDAV and S3 remotes, automate backup jobs, and keep self-hosted data protected off-site."
 keywords:
   - sync nextcloud to wasabi
