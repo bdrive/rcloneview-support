@@ -58,7 +58,7 @@ Organizations using Enterprise File Fabric often need nightly or weekly backup w
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling an Enterprise File Fabric backup job in RcloneView" class="img-large img-center" />
 
-Notification integrations — email via SMTP, Telegram, Slack, and Discord — report job completion or failure, keeping operations teams informed even when the app runs minimized in the system tray.
+Job completion notifications keep operations teams informed even when the app runs minimized in the system tray.
 
 ## Monitoring Transfer History and Audit Trails
 

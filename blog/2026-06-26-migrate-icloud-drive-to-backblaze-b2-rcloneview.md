@@ -53,7 +53,7 @@ Backblaze B2 connects through credential entry. In **New Remote**, choose Backbl
 
 Open the **Sync** wizard from the Home tab. Set your iCloud Drive folder as the source and your Backblaze B2 bucket (or a prefix within it) as the destination. In the Advanced Settings step, enable **checksum verification** to compare file hashes rather than timestamps alone — this is especially valuable for a one-time migration where data integrity matters most. You can also add a **max file age** filter to migrate only recent content if you want to exclude older, rarely accessed files on the first pass.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time transfer monitoring during an iCloud to Backblaze B2 migration in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring during an iCloud to Backblaze B2 migration in RcloneView" class="img-large img-center" />
 
 Always run a **Dry Run** before the live transfer. RcloneView lists exactly which files it would copy or skip — a practical safety check when migrating a large iCloud Drive library where accidental overwrites or missed folders can be costly to unwind.
 
