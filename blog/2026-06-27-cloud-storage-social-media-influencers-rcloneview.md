@@ -2,7 +2,7 @@
 slug: cloud-storage-social-media-influencers-rcloneview
 title: "Cloud Storage for Social Media Influencers — Content Backup and Sync with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Protect and organize your content library with RcloneView — sync raw footage, backup social media assets, and automate cloud workflows across 90+ providers."
 keywords:
   - cloud storage for influencers

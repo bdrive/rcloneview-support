@@ -2,7 +2,7 @@
 slug: manage-terabox-cloud-sync-backup-rcloneview
 title: "Manage Terabox Storage — Sync and Backup Files with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Manage Terabox cloud storage with RcloneView — sync, backup, and transfer files across 90+ providers from one cross-platform GUI. No CLI required."
 keywords:
   - Terabox sync
@@ -65,7 +65,7 @@ For larger migrations, create a dedicated Copy or Sync job. RcloneView supports 
 
 After each run, RcloneView logs the outcome in **Job History**. You can filter by date range, check whether a job completed, errored, or was cancelled, and review the total bytes transferred and transfer speed. For anyone managing a large Terabox library across multiple workflows, this audit trail is invaluable for spotting anomalies — a sudden spike in error counts often signals a quota limit or network issue worth investigating.
 
-PLUS license holders can attach a cron-style schedule to any Terabox job and enable email, Telegram, Slack, or Discord notifications on completion, so the backup truly runs hands-free.
+PLUS license holders can attach a cron-style schedule to any Terabox job and enable notifications on completion, so the backup truly runs hands-free.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Job history view showing Terabox sync results in RcloneView" class="img-large img-center" />
 
