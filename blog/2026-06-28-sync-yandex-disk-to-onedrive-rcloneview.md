@@ -28,7 +28,7 @@ import RvCta from '../src/components/RvCta';
 
 # Sync Yandex Disk to OneDrive — Transfer Files with RcloneView
 
-> RcloneView connects both Yandex Disk and OneDrive in a single GUI — transfer files between them with scheduled jobs, real-time monitoring, and a dry-run preview.
+> RcloneView connects both Yandex Disk and OneDrive in a single GUI — transfer files between them with scheduled jobs, live transfer monitoring, and a dry-run preview.
 
 Yandex Disk offers generous storage and works well within Russia and neighboring regions, but many users eventually consolidate onto Microsoft OneDrive for its tight integration with Microsoft 365, SharePoint, and Teams. Moving terabytes of files cloud-to-cloud without downloading everything locally sounds daunting — but RcloneView handles it entirely server-side, routing the transfer through your local machine without requiring the files to actually land on your disk. Both providers connect via OAuth browser login, and once set up, the process is a matter of point, configure, and run.
 
@@ -60,7 +60,7 @@ Step 3 lets you add filters. If you only want to move documents and skip large m
 
 Once the job is running, the **Transferring tab** at the bottom of RcloneView shows live progress: files transferred, current speed, total size remaining. For a large Yandex Disk account — say, 500 GB of project files and media — you can leave this running in the background while RcloneView continues to work from the system tray.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time monitoring of Yandex Disk to OneDrive transfer in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring of Yandex Disk to OneDrive transfer in RcloneView" class="img-large img-center" />
 
 If you need to keep Yandex Disk and OneDrive in sync on an ongoing basis — not just a one-time migration — add a schedule in Step 4 of the wizard (PLUS license). Crontab-style fields let you run the sync nightly, weekly, or at any custom interval. Combined with email, Telegram, or Slack notifications, you'll know immediately if a scheduled sync completes or errors.
 
