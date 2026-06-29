@@ -2,7 +2,7 @@
 slug: manage-qiniu-cloud-storage-sync-rcloneview
 title: "Manage Qiniu Cloud Object Storage — Sync and Backup Files with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Connect Qiniu Cloud Kodo object storage to RcloneView and sync, backup, or transfer files across 90+ cloud providers from one GUI on Windows, macOS, and Linux."
 keywords:
   - Qiniu Cloud storage sync
@@ -66,7 +66,7 @@ With a PLUS license, **Step 4** unlocks cron-style scheduling: configure a night
 
 ## Monitoring Transfers and Job History
 
-The **Transferring** tab at the bottom of RcloneView shows live progress for active Kodo jobs: file name, bytes transferred, current speed, and overall completion. For a large initial seed — uploading several hundred gigabytes of video assets to a new bucket, for instance — this real-time view eliminates the need for a separate monitoring dashboard.
+The **Transferring** tab at the bottom of RcloneView shows live progress for active Kodo jobs: file name, bytes transferred, current speed, and overall completion. For a large initial seed — uploading several hundred gigabytes of video assets to a new bucket, for instance — this live transfer monitoring view eliminates the need for a separate monitoring dashboard.
 
 The **Job History** tab records every completed run with start time, duration, total size, transfer speed, file count, and status. Filter by date range or job type to audit sync activity over weeks or months.
 

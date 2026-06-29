@@ -2,7 +2,7 @@
 slug: cloud-storage-aerospace-defense-rcloneview
 title: "Cloud Storage for Aerospace & Defense — Secure Data Management with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Aerospace and defense teams manage CAD models, simulation data, and compliance records across secure clouds. RcloneView syncs 90+ providers with encryption on Windows, macOS, and Linux."
 keywords:
   - cloud storage aerospace defense
