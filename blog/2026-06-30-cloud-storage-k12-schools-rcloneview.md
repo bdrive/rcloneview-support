@@ -2,7 +2,7 @@
 slug: cloud-storage-k12-schools-rcloneview
 title: "Cloud Storage for K-12 Schools — Secure Backup and Data Management with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "How K-12 schools can back up Google Drive and OneDrive accounts, archive graduating student data, and automate year-end migrations using RcloneView."
 keywords:
   - cloud storage for K-12 schools

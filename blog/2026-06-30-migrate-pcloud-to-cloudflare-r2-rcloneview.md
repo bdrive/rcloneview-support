@@ -2,7 +2,7 @@
 slug: migrate-pcloud-to-cloudflare-r2-rcloneview
 title: "Migrate pCloud to Cloudflare R2 — Transfer Files with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Move your pCloud files to Cloudflare R2 with RcloneView. Visual dry-run preview, checksum verification, and scheduled transfers — no CLI required."
 keywords:
   - pCloud to Cloudflare R2 migration
@@ -78,7 +78,7 @@ If you want to keep R2 in sync with pCloud as new files arrive, add a crontab-st
 3. Add Cloudflare R2 as an S3-compatible remote using your API Token, Account ID, and endpoint URL.
 4. Create a Sync job from your pCloud folder to your R2 bucket, run a Dry Run to preview, then execute the full migration.
 
-With RcloneView handling transfer logic, real-time monitoring, and job history, a pCloud-to-R2 migration becomes a repeatable, auditable workflow — not a one-off CLI project.
+With RcloneView handling transfer logic, live transfer monitoring, and job history, a pCloud-to-R2 migration becomes a repeatable, auditable workflow — not a one-off CLI project.
 
 ---
 
