@@ -2,7 +2,7 @@
 slug: fix-jottacloud-sync-errors-rcloneview
 title: "Fix Jottacloud Sync Errors — Troubleshoot and Resolve with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Diagnose and fix common Jottacloud sync failures in RcloneView, from stalled transfers to connection drops, with practical troubleshooting steps."
 keywords:
   - jottacloud sync errors

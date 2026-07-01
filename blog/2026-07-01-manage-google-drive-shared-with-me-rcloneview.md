@@ -2,7 +2,7 @@
 slug: manage-google-drive-shared-with-me-rcloneview
 title: "Manage Google Drive Shared With Me — Sync and Backup Files with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Browse, sync, and back up Google Drive Shared with Me folders using RcloneView's cross-platform GUI, without losing track of shared content."
 keywords:
   - google drive shared with me
@@ -41,7 +41,7 @@ Standard Google Drive remotes only show files you own or have placed in your own
 
 <img src="/support/images/en/blog/new-remote.png" alt="Creating a new Google Drive remote configured for Shared with Me content in RcloneView" class="img-large img-center" />
 
-Once connected, the Shared with Me remote behaves like a normal file source: folder tree navigation, thumbnail previews for images, and the standard right-click menu for copy, download, and Get Public Link all work the same way. Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license — so shared content isn't limited to read-only browsing.
+Once connected, the Shared with Me remote behaves like a normal file source: folder tree navigation, thumbnail previews for images, and the standard right-click menu for copy, download, and Get Public Link all work the same way. RcloneView also syncs and compares folders — on the FREE license — so shared content isn't limited to read-only browsing.
 
 ## Backing Up Shared Folders Before They Disappear
 
