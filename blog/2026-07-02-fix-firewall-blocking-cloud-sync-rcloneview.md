@@ -2,7 +2,7 @@
 slug: fix-firewall-blocking-cloud-sync-rcloneview
 title: "Fix Firewall Blocking Cloud Sync — Connection Errors with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Diagnose and fix firewall-blocked cloud sync connections in RcloneView with port checks, proxy settings, and rclone flags for corporate networks."
 keywords:
   - firewall blocking cloud sync
@@ -48,7 +48,7 @@ RcloneView's Show network error dialog setting (Settings > Interfaces & Notifica
 
 RcloneView's embedded rclone communicates with cloud providers over standard HTTPS (port 443) for almost all API-based remotes, so a corporate firewall blocking non-standard outbound ports is the most common cause of trouble. SFTP remotes need port 22 open specifically, and RcloneView's own embedded rclone API listens locally on port 5582 — that one only matters if another local process or endpoint-protection tool is intercepting loopback traffic.
 
-If OAuth-based remotes like Google Drive or Dropbox fail specifically during the initial browser login step, the firewall is likely blocking the redirect back to the local callback rather than the API traffic itself. Testing the same remote setup from a network without content filtering is the fastest way to confirm this before escalating.
+If OAuth-based remotes like Google Drive or Dropbox fail specifically during the initial browser login step, the firewall is likely blocking the redirect back to the local callback rather than the API traffic itself. Testing the same remote setup from a network without content filtering is a reliable way to confirm this before escalating.
 
 <img src="/support/images/en/howto/rcloneview-basic/mount-from-remote-explorer.png" alt="Verifying remote connectivity after adjusting firewall rules in RcloneView" class="img-large img-center" />
 
