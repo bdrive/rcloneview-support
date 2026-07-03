@@ -2,7 +2,7 @@
 slug: fix-cloud-sync-case-sensitivity-conflicts-rcloneview
 title: "Fix Cloud Sync Case Sensitivity Conflicts — Resolve Duplicate Files with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Stop cloud sync jobs from creating duplicate files when Windows or macOS case-insensitive filesystems meet case-sensitive cloud storage, using RcloneView."
 keywords:
   - cloud sync case sensitivity
@@ -43,7 +43,7 @@ The fastest way to confirm you're dealing with a case sensitivity issue rather t
 
 ## Preventing Overwrite Loops with One-Way Sync and Checksums
 
-Bidirectional sync is where case conflicts do the most damage, since each side can interpret a renamed file as both a new upload and a stale deletion. Switching the affected job to one-way "Modifying destination only" sync removes that ambiguity — one side is always authoritative, so a case-only rename on the source simply updates the destination instead of triggering a duplicate. Enabling the checksum comparison option in Step 2 of the sync wizard also helps, since it compares files by hash and size rather than relying on filename matching alone, which reduces false positives when case differences are mixed with genuine content changes. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, which makes it easier to spot when a conflict originated from a specific device's filesystem behavior.
+Bidirectional sync (Beta) is where case conflicts do the most damage, since each side can interpret a renamed file as both a new upload and a stale deletion. Switching the affected job to one-way "Modifying destination only" sync removes that ambiguity — one side is always authoritative, so a case-only rename on the source simply updates the destination instead of triggering a duplicate. Enabling the checksum comparison option in Step 2 of the sync wizard also helps, since it compares files by hash and size rather than relying on filename matching alone, which reduces false positives when case differences are mixed with genuine content changes. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, which makes it easier to spot when a conflict originated from a specific device's filesystem behavior.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Configuring a one-way sync job with checksum comparison to avoid case sensitivity duplicates" class="img-large img-center" />
 

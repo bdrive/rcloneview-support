@@ -2,7 +2,7 @@
 slug: manage-hdfs-cloud-sync-backup-rcloneview
 title: "Manage HDFS Storage — Sync and Backup Files with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Connect Hadoop Distributed File System (HDFS) clusters to RcloneView to browse, sync, and back up big data storage across 90+ cloud providers."
 keywords:
   - hdfs rcloneview
