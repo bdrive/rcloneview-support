@@ -39,7 +39,7 @@ Organizations that adopted Quatrix by Maytech for secure external file sharing o
 
 ## Connecting Both Platforms Side by Side
 
-Add Quatrix and Google Drive as remotes in RcloneView, and both appear as tabs in the same explorer window. Google Drive connects through the standard browser-based OAuth login; Quatrix is configured with the account details for your organization's instance. Once both are added, you can browse the Quatrix folder structure next to the Google Drive destination and confirm the mapping before moving anything.
+Add Quatrix and Google Drive as remotes in RcloneView, and both appear as tabs in the same explorer window. Google Drive connects through the standard browser-based OAuth login; Quatrix connects via its WebDAV (or SFTP) interface using your organization's server address and account credentials. Once both are added, you can browse the Quatrix folder structure next to the Google Drive destination and confirm the mapping before moving anything.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding Quatrix and Google Drive remotes in RcloneView" class="img-large img-center" />
 

@@ -47,7 +47,7 @@ Because RcloneView mounts AND syncs across 90+ providers from one window on Wind
 
 ## Verifying Integrity Before Long-Term Cold Storage
 
-Before a collection moves to a cold-archive tier, someone needs to confirm the copy is bit-for-bit identical to the original — a corrupted TIFF discovered five years later is not something you can undo. RcloneView's Folder Compare view lines up source and destination side by side and flags files with different sizes or checksums, so a registrar can catch a partial upload before it becomes the permanent record.
+Before a collection moves to a cold-archive tier, someone needs to confirm the copy is bit-for-bit identical to the original — a corrupted TIFF discovered five years later is not something you can undo. RcloneView's Folder Compare view lines up source and destination side by side and flags files with different sizes, so a registrar can catch a partial upload before it becomes the permanent record.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparing archive folders for integrity before cold storage" class="img-large img-center" />
 
