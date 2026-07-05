@@ -2,7 +2,7 @@
 slug: migrate-icloud-drive-to-dropbox-rcloneview
 title: "Migrate iCloud Drive to Dropbox — Transfer Files with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Migrate iCloud Drive to Dropbox with RcloneView — a direct, GUI-based way to move Apple cloud files into Dropbox without manual downloads."
 keywords:
   - migrate iCloud Drive to Dropbox
@@ -44,7 +44,7 @@ Once connected, split the Explorer into two panels — iCloud Drive on one side,
 
 ## Running the Cloud-to-Cloud Transfer
 
-Drag and drop selected folders from the iCloud Drive panel into the Dropbox panel to trigger an upload-style transfer between the two cloud accounts, or set up a proper Sync job for larger migrations. The Sync wizard lets you configure source and destination folders, set concurrent transfer counts, and apply filters — for example, excluding `.tmp` files or restricting the max file age to skip content you've already archived elsewhere.
+Drag and drop selected folders from the iCloud Drive panel into the Dropbox panel to trigger a direct copy between the two cloud accounts, or set up a proper Sync job for larger migrations. The Sync wizard lets you configure source and destination folders, set concurrent transfer counts, and apply filters — for example, excluding `.tmp` files or restricting the max file age to skip content you've already archived elsewhere.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer configuration between iCloud Drive and Dropbox" class="img-large img-center" />
 

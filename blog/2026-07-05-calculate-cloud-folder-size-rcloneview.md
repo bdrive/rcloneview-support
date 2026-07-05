@@ -2,7 +2,7 @@
 slug: calculate-cloud-folder-size-rcloneview
 title: "Get Size — Calculate Cloud Folder Sizes Instantly in RcloneView"
 authors:
-  - alex
+  - robin
 description: "Use RcloneView's Get Size feature to calculate cloud folder and file sizes instantly before you sync, migrate, or clean up storage."
 keywords:
   - get size cloud storage
@@ -41,7 +41,7 @@ Right-click any folder or selection of files in an Explorer panel and choose Get
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Selecting a folder to calculate its total size in RcloneView" class="img-large img-center" />
 
-For a photography studio managing 2TB of RAW files spread across client project folders, this turns "which clients are eating the most storage" from a guessing game into a five-second check. Run Get Size on each top-level project folder and immediately see which ones are candidates for archiving to cheaper storage.
+For a photography studio managing 2TB of RAW files spread across client project folders, this turns "which clients are eating the most storage" from a guessing game into a quick check. Run Get Size on each top-level project folder and immediately see which ones are candidates for archiving to cheaper storage.
 
 ## Using Size Checks Before Sync and Migration Jobs
 
