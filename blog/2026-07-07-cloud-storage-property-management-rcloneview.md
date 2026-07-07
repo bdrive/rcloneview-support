@@ -2,7 +2,7 @@
 slug: cloud-storage-property-management-rcloneview
 title: "Cloud Storage for Property Management — Centralize Listings and Documents with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Property managers can unify leases, inspection photos, and vendor files across cloud drives with RcloneView's multi-cloud sync, mount, and backup tools."
 keywords:
   - cloud storage property management

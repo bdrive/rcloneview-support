@@ -2,7 +2,7 @@
 slug: manage-linkbox-cloud-sync-backup-rcloneview
 title: "Manage Linkbox Storage — Sync and Backup Files with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Connect Linkbox cloud storage to RcloneView for drag-and-drop file management, scheduled backup, and cross-provider sync from one desktop app."
 keywords:
   - Linkbox
