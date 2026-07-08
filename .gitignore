@@ -48,4 +48,6 @@ Thumbs.db
 .pnp.*
 
 # Test coverage
+.translate_batches.json
 coverage
+.venv/

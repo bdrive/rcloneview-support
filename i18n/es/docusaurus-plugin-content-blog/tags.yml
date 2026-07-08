@@ -1,0 +1,884 @@
+1fichier:
+  label: 1Fichier
+  permalink: /1fichier
+  description: Publicaciones sobre 1Fichier.
+
+accounting:
+  label: Contabilidad
+  permalink: /accounting
+  description: Publicaciones sobre Contabilidad.
+
+ai:
+  label: AI
+  permalink: /ai
+  description: Publicaciones sobre AI.
+
+alibaba-cloud:
+  label: Alibaba Cloud
+  permalink: /alibaba-cloud
+  description: Publicaciones sobre Alibaba Cloud.
+
+amazon-s3:
+  label: Amazon S3
+  permalink: /amazon-s3
+  description: Publicaciones sobre Amazon S3.
+
+api:
+  label: API
+  permalink: /api
+  description: Publicaciones sobre API.
+
+architecture:
+  label: Arquitectura
+  permalink: /architecture
+  description: Publicaciones sobre Arquitectura.
+
+archive:
+  label: Archivo
+  permalink: /archive
+  description: Publicaciones sobre Archivo.
+
+arm:
+  label: Arm
+  permalink: /arm
+  description: Publicaciones sobre Arm.
+
+automation:
+  label: Automatización
+  permalink: /automation
+  description: Publicaciones sobre Automatización.
+
+aws-s3:
+  label: AWS S3
+  permalink: /aws-s3
+  description: Publicaciones sobre AWS S3.
+
+azure:
+  label: Azure
+  permalink: /azure
+  description: Publicaciones sobre Azure.
+
+azure-files:
+  label: Azure Files
+  permalink: /azure-files
+  description: Publicaciones sobre Azure Files.
+
+Backblaze:
+  label: Backblaze
+  permalink: /backblaze
+  description: Publicaciones sobre Backblaze.
+
+backblaze-b2:
+  label: Backblaze B2
+  permalink: /backblaze-b2
+  description: Publicaciones sobre Backblaze B2.
+
+backup:
+  label: Copia de seguridad
+  permalink: /backup
+  description: Publicaciones sobre Copia de seguridad.
+
+best-practices:
+  label: Mejores Prácticas
+  permalink: /best-practices
+  description: Publicaciones sobre Mejores Prácticas.
+
+box:
+  label: Box
+  permalink: /box
+  description: Publicaciones sobre Box.
+
+business:
+  label: Negocios
+  permalink: /business
+  description: Publicaciones sobre Negocios.
+
+cad:
+  label: CAD
+  permalink: /cad
+  description: Publicaciones sobre CAD.
+
+cctv:
+  label: CCTV
+  permalink: /cctv
+  description: Publicaciones sobre CCTV.
+
+cleanup:
+  label: Limpieza
+  permalink: /cleanup
+  description: Publicaciones sobre Limpieza.
+
+cli:
+  label: CLI
+  permalink: /cli
+  description: Publicaciones sobre CLI.
+
+cloud:
+  label: Nube
+  permalink: /cloud
+  description: Publicaciones sobre Nube.
+
+cloud-backup:
+  label: Copia de Seguridad en la Nube
+  permalink: /cloud-backup
+  description: Publicaciones sobre Copia de Seguridad en la Nube.
+
+cloud-file-transfer:
+  label: Transferencia de Archivos en la Nube
+  permalink: /cloud-file-transfer
+  description: Publicaciones sobre Transferencia de Archivos en la Nube.
+
+cloud-migration:
+  label: Migración a la Nube
+  permalink: /cloud-migration
+  description: Publicaciones sobre Migración a la Nube.
+
+cloud-security:
+  label: Seguridad en la Nube
+  permalink: /cloud-security
+  description: Publicaciones sobre Seguridad en la Nube.
+
+cloud-storage:
+  label: Almacenamiento en la Nube
+  permalink: /cloud-storage
+  description: Publicaciones sobre Almacenamiento en la Nube.
+
+cloud-storage-synchronization:
+  label: Sincronización de Almacenamiento en la Nube
+  permalink: /cloud-storage-synchronization
+  description: Publicaciones sobre Sincronización de Almacenamiento en la Nube.
+
+cloud-sync:
+  label: Sincronización en la Nube
+  permalink: /cloud-sync
+  description: Publicaciones sobre Sincronización en la Nube.
+
+cloud-to-cloud:
+  label: De Nube a Nube
+  permalink: /cloud-to-cloud
+  description: Publicaciones sobre De Nube a Nube.
+
+cloudflare:
+  label: Cloudflare
+  permalink: /cloudflare
+  description: Publicaciones sobre Cloudflare.
+
+cloudflare-r2:
+  label: Cloudflare R2
+  permalink: /cloudflare-r2
+  description: Publicaciones sobre Cloudflare R2.
+
+collaboration:
+  label: Colaboración
+  permalink: /collaboration
+  description: Publicaciones sobre Colaboración.
+
+compare:
+  label: Comparar
+  permalink: /compare
+  description: Publicaciones sobre Comparar.
+
+comparison:
+  label: Comparación
+  permalink: /comparison
+  description: Publicaciones sobre Comparación.
+
+compliance:
+  label: Cumplimiento
+  permalink: /compliance
+  description: Publicaciones sobre Cumplimiento.
+
+copy:
+  label: Copiar
+  permalink: /copy
+  description: Publicaciones sobre Copiar.
+
+cost-optimization:
+  label: Optimización de Costos
+  permalink: /cost-optimization
+  description: Publicaciones sobre Optimización de Costos.
+
+crypt:
+  label: Crypt
+  permalink: /crypt
+  description: Publicaciones sobre Crypt.
+
+dam:
+  label: Gestión de Activos Digitales
+  permalink: /dam
+  description: Publicaciones sobre Gestión de Activos Digitales.
+
+dashboard:
+  label: Panel de Control
+  permalink: /dashboard
+  description: Publicaciones sobre Panel de Control.
+
+data-loss:
+  label: Pérdida de Datos
+  permalink: /data-loss
+  description: Publicaciones sobre Pérdida de Datos.
+
+data-pipeline:
+  label: Canalización de Datos
+  permalink: /data-pipeline
+  description: Publicaciones sobre Canalización de Datos.
+
+data-recovery:
+  label: Recuperación de Datos
+  permalink: /data-recovery
+  description: Publicaciones sobre Recuperación de Datos.
+
+debian:
+  label: Debian
+  permalink: /debian
+  description: Publicaciones sobre Debian.
+
+decentralized-storage:
+  label: Almacenamiento Descentralizado
+  permalink: /decentralized-storage
+  description: Publicaciones sobre Almacenamiento Descentralizado.
+
+digital-preservation:
+  label: Preservación Digital
+  permalink: /digital-preservation
+  description: Publicaciones sobre Preservación Digital.
+
+digitalocean-spaces:
+  label: DigitalOcean Spaces
+  permalink: /digitalocean-spaces
+  description: Publicaciones sobre DigitalOcean Spaces.
+
+disaster-recovery:
+  label: Recuperación ante Desastres
+  permalink: /disaster-recovery
+  description: Publicaciones sobre Recuperación ante Desastres.
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Publicaciones sobre Docker.
+
+drag-and-drop:
+  label: Arrastrar y Soltar
+  permalink: /drag-and-drop
+  description: Publicaciones sobre Arrastrar y Soltar.
+
+dropbox:
+  label: Dropbox
+  permalink: /dropbox
+  description: Publicaciones sobre Dropbox.
+
+duplicates:
+  label: Duplicados
+  permalink: /duplicates
+  description: Publicaciones sobre Duplicados.
+
+education:
+  label: Educación
+  permalink: /education
+  description: Publicaciones sobre Educación.
+
+encryption:
+  label: Cifrado
+  permalink: /encryption
+  description: Publicaciones sobre Cifrado.
+
+engineering:
+  label: Ingeniería
+  permalink: /engineering
+  description: Publicaciones sobre Ingeniería.
+
+enterprise:
+  label: Empresa
+  permalink: /enterprise
+  description: Publicaciones sobre Empresa.
+
+european-cloud:
+  label: Nube Europea
+  permalink: /european-cloud
+  description: Publicaciones sobre Nube Europea.
+
+external-drive:
+  label: Unidad Externa
+  permalink: /external-drive
+  description: Publicaciones sobre Unidad Externa.
+
+feature:
+  label: Función
+  permalink: /feature
+  description: Publicaciones sobre Función.
+
+file-management:
+  label: Gestión de Archivos
+  permalink: /file-management
+  description: Publicaciones sobre Gestión de Archivos.
+
+filezilla:
+  label: FileZilla
+  permalink: /filezilla
+  description: Publicaciones sobre FileZilla.
+
+filters:
+  label: Filtros
+  permalink: /filters
+  description: Publicaciones sobre Filtros.
+
+finance:
+  label: Finanzas
+  permalink: /finance
+  description: Publicaciones sobre Finanzas.
+
+folder-comparison:
+  label: Comparación de Carpetas
+  permalink: /folder-comparison
+  description: Publicaciones sobre Comparación de Carpetas.
+
+freefilesync:
+  label: FreeFileSync
+  permalink: /freefilesync
+  description: Publicaciones sobre FreeFileSync.
+
+ftp:
+  label: FTP
+  permalink: /ftp
+  description: Publicaciones sobre FTP.
+
+glacier:
+  label: Glacier
+  permalink: /glacier
+  description: Publicaciones sobre Glacier.
+
+gofile:
+  label: Gofile
+  permalink: /gofile
+  description: Publicaciones sobre Gofile.
+
+goodsync:
+  label: GoodSync
+  permalink: /goodsync
+  description: Publicaciones sobre GoodSync.
+
+google-cloud-storage:
+  label: Google Cloud Storage
+  permalink: /google-cloud-storage
+  description: Publicaciones sobre Google Cloud Storage.
+
+google-drive:
+  label: Google Drive
+  permalink: /google-drive
+  description: Publicaciones sobre Google Drive.
+
+google-drive-sync:
+  label: Google Drive Sync
+  permalink: /google-drive-sync
+  description: Publicaciones sobre Google Drive Sync.
+
+google-photos:
+  label: Google Photos
+  permalink: /google-photos
+  description: Publicaciones sobre Google Photos.
+
+guide:
+  label: Guía
+  permalink: /guide
+  description: Publicaciones sobre Guía.
+
+hard-drive:
+  label: Disco Duro
+  permalink: /hard-drive
+  description: Publicaciones sobre Disco Duro.
+
+hard-drive-backup:
+  label: Copia de Seguridad de Disco Duro
+  permalink: /hard-drive-backup
+  description: Publicaciones sobre Copia de Seguridad de Disco Duro.
+
+healthcare:
+  label: Salud
+  permalink: /healthcare
+  description: Publicaciones sobre Salud.
+
+hetzner:
+  label: Hetzner
+  permalink: /hetzner
+  description: Publicaciones sobre Hetzner.
+
+hidrive:
+  label: HiDrive
+  permalink: /hidrive
+  description: Publicaciones sobre HiDrive.
+
+hipaa:
+  label: HIPAA
+  permalink: /hipaa
+  description: Publicaciones sobre HIPAA.
+
+history:
+  label: Historial
+  permalink: /history
+  description: Publicaciones sobre Historial.
+
+hubic:
+  label: Hubic
+  permalink: /hubic
+  description: Publicaciones sobre Hubic.
+
+huggingface:
+  label: HuggingFace
+  permalink: /huggingface
+  description: Publicaciones sobre HuggingFace.
+
+hybrid-cloud:
+  label: Nube Híbrida
+  permalink: /hybrid-cloud
+  description: Publicaciones sobre Nube Híbrida.
+
+idrive-e2:
+  label: IDrive E2
+  permalink: /idrive-e2
+  description: Publicaciones sobre IDrive E2.
+
+industry:
+  label: Industria
+  permalink: /industry
+  description: Publicaciones sobre Industria.
+
+innovation:
+  label: Innovación
+  permalink: /innovation
+  description: Publicaciones sobre Innovación.
+
+installation:
+  label: Instalación
+  permalink: /installation
+  description: Publicaciones sobre Instalación.
+
+internet-archive:
+  label: Internet Archive
+  permalink: /internet-archive
+  description: Publicaciones sobre Internet Archive.
+
+job-history:
+  label: Historial de Trabajos
+  permalink: /job-history
+  description: Publicaciones sobre Historial de Trabajos.
+
+job-management:
+  label: Gestión de Trabajos
+  permalink: /job-management
+  description: Publicaciones sobre Gestión de Trabajos.
+
+jottacloud:
+  label: Jottacloud
+  permalink: /jottacloud
+  description: Publicaciones sobre Jottacloud.
+
+koofr:
+  label: Koofr
+  permalink: /koofr
+  description: Publicaciones sobre Koofr.
+
+linode:
+  label: Linode
+  permalink: /linode
+  description: Publicaciones sobre Linode.
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Publicaciones sobre Linux.
+
+macos:
+  label: macOS
+  permalink: /macos
+  description: Publicaciones sobre macOS.
+
+mailru:
+  label: Mail.ru
+  permalink: /mailru
+  description: Publicaciones sobre Mail.ru.
+
+media:
+  label: Medios
+  permalink: /media
+  description: Publicaciones sobre Medios.
+
+mega:
+  label: MEGA
+  permalink: /mega
+  description: Publicaciones sobre MEGA.
+
+microsoft-365:
+  label: Microsoft 365
+  permalink: /microsoft-365
+  description: Publicaciones sobre Microsoft 365.
+
+migration:
+  label: Migración
+  permalink: /migration
+  description: Publicaciones sobre Migración.
+
+minio:
+  label: MinIO
+  permalink: /minio
+  description: Publicaciones sobre MinIO.
+
+monitoring:
+  label: Monitoreo
+  permalink: /monitoring
+  description: Publicaciones sobre Monitoreo.
+
+mount:
+  label: Montaje
+  permalink: /mount
+  description: Publicaciones sobre Montaje.
+
+move:
+  label: Mover
+  permalink: /move
+  description: Publicaciones sobre Mover.
+
+multi-cloud:
+  label: Multi Nube
+  permalink: /multi-cloud
+  description: Publicaciones sobre Multi Nube.
+
+nas:
+  label: NAS
+  permalink: /nas
+  description: Publicaciones sobre NAS.
+
+nextcloud:
+  label: Nextcloud
+  permalink: /nextcloud
+  description: Publicaciones sobre Nextcloud.
+
+nonprofit:
+  label: Sin Fines de Lucro
+  permalink: /nonprofit
+  description: Publicaciones sobre Sin Fines de Lucro.
+
+object-storage:
+  label: Almacenamiento de Objetos
+  permalink: /object-storage
+  description: Publicaciones sobre Almacenamiento de Objetos.
+
+offline-sync:
+  label: Sincronización sin Conexión
+  permalink: /offline-sync
+  description: Publicaciones sobre Sincronización sin Conexión.
+
+onedrive:
+  label: OneDrive
+  permalink: /onedrive
+  description: Publicaciones sobre OneDrive.
+
+onedrive-sync:
+  label: OneDrive Sync
+  permalink: /onedrive-sync
+  description: Publicaciones sobre OneDrive Sync.
+
+opendrive:
+  label: OpenDrive
+  permalink: /opendrive
+  description: Publicaciones sobre OpenDrive.
+
+openstack:
+  label: OpenStack
+  permalink: /openstack
+  description: Publicaciones sobre OpenStack.
+
+optimization:
+  label: Optimización
+  permalink: /optimization
+  description: Publicaciones sobre Optimización.
+
+oracle-cloud:
+  label: Oracle Cloud
+  permalink: /oracle-cloud
+  description: Publicaciones sobre Oracle Cloud.
+
+organization:
+  label: Organización
+  permalink: /organization
+  description: Publicaciones sobre Organización.
+
+pcloud:
+  label: pCloud
+  permalink: /pcloud
+  description: Publicaciones sobre pCloud.
+
+performance:
+  label: Rendimiento
+  permalink: /performance
+  description: Publicaciones sobre Rendimiento.
+
+photography:
+  label: Fotografía
+  permalink: /photography
+  description: Publicaciones sobre Fotografía.
+
+pikpak:
+  label: PikPak
+  permalink: /pikpak
+  description: Publicaciones sobre PikPak.
+
+platform:
+  label: Plataforma
+  permalink: /platform
+  description: Publicaciones sobre Plataforma.
+
+plex:
+  label: Plex
+  permalink: /plex
+  description: Publicaciones sobre Plex.
+
+pricing:
+  label: Precios
+  permalink: /pricing
+  description: Publicaciones sobre Precios.
+
+privacy:
+  label: Privacidad
+  permalink: /privacy
+  description: Publicaciones sobre Privacidad.
+
+productivity:
+  label: Productividad
+  permalink: /productivity
+  description: Publicaciones sobre Productividad.
+
+proton-drive:
+  label: Proton Drive
+  permalink: /proton-drive
+  description: Publicaciones sobre Proton Drive.
+
+putio:
+  label: Put.io
+  permalink: /putio
+  description: Publicaciones sobre Put.io.
+
+qnap:
+  label: QNAP
+  permalink: /qnap
+  description: Publicaciones sobre QNAP.
+
+quatrix:
+  label: Quatrix
+  permalink: /quatrix
+  description: Publicaciones sobre Quatrix.
+
+r2:
+  label: R2
+  permalink: /r2
+  description: Publicaciones sobre R2.
+
+ransomware:
+  label: Ransomware
+  permalink: /ransomware
+  description: Publicaciones sobre Ransomware.
+
+raspberry-pi:
+  label: Raspberry Pi
+  permalink: /raspberry-pi
+  description: Publicaciones sobre Raspberry Pi.
+
+rclone:
+  label: Rclone
+  permalink: /rclone
+  description: Publicaciones sobre Rclone.
+
+rclone-crypt:
+  label: Rclone Crypt
+  permalink: /rclone-crypt
+  description: Publicaciones sobre Rclone Crypt.
+
+RcloneView:
+  label: RcloneView
+  permalink: /rcloneview
+  description: Publicaciones sobre RcloneView.
+
+reference:
+  label: Referencia
+  permalink: /reference
+  description: Publicaciones sobre Referencia.
+
+remote-work:
+  label: Trabajo Remoto
+  permalink: /remote-work
+  description: Publicaciones sobre Trabajo Remoto.
+
+s3:
+  label: S3
+  permalink: /s3
+  description: Publicaciones sobre S3.
+
+s3-compatible:
+  label: Compatible con S3
+  permalink: /s3-compatible
+  description: Publicaciones sobre Compatible con S3.
+
+safety:
+  label: Seguridad
+  permalink: /safety
+  description: Publicaciones sobre Seguridad.
+
+seafile:
+  label: Seafile
+  permalink: /seafile
+  description: Publicaciones sobre Seafile.
+
+security:
+  label: Seguridad
+  permalink: /security
+  description: Publicaciones sobre Seguridad.
+
+self-hosted:
+  label: Autoalojado
+  permalink: /self-hosted
+  description: Publicaciones sobre Autoalojado.
+
+sftp:
+  label: SFTP
+  permalink: /sftp
+  description: Publicaciones sobre SFTP.
+
+sharefile:
+  label: ShareFile
+  permalink: /sharefile
+  description: Publicaciones sobre ShareFile.
+
+sharepoint:
+  label: SharePoint
+  permalink: /sharepoint
+  description: Publicaciones sobre SharePoint.
+
+sia:
+  label: Sia
+  permalink: /sia
+  description: Publicaciones sobre Sia.
+
+slack:
+  label: Slack
+  permalink: /slack
+  description: Publicaciones sobre Slack.
+
+smb:
+  label: SMB
+  permalink: /smb
+  description: Publicaciones sobre SMB.
+
+storage-comparison:
+  label: Comparación de Almacenamiento
+  permalink: /storage-comparison
+  description: Publicaciones sobre Comparación de Almacenamiento.
+
+storj:
+  label: Storj
+  permalink: /storj
+  description: Publicaciones sobre Storj.
+
+sugarsync:
+  label: SugarSync
+  permalink: /sugarsync
+  description: Publicaciones sobre SugarSync.
+
+swift:
+  label: Swift
+  permalink: /swift
+  description: Publicaciones sobre Swift.
+
+sync:
+  label: Sincronización
+  permalink: /sync
+  description: Publicaciones sobre Sincronización.
+
+synology:
+  label: Synology
+  permalink: /synology
+  description: Publicaciones sobre Synology.
+
+tencent-cos:
+  label: Tencent COS
+  permalink: /tencent-cos
+  description: Publicaciones sobre Tencent COS.
+
+terabox:
+  label: Terabox
+  permalink: /terabox
+  description: Publicaciones sobre Terabox.
+
+tips:
+  label: Consejos
+  permalink: /tips
+  description: Publicaciones sobre Consejos.
+
+troubleshooting:
+  label: Solución de Problemas
+  permalink: /troubleshooting
+  description: Publicaciones sobre Solución de Problemas.
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Publicaciones sobre Tutorial.
+
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: Publicaciones sobre Ubuntu.
+
+university:
+  label: Universidad
+  permalink: /university
+  description: Publicaciones sobre Universidad.
+
+vfs:
+  label: VFS
+  permalink: /vfs
+  description: Publicaciones sobre VFS.
+
+video-production:
+  label: Producción de Video
+  permalink: /video-production
+  description: Publicaciones sobre Producción de Video.
+
+wasabi:
+  label: Wasabi
+  permalink: /wasabi
+  description: Publicaciones sobre Wasabi.
+
+webdav:
+  label: WebDAV
+  permalink: /webdav
+  description: Publicaciones sobre WebDAV.
+
+windows:
+  label: Windows
+  permalink: /windows
+  description: Publicaciones sobre Windows.
+
+windows-server:
+  label: Windows Server
+  permalink: /windows-server
+  description: Publicaciones sobre Windows Server.
+
+workspace:
+  label: Espacio de Trabajo
+  permalink: /workspace
+  description: Publicaciones sobre Espacio de Trabajo.
+
+yandex:
+  label: Yandex
+  permalink: /yandex
+  description: Publicaciones sobre Yandex.
+
+yandex-disk:
+  label: Yandex Disk
+  permalink: /yandex-disk
+  description: Publicaciones sobre Yandex Disk.
+
+zoho:
+  label: Zoho
+  permalink: /zoho
+  description: Publicaciones sobre Zoho.

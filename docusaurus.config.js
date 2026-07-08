@@ -31,9 +31,22 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
+  // RcloneView Desktop 앱과 동일한 9개 언어. 데스크톱 ARB의 zh/zh_TW는
+  // Docusaurus/hreflang 관례에 따라 zh-Hans/zh-Hant로 매핑.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ko', 'ja', 'zh-Hans', 'zh-Hant', 'de', 'es', 'fr', 'id'],
+    localeConfigs: {
+      en: {label: 'English'},
+      ko: {label: '한국어'},
+      ja: {label: '日本語'},
+      'zh-Hans': {label: '简体中文'},
+      'zh-Hant': {label: '繁體中文'},
+      de: {label: 'Deutsch'},
+      es: {label: 'Español'},
+      fr: {label: 'Français'},
+      id: {label: 'Bahasa Indonesia'},
+    },
   },
 
   // tailwindcss 설정 - jay
