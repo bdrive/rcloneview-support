@@ -141,4 +141,4 @@ You should now have the following values ready to configure your Cloudflare R2 r
 
 You can now enter these into **RcloneView** when setting up a new S3-compatible remote, or use the Rclone CLI.
 
-👉 Next: [How to Add S3-Compatible Remote in RcloneView](/support/howto/remote-storage-connection-settings/s3)
+👉 Next: [How to Add S3-Compatible Remote in RcloneView](/howto/remote-storage-connection-settings/s3)

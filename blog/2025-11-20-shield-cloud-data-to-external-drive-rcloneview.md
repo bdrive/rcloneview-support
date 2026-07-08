@@ -21,7 +21,7 @@ tags:
   - backup
   - google-drive
   - onedrive
-  - Dropbox
+  - dropbox
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -47,12 +47,12 @@ RcloneView layers a friendly UI on top of rclone so anyone can mirror Google Dri
 
 ## Blueprint: RcloneView as Your External Drive Control Tower
 
-1. **Connect clouds** via [Remote Manager](/support/howto/rcloneview-basic/remote-manager) and the OAuth guide in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide).
-2. **Harden settings** under [General Settings](/support/howto/rcloneview-basic/general-settings) with config passwords.
-3. **Organize Explorer panes** with friendly names using [Browse and manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage) so each pane matches a cloud drive vs. an external path.
-4. **Design jobs** using [Create sync jobs](/support/howto/rcloneview-basic/create-sync-jobs) or [Synchronize remote storages](/support/howto/rcloneview-basic/synchronize-remote-storages), and preview risk with [Compare folder contents](/support/howto/rcloneview-basic/compare-folder-contents).
-5. **Automate** refreshes through [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution) while keeping an eye on throughput in [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring).
-6. Mount the drive read-only for audits via [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
+1. **Connect clouds** via [Remote Manager](/howto/rcloneview-basic/remote-manager) and the OAuth guide in [Add OAuth Online Login](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide).
+2. **Harden settings** under [General Settings](/howto/rcloneview-basic/general-settings) with config passwords.
+3. **Organize Explorer panes** with friendly names using [Browse and manage remote storage](/howto/rcloneview-basic/browse-and-manage-remote-storage) so each pane matches a cloud drive vs. an external path.
+4. **Design jobs** using [Create sync jobs](/howto/rcloneview-basic/create-sync-jobs) or [Synchronize remote storages](/howto/rcloneview-basic/synchronize-remote-storages), and preview risk with [Compare folder contents](/howto/rcloneview-basic/compare-folder-contents).
+5. **Automate** refreshes through [Job scheduling and execution](/howto/rcloneview-advanced/job-scheduling-and-execution) while keeping an eye on throughput in [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring).
+6. Mount the drive read-only for audits via [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
 
 ## Step 1 -- Prep the External Drive and Connect Clouds
 
@@ -90,7 +90,7 @@ RcloneView layers a friendly UI on top of rclone so anyone can mirror Google Dri
 
 ## Step 5 -- Verify, Mount, and Test Restores
 
-- After each scheduled run, check throughput and error counts in [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring).  
+- After each scheduled run, check throughput and error counts in [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring).  
 
 <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="transfer monitoring" class="img-large img-center" />  
   

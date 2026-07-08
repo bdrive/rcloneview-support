@@ -60,8 +60,8 @@ Ensure you have:
 - Decide on one-time backup or recurring sync
 
 🔍 Helpful guides:
-- [How to retrieve AWS S3 access credentials](/support/howto/cloud-storage-setting/aws-account-info)
-- [How to obtain Cloudflare R2 API credentials and endpoint](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
+- [How to retrieve AWS S3 access credentials](/howto/cloud-storage-setting/aws-account-info)
+- [How to obtain Cloudflare R2 API credentials and endpoint](/howto/cloud-storage-setting/cloudflare-r2-credential)
 ### Step 2 – Add Remotes in RcloneView
 
 1. Open **RcloneView**, click **`+ New Remote`**
@@ -72,7 +72,7 @@ Ensure you have:
    - Choose **Amazon S3**, add credentials, name it clearly (e.g., `MyS3`)  
 4. Confirm both appear side by side in the Explorer view
 
-👉 See more: [How to Add S3 Remote](/support/howto/remote-storage-connection-settings/s3)
+👉 See more: [How to Add S3 Remote](/howto/remote-storage-connection-settings/s3)
 <img src="/support/images/en/tutorials/open-aws-s3-and-cloudflare-r2-remotes.png" alt="open aws s3 and cloudflare r2 remotes" class="img-medium img-center" />
 
 ### Step 3 – Execute the Sync
@@ -80,12 +80,12 @@ Ensure you have:
 **Method A – Drag & Drop**  
 Quick and visual—drag files from R2 pane into your S3 pane.
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 **Method B – Compare & Copy**
 Use the **Compare** feature to highlight new or changed files and select what to sync.
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="compare display select" class="img-medium img-center" />
 
@@ -96,9 +96,9 @@ Setup recurring tasks:
 3. Optionally schedule and let RcloneView handle it automatically
 
 👉 See more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="job run click" class="img-medium img-center" />
 

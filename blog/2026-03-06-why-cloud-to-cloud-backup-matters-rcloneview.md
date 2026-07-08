@@ -20,7 +20,7 @@ tags:
   - cloud-storage
   - backup
   - best-practices
-  - data-protection
+  - security
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

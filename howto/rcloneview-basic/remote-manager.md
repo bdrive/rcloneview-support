@@ -68,7 +68,7 @@ Once the **New Remote** dialog opens, select the remote type (e.g., Google Drive
 
 The fields will vary depending on the selected provider.
 
-For detailed provider-specific instructions, please refer to [**Remote Storage Connection Settings**](/support/howto/category/remote-storage-connection-settings).  
+For detailed provider-specific instructions, please refer to [**Remote Storage Connection Settings**](/howto/category/remote-storage-connection-settings).  
 
 ## Managing Existing Remotes in RcloneView
 

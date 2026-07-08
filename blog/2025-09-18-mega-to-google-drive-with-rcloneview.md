@@ -66,7 +66,7 @@ Sources: [Mega](https://mega.io/) [Google Help](https://support.google.com/a/use
 
 🔍 Helpful guides:  
 - [How to Add Google Drive Remote](https://rcloneview.com/support/howto/intro#step-2-adding-remote-storage-google-drive-example)  
-- [Add Mega](/support/howto/remote-storage-connection-settings/mega)
+- [Add Mega](/howto/remote-storage-connection-settings/mega)
 
 <img src="/support/images/en/tutorials/open-mega-and-google-drive-remotes.png" alt="open mega and google drive remotes" class="img-medium img-center" />
 
@@ -75,20 +75,20 @@ Sources: [Mega](https://mega.io/) [Google Help](https://support.google.com/a/use
 ### A) Drag & Drop  
 Browse Mega on one side, Google Drive on the other → drag folders across.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### B) Compare & Copy  
 Use **Compare** to preview differences, then sync changed/new files only.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare view in RcloneView" class="img-medium img-center" />
 
 ### C) Sync & Scheduled Jobs  
 Mirror Mega → Drive and set up **nightly syncs** for continuous alignment.  
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Run scheduled job in RcloneView" class="img-medium img-center" />
 

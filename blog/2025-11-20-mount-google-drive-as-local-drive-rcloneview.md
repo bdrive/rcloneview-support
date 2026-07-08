@@ -20,7 +20,7 @@ tags:
   - google-drive
   - mount
   - windows
-  - macOS
+  - macos
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -41,7 +41,7 @@ import RvCta from '../src/components/RvCta';
 
 ## Why Choose RcloneView Over DIY CLI Mounts
 
-- **Guided OAuth**: Remote Manager launches a secure browser, stores refresh tokens(see [Remote Manager](/support/howto/rcloneview-basic/remote-manager)).
+- **Guided OAuth**: Remote Manager launches a secure browser, stores refresh tokens(see [Remote Manager](/howto/rcloneview-basic/remote-manager)).
 - **Driver helpers**: WinFsp and macFUSE prompts are embedded inside the installer, and RcloneView validates them before you hit Mount.
 - **Repeatable templates**: Mount Manager remembers every Google Drive, Shared Drive, or other remote so you can remount after reboots with a toggle.
 - **Multi-cloud control**: While you mount Google Drive, you can also sync to Dropbox, compare S3 buckets, or schedule jobs from the same UI.
@@ -58,9 +58,9 @@ import RvCta from '../src/components/RvCta';
 
 ## Step 2 -- Connect Google Drive (and Friends)
 
-- Open Remote Manager and click **Add Remote** -> **Google Drive**. Follow the OAuth prompts described in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide).
+- Open Remote Manager and click **Add Remote** -> **Google Drive**. Follow the OAuth prompts described in [Add OAuth Online Login](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide).
 - Label the remote `gdrive-main` (and optionally add Shared Drives or other clouds like Dropbox, OneDrive, or S3 so you can compare/sync later).
-- Use [Browse and manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage) to create folder presets you will mount frequently (Design, Finance, Shared Drives, etc.).  
+- Use [Browse and manage remote storage](/howto/rcloneview-basic/browse-and-manage-remote-storage) to create folder presets you will mount frequently (Design, Finance, Shared Drives, etc.).  
 
   <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="cloud to cloud transfer default" class="img-large img-center" />
   
@@ -81,17 +81,17 @@ Mount Manager (Tools -> Mount Manager) keeps a list of mounts with auto-start, r
 
 Mounting is step one. RcloneView layers multi-cloud workflows on top of it:
 
-- **Compare and clean up** Google Drive vs. a local SSD or Dropbox using [Compare folder contents](/support/howto/rcloneview-basic/compare-folder-contents) while the mount stays live.  
+- **Compare and clean up** Google Drive vs. a local SSD or Dropbox using [Compare folder contents](/howto/rcloneview-basic/compare-folder-contents) while the mount stays live.  
 
   <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />
   
 
-- **Sync or copy** entire folders to external drives using [Create sync jobs](/support/howto/rcloneview-basic/create-sync-jobs) and [Synchronize remote storages](/support/howto/rcloneview-basic/synchronize-remote-storages) for offline backups.  
+- **Sync or copy** entire folders to external drives using [Create sync jobs](/howto/rcloneview-basic/create-sync-jobs) and [Synchronize remote storages](/howto/rcloneview-basic/synchronize-remote-storages) for offline backups.  
 
   <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running an encrypted sync job in RcloneView" class="img-large img-center" />
   
 
-- **Schedule** those jobs so every night your mounted Google Drive enqueues a Sync to NAS or Wasabi without manual clicks (see [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)).  
+- **Schedule** those jobs so every night your mounted Google Drive enqueues a Sync to NAS or Wasabi without manual clicks (see [Job scheduling and execution](/howto/rcloneview-advanced/job-scheduling-and-execution)).  
 
   <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="create job schedule" class="img-large img-center" />
   

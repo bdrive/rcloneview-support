@@ -61,8 +61,8 @@ RcloneView builds on rclone so you get reliability and advanced options—withou
 3. Repeat for **Google Drive**, click **Connect**, and finish the OAuth browser login.
 4. Confirm both remotes appear in Remote Manager.
 
-👉 Learn more: [Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)  
-👉 Manage remotes: [Remote Manager](/support/howto/rcloneview-basic/remote-manager/)
+👉 Learn more: [Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)  
+👉 Manage remotes: [Remote Manager](/howto/rcloneview-basic/remote-manager/)
 
 ## Step 2: Open both remotes in the Explorer pane
 
@@ -82,7 +82,7 @@ RcloneView builds on rclone so you get reliability and advanced options—withou
 2. Drag them into the Google Drive pane (or the reverse).
 3. Track progress in the **Transfer** tab; pause/resume as needed.
 
-👉 More details: [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+👉 More details: [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ### Method 2: Compare, then copy or delete
 
@@ -92,7 +92,7 @@ RcloneView builds on rclone so you get reliability and advanced options—withou
 4. Select items to move, then choose **Copy →** or **← Copy**.
 5. Use **Delete** carefully to clean up duplicates or old data.
 
-👉 Learn more: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
+👉 Learn more: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ### Method 3: Sync or save as a Job
 
@@ -103,9 +103,9 @@ RcloneView builds on rclone so you get reliability and advanced options—withou
 
 👉 Learn more:
 
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 ### Method 4: Schedule recurring sync jobs
 
@@ -115,7 +115,7 @@ RcloneView builds on rclone so you get reliability and advanced options—withou
 4. Enable the job and let RcloneView run it automatically.
 5. Check logs and history to verify success.
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ## Tips for smooth transfers
 

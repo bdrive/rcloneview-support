@@ -24,7 +24,7 @@ tags:
   - dropbox
   - onedrive
   - s3
-  - NAS
+  - nas
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

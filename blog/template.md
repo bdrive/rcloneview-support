@@ -8,7 +8,6 @@ authors:
 tags:
   - reference
   - RcloneView
-  - content-style
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

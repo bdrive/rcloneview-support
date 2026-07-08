@@ -21,7 +21,6 @@ tags:
   - cloud-storage
   - file-management
   - innovation
-  - future
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

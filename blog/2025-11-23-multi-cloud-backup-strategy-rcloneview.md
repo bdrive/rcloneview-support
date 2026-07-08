@@ -61,9 +61,9 @@ import RvCta from '../src/components/RvCta';
   
 
 👉 Remote setup references:  
-- [Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)  
-- [Remote Manager](/support/howto/rcloneview-basic/remote-manager/)  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
+- [Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)  
+- [Remote Manager](/howto/rcloneview-basic/remote-manager/)  
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
 
 ## Sync vs. Backup: choose the right mode
 
@@ -97,7 +97,7 @@ import RvCta from '../src/components/RvCta';
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="create job schedule" class="img-large img-center" />
   
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ## Monitor failures and retries
 

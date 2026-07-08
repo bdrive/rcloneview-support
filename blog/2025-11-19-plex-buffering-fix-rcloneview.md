@@ -48,7 +48,7 @@ If the mount is the bottleneck, the fix lives in RcloneView.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
 
-1. Add your cloud remote (Google Drive, Dropbox, Wasabi, S3, etc.) in **Explorer → + New Remote**. Need a refresher? See [/support/howto/remote-storage-connection-settings/add-oath-online-login](/support/howto/remote-storage-connection-settings/add-oath-online-login).
+1. Add your cloud remote (Google Drive, Dropbox, Wasabi, S3, etc.) in **Explorer → + New Remote**. Need a refresher? See [/support/howto/remote-storage-connection-settings/add-oath-online-login](/howto/remote-storage-connection-settings/add-oath-online-login).
 2. Open **Mount Manager → Add Mount**.
 3. Choose the remote folder that holds media (`gdrive-media:Movies`) and set a mount path visible to Plex (drive letter on Windows or `/Volumes/CloudMovies` on macOS/Linux).
 4. Keep **Target** on `Auto` unless Plex needs a fixed drive letter. To lock it in, choose a letter (Windows) or enable **Mount to local path** and point to a persistent folder (Linux/macOS).
@@ -61,7 +61,7 @@ If the mount is the bottleneck, the fix lives in RcloneView.
 
 ### Advanced mount options translated for Plex users
 
-These field names match RcloneView’s Mount dialog. Defaults follow the [Mount Cloud Storage as a Local Drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) guide; the “Plex-friendly” column clarifies how to set them for streaming.
+These field names match RcloneView’s Mount dialog. Defaults follow the [Mount Cloud Storage as a Local Drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) guide; the “Plex-friendly” column clarifies how to set them for streaming.
 
 | RcloneView field | What it controls | Plex-friendly setting |
 | --- | --- | --- |

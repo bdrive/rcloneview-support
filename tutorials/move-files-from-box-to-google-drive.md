@@ -66,8 +66,8 @@ Rather than manually downloading then re-uploading files, RcloneView leverages d
 
 👉 Learn more:  
 
-- [Add Box Remote](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
-- [Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)
+- [Add Box Remote](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
+- [Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)
 
 ### Step 2: Open Remotes Side-by-Side
 
@@ -93,7 +93,7 @@ RcloneView offers several flexible ways to move or sync data from Box to Google 
 
 This intuitive drag-and-drop interface makes cloud-to-cloud transfers effortless—no commands needed.
 
-👉 More details: [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+👉 More details: [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 #### 🔍 Method 2: Compare Folder Contents, Copy, or Delete
 
@@ -109,7 +109,7 @@ This intuitive drag-and-drop interface makes cloud-to-cloud transfers effortless
 
 Visual comparison helps prevent errors and ensures you only move what you intend.
 
-👉 Learn more: [Compare Folder Contents guide](/support/howto/rcloneview-basic/compare-folder-contents)
+👉 Learn more: [Compare Folder Contents guide](/howto/rcloneview-basic/compare-folder-contents)
 
   
 #### 🔁 Method 3: Use Sync or Job
@@ -125,9 +125,9 @@ Visual comparison helps prevent errors and ensures you only move what you intend
   3. Save and run manually or set a schedule.
 
 👉 Learn more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
   
 #### ⏰ Method 4: Schedule Automatic Sync Job
@@ -140,7 +140,7 @@ Visual comparison helps prevent errors and ensures you only move what you intend
 
 RcloneView will run the sync at your specified times. Check execution details and logs in **`Job History`** and receive notifications upon completion.
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
   
 ## ✅ Summary
@@ -153,14 +153,14 @@ Give it a try and streamline your multi-cloud workflows!
   
 ## 🔗 Related Guides
 
-- [How to Add Box Remote](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
-- [How to Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)  
-- [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)  
-- [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [How to Add Box Remote](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
+- [How to Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)  
+- [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)  
+- [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)  
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
   
 

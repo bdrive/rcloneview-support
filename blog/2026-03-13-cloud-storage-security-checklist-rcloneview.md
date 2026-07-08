@@ -20,7 +20,7 @@ tags:
   - security
   - cloud-storage
   - best-practices
-  - checklist
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

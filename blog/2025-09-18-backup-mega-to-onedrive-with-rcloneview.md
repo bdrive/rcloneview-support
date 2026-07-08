@@ -57,8 +57,8 @@ import RvCta from '../src/components/RvCta';
 3. Verify both in Explorer view  
 
 🔍 Helpful guides:  
-- [Add OneDrive ](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
-- [Add Mega](/support/howto/remote-storage-connection-settings/mega)
+- [Add OneDrive ](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
+- [Add Mega](/howto/remote-storage-connection-settings/mega)
 
 <img src="/support/images/en/blog/open-mega-and-onedrive-remote.png" alt="open mega and onedrive remote" class="img-medium img-center" />
 
@@ -69,8 +69,8 @@ import RvCta from '../src/components/RvCta';
 - **Sync & Jobs** to automate scheduled backups  
 
 👉 See more:  
-- [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
+- [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Scheduled backup job in RcloneView" class="img-medium img-center" />
 

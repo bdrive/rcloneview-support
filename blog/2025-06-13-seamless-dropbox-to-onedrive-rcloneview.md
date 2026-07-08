@@ -84,7 +84,7 @@ RcloneView wraps **rclone config** in a friendly workflow:
 3. Add **OneDrive**, sign in with your Microsoft account/tenant, name it (e.g., `MyOneDrive`)  
 4. Confirm both remotes appear in the Explorer pane (left/right)
 
-🔍 Helpful guides:  [Add OneDrive / Dropbox Remote](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
+🔍 Helpful guides:  [Add OneDrive / Dropbox Remote](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
 <img src="/support/images/en/tutorials/open-onedrive-and-dropbox-remotes.png" alt="open onedrive and dropbox remotes" class="img-medium img-center" />
 
 ## Step 3 — Execute the transfer
@@ -95,13 +95,13 @@ RcloneView gives you three straightforward approaches. Start small, then scale.
 - Browse Dropbox on one side and OneDrive on the other, then **drag folders/files across**.  
 - Ideal for quick moves and sanity checks.
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### B) Compare & Copy (preview changes)
 - Run **Compare** to spot new/changed items before copying.  
 - Reduce surprises and avoid duplicates.
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="compare display select" class="img-medium img-center" />
 
@@ -110,9 +110,9 @@ RcloneView gives you three straightforward approaches. Start small, then scale.
 - **Dry-run** first, then save as a reusable job; add a schedule for nightly or weekly runs.
 
 👉 See more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="job run click" class="img-medium img-center" />
 

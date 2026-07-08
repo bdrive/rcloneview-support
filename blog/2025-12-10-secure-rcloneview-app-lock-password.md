@@ -84,7 +84,7 @@ That’s it. The next time RcloneView starts or its window is reopened, you’ll
 - Use App Lock on shared PCs or in offices where multiple users can open your session.  
 - Pair it with OS account passwords or disk encryption for layered protection.  
 - Name jobs clearly but avoid embedding secrets in job names or notes.  
-- Back up `rclone_view.db` to a secure, user-writable location (see [change the database location](/support/tutorials/change-rcloneview-database-location)).  
+- Back up `rclone_view.db` to a secure, user-writable location (see [change the database location](/tutorials/change-rcloneview-database-location)).  
 - Keep the scheduler enabled only for jobs you trust and monitor via Job History.
 
 ## Quick FAQ

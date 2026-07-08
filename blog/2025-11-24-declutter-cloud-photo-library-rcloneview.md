@@ -46,7 +46,7 @@ If your photo and video history lives in three or more places, drift is inevitab
 
 ## Connect Clouds and Mount a Clean Workspace
 
-- Add every location once: Google Drive, Dropbox, OneDrive, S3/Wasabi/R2, or NAS via `+ New Remote`. Guides: [add-oath-online-login](/support/howto/remote-storage-connection-settings/add-oath-online-login) and [/support/howto/remote-storage-connection-settings/s3](/support/howto/remote-storage-connection-settings/s3). 
+- Add every location once: Google Drive, Dropbox, OneDrive, S3/Wasabi/R2, or NAS via `+ New Remote`. Guides: [add-oath-online-login](/howto/remote-storage-connection-settings/add-oath-online-login) and [/support/howto/remote-storage-connection-settings/s3](/howto/remote-storage-connection-settings/s3). 
 
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />. 
 

@@ -45,8 +45,8 @@ Each tab allows you to configure different parts of the application. Below is a 
 
 When **Launch at login** is enabled:  
 
-- Any scheduled jobs defined in the [**Job Scheduler**](../rcloneview-advanced/job-scheduling-and-execution.md) will automatically run upon login.  
-- Any remotes configured for auto-mounting in the [**Mount Manager**](./mount-cloud-storage-as-a-local-drive.md#method-1-mount-from-remote-explorer) will be mounted automatically when RcloneView starts.  
+- Any scheduled jobs defined in the [**Job Scheduler**](/howto/rcloneview-advanced/job-scheduling-and-execution) will automatically run upon login.  
+- Any remotes configured for auto-mounting in the [**Mount Manager**](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#method-1-mount-from-remote-explorer) will be mounted automatically when RcloneView starts.  
 :::
 
 - **Start minimized**: Launches RcloneView into the system tray.
@@ -136,7 +136,7 @@ This will restart the embedded Rclone process and may interrupt any currently ru
 
 - **Proxy settings**: Configure proxy (feature coming soon).
 - **Rclone connection manager**: View or manage active Rclone connections.  
-  → [Read more](./connection-manager.md)
+  → [Read more](/howto/rcloneview-basic/connection-manager)
 
 ### Diagnostics
 

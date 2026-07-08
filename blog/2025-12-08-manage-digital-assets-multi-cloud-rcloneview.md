@@ -62,12 +62,12 @@ import RvCta from '../src/components/RvCta';
 
 👉 Helpful references:
 
-- [Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)
-- [Remote Manager](/support/howto/rcloneview-basic/remote-manager/)
-- [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
-- [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)
+- [Remote Manager](/howto/rcloneview-basic/remote-manager/)
+- [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ## Standardize your folder template (RAW / EDIT / EXPORT / ARCHIVE)
 

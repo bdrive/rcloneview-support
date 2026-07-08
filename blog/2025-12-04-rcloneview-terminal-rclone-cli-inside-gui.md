@@ -120,7 +120,7 @@ Use `--dry-run` to simulate changes and `-vv` to spot slow backends or throttlin
 
 1. Open the **Terminal** tab, type `rclone `, and pick a command from the list.
 2. Start with read-only commands (`listremotes`, `lsf`, `about`) before running any sync or delete operations.
-3. For a guided walkthrough with screenshots, see [Using the Terminal in RcloneView](/support/howto/rcloneview-basic/using-terminal-in-rcloneview).
+3. For a guided walkthrough with screenshots, see [Using the Terminal in RcloneView](/howto/rcloneview-basic/using-terminal-in-rcloneview).
 
 > Pro tip: Destructive commands like `delete`, `purge`, or an unchecked `sync` can remove data. Double-check paths and remotes before you hit Enter.
 

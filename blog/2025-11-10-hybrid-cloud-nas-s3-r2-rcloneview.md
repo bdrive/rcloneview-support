@@ -87,7 +87,7 @@ RcloneView becomes the control plane. You can visually orchestrate:
 3. Give each remote a clear label (`NAS_Studio`, `S3_Archive`, `R2_Distribution`).  
 4. Test connections; they should appear in the Explorer pane ready for drag-and-drop transfers.
 
-🔍 Helpful docs: [S3 connection settings](/support/howto/remote-storage-connection-settings/s3)
+🔍 Helpful docs: [S3 connection settings](/howto/remote-storage-connection-settings/s3)
 
 ---
 

@@ -73,7 +73,7 @@ This guide walks you through how to:
 
 Follow the AWS EC2 guide to launch Ubuntu, open port 5572, install Rclone, and run the `rcd` daemon  
 
-👉 See: [How to Run Rclone on AWS EC2 Server](/support/howto/cloud-storage-setting/run-rclone-on-aws-ec2)
+👉 See: [How to Run Rclone on AWS EC2 Server](/howto/cloud-storage-setting/run-rclone-on-aws-ec2)
  
 **Key points**:
 
@@ -111,7 +111,7 @@ To keep connections organized, RcloneView allows each window to operate with its
   📌 _You’ll connect this window to your External Rclone (EC2) in the next step._
 
   
-👉 Learn more: [Using Multiple Rclone Connections with New Window](/support/howto/rcloneview-advanced/multi-window)
+👉 Learn more: [Using Multiple Rclone Connections with New Window](/howto/rcloneview-advanced/multi-window)
 
 ---
 
@@ -144,7 +144,7 @@ In the **newly opened window**, follow these steps to connect to your EC2-hosted
 <img src="/support/images/en/tutorials/connected-to-ec2-rclone.png" alt="connected to ec2 rclone" class="img-medium img-center" />
 </div>
 
-👉 Learn more: [Add a New External Rclone](/support/howto/rcloneview-basic/connection-manager#add-a-new-external-rclone)
+👉 Learn more: [Add a New External Rclone](/howto/rcloneview-basic/connection-manager#add-a-new-external-rclone)
 
 
 ---
@@ -171,13 +171,13 @@ Still in the EC2-connected RcloneView window:
     
 4. Click **Save**, name it (e.g., ec2-s3)
     
-👉 Learn more: [Add AWS S3 Remote](/support/howto/remote-storage-connection-settings/s3)
+👉 Learn more: [Add AWS S3 Remote](/howto/remote-storage-connection-settings/s3)
 
 ### ➕ Add Google Drive Remote (Using OAuth Access Token)
 
 Instead of completing a new browser-based login flow, you can follow the steps in the guide below to use the **OAuth Access Token** obtained earlier:
 
-👉 See: [Set Up Google Drive on External Rclone Without Browser](/support/howto/remote-storage-connection-settings/ec2-google-drive-connection)
+👉 See: [Set Up Google Drive on External Rclone Without Browser](/howto/remote-storage-connection-settings/ec2-google-drive-connection)
 
 1. Go to **`+ New Remote`** from the `Remote` menu
 2. Select **Google Drive** as the provider
@@ -218,7 +218,7 @@ Instead of completing a new browser-based login flow, you can follow the steps i
 
 💡 Progress is shown in the status bar and transfer log tab.
 
-  👉 Learn more: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
+  👉 Learn more: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ---
 
@@ -253,10 +253,10 @@ Instead of completing a new browser-based login flow, you can follow the steps i
   Once scheduled, RcloneView will execute syncs automatically using your EC2-hosted Rclone backend.
 
 👉 Learn more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
   
 ---
 
@@ -271,15 +271,15 @@ Instead of completing a new browser-based login flow, you can follow the steps i
 
 ## 🔗 Related Guides
 
-- [How to Run Rclone on AWS EC2 Server](/support/howto/cloud-storage-setting/run-rclone-on-aws-ec2)
-- [Using Multiple Rclone Connections with New Window](/support/howto/rcloneview-advanced/multi-window)
-- [Add a New External Rclone](/support/howto/rcloneview-basic/connection-manager#add-a-new-external-rclone)
-- [Add AWS S3 Remote](/support/howto/remote-storage-connection-settings/s3)
-- [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
--  [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [How to Run Rclone on AWS EC2 Server](/howto/cloud-storage-setting/run-rclone-on-aws-ec2)
+- [Using Multiple Rclone Connections with New Window](/howto/rcloneview-advanced/multi-window)
+- [Add a New External Rclone](/howto/rcloneview-basic/connection-manager#add-a-new-external-rclone)
+- [Add AWS S3 Remote](/howto/remote-storage-connection-settings/s3)
+- [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
+-  [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 
 

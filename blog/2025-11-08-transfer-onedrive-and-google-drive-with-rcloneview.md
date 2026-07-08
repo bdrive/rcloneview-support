@@ -66,7 +66,7 @@ RcloneView layers a guided UI on top of rclone, so even large migrations stay re
 3. Repeat for **Google Drive** and finish the OAuth flow.
 4. Confirm both remotes appear in Remote Manager.
 
-👉 Learn more: [Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)
+👉 Learn more: [Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)
 
 <img src="/support/images/en/howto/remote-storage-connection-settings/remote-manager-mega-view.png" alt="Remote Manager showing connected cloud remotes" class="img-large img-center" />
 
@@ -86,7 +86,7 @@ RcloneView layers a guided UI on top of rclone, so even large migrations stay re
 2. Drag them into the Google Drive pane (or the opposite direction).
 3. Watch progress in the **Transfer** tab; pause/resume if needed.
 
-👉 More details: [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+👉 More details: [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
   <img src="/support/images/en/tutorials/wasabi-drag-and-drop.png" alt="drag and drop" class="img-large img-center" />
 
@@ -98,7 +98,7 @@ RcloneView layers a guided UI on top of rclone, so even large migrations stay re
 4. Select items to move, then choose **Copy →** or **← Copy**.
 5. Use **Delete** with caution to clean up old data.
 
-👉 Learn more: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
+👉 Learn more: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare OneDrive and Google Drive folders" class="img-large img-center" />
 
@@ -111,9 +111,9 @@ RcloneView layers a guided UI on top of rclone, so even large migrations stay re
 
 👉 Learn more:
 
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 <img src="/support/images/en/howto/rcloneview-basic/add-job-configure-storage.png" alt="Configure sync job between OneDrive and Google Drive" class="img-large img-center" />
 
@@ -125,7 +125,7 @@ RcloneView layers a guided UI on top of rclone, so even large migrations stay re
 4. Save and enable the job; RcloneView will run it automatically.
 5. Review logs and history for verification.
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Schedule OneDrive to Google Drive sync job" class="img-large img-center" />
 

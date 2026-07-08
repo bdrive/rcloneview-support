@@ -58,8 +58,8 @@ Graduations, job changes, mergers, and simple cleanup projects often require mov
 5. **Back up critical folders**: For regulated content, export a manifest or version history before moving.
 
 🔍 Helpful guides  
-- [Google OAuth quick setup in RcloneView](/support/howto/remote-storage-connection-settings/add-oath-online-login)  
-- [Add Google Shared Drive remotes](/support/howto/remote-storage-connection-settings/connect-using-cli/add-google-shared-drive)
+- [Google OAuth quick setup in RcloneView](/howto/remote-storage-connection-settings/add-oath-online-login)  
+- [Add Google Shared Drive remotes](/howto/remote-storage-connection-settings/connect-using-cli/add-google-shared-drive)
 
 ## Connect both Google Drive accounts in RcloneView
 
@@ -80,21 +80,21 @@ Start with a pilot folder before copying the entire account. Once the sample run
 ### Drag & Drop (manual moves)
 
 Open the source remote on the left and destination on the right, then drag files or folders across. Perfect for ad-hoc handoffs or moving a few Shared drive folders.  
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### Compare & Copy (preview differences)
 
 Run **Compare** to list what’s new, changed, or missing between both accounts. Review the delta, deselect anything you want to skip, then copy. Great for staged migrations or cleaning up after the freeze window.  
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-medium img-center" />
 ### Sync & Scheduled Jobs (automate cutovers)
 
 Use **Sync** to mirror selected folders until the destination fully replaces the source. Always run a **dry-run**, then save the job and schedule nightly or hourly runs until the cutover is complete.  
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Run a saved sync job in RcloneView" class="img-medium img-center" />
 

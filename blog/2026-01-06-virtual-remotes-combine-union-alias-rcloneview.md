@@ -20,7 +20,7 @@ tags:
   - cloud-storage
   - file-management
   - sync
-  - multi-cloud-management
+  - multi-cloud
 ---
 
 import RvCta from '../src/components/RvCta';
@@ -64,7 +64,7 @@ Example: bookmark a shared team folder like `Drive:Team/Projects/Client-A` and o
 <img src="/support/images/en/howto/remote-storage-connection-settings/alias/new-remote-add-alias.png" alt="Add alias remote" class="img-large img-center" />
 <img src="/support/images/en/howto/remote-storage-connection-settings/alias/virtual-alias-file-browser.png" alt="Alias remote file browser" class="img-large img-center" />
 
-Guide: [/support/howto/remote-storage-connection-settings/alias-remote](/support/howto/remote-storage-connection-settings/alias-remote)
+Guide: [/support/howto/remote-storage-connection-settings/alias-remote](/howto/remote-storage-connection-settings/alias-remote)
 
 ## Combine remote: one view, multiple folders
 
@@ -80,7 +80,7 @@ Example: create a `Marketing_Assets` Combine remote that contains:
 <img src="/support/images/en/howto/remote-storage-connection-settings/combine/new-remote-add-combine.png" alt="Add combine remote" class="img-large img-center" />
 <img src="/support/images/en/howto/remote-storage-connection-settings/combine/combine-check-folder-1.png" alt="Combine view example" class="img-large img-center" />
 
-Guide: [/support/howto/remote-storage-connection-settings/combine-remote](/support/howto/remote-storage-connection-settings/combine-remote)
+Guide: [/support/howto/remote-storage-connection-settings/combine-remote](/howto/remote-storage-connection-settings/combine-remote)
 
 ## Union remote: one merged folder across clouds
 
@@ -93,7 +93,7 @@ Example: combine monthly raw footage from two remotes into one `Raw_Footage` vie
 <img src="/support/images/en/howto/remote-storage-connection-settings/union/new-remote-add-union.png" alt="Add union remote" class="img-large img-center" />
 <img src="/support/images/en/howto/remote-storage-connection-settings/union/union-check-folder-1.png" alt="Union view example" class="img-large img-center" />
 
-Guide: [/support/howto/remote-storage-connection-settings/union-remote](/support/howto/remote-storage-connection-settings/union-remote)
+Guide: [/support/howto/remote-storage-connection-settings/union-remote](/howto/remote-storage-connection-settings/union-remote)
 
 ## Quick decision guide: Alias vs Combine vs Union
 
@@ -106,13 +106,13 @@ Guide: [/support/howto/remote-storage-connection-settings/union-remote](/support
 ## Practical workflows with virtual remotes
 
 - **Compare before syncing**: run Compare on a Combine or Union view to see differences first.  
-  Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents)
+  Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents)
 - **Sync across multiple sources**: Sync a Union remote to a backup destination to mirror a blended archive.  
-  Guide: [/support/howto/rcloneview-basic/synchronize-remote-storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
+  Guide: [/support/howto/rcloneview-basic/synchronize-remote-storages](/howto/rcloneview-basic/synchronize-remote-storages)
 - **Save jobs once**: use Job Manager to schedule a virtual remote Sync and keep it running automatically.  
-  Guide: [/support/howto/rcloneview-basic/create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs)
+  Guide: [/support/howto/rcloneview-basic/create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs)
 - **Optional mounts**: mount a virtual remote and browse it as a local drive.  
-  Guide: [/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)
+  Guide: [/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)
 
 <div class="img-grid-2">
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results filters" class="img-large img-center" />

@@ -49,16 +49,16 @@ Google Workspace Shared Drives often hold your design assets, handover folders, 
 
 RcloneView layers a GUI over rclone, so the Shared Drive picker, auth tokens, and mount flags are handled for you.
 
-- Guided remote wizard lists every Shared Drive that your Google Workspace account can access and stores it securely. See the reference steps in [/support/howto/remote-storage-connection-settings/connect-using-cli/add-google-shared-drive](/support/howto/remote-storage-connection-settings/connect-using-cli/add-google-shared-drive).
-- Mount Manager surfaces the options described in [/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) so you do not have to memorize CLI syntax.
-- Auto-mount lives in the Mount dialog; Launch at login is available in Settings -> General (documented in [/support/howto/rcloneview-basic/general-settings](/support/howto/rcloneview-basic/general-settings)).
+- Guided remote wizard lists every Shared Drive that your Google Workspace account can access and stores it securely. See the reference steps in [/support/howto/remote-storage-connection-settings/connect-using-cli/add-google-shared-drive](/howto/remote-storage-connection-settings/connect-using-cli/add-google-shared-drive).
+- Mount Manager surfaces the options described in [/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) so you do not have to memorize CLI syntax.
+- Auto-mount lives in the Mount dialog; Launch at login is available in Settings -> General (documented in [/support/howto/rcloneview-basic/general-settings](/howto/rcloneview-basic/general-settings)).
 
 ## What You Need Before Mounting
 
 | Requirement | Details |
 | --- | --- |
 | RcloneView + Rclone | Install the latest RcloneView bundle (includes rclone). |
-| File system drivers | Windows uses WinFsp (bundled). macOS requires macFUSE; follow the prompts inside RcloneView. Check [/support/howto/FAQ/increase-file-handle-limit-on-macos](/support/howto/FAQ/increase-file-handle-limit-on-macos) for tuning limits. |
+| File system drivers | Windows uses WinFsp (bundled). macOS requires macFUSE; follow the prompts inside RcloneView. Check [/support/howto/FAQ/increase-file-handle-limit-on-macos](/howto/FAQ/increase-file-handle-limit-on-macos) for tuning limits. |
 
 
 ## Step-by-Step: Mount a Google Shared Drive with RcloneView
@@ -118,7 +118,7 @@ RcloneView lets you keep Shared Drive mounts consistent across machines:
 | Drive disappears after sleep | OS unmounted WinFsp/macFUSE | Enable **Auto mount** and **Launch at login** so RcloneView remounts on startup. |
 | Slow file open | Cache too small or on slow disk | Increase **Cache max size** and keep **Cache mode** on Full. |
 | Permissions error on macOS | FUSE lacks Full Disk Access | Grant RcloneView and macFUSE Full Disk Access, then restart the mount (Apple menu -> System Settings -> Privacy & Security). |
-| `too many open files` | macOS ulimit default 256 | Apply the plist tuning in [/support/howto/FAQ/increase-file-handle-limit-on-macos](/support/howto/FAQ/increase-file-handle-limit-on-macos). |
+| `too many open files` | macOS ulimit default 256 | Apply the plist tuning in [/support/howto/FAQ/increase-file-handle-limit-on-macos](/howto/FAQ/increase-file-handle-limit-on-macos). |
 | Shared Drive list empty | Workspace admin disabled Drive API | Re-enable Drive API in Google Admin or ask for delegated access to the Shared Drive. |
 
 ## Ship Shared Drive Mounts Without Scripts

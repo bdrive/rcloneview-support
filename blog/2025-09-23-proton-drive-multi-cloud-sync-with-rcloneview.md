@@ -80,8 +80,8 @@ Before wiring things up:
 - *(Optional)* **Filtering**: list file types or paths to include/exclude (e.g., exclude `Cache/`, `temp/`)
 
 🔍 Helpful guides  
-- [Proton Drive connection guide](/support/howto/remote-storage-connection-settings/proton)  
-- [Browse & manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [Proton Drive connection guide](/howto/remote-storage-connection-settings/proton)  
+- [Browse & manage remote storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ## Connect remotes in RcloneView
 
@@ -96,8 +96,8 @@ RcloneView wraps rclone’s configuration in a guided, click-through experience.
 4. Confirm both remotes appear side-by-side in the Explorer pane
 
 🔍 Helpful guides  
-- [Quick OAuth Setup (Google/OneDrive)](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
-- [Add S3 Remote (Amazon S3/compatibles)](/support/howto/remote-storage-connection-settings/s3)
+- [Quick OAuth Setup (Google/OneDrive)](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
+- [Add S3 Remote (Amazon S3/compatibles)](/howto/remote-storage-connection-settings/s3)
 
 <img src="/support/images/en/blog/open-proton-drive-and-google-drive.png" alt="open proton drive and google drive" class="img-medium img-center" />
 
@@ -108,12 +108,12 @@ RcloneView offers three simple options—start with a pilot folder, then scale u
 ### Drag & Drop
 Browse Proton on one side and your other cloud on the other, then **drag folders/files across**. Perfect for ad-hoc moves or quick deliveries.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### Compare & Copy
 Preview differences first—**new**, **changed**, or **missing** items—then copy only what matters. Great for staged migrations and selective updates.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results highlighting changed files in RcloneView" class="img-medium img-center" />
 
@@ -121,9 +121,9 @@ Preview differences first—**new**, **changed**, or **missing** items—then co
 Mirror selected folders Proton ⇄ Cloud on a schedule—nightly, weekly, or custom CRON-style. Always **dry-run** first, then save as a reusable **Job**.  
 
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a saved sync job between Proton Drive and another cloud" class="img-medium img-center" />
 

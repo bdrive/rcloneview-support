@@ -42,11 +42,11 @@ RcloneView wraps everything in a GUI: add your Azure remote once, pick a drive l
 
 ## Why Mount Azure Blob with RcloneView Instead of Scripts
 
-- **Zero CLI**: Remote Manager builds your Azure remote and stores credentials securely (see [Remote Manager](/support/howto/rcloneview-basic/remote-manager)).
+- **Zero CLI**: Remote Manager builds your Azure remote and stores credentials securely (see [Remote Manager](/howto/rcloneview-basic/remote-manager)).
 - **Cross-platform consistency**: Windows (WinFsp), macOS (macFUSE), Linux (FUSE) with the same UI.
 - **Real drive mapping**: Drive letters on Windows or `/Volumes/Azure` on macOS for any container.
-- **Performance built in**: VFS cache, thumbnail streaming, read-ahead, and buffering surfaced in the Mount dialog (see [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)).
-- **Automation & monitoring**: Auto-mount on startup, reconnect on failure, and live throughput charts (see [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution) and [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring)).
+- **Performance built in**: VFS cache, thumbnail streaming, read-ahead, and buffering surfaced in the Mount dialog (see [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)).
+- **Automation & monitoring**: Auto-mount on startup, reconnect on failure, and live throughput charts (see [Job scheduling and execution](/howto/rcloneview-advanced/job-scheduling-and-execution) and [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring)).
 
 ## Step-by-Step — Map Azure Blob as a Local Drive
 
@@ -64,7 +64,7 @@ RcloneView wraps everything in a GUI: add your Azure remote once, pick a drive l
   - **Endpoint**: `https://<account>.blob.core.windows.net`
   - **Region**: leave blank or `us-east-1` placeholder
   - **Access Key / Secret**: your Azure key or SAS-derived pair
-- Save the remote. Use a strong **Config Password** in [General Settings](/support/howto/rcloneview-basic/general-settings).
+- Save the remote. Use a strong **Config Password** in [General Settings](/howto/rcloneview-basic/general-settings).
 
 ### 3) Create a Mount job
 
@@ -100,7 +100,7 @@ RcloneView wraps everything in a GUI: add your Azure remote once, pick a drive l
 - Use an **NVMe/SSD cache directory**; keep several GB free.
 - Increase **Read-ahead** and **buffer-size** for sequential reads/writes; lower for random small files.
 - For distributed teams, pair mounts with **Scheduler** to refresh or warm the cache daily.
-- Watch throughput in [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring) to spot throttling.
+- Watch throughput in [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring) to spot throttling.
 
 
 

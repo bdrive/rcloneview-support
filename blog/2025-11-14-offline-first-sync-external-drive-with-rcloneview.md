@@ -18,7 +18,7 @@ tags:
   - google-drive
   - onedrive
   - dropbox
-  - S3
+  - s3
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -86,8 +86,8 @@ Helpful guides
 <img src="/support/images/en/howto/remote-storage-connection-settings/remote-manager-mega-view.png" alt="remote manager view" class="img-large img-center" />
 
 👉 Learn more:
-- [Add a new remote (OAuth)](/support/howto/remote-storage-connection-settings/add-oath-online-login)
-- [How to Add S3-Compatible Storage](/support/howto/remote-storage-connection-settings/s3)
+- [Add a new remote (OAuth)](/howto/remote-storage-connection-settings/add-oath-online-login)
+- [How to Add S3-Compatible Storage](/howto/remote-storage-connection-settings/s3)
 
 ### Step 3 — Build a sync job
 
@@ -99,9 +99,9 @@ Helpful guides
 <img src="/support/images/en/howto/rcloneview-basic/add-job-configure-storage.png" alt="Configure source and destination when creating a job" class="img-large img-center" />
 
 👉 Learn more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 ### Step 4 — Fine-tune options
 
@@ -118,7 +118,7 @@ Helpful guides
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Set daily schedules for your sync job" class="img-large img-center" />
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ### Step 6 — Monitor and unplug
 

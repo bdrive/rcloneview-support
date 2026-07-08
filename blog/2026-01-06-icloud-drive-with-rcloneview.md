@@ -65,7 +65,7 @@ Key prompts you will see:
 - **2FA code**: enter the code sent to your trusted device
 
 Reference guide (screenshots + full steps):  
-[/support/howto/remote-storage-connection-settings/connect-using-cli/add-icloud-drive](/support/howto/remote-storage-connection-settings/connect-using-cli/add-icloud-drive)
+[/support/howto/remote-storage-connection-settings/connect-using-cli/add-icloud-drive](/howto/remote-storage-connection-settings/connect-using-cli/add-icloud-drive)
 
 ## Step 3: Confirm the new remote in RcloneView
 
@@ -83,7 +83,7 @@ Run **Compare** to see what will change before a sync touches your data.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results filters" class="img-large img-center" />
 
-Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents)
+Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ### Sync iCloud to another cloud
 
@@ -91,7 +91,7 @@ Select iCloud as the source and your backup target (Drive, S3, external disk) as
 
 <img src="/support/images/en/howto/rcloneview-basic/sync-configure-storage.png" alt="Sync configure storage" class="img-large img-center" />
 
-Guide: [/support/howto/rcloneview-basic/synchronize-remote-storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
+Guide: [/support/howto/rcloneview-basic/synchronize-remote-storages](/howto/rcloneview-basic/synchronize-remote-storages)
 
 ### Save as a Job and schedule it
 
@@ -102,7 +102,7 @@ Save the Sync as a Job for recurring backups (Plus license).
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Create job schedule" class="img-large img-center" />
 </div>
 
-Guides: [/support/howto/rcloneview-basic/create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs), [/support/howto/rcloneview-advanced/job-scheduling-and-execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+Guides: [/support/howto/rcloneview-basic/create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs), [/support/howto/rcloneview-advanced/job-scheduling-and-execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ## Best practices for iCloud backups
 

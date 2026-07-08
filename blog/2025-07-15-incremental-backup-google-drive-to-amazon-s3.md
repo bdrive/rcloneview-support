@@ -42,21 +42,21 @@ import RvCta from '../src/components/RvCta';
 2. **Create or choose an S3 bucket** – decide on region, bucket name, and default encryption (SSE-S3 or SSE-KMS). [AWS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html)  
 3. **Check provider limits** – Google caps Drive API transfers at **750 GB per user per day** and files up to **5 TB**. Plan large moves across a couple of days. [Google for Developers](https://developers.google.com/drive/api/guides/limits) [Google Help](https://support.google.com/drive/answer/37603)  
 4. **Map your folder structure** – S3 prefixes like `drive-backup/marketing/2025/` keep snapshots easy to browse later.  
-5. **See it once in the app** – skim the explorer screenshots in [Browse & manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage) so the layout feels familiar.
+5. **See it once in the app** – skim the explorer screenshots in [Browse & manage remote storage](/howto/rcloneview-basic/browse-and-manage-remote-storage) so the layout feels familiar.
 
 ## Step 1 — Connect both services in RcloneView
 
 1. Open **RcloneView** → press **`+ New Remote`**.  
 2. Choose **Google Drive**, sign in, and give the remote a clear name such as `Drive-Main`. If you back up Shared drives, enable them during setup.  
 3. Add another remote for **Amazon S3**. Paste your access key/secret (or assume an IAM role), choose the target bucket, and name it `S3-Backup`.  
-4. Confirm both remotes appear side by side in the explorer. The [Remote Manager guide](/support/howto/rcloneview-basic/remote-manager) has extra screenshots if you need a refresher.
+4. Confirm both remotes appear side by side in the explorer. The [Remote Manager guide](/howto/rcloneview-basic/remote-manager) has extra screenshots if you need a refresher.
 
 <img src="/support/images/en/tutorials/browsing-aws-s3-and-google-drive-via-ec2-rclone.png" alt="browsing aws s3 and google drive via ec2 rclone" class="img-medium img-center" />
 
 ## Step 2 — Plan the backup job
 
 - **Dry run a folder**: Open `Drive-Main` on the left and `S3-Backup` on the right. Drag a small test folder across to see the transfer dialog.  
-- **Use Compare**: The Compare tool highlights new and changed files before you copy. It’s the same view shown in [Compare folder contents](/support/howto/rcloneview-basic/compare-folder-contents).  
+- **Use Compare**: The Compare tool highlights new and changed files before you copy. It’s the same view shown in [Compare folder contents](/howto/rcloneview-basic/compare-folder-contents).  
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare view in RcloneView before copying Google Drive files" class="img-medium img-center" />
 
@@ -72,7 +72,7 @@ import RvCta from '../src/components/RvCta';
 Once the first run looks good:
 
 1. Save it as a **Job** straight from the completion dialog.  
-2. Open **Job Manager** → set a daily or weekly schedule. This follows the same pattern as the [Job scheduling guide](/support/howto/rcloneview-advanced/job-scheduling-and-execution).  
+2. Open **Job Manager** → set a daily or weekly schedule. This follows the same pattern as the [Job scheduling guide](/howto/rcloneview-advanced/job-scheduling-and-execution).  
 3. Check the calendar preview to confirm times, then let RcloneView take it from here.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Scheduling a backup job in RcloneView" class="img-medium img-center" />
@@ -83,7 +83,7 @@ Once the first run looks good:
 - **Bucket versioning**: Turn it on if you want every overwrite preserved. Each RcloneView run then becomes a restore point.  
 - **Tags**: Add tags like `Team=Finance` or `Compliance=SOC2` to objects so billing and audits stay simple.
 
-Our blog on [RcloneView cloud-to-cloud transfers](/support/blog/Effortless-Cloud-to-Cloud-Transfers-&-Syncing) covers more ideas for filtering and organizing cloud copies.
+Our blog on [RcloneView cloud-to-cloud transfers](/blog/Effortless-Cloud-to-Cloud-Transfers-&-Syncing) covers more ideas for filtering and organizing cloud copies.
 
 ## Monitor and restore with confidence
 
@@ -93,9 +93,9 @@ Our blog on [RcloneView cloud-to-cloud transfers](/support/blog/Effortless-Cloud
 
 ## Related guides & resources
 
-- [Google OAuth quick setup in RcloneView](/support/howto/remote-storage-connection-settings/add-oath-online-login)  
-- [Amazon S3 remote setup](/support/howto/remote-storage-connection-settings/s3) — step-by-step credential screenshots.  
-- [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring) — see how to read job progress charts.
+- [Google OAuth quick setup in RcloneView](/howto/remote-storage-connection-settings/add-oath-online-login)  
+- [Amazon S3 remote setup](/howto/remote-storage-connection-settings/s3) — step-by-step credential screenshots.  
+- [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring) — see how to read job progress charts.
 
 ## FAQs
 

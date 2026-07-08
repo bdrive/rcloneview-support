@@ -68,8 +68,8 @@ Whether you’re syncing large amounts of data or just migrating a few folders, 
 4. Repeat the same steps to add **Google Drive**.
 
 👉 For detailed setup, see:
-- [How to Add Dropbox Remote](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
-- [How to Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)
+- [How to Add Dropbox Remote](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
+- [How to Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)
 
 :::important Connecting to Dropbox Business
 If you're using **Dropbox Business**, make sure to enable the business mode when adding the remote.  
@@ -93,7 +93,7 @@ In the **`Options`** tab, scroll to the bottom and click **`Advanced Options`**,
 - RcloneView will begin the transfer immediately.
 - Monitor progress in the **`Transfer`** Logs tab.
 
-👉 Learn more: [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+👉 Learn more: [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ### 🔍 Method 2: Compare Folder Contents, Then Copy or Delete
 
@@ -110,7 +110,7 @@ In the **`Options`** tab, scroll to the bottom and click **`Advanced Options`**,
 
   This method helps you carefully compare and control what gets copied or deleted—minimizing errors and ensuring accurate transfers.
 
-  👉 Learn more: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
+  👉 Learn more: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ### 🔁  Method 3: Sync or Create Job
 
@@ -121,9 +121,9 @@ In the **`Options`** tab, scroll to the bottom and click **`Advanced Options`**,
        or go to **`Job Manager` → `Add Job`** via the **`Home`** menu to create a scheduled job.  
 
 👉 Learn more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 ### **⏰** Method 4: Schedule Automatic Sync Job
 
@@ -138,7 +138,7 @@ Once created, the job will run **automatically** based on your schedule — with
 
 All progress and results will be available in the **`Job History`** tab, and you’ll be notified upon job completion by system notifications.
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ---
 
@@ -152,12 +152,12 @@ Try it today and simplify your Dropbox ↔ Google Drive file workflows.
 
 ## 🔗 Related Guides
 
-- [How to Add Dropbox Remote](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
-- [How to Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)
-- [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
-- [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [How to Add Dropbox Remote](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
+- [How to Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)
+- [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <CloudSupportGrid />

@@ -104,7 +104,7 @@ Compare results show what will change before you pay for it.
 
 Use Compare, then Copy only the changed items. This avoids delete risk and limits traffic.
 
-Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents)
+Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare display filters" class="img-large img-center" />
 

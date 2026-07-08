@@ -29,7 +29,7 @@ import TabItem from '@theme/TabItem';
 
 :::important Preconditons for Mounting
 Before mounting, make sure the target remote has already been added to RcloneView.   
-See: [Add a New Remote](./remote-manager.md#add-a-new-remote)
+See: [Add a New Remote](/howto/rcloneview-basic/remote-manager#add-a-new-remote)
 :::
 
 ## Mount Remote Storage in RcloneView

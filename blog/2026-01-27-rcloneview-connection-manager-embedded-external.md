@@ -103,7 +103,7 @@ Once added, you can connect, edit, or delete the entry.
 <img src="/support/images/en/howto/rcloneview-basic/external-rclone-selected.png" alt="External rclone selected" class="img-large img-center" />
 </div>
 
-Guide: [/support/howto/rcloneview-basic/connection-manager](/support/howto/rcloneview-basic/connection-manager)
+Guide: [/support/howto/rcloneview-basic/connection-manager](/howto/rcloneview-basic/connection-manager)
 
 ## Typical use cases
 

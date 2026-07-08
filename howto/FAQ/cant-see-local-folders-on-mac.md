@@ -22,7 +22,7 @@ author: Jay
 
 If you just installed RcloneView on macOS and can’t see folders like **Desktop**, **Documents**, or **Downloads** in the left “Local Disk” pane, it’s almost always a macOS privacy permission issue. This guide shows how to allow access and what to try if folders still appear empty.
 
-For a quick tour of the Explorer itself, see: [Browse and Manage Remote Storage](../rcloneview-basic/browse-and-manage-remote-storage.md).
+For a quick tour of the Explorer itself, see: [Browse and Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage).
 
 ## Why This Happens
 
@@ -87,8 +87,8 @@ Logs are only captured after you click **Restart Embedded Rclone**. Don’t skip
 
 ## Related Guides
 
-- Managing local/cloud files in the Explorer: [Browse and Manage Remote Storage](../rcloneview-basic/browse-and-manage-remote-storage.md)
-- Full overview of Settings (including Embedded Rclone and Logging): [General Settings](../rcloneview-basic/general-settings.md#logging-configuration)
+- Managing local/cloud files in the Explorer: [Browse and Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- Full overview of Settings (including Embedded Rclone and Logging): [General Settings](/howto/rcloneview-basic/general-settings#logging-configuration)
 
 ---
 

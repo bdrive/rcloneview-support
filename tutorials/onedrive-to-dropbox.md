@@ -53,7 +53,7 @@ That’s where **RcloneView** steps in. It provides a secure, efficient GUI for 
 3. Repeat to add **Dropbox**.  
    - For Dropbox Business, go to *Advanced Options* and enable `dropbox_business=true`.
 
-👉 Learn more: [Connect Cloud Remotes Using Browser Based Login](/support/howto/remote-storage-connection-settings/add-oath-online-login)
+👉 Learn more: [Connect Cloud Remotes Using Browser Based Login](/howto/remote-storage-connection-settings/add-oath-online-login)
 
 ### Open Both Remotes in the Explorer Pane  
 1. Go to the **Browse** tab.  
@@ -69,7 +69,7 @@ That’s where **RcloneView** steps in. It provides a secure, efficient GUI for 
 - Simply drag files or folders from the OneDrive pane into the Dropbox pane.  
 - Transfers initiate immediately and progress is shown in the **`Transfer`** tab.
 
-👉 Learn more: [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+👉 Learn more: [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ### 🔍 Method 2: Compare Folders, Then Copy/Delete  
 1. Navigate to the desired folders in each pane.  
@@ -83,7 +83,7 @@ That’s where **RcloneView** steps in. It provides a secure, efficient GUI for 
 2. Use **`Delete`** to remove unwanted files.  
 3. Monitor status updates in the status bar and **`Transfer`** log.
 
-👉 Learn more in the [Compare Folder Contents guide](/support/howto/rcloneview-basic/compare-folder-contents)
+👉 Learn more in the [Compare Folder Contents guide](/howto/rcloneview-basic/compare-folder-contents)
 
 ### 🔁 Method 3: Sync or Save as Job  
 1. With OneDrive as the left (source) pane and Dropbox as right (destination), click **`Sync`**.  
@@ -91,9 +91,9 @@ That’s where **RcloneView** steps in. It provides a secure, efficient GUI for 
 3. Run immediately or click **`Save as Job`** to store the configuration for later execution.
 
  👉 Learn more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 
 ### ⏰ Method 4: Schedule Automatic Sync Job  
@@ -103,7 +103,7 @@ That’s where **RcloneView** steps in. It provides a secure, efficient GUI for 
 4. Save and activate the schedule.  
 5. RcloneView will run the job automatically; view results in **`Job History`**.
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ## ✅ Final Thoughts  
 
@@ -113,12 +113,12 @@ Whether you're migrating services, backing up data, or syncing between platforms
 
 ## 🔗 Related Resources  
 
-- [Add OneDrive / Dropbox Remote](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
-- [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)  
-- [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling & Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Add OneDrive / Dropbox Remote](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
+- [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)  
+- [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)  
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling & Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 
 <CloudSupportGrid />

@@ -20,7 +20,7 @@ tags:
   - google-drive
   - onedrive
   - dropbox
-  - S3
+  - s3
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -70,10 +70,10 @@ With RcloneView, you don’t need to learn `rclone config` or memorize flags. Th
 
 Helpful links
 
-- [Google OAuth quick setup](/support/howto/remote-storage-connection-settings/add-oath-online-login)
-- [Microsoft/SharePoint sign‑in](/support/howto/remote-storage-connection-settings/connect-using-cli/add-sharepoint-for-business)
-- [S3/Wasabi/R2 setup](/support/howto/remote-storage-connection-settings/s3) · [Cloudflare R2 credentials](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
-- [Dropbox OAuth setup](/support/howto/remote-storage-connection-settings/add-oath-online-login)
+- [Google OAuth quick setup](/howto/remote-storage-connection-settings/add-oath-online-login)
+- [Microsoft/SharePoint sign‑in](/howto/remote-storage-connection-settings/connect-using-cli/add-sharepoint-for-business)
+- [S3/Wasabi/R2 setup](/howto/remote-storage-connection-settings/s3) · [Cloudflare R2 credentials](/howto/cloud-storage-setting/cloudflare-r2-credential)
+- [Dropbox OAuth setup](/howto/remote-storage-connection-settings/add-oath-online-login)
 
 ## Connect Your Accounts in RcloneView
 
@@ -84,10 +84,10 @@ RcloneView wraps rclone’s configuration in a friendly wizard. Add each cloud o
 <img src="/support/images/en/howto/remote-storage-connection-settings/add-new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
 
 2. Choose a provider and follow the prompts:
-   - Google Drive: sign in via OAuth and name it clearly (e.g., `Drive-Personal`, `Drive-Work`). See: [OAuth login guide](/support/howto/remote-storage-connection-settings/add-oath-online-login)
-   - OneDrive/SharePoint: sign in with your Microsoft account. See: [Microsoft/SharePoint setup](/support/howto/remote-storage-connection-settings/connect-using-cli/add-sharepoint-for-business)
-   - Dropbox: use the RcloneView Dropbox OAuth wizard to connect. See: [OAuth login guide](/support/howto/remote-storage-connection-settings/add-oath-online-login)
-   - S3/Wasabi/R2: set endpoint/region and keys. → [S3 connection settings](/support/howto/remote-storage-connection-settings/s3) · [Cloudflare R2 credentials](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
+   - Google Drive: sign in via OAuth and name it clearly (e.g., `Drive-Personal`, `Drive-Work`). See: [OAuth login guide](/howto/remote-storage-connection-settings/add-oath-online-login)
+   - OneDrive/SharePoint: sign in with your Microsoft account. See: [Microsoft/SharePoint setup](/howto/remote-storage-connection-settings/connect-using-cli/add-sharepoint-for-business)
+   - Dropbox: use the RcloneView Dropbox OAuth wizard to connect. See: [OAuth login guide](/howto/remote-storage-connection-settings/add-oath-online-login)
+   - S3/Wasabi/R2: set endpoint/region and keys. → [S3 connection settings](/howto/remote-storage-connection-settings/s3) · [Cloudflare R2 credentials](/howto/cloud-storage-setting/cloudflare-r2-credential)
 3. Repeat for each account. You can open multiple remotes at once and browse them side‑by‑side.
 
 <img src="/support/images/en/howto/remote-storage-connection-settings/remote-manager-mega-view.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
@@ -100,7 +100,7 @@ RcloneView supports the same three patterns across any accounts you connect. Sta
 
 Open the source on the left and the destination on the right; drag files or folders across.
 
-See: [Copying files using drag and drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+See: [Copying files using drag and drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
   <img src="/support/images/en/tutorials/wasabi-drag-and-drop.png" alt="drag and drop" class="img-large img-center" />
 
@@ -108,7 +108,7 @@ See: [Copying files using drag and drop](/support/howto/rcloneview-basic/browse-
 
 Run Compare to list what’s new, changed, or missing between two folders—even across different providers. Deselect anything you want to skip, then copy.
 
-See: [Compare results and manage files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+See: [Compare results and manage files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Preview and select differences before copying" class="img-large img-center" />
 
@@ -116,7 +116,7 @@ See: [Compare results and manage files](/support/howto/rcloneview-basic/compare-
 
 Mirror selected folders across accounts with Sync. Always run a dry‑run, then save the job and schedule off‑hours runs. Monitor progress and history in the Job Manager.
 
-See: [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages), [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs), [Job Scheduling & Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+See: [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages), [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs), [Job Scheduling & Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/add-job-configure-storage.png" alt="Configure and run a sync job in RcloneView" class="img-large img-center" />
 
@@ -142,8 +142,8 @@ RcloneView turns a mess of logins and browser tabs into a single, reliable works
 
 Want help setting up a specific provider? Check these next:
 
-- Remote Manager overview: [Remote Manager](/support/howto/rcloneview-basic/remote-manager)
-- Real‑time transfer monitoring: [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring)
-- Mount clouds as local drives: [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)
+- Remote Manager overview: [Remote Manager](/howto/rcloneview-basic/remote-manager)
+- Real‑time transfer monitoring: [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring)
+- Mount clouds as local drives: [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)
 
 <CloudSupportGrid />

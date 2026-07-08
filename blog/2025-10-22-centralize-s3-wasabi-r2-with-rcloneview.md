@@ -107,8 +107,8 @@ RcloneView makes multi-provider setup straightforward:
 <img src="/support/images/en/howto/remote-storage-connection-settings/add-new-remote.png" alt="Add S3, Wasabi, and R2 remotes in RcloneView" class="img-large img-center" />
 
 🔍 Helpful links:  
-- [How to Add S3-Compatible Storage](/support/howto/remote-storage-connection-settings/s3)  
-- [Cloudflare R2 credentials setup](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
+- [How to Add S3-Compatible Storage](/howto/remote-storage-connection-settings/s3)  
+- [Cloudflare R2 credentials setup](/howto/cloud-storage-setting/cloudflare-r2-credential)
 
 ---
 
@@ -121,7 +121,7 @@ RcloneView supports multiple workflows for S3, Wasabi, and R2:
 - Drag folders from source to destination.  
 - Ideal for quick or one-time transfers.
 
-👉 See: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
   <img src="/support/images/en/tutorials/wasabi-drag-and-drop.png" alt="drag and drop" class="img-large img-center" />
 
@@ -129,7 +129,7 @@ RcloneView supports multiple workflows for S3, Wasabi, and R2:
 - Use **Compare** to preview object differences before syncing.  
 - Copy only changed files to reduce API calls and transfer times.
 
-👉 See: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare buckets before copying" class="img-large img-center" />
 
@@ -139,9 +139,9 @@ RcloneView supports multiple workflows for S3, Wasabi, and R2:
 - Save as a reusable **Job** and schedule execution.
 
 👉 See:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/add-job-configure-storage.png" alt="Configure sync jobs for S3, Wasabi, and R2" class="img-large img-center" />
 

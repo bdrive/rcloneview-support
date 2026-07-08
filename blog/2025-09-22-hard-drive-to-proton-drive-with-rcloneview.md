@@ -61,8 +61,8 @@ Before you start:
 - **Optionally add encryption layers**: advanced users can stack rclone **crypt** for extra control
 
 🔍 Helpful guides  
-- [Proton Drive connection guide](/support/howto/remote-storage-connection-settings/proton)  
-- [Browse & manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [Proton Drive connection guide](/howto/remote-storage-connection-settings/proton)  
+- [Browse & manage remote storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ## Connect Proton Drive in RcloneView
 
@@ -80,12 +80,12 @@ RcloneView wraps rclone’s configuration in a guided, click-through flow.
 ### Drag & Drop
 Visually copy files/folders from the **Local** panel into **Proton Drive**—ideal for one-off moves or quick wins.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### Compare & Copy
 Run **Compare** to preview differences (new, changed, missing) before you copy—perfect for selective updates and avoiding duplicates.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results highlighting changed files in RcloneView" class="img-medium img-center" />
 
@@ -93,9 +93,9 @@ Run **Compare** to preview differences (new, changed, missing) before you copy�
 Mirror chosen local folders into Proton Drive on a schedule—nightly, weekly, or custom. Always **dry-run** first to validate planned actions, then save as a reusable **Job**.  
 
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a saved sync job to Proton Drive in RcloneView" class="img-medium img-center" />
 

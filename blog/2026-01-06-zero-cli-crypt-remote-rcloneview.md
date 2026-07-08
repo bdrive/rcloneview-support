@@ -91,7 +91,7 @@ The new Crypt Remote appears in Remote Manager while the base remote remains unc
 
 <img src="/support/images/en/howto/remote-storage-connection-settings/crypt/virtual-remote-manager-crypt.png" alt="Crypt remote in Remote Manager" class="img-large img-center" />
 
-Guide: [/support/howto/remote-storage-connection-settings/crypt-remote](/support/howto/remote-storage-connection-settings/crypt-remote)
+Guide: [/support/howto/remote-storage-connection-settings/crypt-remote](/howto/remote-storage-connection-settings/crypt-remote)
 
 ## Understanding the two views (very important)
 
@@ -110,11 +110,11 @@ If the Crypt view looks empty, you likely uploaded files directly to the base re
 Crypt remotes behave like normal remotes:
 
 - **Drag & Drop** into Crypt to encrypt on upload  
-  Guide: [/support/howto/rcloneview-basic/browse-and-manage-remote-storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+  Guide: [/support/howto/rcloneview-basic/browse-and-manage-remote-storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 - **Compare & Sync** for encrypted backups  
-  Guides: [/support/howto/rcloneview-basic/compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents), [/support/howto/rcloneview-basic/synchronize-remote-storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
+  Guides: [/support/howto/rcloneview-basic/compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents), [/support/howto/rcloneview-basic/synchronize-remote-storages](/howto/rcloneview-basic/synchronize-remote-storages)
 - **Scheduled jobs** with Crypt as the target  
-  Guide: [/support/howto/rcloneview-basic/create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs)
+  Guide: [/support/howto/rcloneview-basic/create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs)
 
 <div class="img-grid-2">
 <img src="/support/images/en/tutorials/wasabi-drag-and-drop.png" alt="Drag and drop into Crypt" class="img-large img-center" />

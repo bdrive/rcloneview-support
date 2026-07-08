@@ -17,7 +17,7 @@ tags:
   - google-drive
   - onedrive
   - dropbox
-  - S3
+  - s3
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -85,8 +85,8 @@ Helpful docs
 ### Step 1 — Add your remotes
 
 Click **`+ New Remote`** for each provider. Use OAuth wizards for Google/Dropbox/OneDrive, or supply keys/endpoints for S3-compatible services. All remotes appear under the Explorer and Remote Manager.  
-- Add OAuth-based remotes (Google Drive/Dropbox/OneDrive): [Connect via browser login](/support/howto/remote-storage-connection-settings/add-oath-online-login)
-- Add S3-compatible remotes (AWS, Wasabi, R2, B2): [Configure S3 storage in RcloneView](/support/howto/remote-storage-connection-settings/s3)
+- Add OAuth-based remotes (Google Drive/Dropbox/OneDrive): [Connect via browser login](/howto/remote-storage-connection-settings/add-oath-online-login)
+- Add S3-compatible remotes (AWS, Wasabi, R2, B2): [Configure S3 storage in RcloneView](/howto/remote-storage-connection-settings/s3)
 
 ### Step 2 — Browse clouds side-by-side
 
@@ -97,21 +97,21 @@ Open two remotes simultaneously—Drive on the left, S3 on the right. Drill down
 ### Step 3 — Transfer across clouds
 
 Drag and drop from one pane to another, or use Copy/Move operations. For precise control, open the Sync dialog and select Copy/Sync/Move with optional dry-runs.  
-→ How to run cloud-to-cloud Sync/Copy: [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
+→ How to run cloud-to-cloud Sync/Copy: [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
 
 <img src="/support/images/en/howto/rcloneview-basic/sync-remote-folder-select.png" alt="sync-remote-folder-select.png" class="img-large img-center" />
 
 ### Step 4 — Schedule automatic jobs
 
 Save the sync as a Job and enable scheduling (daily at 1 AM, hourly, weekdays-only). Perfect for Drive ➜ Wasabi nightly backups or Dropbox ➜ OneDrive consolidation.  
-→ Create and schedule jobs: [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs) · [Job Scheduling & Execution (Plus)](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+→ Create and schedule jobs: [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs) · [Job Scheduling & Execution (Plus)](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-advanced/example-of-job-schedule.png" alt="Schedule automatic jobs in RcloneView" class="img-large img-center" />
 
 ### Step 5 — Compare clouds, remove duplicates
 
 Launch **Compare** to spot differences between two folders. Filter by “Only in A/B” or “Changed” to clean up duplicates or confirm migrations before you pull the trigger.  
-→ Compare and clean safely: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+→ Compare and clean safely: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare differences between clouds before copying" class="img-large img-center" />
 
@@ -119,7 +119,7 @@ Launch **Compare** to spot differences between two folders. Filter by “Only in
 
 - **Versioned backups**: Copy changes into date-stamped folders or `backup-dir` locations for rollbacks.
 - **Filters**: Include/exclude patterns to skip cache folders, ISO files, or sensitive data.
-- **Mount**: Map any cloud to a drive letter/path with VFS cache for desktop apps. → [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
+- **Mount**: Map any cloud to a drive letter/path with VFS cache for desktop apps. → [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
 - **Scheduler + notifications**: Get desktop alerts on completion or review job history logs.
 - **S3 tuning**: Adjust threads, chunk size, or storage class to match cost/performance goals.
 

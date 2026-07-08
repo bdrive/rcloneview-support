@@ -81,7 +81,7 @@ rclone rcd --rc-addr=0.0.0.0:5572 --rc-user=admin --rc-pass=admin --log-level IN
 ```
     A JSON `{}` response confirms the daemon is listening.
 
-👉 Learn more:  [How to Run Rclone on AWS EC2 Server](/support/howto/cloud-storage-setting/run-rclone-on-aws-ec2)
+👉 Learn more:  [How to Run Rclone on AWS EC2 Server](/howto/cloud-storage-setting/run-rclone-on-aws-ec2)
 
 ## Part 2. Open a New RcloneView Window
 
@@ -93,7 +93,7 @@ To keep connections organized, RcloneView allows each window to operate with its
 
   📌 _You’ll connect this window to your External Rclone (EC2) in the next step..  
 
-👉 Learn more: [Using Multiple Rclone Connections with New Window](/support/howto/rcloneview-advanced/multi-window).
+👉 Learn more: [Using Multiple Rclone Connections with New Window](/howto/rcloneview-advanced/multi-window).
 
 ## Part 3. Connect to the EC2-Hosted Rclone
 
@@ -130,8 +130,8 @@ In the **newly opened window**, follow these steps to connect to your EC2-hoste
 4. Click **Save** to complete the setup.
 
 👉 Learn more:   
-- [How to Add S3 Remote](/support/howto/remote-storage-connection-settings/s3)
-- [How to get AWS S3 Access credential](/support/howto/cloud-storage-setting/aws-account-info)
+- [How to Add S3 Remote](/howto/remote-storage-connection-settings/s3)
+- [How to get AWS S3 Access credential](/howto/cloud-storage-setting/aws-account-info)
     
 ### ➕ Add Cloudflare R2 Remote
 
@@ -144,8 +144,8 @@ In the **newly opened window**, follow these steps to connect to your EC2-hoste
 1. Click **Save** to complete the R2 remote setup.
 
 👉 Learn more:   
-- [How to Add S3 Remote](/support/howto/remote-storage-connection-settings/s3)
-- [How to get cloudflare R2 Access credential](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
+- [How to Add S3 Remote](/howto/remote-storage-connection-settings/s3)
+- [How to get cloudflare R2 Access credential](/howto/cloud-storage-setting/cloudflare-r2-credential)
     
 <img src="/support/images/en/tutorials/open-aws-s3-and-cloudflare-r2-remotes.png" alt="open aws s3 and cloudflare r2 remotes" class="img-medium img-center" />
 
@@ -164,9 +164,9 @@ In the **newly opened window**, follow these steps to connect to your EC2-hoste
   3. Save and run manually or set a schedule.
 
 👉 Learn more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 ---
 
@@ -180,7 +180,7 @@ In the **newly opened window**, follow these steps to connect to your EC2-hoste
 
 RcloneView will run the sync at your specified times. Check execution details and logs in **`Job History`** and receive notifications upon completion.
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ##  ⚡ Performance Tuning Cheat-Sheet
 
@@ -248,19 +248,19 @@ Cloud-to-cloud transfers no longer need to crawl through your laptop. By off-loa
 ## 🔗 Related Guides
 
 - **Storage Setup**
-	- [How to Add S3-Compatible Remotes](/support/howto/remote-storage-connection-settings/s3)
-	- [How to Get AWS S3 Access Credentials](/support/howto/cloud-storage-setting/aws-account-info)
-	- [How to Get Cloudflare R2 Access Credentials](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
+	- [How to Add S3-Compatible Remotes](/howto/remote-storage-connection-settings/s3)
+	- [How to Get AWS S3 Access Credentials](/howto/cloud-storage-setting/aws-account-info)
+	- [How to Get Cloudflare R2 Access Credentials](/howto/cloud-storage-setting/cloudflare-r2-credential)
 - **EC2 & Remote Rclone**
-	- [How to Run Rclone on AWS EC2](/support/howto/cloud-storage-setting/run-rclone-on-aws-ec2)
+	- [How to Run Rclone on AWS EC2](/howto/cloud-storage-setting/run-rclone-on-aws-ec2)
 - **Window & Connection Management**
-	- [Using Multiple Rclone Connections with New Window](/support/howto/rcloneview-advanced/multi-window)
+	- [Using Multiple Rclone Connections with New Window](/howto/rcloneview-advanced/multi-window)
 	- [Manage Multiple RcloneView Windows](https://www.perplexity.ai/support/howto/rcloneview-advanced/multi-window) <!-- external duplicate, optional to keep -->
 - **Synchronization and Job Control**
-	- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-	- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-	- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
-	- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+	- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+	- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+	- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
+	- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 - **Cost Considerations**
 	- [AWS Pricing – Data Transfer](https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer)
 - **Performance Optimization**

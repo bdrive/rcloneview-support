@@ -81,8 +81,8 @@ RcloneView wraps **rclone config** in a guided, click-through flow.
 4. Confirm both appear side-by-side in the Explorer pane.
 
 🔍 Helpful guides:
-- [Add Backblaze B2 Remote](/support/howto/remote-storage-connection-settings/backblaze)  
-- [Quick OAuth Setup (Dropbox & others)](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
+- [Add Backblaze B2 Remote](/howto/remote-storage-connection-settings/backblaze)  
+- [Quick OAuth Setup (Dropbox & others)](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
 
 <img src="/support/images/en/blog/open-backblaze-b2-and-dropbox-remote.png" alt="open backblaze b2 and dropbox remote" class="img-medium img-center" />
 ## Execute transfers three ways
@@ -92,12 +92,12 @@ RcloneView offers flexible methods—start small, then scale.
 ### Drag & Drop (manual, ad-hoc)
 - Browse **Dropbox** on one side and **B2** on the other, then **drag folders/files across** for quick moves.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### Compare & Copy (preview changes)
 - Use **Compare** to see new/changed items before copying; reduces surprises and retries.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results in RcloneView highlighting changed files" class="img-medium img-center" />
 
@@ -106,9 +106,9 @@ RcloneView offers flexible methods—start small, then scale.
 - **Dry-run** first, then save as a reusable **Job** and add a schedule (nightly/weekly).  
 
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Run a saved job in RcloneView" class="img-medium img-center" />
 ## Conclusion — What to remember

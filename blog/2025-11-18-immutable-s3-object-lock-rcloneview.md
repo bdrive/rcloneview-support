@@ -19,7 +19,7 @@ tags:
   - security
   - s3
   - wasabi
-  - R2
+  - r2
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

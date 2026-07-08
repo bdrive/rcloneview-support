@@ -45,11 +45,11 @@ RcloneView provides nine Virtual Remote types:
 1. **Alias**  
    Shortcut to jump directly to a specific cloud folder.  
    Example: bookmark a deep Google Drive path for instant access.  
-   👉 See: [Alias Remote Guide](../remote-storage-connection-settings/alias-remote.md)
+   👉 See: [Alias Remote Guide](/howto/remote-storage-connection-settings/alias-remote)
 
 2. **Crypt**  
    Encrypt filenames, contents, and folders for privacy.  
-   👉 See: [Crypt Remote Guide](../remote-storage-connection-settings/crypt-remote.md)
+   👉 See: [Crypt Remote Guide](/howto/remote-storage-connection-settings/crypt-remote)
 
 3. **Memory**  
    Stores data in RAM for ultra-fast temporary usage; clears when closed.
@@ -62,11 +62,11 @@ RcloneView provides nine Virtual Remote types:
 
 6. **Combine**  
    Shows multiple folders under one remote as separate subfolders.  
-   👉 See: [Combine Remote Guide](../remote-storage-connection-settings/combine-remote.md)
+   👉 See: [Combine Remote Guide](/howto/remote-storage-connection-settings/combine-remote)
 
 7. **Union**  
    Merges multiple folders into one unified view.  
-   👉 See: [Union Remote Guide](../remote-storage-connection-settings/union-remote.md)
+   👉 See: [Union Remote Guide](/howto/remote-storage-connection-settings/union-remote)
 
 8. **Hasher**  
    Adds hashing where the backend lacks it; useful for integrity checks.

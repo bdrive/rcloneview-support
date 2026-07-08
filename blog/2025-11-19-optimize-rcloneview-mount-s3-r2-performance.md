@@ -52,7 +52,7 @@ Mounting S3 buckets or Cloudflare R2 onto your workstation, NAS, or media server
 1. Placement and latency: pick the closest AWS region to your users; for R2, choose the nearest Cloudflare location to minimize RTT.  
 2. Network path: confirm VPN/firewall rules allow sustained HTTPS (443) traffic without aggressive IDS throttling.  
 3. Credentials in RcloneView: add remotes for Amazon S3 and Cloudflare R2 (S3-compatible endpoint like `https://<account>.r2.cloudflarestorage.com`).  
-   - Need a refresher? See [How to add an S3 remote](/support/howto/remote-storage-connection-settings/s3) and [How to obtain Cloudflare R2 API credentials](/support/howto/cloud-storage-setting/cloudflare-r2-credential).  
+   - Need a refresher? See [How to add an S3 remote](/howto/remote-storage-connection-settings/s3) and [How to obtain Cloudflare R2 API credentials](/howto/cloud-storage-setting/cloudflare-r2-credential).  
 4. Understand workload: media streaming favors read-ahead; analytics favors parallel reads; backup targets might need safer write caching.
 
 ---

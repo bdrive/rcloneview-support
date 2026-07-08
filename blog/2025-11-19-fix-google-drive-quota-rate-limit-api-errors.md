@@ -54,13 +54,13 @@ RcloneView surfaces these messages in Job History and logs so you can pinpoint t
 
 1. **Check remaining quota**: In Google Workspace Admin or Drive settings, confirm available storage for the target user or Shared Drive.
 2. **Segment the data set**: Use RcloneView’s Explorer to bucket the migration into logical folders (`Finance FY24`, `Video RAW`, etc.). Drag-and-drop into staging folders to gauge size.
-3. **Run Compare**: The [Compare folders guide](/support/howto/rcloneview-basic/compare-folder-contents) helps you preview deltas and avoid copying duplicates that chew through quota.
+3. **Run Compare**: The [Compare folders guide](/howto/rcloneview-basic/compare-folder-contents) helps you preview deltas and avoid copying duplicates that chew through quota.
 
 <CloudSupportGrid />
 
 ## Step 2 — Tune transfers before scheduling
 
-Open **Job Manager → Add Job** (see [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)) and focus on these knobs:
+Open **Job Manager → Add Job** (see [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)) and focus on these knobs:
 
 - **Transfers vs. Checkers**: Set transfers to `4-8` for 1 Gbps networks; drop to `2` when errors spike. Checkers at `4` keep verification healthy without spamming the API.
 - **Chunk size**: Leave defaults unless Google throttles uploads of huge videos; then drop chunk size to reduce burst load.

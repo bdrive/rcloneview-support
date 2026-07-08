@@ -65,7 +65,7 @@ pCloud already offers built-in security, but some teams need zero-knowledge encr
 ## Step-by-Step: Encrypt pCloud with RcloneView
 
 1) Connect pCloud
-- Add pCloud via `+ New Remote` (WebDAV/OAuth). Guide: [add-oath-online-login](/support/howto/remote-storage-connection-settings/add-oath-online-login).
+- Add pCloud via `+ New Remote` (WebDAV/OAuth). Guide: [add-oath-online-login](/howto/remote-storage-connection-settings/add-oath-online-login).
 - Verify the remote in **Remote Explorer** to confirm access.  
 
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
@@ -76,20 +76,20 @@ pCloud already offers built-in security, but some teams need zero-knowledge encr
 - Choose filename encryption (standard) and set a strong passphrase. Save it securely.
 
 1) Optional: Mount the encrypted remote
-- Open **Mount Manager** and select the crypt remote to browse in Explorer/Finder without downloading everything: [mount-cloud-storage-as-a-local-drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
+- Open **Mount Manager** and select the crypt remote to browse in Explorer/Finder without downloading everything: [mount-cloud-storage-as-a-local-drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
 - Windows: pick a drive letter; macOS: pick a mount path.
 
 
 
 1) Sync or copy data into the encrypted path
-- Use **copy** for the first load; switch to **sync** once validated: [create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs).
+- Use **copy** for the first load; switch to **sync** once validated: [create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs).
 - For smaller scopes, drag/drop via Remote Explorer, or build a job per folder (e.g., Finance, Legal, Projects).  
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running an encrypted sync job in RcloneView" class="img-large img-center" />
   
 
 1) Validate before and after
-- Run **Compare** to spot newer/missing files before running a sync: [compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents).
+- Run **Compare** to spot newer/missing files before running a sync: [compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents).
 - Enable checksum verification in job options for integrity.  
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />

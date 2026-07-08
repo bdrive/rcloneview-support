@@ -17,7 +17,6 @@ tags:
   - dashboard
   - sync
   - history
-  - Visualization
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

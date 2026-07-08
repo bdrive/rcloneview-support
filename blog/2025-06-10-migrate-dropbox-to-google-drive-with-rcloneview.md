@@ -84,7 +84,7 @@ RcloneView wraps **rclone config** in a guided, click-through experience:
 4. Confirm both remotes appear side-by-side in the Explorer pane
 
 🔍 Helpful guides:  
-- **Auto Login (Google Drive, Dropbox)** — quick setup with OAuth in RcloneView.  [RcloneView](/support/howto/remote-storage-connection-settings/add-oath-online-login)  
+- **Auto Login (Google Drive, Dropbox)** — quick setup with OAuth in RcloneView.  [RcloneView](/howto/remote-storage-connection-settings/add-oath-online-login)  
 - **Add & Manage Remotes** — where to find the **New Remote** dialog and Remote Manager.  [RcloneView](https://rcloneview.com/support/howto/rcloneview-basic/remote-manager/)
 
 <img src="/support/images/en/tutorials/open-dropbox-and-google-drive.png" alt="open dropbox and google drive" class="img-medium img-center" />
@@ -97,12 +97,12 @@ RcloneView offers three straightforward approaches. Start small, then scale.
 - Open Dropbox on one side and Google Drive on the other, then **drag folders/files across**.  
 - Ideal for quick moves and spot checks.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### B) Compare & Copy (preview changes)
 - Run **Compare** to see new/changed items before copying; reduce surprises and retries.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results in RcloneView showing changed files" class="img-medium img-center" />
 
 ### C) Sync & Scheduled Jobs (automate)
@@ -110,9 +110,9 @@ RcloneView offers three straightforward approaches. Start small, then scale.
 - **Dry-run** first, then save the task as a reusable **Job**; add a schedule for nightly/weekly runs.  
 
 👉 See more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Run a saved job in RcloneView" class="img-medium img-center" />

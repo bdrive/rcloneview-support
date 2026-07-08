@@ -57,7 +57,7 @@ Box is great for collaboration, but long-term retention and large media librarie
 
 ## Connect Box and S3 Remotes Fast
 
-- Add Box and S3 remotes via `+ New Remote`. OAuth and key setup: [add-oath-online-login](/support/howto/remote-storage-connection-settings/add-oath-online-login), [s3](/support/howto/remote-storage-connection-settings/s3).  
+- Add Box and S3 remotes via `+ New Remote`. OAuth and key setup: [add-oath-online-login](/howto/remote-storage-connection-settings/add-oath-online-login), [s3](/howto/remote-storage-connection-settings/s3).  
 
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />. 
 
@@ -65,13 +65,13 @@ Box is great for collaboration, but long-term retention and large media librarie
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="cloud to cloud transfer default" class="img-large img-center" />. 
 
-- Optional: mount either remote locally for quick spot checks: [mount-cloud-storage-as-a-local-drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).  
+- Optional: mount either remote locally for quick spot checks: [mount-cloud-storage-as-a-local-drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).  
 
 <img src="/support/images/en/howto/rcloneview-basic/mount-from-mount-manager.png" alt="Configure a mount from Mount Manager" class="img-large img-center" />. 
 
 ## Compare Before You Move
 
-- Run **Compare** between Box and the target S3 prefix to see missing or newer files before committing: [compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents).
+- Run **Compare** between Box and the target S3 prefix to see missing or newer files before committing: [compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents).
 - Filter by extensions (e.g., PDFs, CAD, media) to scope reviews.  
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />. 
@@ -79,7 +79,7 @@ Box is great for collaboration, but long-term retention and large media librarie
 
 ## Build a Two-Tier Pipeline (S3 Hot, Glacier Cold)
 
-- Step 1: Create a **copy** job from Box to S3 for the active tier: [create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs). Start with copy for safety; switch to sync after validating results.  
+- Step 1: Create a **copy** job from Box to S3 for the active tier: [create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs). Start with copy for safety; switch to sync after validating results.  
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running an encrypted sync job in RcloneView" class="img-large img-center" />. 
 

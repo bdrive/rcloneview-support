@@ -58,7 +58,7 @@ Large MEGA folders are throttled when exported through the browser, links expire
 ## Prerequisites: install RcloneView and connect both clouds
 
 1. [Download the latest RcloneView build](https://rcloneview.com/src/download.html) and sign in with your license or free tier.
-2. Add MEGA via `+ New Remote` and follow the [MEGA connection guide](/support/howto/remote-storage-connection-settings/mega)
+2. Add MEGA via `+ New Remote` and follow the [MEGA connection guide](/howto/remote-storage-connection-settings/mega)
 3. Add Google Drive using OAuth per the [remote setup instructions](https://rcloneview.com/support/howto/intro#step-2-adding-remote-storage-google-drive-example).
 4. Confirm both remotes in Explorer; keep their names simple (`mega-prod`, `gdrive-archive`) so jobs stay readable.
 
