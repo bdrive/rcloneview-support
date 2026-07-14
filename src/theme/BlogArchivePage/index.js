@@ -186,17 +186,17 @@ export default function BlogArchive({archive}) {
     <>
       <PageMetadata title={title} description={description} />
       <Layout>
-        <header className="hero hero--primary">
-          <div className="container">
-            <Heading as="h1" className="hero__title">
+        <main className={`container ${styles.main}`}>
+          {/* hero--primary(주황 밴드)는 주황 네비바와 붙어 보여 제거 —
+              사이트의 다른 페이지들과 같은 플레인 헤더로 통일 */}
+          <header className={styles.header}>
+            <Heading as="h1" className={styles.pageTitle}>
               {title}
             </Heading>
-            <p className="hero__subtitle">
+            <p className={styles.pageSubtitle}>
               {archive.blogPosts.length} posts
             </p>
-          </div>
-        </header>
-        <main className={`container ${styles.main}`}>
+          </header>
           <div className={styles.controls}>
             <input
               type="search"

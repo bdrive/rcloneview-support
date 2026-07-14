@@ -1,7 +1,23 @@
 .main {
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
   max-width: 960px;
+}
+
+/* 플레인 페이지 헤더 — 사이트 다른 페이지들과 동일한 톤 (흰 배경 + 다크 헤딩) */
+.header {
+  margin-bottom: 1.25rem;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.pageSubtitle {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.95rem;
+  margin: 0;
 }
 
 /* ── 컨트롤 바: 필터 + 뷰 토글 ─────────────────── */
