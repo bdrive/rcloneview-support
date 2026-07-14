@@ -38,8 +38,8 @@ function BlogListPageContent(props) {
   const {metadata, items, sidebar} = props;
   return (
     <BlogLayout sidebar={sidebar}>
-      {/* 커스텀: 목록 상단에서 전체 목록(Archive)으로 진입 */}
-      <ArchiveLink />
+      {/* 커스텀: 목록 상단 우측에서 전체 목록(Archive)으로 진입 */}
+      <ArchiveLink align="right" />
       <BlogPostItems items={items} />
       <BlogListPaginator metadata={metadata} />
     </BlogLayout>

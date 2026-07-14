@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import {translate} from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
-export default function ArchiveLink({variant = 'pill'}) {
+export default function ArchiveLink({variant = 'pill', align = 'center'}) {
   const label = translate({
     id: 'blog.archive.allPostsLink',
     message: 'All posts →',
@@ -28,7 +28,8 @@ export default function ArchiveLink({variant = 'pill'}) {
     );
   }
   return (
-    <div className={styles.row}>
+    <div
+      className={`${styles.row} ${align === 'right' ? styles.rowRight : ''}`}>
       <Link to={to} className={styles.link}>
         {label}
       </Link>

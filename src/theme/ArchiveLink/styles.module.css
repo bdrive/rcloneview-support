@@ -3,6 +3,12 @@
   margin: 1.25rem 0;
 }
 
+/* align="right" — 블로그 인덱스 상단: 목록 우측 정렬 */
+.rowRight {
+  text-align: right;
+  margin: 0 0 1rem;
+}
+
 .link {
   display: inline-block;
   font-size: 0.9rem;
