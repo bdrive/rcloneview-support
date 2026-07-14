@@ -540,5 +540,9 @@
   "blog.archive.category.platforms": {
     "message": "プラットフォーム・ヒント",
     "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "すべての記事 →",
+    "description": "Link to the blog archive (All Posts) page"
   }
 }

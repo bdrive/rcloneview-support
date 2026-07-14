@@ -540,5 +540,9 @@
   "blog.archive.category.platforms": {
     "message": "플랫폼·팁",
     "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "전체 글 보기 →",
+    "description": "Link to the blog archive (All Posts) page"
   }
 }

@@ -540,5 +540,9 @@
   "blog.archive.category.platforms": {
     "message": "Plattformen & Tipps",
     "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "Alle Beiträge →",
+    "description": "Link to the blog archive (All Posts) page"
   }
 }

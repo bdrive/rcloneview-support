@@ -540,5 +540,9 @@
   "blog.archive.category.platforms": {
     "message": "平台与技巧",
     "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "所有文章 →",
+    "description": "Link to the blog archive (All Posts) page"
   }
 }
