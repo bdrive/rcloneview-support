@@ -488,5 +488,57 @@
   "rvCta.fineprint": {
     "message": "Kernfunktionen kostenlos. Plus-Automatisierungen verfügbar.",
     "description": "Blog CTA fine print"
+  },
+  "blog.archive.filterPlaceholder": {
+    "message": "Beiträge nach Titel filtern…",
+    "description": "Placeholder of the archive title filter input"
+  },
+  "blog.archive.viewByCategory": {
+    "message": "Nach Kategorie",
+    "description": "Archive view toggle: group by category"
+  },
+  "blog.archive.viewByYear": {
+    "message": "Nach Jahr",
+    "description": "Archive view toggle: group by year"
+  },
+  "blog.archive.noResult": {
+    "message": "Keine Beiträge entsprechen dem Filter.",
+    "description": "Shown when the archive title filter matches nothing"
+  },
+  "blog.archive.category.migration": {
+    "message": "Migration & Übertragung",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.backup": {
+    "message": "Backup & Wiederherstellung",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.sync": {
+    "message": "Synchronisierung",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.providers": {
+    "message": "Anbieter-Guides",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.troubleshooting": {
+    "message": "Fehlerbehebung",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.comparisons": {
+    "message": "Vergleiche",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.features": {
+    "message": "Funktionen & Automatisierung",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.usecases": {
+    "message": "Anwendungsfälle & Branchen",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.platforms": {
+    "message": "Plattformen & Tipps",
+    "description": "Archive category label"
   }
 }

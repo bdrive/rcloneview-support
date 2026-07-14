@@ -488,5 +488,57 @@
   "rvCta.fineprint": {
     "message": "핵심 기능은 무료. Plus로 자동화 기능 이용 가능.",
     "description": "Blog CTA fine print"
+  },
+  "blog.archive.filterPlaceholder": {
+    "message": "제목으로 글 필터…",
+    "description": "Placeholder of the archive title filter input"
+  },
+  "blog.archive.viewByCategory": {
+    "message": "카테고리별",
+    "description": "Archive view toggle: group by category"
+  },
+  "blog.archive.viewByYear": {
+    "message": "연도별",
+    "description": "Archive view toggle: group by year"
+  },
+  "blog.archive.noResult": {
+    "message": "필터와 일치하는 글이 없습니다.",
+    "description": "Shown when the archive title filter matches nothing"
+  },
+  "blog.archive.category.migration": {
+    "message": "마이그레이션·전송",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.backup": {
+    "message": "백업·복구",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.sync": {
+    "message": "동기화",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.providers": {
+    "message": "프로바이더 가이드",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.troubleshooting": {
+    "message": "문제 해결",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.comparisons": {
+    "message": "비교",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.features": {
+    "message": "기능·자동화",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.usecases": {
+    "message": "활용 사례·산업",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.platforms": {
+    "message": "플랫폼·팁",
+    "description": "Archive category label"
   }
 }

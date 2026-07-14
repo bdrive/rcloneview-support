@@ -109,6 +109,12 @@ export default function CustomNavbar() {
                 </a>
               </li>
               <li className="nav-item">
+                {/* 블로그 전체 글 목록 (카테고리/연도 뷰) — 로케일 인지 링크 */}
+                <a className="nav-link" href={useBaseUrl("/blog/archive")}>
+                  All Posts
+                </a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/support/">
                   Support
                 </a>
