@@ -488,5 +488,17 @@
   "rvCta.fineprint": {
     "message": "Fitur inti gratis. Otomatisasi Plus tersedia.",
     "description": "Blog CTA fine print"
+  },
+  "navbar.download": {
+    "message": "Unduh",
+    "description": "Navbar label"
+  },
+  "navbar.releaseNotes": {
+    "message": "Catatan Rilis",
+    "description": "Navbar label"
+  },
+  "navbar.support": {
+    "message": "Dukungan",
+    "description": "Navbar label"
   }
 }

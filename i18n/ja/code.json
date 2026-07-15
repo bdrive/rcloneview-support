@@ -488,5 +488,17 @@
   "rvCta.fineprint": {
     "message": "コア機能は無料。Plusで自動化機能を利用可能。",
     "description": "Blog CTA fine print"
+  },
+  "navbar.download": {
+    "message": "ダウンロード",
+    "description": "Navbar label"
+  },
+  "navbar.releaseNotes": {
+    "message": "リリースノート",
+    "description": "Navbar label"
+  },
+  "navbar.support": {
+    "message": "サポート",
+    "description": "Navbar label"
   }
 }

@@ -488,5 +488,17 @@
   "rvCta.fineprint": {
     "message": "핵심 기능은 무료. Plus로 자동화 기능 이용 가능.",
     "description": "Blog CTA fine print"
+  },
+  "navbar.download": {
+    "message": "다운로드",
+    "description": "Navbar label"
+  },
+  "navbar.releaseNotes": {
+    "message": "릴리스 노트",
+    "description": "Navbar label"
+  },
+  "navbar.support": {
+    "message": "지원",
+    "description": "Navbar label"
   }
 }

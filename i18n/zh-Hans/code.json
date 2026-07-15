@@ -488,5 +488,17 @@
   "rvCta.fineprint": {
     "message": "核心功能免费。Plus 提供自动化功能。",
     "description": "Blog CTA fine print"
+  },
+  "navbar.download": {
+    "message": "下载",
+    "description": "Navbar label"
+  },
+  "navbar.releaseNotes": {
+    "message": "发行说明",
+    "description": "Navbar label"
+  },
+  "navbar.support": {
+    "message": "支持",
+    "description": "Navbar label"
   }
 }

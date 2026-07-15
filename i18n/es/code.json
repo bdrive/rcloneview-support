@@ -488,5 +488,17 @@
   "rvCta.fineprint": {
     "message": "Funciones principales gratis. Automatizaciones disponibles con Plus.",
     "description": "Blog CTA fine print"
+  },
+  "navbar.download": {
+    "message": "Descargar",
+    "description": "Navbar label"
+  },
+  "navbar.releaseNotes": {
+    "message": "Notas de la versión",
+    "description": "Navbar label"
+  },
+  "navbar.support": {
+    "message": "Soporte",
+    "description": "Navbar label"
   }
 }
