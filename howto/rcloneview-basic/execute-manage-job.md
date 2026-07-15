@@ -135,7 +135,7 @@ Field Descriptions
 	- Scheduled : -Automatically run by RcloneView 
 - `Start Time` : When the job started   
 - `Time Spent` : Total duration of the sync  
-- `Status` : Job의 수행 결과  
+- `Status` : Execution result of the job  
 	- Completed : Success   
 	- Errored : Failed, with error messages available. 
 - `Total Size` : Total data size transferred

@@ -4,43 +4,43 @@
     "description": "The label for version current"
   },
   "sidebar.howtoSidebar.category.Remote Storage Connection Settings": {
-    "message": "Remote Storage Connection Settings",
+    "message": "리모트 스토리지 연결 설정",
     "description": "The label for category Remote Storage Connection Settings in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.Remote Storage Connection Settings.link.generated-index.description": {
-    "message": "Guide to learn how to set remote storage connection.",
+    "message": "리모트 스토리지 연결을 설정하는 방법을 알아봅니다.",
     "description": "The generated-index page description for category Remote Storage Connection Settings in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.Connect Remote Storages using CLI": {
-    "message": "Connect Remote Storages using CLI",
+    "message": "CLI로 리모트 스토리지 연결",
     "description": "The label for category Connect Remote Storages using CLI in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.Connect Remote Storages using CLI.link.generated-index.description": {
-    "message": "Guide to learn how to set remote storage connection using CLI.",
+    "message": "CLI를 사용해 리모트 스토리지 연결을 설정하는 방법을 알아봅니다.",
     "description": "The generated-index page description for category Connect Remote Storages using CLI in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.RcloneView - Basics": {
-    "message": "RcloneView - Basics",
+    "message": "RcloneView - 기본",
     "description": "The label for category RcloneView - Basics in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.RcloneView - Basics.link.generated-index.description": {
-    "message": "Start here to learn essential RcloneView features such as file comparison, sync, and cloud remote setup — ideal for beginners.",
+    "message": "파일 비교, 동기화, 클라우드 리모트 설정 등 RcloneView의 핵심 기능을 여기서 시작해 배워보세요 — 입문자에게 적합합니다.",
     "description": "The generated-index page description for category RcloneView - Basics in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.RcloneView - Advanced": {
-    "message": "RcloneView - Advanced",
+    "message": "RcloneView - 고급",
     "description": "The label for category RcloneView - Advanced in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.RcloneView - Advanced.link.generated-index.description": {
-    "message": "Explore advanced features such as scheduled jobs, multi-window support, external Rclone integration, and more.",
+    "message": "예약 작업, 멀티 윈도우 지원, 외부 Rclone 연동 등 고급 기능을 살펴보세요.",
     "description": "The generated-index page description for category RcloneView - Advanced in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.Cloud Setup Prerequisites": {
-    "message": "Cloud Setup Prerequisites",
+    "message": "클라우드 사전 준비",
     "description": "The label for category Cloud Setup Prerequisites in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.Cloud Setup Prerequisites.link.generated-index.description": {
-    "message": "Learn how to prepare external cloud services for use with RcloneView.",
+    "message": "외부 클라우드 서비스를 RcloneView에서 사용할 수 있도록 준비하는 방법을 알아봅니다.",
     "description": "The generated-index page description for category Cloud Setup Prerequisites in sidebar howtoSidebar"
   },
   "sidebar.howtoSidebar.category.FAQ": {

@@ -50,16 +50,34 @@ def fix_artifacts(text: str, loc: str):
     return text, fixed
 
 
+# docs 플러그인: (i18n 하위 경로, 원본 루트 폴더)
+DOCS_PLUGINS = [
+    ("docusaurus-plugin-content-docs-howto/current", "howto"),
+    ("docusaurus-plugin-content-docs-tutorials/current", "tutorials"),
+    ("docusaurus-plugin-content-docs-release-notes/current", "release-notes"),
+]
+
+
+def iter_pairs(loc):
+    """(번역 파일, 원본 파일, 종류) 쌍을 생성. 블로그 + docs."""
+    d = ROOT / "i18n" / loc / "docusaurus-plugin-content-blog"
+    if d.is_dir():
+        for f in sorted(d.glob("*.md")):
+            yield f, BLOG / f.name, "blog"
+    for sub, srcroot in DOCS_PLUGINS:
+        d = ROOT / "i18n" / loc / sub
+        if not d.is_dir():
+            continue
+        for f in sorted(list(d.rglob("*.md")) + list(d.rglob("*.mdx"))):
+            yield f, ROOT / srcroot / f.relative_to(d), "docs"
+
+
 def main() -> int:
     problems = []
     fixed_files = []
     checked = 0
     for loc in LOCALES:
-        d = ROOT / "i18n" / loc / "docusaurus-plugin-content-blog"
-        if not d.is_dir():
-            continue
-        for f in sorted(d.glob("*.md")):
-            src = BLOG / f.name
+        for f, src, kind in iter_pairs(loc):
             if not src.exists():
                 continue
             checked += 1
@@ -71,29 +89,32 @@ def main() -> int:
             orig = src.read_text(encoding="utf-8")
 
             issues = []
-            if not text.startswith("---"):
+            if orig.startswith("---") and not text.startswith("---"):
                 issues.append("frontmatter 누락")
             if orig.count("```") != text.count("```"):
                 issues.append("코드블록 수 불일치")
             if ("<!-- truncate -->" in orig) != ("<!-- truncate -->" in text):
                 issues.append("truncate 마커 불일치")
-            if "from '../src/" in text or 'from "../src/' in text:
+            if re.search(r"""from ['"](\.\./)+src/""", text):
                 issues.append("../src import 미변환")
             if "](/support/" in text:
                 issues.append("/support/ 링크 잔존")
 
+            # 종류별로 바이트 동일해야 하는 frontmatter 키
+            keep_keys = ("slug", "date", "authors", "tags") if kind == "blog" \
+                else ("sidebar_position", "slug", "id")
             m = re.match(r"^---\n([\s\S]*?)\n---\n", text)
             mo = re.match(r"^---\n([\s\S]*?)\n---\n", orig)
             if m and mo:
                 try:
                     fm = yaml.safe_load(m.group(1))
                     fmo = yaml.safe_load(mo.group(1))
-                    for k in ("slug", "date", "authors", "tags"):
+                    for k in keep_keys:
                         if fmo and k in fmo and (not fm or fm.get(k) != fmo.get(k)):
                             issues.append(f"frontmatter {k} 변경됨")
                 except yaml.YAMLError as e:
                     issues.append(f"YAML 오류: {str(e).splitlines()[0]}")
-            elif not m:
+            elif mo and not m:
                 issues.append("frontmatter 파싱 불가")
 
             if issues:
