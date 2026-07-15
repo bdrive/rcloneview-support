@@ -489,6 +489,62 @@
     "message": "核心功能免费。Plus 提供自动化功能。",
     "description": "Blog CTA fine print"
   },
+  "blog.archive.filterPlaceholder": {
+    "message": "按标题筛选…",
+    "description": "Placeholder of the archive title filter input"
+  },
+  "blog.archive.viewByCategory": {
+    "message": "按类别",
+    "description": "Archive view toggle: group by category"
+  },
+  "blog.archive.viewByYear": {
+    "message": "按年份",
+    "description": "Archive view toggle: group by year"
+  },
+  "blog.archive.noResult": {
+    "message": "没有符合筛选条件的文章。",
+    "description": "Shown when the archive title filter matches nothing"
+  },
+  "blog.archive.category.migration": {
+    "message": "迁移与传输",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.backup": {
+    "message": "备份与恢复",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.sync": {
+    "message": "同步",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.providers": {
+    "message": "服务商指南",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.troubleshooting": {
+    "message": "故障排除",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.comparisons": {
+    "message": "对比",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.features": {
+    "message": "功能与自动化",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.usecases": {
+    "message": "应用场景与行业",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.platforms": {
+    "message": "平台与技巧",
+    "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "所有文章 →",
+    "description": "Link to the blog archive (All Posts) page"
+  },
   "navbar.download": {
     "message": "下载",
     "description": "Navbar label"
@@ -556,5 +612,9 @@
   "footer.contactSupport": {
     "message": "联系支持",
     "description": "Footer link"
+  },
+  "navbar.blog": {
+    "message": "博客",
+    "description": "Navbar label"
   }
 }

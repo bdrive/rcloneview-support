@@ -120,6 +120,14 @@ export default function CustomNavbar() {
                 </a>
               </li>
               <li className="nav-item">
+                {/* 블로그 인덱스 — 전체 목록(Archive)은 블로그 안에서 진입 */}
+                <a className="nav-link" href={useBaseUrl("/blog")}>
+                  <Translate id="navbar.blog" description="Navbar label">
+                    Blog
+                  </Translate>
+                </a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href={useBaseUrl("/")}>
                   <Translate id="navbar.support" description="Navbar label">
                     Support

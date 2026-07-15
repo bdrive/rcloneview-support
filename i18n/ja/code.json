@@ -489,6 +489,62 @@
     "message": "コア機能は無料。Plusで自動化機能を利用可能。",
     "description": "Blog CTA fine print"
   },
+  "blog.archive.filterPlaceholder": {
+    "message": "タイトルで絞り込み…",
+    "description": "Placeholder of the archive title filter input"
+  },
+  "blog.archive.viewByCategory": {
+    "message": "カテゴリー別",
+    "description": "Archive view toggle: group by category"
+  },
+  "blog.archive.viewByYear": {
+    "message": "年別",
+    "description": "Archive view toggle: group by year"
+  },
+  "blog.archive.noResult": {
+    "message": "一致する記事がありません。",
+    "description": "Shown when the archive title filter matches nothing"
+  },
+  "blog.archive.category.migration": {
+    "message": "移行・転送",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.backup": {
+    "message": "バックアップ・復元",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.sync": {
+    "message": "同期",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.providers": {
+    "message": "プロバイダーガイド",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.troubleshooting": {
+    "message": "トラブルシューティング",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.comparisons": {
+    "message": "比較",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.features": {
+    "message": "機能・自動化",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.usecases": {
+    "message": "活用事例・業界",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.platforms": {
+    "message": "プラットフォーム・ヒント",
+    "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "すべての記事 →",
+    "description": "Link to the blog archive (All Posts) page"
+  },
   "navbar.download": {
     "message": "ダウンロード",
     "description": "Navbar label"
@@ -556,5 +612,9 @@
   "footer.contactSupport": {
     "message": "サポートに問い合わせ",
     "description": "Footer link"
+  },
+  "navbar.blog": {
+    "message": "ブログ",
+    "description": "Navbar label"
   }
 }

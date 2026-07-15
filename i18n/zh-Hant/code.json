@@ -489,6 +489,62 @@
     "message": "核心功能免費。Plus 提供自動化功能。",
     "description": "Blog CTA fine print"
   },
+  "blog.archive.filterPlaceholder": {
+    "message": "依標題篩選…",
+    "description": "Placeholder of the archive title filter input"
+  },
+  "blog.archive.viewByCategory": {
+    "message": "依類別",
+    "description": "Archive view toggle: group by category"
+  },
+  "blog.archive.viewByYear": {
+    "message": "依年份",
+    "description": "Archive view toggle: group by year"
+  },
+  "blog.archive.noResult": {
+    "message": "沒有符合篩選條件的文章。",
+    "description": "Shown when the archive title filter matches nothing"
+  },
+  "blog.archive.category.migration": {
+    "message": "遷移與傳輸",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.backup": {
+    "message": "備份與還原",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.sync": {
+    "message": "同步",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.providers": {
+    "message": "服務商指南",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.troubleshooting": {
+    "message": "疑難排解",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.comparisons": {
+    "message": "比較",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.features": {
+    "message": "功能與自動化",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.usecases": {
+    "message": "應用場景與產業",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.platforms": {
+    "message": "平台與訣竅",
+    "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "所有文章 →",
+    "description": "Link to the blog archive (All Posts) page"
+  },
   "navbar.download": {
     "message": "下載",
     "description": "Navbar label"
@@ -556,5 +612,9 @@
   "footer.contactSupport": {
     "message": "聯絡支援",
     "description": "Footer link"
+  },
+  "navbar.blog": {
+    "message": "部落格",
+    "description": "Navbar label"
   }
 }

@@ -489,6 +489,62 @@
     "message": "Fonctions essentielles gratuites. Automatisations disponibles avec Plus.",
     "description": "Blog CTA fine print"
   },
+  "blog.archive.filterPlaceholder": {
+    "message": "Filtrer les articles par titre…",
+    "description": "Placeholder of the archive title filter input"
+  },
+  "blog.archive.viewByCategory": {
+    "message": "Par catégorie",
+    "description": "Archive view toggle: group by category"
+  },
+  "blog.archive.viewByYear": {
+    "message": "Par année",
+    "description": "Archive view toggle: group by year"
+  },
+  "blog.archive.noResult": {
+    "message": "Aucun article ne correspond au filtre.",
+    "description": "Shown when the archive title filter matches nothing"
+  },
+  "blog.archive.category.migration": {
+    "message": "Migration et transfert",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.backup": {
+    "message": "Sauvegarde et restauration",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.sync": {
+    "message": "Synchronisation",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.providers": {
+    "message": "Guides des fournisseurs",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.troubleshooting": {
+    "message": "Dépannage",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.comparisons": {
+    "message": "Comparatifs",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.features": {
+    "message": "Fonctionnalités et automatisation",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.usecases": {
+    "message": "Cas d'usage et secteurs",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.platforms": {
+    "message": "Plateformes et astuces",
+    "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "Tous les articles →",
+    "description": "Link to the blog archive (All Posts) page"
+  },
   "navbar.download": {
     "message": "Télécharger",
     "description": "Navbar label"
@@ -556,5 +612,9 @@
   "footer.contactSupport": {
     "message": "Contacter l’assistance",
     "description": "Footer link"
+  },
+  "navbar.blog": {
+    "message": "Blog",
+    "description": "Navbar label"
   }
 }

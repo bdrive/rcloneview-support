@@ -489,6 +489,62 @@
     "message": "Fitur inti gratis. Otomatisasi Plus tersedia.",
     "description": "Blog CTA fine print"
   },
+  "blog.archive.filterPlaceholder": {
+    "message": "Saring artikel berdasarkan judul…",
+    "description": "Placeholder of the archive title filter input"
+  },
+  "blog.archive.viewByCategory": {
+    "message": "Per kategori",
+    "description": "Archive view toggle: group by category"
+  },
+  "blog.archive.viewByYear": {
+    "message": "Per tahun",
+    "description": "Archive view toggle: group by year"
+  },
+  "blog.archive.noResult": {
+    "message": "Tidak ada artikel yang cocok dengan filter.",
+    "description": "Shown when the archive title filter matches nothing"
+  },
+  "blog.archive.category.migration": {
+    "message": "Migrasi & Transfer",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.backup": {
+    "message": "Cadangan & Pemulihan",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.sync": {
+    "message": "Sinkronisasi",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.providers": {
+    "message": "Panduan Penyedia",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.troubleshooting": {
+    "message": "Pemecahan Masalah",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.comparisons": {
+    "message": "Perbandingan",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.features": {
+    "message": "Fitur & Otomatisasi",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.usecases": {
+    "message": "Kasus Penggunaan & Industri",
+    "description": "Archive category label"
+  },
+  "blog.archive.category.platforms": {
+    "message": "Platform & Tips",
+    "description": "Archive category label"
+  },
+  "blog.archive.allPostsLink": {
+    "message": "Semua artikel →",
+    "description": "Link to the blog archive (All Posts) page"
+  },
   "navbar.download": {
     "message": "Unduh",
     "description": "Navbar label"
@@ -556,5 +612,9 @@
   "footer.contactSupport": {
     "message": "Hubungi Dukungan",
     "description": "Footer link"
+  },
+  "navbar.blog": {
+    "message": "Blog",
+    "description": "Navbar label"
   }
 }

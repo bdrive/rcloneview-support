@@ -118,9 +118,10 @@ const config = {
             xslt: true,
           },
 
-          // ✅ 추가
-          blogSidebarTitle: 'Recent posts',
-          blogSidebarCount: 'ALL', // 또는 충분히 큰 숫자(예: 100)
+          // 사이드바 제거 — 'ALL' 은 모든 글 페이지 HTML 에 620개 링크(~120KB)를
+          // 인라인해 9로케일 빌드가 3.1GB 까지 커지는 주범이었음.
+          // 전체 목록은 /blog/archive (All Posts — 카테고리/연도 뷰 + 필터) 가 담당.
+          blogSidebarCount: 0,
 
           /*
           // Please change this to your repo.

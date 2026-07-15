@@ -1,0 +1,45 @@
+.row {
+  text-align: center;
+  margin: 1.25rem 0;
+}
+
+/* align="right" — 블로그 인덱스 상단: 목록 우측 정렬 */
+.rowRight {
+  text-align: right;
+  margin: 0 0 1rem;
+}
+
+.link {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  padding: 0.4rem 1.4rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.link:hover {
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+/* variant="toc" — 글 상세 우측 TOC 레일 상단 (theme-classic TOC 의
+   padding/폰트 스케일에 맞춘 컴팩트 형태) */
+.tocRow {
+  padding: 0 var(--ifm-toc-padding-horizontal) 0.6rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.tocLink {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.tocLink:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
