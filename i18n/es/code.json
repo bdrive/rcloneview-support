@@ -500,5 +500,61 @@
   "navbar.support": {
     "message": "Soporte",
     "description": "Navbar label"
+  },
+  "home.title": {
+    "message": "Centro de soporte de RcloneView",
+    "description": "Support home title"
+  },
+  "home.description": {
+    "message": "Encuentra guías, tutoriales y ayuda para RcloneView.",
+    "description": "Support home meta description"
+  },
+  "home.heading": {
+    "message": "Centro de soporte de RcloneView",
+    "description": "Support home hero heading"
+  },
+  "home.tutorials": {
+    "message": "Tutoriales",
+    "description": "Card title"
+  },
+  "home.tutorialsDesc": {
+    "message": "Guías paso a paso para dominar RcloneView.",
+    "description": "Card description"
+  },
+  "home.helpGuides": {
+    "message": "Guías de ayuda",
+    "description": "Card title"
+  },
+  "home.helpGuidesDesc": {
+    "message": "Aprende a usar RcloneView.",
+    "description": "Card description"
+  },
+  "home.community": {
+    "message": "Comunidad",
+    "description": "Card title"
+  },
+  "home.communityDesc": {
+    "message": "Únete a los debates y comparte tus ideas.",
+    "description": "Card description"
+  },
+  "footer.aboutUs": {
+    "message": "Sobre nosotros",
+    "description": "Footer link"
+  },
+  "footer.privacyPolicy": {
+    "message": "Política de privacidad",
+    "description": "Footer link"
+  },
+  "footer.rcloneForum": {
+    "message": "Foro de Rclone",
+    "description": "Footer link"
+  },
+  "footer.blog": {
+    "message": "Blog",
+    "description": "Footer link"
+  },
+  "footer.contactSupport": {
+    "message": "Contactar con soporte",
+    "description": "Footer link"
   }
 }

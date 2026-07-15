@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
 import "../css/search.css";
@@ -12,7 +13,9 @@ import { DocSearch } from "@docsearch/react";
 export default function SupportPage() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title="RcloneView Support Center" description="Find guides, tutorials, and help for RcloneView.">
+    <Layout
+      title={translate({ id: "home.title", message: "RcloneView Support Center", description: "Support home title" })}
+      description={translate({ id: "home.description", message: "Find guides, tutorials, and help for RcloneView.", description: "Support home meta description" })}>
       <main className="px-0 mt-0 bg-white" style={{ display: "flex", flexDirection: "column", flex: 1 }}>
         {/* 메인 배경 흰색 */}
         {/* 검색창 영역 (흰색 배경) */}
@@ -22,7 +25,7 @@ export default function SupportPage() {
         >
           <article>
             <h1 className="text-center mb-6 text-gray-900 titleMobile" style={{ color: "#555", fontFamily: "Poppins", fontWeight: 600 }}>
-              RcloneView Support Center
+              <Translate id="home.heading" description="Support home hero heading">RcloneView Support Center</Translate>
             </h1>
             <div className={styles.buttons}>
               <div className="docsearch-desktop-only">
@@ -43,10 +46,10 @@ export default function SupportPage() {
             >
               <div className="text-5xl mb-4">📖</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2" style={{ fontFamily: "Poppins" }}>
-                Tutorials
+                <Translate id="home.tutorials" description="Card title">Tutorials</Translate>
               </h3>
               <p className="text-gray-600" style={{ fontFamily: "Poppins" }}>
-                Step-by-step guides to master RcloneView.
+                <Translate id="home.tutorialsDesc" description="Card description">Step-by-step guides to master RcloneView.</Translate>
               </p>
             </Link>
 
@@ -56,10 +59,10 @@ export default function SupportPage() {
             >
               <div className="text-5xl mb-4 text-red-600">❓</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2" style={{ fontFamily: "Poppins" }}>
-                Help Guides
+                <Translate id="home.helpGuides" description="Card title">Help Guides</Translate>
               </h3>
               <p className="text-gray-600" style={{ fontFamily: "Poppins" }}>
-                Learn how to use RcloneView.
+                <Translate id="home.helpGuidesDesc" description="Card description">Learn how to use RcloneView.</Translate>
               </p>
             </Link>
 
@@ -71,10 +74,10 @@ export default function SupportPage() {
             >
               <div className="text-5xl mb-4">💬</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2" style={{ fontFamily: "Poppins" }}>
-                Community
+                <Translate id="home.community" description="Card title">Community</Translate>
               </h3>
               <p className="text-gray-600" style={{ fontFamily: "Poppins" }}>
-                Join discussions and share your ideas.
+                <Translate id="home.communityDesc" description="Card description">Join discussions and share your ideas.</Translate>
               </p>
             </a>
           </div>

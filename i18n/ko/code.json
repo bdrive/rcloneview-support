@@ -500,5 +500,61 @@
   "navbar.support": {
     "message": "지원",
     "description": "Navbar label"
+  },
+  "home.title": {
+    "message": "RcloneView 지원 센터",
+    "description": "Support home title"
+  },
+  "home.description": {
+    "message": "RcloneView 가이드, 튜토리얼, 도움말을 찾아보세요.",
+    "description": "Support home meta description"
+  },
+  "home.heading": {
+    "message": "RcloneView 지원 센터",
+    "description": "Support home hero heading"
+  },
+  "home.tutorials": {
+    "message": "튜토리얼",
+    "description": "Card title"
+  },
+  "home.tutorialsDesc": {
+    "message": "RcloneView를 마스터하기 위한 단계별 가이드.",
+    "description": "Card description"
+  },
+  "home.helpGuides": {
+    "message": "도움말 가이드",
+    "description": "Card title"
+  },
+  "home.helpGuidesDesc": {
+    "message": "RcloneView 사용법을 알아보세요.",
+    "description": "Card description"
+  },
+  "home.community": {
+    "message": "커뮤니티",
+    "description": "Card title"
+  },
+  "home.communityDesc": {
+    "message": "토론에 참여하고 아이디어를 나눠보세요.",
+    "description": "Card description"
+  },
+  "footer.aboutUs": {
+    "message": "회사 소개",
+    "description": "Footer link"
+  },
+  "footer.privacyPolicy": {
+    "message": "개인정보처리방침",
+    "description": "Footer link"
+  },
+  "footer.rcloneForum": {
+    "message": "Rclone 포럼",
+    "description": "Footer link"
+  },
+  "footer.blog": {
+    "message": "블로그",
+    "description": "Footer link"
+  },
+  "footer.contactSupport": {
+    "message": "지원 문의",
+    "description": "Footer link"
   }
 }

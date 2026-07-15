@@ -500,5 +500,61 @@
   "navbar.support": {
     "message": "Dukungan",
     "description": "Navbar label"
+  },
+  "home.title": {
+    "message": "Pusat Dukungan RcloneView",
+    "description": "Support home title"
+  },
+  "home.description": {
+    "message": "Temukan panduan, tutorial, dan bantuan untuk RcloneView.",
+    "description": "Support home meta description"
+  },
+  "home.heading": {
+    "message": "Pusat Dukungan RcloneView",
+    "description": "Support home hero heading"
+  },
+  "home.tutorials": {
+    "message": "Tutorial",
+    "description": "Card title"
+  },
+  "home.tutorialsDesc": {
+    "message": "Panduan langkah demi langkah untuk menguasai RcloneView.",
+    "description": "Card description"
+  },
+  "home.helpGuides": {
+    "message": "Panduan Bantuan",
+    "description": "Card title"
+  },
+  "home.helpGuidesDesc": {
+    "message": "Pelajari cara menggunakan RcloneView.",
+    "description": "Card description"
+  },
+  "home.community": {
+    "message": "Komunitas",
+    "description": "Card title"
+  },
+  "home.communityDesc": {
+    "message": "Ikuti diskusi dan bagikan ide Anda.",
+    "description": "Card description"
+  },
+  "footer.aboutUs": {
+    "message": "Tentang Kami",
+    "description": "Footer link"
+  },
+  "footer.privacyPolicy": {
+    "message": "Kebijakan Privasi",
+    "description": "Footer link"
+  },
+  "footer.rcloneForum": {
+    "message": "Forum Rclone",
+    "description": "Footer link"
+  },
+  "footer.blog": {
+    "message": "Blog",
+    "description": "Footer link"
+  },
+  "footer.contactSupport": {
+    "message": "Hubungi Dukungan",
+    "description": "Footer link"
   }
 }

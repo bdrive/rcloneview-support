@@ -500,5 +500,61 @@
   "navbar.support": {
     "message": "支援",
     "description": "Navbar label"
+  },
+  "home.title": {
+    "message": "RcloneView 支援中心",
+    "description": "Support home title"
+  },
+  "home.description": {
+    "message": "尋找 RcloneView 的指南、教學與說明。",
+    "description": "Support home meta description"
+  },
+  "home.heading": {
+    "message": "RcloneView 支援中心",
+    "description": "Support home hero heading"
+  },
+  "home.tutorials": {
+    "message": "教學",
+    "description": "Card title"
+  },
+  "home.tutorialsDesc": {
+    "message": "掌握 RcloneView 的逐步指南。",
+    "description": "Card description"
+  },
+  "home.helpGuides": {
+    "message": "說明指南",
+    "description": "Card title"
+  },
+  "home.helpGuidesDesc": {
+    "message": "瞭解如何使用 RcloneView。",
+    "description": "Card description"
+  },
+  "home.community": {
+    "message": "社群",
+    "description": "Card title"
+  },
+  "home.communityDesc": {
+    "message": "參與討論並分享您的想法。",
+    "description": "Card description"
+  },
+  "footer.aboutUs": {
+    "message": "關於我們",
+    "description": "Footer link"
+  },
+  "footer.privacyPolicy": {
+    "message": "隱私權政策",
+    "description": "Footer link"
+  },
+  "footer.rcloneForum": {
+    "message": "Rclone 論壇",
+    "description": "Footer link"
+  },
+  "footer.blog": {
+    "message": "部落格",
+    "description": "Footer link"
+  },
+  "footer.contactSupport": {
+    "message": "聯絡支援",
+    "description": "Footer link"
   }
 }

@@ -500,5 +500,61 @@
   "navbar.support": {
     "message": "Assistance",
     "description": "Navbar label"
+  },
+  "home.title": {
+    "message": "Centre d’assistance RcloneView",
+    "description": "Support home title"
+  },
+  "home.description": {
+    "message": "Trouvez des guides, des tutoriels et de l’aide pour RcloneView.",
+    "description": "Support home meta description"
+  },
+  "home.heading": {
+    "message": "Centre d’assistance RcloneView",
+    "description": "Support home hero heading"
+  },
+  "home.tutorials": {
+    "message": "Tutoriels",
+    "description": "Card title"
+  },
+  "home.tutorialsDesc": {
+    "message": "Des guides pas à pas pour maîtriser RcloneView.",
+    "description": "Card description"
+  },
+  "home.helpGuides": {
+    "message": "Guides d’aide",
+    "description": "Card title"
+  },
+  "home.helpGuidesDesc": {
+    "message": "Apprenez à utiliser RcloneView.",
+    "description": "Card description"
+  },
+  "home.community": {
+    "message": "Communauté",
+    "description": "Card title"
+  },
+  "home.communityDesc": {
+    "message": "Participez aux discussions et partagez vos idées.",
+    "description": "Card description"
+  },
+  "footer.aboutUs": {
+    "message": "À propos",
+    "description": "Footer link"
+  },
+  "footer.privacyPolicy": {
+    "message": "Politique de confidentialité",
+    "description": "Footer link"
+  },
+  "footer.rcloneForum": {
+    "message": "Forum Rclone",
+    "description": "Footer link"
+  },
+  "footer.blog": {
+    "message": "Blog",
+    "description": "Footer link"
+  },
+  "footer.contactSupport": {
+    "message": "Contacter l’assistance",
+    "description": "Footer link"
   }
 }

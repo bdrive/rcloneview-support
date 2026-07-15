@@ -500,5 +500,61 @@
   "navbar.support": {
     "message": "サポート",
     "description": "Navbar label"
+  },
+  "home.title": {
+    "message": "RcloneView サポートセンター",
+    "description": "Support home title"
+  },
+  "home.description": {
+    "message": "RcloneView のガイド、チュートリアル、ヘルプを探せます。",
+    "description": "Support home meta description"
+  },
+  "home.heading": {
+    "message": "RcloneView サポートセンター",
+    "description": "Support home hero heading"
+  },
+  "home.tutorials": {
+    "message": "チュートリアル",
+    "description": "Card title"
+  },
+  "home.tutorialsDesc": {
+    "message": "RcloneView をマスターするためのステップバイステップガイド。",
+    "description": "Card description"
+  },
+  "home.helpGuides": {
+    "message": "ヘルプガイド",
+    "description": "Card title"
+  },
+  "home.helpGuidesDesc": {
+    "message": "RcloneView の使い方を学びましょう。",
+    "description": "Card description"
+  },
+  "home.community": {
+    "message": "コミュニティ",
+    "description": "Card title"
+  },
+  "home.communityDesc": {
+    "message": "ディスカッションに参加してアイデアを共有しましょう。",
+    "description": "Card description"
+  },
+  "footer.aboutUs": {
+    "message": "会社概要",
+    "description": "Footer link"
+  },
+  "footer.privacyPolicy": {
+    "message": "プライバシーポリシー",
+    "description": "Footer link"
+  },
+  "footer.rcloneForum": {
+    "message": "Rclone フォーラム",
+    "description": "Footer link"
+  },
+  "footer.blog": {
+    "message": "ブログ",
+    "description": "Footer link"
+  },
+  "footer.contactSupport": {
+    "message": "サポートに問い合わせ",
+    "description": "Footer link"
   }
 }
