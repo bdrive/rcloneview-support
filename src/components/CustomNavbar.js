@@ -104,12 +104,13 @@ export default function CustomNavbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/support/release-notes/">
+                {/* 로케일 인지 링크 — 하드코딩(/support/...)은 ko 등에서 en 으로 이탈 */}
+                <a className="nav-link" href={useBaseUrl("/release-notes/")}>
                   Release Notes
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/support/">
+                <a className="nav-link" href={useBaseUrl("/")}>
                   Support
                 </a>
               </li>

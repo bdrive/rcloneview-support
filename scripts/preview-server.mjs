@@ -46,6 +46,14 @@ function resolve(urlPath) {
 }
 
 createServer((req, res) => {
+  // /support 밖 경로(www 사이트 페이지: /src/pricing.html, /index.html 등)는
+  // 이 빌드에 없다 — 라이브 사이트로 넘겨서 클릭 흐름이 끊기지 않게 한다.
+  const clean = req.url.split('?')[0];
+  if (clean !== BASE && !clean.startsWith(BASE + '/')) {
+    res.writeHead(302, { Location: 'https://rcloneview.com' + req.url });
+    res.end();
+    return;
+  }
   const file = resolve(req.url);
   if (file) {
     res.writeHead(200, { 'Content-Type': MIME[extname(file)] ?? 'application/octet-stream' });
