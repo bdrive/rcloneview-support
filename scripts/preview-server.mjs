@@ -46,11 +46,13 @@ function resolve(urlPath) {
 }
 
 createServer((req, res) => {
-  // /support 밖 경로(www 사이트 페이지: /src/pricing.html, /index.html 등)는
-  // 이 빌드에 없다 — 라이브 사이트로 넘겨서 클릭 흐름이 끊기지 않게 한다.
+  // /support 밖 경로(www 사이트: /index.html, /ko/src/pricing.html 등)는
+  // 이 빌드에 없다 — 로컬 www 프리뷰(:3002, rcloneview_www 의
+  // scripts/i18n/www-preview.mjs)로 넘겨 로케일 포함 클릭 흐름을 유지한다.
+  // (통합 진입점은 :3002 — 그쪽이 /support/* 를 이리로 프록시한다)
   const clean = req.url.split('?')[0];
   if (clean !== BASE && !clean.startsWith(BASE + '/')) {
-    res.writeHead(302, { Location: 'https://rcloneview.com' + req.url });
+    res.writeHead(302, { Location: 'http://localhost:3002' + req.url });
     res.end();
     return;
   }
