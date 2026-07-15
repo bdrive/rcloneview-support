@@ -33,7 +33,7 @@ import RvCta from '../src/components/RvCta';
 
 # Hybrid Cloud File Transfer Between On-Prem NAS and Public Cloud Using RcloneView
 
-> Bridge on-prem NAS and public clouds without CLI gymnastics. RcloneView lets you add SMB/SFTP/WebDAV, open clouds side-by-side, Compare changes, mount drives, and schedule nightly syncs?so hybrid storage stays tidy and predictable.
+> Bridge on-prem NAS and public clouds without CLI gymnastics. RcloneView lets you add SMB/SFTP/WebDAV, open clouds side-by-side, Compare changes, mount drives, and schedule nightly syncs — so hybrid storage stays tidy and predictable.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 

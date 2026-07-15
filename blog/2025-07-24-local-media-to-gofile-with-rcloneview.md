@@ -67,7 +67,7 @@ RcloneView wraps rclone’s configuration into a guided flow.
 2. Select **Gofile**, then paste your **Account API token** from Gofile **My Profile**. *(Premium required for rclone connections.)* 
 3. Name it (e.g., `MyGofile`) and save.  
 
-🔍 Helpful guide: (Add Gofile Remote)[/support/howto/remote-storage-connection-settings/gofile] 
+🔍 Helpful guide: [Add Gofile Remote](/howto/remote-storage-connection-settings/gofile) 
 
 <img src="/support/images/en/howto/remote-storage-connection-settings/add-gofile-remote-verify.png" alt="add go file remote verify" class="img-medium img-center" />
 
@@ -115,7 +115,7 @@ RcloneView offers three clear ways to move and maintain your media. Start small,
 **A.** Yes—rclone’s Gofile backend requires a **premium** Gofile account and an **Account API token** from **My Profile**. 
 
 **Q. Can I generate public share links for my uploads?**  
-**A.** Yes. RcloneView nsupports `link` to create public links (file or folder; folders can download as ZIP; expiry supported on some backends).
+**A.** Yes. RcloneView supports `link` to create public links (file or folder; folders can download as ZIP; expiry supported on some backends).
 
 
 **Ready to put your media library online—your way?**  

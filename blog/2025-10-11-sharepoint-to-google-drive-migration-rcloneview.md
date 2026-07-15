@@ -54,7 +54,7 @@ RcloneView wraps rclone’s SharePoint and Google Drive connectors into a GUI wi
 
 ## Step 1 — Connect SharePoint and Google Drive remotes
 
-1) In **RcloneView ? Settings ? Remote Storage**, add a new remote.  
+1) In **RcloneView → Settings → Remote Storage**, add a new remote.  
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
 
 2) Choose **OneDrive/SharePoint (Microsoft 365)**, sign in with the account that owns or can access the site, and pick the correct **Site / Document Library** (e.g., `/sites/Marketing/Shared Documents`).  

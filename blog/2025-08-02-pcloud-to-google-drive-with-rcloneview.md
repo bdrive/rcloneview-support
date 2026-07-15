@@ -1,7 +1,6 @@
 ---
 slug: pcloud-to-google-drive-with-rcloneview
 title: "From pCloud to Google Drive: Plan, Preview & Automate with RcloneView"
-om pCloud to Google Drive: Plan, Preview & Automate with RcloneView
 authors:
   - jay
 description: Move and synchronize files from pCloud to Google Drive using RcloneView’s click-first workflow—drag-and-drop transfers, visual compare, and scheduled syncs without the command line.

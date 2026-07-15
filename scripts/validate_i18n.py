@@ -33,6 +33,12 @@ def fix_artifacts(text: str, loc: str):
     if "</content>" in text:
         text = text.replace("</content>", "")
         fixed = True
+    # 에이전트 도구 호출 문법 잔재 (</invoke>, <invoke ...>, </parameter> 등)
+    # — 배치 7에서 발견된 변종. 해당 줄 전체를 제거한다.
+    tool_artifact = re.compile(r"^[ \t]*</?(?:invoke|parameter|antml[\w:]*)[^>\n]*>[ \t]*\n?", re.M)
+    if tool_artifact.search(text):
+        text = tool_artifact.sub("", text)
+        fixed = True
     if loc == "de":
         m = re.match(r"^---\n([\s\S]*?)\n---\n", text)
         if m:

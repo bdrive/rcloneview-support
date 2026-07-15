@@ -53,7 +53,7 @@ Cloud sprawl hits budgets first: overlapping backups, legacy project folders, an
 
 ## Step 1 — Open both clouds side by side
 
-1) Connect your remotes in **Settings ? Remote Storage** (Google Drive, S3/R2, Dropbox, etc.).  
+1) Connect your remotes in **Settings → Remote Storage** (Google Drive, S3/R2, Dropbox, etc.).  
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
 2) Open the **Explorer** and load each remote in its own pane.  
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="cloud to cloud transfer default" class="img-large img-center" />

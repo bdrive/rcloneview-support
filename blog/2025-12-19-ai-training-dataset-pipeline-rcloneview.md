@@ -54,7 +54,7 @@ AI teams need fast, reliable ingestion into object storage. RcloneView wraps rcl
 
 ## Step 1 — Add remotes for your target buckets
 
-1) Open **Settings ? Remote Storage** and click **Add**.  
+1) Open **Settings → Remote Storage** and click **Add**.  
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
 2) Choose your target:
    - **S3 / S3-compatible** for AWS, MinIO, or R2.
