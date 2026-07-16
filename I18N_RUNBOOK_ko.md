@@ -2,6 +2,7 @@
 
 > 실무용 문서. 새 Claude 세션(또는 사람)이 이 문서만 보고 번역 배치를 이어서 돌릴 수 있도록 모든 절차·규칙·함정을 기록한다.
 > 배경·구조 설명은 [I18N_OVERVIEW_ko.md](./I18N_OVERVIEW_ko.md) 참고.
+> 로컬에서 결과물을 확인하려면 [LOCAL_TESTING_ko.md](./LOCAL_TESTING_ko.md) 를 따를 것 (일반적인 npm run serve/start 로는 404 가 난다).
 > 최종 갱신: 2026-07-09
 
 ---
