@@ -6,7 +6,6 @@ import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
 import "../css/search.css";
-import Footer from "../components/footer";
 import { DocSearch } from "@docsearch/react";
 // import styles from './Support.module.css';  // CSS 모듈 또는 custom.css에서 클래스 정의
 
@@ -84,7 +83,6 @@ export default function SupportPage() {
         </div>
         {/* 푸터 추가. /support 에서만 */}
       </main>
-      <Footer />
     </Layout>
   );
 }

@@ -14,6 +14,7 @@ import "@site/src/css/global.css";
 //import CustomNavbar from '@site/src/components/TopNavbar'; // Importing the custom navbar component - jay
 import CustomNavbar from "@site/src/components/CustomNavbar"; // Importing the custom navbar component - jay
 import NavbarScript from "@site/src/components/NavbarScript";
+import Footer from "@site/src/components/footer";
 
 
 export default function Layout(props) {
@@ -58,6 +59,9 @@ export default function Layout(props) {
 
 
       </div>
+
+      {/* 푸터 전역 배치 — 언어 선택 포함 (하단 오른쪽, netdrive.net 패턴) */}
+      {!noFooter && <Footer />}
     </LayoutProvider>
   );
 }

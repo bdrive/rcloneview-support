@@ -3,51 +3,10 @@ import React from "react"; // ✅ 꼭 포함할 것
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Translate from "@docusaurus/Translate";
-import { useAlternatePageUtils } from "@docusaurus/theme-common/internal";
 import { DocSearch } from "@docsearch/react";
 import "@docsearch/css";
 
 import "../css/navbar.css";
-
-// 언어 스위처 — 공식 LocaleDropdownNavbarItem과 같은 useAlternatePageUtils로
-// 현재 페이지의 로케일별 URL(/support/ko/... 등)로 이동한다.
-function LocaleSelect() {
-  const {
-    i18n: { currentLocale, locales, localeConfigs },
-  } = useDocusaurusContext();
-  const alternatePageUtils = useAlternatePageUtils();
-
-  if (locales.length <= 1) {
-    return null;
-  }
-
-  return (
-    <select
-      className="nav-link"
-      value={currentLocale}
-      aria-label="Select language"
-      style={{
-        background: "transparent",
-        border: "none",
-        cursor: "pointer",
-        color: "inherit",
-        font: "inherit",
-      }}
-      onChange={(e) => {
-        window.location.href = alternatePageUtils.createUrl({
-          locale: e.target.value,
-          fullyQualified: false,
-        });
-      }}
-    >
-      {locales.map((locale) => (
-        <option key={locale} value={locale} style={{ color: "#333" }}>
-          {localeConfigs[locale].label}
-        </option>
-      ))}
-    </select>
-  );
-}
 
 export default function CustomNavbar() {
   const {
@@ -133,9 +92,6 @@ export default function CustomNavbar() {
                     Support
                   </Translate>
                 </a>
-              </li>
-              <li className="nav-item">
-                <LocaleSelect />
               </li>
               {/* <li className="nav-item">
                 <a className="nav-link" href="https://forum.rcloneview.com/" target="_blank">
