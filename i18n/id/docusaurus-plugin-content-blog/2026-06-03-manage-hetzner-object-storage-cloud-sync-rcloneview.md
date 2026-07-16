@@ -16,7 +16,11 @@ keywords:
   - penyimpanan cloud Eropa
   - manajemen bucket Hetzner
 tags:
+  - RcloneView
   - hetzner
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
 ---

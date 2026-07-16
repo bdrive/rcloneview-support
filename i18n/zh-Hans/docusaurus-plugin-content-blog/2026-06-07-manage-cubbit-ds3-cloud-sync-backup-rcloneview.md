@@ -16,6 +16,10 @@ keywords:
   - S3 兼容存储管理
   - Cubbit DS3 文件管理器
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
   - european-cloud

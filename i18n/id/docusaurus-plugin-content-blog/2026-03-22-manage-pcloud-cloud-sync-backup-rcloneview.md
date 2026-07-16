@@ -14,7 +14,11 @@ keywords:
   - sinkronisasi file
   - otomatisasi pencadangan cloud
 tags:
+  - RcloneView
   - pcloud
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,8 +14,11 @@ keywords:
   - rcloneview sync errors
   - resolve cloud sync duplicate uploads
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-sync
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

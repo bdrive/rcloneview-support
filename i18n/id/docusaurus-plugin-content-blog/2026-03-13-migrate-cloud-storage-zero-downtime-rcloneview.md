@@ -16,7 +16,9 @@ keywords:
   - migrasi cloud tanpa gangguan
   - panduan beralih penyedia cloud
 tags:
+  - RcloneView
   - migration
+  - cloud-storage
   - best-practices
 ---
 

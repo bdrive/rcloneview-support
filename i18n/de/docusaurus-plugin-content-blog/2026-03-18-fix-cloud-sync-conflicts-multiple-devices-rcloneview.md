@@ -16,9 +16,11 @@ keywords:
   - Synchronisationskonflikt zwischen zwei Geräten
   - Cloud-Dateikollision
 tags:
+  - RcloneView
   - troubleshooting
   - sync
   - tips
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

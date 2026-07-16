@@ -16,7 +16,10 @@ keywords:
   - 云远程配置
   - 整理云账户
 tags:
+  - RcloneView
   - feature
+  - guide
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

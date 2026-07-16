@@ -16,9 +16,12 @@ keywords:
   - Google Drive アーカイブ
   - Google Drive 容量回復
 tags:
+  - RcloneView
   - google-drive
   - troubleshooting
   - tips
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

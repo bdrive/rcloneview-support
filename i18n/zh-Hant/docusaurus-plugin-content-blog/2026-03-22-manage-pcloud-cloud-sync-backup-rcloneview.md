@@ -14,7 +14,11 @@ keywords:
   - 檔案同步
   - 雲端備份自動化
 tags:
+  - RcloneView
   - pcloud
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

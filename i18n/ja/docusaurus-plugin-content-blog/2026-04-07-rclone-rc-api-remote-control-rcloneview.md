@@ -14,7 +14,7 @@ keywords:
   - cloud storage automation
   - rclone webhook
   - rclone monitoring api
-tags: [feature, api, automation, cli, tips, monitoring]
+tags: [RcloneView, feature, api, automation, guide, cli, tips, monitoring]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

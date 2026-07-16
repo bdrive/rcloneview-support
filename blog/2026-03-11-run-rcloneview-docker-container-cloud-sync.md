@@ -16,8 +16,10 @@ keywords:
   - rclone container setup
   - headless cloud backup
 tags:
+  - RcloneView
   - docker
   - automation
+  - cloud-storage
   - platform
 ---
 

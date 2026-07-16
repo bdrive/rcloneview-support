@@ -16,8 +16,12 @@ keywords:
   - S3 加密备份安全日志
   - 多云备份网络安全工作流
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - security
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

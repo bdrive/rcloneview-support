@@ -15,6 +15,7 @@ keywords:
   - interfaz gráfica de rclone
   - gestión de almacenamiento en la nube
 tags:
+  - RcloneView
   - hard-drive-backup
   - onedrive-sync
   - file-management

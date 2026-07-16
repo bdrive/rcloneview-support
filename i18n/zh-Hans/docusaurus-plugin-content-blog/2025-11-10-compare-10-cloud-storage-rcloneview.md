@@ -14,7 +14,10 @@ keywords:
   - rclone 图形界面
   - 云存储对比
 tags:
+  - RcloneView
+  - cloud-storage
   - comparison
+  - backup
   - sync
   - automation
 ---

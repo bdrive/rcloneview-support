@@ -16,7 +16,10 @@ keywords:
   - P2Pファイル共有
   - 分散型同期
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

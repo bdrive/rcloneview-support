@@ -16,8 +16,11 @@ keywords:
   - Cloud für Audioproduktion
   - Cloud für Tonstudios
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

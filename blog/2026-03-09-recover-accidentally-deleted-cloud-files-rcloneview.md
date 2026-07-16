@@ -16,7 +16,10 @@ keywords:
   - accidental delete cloud storage
   - cloud file backup strategy
 tags:
+  - RcloneView
   - data-recovery
+  - backup
+  - cloud-storage
   - tips
 ---
 

@@ -16,8 +16,11 @@ keywords:
   - vérification de synchronisation de fichiers
   - prévention de la perte de données
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
   - file-management
+  - backup
 ---
 
 import RvCta from '@site/src/components/RvCta';

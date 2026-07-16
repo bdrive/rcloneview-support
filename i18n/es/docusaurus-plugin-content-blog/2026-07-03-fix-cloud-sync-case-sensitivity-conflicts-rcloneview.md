@@ -14,8 +14,11 @@ keywords:
   - errores de sincronización rcloneview
   - resolver cargas duplicadas de sincronización en la nube
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-sync
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,7 +16,11 @@ keywords:
   - cliente WebDAV multiplataforma
   - automatización de copias de seguridad en la nube WebDAV
 tags:
+  - RcloneView
   - webdav
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

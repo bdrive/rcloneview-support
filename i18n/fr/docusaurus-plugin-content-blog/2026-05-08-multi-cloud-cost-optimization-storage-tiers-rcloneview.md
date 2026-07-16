@@ -14,7 +14,9 @@ keywords:
   - sauvegarde cloud hiérarchisée RcloneView
   - déplacer automatiquement les fichiers vers l'archive cloud
 tags:
+  - RcloneView
   - multi-cloud
+  - cloud-storage
   - cost-optimization
   - tips
 ---

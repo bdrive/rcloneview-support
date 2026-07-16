@@ -14,6 +14,7 @@ keywords:
   - fix network drive connection RcloneView
   - SMB share permission error
 tags:
+  - RcloneView
   - troubleshooting
   - smb
   - tips

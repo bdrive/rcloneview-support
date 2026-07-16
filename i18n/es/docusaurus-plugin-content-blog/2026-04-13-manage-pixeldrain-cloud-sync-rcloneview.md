@@ -14,7 +14,11 @@ keywords:
   - copia de seguridad en la nube Pixeldrain
   - configuración de sincronización de Pixeldrain
 tags:
+  - RcloneView
+  - cloud-storage
   - cloud-sync
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

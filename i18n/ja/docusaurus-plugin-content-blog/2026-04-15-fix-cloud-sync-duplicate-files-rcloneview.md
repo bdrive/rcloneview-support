@@ -16,8 +16,10 @@ keywords:
   - rclone duplicate fix
   - cloud sync misconfiguration
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-sync
   - duplicates
   - file-management
 ---

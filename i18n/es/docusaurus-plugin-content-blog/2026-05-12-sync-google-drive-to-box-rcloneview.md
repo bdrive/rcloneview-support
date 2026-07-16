@@ -16,9 +16,11 @@ keywords:
   - copia de seguridad en la nube Box RcloneView
   - transferencia de archivos Google Drive Box
 tags:
+  - RcloneView
   - google-drive
   - box
   - cloud-to-cloud
+  - cloud-sync
   - migration
 ---
 

@@ -16,7 +16,9 @@ keywords:
   - nonprofit multi cloud
   - charity cloud storage solution
 tags:
+  - RcloneView
   - nonprofit
+  - cloud-storage
   - industry
   - best-practices
 ---

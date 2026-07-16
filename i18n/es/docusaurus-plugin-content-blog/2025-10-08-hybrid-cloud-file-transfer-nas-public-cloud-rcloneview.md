@@ -16,6 +16,7 @@ keywords:
   - montar unidad remota
   - rclone gui
 tags:
+  - RcloneView
   - cloud
   - sync
   - nas

@@ -16,6 +16,8 @@ keywords:
   - Cloud-Medienarchiv
   - Cloud-Speicher für die Entertainment-Branche
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
   - performance

@@ -16,9 +16,12 @@ keywords:
   - comparación de directorios
   - explorador de archivos en la nube
 tags:
+  - RcloneView
   - feature
   - file-management
   - tips
+  - guide
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

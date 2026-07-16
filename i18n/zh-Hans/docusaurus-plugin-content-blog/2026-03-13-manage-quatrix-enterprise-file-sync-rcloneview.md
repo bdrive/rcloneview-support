@@ -16,8 +16,10 @@ keywords:
   - quatrix s3 backup
   - enterprise file sharing sync
 tags:
+  - RcloneView
   - quatrix
   - enterprise
+  - cloud-storage
   - sync
 ---
 

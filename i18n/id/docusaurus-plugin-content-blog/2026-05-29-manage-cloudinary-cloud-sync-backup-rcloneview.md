@@ -14,6 +14,11 @@ keywords:
   - sinkronisasi file Cloudinary
   - pencadangan aset digital Cloudinary
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
   - dam
 ---
 

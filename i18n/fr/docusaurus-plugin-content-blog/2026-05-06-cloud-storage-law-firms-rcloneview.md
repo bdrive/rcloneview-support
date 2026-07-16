@@ -16,7 +16,11 @@ keywords:
   - stockage cloud conforme pour cabinets d'avocats
   - sauvegarde multi-cloud pour cabinets d'avocats
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - security
   - compliance
 ---

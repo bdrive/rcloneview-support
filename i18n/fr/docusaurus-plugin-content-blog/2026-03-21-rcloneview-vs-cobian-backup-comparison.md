@@ -16,7 +16,10 @@ keywords:
   - backup strategies
   - data protection tools
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

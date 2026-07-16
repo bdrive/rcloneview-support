@@ -14,8 +14,10 @@ keywords:
   - rclone reconnect cloud provider
   - fix cloud login expired RcloneView
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

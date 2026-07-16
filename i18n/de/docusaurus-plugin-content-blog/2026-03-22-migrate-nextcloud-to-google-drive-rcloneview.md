@@ -16,6 +16,7 @@ keywords:
   - Erhalt der Ordnerstruktur
   - Konsolidierung von Cloud-Speicher
 tags:
+  - RcloneView
   - nextcloud
   - google-drive
   - cloud-migration

@@ -16,6 +16,8 @@ keywords:
   - synchronisation copie déplacement par lot
   - exécution multi-tâches rcloneview
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
   - file-management
   - job-management

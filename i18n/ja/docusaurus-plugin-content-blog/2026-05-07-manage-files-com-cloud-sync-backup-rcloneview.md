@@ -14,6 +14,10 @@ keywords:
   - SFTPクラウド同期
   - 安全なファイル転送
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - sftp
 ---
 

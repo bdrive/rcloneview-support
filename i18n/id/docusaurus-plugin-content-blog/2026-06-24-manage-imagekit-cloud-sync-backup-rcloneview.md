@@ -14,6 +14,11 @@ keywords:
   - manajemen media cloud
   - backup penyimpanan CDN gambar
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
   - dam
   - media
 ---

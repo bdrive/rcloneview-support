@@ -16,9 +16,12 @@ keywords:
   - Dropboxバックアップの問題
   - クラウド同期問題の解決
 tags:
+  - RcloneView
   - dropbox
   - troubleshooting
   - tips
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

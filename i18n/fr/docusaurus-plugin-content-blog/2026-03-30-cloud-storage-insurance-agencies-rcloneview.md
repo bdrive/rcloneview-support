@@ -16,7 +16,11 @@ keywords:
   - transfert de fichiers chiffré
   - protection des données d'assurance
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - compliance
 ---
 

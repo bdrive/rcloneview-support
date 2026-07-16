@@ -16,6 +16,10 @@ keywords:
   - alat transfer file cloud
   - pengelola file Lyve Cloud
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
 ---

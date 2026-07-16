@@ -15,7 +15,11 @@ keywords:
   - synchronisation cloud hybride pour data lake
   - sauvegarde cloud hadoop sur site
 tags:
+  - RcloneView
   - self-hosted
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

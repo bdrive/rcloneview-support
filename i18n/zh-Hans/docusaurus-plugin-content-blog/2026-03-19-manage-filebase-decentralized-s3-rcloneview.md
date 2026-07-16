@@ -16,8 +16,10 @@ keywords:
   - filebase to google drive
   - decentralized cloud storage
 tags:
+  - RcloneView
   - s3-compatible
   - decentralized-storage
+  - cloud-storage
   - sync
 ---
 

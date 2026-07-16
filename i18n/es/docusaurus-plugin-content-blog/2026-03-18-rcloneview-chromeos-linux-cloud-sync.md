@@ -16,8 +16,11 @@ keywords:
   - chromebook onedrive
   - gestión de la nube chromeos
 tags:
+  - RcloneView
   - linux
   - platform
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

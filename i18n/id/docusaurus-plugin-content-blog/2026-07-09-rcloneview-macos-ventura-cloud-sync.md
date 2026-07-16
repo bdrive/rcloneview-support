@@ -16,7 +16,9 @@ keywords:
   - pencadangan Mac ke cloud
   - izin Privacy macOS cloud
 tags:
+  - RcloneView
   - macos
+  - cloud-sync
   - installation
   - platform
 ---

@@ -15,9 +15,11 @@ keywords:
   - RcloneView Fehlerbehebungsleitfaden
   - Box-Cloud-Fehler beheben
 tags:
+  - RcloneView
   - box
   - troubleshooting
   - tips
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,8 +16,10 @@ keywords:
   - mejor herramienta de sincronización de archivos
   - sincronización directa entre dispositivos vs nube
 tags:
+  - RcloneView
   - comparison
   - sync
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,13 @@ keywords:
   - almacenamiento en la nube cifrado ciencias de la vida
   - pista de auditoría almacenamiento en la nube farma
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
   - compliance
   - security
+  - backup
+  - guide
   - encryption
   - amazon-s3
 ---

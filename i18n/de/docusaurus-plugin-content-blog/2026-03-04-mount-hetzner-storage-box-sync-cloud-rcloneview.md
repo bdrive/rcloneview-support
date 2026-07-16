@@ -16,10 +16,13 @@ keywords:
   - hetzner storage box file manager
   - mount sftp as local drive
 tags:
+  - RcloneView
   - hetzner
   - sftp
+  - cloud-storage
   - mount
   - sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

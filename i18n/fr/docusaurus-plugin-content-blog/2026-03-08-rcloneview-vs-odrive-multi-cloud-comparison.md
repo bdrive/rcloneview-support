@@ -16,7 +16,9 @@ keywords:
   - avis gestionnaire multi-cloud
   - agrégateur de stockage cloud
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - multi-cloud
 ---
 

@@ -16,9 +16,11 @@ keywords:
   - copia de seguridad en la nube nas diy
   - solución de copia de seguridad omv
 tags:
+  - RcloneView
   - nas
   - docker
   - platform
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

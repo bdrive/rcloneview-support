@@ -16,9 +16,12 @@ keywords:
   - split tunneling VPN en rclone
   - solucionar conexión de rclone detrás de un proxy
 tags:
+  - RcloneView
   - troubleshooting
+  - guide
   - tips
   - security
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

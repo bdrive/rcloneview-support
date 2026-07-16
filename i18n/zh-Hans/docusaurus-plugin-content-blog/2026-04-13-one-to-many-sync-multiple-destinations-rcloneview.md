@@ -16,7 +16,10 @@ keywords:
   - multi-cloud backup job
   - one to many cloud sync
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
+  - backup
   - automation
 ---
 

@@ -14,6 +14,7 @@ keywords:
   - 安全なクラウドバックアップ比較
   - 暗号化クラウド同期 RcloneView
 tags:
+  - RcloneView
   - comparison
   - pcloud
   - proton-drive

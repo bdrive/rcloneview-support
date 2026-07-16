@@ -16,6 +16,8 @@ keywords:
   - mount cache size
   - rcloneview mount
 tags:
+  - RcloneView
+  - cloud-storage
   - mount
   - file-management
   - performance

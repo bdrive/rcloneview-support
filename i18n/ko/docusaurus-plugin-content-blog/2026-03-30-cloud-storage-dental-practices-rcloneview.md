@@ -16,7 +16,11 @@ keywords:
   - dental practice data protection
   - cloud storage dentist office
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

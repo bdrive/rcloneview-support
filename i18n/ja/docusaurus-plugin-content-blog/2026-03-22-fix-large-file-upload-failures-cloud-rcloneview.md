@@ -14,7 +14,9 @@ keywords:
   - timeout configuration
   - cloud sync errors
 tags:
+  - RcloneView
   - troubleshooting
+  - cloud-storage
   - performance
   - tips
 ---

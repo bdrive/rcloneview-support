@@ -16,9 +16,11 @@ keywords:
   - Yandex Disk backup error fix
   - storage quota exceeded cloud sync
 tags:
+  - RcloneView
   - yandex-disk
   - troubleshooting
   - tips
+  - cloud-storage
   - cleanup
 ---
 

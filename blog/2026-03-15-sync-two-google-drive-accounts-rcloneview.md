@@ -16,8 +16,11 @@ keywords:
   - two google drive sync tool
   - google drive migration between accounts
 tags:
+  - RcloneView
   - google-drive
   - sync
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

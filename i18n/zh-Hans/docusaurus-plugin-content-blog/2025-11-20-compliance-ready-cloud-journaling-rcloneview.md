@@ -15,8 +15,10 @@ keywords:
   - file integrity verification
   - finra sec records
 tags:
+  - RcloneView
   - compliance
   - security
+  - backup
   - automation
 ---
 

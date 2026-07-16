@@ -16,7 +16,11 @@ keywords:
   - Azure Blob rclone
   - Azure object storage backup
 tags:
+  - RcloneView
   - azure
+  - cloud-storage
+  - cloud-sync
+  - backup
   - object-storage
 ---
 

@@ -16,8 +16,10 @@ keywords:
   - multi stream upload
   - maximize cloud transfer speed
 tags:
+  - RcloneView
   - performance
   - feature
+  - guide
   - tips
 ---
 

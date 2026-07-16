@@ -16,8 +16,10 @@ keywords:
   - エグレス無料 クラウドストレージ
   - クラウド 料金 エグレス
 tags:
+  - RcloneView
   - cost-optimization
   - tips
+  - cloud-storage
   - best-practices
 ---
 

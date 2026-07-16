@@ -15,8 +15,11 @@ keywords:
   - nextcloud off-site backup
   - rcloneview nextcloud wasabi
 tags:
+  - RcloneView
   - nextcloud
   - wasabi
+  - cloud-sync
+  - backup
   - cloud-to-cloud
   - migration
 ---

@@ -16,8 +16,11 @@ keywords:
   - クラウド転送プレビュー
   - 同期前の比較
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
   - tips
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

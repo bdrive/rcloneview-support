@@ -16,7 +16,10 @@ keywords:
   - synchronisation cloud IT scolaire
   - sauvegarde Google Workspace for Education
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
   - education
 ---
 

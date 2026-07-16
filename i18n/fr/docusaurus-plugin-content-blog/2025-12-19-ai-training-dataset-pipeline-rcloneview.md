@@ -16,9 +16,11 @@ keywords:
   - stockage objet pour l'IA
   - planification de jeux de données
 tags:
+  - RcloneView
   - ai
   - data-pipeline
   - s3
+  - cloud-storage
   - huggingface
   - automation
 ---

@@ -16,6 +16,8 @@ keywords:
   - penjelasan biaya penyimpanan cloud
   - hemat uang penyimpanan cloud
 tags:
+  - RcloneView
+  - cloud-storage
   - pricing
   - cost-optimization
   - tips

@@ -16,9 +16,11 @@ keywords:
   - Cloud-Synchronisationsschritte automatisieren
   - RcloneView erweiterte Automatisierung
 tags:
+  - RcloneView
   - feature
   - automation
   - job-management
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

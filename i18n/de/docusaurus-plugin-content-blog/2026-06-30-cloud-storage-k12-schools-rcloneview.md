@@ -16,7 +16,10 @@ keywords:
   - Schul-IT Cloud-Synchronisation
   - Google Workspace for Education Backup
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
   - education
 ---
 

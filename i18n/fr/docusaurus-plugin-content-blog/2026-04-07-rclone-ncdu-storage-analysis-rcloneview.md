@@ -14,7 +14,7 @@ keywords:
   - répartition de l'utilisation du stockage
   - taille de dossier cloud
   - analyser le stockage distant
-tags: [feature, tips, cli, monitoring, dashboard, performance]
+tags: [RcloneView, feature, cloud-storage, tips, guide, cli, monitoring, dashboard, performance]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

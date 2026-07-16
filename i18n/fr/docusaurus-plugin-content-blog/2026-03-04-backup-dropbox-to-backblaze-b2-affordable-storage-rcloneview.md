@@ -16,8 +16,11 @@ keywords:
   - sauvegarde dropbox rclone
   - solution de sauvegarde dropbox économique
 tags:
+  - RcloneView
   - dropbox
   - backblaze-b2
+  - cloud-storage
+  - backup
   - sync
 ---
 

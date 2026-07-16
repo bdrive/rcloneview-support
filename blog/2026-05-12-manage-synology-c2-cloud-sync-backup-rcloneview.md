@@ -16,7 +16,11 @@ keywords:
   - Synology C2 file transfer
   - Synology C2 scheduled backup
 tags:
+  - RcloneView
   - synology
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
 ---
 

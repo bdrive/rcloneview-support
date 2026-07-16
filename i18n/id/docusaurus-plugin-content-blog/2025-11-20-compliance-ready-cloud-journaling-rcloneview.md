@@ -15,8 +15,10 @@ keywords:
   - verifikasi integritas file
   - catatan finra sec
 tags:
+  - RcloneView
   - compliance
   - security
+  - backup
   - automation
 ---
 

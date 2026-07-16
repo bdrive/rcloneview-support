@@ -14,6 +14,7 @@ keywords:
   - onedrive comme destination de sauvegarde
   - synchronisation de fichiers inter-cloud
 tags:
+  - RcloneView
   - yandex-disk
   - onedrive
   - cloud-to-cloud

@@ -14,6 +14,10 @@ keywords:
   - SFTP 雲端同步
   - 安全檔案傳輸
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - sftp
 ---
 

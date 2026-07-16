@@ -16,6 +16,10 @@ keywords:
   - 클라우드 파일 전송 도구
   - Lyve Cloud 파일 관리자
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
 ---

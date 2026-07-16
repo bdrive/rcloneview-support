@@ -14,8 +14,10 @@ keywords:
   - rclone フラグ
   - ファイル同期エラー
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,6 +16,7 @@ keywords:
   - open files limit macOS
   - fix rclone mount macOS
 tags:
+  - RcloneView
   - macos
   - troubleshooting
   - tips

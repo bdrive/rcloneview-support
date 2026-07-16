@@ -16,8 +16,10 @@ keywords:
   - descargar conjunto de datos a la nube
   - función de descarga de url de rcloneview
 tags:
+  - RcloneView
   - feature
   - cloud-file-transfer
+  - guide
   - tips
   - productivity
   - automation

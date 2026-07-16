@@ -16,7 +16,10 @@ keywords:
   - 雲端備份雜湊驗證
   - rclone 虛擬遠端 hasher
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
+  - backup
   - tips
 ---
 

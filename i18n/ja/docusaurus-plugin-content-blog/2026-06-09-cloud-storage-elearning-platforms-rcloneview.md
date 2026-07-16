@@ -15,7 +15,11 @@ keywords:
   - LMS ファイル管理ツール
   - 教育クラウドバックアップ
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - education
 ---
 

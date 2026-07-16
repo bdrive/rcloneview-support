@@ -16,9 +16,14 @@ keywords:
   - administrador de archivos steam deck
   - almacenamiento en la nube externo steam deck
 tags:
+  - RcloneView
   - linux
   - platform
+  - cloud-sync
+  - guide
   - installation
+  - backup
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

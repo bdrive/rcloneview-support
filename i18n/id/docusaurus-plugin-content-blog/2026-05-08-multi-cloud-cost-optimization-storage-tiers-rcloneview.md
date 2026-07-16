@@ -14,7 +14,9 @@ keywords:
   - pencadangan cloud bertingkat RcloneView
   - pindahkan file ke arsip cloud otomatis
 tags:
+  - RcloneView
   - multi-cloud
+  - cloud-storage
   - cost-optimization
   - tips
 ---

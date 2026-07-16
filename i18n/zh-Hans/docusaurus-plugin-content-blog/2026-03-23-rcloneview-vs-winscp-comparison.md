@@ -16,7 +16,9 @@ keywords:
   - 跨平台文件同步
   - 云存储工具
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

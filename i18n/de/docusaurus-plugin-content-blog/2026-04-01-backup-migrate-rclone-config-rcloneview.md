@@ -16,8 +16,12 @@ keywords:
   - rclone Konfigurationsmigration
   - rcloneview Konfigurationsverwaltung
 tags:
+  - RcloneView
+  - cloud-storage
   - feature
+  - guide
   - tips
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

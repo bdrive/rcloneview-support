@@ -14,7 +14,11 @@ keywords:
   - cloud storage management
   - OpenDrive desktop app
 tags:
+  - RcloneView
   - opendrive
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

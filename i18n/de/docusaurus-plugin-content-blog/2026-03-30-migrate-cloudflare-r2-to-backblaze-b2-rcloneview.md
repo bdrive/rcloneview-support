@@ -15,6 +15,7 @@ keywords:
   - object storage migration
   - r2 backup to b2
 tags:
+  - RcloneView
   - cloudflare-r2
   - backblaze-b2
   - cloud-to-cloud

@@ -16,6 +16,7 @@ keywords:
   - Storj rclone
   - alternatif Dropbox
 tags:
+  - RcloneView
   - dropbox
   - storj
   - cloud-to-cloud

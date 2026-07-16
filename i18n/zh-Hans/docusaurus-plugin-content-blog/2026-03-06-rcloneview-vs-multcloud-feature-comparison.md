@@ -16,7 +16,9 @@ keywords:
   - multi cloud file manager
   - cloud migration tool comparison
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - multi-cloud
 ---
 

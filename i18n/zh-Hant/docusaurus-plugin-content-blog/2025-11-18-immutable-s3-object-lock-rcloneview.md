@@ -14,6 +14,8 @@ keywords:
   - 雲端備份不可變性
   - 合規備份
 tags:
+  - RcloneView
+  - backup
   - security
   - s3
   - wasabi

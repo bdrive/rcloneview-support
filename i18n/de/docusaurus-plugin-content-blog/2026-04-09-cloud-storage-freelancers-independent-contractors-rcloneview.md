@@ -16,7 +16,11 @@ keywords:
   - gig worker cloud storage
   - self-employed file backup
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
+  - guide
   - productivity
 ---
 

@@ -16,8 +16,11 @@ keywords:
   - 醫療紀錄雲端備份
   - 醫療資料合規雲端
 tags:
+  - RcloneView
   - healthcare
+  - cloud-storage
   - encryption
+  - backup
   - hipaa
 ---
 

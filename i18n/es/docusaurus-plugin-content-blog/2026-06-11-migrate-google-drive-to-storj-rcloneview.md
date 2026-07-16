@@ -15,6 +15,7 @@ keywords:
   - herramienta de migración de Google Drive
   - copia de seguridad en la nube descentralizada RcloneView
 tags:
+  - RcloneView
   - google-drive
   - storj
   - cloud-to-cloud

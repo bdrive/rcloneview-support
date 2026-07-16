@@ -14,7 +14,11 @@ keywords:
   - sauvegarde de recherche chiffrée
   - synchronisation NAS vers cloud
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

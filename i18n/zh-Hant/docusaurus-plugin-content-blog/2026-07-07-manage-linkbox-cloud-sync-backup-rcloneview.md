@@ -14,6 +14,10 @@ keywords:
   - 雲端檔案管理員
   - Linkbox 替代用戶端
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - file-management
 ---
 

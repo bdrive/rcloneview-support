@@ -15,7 +15,10 @@ keywords:
   - photography studio cloud sync
   - automatic wedding photo backup
 tags:
+  - RcloneView
   - photography
+  - cloud-storage
+  - backup
   - industry
 ---
 

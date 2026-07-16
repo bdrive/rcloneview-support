@@ -13,7 +13,10 @@ keywords:
   - copia de seguridad en la nube
   - sincronización
 tags:
+  - RcloneView
   - automation
+  - backup
+  - cloud-storage
   - sync
 ---
 

@@ -16,9 +16,13 @@ keywords:
   - perbandingan sinkronisasi file
   - manajer penyimpanan cloud 2026
 tags:
+  - RcloneView
   - comparison
   - compare
+  - cloud-storage
   - windows
+  - guide
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

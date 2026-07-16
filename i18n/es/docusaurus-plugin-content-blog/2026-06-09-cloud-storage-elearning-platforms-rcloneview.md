@@ -15,7 +15,11 @@ keywords:
   - herramienta de gestión de archivos LMS
   - copia de seguridad educativa en la nube
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - education
 ---
 

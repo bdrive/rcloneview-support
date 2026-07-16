@@ -14,6 +14,7 @@ keywords:
   - migración de Google Drive con RcloneView
   - transferencia de archivos a DigitalOcean Spaces
 tags:
+  - RcloneView
   - google-drive
   - digitalocean-spaces
   - cloud-to-cloud

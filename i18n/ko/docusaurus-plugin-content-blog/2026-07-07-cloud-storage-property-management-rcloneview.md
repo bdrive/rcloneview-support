@@ -14,7 +14,11 @@ keywords:
   - 다중 부동산 파일 관리
   - 업체 문서 공유
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

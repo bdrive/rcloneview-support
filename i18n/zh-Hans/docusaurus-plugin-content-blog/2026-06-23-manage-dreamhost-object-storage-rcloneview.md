@@ -15,8 +15,12 @@ keywords:
   - S3 云存储 GUI
   - DreamHost 文件同步
 tags:
+  - RcloneView
   - s3-compatible
   - object-storage
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

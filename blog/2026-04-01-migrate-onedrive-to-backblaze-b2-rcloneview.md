@@ -16,11 +16,14 @@ keywords:
   - onedrive backup to b2
   - transfer onedrive backblaze
 tags:
+  - RcloneView
   - onedrive
   - backblaze-b2
   - cloud-migration
   - migration
+  - backup
   - cost-optimization
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -14,7 +14,11 @@ keywords:
   - pencadangan riset terenkripsi
   - sinkronisasi NAS ke cloud
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

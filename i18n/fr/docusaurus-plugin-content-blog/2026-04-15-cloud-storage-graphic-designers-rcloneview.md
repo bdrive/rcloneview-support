@@ -16,8 +16,12 @@ keywords:
   - stockage cloud pour studio de design
   - gestion de fichiers créatifs
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - industry
   - photography
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

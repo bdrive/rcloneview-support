@@ -16,6 +16,7 @@ keywords:
   - pindahkan file antar cloud
   - pengelola file MEGA Dropbox
 tags:
+  - RcloneView
   - mega
   - dropbox
   - cloud-to-cloud

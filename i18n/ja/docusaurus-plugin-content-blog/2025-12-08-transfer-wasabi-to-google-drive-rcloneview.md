@@ -16,7 +16,10 @@ keywords:
   - s3 multipart upload
   - cloud automation
 tags:
+  - RcloneView
   - cloud-migration
+  - cloud-storage
+  - backup
   - wasabi
   - google-drive
   - sync

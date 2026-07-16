@@ -16,9 +16,11 @@ keywords:
   - de google workspace à office 365
   - migration cloud sans perte de données
 tags:
+  - RcloneView
   - google-drive
   - onedrive
   - migration
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

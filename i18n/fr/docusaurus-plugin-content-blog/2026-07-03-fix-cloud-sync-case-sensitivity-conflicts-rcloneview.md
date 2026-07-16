@@ -14,8 +14,11 @@ keywords:
   - erreurs de synchronisation rcloneview
   - résoudre les téléversements en double de synchronisation cloud
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-sync
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

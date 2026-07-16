@@ -16,7 +16,11 @@ keywords:
   - S3 物件儲存 GUI
   - rclone S3 前端
 tags:
+  - RcloneView
   - amazon-s3
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3
 ---
 

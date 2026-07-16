@@ -16,7 +16,11 @@ keywords:
   - 멀티 클라우드 동기화
   - Zoho 통합
 tags:
+  - RcloneView
   - zoho
+  - cloud-storage
+  - cloud-sync
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

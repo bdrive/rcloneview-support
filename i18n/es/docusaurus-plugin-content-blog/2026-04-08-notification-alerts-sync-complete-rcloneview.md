@@ -16,9 +16,12 @@ keywords:
   - notificación de fallo de sincronización
   - monitoreo de trabajos en la nube
 tags:
+  - RcloneView
   - feature
   - automation
+  - cloud-sync
   - tips
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

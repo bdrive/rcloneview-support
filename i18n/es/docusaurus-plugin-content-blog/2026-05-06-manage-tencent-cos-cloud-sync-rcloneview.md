@@ -16,7 +16,11 @@ keywords:
   - herramienta de copia de seguridad de Tencent COS
   - gestión de almacenamiento en la nube de China
 tags:
+  - RcloneView
   - tencent-cos
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
 ---
 

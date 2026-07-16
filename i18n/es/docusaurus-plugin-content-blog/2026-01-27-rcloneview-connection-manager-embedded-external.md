@@ -16,6 +16,8 @@ keywords:
   - gui de rclone
   - rcloneview enterprise
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
   - file-management
   - job-management

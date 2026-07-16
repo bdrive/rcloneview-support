@@ -16,6 +16,8 @@ keywords:
   - control cloud transfer speed
   - rcloneview transfer settings
 tags:
+  - RcloneView
+  - cloud-storage
   - performance
   - tips
   - sync

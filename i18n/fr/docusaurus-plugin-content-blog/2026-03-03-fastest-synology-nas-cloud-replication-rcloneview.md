@@ -16,9 +16,12 @@ keywords:
   - synology nas cloud sync fast
   - parallel transfer nas to cloud
 tags:
+  - RcloneView
   - synology
   - nas
+  - cloud-storage
   - performance
+  - backup
   - sync
 ---
 

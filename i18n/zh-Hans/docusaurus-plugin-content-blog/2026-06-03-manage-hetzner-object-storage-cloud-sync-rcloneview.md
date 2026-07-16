@@ -16,7 +16,11 @@ keywords:
   - 欧洲云存储
   - Hetzner 存储桶管理
 tags:
+  - RcloneView
   - hetzner
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
 ---

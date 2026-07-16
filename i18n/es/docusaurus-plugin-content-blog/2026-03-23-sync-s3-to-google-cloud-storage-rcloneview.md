@@ -16,8 +16,10 @@ keywords:
   - Google Cloud Storage
   - portabilidad de datos en la nube
 tags:
+  - RcloneView
   - amazon-s3
   - google-cloud-storage
+  - cloud-sync
   - cloud-to-cloud
 ---
 

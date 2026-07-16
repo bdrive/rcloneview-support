@@ -14,7 +14,11 @@ keywords:
   - 雲端儲存管理
   - OpenDrive 桌面應用程式
 tags:
+  - RcloneView
   - opendrive
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

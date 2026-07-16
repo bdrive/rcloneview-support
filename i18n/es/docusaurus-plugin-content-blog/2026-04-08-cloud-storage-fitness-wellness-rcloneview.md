@@ -16,7 +16,11 @@ keywords:
   - almacenamiento de grabaciones de clases
   - recursos de marketing para fitness
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
+  - guide
   - multi-cloud
 ---
 

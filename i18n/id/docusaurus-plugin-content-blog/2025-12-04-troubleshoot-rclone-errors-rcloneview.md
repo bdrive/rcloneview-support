@@ -17,7 +17,10 @@ keywords:
   - cloud automation
   - rcloneview
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
+  - backup
   - file-management
 unlisted: true
 

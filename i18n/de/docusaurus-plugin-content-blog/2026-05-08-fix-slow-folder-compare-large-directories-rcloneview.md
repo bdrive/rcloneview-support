@@ -14,6 +14,7 @@ keywords:
   - Zeitüberschreitung beim Ordnervergleich beheben
   - RcloneView-Vergleich optimieren
 tags:
+  - RcloneView
   - folder-comparison
   - troubleshooting
   - tips

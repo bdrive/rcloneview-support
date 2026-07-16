@@ -16,8 +16,11 @@ keywords:
   - outil de migration ftp
   - ftp vers stockage objet
 tags:
+  - RcloneView
   - ftp
+  - cloud-storage
   - migration
+  - backup
   - sync
 ---
 

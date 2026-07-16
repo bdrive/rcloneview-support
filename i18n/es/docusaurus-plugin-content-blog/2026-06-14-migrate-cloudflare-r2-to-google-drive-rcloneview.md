@@ -14,10 +14,12 @@ keywords:
   - copia de seguridad cloudflare r2 google drive
   - migración en la nube rcloneview
 tags:
+  - RcloneView
   - cloudflare-r2
   - google-drive
   - cloud-to-cloud
   - migration
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

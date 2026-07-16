@@ -16,10 +16,12 @@ keywords:
   - OneDrive S3 backup
   - reduce OneDrive costs
 tags:
+  - RcloneView
   - onedrive
   - amazon-s3
   - cloud-to-cloud
   - migration
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

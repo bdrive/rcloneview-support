@@ -14,7 +14,11 @@ keywords:
   - alat sinkronisasi HiDrive
   - manajemen penyimpanan cloud HiDrive
 tags:
+  - RcloneView
   - hidrive
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

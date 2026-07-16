@@ -16,7 +16,11 @@ keywords:
   - Seafile을 S3로 백업
   - Seafile 멀티 클라우드 동기화
 tags:
+  - RcloneView
   - seafile
+  - cloud-storage
+  - cloud-sync
+  - backup
   - self-hosted
 ---
 

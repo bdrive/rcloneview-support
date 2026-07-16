@@ -16,9 +16,13 @@ keywords:
   - webdav depuis un stockage cloud
   - fonctionnalité serve de rcloneview
 tags:
+  - RcloneView
   - webdav
+  - cloud-storage
   - feature
+  - guide
   - self-hosted
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

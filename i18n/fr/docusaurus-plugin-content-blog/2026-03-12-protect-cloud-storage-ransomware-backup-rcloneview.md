@@ -16,8 +16,11 @@ keywords:
   - défense de sauvegarde cloud contre les ransomwares
   - stratégie anti-ransomware pour les sauvegardes
 tags:
+  - RcloneView
   - ransomware
   - security
+  - backup
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

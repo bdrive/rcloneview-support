@@ -16,7 +16,10 @@ keywords:
   - función check de rcloneview
   - herramienta de integridad de datos en la nube
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
+  - guide
   - tips
   - best-practices
   - security

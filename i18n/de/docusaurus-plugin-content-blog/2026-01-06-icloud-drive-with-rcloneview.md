@@ -16,6 +16,9 @@ keywords:
   - rcloneview terminal
   - apple cloud migration
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - sync
   - file-management
 ---

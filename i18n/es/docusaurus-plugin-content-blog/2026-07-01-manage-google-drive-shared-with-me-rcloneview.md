@@ -14,7 +14,11 @@ keywords:
   - copia de seguridad de colaboración en google drive
   - gestionar archivos compartidos de google drive
 tags:
+  - RcloneView
   - google-drive
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

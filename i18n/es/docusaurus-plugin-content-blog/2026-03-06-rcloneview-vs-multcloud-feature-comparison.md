@@ -16,7 +16,9 @@ keywords:
   - gestor de archivos multi-nube
   - comparación de herramientas de migración en la nube
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - multi-cloud
 ---
 

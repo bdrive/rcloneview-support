@@ -12,6 +12,8 @@ keywords:
   - rcloneview
   - backup jobs
 tags:
+  - RcloneView
+  - backup
   - automation
   - google-drive
   - onedrive

@@ -12,6 +12,7 @@ keywords:
   - rclone GUI
   - 排程工作
 tags:
+  - RcloneView
   - mega
   - hard-drive
   - cloud-backup

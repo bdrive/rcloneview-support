@@ -16,7 +16,9 @@ keywords:
   - sauvegarde onedrive
   - sauvegarde dropbox
 tags:
+  - RcloneView
   - external-drive
+  - backup
   - google-drive
   - onedrive
   - dropbox

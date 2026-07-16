@@ -14,7 +14,11 @@ keywords:
   - sinkronisasi cloud self-hosted RcloneView
   - manajemen file Nextcloud desktop
 tags:
+  - RcloneView
   - nextcloud
+  - cloud-storage
+  - cloud-sync
+  - backup
   - webdav
 ---
 

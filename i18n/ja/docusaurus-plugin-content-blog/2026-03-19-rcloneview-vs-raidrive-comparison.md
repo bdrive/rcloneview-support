@@ -16,8 +16,10 @@ keywords:
   - raidrive replacement
   - mount cloud storage windows
 tags:
+  - RcloneView
   - comparison
   - mount
+  - cloud-storage
   - windows
 ---
 

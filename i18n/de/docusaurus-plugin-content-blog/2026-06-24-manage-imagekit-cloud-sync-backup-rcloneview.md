@@ -14,6 +14,11 @@ keywords:
   - Cloud-Medienverwaltung
   - Backup für Bild-CDN-Speicher
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
   - dam
   - media
 ---

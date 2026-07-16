@@ -16,8 +16,11 @@ keywords:
   - cloud file transfer issues
   - fix cloud sync
 tags:
+  - RcloneView
   - troubleshooting
+  - cloud-sync
   - tips
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

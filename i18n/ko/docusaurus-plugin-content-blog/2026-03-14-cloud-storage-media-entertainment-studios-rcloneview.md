@@ -16,6 +16,8 @@ keywords:
   - media archive cloud
   - entertainment industry cloud storage
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
   - performance

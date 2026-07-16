@@ -16,10 +16,14 @@ keywords:
   - 雲端硬碟掛載比較
   - 2026 雲端儲存管理工具
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - mount
+  - cloud-sync
   - macos
   - windows
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

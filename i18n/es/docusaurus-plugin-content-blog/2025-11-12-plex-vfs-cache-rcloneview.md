@@ -13,6 +13,7 @@ keywords:
   - servidor de películas en la nube
   - montaje de rclone en plex
 tags:
+  - RcloneView
   - plex
   - vfs
   - google-drive

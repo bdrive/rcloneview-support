@@ -16,8 +16,10 @@ keywords:
   - cost-effective backup
   - multi-cloud strategy
 tags:
+  - RcloneView
   - backblaze-b2
   - azure
+  - cloud-sync
   - cloud-to-cloud
 ---
 

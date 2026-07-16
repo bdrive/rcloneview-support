@@ -16,7 +16,11 @@ keywords:
   - sauvegarde cloud chiffrée défense
   - transfert cloud multi-sites aérospatiale
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - security
   - encryption
 ---

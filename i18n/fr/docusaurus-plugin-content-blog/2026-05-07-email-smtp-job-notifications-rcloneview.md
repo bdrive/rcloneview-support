@@ -14,8 +14,10 @@ keywords:
   - alerte de fin de synchronisation
   - notification e-mail rclone
 tags:
+  - RcloneView
   - feature
   - automation
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

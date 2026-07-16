@@ -16,8 +16,10 @@ keywords:
   - archivo de Google Drive
   - almacenamiento caliente
 tags:
+  - RcloneView
   - google-drive
   - wasabi
+  - cloud-sync
   - archive
 ---
 

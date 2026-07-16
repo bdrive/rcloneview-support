@@ -16,6 +16,7 @@ keywords:
   - rclone min size max size
   - rclone selective sync
 tags:
+  - RcloneView
   - rclone
   - filters
   - sync

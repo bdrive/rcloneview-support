@@ -14,6 +14,10 @@ keywords:
   - MSP multi-cloud management
   - client data backup automation
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
+  - guide
   - industry
   - multi-cloud
   - automation

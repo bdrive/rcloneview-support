@@ -16,10 +16,12 @@ keywords:
   - Mega cloud backup migration
   - Backblaze B2 migration GUI
 tags:
+  - RcloneView
   - mega
   - backblaze-b2
   - cloud-to-cloud
   - migration
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

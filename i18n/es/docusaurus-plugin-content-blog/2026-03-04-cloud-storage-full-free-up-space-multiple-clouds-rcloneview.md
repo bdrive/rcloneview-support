@@ -16,6 +16,8 @@ keywords:
   - mover archivos entre nubes
   - gestionar múltiples almacenamientos en la nube
 tags:
+  - RcloneView
+  - cloud-storage
   - file-management
   - tips
   - cost-optimization

@@ -16,7 +16,10 @@ keywords:
   - cloud file management
   - disk space recovery
 tags:
+  - RcloneView
+  - cloud-storage
   - cleanup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

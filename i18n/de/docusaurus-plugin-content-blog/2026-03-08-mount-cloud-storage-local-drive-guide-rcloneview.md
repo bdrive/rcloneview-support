@@ -16,8 +16,11 @@ keywords:
   - Dropbox lokal einbinden
   - virtuelles Laufwerk Cloud-Speicher
 tags:
+  - RcloneView
   - mount
+  - cloud-storage
   - feature
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

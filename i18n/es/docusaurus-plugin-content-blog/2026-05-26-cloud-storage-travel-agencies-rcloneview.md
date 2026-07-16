@@ -16,7 +16,11 @@ keywords:
   - sincronización de archivos multimedia de viaje
   - copia de seguridad para agencias de viajes con rclone
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -15,8 +15,11 @@ keywords:
   - transferencia de archivos en la nube
   - alternativa a mega
 tags:
+  - RcloneView
   - comparison
   - compare
+  - cloud-storage
+  - cloud-sync
   - multi-cloud
 ---
 

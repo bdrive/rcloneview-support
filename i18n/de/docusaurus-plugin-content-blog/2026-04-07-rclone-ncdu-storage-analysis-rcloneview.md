@@ -14,7 +14,7 @@ keywords:
   - Speicherverbrauch Übersicht
   - Cloud-Ordnergröße
   - Remote-Speicher analysieren
-tags: [feature, tips, cli, monitoring, dashboard, performance]
+tags: [RcloneView, feature, cloud-storage, tips, guide, cli, monitoring, dashboard, performance]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

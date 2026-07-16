@@ -16,8 +16,12 @@ keywords:
   - S3 encrypted backup security logs
   - multi-cloud backup cybersecurity workflow
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - security
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

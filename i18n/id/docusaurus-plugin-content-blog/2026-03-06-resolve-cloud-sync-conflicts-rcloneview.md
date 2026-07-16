@@ -16,6 +16,8 @@ keywords:
   - praktik terbaik sinkronisasi cloud
   - mendeteksi perbedaan sinkronisasi
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
   - troubleshooting
   - best-practices

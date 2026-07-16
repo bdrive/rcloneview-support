@@ -16,7 +16,11 @@ keywords:
   - synchronisation pikpak
   - transfert multi-cloud
 tags:
+  - RcloneView
   - pikpak
+  - cloud-storage
+  - cloud-sync
+  - guide
   - tips
 ---
 

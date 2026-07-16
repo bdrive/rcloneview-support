@@ -16,8 +16,12 @@ keywords:
   - cloud to cloud sync b2
   - b2 lifecycle rules
 tags:
+  - RcloneView
   - backblaze-b2
   - Backblaze
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
 ---

@@ -16,9 +16,12 @@ keywords:
   - rclone gui vs s3 browser
   - administrador de archivos de almacenamiento de objetos
 tags:
+  - RcloneView
   - comparison
   - amazon-s3
   - s3-compatible
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,7 +14,12 @@ keywords:
   - RcloneView Unternehmensspeicher
   - Enterprise File Fabric GUI-Client
 tags:
+  - RcloneView
   - enterprise
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

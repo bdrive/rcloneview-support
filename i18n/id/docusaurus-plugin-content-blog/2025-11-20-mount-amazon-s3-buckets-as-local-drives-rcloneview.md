@@ -16,6 +16,7 @@ keywords:
   - s3 explorer
   - scheduler auto mount
 tags:
+  - RcloneView
   - amazon-s3
   - mount
   - windows

@@ -26,6 +26,8 @@ keywords:
   - cloud backup
   - mount manager
 tags:
+  - RcloneView
+  - cloud-storage
   - cloud-migration
   - mount
   - sync

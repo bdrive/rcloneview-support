@@ -16,12 +16,14 @@ keywords:
   - r2 storage
   - cost optimization
 tags:
+  - RcloneView
   - azure
   - cloudflare-r2
   - r2
   - migration
   - cloud-migration
   - s3-compatible
+  - guide
   - cost-optimization
 ---
 

@@ -16,7 +16,12 @@ keywords:
   - FTPストレージの管理
   - FTP rclone GUI
 tags:
+  - RcloneView
   - ftp
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

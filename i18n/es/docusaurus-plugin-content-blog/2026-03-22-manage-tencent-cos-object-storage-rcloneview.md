@@ -16,9 +16,11 @@ keywords:
   - almacenamiento en la nube empresarial
   - compatibilidad con API S3
 tags:
+  - RcloneView
   - tencent-cos
   - s3-compatible
   - object-storage
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

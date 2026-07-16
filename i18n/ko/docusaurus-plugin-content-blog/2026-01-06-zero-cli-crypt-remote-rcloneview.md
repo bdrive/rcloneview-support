@@ -16,6 +16,9 @@ keywords:
   - privacy first backup
   - rclone gui
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - encryption
   - file-management
 ---

@@ -13,7 +13,10 @@ keywords:
   - ajuste de rendimiento
   - migración a la nube
 tags:
+  - RcloneView
   - performance
+  - cloud-storage
+  - backup
   - sync
   - automation
 ---

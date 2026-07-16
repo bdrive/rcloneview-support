@@ -16,7 +16,11 @@ keywords:
   - gestion de fichiers cabinet d'architecture
   - sauvegarde cloud fichiers de construction
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - cad
 ---
 

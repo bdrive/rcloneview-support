@@ -16,8 +16,11 @@ keywords:
   - sincronización multidispositivo
   - copia de seguridad bidireccional
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
   - sync
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

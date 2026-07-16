@@ -16,7 +16,12 @@ keywords:
   - iCloud Drive rclone
   - pencadangan penyimpanan cloud Apple
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - macos
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,6 +16,8 @@ keywords:
   - eliminación de archivos duplicados
   - recuperación de espacio de almacenamiento
 tags:
+  - RcloneView
+  - cloud-storage
   - cleanup
   - file-management
   - tips

@@ -16,7 +16,11 @@ keywords:
   - manage social media assets
   - multi-cloud content workflow
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

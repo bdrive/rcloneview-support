@@ -16,7 +16,9 @@ keywords:
   - RcloneView productivity
   - multi-window cloud sync
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
   - productivity
 ---
 

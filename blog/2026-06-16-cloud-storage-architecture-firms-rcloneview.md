@@ -16,7 +16,11 @@ keywords:
   - architecture firm file management
   - cloud backup construction files
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - cad
 ---
 

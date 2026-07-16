@@ -15,7 +15,11 @@ keywords:
   - sincronización híbrida de data lake en la nube
   - copia de seguridad en la nube de hadoop on-prem
 tags:
+  - RcloneView
   - self-hosted
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,7 +16,11 @@ keywords:
   - HR-Dokumentenverwaltung
   - verschlüsselter HR-Cloud-Speicher
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

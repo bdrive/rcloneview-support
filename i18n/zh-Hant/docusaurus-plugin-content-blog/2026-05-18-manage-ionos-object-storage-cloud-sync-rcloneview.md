@@ -16,8 +16,12 @@ keywords:
   - 雲端備份 IONOS
   - 管理 IONOS 檔案 RcloneView
 tags:
+  - RcloneView
+  - cloud-storage
   - s3-compatible
   - european-cloud
+  - backup
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

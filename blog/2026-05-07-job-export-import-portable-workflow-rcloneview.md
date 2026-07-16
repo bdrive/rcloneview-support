@@ -14,9 +14,11 @@ keywords:
   - migrate RcloneView jobs
   - job portability
 tags:
+  - RcloneView
   - feature
   - job-management
   - automation
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

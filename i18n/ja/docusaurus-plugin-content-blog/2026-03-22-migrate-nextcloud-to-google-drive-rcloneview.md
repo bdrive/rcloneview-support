@@ -16,6 +16,7 @@ keywords:
   - フォルダ構造の保持
   - クラウドストレージ統合
 tags:
+  - RcloneView
   - nextcloud
   - google-drive
   - cloud-migration

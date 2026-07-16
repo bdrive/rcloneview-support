@@ -14,7 +14,9 @@ keywords:
   - RcloneView installation guide macOS
   - mount cloud drive macOS Sequoia
 tags:
+  - RcloneView
   - macos
+  - cloud-sync
   - installation
   - platform
 ---

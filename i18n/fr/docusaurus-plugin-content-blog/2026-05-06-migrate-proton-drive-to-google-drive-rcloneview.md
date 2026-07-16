@@ -16,10 +16,12 @@ keywords:
   - outil de transfert de fichiers Proton Drive
   - synchronisation RcloneView Proton Drive
 tags:
+  - RcloneView
   - proton-drive
   - google-drive
   - cloud-to-cloud
   - migration
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

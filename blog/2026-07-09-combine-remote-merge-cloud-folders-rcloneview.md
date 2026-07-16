@@ -16,8 +16,11 @@ keywords:
   - organize cloud storage folders
   - cross-provider folder merge
 tags:
+  - RcloneView
   - feature
   - multi-cloud
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

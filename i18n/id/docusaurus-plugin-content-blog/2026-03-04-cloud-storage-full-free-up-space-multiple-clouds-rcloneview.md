@@ -16,6 +16,8 @@ keywords:
   - memindahkan file antar cloud
   - mengelola beberapa penyimpanan cloud
 tags:
+  - RcloneView
+  - cloud-storage
   - file-management
   - tips
   - cost-optimization

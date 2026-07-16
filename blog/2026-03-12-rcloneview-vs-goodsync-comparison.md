@@ -16,9 +16,11 @@ keywords:
   - cloud backup comparison
   - two way sync tool
 tags:
+  - RcloneView
   - comparison
   - goodsync
   - sync
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

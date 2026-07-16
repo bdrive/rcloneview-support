@@ -16,9 +16,11 @@ keywords:
   - cloud storage review
   - multi cloud audit
 tags:
+  - RcloneView
   - organization
   - best-practices
   - tips
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

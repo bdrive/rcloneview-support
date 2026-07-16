@@ -16,8 +16,12 @@ keywords:
   - developer cloud storage tools
   - cloud file management software teams
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - business
+  - guide
+  - backup
   - automation
   - amazon-s3
 ---

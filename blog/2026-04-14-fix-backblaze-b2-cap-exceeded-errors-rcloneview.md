@@ -14,6 +14,7 @@ keywords:
   - Backblaze B2 backup errors
   - B2 upload cap fix
 tags:
+  - RcloneView
   - troubleshooting
   - backblaze-b2
   - tips

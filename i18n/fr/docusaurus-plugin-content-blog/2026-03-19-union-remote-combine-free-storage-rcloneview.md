@@ -16,8 +16,11 @@ keywords:
   - stockage cloud virtuel
   - agréger le stockage cloud
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
   - multi-cloud
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,12 @@ keywords:
   - rcloneview container setup
   - alpine rclone file manager
 tags:
+  - RcloneView
   - linux
   - platform
   - installation
+  - cloud-sync
+  - guide
   - docker
 ---
 

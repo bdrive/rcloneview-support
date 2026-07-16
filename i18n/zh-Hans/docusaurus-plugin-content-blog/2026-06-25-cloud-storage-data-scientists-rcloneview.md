@@ -15,7 +15,11 @@ keywords:
   - 数据科学多云工具
   - rcloneview 数据科学工作流
 tags:
+  - RcloneView
+  - cloud-storage
   - ai
+  - backup
+  - guide
   - industry
   - amazon-s3
   - google-drive

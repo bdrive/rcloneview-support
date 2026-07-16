@@ -16,6 +16,7 @@ keywords:
   - mount remote drive
   - rclone gui
 tags:
+  - RcloneView
   - cloud
   - sync
   - nas

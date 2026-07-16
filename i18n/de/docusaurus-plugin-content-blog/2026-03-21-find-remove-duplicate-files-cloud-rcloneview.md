@@ -16,7 +16,10 @@ keywords:
   - Cloud-Dateiverwaltung
   - Speicherplatz zurückgewinnen
 tags:
+  - RcloneView
+  - cloud-storage
   - cleanup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,6 +14,7 @@ keywords:
   - rclone Jottacloud
   - Google Driveインポート
 tags:
+  - RcloneView
   - jottacloud
   - google-drive
   - cloud-to-cloud

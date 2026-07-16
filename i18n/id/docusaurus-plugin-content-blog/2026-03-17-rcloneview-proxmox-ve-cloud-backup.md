@@ -16,8 +16,10 @@ keywords:
   - proxmox disaster recovery
   - proxmox cloud storage
 tags:
+  - RcloneView
   - platform
   - docker
+  - backup
   - disaster-recovery
 ---
 

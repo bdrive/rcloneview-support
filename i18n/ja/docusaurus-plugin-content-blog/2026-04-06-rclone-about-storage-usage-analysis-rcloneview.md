@@ -16,7 +16,10 @@ keywords:
   - compare cloud storage usage
   - rcloneview dashboard storage
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
+  - guide
   - tips
   - cost-optimization
   - dashboard

@@ -16,7 +16,9 @@ keywords:
   - yandex cloud storage manager
   - yandex disk alternative backup
 tags:
+  - RcloneView
   - yandex-disk
+  - cloud-storage
   - sync
 ---
 

@@ -16,6 +16,7 @@ keywords:
   - pencadangan terjadwal
   - pemulihan bencana
 tags:
+  - RcloneView
   - cloud
   - sync
   - nas

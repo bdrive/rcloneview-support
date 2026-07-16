@@ -16,9 +16,12 @@ keywords:
   - cross-cloud file transfer
   - HiDrive file sync
 tags:
+  - RcloneView
   - hidrive
   - amazon-s3
   - cloud-to-cloud
+  - backup
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

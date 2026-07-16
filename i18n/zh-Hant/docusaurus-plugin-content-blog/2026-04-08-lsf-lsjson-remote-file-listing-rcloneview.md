@@ -16,9 +16,12 @@ keywords:
   - 目錄比較
   - 雲端檔案總管
 tags:
+  - RcloneView
   - feature
   - file-management
   - tips
+  - guide
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -13,6 +13,7 @@ keywords:
   - file tracking
   - audit logs
 tags:
+  - RcloneView
   - dashboard
   - sync
   - history

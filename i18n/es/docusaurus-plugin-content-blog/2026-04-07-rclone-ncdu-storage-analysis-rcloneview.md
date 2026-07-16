@@ -14,7 +14,7 @@ keywords:
   - desglose del uso de almacenamiento
   - tamaño de carpeta en la nube
   - analizar almacenamiento remoto
-tags: [feature, tips, cli, monitoring, dashboard, performance]
+tags: [RcloneView, feature, cloud-storage, tips, guide, cli, monitoring, dashboard, performance]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,7 +14,11 @@ keywords:
   - copia de seguridad en la nube para arquitectos
   - almacenamiento en la nube de archivos de proyectos
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

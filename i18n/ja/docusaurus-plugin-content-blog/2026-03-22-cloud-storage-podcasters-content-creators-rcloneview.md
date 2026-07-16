@@ -14,8 +14,11 @@ keywords:
   - メディア同期
   - クリエイター クラウドワークフロー
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - media
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

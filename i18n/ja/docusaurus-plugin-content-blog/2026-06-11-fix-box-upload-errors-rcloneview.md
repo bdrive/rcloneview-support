@@ -15,9 +15,11 @@ keywords:
   - RcloneViewトラブルシューティングガイド
   - Boxクラウドエラーの解決
 tags:
+  - RcloneView
   - box
   - troubleshooting
   - tips
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

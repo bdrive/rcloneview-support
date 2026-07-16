@@ -14,6 +14,7 @@ keywords:
   - Dropbox-Alternative R2
   - RcloneView Migrationsanleitung
 tags:
+  - RcloneView
   - dropbox
   - cloudflare-r2
   - cloud-to-cloud

@@ -16,8 +16,12 @@ keywords:
   - rclone virtual remote
   - large file cloud storage
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
+  - cloud-sync
   - tips
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

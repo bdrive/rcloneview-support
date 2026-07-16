@@ -16,7 +16,11 @@ keywords:
   - HIPAA compliant cloud backup
   - veterinary clinic software
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

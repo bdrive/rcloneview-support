@@ -14,6 +14,7 @@ keywords:
   - rclone 圖形介面
   - 公開連結
 tags:
+  - RcloneView
   - gofile
   - media
   - cloud-file-transfer

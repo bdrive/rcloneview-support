@@ -16,8 +16,10 @@ keywords:
   - マルチリージョン クラウド同期
   - リモートチーム ファイル管理
 tags:
+  - RcloneView
   - remote-work
   - collaboration
+  - cloud-storage
   - best-practices
 ---
 

@@ -16,9 +16,11 @@ keywords:
   - パワーユーザー向けヒント
   - rcloneview 効率化
 tags:
+  - RcloneView
   - feature
   - tips
   - productivity
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

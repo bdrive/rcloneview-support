@@ -14,6 +14,10 @@ keywords:
   - cloud file manager
   - Linkbox alternative client
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - file-management
 ---
 

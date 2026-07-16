@@ -13,6 +13,7 @@ keywords:
   - rcloneview
   - automatización de copias de seguridad en la nube
 tags:
+  - RcloneView
   - nas
   - synology
   - qnap

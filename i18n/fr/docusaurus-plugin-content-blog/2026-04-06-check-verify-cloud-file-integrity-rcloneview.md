@@ -16,7 +16,10 @@ keywords:
   - fonctionnalité de vérification rcloneview
   - outil d'intégrité des données cloud
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
+  - guide
   - tips
   - best-practices
   - security

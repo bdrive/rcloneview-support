@@ -14,9 +14,11 @@ keywords:
   - 排程同步
   - 本機到雲端
 tags:
+  - RcloneView
   - proton-drive
   - hard-drive
   - cloud-backup
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

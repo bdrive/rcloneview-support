@@ -16,6 +16,7 @@ keywords:
   - sauvegarde planifiée
   - reprise après sinistre
 tags:
+  - RcloneView
   - cloud
   - sync
   - nas

@@ -16,8 +16,10 @@ keywords:
   - Google Drive 封存
   - 熱儲存
 tags:
+  - RcloneView
   - google-drive
   - wasabi
+  - cloud-sync
   - archive
 ---
 

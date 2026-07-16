@@ -16,7 +16,10 @@ keywords:
   - 雲端儲存意外刪除
   - 雲端檔案備份策略
 tags:
+  - RcloneView
   - data-recovery
+  - backup
+  - cloud-storage
   - tips
 ---
 

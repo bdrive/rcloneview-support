@@ -16,9 +16,13 @@ keywords:
   - 暗号化クラウドストレージ ライフサイエンス
   - 監査証跡 クラウドストレージ 製薬
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
   - compliance
   - security
+  - backup
+  - guide
   - encryption
   - amazon-s3
 ---

@@ -16,7 +16,11 @@ keywords:
   - 印刷制作 クラウドストレージ
   - メディアアセット管理
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
+  - guide
   - collaboration
 ---
 

@@ -16,8 +16,10 @@ keywords:
   - copia de seguridad económica
   - estrategia multicloud
 tags:
+  - RcloneView
   - backblaze-b2
   - azure
+  - cloud-sync
   - cloud-to-cloud
 ---
 

@@ -16,7 +16,11 @@ keywords:
   - 腾讯云 COS 备份工具
   - 中国云存储管理
 tags:
+  - RcloneView
   - tencent-cos
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
 ---
 

@@ -16,9 +16,11 @@ keywords:
   - 自动化云同步步骤
   - RcloneView 高级自动化
 tags:
+  - RcloneView
   - feature
   - automation
   - job-management
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

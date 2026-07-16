@@ -16,7 +16,9 @@ keywords:
   - sauvegarder un Mac vers le cloud
   - autorisations de confidentialité macOS pour le cloud
 tags:
+  - RcloneView
   - macos
+  - cloud-sync
   - installation
   - platform
 ---

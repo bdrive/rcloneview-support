@@ -16,6 +16,8 @@ keywords:
   - buenas prácticas de sincronización en la nube
   - detectar diferencias de sincronización
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
   - troubleshooting
   - best-practices

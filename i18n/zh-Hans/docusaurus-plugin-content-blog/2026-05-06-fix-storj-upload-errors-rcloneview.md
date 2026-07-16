@@ -16,9 +16,11 @@ keywords:
   - Storj backup error resolution
   - Storj rclone error fix
 tags:
+  - RcloneView
   - storj
   - troubleshooting
   - tips
+  - cloud-sync
   - decentralized-storage
 ---
 

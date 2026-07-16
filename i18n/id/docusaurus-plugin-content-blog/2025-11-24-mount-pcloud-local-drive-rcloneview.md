@@ -31,7 +31,9 @@ keywords:
   - cloud backup
   - mount manager
 tags:
+  - RcloneView
   - pcloud
+  - cloud-storage
   - mount
   - sync
 ---

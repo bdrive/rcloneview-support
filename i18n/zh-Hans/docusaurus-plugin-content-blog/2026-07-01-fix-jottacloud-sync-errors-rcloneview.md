@@ -14,9 +14,11 @@ keywords:
   - jottacloud sync stuck
   - rcloneview jottacloud fix
 tags:
+  - RcloneView
   - jottacloud
   - troubleshooting
   - tips
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

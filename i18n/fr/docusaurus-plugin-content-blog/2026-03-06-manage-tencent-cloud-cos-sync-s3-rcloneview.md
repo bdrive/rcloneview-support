@@ -16,8 +16,10 @@ keywords:
   - synchronisation compatible s3 cos
   - synchronisation stockage cloud chine
 tags:
+  - RcloneView
   - tencent-cos
   - s3-compatible
+  - cloud-storage
   - sync
   - multi-cloud
 ---

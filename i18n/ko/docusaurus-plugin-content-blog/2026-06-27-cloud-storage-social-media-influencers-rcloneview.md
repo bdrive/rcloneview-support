@@ -16,7 +16,11 @@ keywords:
   - 소셜 미디어 자산 관리
   - 멀티 클라우드 콘텐츠 워크플로우
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

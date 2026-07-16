@@ -16,6 +16,7 @@ keywords:
   - 家族写真ストレージ
   - 安全な写真アーカイブ
 tags:
+  - RcloneView
   - google-photos
   - pcloud
   - cloud-migration

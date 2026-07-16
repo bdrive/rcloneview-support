@@ -16,8 +16,11 @@ keywords:
   - sauvegarde cloud Mac 2026
   - montage cloud macOS
 tags:
+  - RcloneView
   - macos
+  - cloud-sync
   - installation
+  - backup
   - platform
 ---
 

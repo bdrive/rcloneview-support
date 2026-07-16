@@ -14,6 +14,7 @@ keywords:
   - クラウドストレージ管理
   - Google DriveからOneDriveへ
 tags:
+  - RcloneView
   - cloud-to-cloud
   - file-management
   - cloud-file-transfer

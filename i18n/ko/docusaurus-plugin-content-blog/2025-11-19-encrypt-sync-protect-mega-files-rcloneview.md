@@ -14,6 +14,7 @@ keywords:
   - 클라우드 암호화
   - 안전한 클라우드 동기화
 tags:
+  - RcloneView
   - mega
   - encryption
   - automation

@@ -16,6 +16,8 @@ keywords:
   - 云存储费用详解
   - 云存储省钱
 tags:
+  - RcloneView
+  - cloud-storage
   - pricing
   - cost-optimization
   - tips

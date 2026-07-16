@@ -16,8 +16,11 @@ keywords:
   - 独立游戏云存储
   - 游戏构建存档
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,11 @@ keywords:
   - pencadangan terjadwal
   - verifikasi checksum
 tags:
+  - RcloneView
   - cloud
   - sync
   - cloud-migration
+  - backup
   - tutorial
   - google-drive
   - onedrive

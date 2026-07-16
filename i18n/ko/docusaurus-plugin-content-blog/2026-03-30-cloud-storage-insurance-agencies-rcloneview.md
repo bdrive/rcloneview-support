@@ -16,7 +16,11 @@ keywords:
   - encrypted file transfer
   - insurance data protection
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - compliance
 ---
 

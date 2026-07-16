@@ -16,7 +16,10 @@ keywords:
   - 백업 전략
   - 데이터 보호 도구
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

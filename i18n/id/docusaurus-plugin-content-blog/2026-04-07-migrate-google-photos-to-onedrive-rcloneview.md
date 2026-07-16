@@ -16,10 +16,12 @@ keywords:
   - google photos backup
   - google photos export
 tags:
+  - RcloneView
   - google-photos
   - onedrive
   - migration
   - cloud-migration
+  - guide
   - cloud-to-cloud
 ---
 

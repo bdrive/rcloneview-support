@@ -16,8 +16,12 @@ keywords:
   - cloud sync simulation
   - verify sync before commit
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
   - tips
+  - backup
+  - guide
   - troubleshooting
 ---
 

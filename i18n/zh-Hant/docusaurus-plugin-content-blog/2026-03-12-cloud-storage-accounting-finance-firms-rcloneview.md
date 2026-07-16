@@ -16,9 +16,11 @@ keywords:
   - 稅務文件雲端儲存
   - 財務公司資料管理
 tags:
+  - RcloneView
   - accounting
   - finance
   - security
+  - cloud-storage
   - best-practices
 ---
 

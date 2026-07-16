@@ -16,7 +16,10 @@ keywords:
   - 备份策略
   - 数据保护工具
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,8 +16,12 @@ keywords:
   - woocommerce backup cloud
   - rcloneview ecommerce
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - business
+  - guide
+  - backup
   - media
 ---
 

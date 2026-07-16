@@ -16,9 +16,14 @@ keywords:
   - multi-cloud management
   - azure file management
 tags:
+  - RcloneView
   - azure-files
   - azure
+  - cloud-storage
+  - cloud-sync
+  - guide
   - mount
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

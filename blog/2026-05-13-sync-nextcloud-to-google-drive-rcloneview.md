@@ -16,10 +16,12 @@ keywords:
   - Nextcloud Google Drive automated sync
   - RcloneView WebDAV cloud transfer
 tags:
+  - RcloneView
   - nextcloud
   - google-drive
   - cloud-to-cloud
   - migration
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

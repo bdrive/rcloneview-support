@@ -14,6 +14,7 @@ keywords:
   - SFTP-Schlüssel-Passphrase-Fehler
   - rclone SFTP-Verbindungsfehler beheben
 tags:
+  - RcloneView
   - sftp
   - troubleshooting
   - tips

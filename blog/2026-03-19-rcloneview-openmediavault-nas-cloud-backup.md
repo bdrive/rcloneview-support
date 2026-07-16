@@ -16,9 +16,11 @@ keywords:
   - diy nas cloud backup
   - omv backup solution
 tags:
+  - RcloneView
   - nas
   - docker
   - platform
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

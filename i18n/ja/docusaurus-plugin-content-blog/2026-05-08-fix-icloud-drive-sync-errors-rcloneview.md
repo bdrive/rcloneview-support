@@ -14,6 +14,7 @@ keywords:
   - iCloud バックアップ RcloneView 修正
   - iCloud Drive macOS 同期の問題
 tags:
+  - RcloneView
   - macos
   - troubleshooting
   - tips

@@ -16,6 +16,7 @@ keywords:
   - cloud upload hanging
   - rclone sync frozen
 tags:
+  - RcloneView
   - troubleshooting
   - performance
   - tips

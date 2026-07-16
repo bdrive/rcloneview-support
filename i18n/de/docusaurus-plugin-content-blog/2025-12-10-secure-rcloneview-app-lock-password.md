@@ -16,8 +16,11 @@ keywords:
   - schutz des job-verlaufs
   - schutz des übertragungsverlaufs
 tags:
+  - RcloneView
   - security
+  - backup
   - job-management
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

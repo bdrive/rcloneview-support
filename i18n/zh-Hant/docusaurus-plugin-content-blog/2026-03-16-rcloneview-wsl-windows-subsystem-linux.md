@@ -16,9 +16,11 @@ keywords:
   - wsl2 cloud storage
   - wsl file management
 tags:
+  - RcloneView
   - linux
   - windows
   - platform
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

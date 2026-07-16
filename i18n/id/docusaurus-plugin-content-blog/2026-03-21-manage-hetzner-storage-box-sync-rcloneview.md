@@ -16,8 +16,11 @@ keywords:
   - pencadangan hybrid cloud
   - penyimpanan cloud yang sesuai GDPR
 tags:
+  - RcloneView
   - hetzner
   - european-cloud
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

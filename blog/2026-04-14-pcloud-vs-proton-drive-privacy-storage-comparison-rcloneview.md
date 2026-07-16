@@ -14,6 +14,7 @@ keywords:
   - secure cloud backup comparison
   - encrypted cloud sync RcloneView
 tags:
+  - RcloneView
   - comparison
   - pcloud
   - proton-drive

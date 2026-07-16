@@ -14,9 +14,11 @@ keywords:
   - geplante Synchronisation
   - lokal zu Cloud
 tags:
+  - RcloneView
   - proton-drive
   - hard-drive
   - cloud-backup
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

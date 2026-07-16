@@ -16,8 +16,10 @@ keywords:
   - digital preservation cloud
   - internet archive sync
 tags:
+  - RcloneView
   - internet-archive
   - digital-preservation
+  - cloud-storage
   - sync
 ---
 

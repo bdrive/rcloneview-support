@@ -13,10 +13,12 @@ keywords:
   - sinkronisasi file cloud
   - pencadangan cloud
 tags:
+  - RcloneView
   - multi-cloud
   - google-drive
   - dropbox
   - onedrive
+  - cloud-sync
   - file-management
 ---
 

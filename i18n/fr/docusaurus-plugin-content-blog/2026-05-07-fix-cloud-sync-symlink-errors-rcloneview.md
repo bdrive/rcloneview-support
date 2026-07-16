@@ -14,8 +14,10 @@ keywords:
   - options rclone
   - erreurs de synchronisation de fichiers
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

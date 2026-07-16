@@ -16,8 +16,11 @@ keywords:
   - 仲介雲端備份
   - 文件合規
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - business
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

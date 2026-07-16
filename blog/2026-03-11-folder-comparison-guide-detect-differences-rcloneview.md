@@ -16,8 +16,11 @@ keywords:
   - find missing cloud files
   - cloud folder diff
 tags:
+  - RcloneView
   - folder-comparison
   - feature
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

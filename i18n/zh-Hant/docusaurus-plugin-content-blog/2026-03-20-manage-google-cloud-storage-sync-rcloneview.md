@@ -16,8 +16,11 @@ keywords:
   - rclone 雲端儲存
   - GCS 自動化
 tags:
+  - RcloneView
   - google-cloud-storage
   - s3-compatible
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

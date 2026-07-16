@@ -12,6 +12,7 @@ keywords:
   - rclone GUI
   - tâches planifiées
 tags:
+  - RcloneView
   - mega
   - hard-drive
   - cloud-backup

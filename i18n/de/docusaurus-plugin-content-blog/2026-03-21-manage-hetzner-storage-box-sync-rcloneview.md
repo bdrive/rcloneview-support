@@ -16,8 +16,11 @@ keywords:
   - hybrid cloud backup
   - GDPR-compliant cloud storage
 tags:
+  - RcloneView
   - hetzner
   - european-cloud
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,6 +14,10 @@ keywords:
   - 클라우드 파일 관리자
   - Linkbox 대체 클라이언트
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - file-management
 ---
 

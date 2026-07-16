@@ -16,7 +16,11 @@ keywords:
   - gestión de documentos de RR. HH.
   - almacenamiento en la nube cifrado para RR. HH.
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

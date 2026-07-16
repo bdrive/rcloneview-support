@@ -16,6 +16,7 @@ keywords:
   - scheduled sync
   - rclone GUI
 tags:
+  - RcloneView
   - synology
   - cloud-backup
   - s3

@@ -16,8 +16,11 @@ keywords:
   - 클라우드 백업 솔루션
   - 비용 효율적인 클라우드 스토리지
 tags:
+  - RcloneView
   - idrive-e2
   - s3-compatible
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,8 +16,11 @@ keywords:
   - secure google drive
   - cloud encryption best practices
 tags:
+  - RcloneView
   - security
+  - cloud-storage
   - best-practices
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

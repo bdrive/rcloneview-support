@@ -16,6 +16,7 @@ keywords:
   - téléversement cloud figé
   - synchronisation rclone figée
 tags:
+  - RcloneView
   - troubleshooting
   - performance
   - tips

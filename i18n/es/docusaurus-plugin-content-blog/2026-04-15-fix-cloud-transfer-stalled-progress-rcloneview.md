@@ -16,8 +16,10 @@ keywords:
   - transferencia en la nube colgada
   - recuperación de tiempo de espera en rclone
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-sync
   - performance
 ---
 

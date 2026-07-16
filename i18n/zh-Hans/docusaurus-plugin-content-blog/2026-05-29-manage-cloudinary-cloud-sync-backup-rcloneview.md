@@ -14,6 +14,11 @@ keywords:
   - 同步 Cloudinary 文件
   - Cloudinary 数字资产备份
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
   - dam
 ---
 

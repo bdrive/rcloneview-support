@@ -16,7 +16,12 @@ keywords:
   - iCloud Drive rclone
   - Apple Cloud-Speicher-Backup
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - macos
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,6 +16,7 @@ keywords:
   - folder structure preservation
   - cloud storage consolidation
 tags:
+  - RcloneView
   - nextcloud
   - google-drive
   - cloud-migration

@@ -16,9 +16,12 @@ keywords:
   - rcloneview onedrive errors
   - onedrive 400 bad request rclone
 tags:
+  - RcloneView
   - onedrive
   - troubleshooting
   - tips
+  - guide
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

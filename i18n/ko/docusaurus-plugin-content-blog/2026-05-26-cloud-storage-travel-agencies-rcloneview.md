@@ -16,7 +16,11 @@ keywords:
   - sync travel media files
   - rclone travel agency backup
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

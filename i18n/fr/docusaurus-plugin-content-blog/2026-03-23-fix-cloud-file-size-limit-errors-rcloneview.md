@@ -16,7 +16,9 @@ keywords:
   - synchronisation cloud de fichiers volumineux
   - RcloneView avancé
 tags:
+  - RcloneView
   - troubleshooting
+  - cloud-storage
   - tips
 ---
 

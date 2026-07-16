@@ -15,7 +15,11 @@ keywords:
   - alat manajemen file LMS
   - pencadangan cloud pendidikan
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - education
 ---
 

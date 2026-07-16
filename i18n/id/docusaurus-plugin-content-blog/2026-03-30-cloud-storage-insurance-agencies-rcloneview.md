@@ -16,7 +16,11 @@ keywords:
   - transfer file terenkripsi
   - perlindungan data asuransi
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - compliance
 ---
 

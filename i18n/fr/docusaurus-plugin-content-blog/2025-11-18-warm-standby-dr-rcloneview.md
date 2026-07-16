@@ -15,8 +15,10 @@ keywords:
   - cloudflare r2
   - wasabi s3
 tags:
+  - RcloneView
   - disaster-recovery
   - multi-cloud
+  - backup
   - sync
   - s3
 ---

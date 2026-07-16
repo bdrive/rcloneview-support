@@ -14,6 +14,7 @@ keywords:
   - errores de copia de seguridad de Backblaze B2
   - solución del límite de subida de B2
 tags:
+  - RcloneView
   - troubleshooting
   - backblaze-b2
   - tips

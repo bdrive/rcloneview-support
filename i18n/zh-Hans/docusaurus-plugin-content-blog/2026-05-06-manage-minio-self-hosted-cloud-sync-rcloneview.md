@@ -16,7 +16,11 @@ keywords:
   - 本地部署 S3 备份工具
   - MinIO 云同步
 tags:
+  - RcloneView
   - minio
+  - cloud-storage
+  - cloud-sync
+  - backup
   - self-hosted
   - s3-compatible
 ---

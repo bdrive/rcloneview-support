@@ -16,9 +16,11 @@ keywords:
   - perbandingan pencadangan cloud
   - alat sinkronisasi dua arah
 tags:
+  - RcloneView
   - comparison
   - goodsync
   - sync
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

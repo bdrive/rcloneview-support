@@ -16,8 +16,10 @@ keywords:
   - 高性价比备份
   - 多云策略
 tags:
+  - RcloneView
   - backblaze-b2
   - azure
+  - cloud-sync
   - cloud-to-cloud
 ---
 

@@ -16,7 +16,11 @@ keywords:
   - protection des données du cabinet dentaire
   - stockage cloud cabinet de dentiste
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,7 +14,11 @@ keywords:
   - synchronisation stockage d'objets cloud
   - outil de sauvegarde DigitalOcean
 tags:
+  - RcloneView
   - digitalocean-spaces
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

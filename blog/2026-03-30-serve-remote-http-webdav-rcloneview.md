@@ -16,8 +16,11 @@ keywords:
   - share cloud files locally
   - webdav server rcloneview
 tags:
+  - RcloneView
   - feature
   - webdav
+  - guide
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

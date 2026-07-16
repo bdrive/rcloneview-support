@@ -12,6 +12,8 @@ keywords:
   - rcloneview
   - trabajos de copia de seguridad
 tags:
+  - RcloneView
+  - backup
   - automation
   - google-drive
   - onedrive

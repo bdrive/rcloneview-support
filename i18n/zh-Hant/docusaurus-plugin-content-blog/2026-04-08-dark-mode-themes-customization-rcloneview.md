@@ -16,8 +16,10 @@ keywords:
   - 淺色模式
   - 系統主題
 tags:
+  - RcloneView
   - feature
   - tips
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

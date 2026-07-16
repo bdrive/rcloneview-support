@@ -14,7 +14,9 @@ keywords:
   - guide d'installation RcloneView macOS
   - monter un lecteur cloud macOS Sequoia
 tags:
+  - RcloneView
   - macos
+  - cloud-sync
   - installation
   - platform
 ---

@@ -5,9 +5,11 @@ authors: [tayson]
 description: "CLIはもう不要:RcloneViewの直感的なデスクトップGUIでOpenStack Swiftコンテナを管理する方法を解説。数分でSwiftストレージの閲覧、同期、マウントができます。"
 keywords: ["openstack swift gui", "swift storage manager", "openstack swift file manager", "swift object storage gui", "openstack swift rclone", "swift storage desktop tool", "openstack swift backup", "swift container browser", "rclone swift", "object storage management"]
 tags:
+  - RcloneView
   - openstack
   - swift
   - object-storage
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

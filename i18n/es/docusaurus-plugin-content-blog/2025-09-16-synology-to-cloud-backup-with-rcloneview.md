@@ -16,6 +16,7 @@ keywords:
   - sincronización programada
   - rclone GUI
 tags:
+  - RcloneView
   - synology
   - cloud-backup
   - s3

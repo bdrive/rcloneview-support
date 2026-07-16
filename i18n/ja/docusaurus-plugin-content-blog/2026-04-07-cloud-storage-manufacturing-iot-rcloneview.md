@@ -16,8 +16,12 @@ keywords:
   - cam file cloud backup
   - multi-site data sync
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
   - automation
+  - backup
+  - guide
   - amazon-s3
   - azure
 ---

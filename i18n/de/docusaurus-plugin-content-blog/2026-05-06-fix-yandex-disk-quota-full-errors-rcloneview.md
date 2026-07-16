@@ -16,9 +16,11 @@ keywords:
   - Yandex Disk Backup-Fehler beheben
   - Speicherkontingent überschritten Cloud-Synchronisation
 tags:
+  - RcloneView
   - yandex-disk
   - troubleshooting
   - tips
+  - cloud-storage
   - cleanup
 ---
 

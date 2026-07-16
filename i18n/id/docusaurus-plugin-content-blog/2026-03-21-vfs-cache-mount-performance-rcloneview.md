@@ -16,6 +16,7 @@ keywords:
   - penyetelan performa
   - optimasi akses file
 tags:
+  - RcloneView
   - vfs
   - mount
   - performance

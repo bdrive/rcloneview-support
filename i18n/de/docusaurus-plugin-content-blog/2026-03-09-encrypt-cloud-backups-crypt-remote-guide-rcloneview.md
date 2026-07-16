@@ -16,10 +16,12 @@ keywords:
   - S3 Dateien verschlüsseln
   - verschlüsseltes Cloud-Speicher-Tool
 tags:
+  - RcloneView
   - encryption
   - crypt
   - security
   - feature
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

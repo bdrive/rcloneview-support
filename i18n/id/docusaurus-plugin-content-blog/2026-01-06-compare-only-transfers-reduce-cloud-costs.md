@@ -16,7 +16,10 @@ keywords:
   - otomatisasi rcloneview
   - optimasi sinkronisasi cloud
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
+  - backup
   - file-management
 ---
 

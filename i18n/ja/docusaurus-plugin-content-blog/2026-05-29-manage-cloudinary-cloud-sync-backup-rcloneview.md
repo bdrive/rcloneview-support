@@ -14,6 +14,11 @@ keywords:
   - Cloudinaryファイルの同期
   - Cloudinaryのデジタルアセットバックアップ
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
   - dam
 ---
 

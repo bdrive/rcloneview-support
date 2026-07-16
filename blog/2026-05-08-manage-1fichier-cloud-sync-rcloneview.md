@@ -14,7 +14,11 @@ keywords:
   - 1Fichier storage management
   - 1Fichier backup tool
 tags:
+  - RcloneView
   - 1fichier
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

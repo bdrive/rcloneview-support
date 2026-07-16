@@ -16,10 +16,13 @@ keywords:
   - sauvegarde cloud automatisée
   - DigitalOcean Spaces rclone
 tags:
+  - RcloneView
   - dropbox
   - digitalocean-spaces
   - cloud-to-cloud
   - sync
+  - backup
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

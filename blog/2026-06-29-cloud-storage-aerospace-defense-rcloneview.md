@@ -16,7 +16,11 @@ keywords:
   - encrypted cloud backup defense
   - multi-site cloud transfer aerospace
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - security
   - encryption
 ---

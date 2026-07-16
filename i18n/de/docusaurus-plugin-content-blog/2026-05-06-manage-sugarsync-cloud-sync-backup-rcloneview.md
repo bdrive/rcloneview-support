@@ -16,7 +16,12 @@ keywords:
   - SugarSync-Dateien synchronisieren
   - SugarSync Multi-Cloud
 tags:
+  - RcloneView
   - sugarsync
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

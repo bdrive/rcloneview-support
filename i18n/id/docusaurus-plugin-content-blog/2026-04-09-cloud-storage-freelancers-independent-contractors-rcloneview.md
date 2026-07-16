@@ -16,7 +16,11 @@ keywords:
   - penyimpanan cloud pekerja lepas
   - pencadangan file mandiri
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
+  - guide
   - productivity
 ---
 

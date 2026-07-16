@@ -16,7 +16,12 @@ keywords:
   - cloud backup event photography
   - automated event file sync
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

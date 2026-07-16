@@ -16,7 +16,11 @@ keywords:
   - HIPAA準拠クラウドバックアップ
   - 動物病院ソフトウェア
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

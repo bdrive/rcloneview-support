@@ -14,6 +14,7 @@ keywords:
   - enkripsi cloud
   - sinkronisasi cloud aman
 tags:
+  - RcloneView
   - mega
   - encryption
   - automation

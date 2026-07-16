@@ -14,8 +14,10 @@ keywords:
   - RcloneView image gallery
   - cloud storage thumbnail feature
 tags:
+  - RcloneView
   - feature
   - photography
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -16,6 +16,7 @@ keywords:
   - 文件夹结构保留
   - 云存储整合
 tags:
+  - RcloneView
   - nextcloud
   - google-drive
   - cloud-migration

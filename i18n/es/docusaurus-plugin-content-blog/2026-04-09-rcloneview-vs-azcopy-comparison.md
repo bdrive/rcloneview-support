@@ -16,8 +16,11 @@ keywords:
   - rclone vs azcopy
   - herramienta de sincronización en la nube
 tags:
+  - RcloneView
   - comparison
   - azure
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

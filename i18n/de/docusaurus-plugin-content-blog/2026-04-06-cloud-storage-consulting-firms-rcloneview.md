@@ -16,8 +16,12 @@ keywords:
   - multi-client cloud management
   - rcloneview consulting firms
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - business
+  - guide
+  - backup
   - organization
   - security
 ---

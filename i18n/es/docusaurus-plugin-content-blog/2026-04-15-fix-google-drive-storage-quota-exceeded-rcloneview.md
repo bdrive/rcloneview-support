@@ -16,9 +16,12 @@ keywords:
   - archivo de Google Drive
   - recuperación de espacio en Google Drive
 tags:
+  - RcloneView
   - google-drive
   - troubleshooting
   - tips
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,7 +16,11 @@ keywords:
   - outil de sauvegarde S3 sur site
   - synchronisation cloud MinIO
 tags:
+  - RcloneView
   - minio
+  - cloud-storage
+  - cloud-sync
+  - backup
   - self-hosted
   - s3-compatible
 ---

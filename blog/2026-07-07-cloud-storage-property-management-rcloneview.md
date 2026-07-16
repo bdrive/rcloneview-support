@@ -14,7 +14,11 @@ keywords:
   - multi-property file management
   - vendor document sharing
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

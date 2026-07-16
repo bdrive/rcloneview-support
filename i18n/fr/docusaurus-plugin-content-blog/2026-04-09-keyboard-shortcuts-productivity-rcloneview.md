@@ -16,9 +16,11 @@ keywords:
   - astuces utilisateur avancé
   - efficacité rcloneview
 tags:
+  - RcloneView
   - feature
   - tips
   - productivity
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

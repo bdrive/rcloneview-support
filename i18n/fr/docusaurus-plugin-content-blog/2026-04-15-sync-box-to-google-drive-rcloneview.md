@@ -16,10 +16,12 @@ keywords:
   - workflow Box Google Drive
   - migration de contenu Box
 tags:
+  - RcloneView
   - box
   - google-drive
   - cloud-to-cloud
   - sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

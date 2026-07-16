@@ -16,7 +16,10 @@ keywords:
   - クイックフォルダアクセス
   - クラウド整理
 tags:
+  - RcloneView
   - feature
+  - guide
+  - cloud-storage
   - productivity
 ---
 

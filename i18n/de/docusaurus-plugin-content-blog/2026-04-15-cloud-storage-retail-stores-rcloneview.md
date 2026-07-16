@@ -16,7 +16,11 @@ keywords:
   - retail cloud automation
   - point of sale backup
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - industry
+  - guide
   - business
 ---
 

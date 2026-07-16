@@ -14,7 +14,9 @@ keywords:
   - 클라우드 동기화 백그라운드 유지
   - RcloneView 지속적인 백업
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
   - automation
 ---
 

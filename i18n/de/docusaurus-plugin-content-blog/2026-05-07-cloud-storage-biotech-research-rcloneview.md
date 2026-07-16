@@ -14,7 +14,11 @@ keywords:
   - verschlüsseltes Forschungs-Backup
   - NAS-zu-Cloud-Synchronisation
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

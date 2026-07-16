@@ -13,7 +13,10 @@ keywords:
   - 클라우드 백업
   - 동기화
 tags:
+  - RcloneView
   - automation
+  - backup
+  - cloud-storage
   - sync
 ---
 

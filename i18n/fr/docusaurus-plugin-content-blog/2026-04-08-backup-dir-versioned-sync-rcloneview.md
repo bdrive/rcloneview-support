@@ -16,7 +16,11 @@ keywords:
   - synchronisation avec sauvegarde
   - suffixe rclone
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
+  - backup
+  - guide
   - tips
 ---
 

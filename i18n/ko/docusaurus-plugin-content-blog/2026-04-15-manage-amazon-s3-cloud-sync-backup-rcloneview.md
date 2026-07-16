@@ -16,7 +16,11 @@ keywords:
   - S3 객체 스토리지 GUI
   - rclone S3 프론트엔드
 tags:
+  - RcloneView
   - amazon-s3
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3
 ---
 

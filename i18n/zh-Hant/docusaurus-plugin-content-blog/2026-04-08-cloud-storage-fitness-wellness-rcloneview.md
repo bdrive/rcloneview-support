@@ -16,7 +16,11 @@ keywords:
   - 課程錄影儲存
   - 健身行銷素材
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
+  - guide
   - multi-cloud
 ---
 

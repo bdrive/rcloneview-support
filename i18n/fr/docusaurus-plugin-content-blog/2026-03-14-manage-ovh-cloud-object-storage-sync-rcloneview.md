@@ -16,6 +16,8 @@ keywords:
   - ovh cloud sync s3
   - ovh cloud storage management
 tags:
+  - RcloneView
+  - cloud-storage
   - openstack
   - swift
   - s3-compatible

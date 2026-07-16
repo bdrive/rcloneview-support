@@ -16,7 +16,11 @@ keywords:
   - automatización en la nube para retail
   - copia de seguridad de punto de venta
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - industry
+  - guide
   - business
 ---
 

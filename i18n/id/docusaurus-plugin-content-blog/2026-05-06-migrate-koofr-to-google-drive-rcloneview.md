@@ -16,10 +16,12 @@ keywords:
   - migrasi cloud RcloneView
   - alat transfer file Koofr
 tags:
+  - RcloneView
   - koofr
   - google-drive
   - cloud-to-cloud
   - migration
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

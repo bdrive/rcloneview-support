@@ -14,6 +14,8 @@ keywords:
   - unveränderlichkeit von cloud-backups
   - compliance-backup
 tags:
+  - RcloneView
+  - backup
   - security
   - s3
   - wasabi

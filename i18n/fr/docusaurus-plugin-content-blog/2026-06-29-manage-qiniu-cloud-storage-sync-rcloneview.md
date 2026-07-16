@@ -16,6 +16,10 @@ keywords:
   - Client de bureau S3 Qiniu Kodo
   - Gérer les buckets Qiniu via une interface graphique
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
 ---

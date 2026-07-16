@@ -7,6 +7,7 @@ authors:
   - jay
 tags:
   - reference
+  - RcloneView
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

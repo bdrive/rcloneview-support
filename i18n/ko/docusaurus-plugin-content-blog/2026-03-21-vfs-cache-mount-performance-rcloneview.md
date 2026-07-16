@@ -16,6 +16,7 @@ keywords:
   - performance tuning
   - file access optimization
 tags:
+  - RcloneView
   - vfs
   - mount
   - performance

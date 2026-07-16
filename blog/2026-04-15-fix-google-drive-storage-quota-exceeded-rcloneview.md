@@ -16,9 +16,12 @@ keywords:
   - Google Drive archive
   - Google Drive space recovery
 tags:
+  - RcloneView
   - google-drive
   - troubleshooting
   - tips
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

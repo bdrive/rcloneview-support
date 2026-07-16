@@ -73,6 +73,11 @@ backblaze-b2:
   permalink: /backblaze-b2
   description: Beiträge über Backblaze B2.
 
+backup:
+  label: Backup
+  permalink: /backup
+  description: Beiträge über Backup.
+
 best-practices:
   label: Bewährte Praktiken
   permalink: /best-practices
@@ -132,6 +137,11 @@ cloud-security:
   label: Cloud-Sicherheit
   permalink: /cloud-security
   description: Beiträge über Cloud-Sicherheit.
+
+cloud-storage:
+  label: Cloud-Speicher
+  permalink: /cloud-storage
+  description: Beiträge über Cloud-Speicher.
 
 cloud-storage-synchronization:
   label: Cloud-Speicher-Synchronisation
@@ -367,6 +377,11 @@ google-photos:
   label: Google Photos
   permalink: /google-photos
   description: Beiträge über Google Photos.
+
+guide:
+  label: Anleitung
+  permalink: /guide
+  description: Beiträge über Anleitung.
 
 hard-drive:
   label: Festplatte
@@ -677,6 +692,11 @@ rclone-crypt:
   label: Rclone Crypt
   permalink: /rclone-crypt
   description: Beiträge über Rclone Crypt.
+
+RcloneView:
+  label: RcloneView
+  permalink: /rcloneview
+  description: Beiträge über RcloneView.
 
 reference:
   label: Referenz

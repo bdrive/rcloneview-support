@@ -14,8 +14,10 @@ keywords:
   - rclone sambungkan ulang penyedia cloud
   - perbaiki login cloud kedaluwarsa RcloneView
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

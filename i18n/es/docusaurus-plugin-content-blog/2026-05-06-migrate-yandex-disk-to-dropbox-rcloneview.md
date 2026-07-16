@@ -16,10 +16,12 @@ keywords:
   - herramienta de transferencia de archivos de Yandex Disk
   - migración a Dropbox desde Yandex
 tags:
+  - RcloneView
   - yandex-disk
   - dropbox
   - cloud-to-cloud
   - migration
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

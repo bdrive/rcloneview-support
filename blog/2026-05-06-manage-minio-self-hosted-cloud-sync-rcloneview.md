@@ -16,7 +16,11 @@ keywords:
   - on-premises S3 backup tool
   - MinIO cloud sync
 tags:
+  - RcloneView
   - minio
+  - cloud-storage
+  - cloud-sync
+  - backup
   - self-hosted
   - s3-compatible
 ---

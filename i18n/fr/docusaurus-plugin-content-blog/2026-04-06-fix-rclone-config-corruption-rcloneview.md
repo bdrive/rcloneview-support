@@ -16,8 +16,11 @@ keywords:
   - recover rclone config
   - fix rclone config rcloneview
 tags:
+  - RcloneView
   - troubleshooting
   - rclone
+  - guide
+  - backup
   - security
   - tips
 ---

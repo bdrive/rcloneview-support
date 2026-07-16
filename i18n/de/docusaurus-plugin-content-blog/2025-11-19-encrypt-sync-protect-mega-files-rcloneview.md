@@ -14,6 +14,7 @@ keywords:
   - cloud encryption
   - secure cloud sync
 tags:
+  - RcloneView
   - mega
   - encryption
   - automation

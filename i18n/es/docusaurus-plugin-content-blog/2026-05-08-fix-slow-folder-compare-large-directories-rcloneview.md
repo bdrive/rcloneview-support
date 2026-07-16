@@ -14,6 +14,7 @@ keywords:
   - solución de tiempo de espera en comparación de carpetas
   - optimizar la comparación en RcloneView
 tags:
+  - RcloneView
   - folder-comparison
   - troubleshooting
   - tips

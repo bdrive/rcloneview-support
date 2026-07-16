@@ -16,6 +16,7 @@ keywords:
   - Multi-Cloud-Deduplizierung
   - rclone compare gui
 tags:
+  - RcloneView
   - cost-optimization
   - multi-cloud
   - google-drive

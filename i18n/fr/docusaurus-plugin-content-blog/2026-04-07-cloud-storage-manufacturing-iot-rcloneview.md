@@ -16,8 +16,12 @@ keywords:
   - sauvegarde cloud de fichiers cam
   - synchronisation multi-sites
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
   - automation
+  - backup
+  - guide
   - amazon-s3
   - azure
 ---

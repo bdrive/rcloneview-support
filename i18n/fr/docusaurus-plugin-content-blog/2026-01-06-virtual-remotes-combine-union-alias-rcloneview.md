@@ -16,6 +16,8 @@ keywords:
   - rcloneview workflow
   - cloud file organization
 tags:
+  - RcloneView
+  - cloud-storage
   - file-management
   - sync
   - multi-cloud

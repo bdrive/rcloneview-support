@@ -16,7 +16,9 @@ keywords:
   - herramienta explorador multi-nube
   - comparativa de gestores en la nube 2026
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - multi-cloud
 ---
 

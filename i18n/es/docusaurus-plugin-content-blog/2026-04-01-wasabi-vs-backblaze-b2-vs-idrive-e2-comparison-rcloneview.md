@@ -16,11 +16,14 @@ keywords:
   - reseña de idrive e2
   - mejor almacenamiento en la nube barato para copias de seguridad
 tags:
+  - RcloneView
   - wasabi
   - backblaze-b2
   - idrive-e2
   - comparison
   - storage-comparison
+  - cloud-storage
+  - backup
   - cost-optimization
 ---
 

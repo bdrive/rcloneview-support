@@ -16,6 +16,9 @@ keywords:
   - riesgo del almacenamiento en la nube
   - copia de seguridad en la nube automatizada
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - best-practices
   - security
 ---

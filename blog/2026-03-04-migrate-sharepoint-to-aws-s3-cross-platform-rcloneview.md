@@ -16,9 +16,12 @@ keywords:
   - sharepoint s3 sync
   - sharepoint document library backup
 tags:
+  - RcloneView
   - sharepoint
   - aws-s3
+  - cloud-storage
   - migration
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

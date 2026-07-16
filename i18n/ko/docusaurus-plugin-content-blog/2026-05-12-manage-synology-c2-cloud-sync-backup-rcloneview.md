@@ -16,7 +16,11 @@ keywords:
   - Synology C2 파일 전송
   - Synology C2 예약 백업
 tags:
+  - RcloneView
   - synology
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
 ---
 

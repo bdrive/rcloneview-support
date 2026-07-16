@@ -16,8 +16,11 @@ keywords:
   - montar dropbox local
   - unidad virtual de almacenamiento en la nube
 tags:
+  - RcloneView
   - mount
+  - cloud-storage
   - feature
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

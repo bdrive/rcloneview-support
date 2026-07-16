@@ -16,8 +16,11 @@ keywords:
   - sauvegarde cloud pour agents
   - conformité documentaire
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - business
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

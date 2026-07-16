@@ -16,9 +16,11 @@ keywords:
   - smb rclone
   - serveur de fichiers d'entreprise cloud
 tags:
+  - RcloneView
   - smb
   - nas
   - sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

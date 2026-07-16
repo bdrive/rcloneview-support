@@ -16,7 +16,11 @@ keywords:
   - 加密文件传输
   - 保险数据保护
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - compliance
 ---
 

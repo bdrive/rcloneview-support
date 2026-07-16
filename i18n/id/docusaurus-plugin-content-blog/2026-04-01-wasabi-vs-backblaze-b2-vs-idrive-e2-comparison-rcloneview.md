@@ -16,11 +16,14 @@ keywords:
   - ulasan idrive e2
   - penyimpanan cloud murah terbaik untuk pencadangan
 tags:
+  - RcloneView
   - wasabi
   - backblaze-b2
   - idrive-e2
   - comparison
   - storage-comparison
+  - cloud-storage
+  - backup
   - cost-optimization
 ---
 

@@ -16,9 +16,11 @@ keywords:
   - solución de error de copia de seguridad de Yandex Disk
   - cuota de almacenamiento excedida en sincronización en la nube
 tags:
+  - RcloneView
   - yandex-disk
   - troubleshooting
   - tips
+  - cloud-storage
   - cleanup
 ---
 

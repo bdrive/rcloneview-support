@@ -16,7 +16,10 @@ keywords:
   - 云备份哈希验证
   - rclone 虚拟远程 hasher
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
+  - backup
   - tips
 ---
 

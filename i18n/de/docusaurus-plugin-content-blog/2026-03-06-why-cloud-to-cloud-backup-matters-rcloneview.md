@@ -16,6 +16,9 @@ keywords:
   - Risiko von Cloud-Speicher
   - automatisiertes Cloud-Backup
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - best-practices
   - security
 ---

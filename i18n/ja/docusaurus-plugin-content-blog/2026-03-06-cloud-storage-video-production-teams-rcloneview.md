@@ -16,6 +16,8 @@ keywords:
   - media asset management cloud
   - sync video footage nas cloud
 tags:
+  - RcloneView
+  - cloud-storage
   - video-production
   - sync
   - best-practices

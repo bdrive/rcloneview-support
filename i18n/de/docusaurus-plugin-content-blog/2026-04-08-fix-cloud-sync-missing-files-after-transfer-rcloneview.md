@@ -16,8 +16,11 @@ keywords:
   - Probleme bei der Cloud-Dateiübertragung
   - Cloud-Synchronisation beheben
 tags:
+  - RcloneView
   - troubleshooting
+  - cloud-sync
   - tips
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

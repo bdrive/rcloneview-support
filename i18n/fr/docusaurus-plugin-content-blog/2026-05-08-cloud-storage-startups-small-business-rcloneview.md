@@ -14,7 +14,10 @@ keywords:
   - outil multi-cloud pour startups
   - gestion abordable du stockage cloud
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
   - business
 ---
 

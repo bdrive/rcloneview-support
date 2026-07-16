@@ -16,8 +16,11 @@ keywords:
   - vista previa de transferencia en la nube
   - comparar antes de sincronizar
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
   - tips
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

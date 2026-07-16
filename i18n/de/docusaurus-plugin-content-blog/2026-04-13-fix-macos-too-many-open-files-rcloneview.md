@@ -16,6 +16,7 @@ keywords:
   - Limit geöffneter Dateien macOS
   - rclone mount macOS beheben
 tags:
+  - RcloneView
   - macos
   - troubleshooting
   - tips

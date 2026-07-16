@@ -16,6 +16,8 @@ keywords:
   - multi cloud chaos
   - cloud storage consolidation
 tags:
+  - RcloneView
+  - cloud-storage
   - organization
   - tips
   - multi-cloud

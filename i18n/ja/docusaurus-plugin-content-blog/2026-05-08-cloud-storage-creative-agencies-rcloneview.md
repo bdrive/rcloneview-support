@@ -14,7 +14,11 @@ keywords:
   - クリエイティブ アセットバックアップ 自動化
   - メディアファイル向けクラウドストレージ
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,7 +16,11 @@ keywords:
   - synchronisation de fichiers médias de voyage
   - sauvegarde rclone agence de voyage
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

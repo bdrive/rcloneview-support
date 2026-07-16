@@ -16,9 +16,11 @@ keywords:
   - rclone transfer log
   - cloud job monitoring tool
 tags:
+  - RcloneView
   - monitoring
   - job-history
   - feature
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

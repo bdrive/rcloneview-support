@@ -16,6 +16,7 @@ keywords:
   - wasabi
   - s3
 tags:
+  - RcloneView
   - cloud
   - sync
   - tutorial

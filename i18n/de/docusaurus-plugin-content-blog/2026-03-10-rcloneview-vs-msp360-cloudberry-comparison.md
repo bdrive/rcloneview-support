@@ -16,7 +16,10 @@ keywords:
   - cloud backup comparison
   - msp360 vs rclone
 tags:
+  - RcloneView
   - comparison
+  - backup
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

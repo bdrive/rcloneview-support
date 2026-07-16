@@ -14,6 +14,7 @@ keywords:
   - Wasabi S3 migration tool
   - rclone pCloud Wasabi GUI
 tags:
+  - RcloneView
   - pcloud
   - wasabi
   - cloud-to-cloud

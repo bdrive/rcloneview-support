@@ -26,6 +26,8 @@ keywords:
   - dry run
   - tareas de sincronización
 tags:
+  - RcloneView
+  - cloud-storage
   - cloud-to-cloud
   - sync
   - google-drive

@@ -16,7 +16,11 @@ keywords:
   - almacenamiento en la nube conforme a normativas para bufetes de abogados
   - copia de seguridad multi-nube para bufetes de abogados
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - security
   - compliance
 ---

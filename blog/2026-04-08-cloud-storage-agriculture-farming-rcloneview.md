@@ -16,7 +16,11 @@ keywords:
   - s3 storage farming
   - multi-cloud agriculture
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
+  - guide
   - automation
 ---
 

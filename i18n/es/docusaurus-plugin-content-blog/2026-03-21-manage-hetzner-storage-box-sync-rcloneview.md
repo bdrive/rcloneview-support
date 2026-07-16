@@ -16,8 +16,11 @@ keywords:
   - copia de seguridad en nube híbrida
   - almacenamiento en la nube conforme al RGPD
 tags:
+  - RcloneView
   - hetzner
   - european-cloud
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

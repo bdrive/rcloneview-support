@@ -16,6 +16,7 @@ keywords:
   - 多云去重
   - rclone compare gui
 tags:
+  - RcloneView
   - cost-optimization
   - multi-cloud
   - google-drive

@@ -16,9 +16,11 @@ keywords:
   - dirección de sincronización incorrecta
   - evitar pérdida de datos en la nube
 tags:
+  - RcloneView
   - data-loss
   - safety
   - best-practices
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

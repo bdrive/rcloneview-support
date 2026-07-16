@@ -16,8 +16,11 @@ keywords:
   - vultr rclone
   - vultr file transfer
 tags:
+  - RcloneView
   - s3-compatible
+  - cloud-storage
   - sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

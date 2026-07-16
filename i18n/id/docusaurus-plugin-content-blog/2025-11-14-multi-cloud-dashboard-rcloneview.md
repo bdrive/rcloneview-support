@@ -11,6 +11,8 @@ keywords:
   - dashboard cloud
   - alat sinkronisasi file cloud
 tags:
+  - RcloneView
+  - cloud-sync
   - automation
   - google-drive
   - onedrive

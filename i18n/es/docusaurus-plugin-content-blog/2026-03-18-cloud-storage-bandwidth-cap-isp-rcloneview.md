@@ -16,8 +16,10 @@ keywords:
   - sincronización en la nube con conexión medida
   - reducir el uso de datos en la nube
 tags:
+  - RcloneView
   - performance
   - tips
+  - cloud-storage
   - best-practices
 ---
 

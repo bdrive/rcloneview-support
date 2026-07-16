@@ -16,9 +16,11 @@ keywords:
   - Objektspeicher für KI
   - Datensatz-Planung
 tags:
+  - RcloneView
   - ai
   - data-pipeline
   - s3
+  - cloud-storage
   - huggingface
   - automation
 ---

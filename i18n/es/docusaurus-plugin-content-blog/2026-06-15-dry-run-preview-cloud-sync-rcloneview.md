@@ -16,8 +16,12 @@ keywords:
   - simulación de sincronización en la nube
   - verificar la sincronización antes de confirmar
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
   - tips
+  - backup
+  - guide
   - troubleshooting
 ---
 

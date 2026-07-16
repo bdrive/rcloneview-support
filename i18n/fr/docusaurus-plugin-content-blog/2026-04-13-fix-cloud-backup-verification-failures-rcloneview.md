@@ -14,8 +14,10 @@ keywords:
   - correction de corruption de sauvegarde rclone
   - dépannage de la vérification de synchronisation cloud
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

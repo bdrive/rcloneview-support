@@ -16,7 +16,11 @@ keywords:
   - gestión de archivos para estudios de arquitectura
   - copia de seguridad en la nube de archivos de construcción
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - cad
 ---
 

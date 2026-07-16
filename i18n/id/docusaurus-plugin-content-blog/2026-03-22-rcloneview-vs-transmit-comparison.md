@@ -14,7 +14,9 @@ keywords:
   - sinkronisasi cloud lintas platform
   - alat pengelola file
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

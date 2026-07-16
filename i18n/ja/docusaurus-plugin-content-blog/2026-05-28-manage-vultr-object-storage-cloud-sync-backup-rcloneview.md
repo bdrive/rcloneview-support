@@ -16,6 +16,10 @@ keywords:
   - Vultrクラウド管理
   - S3互換GUI rclone
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
 ---

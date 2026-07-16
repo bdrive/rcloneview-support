@@ -16,7 +16,10 @@ keywords:
   - quick folder access
   - cloud organization
 tags:
+  - RcloneView
   - feature
+  - guide
+  - cloud-storage
   - productivity
 ---
 

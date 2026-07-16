@@ -16,7 +16,11 @@ keywords:
   - 유럽 클라우드 스토리지
   - Hetzner 버킷 관리
 tags:
+  - RcloneView
   - hetzner
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
   - object-storage
 ---

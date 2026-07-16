@@ -15,7 +15,11 @@ keywords:
   - herramienta multi-nube para ciencia de datos
   - flujo de trabajo de ciencia de datos con rcloneview
 tags:
+  - RcloneView
+  - cloud-storage
   - ai
+  - backup
+  - guide
   - industry
   - amazon-s3
   - google-drive

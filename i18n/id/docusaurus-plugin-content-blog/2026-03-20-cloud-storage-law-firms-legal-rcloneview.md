@@ -16,6 +16,8 @@ keywords:
   - multi-cloud management
   - legal case files
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - compliance
   - security

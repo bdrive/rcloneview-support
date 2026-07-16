@@ -16,9 +16,12 @@ keywords:
   - idrive e2 object storage
   - s3 compatible storage gui
 tags:
+  - RcloneView
   - idrive-e2
   - s3-compatible
+  - cloud-storage
   - sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

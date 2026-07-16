@@ -16,6 +16,8 @@ keywords:
   - tarifas de almacenamiento en la nube explicadas
   - ahorrar dinero en almacenamiento en la nube
 tags:
+  - RcloneView
+  - cloud-storage
   - pricing
   - cost-optimization
   - tips

@@ -16,8 +16,11 @@ keywords:
   - mengatur folder penyimpanan cloud
   - penggabungan folder lintas penyedia
 tags:
+  - RcloneView
   - feature
   - multi-cloud
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

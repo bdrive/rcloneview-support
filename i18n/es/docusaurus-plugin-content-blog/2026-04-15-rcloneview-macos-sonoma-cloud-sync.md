@@ -16,8 +16,11 @@ keywords:
   - copia de seguridad en la nube para Mac 2026
   - montaje en la nube en macOS
 tags:
+  - RcloneView
   - macos
+  - cloud-sync
   - installation
+  - backup
   - platform
 ---
 

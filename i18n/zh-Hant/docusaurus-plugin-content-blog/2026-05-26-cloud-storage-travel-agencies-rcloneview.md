@@ -16,7 +16,11 @@ keywords:
   - 同步旅遊媒體檔案
   - rclone 旅行社備份
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,6 +16,8 @@ keywords:
   - images produits cloud
   - sauvegarde de données e-commerce
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
   - sync

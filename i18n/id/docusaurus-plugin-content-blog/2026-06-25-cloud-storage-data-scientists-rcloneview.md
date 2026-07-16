@@ -15,7 +15,11 @@ keywords:
   - alat multi-cloud data science
   - alur kerja data science rcloneview
 tags:
+  - RcloneView
+  - cloud-storage
   - ai
+  - backup
+  - guide
   - industry
   - amazon-s3
   - google-drive

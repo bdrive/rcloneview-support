@@ -16,7 +16,10 @@ keywords:
   - P2P-Dateifreigabe
   - dezentrale Synchronisation
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

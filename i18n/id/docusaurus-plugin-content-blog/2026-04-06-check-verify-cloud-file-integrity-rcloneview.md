@@ -16,7 +16,10 @@ keywords:
   - fitur check rcloneview
   - alat integritas data cloud
 tags:
+  - RcloneView
   - feature
+  - cloud-sync
+  - guide
   - tips
   - best-practices
   - security

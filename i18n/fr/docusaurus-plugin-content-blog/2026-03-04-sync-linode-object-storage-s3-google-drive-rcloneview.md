@@ -16,9 +16,12 @@ keywords:
   - linode object storage rclone
   - linode cloud backup tool
 tags:
+  - RcloneView
   - linode
   - s3-compatible
+  - cloud-storage
   - sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

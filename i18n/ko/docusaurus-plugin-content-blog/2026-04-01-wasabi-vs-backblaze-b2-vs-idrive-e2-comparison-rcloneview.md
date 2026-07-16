@@ -16,11 +16,14 @@ keywords:
   - idrive e2 review
   - best cheap cloud storage for backup
 tags:
+  - RcloneView
   - wasabi
   - backblaze-b2
   - idrive-e2
   - comparison
   - storage-comparison
+  - cloud-storage
+  - backup
   - cost-optimization
 ---
 

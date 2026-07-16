@@ -14,7 +14,7 @@ keywords:
   - 存储使用明细
   - 云文件夹大小
   - 分析远程存储
-tags: [feature, tips, cli, monitoring, dashboard, performance]
+tags: [RcloneView, feature, cloud-storage, tips, guide, cli, monitoring, dashboard, performance]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

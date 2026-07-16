@@ -13,6 +13,7 @@ keywords:
   - ファイルトラッキング
   - 監査ログ
 tags:
+  - RcloneView
   - dashboard
   - sync
   - history

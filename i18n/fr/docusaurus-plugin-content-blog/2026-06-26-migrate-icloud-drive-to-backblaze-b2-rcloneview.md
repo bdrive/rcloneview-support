@@ -14,9 +14,11 @@ keywords:
   - transfert cloud à cloud iCloud
   - outil de sauvegarde Backblaze B2 iCloud
 tags:
+  - RcloneView
   - backblaze-b2
   - cloud-to-cloud
   - migration
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

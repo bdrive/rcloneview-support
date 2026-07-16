@@ -16,8 +16,11 @@ keywords:
   - rclone almacenamiento en la nube
   - automatización de GCS
 tags:
+  - RcloneView
   - google-cloud-storage
   - s3-compatible
+  - cloud-storage
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

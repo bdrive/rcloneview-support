@@ -16,9 +16,11 @@ keywords:
   - エンタープライズクラウドストレージ
   - S3 API互換性
 tags:
+  - RcloneView
   - tencent-cos
   - s3-compatible
   - object-storage
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

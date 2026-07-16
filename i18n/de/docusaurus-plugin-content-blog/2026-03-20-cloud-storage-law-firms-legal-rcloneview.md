@@ -16,6 +16,8 @@ keywords:
   - Multi-Cloud-Verwaltung
   - juristische Fallakten
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - compliance
   - security

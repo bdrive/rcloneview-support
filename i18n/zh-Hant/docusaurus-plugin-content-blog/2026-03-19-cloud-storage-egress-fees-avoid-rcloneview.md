@@ -16,8 +16,10 @@ keywords:
   - 免出口費雲端儲存
   - 雲端出口定價
 tags:
+  - RcloneView
   - cost-optimization
   - tips
+  - cloud-storage
   - best-practices
 ---
 

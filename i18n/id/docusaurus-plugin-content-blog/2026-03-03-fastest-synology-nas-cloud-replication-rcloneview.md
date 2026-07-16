@@ -16,9 +16,12 @@ keywords:
   - sinkronisasi cloud synology nas cepat
   - transfer paralel nas ke cloud
 tags:
+  - RcloneView
   - synology
   - nas
+  - cloud-storage
   - performance
+  - backup
   - sync
 ---
 

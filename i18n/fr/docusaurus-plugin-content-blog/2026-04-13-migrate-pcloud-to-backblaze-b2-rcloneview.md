@@ -14,6 +14,7 @@ keywords:
   - alternative de sauvegarde pCloud
   - migration cloud RcloneView
 tags:
+  - RcloneView
   - pcloud
   - backblaze-b2
   - cloud-to-cloud

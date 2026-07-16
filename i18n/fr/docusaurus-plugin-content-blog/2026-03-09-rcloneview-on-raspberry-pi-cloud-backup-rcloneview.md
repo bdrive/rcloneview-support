@@ -16,7 +16,10 @@ keywords:
   - synchronisation google drive raspberry pi
   - sauvegarde automatisée raspberry pi
 tags:
+  - RcloneView
   - raspberry-pi
+  - backup
+  - cloud-storage
   - platform
   - self-hosted
 ---

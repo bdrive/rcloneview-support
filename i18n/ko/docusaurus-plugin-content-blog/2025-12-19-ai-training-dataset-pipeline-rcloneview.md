@@ -16,9 +16,11 @@ keywords:
   - AI를 위한 오브젝트 스토리지
   - 데이터셋 스케줄링
 tags:
+  - RcloneView
   - ai
   - data-pipeline
   - s3
+  - cloud-storage
   - huggingface
   - automation
 ---

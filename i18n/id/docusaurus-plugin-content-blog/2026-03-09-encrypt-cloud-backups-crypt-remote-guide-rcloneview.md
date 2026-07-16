@@ -16,10 +16,12 @@ keywords:
   - enkripsi file s3
   - alat penyimpanan cloud terenkripsi
 tags:
+  - RcloneView
   - encryption
   - crypt
   - security
   - feature
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

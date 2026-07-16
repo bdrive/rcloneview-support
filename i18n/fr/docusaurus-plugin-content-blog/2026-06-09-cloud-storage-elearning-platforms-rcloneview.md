@@ -15,7 +15,11 @@ keywords:
   - outil de gestion de fichiers LMS
   - sauvegarde cloud pour l'éducation
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - education
 ---
 

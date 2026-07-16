@@ -14,7 +14,11 @@ keywords:
   - Linode 檔案傳輸工具
   - Linode 雲端備份自動化
 tags:
+  - RcloneView
   - linode
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

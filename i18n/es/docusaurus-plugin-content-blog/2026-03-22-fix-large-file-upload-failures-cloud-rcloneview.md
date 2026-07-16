@@ -14,7 +14,9 @@ keywords:
   - configuración de tiempo de espera
   - errores de sincronización en la nube
 tags:
+  - RcloneView
   - troubleshooting
+  - cloud-storage
   - performance
   - tips
 ---

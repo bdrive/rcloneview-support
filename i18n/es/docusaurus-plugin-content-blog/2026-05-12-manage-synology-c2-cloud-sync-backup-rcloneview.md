@@ -16,7 +16,11 @@ keywords:
   - transferencia de archivos Synology C2
   - copia de seguridad programada Synology C2
 tags:
+  - RcloneView
   - synology
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3-compatible
 ---
 

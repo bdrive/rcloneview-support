@@ -14,7 +14,10 @@ keywords:
   - cloud backup for studios
   - multi-cloud media management
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
   - media
 ---
 

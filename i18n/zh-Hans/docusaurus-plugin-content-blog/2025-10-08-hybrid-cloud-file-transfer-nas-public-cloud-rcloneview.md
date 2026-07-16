@@ -16,6 +16,7 @@ keywords:
   - 挂载远程驱动器
   - rclone gui
 tags:
+  - RcloneView
   - cloud
   - sync
   - nas

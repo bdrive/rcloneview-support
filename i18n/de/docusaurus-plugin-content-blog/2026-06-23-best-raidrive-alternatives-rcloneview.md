@@ -16,7 +16,9 @@ keywords:
   - Cloud-Sync-Software
   - plattformübergreifendes Cloud-Laufwerk
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - windows
   - mount
 ---

@@ -16,8 +16,11 @@ keywords:
   - multi-cloud file manager
   - S3 credentials setup
 tags:
+  - RcloneView
   - s3-compatible
   - object-storage
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

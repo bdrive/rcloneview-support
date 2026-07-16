@@ -14,7 +14,11 @@ keywords:
   - Google Photos 저장공간 관리
   - RcloneView Google Photos
 tags:
+  - RcloneView
   - google-photos
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

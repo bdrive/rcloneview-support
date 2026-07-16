@@ -16,6 +16,9 @@ keywords:
   - rcloneview job status
   - rclone cli telegram
 tags:
+  - RcloneView
+  - backup
+  - cloud-storage
   - job-management
   - security
   - automation

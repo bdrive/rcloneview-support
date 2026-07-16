@@ -16,7 +16,11 @@ keywords:
   - alat pencadangan S3 on-premises
   - sinkronisasi cloud MinIO
 tags:
+  - RcloneView
   - minio
+  - cloud-storage
+  - cloud-sync
+  - backup
   - self-hosted
   - s3-compatible
 ---

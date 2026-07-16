@@ -16,7 +16,11 @@ keywords:
   - interface de stockage objet S3
   - interface rclone pour S3
 tags:
+  - RcloneView
   - amazon-s3
+  - cloud-storage
+  - cloud-sync
+  - backup
   - s3
 ---
 

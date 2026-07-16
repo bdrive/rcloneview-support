@@ -16,8 +16,11 @@ keywords:
   - 云备份解决方案
   - 高性价比云存储
 tags:
+  - RcloneView
   - idrive-e2
   - s3-compatible
+  - cloud-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

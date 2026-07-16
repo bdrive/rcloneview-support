@@ -14,6 +14,7 @@ keywords:
   - object storage ke Google Drive
   - migrasi S3 RcloneView
 tags:
+  - RcloneView
   - amazon-s3
   - google-drive
   - cloud-to-cloud

@@ -14,8 +14,12 @@ keywords:
   - 对象存储
   - rclone oracle
 tags:
+  - RcloneView
   - oracle-cloud
   - object-storage
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

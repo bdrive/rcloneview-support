@@ -16,8 +16,11 @@ keywords:
   - copia de seguridad de mega con rclone
   - copia de seguridad asequible de mega
 tags:
+  - RcloneView
   - mega
   - backblaze-b2
+  - cloud-storage
+  - backup
   - sync
 ---
 

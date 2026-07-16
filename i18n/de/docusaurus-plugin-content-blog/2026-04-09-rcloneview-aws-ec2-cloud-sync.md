@@ -16,8 +16,11 @@ keywords:
   - aws ec2 file manager
   - server-side cloud transfer
 tags:
+  - RcloneView
   - platform
   - amazon-s3
+  - cloud-sync
+  - guide
   - cloud-migration
 ---
 

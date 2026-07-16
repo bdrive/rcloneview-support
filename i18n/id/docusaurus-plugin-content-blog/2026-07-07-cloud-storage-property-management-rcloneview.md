@@ -14,7 +14,11 @@ keywords:
   - manajemen file multi-properti
   - berbagi dokumen vendor
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

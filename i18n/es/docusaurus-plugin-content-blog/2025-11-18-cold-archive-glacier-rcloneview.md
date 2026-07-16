@@ -15,6 +15,8 @@ keywords:
   - copia de seguridad en la nube
   - retención de archivos
 tags:
+  - RcloneView
+  - backup
   - archive
   - s3
   - glacier

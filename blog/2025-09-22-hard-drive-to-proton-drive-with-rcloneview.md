@@ -14,9 +14,11 @@ keywords:
   - scheduled sync
   - local to cloud
 tags:
+  - RcloneView
   - proton-drive
   - hard-drive
   - cloud-backup
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

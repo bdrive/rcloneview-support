@@ -13,6 +13,7 @@ keywords:
   - suivi de fichiers
   - journaux d'audit
 tags:
+  - RcloneView
   - dashboard
   - sync
   - history

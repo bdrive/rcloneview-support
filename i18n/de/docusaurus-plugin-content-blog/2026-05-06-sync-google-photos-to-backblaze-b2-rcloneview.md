@@ -16,9 +16,11 @@ keywords:
   - Backblaze B2 photo archive
   - automated Google Photos backup
 tags:
+  - RcloneView
   - google-photos
   - backblaze-b2
   - cloud-to-cloud
+  - backup
   - sync
 ---
 

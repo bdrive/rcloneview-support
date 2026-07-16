@@ -16,6 +16,8 @@ keywords:
   - stockage cloud universitaire
   - gestion des données scientifiques
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
   - education

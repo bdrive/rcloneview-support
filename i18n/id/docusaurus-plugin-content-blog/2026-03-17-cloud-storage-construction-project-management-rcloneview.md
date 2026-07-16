@@ -16,8 +16,11 @@ keywords:
   - cloud proyek konstruksi
   - sinkronisasi file proyek bangunan
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

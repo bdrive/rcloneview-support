@@ -16,6 +16,7 @@ keywords:
   - monter un lecteur distant
   - interface rclone
 tags:
+  - RcloneView
   - cloud
   - sync
   - nas

@@ -16,8 +16,11 @@ keywords:
   - sincronización en la nube freenas
   - truenas multi nube
 tags:
+  - RcloneView
   - nas
   - platform
+  - backup
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

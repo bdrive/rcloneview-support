@@ -14,6 +14,7 @@ keywords:
   - Seafile 到 Google Drive
   - rclone seafile
 tags:
+  - RcloneView
   - seafile
   - google-drive
   - cloud-to-cloud

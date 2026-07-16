@@ -16,7 +16,10 @@ keywords:
   - vérification par hachage de sauvegarde cloud
   - remote virtuel hasher rclone
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
+  - backup
   - tips
 ---
 

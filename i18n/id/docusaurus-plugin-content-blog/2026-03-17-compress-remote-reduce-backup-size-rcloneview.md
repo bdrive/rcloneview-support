@@ -16,8 +16,11 @@ keywords:
   - kurangi ukuran pencadangan
   - kompresi rclone
 tags:
+  - RcloneView
   - feature
   - cost-optimization
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

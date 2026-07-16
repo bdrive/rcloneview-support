@@ -14,8 +14,11 @@ keywords:
   - Nextcloud Disaster Recovery
   - RcloneView WebDAV-Backup
 tags:
+  - RcloneView
   - nextcloud
   - backblaze-b2
+  - backup
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

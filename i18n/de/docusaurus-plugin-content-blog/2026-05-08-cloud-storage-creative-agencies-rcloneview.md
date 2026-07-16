@@ -14,7 +14,11 @@ keywords:
   - Automatisierte Asset-Backups Kreativbranche
   - Cloud-Speicher für Mediendateien
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

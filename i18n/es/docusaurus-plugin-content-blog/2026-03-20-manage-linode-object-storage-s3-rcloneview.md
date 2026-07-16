@@ -16,9 +16,11 @@ keywords:
   - almacenamiento en la nube de Akamai
   - almacenamiento con API S3
 tags:
+  - RcloneView
   - linode
   - s3-compatible
   - object-storage
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

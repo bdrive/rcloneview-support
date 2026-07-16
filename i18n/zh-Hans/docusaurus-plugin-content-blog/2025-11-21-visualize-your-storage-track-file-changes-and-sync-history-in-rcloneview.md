@@ -13,6 +13,7 @@ keywords:
   - 文件追踪
   - 审计日志
 tags:
+  - RcloneView
   - dashboard
   - sync
   - history

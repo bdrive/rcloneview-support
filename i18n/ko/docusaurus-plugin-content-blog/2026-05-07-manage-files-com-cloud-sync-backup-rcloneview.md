@@ -14,6 +14,10 @@ keywords:
   - SFTP 클라우드 동기화
   - 안전한 파일 전송
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - sftp
 ---
 

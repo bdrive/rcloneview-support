@@ -16,6 +16,7 @@ keywords:
   - subida a la nube colgada
   - sincronización rclone congelada
 tags:
+  - RcloneView
   - troubleshooting
   - performance
   - tips

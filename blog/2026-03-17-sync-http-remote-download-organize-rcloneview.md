@@ -16,8 +16,11 @@ keywords:
   - download organize cloud
   - web hosted files sync
 tags:
+  - RcloneView
   - ftp
+  - cloud-storage
   - sync
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

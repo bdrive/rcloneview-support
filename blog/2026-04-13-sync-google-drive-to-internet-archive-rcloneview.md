@@ -14,9 +14,11 @@ keywords:
   - Google Drive backup Internet Archive
   - RcloneView digital archive
 tags:
+  - RcloneView
   - google-drive
   - internet-archive
   - migration
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

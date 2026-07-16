@@ -26,7 +26,10 @@ keywords:
   - cumplimiento normativo
   - retención a largo plazo
 tags:
+  - RcloneView
+  - cloud-storage
   - cloud-migration
+  - backup
   - s3
   - sync
 ---

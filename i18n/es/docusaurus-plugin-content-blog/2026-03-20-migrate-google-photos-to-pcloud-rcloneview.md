@@ -16,6 +16,7 @@ keywords:
   - almacenamiento de fotos familiares
   - archivo de fotos seguro
 tags:
+  - RcloneView
   - google-photos
   - pcloud
   - cloud-migration

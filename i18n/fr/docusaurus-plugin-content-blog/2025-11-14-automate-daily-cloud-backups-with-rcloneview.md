@@ -12,6 +12,8 @@ keywords:
   - rcloneview
   - tâches de sauvegarde
 tags:
+  - RcloneView
+  - backup
   - automation
   - google-drive
   - onedrive

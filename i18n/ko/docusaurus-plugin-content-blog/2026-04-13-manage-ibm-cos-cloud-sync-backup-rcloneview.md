@@ -16,7 +16,11 @@ keywords:
   - cloud storage GUI
   - object storage sync
 tags:
+  - RcloneView
   - s3-compatible
+  - cloud-storage
+  - cloud-sync
+  - backup
   - object-storage
 ---
 

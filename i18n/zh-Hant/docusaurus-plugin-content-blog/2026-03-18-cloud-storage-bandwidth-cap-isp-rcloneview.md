@@ -16,8 +16,10 @@ keywords:
   - cloud sync metered connection
   - reduce cloud data usage
 tags:
+  - RcloneView
   - performance
   - tips
+  - cloud-storage
   - best-practices
 ---
 

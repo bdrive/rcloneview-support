@@ -15,7 +15,11 @@ keywords:
   - hybrid data lake cloud sync
   - on-prem hadoop cloud backup
 tags:
+  - RcloneView
   - self-hosted
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

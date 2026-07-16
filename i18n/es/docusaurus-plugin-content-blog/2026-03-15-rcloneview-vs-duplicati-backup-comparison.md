@@ -16,7 +16,10 @@ keywords:
   - solución de copia de seguridad en la nube
   - sincronización de archivos vs herramienta de backup
 tags:
+  - RcloneView
   - comparison
+  - backup
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

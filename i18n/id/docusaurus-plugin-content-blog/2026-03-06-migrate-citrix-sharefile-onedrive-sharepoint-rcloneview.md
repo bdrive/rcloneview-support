@@ -16,9 +16,11 @@ keywords:
   - sharefile to microsoft 365
   - sharefile data export
 tags:
+  - RcloneView
   - sharefile
   - onedrive
   - sharepoint
+  - cloud-storage
   - migration
 ---
 

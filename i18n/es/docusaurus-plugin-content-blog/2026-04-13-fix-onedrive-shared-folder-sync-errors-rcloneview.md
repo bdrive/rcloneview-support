@@ -16,9 +16,11 @@ keywords:
   - sincronización de OneDrive para empresas
   - solución de problemas de sincronización en la nube
 tags:
+  - RcloneView
   - onedrive
   - troubleshooting
   - tips
+  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

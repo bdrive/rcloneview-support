@@ -16,8 +16,11 @@ keywords:
   - transferir fotos entre servicios de Google
   - herramienta de organización de fotos en la nube
 tags:
+  - RcloneView
   - google-photos
   - google-drive
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,13 @@ keywords:
   - cross-agency file sharing
   - air-gapped cloud storage
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
   - compliance
   - security
+  - backup
+  - guide
   - encryption
 ---
 

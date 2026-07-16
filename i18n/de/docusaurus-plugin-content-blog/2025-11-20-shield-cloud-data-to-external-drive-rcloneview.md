@@ -16,7 +16,9 @@ keywords:
   - onedrive backup
   - dropbox backup
 tags:
+  - RcloneView
   - external-drive
+  - backup
   - google-drive
   - onedrive
   - dropbox

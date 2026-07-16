@@ -16,8 +16,10 @@ keywords:
   - rclone tls error
   - cloud storage connection fix
 tags:
+  - RcloneView
   - troubleshooting
   - security
+  - cloud-storage
   - tips
 ---
 

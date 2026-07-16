@@ -16,7 +16,10 @@ keywords:
   - premiumize transfer files
   - manage premiumize storage
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
+  - backup
   - multi-cloud
 ---
 

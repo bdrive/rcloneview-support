@@ -14,7 +14,9 @@ keywords:
   - Windows 11 雲端備份軟體
   - Windows 11 多雲同步
 tags:
+  - RcloneView
   - windows
+  - cloud-sync
   - installation
   - platform
 ---

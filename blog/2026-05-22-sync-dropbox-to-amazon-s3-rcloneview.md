@@ -16,10 +16,13 @@ keywords:
   - Dropbox S3 sync
   - cloud-to-cloud file transfer
 tags:
+  - RcloneView
   - dropbox
   - amazon-s3
   - cloud-to-cloud
   - migration
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

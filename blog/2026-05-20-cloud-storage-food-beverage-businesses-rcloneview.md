@@ -16,7 +16,11 @@ keywords:
   - food safety document backup
   - menu file cloud sync
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - industry
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

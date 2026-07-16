@@ -16,11 +16,13 @@ keywords:
   - wasabi data transfer
   - object storage migration gui
 tags:
+  - RcloneView
   - wasabi
   - cloudflare-r2
   - migration
   - cloud-migration
   - s3-compatible
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

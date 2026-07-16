@@ -13,8 +13,10 @@ keywords:
   - 雲端備份
   - 業務連續性
 tags:
+  - RcloneView
   - disaster-recovery
   - multi-cloud
+  - backup
   - sync
 ---
 

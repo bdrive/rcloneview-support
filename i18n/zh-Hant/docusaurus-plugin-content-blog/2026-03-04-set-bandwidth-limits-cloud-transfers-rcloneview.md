@@ -16,6 +16,8 @@ keywords:
   - 控制雲端傳輸速度
   - rcloneview 傳輸設定
 tags:
+  - RcloneView
+  - cloud-storage
   - performance
   - tips
   - sync

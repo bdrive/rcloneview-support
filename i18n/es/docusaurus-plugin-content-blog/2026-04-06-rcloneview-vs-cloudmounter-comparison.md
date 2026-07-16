@@ -16,10 +16,14 @@ keywords:
   - comparativa de montaje de unidades en la nube
   - gestor de almacenamiento en la nube 2026
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - mount
+  - cloud-sync
   - macos
   - windows
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

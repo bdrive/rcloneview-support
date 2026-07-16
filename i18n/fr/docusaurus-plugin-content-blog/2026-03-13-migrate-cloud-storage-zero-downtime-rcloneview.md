@@ -16,7 +16,9 @@ keywords:
   - migration cloud non perturbatrice
   - guide de changement de fournisseur cloud
 tags:
+  - RcloneView
   - migration
+  - cloud-storage
   - best-practices
 ---
 

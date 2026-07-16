@@ -16,7 +16,10 @@ keywords:
   - 意外删除云存储
   - 云端文件备份策略
 tags:
+  - RcloneView
   - data-recovery
+  - backup
+  - cloud-storage
   - tips
 ---
 

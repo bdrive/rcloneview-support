@@ -16,7 +16,9 @@ keywords:
   - backup Mac to cloud
   - macOS Privacy permissions cloud
 tags:
+  - RcloneView
   - macos
+  - cloud-sync
   - installation
   - platform
 ---

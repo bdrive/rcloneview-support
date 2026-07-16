@@ -16,7 +16,9 @@ keywords:
   - Zorin OS Google Drive
   - synchronisation cloud basée sur Ubuntu
 tags:
+  - RcloneView
   - linux
+  - cloud-sync
   - installation
   - platform
 ---

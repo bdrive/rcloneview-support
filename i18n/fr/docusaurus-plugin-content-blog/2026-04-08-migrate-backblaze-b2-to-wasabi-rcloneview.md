@@ -16,11 +16,13 @@ keywords:
   - transfert de données b2
   - interface graphique de migration de stockage objet
 tags:
+  - RcloneView
   - backblaze-b2
   - wasabi
   - migration
   - cloud-migration
   - s3-compatible
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

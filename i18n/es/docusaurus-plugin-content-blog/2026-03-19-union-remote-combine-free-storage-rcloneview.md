@@ -16,8 +16,11 @@ keywords:
   - almacenamiento en la nube virtual
   - agregar almacenamiento en la nube
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
   - multi-cloud
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

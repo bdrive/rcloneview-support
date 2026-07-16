@@ -14,7 +14,9 @@ keywords:
   - sincronización en la nube multiplataforma
   - herramienta de gestión de archivos
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,8 +16,11 @@ keywords:
   - almacenamiento en la nube para videojuegos indie
   - archivo de builds de videojuegos
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

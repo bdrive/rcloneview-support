@@ -16,7 +16,9 @@ keywords:
   - fix cloud connection
   - rcloneview re-auth
 tags:
+  - RcloneView
   - troubleshooting
+  - cloud-storage
   - tips
   - security
 ---

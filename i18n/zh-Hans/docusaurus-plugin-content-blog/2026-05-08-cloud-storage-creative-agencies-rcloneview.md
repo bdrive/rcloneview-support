@@ -14,7 +14,11 @@ keywords:
   - automate asset backups creative
   - cloud storage for media files
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

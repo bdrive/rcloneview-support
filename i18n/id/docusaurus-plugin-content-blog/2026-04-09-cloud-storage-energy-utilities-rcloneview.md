@@ -16,8 +16,12 @@ keywords:
   - power grid data backup
   - oil gas cloud storage
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
   - compliance
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

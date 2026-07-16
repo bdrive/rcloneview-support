@@ -16,7 +16,10 @@ keywords:
   - solution de stockage cloud pour photographe
   - sauvegarde fichiers raw appareil photo
 tags:
+  - RcloneView
   - photography
+  - backup
+  - cloud-storage
   - best-practices
 ---
 

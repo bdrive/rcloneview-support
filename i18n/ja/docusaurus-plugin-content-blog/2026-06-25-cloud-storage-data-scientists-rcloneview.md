@@ -15,7 +15,11 @@ keywords:
   - データサイエンス マルチクラウドツール
   - RcloneView データサイエンスワークフロー
 tags:
+  - RcloneView
+  - cloud-storage
   - ai
+  - backup
+  - guide
   - industry
   - amazon-s3
   - google-drive

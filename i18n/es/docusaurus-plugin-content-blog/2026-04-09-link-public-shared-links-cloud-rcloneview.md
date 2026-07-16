@@ -16,7 +16,10 @@ keywords:
   - url pública de almacenamiento en la nube
   - compartir archivo sin cuenta
 tags:
+  - RcloneView
   - feature
+  - cloud-storage
+  - guide
   - tips
   - collaboration
 ---

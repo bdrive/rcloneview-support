@@ -14,10 +14,12 @@ keywords:
   - Speicherkosten sparen
   - rclone azure b2
 tags:
+  - RcloneView
   - azure
   - backblaze-b2
   - cloud-to-cloud
   - migration
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

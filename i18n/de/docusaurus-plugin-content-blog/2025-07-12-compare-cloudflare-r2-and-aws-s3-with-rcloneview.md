@@ -14,6 +14,7 @@ keywords:
   - rclone GUI
   - cost-effective storage
 tags:
+  - RcloneView
   - cloudflare-r2
   - aws-s3
   - storage-comparison

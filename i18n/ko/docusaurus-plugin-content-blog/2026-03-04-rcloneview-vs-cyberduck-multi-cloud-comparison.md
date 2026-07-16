@@ -16,7 +16,9 @@ keywords:
   - cloud transfer tool comparison
   - best cloud-to-cloud transfer tool
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - file-management
   - tips
 ---

@@ -16,9 +16,11 @@ keywords:
   - unraid backup solution
   - unraid multi cloud
 tags:
+  - RcloneView
   - nas
   - docker
   - platform
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

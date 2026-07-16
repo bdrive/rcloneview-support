@@ -16,6 +16,8 @@ keywords:
   - automatización de gui de rclone
   - gestión de archivos en la nube chatops
 tags:
+  - RcloneView
+  - cloud-storage
   - automation
   - slack
   - job-management

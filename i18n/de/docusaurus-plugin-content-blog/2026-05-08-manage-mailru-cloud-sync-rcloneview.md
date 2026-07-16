@@ -14,7 +14,11 @@ keywords:
   - Cloud-Speicher-Verwaltung
   - Mail.ru Sync Desktop-App
 tags:
+  - RcloneView
   - mailru
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

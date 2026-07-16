@@ -14,6 +14,7 @@ keywords:
   - rclone PikPak
   - migración de archivos en la nube
 tags:
+  - RcloneView
   - pikpak
   - google-drive
   - cloud-to-cloud

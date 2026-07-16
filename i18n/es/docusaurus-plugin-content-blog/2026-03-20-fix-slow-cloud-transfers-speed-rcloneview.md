@@ -16,6 +16,7 @@ keywords:
   - transferencias multihilo
   - rendimiento de red
 tags:
+  - RcloneView
   - troubleshooting
   - performance
   - optimization

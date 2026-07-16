@@ -16,8 +16,12 @@ keywords:
   - gestión documental de seguros
   - cumplimiento de almacenamiento en la nube
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
   - compliance
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,6 +14,7 @@ keywords:
   - Koofr to S3 migration guide
   - rclone Koofr B2 GUI
 tags:
+  - RcloneView
   - koofr
   - backblaze-b2
   - cloud-to-cloud

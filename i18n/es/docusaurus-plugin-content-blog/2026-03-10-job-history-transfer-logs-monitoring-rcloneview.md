@@ -16,9 +16,11 @@ keywords:
   - registro de transferencias de rclone
   - herramienta de supervisión de tareas en la nube
 tags:
+  - RcloneView
   - monitoring
   - job-history
   - feature
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

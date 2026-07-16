@@ -16,8 +16,11 @@ keywords:
   - 经纪人云备份
   - 文档合规
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - business
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

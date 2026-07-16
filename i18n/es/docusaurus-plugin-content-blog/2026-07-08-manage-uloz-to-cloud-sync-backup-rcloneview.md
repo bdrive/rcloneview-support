@@ -16,6 +16,10 @@ keywords:
   - alternativa a Uloz.to
   - gestión de archivos multi-nube
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - file-management
 ---
 

@@ -15,6 +15,7 @@ keywords:
   - interfaz gráfica de rclone
   - gestión de google drive
 tags:
+  - RcloneView
   - hard-drive-backup
   - google-drive-sync
   - file-management

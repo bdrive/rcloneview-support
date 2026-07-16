@@ -16,9 +16,11 @@ keywords:
   - backblaze to aws
   - s3 migration tool
 tags:
+  - RcloneView
   - backblaze-b2
   - aws-s3
   - migration
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -16,7 +16,10 @@ keywords:
   - sincronización en la nube para TI escolar
   - copia de seguridad de Google Workspace for Education
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
   - education
 ---
 

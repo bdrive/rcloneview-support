@@ -16,8 +16,10 @@ keywords:
   - hybrid cloud storage
   - rclone cloud sync
 tags:
+  - RcloneView
   - wasabi
   - azure
+  - cloud-sync
   - cloud-to-cloud
 ---
 

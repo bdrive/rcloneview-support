@@ -16,6 +16,8 @@ keywords:
   - 商品圖片雲端
   - 電商資料備份
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
   - sync

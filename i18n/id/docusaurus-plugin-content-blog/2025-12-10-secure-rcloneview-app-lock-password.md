@@ -16,8 +16,11 @@ keywords:
   - proteksi riwayat job
   - proteksi riwayat transfer
 tags:
+  - RcloneView
   - security
+  - backup
   - job-management
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

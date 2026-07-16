@@ -16,10 +16,12 @@ keywords:
   - s3 ファイル 暗号化
   - 暗号化クラウドストレージツール
 tags:
+  - RcloneView
   - encryption
   - crypt
   - security
   - feature
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

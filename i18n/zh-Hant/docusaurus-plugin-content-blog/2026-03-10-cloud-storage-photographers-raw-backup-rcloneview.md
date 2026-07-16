@@ -16,7 +16,10 @@ keywords:
   - 攝影師雲端儲存解決方案
   - 備份相機 raw 檔案
 tags:
+  - RcloneView
   - photography
+  - backup
+  - cloud-storage
   - best-practices
 ---
 

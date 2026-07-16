@@ -16,6 +16,8 @@ keywords:
   - gestión multi-nube
   - expedientes de casos legales
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - compliance
   - security

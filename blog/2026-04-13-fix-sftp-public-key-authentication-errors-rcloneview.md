@@ -14,6 +14,7 @@ keywords:
   - SFTP key passphrase error
   - rclone SFTP connection fix
 tags:
+  - RcloneView
   - sftp
   - troubleshooting
   - tips

@@ -16,7 +16,10 @@ keywords:
   - estrategia de copia de seguridad nas
   - rcloneview compare
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
+  - backup
   - file-management
 ---
 

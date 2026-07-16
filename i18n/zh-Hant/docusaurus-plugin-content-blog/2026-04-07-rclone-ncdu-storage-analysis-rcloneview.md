@@ -14,7 +14,7 @@ keywords:
   - 儲存空間使用細目
   - 雲端資料夾大小
   - 分析遠端儲存空間
-tags: [feature, tips, cli, monitoring, dashboard, performance]
+tags: [RcloneView, feature, cloud-storage, tips, guide, cli, monitoring, dashboard, performance]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

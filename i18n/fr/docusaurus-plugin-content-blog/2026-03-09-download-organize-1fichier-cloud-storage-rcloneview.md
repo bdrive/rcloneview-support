@@ -5,9 +5,11 @@ authors: [tayson]
 description: "1Fichier est pratique pour le partage de fichiers, mais organiser ce désordre est pénible. Découvrez comment RcloneView vous permet de télécharger vos fichiers 1Fichier vers Google Drive, OneDrive ou S3 et d'automatiser tout le processus."
 keywords: ["gestionnaire de téléchargement 1fichier", "1fichier vers le cloud", "1fichier vers google drive", "gestionnaire de fichiers 1fichier", "1fichier rclone", "outil de synchronisation 1fichier", "sauvegarde 1fichier", "organiser les fichiers 1fichier", "intégration d'hébergement de fichiers", "sauvegarde cloud"]
 tags:
+  - RcloneView
   - 1fichier
   - file-management
   - cloud-backup
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

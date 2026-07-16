@@ -16,9 +16,11 @@ keywords:
   - Akamai-Cloud-Speicher
   - S3-API-Speicher
 tags:
+  - RcloneView
   - linode
   - s3-compatible
   - object-storage
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

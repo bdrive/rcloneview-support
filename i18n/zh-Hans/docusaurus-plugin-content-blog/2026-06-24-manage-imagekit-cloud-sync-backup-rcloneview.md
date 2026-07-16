@@ -14,6 +14,11 @@ keywords:
   - 云媒体管理
   - 图像 CDN 存储备份
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
   - dam
   - media
 ---

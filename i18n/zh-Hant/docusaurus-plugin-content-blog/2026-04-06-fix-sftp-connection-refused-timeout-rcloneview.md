@@ -16,8 +16,10 @@ keywords:
   - sftp authentication failed rclone
   - rclone sftp troubleshoot
 tags:
+  - RcloneView
   - troubleshooting
   - sftp
+  - guide
   - tips
   - self-hosted
 ---

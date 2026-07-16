@@ -16,7 +16,10 @@ keywords:
   - cloud remote configuration
   - organize cloud accounts
 tags:
+  - RcloneView
   - feature
+  - guide
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,6 +16,8 @@ keywords:
   - rclone commands
   - cloud storage management
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
   - file-management
   - job-management

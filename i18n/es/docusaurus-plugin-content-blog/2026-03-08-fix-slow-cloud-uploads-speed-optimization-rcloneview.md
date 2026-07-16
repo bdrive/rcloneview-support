@@ -16,7 +16,9 @@ keywords:
   - rendimiento de transferencia en la nube
   - herramienta de sincronización rápida en la nube
 tags:
+  - RcloneView
   - performance
+  - cloud-storage
   - optimization
   - tips
 ---

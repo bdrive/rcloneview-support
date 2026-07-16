@@ -16,7 +16,11 @@ keywords:
   - pencadangan cloud yang sesuai HIPAA
   - perangkat lunak klinik hewan
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

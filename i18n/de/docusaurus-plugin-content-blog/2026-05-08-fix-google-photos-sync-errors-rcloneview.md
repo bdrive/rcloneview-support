@@ -14,6 +14,7 @@ keywords:
   - fix cloud photo sync errors
   - Google Photos backup fix
 tags:
+  - RcloneView
   - google-photos
   - troubleshooting
   - tips

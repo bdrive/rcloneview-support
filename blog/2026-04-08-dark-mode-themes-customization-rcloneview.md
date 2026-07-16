@@ -16,8 +16,10 @@ keywords:
   - light mode
   - system theme
 tags:
+  - RcloneView
   - feature
   - tips
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

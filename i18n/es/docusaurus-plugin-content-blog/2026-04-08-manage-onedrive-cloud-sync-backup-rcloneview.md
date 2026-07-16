@@ -16,7 +16,12 @@ keywords:
   - onedrive multi-cloud
   - onedrive automated backup
 tags:
+  - RcloneView
   - onedrive
+  - cloud-storage
+  - cloud-sync
+  - guide
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

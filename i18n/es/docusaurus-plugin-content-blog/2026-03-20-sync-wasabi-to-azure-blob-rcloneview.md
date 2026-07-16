@@ -16,8 +16,10 @@ keywords:
   - almacenamiento en la nube híbrido
   - sincronización en la nube con rclone
 tags:
+  - RcloneView
   - wasabi
   - azure
+  - cloud-sync
   - cloud-to-cloud
 ---
 

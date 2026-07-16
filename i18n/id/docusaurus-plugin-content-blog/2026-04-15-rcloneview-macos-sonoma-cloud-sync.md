@@ -16,8 +16,11 @@ keywords:
   - pencadangan cloud Mac 2026
   - mount cloud macOS
 tags:
+  - RcloneView
   - macos
+  - cloud-sync
   - installation
+  - backup
   - platform
 ---
 

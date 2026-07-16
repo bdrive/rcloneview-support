@@ -16,8 +16,12 @@ keywords:
   - google cloud storage backup
   - gcs rclone gui
 tags:
+  - RcloneView
   - google-cloud-storage
+  - cloud-storage
+  - guide
   - object-storage
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

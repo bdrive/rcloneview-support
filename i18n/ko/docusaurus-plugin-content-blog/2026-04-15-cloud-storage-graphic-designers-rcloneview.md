@@ -16,8 +16,12 @@ keywords:
   - design studio cloud storage
   - creative file management
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - industry
   - photography
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

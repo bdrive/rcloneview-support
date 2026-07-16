@@ -14,8 +14,10 @@ keywords:
   - RcloneView 图片库
   - 云存储缩略图功能
 tags:
+  - RcloneView
   - feature
   - photography
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,7 +14,11 @@ keywords:
   - automatizar copias de seguridad de recursos creativos
   - almacenamiento en la nube para archivos multimedia
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

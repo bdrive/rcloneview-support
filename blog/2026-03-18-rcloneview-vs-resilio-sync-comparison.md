@@ -16,8 +16,10 @@ keywords:
   - best file sync tool
   - direct device sync vs cloud
 tags:
+  - RcloneView
   - comparison
   - sync
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

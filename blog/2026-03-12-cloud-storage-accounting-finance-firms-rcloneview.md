@@ -16,9 +16,11 @@ keywords:
   - tax document cloud storage
   - finance firm data management
 tags:
+  - RcloneView
   - accounting
   - finance
   - security
+  - cloud-storage
   - best-practices
 ---
 

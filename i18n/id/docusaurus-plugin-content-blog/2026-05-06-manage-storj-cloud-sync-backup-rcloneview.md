@@ -16,7 +16,11 @@ keywords:
   - Storj desktop client
   - Storj S3 compatible GUI
 tags:
+  - RcloneView
   - storj
+  - cloud-storage
+  - cloud-sync
+  - backup
   - decentralized-storage
 ---
 

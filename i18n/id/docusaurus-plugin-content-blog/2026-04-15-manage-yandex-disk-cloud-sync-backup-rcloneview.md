@@ -16,7 +16,12 @@ keywords:
   - Yandex Disk rclone
   - pengelola penyimpanan Yandex
 tags:
+  - RcloneView
   - yandex-disk
+  - cloud-storage
+  - cloud-sync
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

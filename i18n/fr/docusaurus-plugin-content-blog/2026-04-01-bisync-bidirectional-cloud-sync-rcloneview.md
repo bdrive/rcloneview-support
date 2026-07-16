@@ -16,8 +16,12 @@ keywords:
   - synchronisation à double sens onedrive
   - miroir bidirectionnel de dossier cloud
 tags:
+  - RcloneView
   - sync
+  - cloud-sync
   - feature
+  - guide
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

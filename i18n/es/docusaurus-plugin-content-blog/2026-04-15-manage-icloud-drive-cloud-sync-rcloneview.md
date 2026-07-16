@@ -16,7 +16,12 @@ keywords:
   - iCloud Drive rclone
   - copia de seguridad de almacenamiento en la nube de Apple
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - macos
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

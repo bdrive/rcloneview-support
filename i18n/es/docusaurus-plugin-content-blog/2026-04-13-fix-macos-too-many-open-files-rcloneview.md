@@ -16,6 +16,7 @@ keywords:
   - límite de archivos abiertos macOS
   - solucionar montaje de rclone en macOS
 tags:
+  - RcloneView
   - macos
   - troubleshooting
   - tips

@@ -16,7 +16,9 @@ keywords:
   - Zorin OS Google Drive
   - 基于 Ubuntu 的云同步
 tags:
+  - RcloneView
   - linux
+  - cloud-sync
   - installation
   - platform
 ---

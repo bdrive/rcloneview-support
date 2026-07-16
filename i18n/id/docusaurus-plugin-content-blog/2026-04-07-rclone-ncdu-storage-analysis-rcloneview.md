@@ -14,7 +14,7 @@ keywords:
   - rincian penggunaan penyimpanan
   - ukuran folder cloud
   - analisis remote storage
-tags: [feature, tips, cli, monitoring, dashboard, performance]
+tags: [RcloneView, feature, cloud-storage, tips, guide, cli, monitoring, dashboard, performance]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

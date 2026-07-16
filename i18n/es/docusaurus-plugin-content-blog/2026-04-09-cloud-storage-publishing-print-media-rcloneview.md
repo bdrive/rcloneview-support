@@ -16,7 +16,11 @@ keywords:
   - almacenamiento en la nube para producción de impresión
   - gestión de activos multimedia
 tags:
+  - RcloneView
   - industry
+  - cloud-storage
+  - backup
+  - guide
   - collaboration
 ---
 

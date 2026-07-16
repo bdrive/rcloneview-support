@@ -16,10 +16,12 @@ keywords:
   - transferencia de archivos onedrive
   - copia de seguridad de pcloud
 tags:
+  - RcloneView
   - pcloud
   - onedrive
   - migration
   - cloud-migration
+  - guide
   - cloud-to-cloud
 ---
 

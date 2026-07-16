@@ -14,7 +14,11 @@ keywords:
   - copia de seguridad de investigación cifrada
   - sincronización de NAS a la nube
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,6 +16,10 @@ keywords:
   - Uloz.to alternative client
   - multi-cloud file management
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - file-management
 ---
 

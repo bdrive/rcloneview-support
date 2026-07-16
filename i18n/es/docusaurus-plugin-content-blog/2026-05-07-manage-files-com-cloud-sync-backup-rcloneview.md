@@ -14,6 +14,10 @@ keywords:
   - sincronización en la nube SFTP
   - transferencia segura de archivos
 tags:
+  - RcloneView
+  - cloud-storage
+  - cloud-sync
+  - backup
   - sftp
 ---
 

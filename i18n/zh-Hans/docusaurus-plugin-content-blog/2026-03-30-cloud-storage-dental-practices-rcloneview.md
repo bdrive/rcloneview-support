@@ -16,7 +16,11 @@ keywords:
   - 牙科诊所数据保护
   - 牙医诊所云存储
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

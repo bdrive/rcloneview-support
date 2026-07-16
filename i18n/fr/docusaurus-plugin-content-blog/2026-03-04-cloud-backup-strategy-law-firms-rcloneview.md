@@ -16,6 +16,9 @@ keywords:
   - stockage cloud secteur juridique
   - sauvegarde chiffrée cabinet d'avocats
 tags:
+  - RcloneView
+  - cloud-storage
+  - backup
   - encryption
   - compliance
   - enterprise

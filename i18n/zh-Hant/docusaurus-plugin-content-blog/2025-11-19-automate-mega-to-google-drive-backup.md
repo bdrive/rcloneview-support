@@ -14,6 +14,7 @@ keywords:
   - mega transfer
   - no manual downloads
 tags:
+  - RcloneView
   - mega
   - google-drive
   - automation

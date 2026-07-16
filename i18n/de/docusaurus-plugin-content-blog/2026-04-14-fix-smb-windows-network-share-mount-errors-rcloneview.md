@@ -14,6 +14,7 @@ keywords:
   - Netzlaufwerk-Verbindungsfehler RcloneView beheben
   - SMB-Freigabe-Berechtigungsfehler
 tags:
+  - RcloneView
   - troubleshooting
   - smb
   - tips

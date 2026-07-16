@@ -14,7 +14,11 @@ keywords:
   - Asia-Pacific cloud
   - rclone OSS
 tags:
+  - RcloneView
   - alibaba-cloud
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -16,8 +16,11 @@ keywords:
   - Cloud für Bauprojekte
   - Dateisynchronisation für Bauprojekte
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - best-practices
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

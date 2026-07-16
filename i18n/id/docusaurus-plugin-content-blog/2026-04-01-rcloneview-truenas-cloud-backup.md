@@ -16,10 +16,13 @@ keywords:
   - backup truenas to cloud
   - truenas rclone integration
 tags:
+  - RcloneView
   - nas
   - cloud-backup
+  - guide
   - platform
   - linux
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

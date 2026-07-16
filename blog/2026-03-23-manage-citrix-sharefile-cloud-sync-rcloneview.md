@@ -16,8 +16,11 @@ keywords:
   - business cloud storage
   - document collaboration sync
 tags:
+  - RcloneView
   - sharefile
+  - cloud-sync
   - enterprise
+  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -13,7 +13,10 @@ keywords:
   - 雲端備份
   - 同步
 tags:
+  - RcloneView
   - automation
+  - backup
+  - cloud-storage
   - sync
 ---
 

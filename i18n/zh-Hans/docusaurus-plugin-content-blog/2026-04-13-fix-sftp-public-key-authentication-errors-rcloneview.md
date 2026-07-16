@@ -14,6 +14,7 @@ keywords:
   - SFTP 密钥密码短语错误
   - rclone SFTP 连接修复
 tags:
+  - RcloneView
   - sftp
   - troubleshooting
   - tips

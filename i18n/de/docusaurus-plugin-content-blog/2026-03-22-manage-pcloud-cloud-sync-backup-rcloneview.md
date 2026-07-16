@@ -14,7 +14,11 @@ keywords:
   - Dateisynchronisation
   - Cloud-Backup-Automatisierung
 tags:
+  - RcloneView
   - pcloud
+  - cloud-storage
+  - cloud-sync
+  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

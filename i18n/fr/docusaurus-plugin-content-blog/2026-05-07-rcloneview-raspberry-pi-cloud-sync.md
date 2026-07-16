@@ -14,8 +14,10 @@ keywords:
   - Synchronisation cloud ARM Linux
   - Stockage Raspberry Pi
 tags:
+  - RcloneView
   - raspberry-pi
   - linux
+  - cloud-sync
   - installation
 ---
 

@@ -16,6 +16,8 @@ keywords:
   - suppression des fichiers en double
   - récupération d'espace de stockage
 tags:
+  - RcloneView
+  - cloud-storage
   - cleanup
   - file-management
   - tips

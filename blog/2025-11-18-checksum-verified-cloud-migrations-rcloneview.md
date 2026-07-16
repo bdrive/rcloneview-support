@@ -14,8 +14,10 @@ keywords:
   - s3 to r2
   - compare sync
 tags:
+  - RcloneView
   - migration
   - compare
+  - backup
   - sync
   - safety
 ---

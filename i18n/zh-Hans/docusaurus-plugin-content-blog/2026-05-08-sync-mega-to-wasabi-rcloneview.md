@@ -14,6 +14,7 @@ keywords:
   - Wasabi backup from Mega
   - rclone Mega Wasabi GUI
 tags:
+  - RcloneView
   - mega
   - wasabi
   - cloud-to-cloud

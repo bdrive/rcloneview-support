@@ -16,7 +16,11 @@ keywords:
   - 加密檔案傳輸
   - 保險資料保護
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - compliance
 ---
 

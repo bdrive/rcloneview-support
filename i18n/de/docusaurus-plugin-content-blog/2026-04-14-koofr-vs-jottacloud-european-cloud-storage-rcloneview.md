@@ -14,7 +14,9 @@ keywords:
   - europäisches Cloud-Backup
   - rclone Koofr Jottacloud
 tags:
+  - RcloneView
   - comparison
+  - cloud-storage
   - european-cloud
   - koofr
 ---

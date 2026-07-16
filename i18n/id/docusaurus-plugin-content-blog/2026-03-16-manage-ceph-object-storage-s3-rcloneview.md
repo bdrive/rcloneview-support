@@ -16,7 +16,9 @@ keywords:
   - ceph s3 compatible
   - ceph visual file manager
 tags:
+  - RcloneView
   - s3-compatible
+  - cloud-storage
   - self-hosted
   - enterprise
 ---

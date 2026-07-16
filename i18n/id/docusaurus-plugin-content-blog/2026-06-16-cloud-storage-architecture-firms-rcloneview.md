@@ -16,7 +16,11 @@ keywords:
   - manajemen file firma arsitektur
   - pencadangan cloud file konstruksi
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
+  - backup
+  - guide
   - cad
 ---
 

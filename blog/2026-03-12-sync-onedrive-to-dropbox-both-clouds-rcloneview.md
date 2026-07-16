@@ -16,9 +16,11 @@ keywords:
   - onedrive dropbox backup
   - sync two cloud services
 tags:
+  - RcloneView
   - onedrive
   - dropbox
   - sync
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

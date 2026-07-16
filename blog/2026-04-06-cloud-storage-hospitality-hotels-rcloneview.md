@@ -16,8 +16,12 @@ keywords:
   - hospitality seasonal archive
   - rcloneview hospitality
 tags:
+  - RcloneView
+  - cloud-storage
   - industry
   - business
+  - guide
+  - backup
   - multi-cloud
 ---
 

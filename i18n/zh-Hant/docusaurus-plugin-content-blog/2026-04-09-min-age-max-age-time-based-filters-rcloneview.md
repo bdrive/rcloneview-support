@@ -16,8 +16,11 @@ keywords:
   - incremental sync time
   - cloud sync filter date
 tags:
+  - RcloneView
   - feature
   - filters
+  - cloud-sync
+  - guide
   - tips
 ---
 

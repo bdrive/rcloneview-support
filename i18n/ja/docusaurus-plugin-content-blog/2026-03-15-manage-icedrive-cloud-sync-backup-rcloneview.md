@@ -16,7 +16,10 @@ keywords:
   - icedrive transfer tool
   - icedrive desktop sync
 tags:
+  - RcloneView
+  - cloud-storage
   - sync
+  - backup
   - webdav
 ---
 

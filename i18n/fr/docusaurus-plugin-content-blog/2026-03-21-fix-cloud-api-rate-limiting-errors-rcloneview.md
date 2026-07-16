@@ -16,7 +16,9 @@ keywords:
   - backoff des requêtes
   - erreurs de synchronisation cloud
 tags:
+  - RcloneView
   - troubleshooting
+  - cloud-storage
   - performance
   - tips
 ---

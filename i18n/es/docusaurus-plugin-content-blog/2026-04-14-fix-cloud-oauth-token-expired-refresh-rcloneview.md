@@ -14,8 +14,10 @@ keywords:
   - reconectar proveedor de nube con rclone
   - corregir inicio de sesión en la nube caducado RcloneView
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

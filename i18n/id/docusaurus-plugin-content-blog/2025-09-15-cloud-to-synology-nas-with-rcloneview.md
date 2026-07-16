@@ -15,10 +15,12 @@ keywords:
   - rclone GUI
   - sinkronisasi terjadwal
 tags:
+  - RcloneView
   - synology
   - google-drive
   - onedrive
   - cloud-file-transfer
+  - backup
 ---
 
 

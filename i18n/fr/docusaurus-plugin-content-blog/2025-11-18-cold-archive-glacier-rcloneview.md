@@ -15,6 +15,8 @@ keywords:
   - sauvegarde cloud
   - rétention d'archives
 tags:
+  - RcloneView
+  - backup
   - archive
   - s3
   - glacier

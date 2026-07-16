@@ -16,7 +16,11 @@ keywords:
   - mega storage management
   - mega multi-cloud sync
 tags:
+  - RcloneView
   - mega
+  - cloud-storage
+  - cloud-sync
+  - backup
   - encryption
   - file-management
 ---

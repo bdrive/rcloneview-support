@@ -16,6 +16,7 @@ keywords:
   - sync direction wrong
   - cloud sync mistake fix
 tags:
+  - RcloneView
   - sync
   - data-loss
   - safety

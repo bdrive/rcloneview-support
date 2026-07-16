@@ -16,8 +16,10 @@ keywords:
   - クラウド転送 ハング
   - rclone タイムアウト復旧
 tags:
+  - RcloneView
   - troubleshooting
   - tips
+  - cloud-sync
   - performance
 ---
 

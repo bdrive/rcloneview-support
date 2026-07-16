@@ -16,8 +16,11 @@ keywords:
   - 企業雲端儲存
   - 文件協作同步
 tags:
+  - RcloneView
   - sharefile
+  - cloud-sync
   - enterprise
+  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,11 @@ keywords:
   - correction d'erreur de sauvegarde Yandex Disk
   - dépassement de quota de stockage synchronisation cloud
 tags:
+  - RcloneView
   - yandex-disk
   - troubleshooting
   - tips
+  - cloud-storage
   - cleanup
 ---
 

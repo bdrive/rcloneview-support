@@ -16,8 +16,10 @@ keywords:
   - cloud to cloud backup google
   - google drive redundancy
 tags:
+  - RcloneView
   - google-drive
   - backblaze-b2
+  - backup
   - sync
 ---
 

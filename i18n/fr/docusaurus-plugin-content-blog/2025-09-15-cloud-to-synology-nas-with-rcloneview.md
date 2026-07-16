@@ -15,10 +15,12 @@ keywords:
   - interface graphique rclone
   - synchronisation planifiée
 tags:
+  - RcloneView
   - synology
   - google-drive
   - onedrive
   - cloud-file-transfer
+  - backup
 ---
 
 

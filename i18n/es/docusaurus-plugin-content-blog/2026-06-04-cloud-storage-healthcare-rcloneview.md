@@ -16,8 +16,11 @@ keywords:
   - copia de seguridad de historiales médicos en la nube
   - cumplimiento normativo de datos de salud en la nube
 tags:
+  - RcloneView
   - healthcare
+  - cloud-storage
   - encryption
+  - backup
   - hipaa
 ---
 
