@@ -22,6 +22,13 @@ const {normalizeUrl} = require('@docusaurus/utils');
 // normalizeUrl([baseUrl, routeBasePath, archiveBasePath]) 를 쓰고, 두 값 모두
 // 이 사이트에서는 기본값이다. baseUrl 은 context 에서 이미 로케일이 반영된
 // 값(예: /support/ko/)이라 9개 로케일에 그대로 적용된다.
+//
+// 주의: docusaurus.config.js 의 blog.routeBasePath 나 archiveBasePath 기본값을
+// 바꾸면 이 두 상수도 함께 고쳐야 한다. src/theme/ArchiveLink 도 `/blog/archive`
+// 를 그대로 하드코딩하고 있어서, 여기만 바꾸고 저기를 잊어도 둘이 나란히
+// 어긋난 경로를 가리키게 될 뿐 링크는 여전히 "resolve"된다 — 즉 onBrokenLinks:
+// 'throw' 로는 안 잡힌다. (로케일 불일치는 useBaseUrl 이 동적으로 처리하므로
+// onBrokenLinks 가 실제로 잡아주지만, routeBasePath 불일치는 별개다.)
 const ROUTE_BASE_PATH = 'blog';
 const ARCHIVE_BASE_PATH = 'archive';
 
