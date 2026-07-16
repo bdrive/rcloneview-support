@@ -58,7 +58,11 @@ createServer((req, res) => {
   }
   const file = resolve(req.url);
   if (file) {
-    res.writeHead(200, { 'Content-Type': MIME[extname(file)] ?? 'application/octet-stream' });
+    res.writeHead(200, {
+      'Content-Type': MIME[extname(file)] ?? 'application/octet-stream',
+      // 로컬 프리뷰: 브라우저 휴리스틱 캐싱으로 구버전이 보이는 문제 방지
+      'Cache-Control': 'no-store',
+    });
     res.end(readFileSync(file));
   } else {
     const nf = join(ROOT, '404.html');
