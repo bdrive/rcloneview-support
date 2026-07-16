@@ -1,0 +1,18 @@
+# rcloneview.com/support/* 를 R2 버킷에서 서빙하는 Worker.
+# 배포: 이 폴더에서 `npx wrangler deploy` (최초 1회 `npx wrangler login` 필요)
+# 상세 절차: ../../DEPLOYMENT_R2_ko.md 3장
+
+name = "rcloneview-support-router"
+main = "src/index.js"
+compatibility_date = "2026-07-01"
+
+# rcloneview.com 존의 /support/* 만 이 Worker 가 받는다.
+# (www 나머지 경로는 기존 Pages 배포가 그대로 처리)
+routes = [
+  { pattern = "rcloneview.com/support*", zone_name = "rcloneview.com" },
+  { pattern = "www.rcloneview.com/support*", zone_name = "rcloneview.com" },
+]
+
+[[r2_buckets]]
+binding = "SUPPORT_BUCKET"
+bucket_name = "rcloneview-support"

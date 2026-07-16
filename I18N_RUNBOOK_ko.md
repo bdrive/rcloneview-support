@@ -119,7 +119,11 @@ git commit -m "i18n: translate N more blog posts into all 8 locales (batch X)"
 3. MDX import는 `@site/src/...` 별칭 사용
 4. 글 발행 시 8로케일 번역을 같은 PR에 포함 (위 2장 파이프라인 재사용)
 
-## 6. 배포 전환 계획 (작업 #6 — 미착수)
+## 6. 배포 전환 계획 (작업 #6 — 구현 완료, 사람 단계 대기)
+
+> **👉 실행은 [DEPLOYMENT_R2_ko.md](./DEPLOYMENT_R2_ko.md) 를 따를 것** — 초보자용
+> 상세 가이드. deploy.yml 과 Worker 코드는 저장소에 구현돼 있고,
+> 남은 것은 R2 버킷·토큰·시크릿 생성(사람)과 wrangler deploy 뿐이다.
 
 목표 구조는 I18N_OVERVIEW_ko.md 4장. 실행 단계:
 
