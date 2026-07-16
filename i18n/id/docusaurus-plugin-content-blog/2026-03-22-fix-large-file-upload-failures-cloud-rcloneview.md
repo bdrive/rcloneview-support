@@ -14,9 +14,7 @@ keywords:
   - konfigurasi timeout
   - error sinkronisasi cloud
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

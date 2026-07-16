@@ -16,10 +16,8 @@ keywords:
   - tiempo de espera de reintento de transferencia
   - solución de error de sincronización en la nube
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - performance
 ---
 

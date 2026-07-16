@@ -16,10 +16,8 @@ keywords:
   - blocage de transfert cloud
   - récupération après délai d'attente rclone
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - performance
 ---
 

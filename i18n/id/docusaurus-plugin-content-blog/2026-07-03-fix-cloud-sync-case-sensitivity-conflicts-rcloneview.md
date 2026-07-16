@@ -14,11 +14,8 @@ keywords:
   - kesalahan sinkronisasi rcloneview
   - menyelesaikan unggahan duplikat sinkronisasi cloud
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

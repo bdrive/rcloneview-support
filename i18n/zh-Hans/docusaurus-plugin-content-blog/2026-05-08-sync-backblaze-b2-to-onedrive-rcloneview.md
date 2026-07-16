@@ -14,7 +14,6 @@ keywords:
   - 从 B2 迁移到 OneDrive
   - rclone B2 OneDrive 图形界面
 tags:
-  - RcloneView
   - backblaze-b2
   - onedrive
   - cloud-to-cloud

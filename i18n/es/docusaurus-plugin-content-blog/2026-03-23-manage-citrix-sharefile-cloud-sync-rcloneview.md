@@ -16,11 +16,8 @@ keywords:
   - almacenamiento en la nube empresarial
   - sincronización de colaboración de documentos
 tags:
-  - RcloneView
   - sharefile
-  - cloud-sync
   - enterprise
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

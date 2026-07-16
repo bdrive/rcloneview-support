@@ -16,9 +16,6 @@ keywords:
   - nas backup
   - checksum
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - sync
   - file-management
 ---

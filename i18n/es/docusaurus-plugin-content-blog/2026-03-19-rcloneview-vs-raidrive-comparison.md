@@ -16,10 +16,8 @@ keywords:
   - reemplazo de raidrive
   - montar almacenamiento en la nube windows
 tags:
-  - RcloneView
   - comparison
   - mount
-  - cloud-storage
   - windows
 ---
 

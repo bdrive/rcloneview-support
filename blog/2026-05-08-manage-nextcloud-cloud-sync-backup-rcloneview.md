@@ -14,11 +14,7 @@ keywords:
   - self-hosted cloud sync RcloneView
   - Nextcloud file management desktop
 tags:
-  - RcloneView
   - nextcloud
-  - cloud-storage
-  - cloud-sync
-  - backup
   - webdav
 ---
 

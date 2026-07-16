@@ -16,10 +16,7 @@ keywords:
   - cloud provider hash comparison
   - rclone checksum verification
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-sync
-  - guide
   - tips
   - performance
 ---

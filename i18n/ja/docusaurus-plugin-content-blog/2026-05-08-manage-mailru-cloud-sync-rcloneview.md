@@ -14,11 +14,7 @@ keywords:
   - クラウドストレージ管理
   - Mail.ru 同期デスクトップアプリ
 tags:
-  - RcloneView
   - mailru
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

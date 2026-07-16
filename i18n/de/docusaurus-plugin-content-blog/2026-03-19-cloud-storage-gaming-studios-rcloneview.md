@@ -16,11 +16,8 @@ keywords:
   - indie game cloud storage
   - game build archive
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - best-practices
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

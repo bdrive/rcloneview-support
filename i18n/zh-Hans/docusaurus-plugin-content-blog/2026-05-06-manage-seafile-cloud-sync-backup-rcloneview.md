@@ -16,11 +16,7 @@ keywords:
   - Seafile 备份到 S3
   - Seafile 多云同步
 tags:
-  - RcloneView
   - seafile
-  - cloud-storage
-  - cloud-sync
-  - backup
   - self-hosted
 ---
 

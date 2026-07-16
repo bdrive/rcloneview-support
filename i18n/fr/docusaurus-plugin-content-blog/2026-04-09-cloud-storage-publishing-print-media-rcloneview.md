@@ -16,11 +16,7 @@ keywords:
   - stockage cloud production d'impression
   - gestion des ressources multimédias
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
-  - guide
   - collaboration
 ---
 

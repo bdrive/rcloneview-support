@@ -16,11 +16,8 @@ keywords:
   - tiempo de sincronización incremental
   - filtro de fecha de sincronización en la nube
 tags:
-  - RcloneView
   - feature
   - filters
-  - cloud-sync
-  - guide
   - tips
 ---
 

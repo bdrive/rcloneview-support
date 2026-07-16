@@ -15,8 +15,6 @@ keywords:
   - rclone gui
   - dateien migrieren
 tags:
-  - RcloneView
-  - cloud-sync
   - google-drive
   - onedrive
   - dropbox

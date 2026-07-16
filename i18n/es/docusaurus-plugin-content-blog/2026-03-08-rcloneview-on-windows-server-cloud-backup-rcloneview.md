@@ -16,10 +16,7 @@ keywords:
   - interfaz gráfica de copia de seguridad en la nube para windows
   - solución de copia de seguridad para windows server
 tags:
-  - RcloneView
   - windows-server
-  - backup
-  - cloud-storage
   - platform
 ---
 

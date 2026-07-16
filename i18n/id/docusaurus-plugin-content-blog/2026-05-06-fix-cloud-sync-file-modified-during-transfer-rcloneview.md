@@ -16,10 +16,8 @@ keywords:
   - rclone dimodifikasi selama transfer
   - resolusi konflik file pencadangan cloud
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - data-recovery
 ---
 

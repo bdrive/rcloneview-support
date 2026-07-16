@@ -16,9 +16,7 @@ keywords:
   - google drive filename issues
   - fix cloud sync file errors
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - tips
 ---
 

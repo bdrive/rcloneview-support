@@ -16,7 +16,6 @@ keywords:
   - 掛載遠端磁碟
   - rclone gui
 tags:
-  - RcloneView
   - cloud
   - sync
   - nas

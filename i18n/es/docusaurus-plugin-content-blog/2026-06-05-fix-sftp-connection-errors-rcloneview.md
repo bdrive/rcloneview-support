@@ -16,11 +16,9 @@ keywords:
   - sincronización en la nube remota SFTP
   - consejos de solución de problemas de RcloneView
 tags:
-  - RcloneView
   - sftp
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

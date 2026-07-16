@@ -16,11 +16,8 @@ keywords:
   - pencadangan cloud untuk agen
   - kepatuhan dokumen
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - business
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

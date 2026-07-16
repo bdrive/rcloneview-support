@@ -16,8 +16,6 @@ keywords:
   - クラウドストレージ 料金体系
   - クラウドストレージ 節約
 tags:
-  - RcloneView
-  - cloud-storage
   - pricing
   - cost-optimization
   - tips

@@ -16,11 +16,8 @@ keywords:
   - Cloud-Backup-Lösung
   - kosteneffizienter Cloud-Speicher
 tags:
-  - RcloneView
   - idrive-e2
   - s3-compatible
-  - cloud-storage
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

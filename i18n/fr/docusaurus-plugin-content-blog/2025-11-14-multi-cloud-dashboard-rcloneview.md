@@ -11,8 +11,6 @@ keywords:
   - tableau de bord cloud
   - outil de synchronisation de fichiers cloud
 tags:
-  - RcloneView
-  - cloud-sync
   - automation
   - google-drive
   - onedrive

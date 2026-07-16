@@ -15,7 +15,6 @@ keywords:
   - rclone GUI
   - manajemen penyimpanan cloud
 tags:
-  - RcloneView
   - hard-drive-backup
   - onedrive-sync
   - file-management

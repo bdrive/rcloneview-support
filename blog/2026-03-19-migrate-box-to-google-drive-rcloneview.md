@@ -16,11 +16,9 @@ keywords:
   - box alternative google
   - transfer box files
 tags:
-  - RcloneView
   - box
   - google-drive
   - migration
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

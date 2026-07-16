@@ -16,10 +16,7 @@ keywords:
   - character encoding fix
   - cross-platform filename issues
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-sync
-  - cloud-storage
   - tips
 ---
 

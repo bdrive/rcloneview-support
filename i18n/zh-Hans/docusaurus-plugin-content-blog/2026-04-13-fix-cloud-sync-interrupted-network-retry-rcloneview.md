@@ -14,10 +14,8 @@ keywords:
   - rclone 网络重试设置
   - RcloneView 同步恢复
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

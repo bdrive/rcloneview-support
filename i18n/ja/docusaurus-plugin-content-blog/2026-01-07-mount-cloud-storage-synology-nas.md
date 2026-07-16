@@ -16,8 +16,6 @@ keywords:
   - safe cloud mount
   - synology rclone
 tags:
-  - RcloneView
-  - cloud-storage
   - mount
   - file-management
   - performance

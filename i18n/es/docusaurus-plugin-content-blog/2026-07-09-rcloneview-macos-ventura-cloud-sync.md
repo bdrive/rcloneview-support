@@ -16,9 +16,7 @@ keywords:
   - copia de seguridad de Mac a la nube
   - permisos de privacidad en macOS para la nube
 tags:
-  - RcloneView
   - macos
-  - cloud-sync
   - installation
   - platform
 ---

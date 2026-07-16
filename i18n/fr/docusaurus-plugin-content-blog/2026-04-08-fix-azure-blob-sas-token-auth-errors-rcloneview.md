@@ -16,12 +16,9 @@ keywords:
   - connexion azure storage
   - corriger azure rclone
 tags:
-  - RcloneView
   - troubleshooting
   - azure
-  - cloud-storage
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

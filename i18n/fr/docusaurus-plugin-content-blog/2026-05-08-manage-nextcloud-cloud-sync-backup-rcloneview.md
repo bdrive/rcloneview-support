@@ -14,11 +14,7 @@ keywords:
   - synchronisation cloud auto-hébergée RcloneView
   - gestion de fichiers Nextcloud sur bureau
 tags:
-  - RcloneView
   - nextcloud
-  - cloud-storage
-  - cloud-sync
-  - backup
   - webdav
 ---
 

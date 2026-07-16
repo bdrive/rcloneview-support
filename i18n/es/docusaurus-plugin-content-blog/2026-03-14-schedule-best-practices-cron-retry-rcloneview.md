@@ -16,10 +16,8 @@ keywords:
   - sync schedule optimization
   - rcloneview automation tips
 tags:
-  - RcloneView
   - automation
   - feature
-  - guide
   - best-practices
 ---
 

@@ -16,11 +16,9 @@ keywords:
   - 파워 유저 팁
   - rcloneview 효율성
 tags:
-  - RcloneView
   - feature
   - tips
   - productivity
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

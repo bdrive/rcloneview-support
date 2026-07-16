@@ -16,10 +16,8 @@ keywords:
   - hidrive s3 sync
   - european cloud storage
 tags:
-  - RcloneView
   - hidrive
   - european-cloud
-  - cloud-storage
   - sync
 ---
 

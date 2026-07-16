@@ -16,13 +16,11 @@ keywords:
   - wasabi cloud storage
   - cloud-to-cloud transfer
 tags:
-  - RcloneView
   - dropbox
   - wasabi
   - migration
   - cloud-migration
   - s3-compatible
-  - guide
   - cloud-to-cloud
 ---
 

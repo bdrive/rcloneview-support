@@ -16,10 +16,7 @@ keywords:
   - cloud backup solution
   - file sync vs backup tool
 tags:
-  - RcloneView
   - comparison
-  - backup
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

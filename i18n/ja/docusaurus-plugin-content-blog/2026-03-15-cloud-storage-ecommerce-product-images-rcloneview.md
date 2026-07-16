@@ -16,8 +16,6 @@ keywords:
   - 商品画像 クラウド
   - EC データバックアップ
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - best-practices
   - sync

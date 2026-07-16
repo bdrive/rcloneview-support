@@ -16,7 +16,6 @@ keywords:
   - macfuse
   - mount network drive
 tags:
-  - RcloneView
   - mount
   - sftp
   - smb

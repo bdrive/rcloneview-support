@@ -14,7 +14,6 @@ keywords:
   - copia de seguridad en la nube europea Dropbox
   - RcloneView Dropbox Hetzner
 tags:
-  - RcloneView
   - dropbox
   - hetzner
   - cloud-to-cloud

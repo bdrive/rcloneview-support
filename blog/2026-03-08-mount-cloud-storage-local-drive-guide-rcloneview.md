@@ -16,11 +16,8 @@ keywords:
   - mount dropbox local
   - virtual drive cloud storage
 tags:
-  - RcloneView
   - mount
-  - cloud-storage
   - feature
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

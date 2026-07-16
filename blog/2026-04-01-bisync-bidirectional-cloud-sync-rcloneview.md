@@ -16,12 +16,8 @@ keywords:
   - onedrive two-way sync
   - cloud folder two-way mirror
 tags:
-  - RcloneView
   - sync
-  - cloud-sync
   - feature
-  - guide
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

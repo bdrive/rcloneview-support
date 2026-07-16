@@ -13,10 +13,7 @@ keywords:
   - Performance-Tuning
   - Cloud-Migration
 tags:
-  - RcloneView
   - performance
-  - cloud-storage
-  - backup
   - sync
   - automation
 ---

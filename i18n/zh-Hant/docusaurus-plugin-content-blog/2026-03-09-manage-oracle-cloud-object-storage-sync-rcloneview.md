@@ -16,10 +16,8 @@ keywords:
   - sync oracle cloud google drive
   - oracle cloud storage migration
 tags:
-  - RcloneView
   - oracle-cloud
   - s3-compatible
-  - cloud-storage
   - sync
 ---
 

@@ -16,9 +16,6 @@ keywords:
   - sauvegarde axée sur la confidentialité
   - interface graphique rclone
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - encryption
   - file-management
 ---

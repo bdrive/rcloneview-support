@@ -13,10 +13,7 @@ keywords:
   - 效能調校
   - 雲端遷移
 tags:
-  - RcloneView
   - performance
-  - cloud-storage
-  - backup
   - sync
   - automation
 ---

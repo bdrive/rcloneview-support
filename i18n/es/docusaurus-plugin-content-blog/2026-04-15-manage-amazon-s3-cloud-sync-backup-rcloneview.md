@@ -16,11 +16,7 @@ keywords:
   - GUI de almacenamiento de objetos S3
   - interfaz rclone para S3
 tags:
-  - RcloneView
   - amazon-s3
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3
 ---
 

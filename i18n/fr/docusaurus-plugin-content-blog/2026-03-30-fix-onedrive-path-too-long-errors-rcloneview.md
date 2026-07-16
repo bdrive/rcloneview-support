@@ -16,11 +16,9 @@ keywords:
   - résoudre erreur de chemin OneDrive
   - noms de dossiers longs OneDrive
 tags:
-  - RcloneView
   - troubleshooting
   - tips
   - onedrive
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

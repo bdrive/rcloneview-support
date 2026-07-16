@@ -14,9 +14,7 @@ keywords:
   - configuration du délai d'attente
   - erreurs de synchronisation cloud
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

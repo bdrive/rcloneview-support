@@ -16,9 +16,7 @@ keywords:
   - request backoff
   - cloud sync errors
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

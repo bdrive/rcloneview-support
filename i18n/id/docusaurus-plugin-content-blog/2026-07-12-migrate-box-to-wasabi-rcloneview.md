@@ -16,7 +16,6 @@ keywords:
   - pindahkan file antar cloud
   - migrasi Box S3
 tags:
-  - RcloneView
   - box
   - wasabi
   - cloud-to-cloud

@@ -14,10 +14,8 @@ keywords:
   - rclone network retry settings
   - RcloneView sync resume
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

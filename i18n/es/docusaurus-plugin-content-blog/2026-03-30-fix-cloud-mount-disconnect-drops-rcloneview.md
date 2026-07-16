@@ -16,7 +16,6 @@ keywords:
   - montaje en la nube estable
   - reconexión de unidad virtual
 tags:
-  - RcloneView
   - troubleshooting
   - tips
   - mount

@@ -16,10 +16,8 @@ keywords:
   - avis mountain duck
   - meilleur logiciel de montage cloud
 tags:
-  - RcloneView
   - comparison
   - mount
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,11 +16,7 @@ keywords:
   - 含備份的同步
   - rclone suffix
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
-  - backup
-  - guide
   - tips
 ---
 

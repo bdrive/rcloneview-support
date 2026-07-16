@@ -16,11 +16,8 @@ keywords:
   - defensa contra ransomware en copias de seguridad en la nube
   - estrategia anti ransomware para copias de seguridad
 tags:
-  - RcloneView
   - ransomware
   - security
-  - backup
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

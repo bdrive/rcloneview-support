@@ -16,11 +16,8 @@ keywords:
   - マルチデバイス同期
   - 双方向バックアップ
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - sync
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

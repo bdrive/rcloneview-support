@@ -14,11 +14,7 @@ keywords:
   - gestión de archivos multipropiedad
   - compartición de documentos con proveedores
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

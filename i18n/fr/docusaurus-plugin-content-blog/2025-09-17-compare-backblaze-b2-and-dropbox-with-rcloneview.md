@@ -14,12 +14,10 @@ keywords:
   - interface graphique rclone
   - synchronisation planifiée
 tags:
-  - RcloneView
   - Backblaze
   - dropbox
   - cloud-file-transfer
   - cloud-migration
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

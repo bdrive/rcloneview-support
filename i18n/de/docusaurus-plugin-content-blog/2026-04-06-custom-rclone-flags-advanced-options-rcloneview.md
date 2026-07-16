@@ -16,10 +16,8 @@ keywords:
   - rclone performance tuning
   - rclone debugging flags
 tags:
-  - RcloneView
   - feature
   - rclone
-  - guide
   - tips
   - cli
   - performance

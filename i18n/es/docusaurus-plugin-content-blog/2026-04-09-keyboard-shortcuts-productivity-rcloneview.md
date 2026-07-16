@@ -16,11 +16,9 @@ keywords:
   - consejos para usuarios avanzados
   - eficiencia de rcloneview
 tags:
-  - RcloneView
   - feature
   - tips
   - productivity
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

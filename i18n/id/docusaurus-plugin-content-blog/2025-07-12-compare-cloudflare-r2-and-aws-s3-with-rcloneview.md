@@ -14,7 +14,6 @@ keywords:
   - rclone GUI
   - penyimpanan hemat biaya
 tags:
-  - RcloneView
   - cloudflare-r2
   - aws-s3
   - storage-comparison

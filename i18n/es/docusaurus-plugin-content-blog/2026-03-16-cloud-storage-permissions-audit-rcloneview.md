@@ -16,11 +16,9 @@ keywords:
   - revisión de almacenamiento en la nube
   - auditoría multi nube
 tags:
-  - RcloneView
   - organization
   - best-practices
   - tips
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

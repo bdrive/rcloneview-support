@@ -16,11 +16,7 @@ keywords:
   - gestión de activos de redes sociales
   - flujo de trabajo de contenido multi-nube
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

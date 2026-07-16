@@ -14,9 +14,7 @@ keywords:
   - cloud backup software Windows 11
   - multi-cloud sync Windows 11
 tags:
-  - RcloneView
   - windows
-  - cloud-sync
   - installation
   - platform
 ---

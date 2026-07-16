@@ -15,11 +15,7 @@ keywords:
   - sinkronisasi cloud data lake hybrid
   - pencadangan cloud hadoop on-prem
 tags:
-  - RcloneView
   - self-hosted
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

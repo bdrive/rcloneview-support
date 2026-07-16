@@ -14,11 +14,8 @@ keywords:
   - media synchronization
   - creator cloud workflow
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - media
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

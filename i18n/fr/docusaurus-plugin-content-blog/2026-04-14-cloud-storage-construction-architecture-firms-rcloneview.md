@@ -14,11 +14,7 @@ keywords:
   - sauvegarde cloud pour architectes
   - stockage cloud d'archives de projet
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

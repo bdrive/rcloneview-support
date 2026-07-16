@@ -16,11 +16,7 @@ keywords:
   - rclone internet archive backend
   - preserve files internet archive
 tags:
-  - RcloneView
   - internet-archive
-  - cloud-storage
-  - backup
-  - guide
   - digital-preservation
 ---
 

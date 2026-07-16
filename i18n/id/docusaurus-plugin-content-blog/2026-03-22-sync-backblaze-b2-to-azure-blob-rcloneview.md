@@ -16,10 +16,8 @@ keywords:
   - pencadangan hemat biaya
   - strategi multi-cloud
 tags:
-  - RcloneView
   - backblaze-b2
   - azure
-  - cloud-sync
   - cloud-to-cloud
 ---
 

@@ -73,11 +73,6 @@ backblaze-b2:
   permalink: /backblaze-b2
   description: Backblaze B2 관련 게시물입니다.
 
-backup:
-  label: 백업
-  permalink: /backup
-  description: 백업 관련 게시물입니다.
-
 best-practices:
   label: 모범 사례
   permalink: /best-practices
@@ -137,11 +132,6 @@ cloud-security:
   label: 클라우드 보안
   permalink: /cloud-security
   description: 클라우드 보안 관련 게시물입니다.
-
-cloud-storage:
-  label: 클라우드 스토리지
-  permalink: /cloud-storage
-  description: 클라우드 스토리지 관련 게시물입니다.
 
 cloud-storage-synchronization:
   label: 클라우드 스토리지 동기화
@@ -377,11 +367,6 @@ google-photos:
   label: Google Photos
   permalink: /google-photos
   description: Google Photos 관련 게시물입니다.
-
-guide:
-  label: 가이드
-  permalink: /guide
-  description: 가이드 관련 게시물입니다.
 
 hard-drive:
   label: 하드 드라이브
@@ -692,11 +677,6 @@ rclone-crypt:
   label: Rclone Crypt
   permalink: /rclone-crypt
   description: Rclone Crypt 관련 게시물입니다.
-
-RcloneView:
-  label: RcloneView
-  permalink: /rcloneview
-  description: RcloneView 관련 게시물입니다.
 
 reference:
   label: 참고 자료

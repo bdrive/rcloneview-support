@@ -16,9 +16,7 @@ keywords:
   - reiniciar transferencia en la nube
   - recuperación de sincronización fallida
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

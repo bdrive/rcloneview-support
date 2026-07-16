@@ -16,12 +16,7 @@ keywords:
   - FTP-Speicher verwalten
   - FTP rclone GUI
 tags:
-  - RcloneView
   - ftp
-  - cloud-storage
-  - cloud-sync
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

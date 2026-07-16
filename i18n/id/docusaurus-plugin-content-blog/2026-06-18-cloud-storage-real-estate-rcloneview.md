@@ -15,10 +15,7 @@ keywords:
   - multi-cloud real estate workflow
   - real estate backup automation
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
   - business
 ---
 

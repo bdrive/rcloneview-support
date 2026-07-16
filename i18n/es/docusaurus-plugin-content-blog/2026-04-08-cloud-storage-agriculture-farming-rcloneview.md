@@ -16,11 +16,7 @@ keywords:
   - almacenamiento s3 para agricultura
   - agricultura multi-nube
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
-  - guide
   - automation
 ---
 

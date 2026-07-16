@@ -14,11 +14,7 @@ keywords:
   - google drive collaboration backup
   - manage shared google drive files
 tags:
-  - RcloneView
   - google-drive
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

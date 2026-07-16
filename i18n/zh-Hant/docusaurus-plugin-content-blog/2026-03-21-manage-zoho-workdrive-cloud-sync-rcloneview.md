@@ -16,11 +16,7 @@ keywords:
   - 多雲同步
   - Zoho 整合
 tags:
-  - RcloneView
   - zoho
-  - cloud-storage
-  - cloud-sync
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,11 +16,7 @@ keywords:
   - GUI de almacenamiento en la nube
   - sincronización de almacenamiento de objetos
 tags:
-  - RcloneView
   - s3-compatible
-  - cloud-storage
-  - cloud-sync
-  - backup
   - object-storage
 ---
 

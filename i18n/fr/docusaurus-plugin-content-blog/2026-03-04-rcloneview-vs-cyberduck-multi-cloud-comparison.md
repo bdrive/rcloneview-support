@@ -16,9 +16,7 @@ keywords:
   - comparaison d'outils de transfert cloud
   - meilleur outil de transfert cloud-à-cloud
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
   - file-management
   - tips
 ---

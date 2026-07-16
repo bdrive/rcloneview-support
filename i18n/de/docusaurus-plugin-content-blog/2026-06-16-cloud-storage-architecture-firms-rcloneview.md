@@ -16,11 +16,7 @@ keywords:
   - Dateiverwaltung für Architekturbüros
   - Cloud-Backup für Baudateien
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
   - cad
 ---
 

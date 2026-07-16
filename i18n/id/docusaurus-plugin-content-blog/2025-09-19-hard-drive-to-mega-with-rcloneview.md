@@ -12,7 +12,6 @@ keywords:
   - rclone GUI
   - tugas terjadwal
 tags:
-  - RcloneView
   - mega
   - hard-drive
   - cloud-backup

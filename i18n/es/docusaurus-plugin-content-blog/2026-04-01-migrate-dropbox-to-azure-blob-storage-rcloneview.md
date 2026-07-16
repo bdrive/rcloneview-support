@@ -16,13 +16,10 @@ keywords:
   - migración a la nube azure blob
   - transferir de dropbox a azure
 tags:
-  - RcloneView
   - dropbox
   - azure
   - cloud-migration
   - migration
-  - guide
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

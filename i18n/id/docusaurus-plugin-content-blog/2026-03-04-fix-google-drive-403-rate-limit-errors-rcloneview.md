@@ -16,10 +16,8 @@ keywords:
   - google drive too many requests
   - fix rclone google drive error
 tags:
-  - RcloneView
   - google-drive
   - troubleshooting
-  - cloud-storage
   - performance
 ---
 

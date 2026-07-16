@@ -14,8 +14,6 @@ keywords:
   - cloud backup immutability
   - compliance backup
 tags:
-  - RcloneView
-  - backup
   - security
   - s3
   - wasabi

@@ -16,11 +16,8 @@ keywords:
   - praktik terbaik keamanan
   - verifikasi kepatuhan
 tags:
-  - RcloneView
-  - cloud-storage
   - security
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

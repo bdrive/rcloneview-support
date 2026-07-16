@@ -16,11 +16,8 @@ keywords:
   - クラウド欠落ファイル検索
   - クラウドフォルダ差分
 tags:
-  - RcloneView
   - folder-comparison
   - feature
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,7 +16,6 @@ keywords:
   - Norwegian cloud storage
   - RcloneView transfer
 tags:
-  - RcloneView
   - jottacloud
   - backblaze-b2
   - cloud-to-cloud

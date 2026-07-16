@@ -16,11 +16,7 @@ keywords:
   - sinkronisasi file media perjalanan
   - pencadangan agen perjalanan rclone
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,10 +16,8 @@ keywords:
   - expandrive replacement
   - mount cloud drive tool
 tags:
-  - RcloneView
   - comparison
   - mount
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

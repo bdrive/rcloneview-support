@@ -16,10 +16,7 @@ keywords:
   - gestión de archivos en la nube
   - recuperación de espacio en disco
 tags:
-  - RcloneView
-  - cloud-storage
   - cleanup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

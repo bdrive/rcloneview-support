@@ -16,8 +16,6 @@ keywords:
   - cloud sync best practices
   - detect sync differences
 tags:
-  - RcloneView
-  - cloud-storage
   - sync
   - troubleshooting
   - best-practices

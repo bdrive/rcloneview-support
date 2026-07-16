@@ -14,9 +14,7 @@ keywords:
   - copia de seguridad en la nube por niveles RcloneView
   - mover archivos a archivo en la nube automáticamente
 tags:
-  - RcloneView
   - multi-cloud
-  - cloud-storage
   - cost-optimization
   - tips
 ---

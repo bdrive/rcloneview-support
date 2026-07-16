@@ -16,12 +16,9 @@ keywords:
   - Cloud-übergreifende Dateiübertragung
   - HiDrive-Dateisynchronisation
 tags:
-  - RcloneView
   - hidrive
   - amazon-s3
   - cloud-to-cloud
-  - backup
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

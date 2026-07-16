@@ -16,12 +16,9 @@ keywords:
   - asustor cloud file manager
   - rcloneview nas setup
 tags:
-  - RcloneView
   - nas
   - platform
-  - backup
   - cloud-backup
-  - guide
   - automation
 ---
 

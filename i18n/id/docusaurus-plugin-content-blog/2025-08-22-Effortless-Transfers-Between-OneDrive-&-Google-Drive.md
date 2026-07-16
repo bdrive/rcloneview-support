@@ -14,7 +14,6 @@ keywords:
   - manajemen penyimpanan cloud
   - Onedrive ke Google Drive
 tags:
-  - RcloneView
   - cloud-to-cloud
   - file-management
   - cloud-file-transfer

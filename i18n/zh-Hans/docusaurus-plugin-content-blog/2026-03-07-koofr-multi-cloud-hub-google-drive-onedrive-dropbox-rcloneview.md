@@ -16,12 +16,9 @@ keywords:
   - koofr file manager
   - koofr eu cloud storage
 tags:
-  - RcloneView
   - koofr
-  - cloud-storage
   - multi-cloud
   - sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

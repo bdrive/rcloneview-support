@@ -16,12 +16,8 @@ keywords:
   - pencadangan cloud IONOS
   - kelola file IONOS RcloneView
 tags:
-  - RcloneView
-  - cloud-storage
   - s3-compatible
   - european-cloud
-  - backup
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

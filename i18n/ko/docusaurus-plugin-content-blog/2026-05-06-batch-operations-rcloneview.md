@@ -16,11 +16,9 @@ keywords:
   - 클라우드 동기화 단계 자동화
   - RcloneView 고급 자동화
 tags:
-  - RcloneView
   - feature
   - automation
   - job-management
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

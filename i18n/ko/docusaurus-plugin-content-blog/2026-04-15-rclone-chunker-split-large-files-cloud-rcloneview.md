@@ -16,12 +16,8 @@ keywords:
   - rclone 가상 리모트
   - 대용량 파일 클라우드 스토리지
 tags:
-  - RcloneView
   - feature
-  - cloud-storage
-  - cloud-sync
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

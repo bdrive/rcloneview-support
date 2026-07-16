@@ -16,9 +16,7 @@ keywords:
   - Mac을 클라우드로 백업
   - macOS 개인정보 보호 권한 클라우드
 tags:
-  - RcloneView
   - macos
-  - cloud-sync
   - installation
   - platform
 ---

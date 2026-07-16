@@ -16,11 +16,8 @@ keywords:
   - proteger google drive
   - mejores prácticas de cifrado en la nube
 tags:
-  - RcloneView
   - security
-  - cloud-storage
   - best-practices
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

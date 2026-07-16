@@ -16,11 +16,7 @@ keywords:
   - multi-cloud sport
   - gestion de données sportives
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
-  - guide
   - media
 ---
 

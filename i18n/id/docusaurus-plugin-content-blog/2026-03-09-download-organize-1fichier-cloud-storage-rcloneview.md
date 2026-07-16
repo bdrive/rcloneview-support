@@ -5,11 +5,9 @@ authors: [tayson]
 description: "1Fichier praktis untuk berbagi file, tetapi mengatur kekacauan itu menyakitkan. Pelajari cara RcloneView memungkinkan Anda mengunduh file 1Fichier ke Google Drive, OneDrive, atau S3 dan mengotomatiskan seluruh prosesnya."
 keywords: ["1fichier download manager", "1fichier to cloud", "1fichier to google drive", "1fichier file manager", "1fichier rclone", "1fichier sync tool", "1fichier backup", "organize 1fichier files", "file hosting integration", "cloud backup"]
 tags:
-  - RcloneView
   - 1fichier
   - file-management
   - cloud-backup
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

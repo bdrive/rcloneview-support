@@ -16,12 +16,10 @@ keywords:
   - chiffrer les fichiers s3
   - outil de stockage cloud chiffré
 tags:
-  - RcloneView
   - encryption
   - crypt
   - security
   - feature
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

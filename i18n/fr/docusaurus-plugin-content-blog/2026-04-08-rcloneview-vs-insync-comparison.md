@@ -15,11 +15,8 @@ keywords:
   - interface graphique rclone
   - gestion de fichiers cloud
 tags:
-  - RcloneView
   - comparison
   - compare
-  - cloud-storage
-  - cloud-sync
   - google-drive
   - onedrive
 ---

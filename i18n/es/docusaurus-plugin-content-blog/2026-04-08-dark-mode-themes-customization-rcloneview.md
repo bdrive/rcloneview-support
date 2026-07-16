@@ -16,10 +16,8 @@ keywords:
   - modo claro
   - tema del sistema
 tags:
-  - RcloneView
   - feature
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

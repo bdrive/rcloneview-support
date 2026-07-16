@@ -16,7 +16,6 @@ keywords:
   - interface graphique rclone
   - transfert cloud à cloud
 tags:
-  - RcloneView
   - cloud
   - sync
   - migration

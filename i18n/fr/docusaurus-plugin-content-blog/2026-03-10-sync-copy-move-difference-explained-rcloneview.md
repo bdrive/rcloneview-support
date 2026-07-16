@@ -16,12 +16,9 @@ keywords:
   - which cloud sync type
   - safe cloud transfer method
 tags:
-  - RcloneView
   - sync
   - copy
   - move
-  - guide
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,8 +16,6 @@ keywords:
   - dropbox rate limit
   - cloud storage api limits
 tags:
-  - RcloneView
-  - cloud-storage
   - troubleshooting
   - api
   - tips

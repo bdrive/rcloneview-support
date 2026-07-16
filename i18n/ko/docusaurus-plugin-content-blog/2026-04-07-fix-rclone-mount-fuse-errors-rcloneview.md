@@ -16,11 +16,9 @@ keywords:
   - rcloneview mount troubleshooting
   - fix rclone FUSE error
 tags:
-  - RcloneView
   - troubleshooting
   - mount
   - vfs
-  - guide
   - tips
   - linux
   - windows

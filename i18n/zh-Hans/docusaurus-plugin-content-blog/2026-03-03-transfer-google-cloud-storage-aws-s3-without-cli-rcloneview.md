@@ -16,10 +16,8 @@ keywords:
   - google cloud storage rclone
   - gcs to s3 without cli
 tags:
-  - RcloneView
   - google-cloud-storage
   - aws-s3
-  - cloud-storage
   - migration
   - sync
   - multi-cloud

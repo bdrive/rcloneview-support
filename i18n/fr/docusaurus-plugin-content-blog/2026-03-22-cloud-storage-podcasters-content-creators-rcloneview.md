@@ -14,11 +14,8 @@ keywords:
   - synchronisation des médias
   - flux de travail cloud pour créateurs
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - media
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

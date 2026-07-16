@@ -16,11 +16,9 @@ keywords:
   - Box cloud backup RcloneView
   - Google Drive Box file transfer
 tags:
-  - RcloneView
   - google-drive
   - box
   - cloud-to-cloud
-  - cloud-sync
   - migration
 ---
 

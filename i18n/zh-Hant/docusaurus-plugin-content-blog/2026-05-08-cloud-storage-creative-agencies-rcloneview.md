@@ -14,11 +14,7 @@ keywords:
   - 自動化創意資產備份
   - 媒體檔案雲端儲存
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

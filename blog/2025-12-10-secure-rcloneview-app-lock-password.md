@@ -16,11 +16,8 @@ keywords:
   - job history protection
   - transfer history protection
 tags:
-  - RcloneView
   - security
-  - backup
   - job-management
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

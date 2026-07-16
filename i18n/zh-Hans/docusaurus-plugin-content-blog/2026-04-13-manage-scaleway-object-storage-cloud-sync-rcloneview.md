@@ -14,11 +14,8 @@ keywords:
   - S3 兼容云同步
   - Scaleway rcloneview 设置
 tags:
-  - RcloneView
   - s3-compatible
   - object-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

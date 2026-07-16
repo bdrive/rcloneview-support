@@ -16,12 +16,7 @@ keywords:
   - sharepoint multi-cloud
   - sharepoint automated backup
 tags:
-  - RcloneView
   - sharepoint
-  - cloud-storage
-  - cloud-sync
-  - guide
-  - backup
   - enterprise
 ---
 

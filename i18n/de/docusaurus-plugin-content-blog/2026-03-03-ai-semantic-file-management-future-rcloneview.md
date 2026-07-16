@@ -16,9 +16,7 @@ keywords:
   - semantic search cloud storage
   - machine learning file organization
 tags:
-  - RcloneView
   - ai
-  - cloud-storage
   - file-management
   - innovation
 ---

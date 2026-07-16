@@ -16,9 +16,7 @@ keywords:
   - 不中斷雲端遷移
   - 雲端服務商切換指南
 tags:
-  - RcloneView
   - migration
-  - cloud-storage
   - best-practices
 ---
 

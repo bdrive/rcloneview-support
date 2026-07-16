@@ -14,9 +14,7 @@ keywords:
   - RcloneView 分层云备份
   - 自动将文件迁移到云归档
 tags:
-  - RcloneView
   - multi-cloud
-  - cloud-storage
   - cost-optimization
   - tips
 ---

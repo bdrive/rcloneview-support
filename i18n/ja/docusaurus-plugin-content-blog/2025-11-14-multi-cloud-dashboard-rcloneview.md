@@ -11,8 +11,6 @@ keywords:
   - クラウドダッシュボード
   - クラウドファイル同期ツール
 tags:
-  - RcloneView
-  - cloud-sync
   - automation
   - google-drive
   - onedrive

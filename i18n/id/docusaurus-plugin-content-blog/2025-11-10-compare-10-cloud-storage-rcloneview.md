@@ -14,10 +14,7 @@ keywords:
   - rclone gui
   - perbandingan penyimpanan cloud
 tags:
-  - RcloneView
-  - cloud-storage
   - comparison
-  - backup
   - sync
   - automation
 ---

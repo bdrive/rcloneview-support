@@ -14,10 +14,6 @@ keywords:
   - pengelola file cloud
   - alternatif klien Linkbox
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - file-management
 ---
 

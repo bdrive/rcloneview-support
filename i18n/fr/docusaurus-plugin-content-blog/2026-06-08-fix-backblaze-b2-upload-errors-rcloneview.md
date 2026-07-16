@@ -15,11 +15,9 @@ keywords:
   - correction des erreurs d'upload cloud
   - Backblaze B2 accès refusé
 tags:
-  - RcloneView
   - troubleshooting
   - backblaze-b2
   - tips
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

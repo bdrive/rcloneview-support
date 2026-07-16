@@ -16,11 +16,7 @@ keywords:
   - 建筑事务所文件管理
   - 建筑文件云备份
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
   - cad
 ---
 

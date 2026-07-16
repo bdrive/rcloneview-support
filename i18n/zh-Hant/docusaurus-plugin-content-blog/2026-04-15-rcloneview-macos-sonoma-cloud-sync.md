@@ -16,11 +16,8 @@ keywords:
   - Mac 雲端備份 2026
   - macOS 雲端掛載
 tags:
-  - RcloneView
   - macos
-  - cloud-sync
   - installation
-  - backup
   - platform
 ---
 

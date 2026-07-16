@@ -15,12 +15,10 @@ keywords:
   - migración a onedrive desde box rcloneview
   - mover archivos de box a microsoft onedrive
 tags:
-  - RcloneView
   - box
   - onedrive
   - cloud-to-cloud
   - migration
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,7 @@ keywords:
   - pikpak migration
   - pikpak alternative backup
 tags:
-  - RcloneView
   - pikpak
-  - cloud-storage
   - sync
 ---
 

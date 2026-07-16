@@ -16,9 +16,7 @@ keywords:
   - reintento con espera
   - errores de sincronización en la nube
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

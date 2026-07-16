@@ -16,14 +16,11 @@ keywords:
   - idrive e2 test
   - beste günstige cloud-speicher für backup
 tags:
-  - RcloneView
   - wasabi
   - backblaze-b2
   - idrive-e2
   - comparison
   - storage-comparison
-  - cloud-storage
-  - backup
   - cost-optimization
 ---
 

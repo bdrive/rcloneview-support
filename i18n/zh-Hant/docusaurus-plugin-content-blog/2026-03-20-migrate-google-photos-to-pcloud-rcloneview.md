@@ -16,7 +16,6 @@ keywords:
   - 家庭相片儲存
   - 安全相片封存
 tags:
-  - RcloneView
   - google-photos
   - pcloud
   - cloud-migration

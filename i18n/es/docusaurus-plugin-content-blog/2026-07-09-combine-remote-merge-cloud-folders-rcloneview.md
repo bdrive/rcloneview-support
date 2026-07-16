@@ -16,11 +16,8 @@ keywords:
   - organizar carpetas de almacenamiento en la nube
   - fusión de carpetas entre proveedores
 tags:
-  - RcloneView
   - feature
   - multi-cloud
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

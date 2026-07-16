@@ -16,10 +16,7 @@ keywords:
   - job pencadangan multi-cloud
   - one to many cloud sync
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
-  - backup
   - automation
 ---
 

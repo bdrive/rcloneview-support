@@ -16,12 +16,8 @@ keywords:
   - 設計工作室雲端儲存
   - 創意檔案管理
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - industry
   - photography
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,11 +14,7 @@ keywords:
   - cloud backup Pixeldrain
   - Pixeldrain sync setup
 tags:
-  - RcloneView
-  - cloud-storage
   - cloud-sync
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

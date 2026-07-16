@@ -14,11 +14,8 @@ keywords:
   - S3-compatible object storage
   - OVHcloud rcloneview setup
 tags:
-  - RcloneView
   - s3-compatible
   - object-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

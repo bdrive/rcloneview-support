@@ -16,11 +16,8 @@ keywords:
   - copia de seguridad en la nube para agentes
   - cumplimiento documental
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - business
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

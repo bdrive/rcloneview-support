@@ -16,10 +16,8 @@ keywords:
   - Cloud-Aufräum-Tool
   - unnötige Cloud-Dateien
 tags:
-  - RcloneView
   - cost-optimization
   - tips
-  - cloud-storage
   - organization
 ---
 

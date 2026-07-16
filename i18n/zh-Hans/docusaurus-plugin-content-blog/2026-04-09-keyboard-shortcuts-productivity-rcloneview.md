@@ -16,11 +16,9 @@ keywords:
   - 高级用户技巧
   - rcloneview 效率
 tags:
-  - RcloneView
   - feature
   - tips
   - productivity
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

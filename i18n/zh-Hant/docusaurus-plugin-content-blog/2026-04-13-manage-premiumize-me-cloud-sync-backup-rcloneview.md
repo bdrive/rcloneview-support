@@ -14,10 +14,6 @@ keywords:
   - premiumize 雲端傳輸
   - premiumize 檔案管理
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - media
 ---
 

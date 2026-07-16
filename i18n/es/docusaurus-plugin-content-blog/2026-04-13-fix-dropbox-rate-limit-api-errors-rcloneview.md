@@ -14,7 +14,6 @@ keywords:
   - rclone Dropbox throttling
   - solucionar límite de velocidad de subida de Dropbox
 tags:
-  - RcloneView
   - dropbox
   - troubleshooting
   - tips

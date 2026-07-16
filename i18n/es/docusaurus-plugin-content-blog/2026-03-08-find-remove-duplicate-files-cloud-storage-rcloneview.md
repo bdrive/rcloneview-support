@@ -16,8 +16,6 @@ keywords:
   - herramienta de deduplicación en la nube
   - limpiar google drive
 tags:
-  - RcloneView
-  - cloud-storage
   - duplicates
   - cleanup
   - tips

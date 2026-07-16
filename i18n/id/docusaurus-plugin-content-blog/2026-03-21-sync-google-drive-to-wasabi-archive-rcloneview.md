@@ -16,10 +16,8 @@ keywords:
   - arsip Google Drive
   - hot storage
 tags:
-  - RcloneView
   - google-drive
   - wasabi
-  - cloud-sync
   - archive
 ---
 

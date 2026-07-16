@@ -16,12 +16,10 @@ keywords:
   - archivado de Google Drive
   - almacenamiento en frío de Backblaze
 tags:
-  - RcloneView
   - google-drive
   - backblaze-b2
   - cloud-to-cloud
   - migration
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -15,7 +15,6 @@ keywords:
   - transferencia de archivos entre nubes
   - sincronización de iCloud Drive con RcloneView
 tags:
-  - RcloneView
   - cloud-to-cloud
   - migration
   - google-drive

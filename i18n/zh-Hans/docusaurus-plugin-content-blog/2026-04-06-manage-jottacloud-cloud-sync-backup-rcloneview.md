@@ -16,12 +16,7 @@ keywords:
   - scheduled backup
   - multi-cloud management
 tags:
-  - RcloneView
   - jottacloud
-  - cloud-storage
-  - cloud-sync
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

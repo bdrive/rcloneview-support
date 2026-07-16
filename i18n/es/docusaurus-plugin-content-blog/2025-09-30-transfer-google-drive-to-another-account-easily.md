@@ -12,9 +12,7 @@ keywords:
   - sincronización en la nube
   - rclone gui
 tags:
-  - RcloneView
   - google-drive
-  - cloud-sync
   - migration
 ---
 

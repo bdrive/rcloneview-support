@@ -16,10 +16,7 @@ keywords:
   - P2P 文件共享
   - 去中心化同步
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

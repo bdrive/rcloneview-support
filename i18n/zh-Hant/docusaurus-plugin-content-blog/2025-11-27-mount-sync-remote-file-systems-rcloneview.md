@@ -16,7 +16,6 @@ keywords:
   - remote explorer
   - sync automation
 tags:
-  - RcloneView
   - cloud
   - sync
   - mount

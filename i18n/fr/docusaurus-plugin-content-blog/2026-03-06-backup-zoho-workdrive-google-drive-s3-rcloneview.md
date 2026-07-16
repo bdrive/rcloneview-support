@@ -16,10 +16,7 @@ keywords:
   - zoho workdrive rclone
   - automatisation sauvegarde fichiers zoho
 tags:
-  - RcloneView
   - zoho
-  - cloud-storage
-  - backup
   - sync
   - webdav
 ---

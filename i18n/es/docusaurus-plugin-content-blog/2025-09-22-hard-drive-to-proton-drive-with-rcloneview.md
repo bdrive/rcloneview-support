@@ -14,11 +14,9 @@ keywords:
   - sincronización programada
   - de local a la nube
 tags:
-  - RcloneView
   - proton-drive
   - hard-drive
   - cloud-backup
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

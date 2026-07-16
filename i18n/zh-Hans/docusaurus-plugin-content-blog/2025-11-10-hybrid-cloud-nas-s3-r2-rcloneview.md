@@ -13,12 +13,10 @@ keywords:
   - cloudflare r2
   - 对象存储
 tags:
-  - RcloneView
   - hybrid-cloud
   - s3
   - cloudflare-r2
   - nas
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

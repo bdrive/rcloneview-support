@@ -16,12 +16,8 @@ keywords:
   - multi-cloud animation pipeline
   - cloud storage visual effects VFX
 tags:
-  - RcloneView
-  - cloud-storage
   - media
   - video-production
-  - backup
-  - guide
   - dam
 ---
 

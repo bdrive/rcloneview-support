@@ -16,11 +16,8 @@ keywords:
   - 雲端傳輸預覽
   - 同步前比對
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,10 +16,8 @@ keywords:
   - nextcloud multi cloud
   - nextcloud off site backup
 tags:
-  - RcloneView
   - nextcloud
   - self-hosted
-  - cloud-storage
   - sync
 ---
 

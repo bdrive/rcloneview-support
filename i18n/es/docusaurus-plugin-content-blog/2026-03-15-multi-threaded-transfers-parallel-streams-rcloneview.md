@@ -16,10 +16,8 @@ keywords:
   - carga multiflujo
   - maximizar velocidad de transferencia en la nube
 tags:
-  - RcloneView
   - performance
   - feature
-  - guide
   - tips
 ---
 

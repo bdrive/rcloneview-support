@@ -15,9 +15,7 @@ keywords:
   - 媒体工作流
   - 多云
 tags:
-  - RcloneView
   - media
-  - cloud-storage
   - mount
   - sync
 ---

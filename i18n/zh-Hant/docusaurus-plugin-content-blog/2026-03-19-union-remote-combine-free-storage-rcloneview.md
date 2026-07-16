@@ -16,11 +16,8 @@ keywords:
   - virtual cloud storage
   - aggregate cloud storage
 tags:
-  - RcloneView
   - feature
-  - cloud-storage
   - multi-cloud
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

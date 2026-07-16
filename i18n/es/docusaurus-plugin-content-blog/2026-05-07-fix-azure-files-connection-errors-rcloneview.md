@@ -14,7 +14,6 @@ keywords:
   - solución de problemas de almacenamiento en la nube
   - rclone Azure Files
 tags:
-  - RcloneView
   - azure-files
   - troubleshooting
   - tips

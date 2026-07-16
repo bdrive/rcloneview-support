@@ -16,10 +16,7 @@ keywords:
   - solución de codificación de caracteres
   - problemas de nombres de archivo multiplataforma
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-sync
-  - cloud-storage
   - tips
 ---
 

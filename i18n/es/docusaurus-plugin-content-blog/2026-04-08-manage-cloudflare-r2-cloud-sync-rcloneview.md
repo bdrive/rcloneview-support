@@ -16,12 +16,9 @@ keywords:
   - gestión de buckets r2
   - sincronización multi-nube r2
 tags:
-  - RcloneView
   - cloudflare-r2
   - r2
-  - cloud-storage
   - s3-compatible
-  - guide
   - object-storage
 ---
 

@@ -15,10 +15,8 @@ keywords:
   - vérification de l'intégrité des fichiers
   - registres finra sec
 tags:
-  - RcloneView
   - compliance
   - security
-  - backup
   - automation
 ---
 

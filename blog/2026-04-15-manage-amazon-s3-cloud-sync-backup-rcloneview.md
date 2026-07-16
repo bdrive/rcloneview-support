@@ -16,11 +16,7 @@ keywords:
   - S3 object storage GUI
   - rclone S3 frontend
 tags:
-  - RcloneView
   - amazon-s3
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3
 ---
 

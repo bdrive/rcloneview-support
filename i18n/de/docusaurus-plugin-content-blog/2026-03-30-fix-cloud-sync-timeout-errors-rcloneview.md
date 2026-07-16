@@ -16,10 +16,8 @@ keywords:
   - transfer retry timeout
   - cloud sync error fix
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - performance
 ---
 

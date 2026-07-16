@@ -16,9 +16,7 @@ keywords:
   - cloud transfer restart
   - failed sync recovery
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

@@ -14,10 +14,8 @@ keywords:
   - Sincronización en la nube en ARM Linux
   - Almacenamiento en Raspberry Pi
 tags:
-  - RcloneView
   - raspberry-pi
   - linux
-  - cloud-sync
   - installation
 ---
 

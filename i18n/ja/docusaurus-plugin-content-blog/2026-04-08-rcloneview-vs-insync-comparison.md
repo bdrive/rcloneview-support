@@ -15,11 +15,8 @@ keywords:
   - rclone gui
   - cloud file management
 tags:
-  - RcloneView
   - comparison
   - compare
-  - cloud-storage
-  - cloud-sync
   - google-drive
   - onedrive
 ---

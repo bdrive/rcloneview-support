@@ -16,13 +16,10 @@ keywords:
   - minio desktop client
   - self-hosted s3 sync
 tags:
-  - RcloneView
   - minio
   - aws-s3
-  - cloud-storage
   - sync
   - self-hosted
-  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -16,11 +16,7 @@ keywords:
   - dropbox cloud sync tool
   - dropbox automated backup
 tags:
-  - RcloneView
   - dropbox
-  - cloud-storage
-  - cloud-sync
-  - backup
   - file-management
 ---
 

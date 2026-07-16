@@ -14,11 +14,9 @@ keywords:
   - rclone-Protokollierungskonfiguration
   - Cloud-Übertragungen beheben
 tags:
-  - RcloneView
   - feature
   - troubleshooting
   - monitoring
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

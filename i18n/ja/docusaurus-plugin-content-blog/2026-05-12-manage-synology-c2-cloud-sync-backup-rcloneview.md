@@ -16,11 +16,7 @@ keywords:
   - Synology C2 ファイル転送
   - Synology C2 スケジュールバックアップ
 tags:
-  - RcloneView
   - synology
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
 ---
 

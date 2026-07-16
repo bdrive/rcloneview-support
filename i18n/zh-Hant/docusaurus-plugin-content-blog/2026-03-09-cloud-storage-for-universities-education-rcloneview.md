@@ -16,10 +16,8 @@ keywords:
   - research data backup
   - higher education cloud management
 tags:
-  - RcloneView
   - education
   - university
-  - cloud-storage
   - best-practices
 ---
 

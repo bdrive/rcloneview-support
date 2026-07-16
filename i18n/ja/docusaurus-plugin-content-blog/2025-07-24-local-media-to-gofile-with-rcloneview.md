@@ -14,7 +14,6 @@ keywords:
   - rclone GUI
   - public links
 tags:
-  - RcloneView
   - gofile
   - media
   - cloud-file-transfer

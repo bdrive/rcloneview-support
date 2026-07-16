@@ -16,11 +16,8 @@ keywords:
   - cloud explorer drag drop
   - easy multi cloud transfer
 tags:
-  - RcloneView
   - drag-and-drop
   - feature
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

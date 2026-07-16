@@ -14,11 +14,7 @@ keywords:
   - sincronización de google drive computers
   - gestionar google drive computers
 tags:
-  - RcloneView
   - google-drive
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

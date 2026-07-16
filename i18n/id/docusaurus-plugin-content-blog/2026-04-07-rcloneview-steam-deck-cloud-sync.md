@@ -16,14 +16,9 @@ keywords:
   - file manager steam deck
   - penyimpanan cloud eksternal steam deck
 tags:
-  - RcloneView
   - linux
   - platform
-  - cloud-sync
-  - guide
   - installation
-  - backup
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

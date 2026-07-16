@@ -26,8 +26,6 @@ keywords:
   - dry run
   - sync jobs
 tags:
-  - RcloneView
-  - cloud-storage
   - cloud-to-cloud
   - sync
   - google-drive

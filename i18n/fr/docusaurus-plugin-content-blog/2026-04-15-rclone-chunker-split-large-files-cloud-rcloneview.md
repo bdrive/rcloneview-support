@@ -16,12 +16,8 @@ keywords:
   - distant virtuel rclone
   - stockage cloud pour fichiers volumineux
 tags:
-  - RcloneView
   - feature
-  - cloud-storage
-  - cloud-sync
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

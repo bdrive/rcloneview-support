@@ -16,12 +16,10 @@ keywords:
   - Cloud-übergreifende Backup-Automatisierung
   - RcloneView Cloud-Sync-Tool
 tags:
-  - RcloneView
   - dropbox
   - google-drive
   - cloud-to-cloud
   - sync
-  - backup
   - automation
 ---
 

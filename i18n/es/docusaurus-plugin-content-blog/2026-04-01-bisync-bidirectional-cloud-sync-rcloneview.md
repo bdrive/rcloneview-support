@@ -16,12 +16,8 @@ keywords:
   - sincronización en dos vías de onedrive
   - espejo bidireccional de carpeta en la nube
 tags:
-  - RcloneView
   - sync
-  - cloud-sync
   - feature
-  - guide
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

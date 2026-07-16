@@ -16,11 +16,8 @@ keywords:
   - 混合雲端備份
   - 符合 GDPR 的雲端儲存
 tags:
-  - RcloneView
   - hetzner
   - european-cloud
-  - cloud-storage
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

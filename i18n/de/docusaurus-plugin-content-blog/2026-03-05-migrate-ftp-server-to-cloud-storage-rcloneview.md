@@ -16,11 +16,8 @@ keywords:
   - ftp migration tool
   - ftp to object storage
 tags:
-  - RcloneView
   - ftp
-  - cloud-storage
   - migration
-  - backup
   - sync
 ---
 

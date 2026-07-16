@@ -16,9 +16,7 @@ keywords:
   - non disruptive cloud migration
   - cloud provider switch guide
 tags:
-  - RcloneView
   - migration
-  - cloud-storage
   - best-practices
 ---
 

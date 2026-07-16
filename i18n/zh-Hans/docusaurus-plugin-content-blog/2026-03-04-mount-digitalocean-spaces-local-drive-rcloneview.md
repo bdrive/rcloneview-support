@@ -16,9 +16,7 @@ keywords:
   - spaces rclone gui
   - digitalocean spaces desktop
 tags:
-  - RcloneView
   - digitalocean-spaces
-  - cloud-storage
   - mount
   - s3-compatible
   - sync

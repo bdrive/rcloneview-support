@@ -14,7 +14,6 @@ keywords:
   - migración de Backblaze B2 a S3
   - RcloneView almacenamiento S3 B2
 tags:
-  - RcloneView
   - amazon-s3
   - backblaze-b2
   - comparison

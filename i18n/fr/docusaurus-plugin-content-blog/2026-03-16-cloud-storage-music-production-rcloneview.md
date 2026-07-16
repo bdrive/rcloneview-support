@@ -16,11 +16,8 @@ keywords:
   - production audio cloud
   - studio d'enregistrement cloud
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - best-practices
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

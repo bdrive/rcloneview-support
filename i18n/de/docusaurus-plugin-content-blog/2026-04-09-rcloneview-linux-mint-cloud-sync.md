@@ -16,11 +16,8 @@ keywords:
   - mint rclone gui
   - linux mint dropbox alternative
 tags:
-  - RcloneView
   - linux
   - platform
-  - cloud-sync
-  - guide
   - installation
 ---
 

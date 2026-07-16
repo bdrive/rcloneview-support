@@ -14,10 +14,6 @@ keywords:
   - gestor de archivos en la nube
   - alternativa de cliente Linkbox
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - file-management
 ---
 

@@ -16,10 +16,7 @@ keywords:
   - verifikasi hash pencadangan cloud
   - rclone virtual remote hasher
 tags:
-  - RcloneView
   - feature
-  - cloud-storage
-  - backup
   - tips
 ---
 

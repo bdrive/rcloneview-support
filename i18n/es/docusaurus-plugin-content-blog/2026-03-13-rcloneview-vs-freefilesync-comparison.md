@@ -16,11 +16,9 @@ keywords:
   - herramientas de sincronización de archivos
   - reemplazo de freefilesync para la nube
 tags:
-  - RcloneView
   - comparison
   - freefilesync
   - sync
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

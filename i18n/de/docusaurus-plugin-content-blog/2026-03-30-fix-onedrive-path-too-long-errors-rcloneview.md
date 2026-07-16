@@ -16,11 +16,9 @@ keywords:
   - OneDrive Pfadfehler beheben
   - lange Ordnernamen OneDrive
 tags:
-  - RcloneView
   - troubleshooting
   - tips
   - onedrive
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

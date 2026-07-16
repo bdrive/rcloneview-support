@@ -16,9 +16,7 @@ keywords:
   - software de sincronización en la nube
   - unidad de nube multiplataforma
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
   - windows
   - mount
 ---

@@ -16,9 +16,7 @@ keywords:
   - multi cloud manager review
   - cloud storage aggregator
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
   - multi-cloud
 ---
 

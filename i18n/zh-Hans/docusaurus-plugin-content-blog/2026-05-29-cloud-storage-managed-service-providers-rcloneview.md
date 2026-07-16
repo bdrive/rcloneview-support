@@ -14,10 +14,6 @@ keywords:
   - MSP 多云管理
   - 客户数据备份自动化
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
-  - guide
   - industry
   - multi-cloud
   - automation

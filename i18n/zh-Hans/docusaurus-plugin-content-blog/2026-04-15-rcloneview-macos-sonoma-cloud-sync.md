@@ -16,11 +16,8 @@ keywords:
   - Mac 云备份 2026
   - macOS 云挂载
 tags:
-  - RcloneView
   - macos
-  - cloud-sync
   - installation
-  - backup
   - platform
 ---
 

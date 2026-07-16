@@ -16,10 +16,8 @@ keywords:
   - herramienta de limpieza en la nube
   - archivos innecesarios en la nube
 tags:
-  - RcloneView
   - cost-optimization
   - tips
-  - cloud-storage
   - organization
 ---
 

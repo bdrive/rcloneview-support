@@ -16,11 +16,9 @@ keywords:
   - log transfer rclone
   - alat pemantauan job cloud
 tags:
-  - RcloneView
   - monitoring
   - job-history
   - feature
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

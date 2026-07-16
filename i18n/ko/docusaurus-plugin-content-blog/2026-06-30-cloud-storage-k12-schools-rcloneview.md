@@ -16,10 +16,7 @@ keywords:
   - school IT cloud sync
   - Google Workspace for Education backup
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
   - education
 ---
 

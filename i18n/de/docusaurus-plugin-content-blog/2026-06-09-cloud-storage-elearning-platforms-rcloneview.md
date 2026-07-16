@@ -15,11 +15,7 @@ keywords:
   - Dateiverwaltungstool für LMS
   - Cloud-Backup für Bildungseinrichtungen
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
   - education
 ---
 

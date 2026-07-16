@@ -16,11 +16,9 @@ keywords:
   - onedrive data protection
   - onedrive redundancy
 tags:
-  - RcloneView
   - onedrive
   - s3
   - aws-s3
-  - backup
   - enterprise
 ---
 

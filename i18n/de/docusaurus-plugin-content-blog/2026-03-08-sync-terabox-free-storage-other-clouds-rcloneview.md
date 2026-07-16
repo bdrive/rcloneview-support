@@ -5,11 +5,9 @@ authors: [tayson]
 description: "Erschließen Sie sich den riesigen kostenlosen 1-TB-Speicher von Terabox. Erfahren Sie, wie Sie Terabox mit Google Drive, OneDrive, S3 und anderen Clouds mithilfe von RcloneView für nahtloses Backup und Hybrid-Cloud-Workflows synchronisieren."
 keywords: ["terabox sync", "terabox backup tool", "terabox to google drive", "terabox 1tb free sync", "terabox file manager", "terabox rclone", "terabox transfer files", "terabox cloud integration", "free storage sync", "hybrid cloud backup"]
 tags:
-  - RcloneView
   - terabox
   - cloud-backup
   - hybrid-cloud
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

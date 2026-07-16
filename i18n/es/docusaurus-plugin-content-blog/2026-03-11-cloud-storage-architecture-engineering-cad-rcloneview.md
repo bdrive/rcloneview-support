@@ -16,11 +16,9 @@ keywords:
   - proyectos de ingeniería en la nube
   - copia de seguridad de archivos cad
 tags:
-  - RcloneView
   - architecture
   - engineering
   - cad
-  - cloud-storage
   - best-practices
 ---
 

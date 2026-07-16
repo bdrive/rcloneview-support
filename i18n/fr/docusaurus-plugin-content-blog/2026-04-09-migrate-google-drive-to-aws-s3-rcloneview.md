@@ -16,12 +16,10 @@ keywords:
   - rclone google drive s3
   - cloud to cloud migration gui
 tags:
-  - RcloneView
   - google-drive
   - amazon-s3
   - migration
   - cloud-migration
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

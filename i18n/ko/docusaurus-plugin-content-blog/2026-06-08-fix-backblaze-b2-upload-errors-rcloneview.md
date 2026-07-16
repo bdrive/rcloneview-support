@@ -15,11 +15,9 @@ keywords:
   - cloud upload errors fix
   - Backblaze B2 access denied
 tags:
-  - RcloneView
   - troubleshooting
   - backblaze-b2
   - tips
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

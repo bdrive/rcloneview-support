@@ -16,9 +16,7 @@ keywords:
   - dejar sugarsync
   - exportación de datos de sugarsync
 tags:
-  - RcloneView
   - sugarsync
-  - cloud-storage
   - migration
   - google-drive
   - onedrive

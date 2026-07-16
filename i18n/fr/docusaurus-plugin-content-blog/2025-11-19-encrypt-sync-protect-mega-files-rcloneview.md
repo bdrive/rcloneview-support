@@ -14,7 +14,6 @@ keywords:
   - chiffrement cloud
   - synchronisation cloud sécurisée
 tags:
-  - RcloneView
   - mega
   - encryption
   - automation

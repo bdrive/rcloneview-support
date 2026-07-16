@@ -16,11 +16,8 @@ keywords:
   - pcloud to object storage
   - pcloud enterprise backup
 tags:
-  - RcloneView
   - pcloud
   - aws-s3
-  - cloud-storage
-  - backup
   - sync
 ---
 

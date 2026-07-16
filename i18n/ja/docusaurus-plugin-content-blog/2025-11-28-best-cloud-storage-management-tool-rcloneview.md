@@ -16,7 +16,6 @@ keywords:
   - rclone gui
   - fast cloud transfer
 tags:
-  - RcloneView
   - cloud
   - sync
   - tutorial

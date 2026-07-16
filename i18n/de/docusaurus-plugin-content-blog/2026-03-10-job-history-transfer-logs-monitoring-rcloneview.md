@@ -16,11 +16,9 @@ keywords:
   - rclone Übertragungsprotokoll
   - Cloud-Auftragsüberwachungstool
 tags:
-  - RcloneView
   - monitoring
   - job-history
   - feature
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,11 +14,9 @@ keywords:
   - configuration de la journalisation rclone
   - dépanner les transferts cloud
 tags:
-  - RcloneView
   - feature
   - troubleshooting
   - monitoring
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

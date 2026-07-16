@@ -16,11 +16,7 @@ keywords:
   - transfert cloud wasabi
   - sauvegarde multi-cloud wasabi
 tags:
-  - RcloneView
   - wasabi
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

@@ -16,7 +16,6 @@ keywords:
   - 效能調校
   - 檔案存取最佳化
 tags:
-  - RcloneView
   - vfs
   - mount
   - performance

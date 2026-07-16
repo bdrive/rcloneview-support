@@ -16,11 +16,7 @@ keywords:
   - 온프레미스 S3 백업 도구
   - MinIO 클라우드 동기화
 tags:
-  - RcloneView
   - minio
-  - cloud-storage
-  - cloud-sync
-  - backup
   - self-hosted
   - s3-compatible
 ---

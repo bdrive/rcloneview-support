@@ -16,11 +16,9 @@ keywords:
   - onedrive rclone gui fix
   - resolve onedrive sync failures
 tags:
-  - RcloneView
   - onedrive
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

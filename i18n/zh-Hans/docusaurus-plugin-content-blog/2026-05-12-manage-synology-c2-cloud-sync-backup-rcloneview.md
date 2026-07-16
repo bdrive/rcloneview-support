@@ -16,11 +16,7 @@ keywords:
   - Synology C2 文件传输
   - Synology C2 定时备份
 tags:
-  - RcloneView
   - synology
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
 ---
 

@@ -14,11 +14,7 @@ keywords:
   - 多物業檔案管理
   - 廠商文件共享
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

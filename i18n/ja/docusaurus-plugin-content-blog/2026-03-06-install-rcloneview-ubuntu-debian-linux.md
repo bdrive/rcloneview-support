@@ -16,7 +16,6 @@ keywords:
   - rcloneview installation guide
   - linux cloud file manager
 tags:
-  - RcloneView
   - linux
   - ubuntu
   - debian

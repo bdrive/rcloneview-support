@@ -15,11 +15,8 @@ keywords:
   - cloud file transfer
   - mega alternative
 tags:
-  - RcloneView
   - comparison
   - compare
-  - cloud-storage
-  - cloud-sync
   - multi-cloud
 ---
 

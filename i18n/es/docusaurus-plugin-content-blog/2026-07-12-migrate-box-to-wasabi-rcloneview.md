@@ -16,7 +16,6 @@ keywords:
   - mover archivos entre nubes
   - migración de Box a S3
 tags:
-  - RcloneView
   - box
   - wasabi
   - cloud-to-cloud

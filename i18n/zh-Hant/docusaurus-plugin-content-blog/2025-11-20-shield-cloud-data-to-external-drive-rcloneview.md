@@ -16,9 +16,7 @@ keywords:
   - onedrive 備份
   - dropbox 備份
 tags:
-  - RcloneView
   - external-drive
-  - backup
   - google-drive
   - onedrive
   - dropbox

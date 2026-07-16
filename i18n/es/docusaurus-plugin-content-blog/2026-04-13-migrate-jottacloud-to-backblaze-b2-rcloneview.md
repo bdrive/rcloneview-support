@@ -16,7 +16,6 @@ keywords:
   - almacenamiento en la nube noruego
   - transferencia RcloneView
 tags:
-  - RcloneView
   - jottacloud
   - backblaze-b2
   - cloud-to-cloud

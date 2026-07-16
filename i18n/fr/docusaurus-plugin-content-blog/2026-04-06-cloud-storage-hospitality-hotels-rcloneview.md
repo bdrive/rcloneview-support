@@ -16,12 +16,8 @@ keywords:
   - archive saisonnière hôtellerie
   - rcloneview hôtellerie
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - business
-  - guide
-  - backup
   - multi-cloud
 ---
 

@@ -16,11 +16,9 @@ keywords:
   - sync two cloud accounts
   - google drive dropbox migration
 tags:
-  - RcloneView
   - google-drive
   - dropbox
   - sync
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

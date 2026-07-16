@@ -16,10 +16,8 @@ keywords:
   - multi region cloud sync
   - remote team file management
 tags:
-  - RcloneView
   - remote-work
   - collaboration
-  - cloud-storage
   - best-practices
 ---
 

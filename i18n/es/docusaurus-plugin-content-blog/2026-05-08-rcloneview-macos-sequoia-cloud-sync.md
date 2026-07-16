@@ -14,9 +14,7 @@ keywords:
   - guía de instalación de RcloneView macOS
   - montar unidad en la nube macOS Sequoia
 tags:
-  - RcloneView
   - macos
-  - cloud-sync
   - installation
   - platform
 ---

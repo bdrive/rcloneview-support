@@ -14,11 +14,7 @@ keywords:
   - 1:N sync game assets
   - game development backup
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

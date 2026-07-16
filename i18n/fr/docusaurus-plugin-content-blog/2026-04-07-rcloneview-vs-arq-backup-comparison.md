@@ -16,13 +16,9 @@ keywords:
   - outil de versionnage de sauvegarde
   - gestionnaire de stockage cloud 2026
 tags:
-  - RcloneView
   - comparison
   - compare
   - cloud-backup
-  - backup
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

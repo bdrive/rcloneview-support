@@ -16,12 +16,10 @@ keywords:
   - guía de optimización de subidas a la nube
   - ajuste de transferencias concurrentes de rclone
 tags:
-  - RcloneView
   - troubleshooting
   - tips
   - performance
   - optimization
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

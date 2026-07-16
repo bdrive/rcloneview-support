@@ -16,11 +16,7 @@ keywords:
   - copia de seguridad en la nube conforme al RGPD
   - Koofr rclone
 tags:
-  - RcloneView
   - koofr
-  - cloud-storage
-  - cloud-sync
-  - backup
   - european-cloud
 ---
 

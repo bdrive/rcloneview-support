@@ -16,10 +16,8 @@ keywords:
   - alibaba cloud backup
   - asia pacific cloud storage
 tags:
-  - RcloneView
   - alibaba-cloud
   - s3-compatible
-  - cloud-storage
   - sync
 ---
 

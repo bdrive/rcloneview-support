@@ -16,10 +16,8 @@ keywords:
   - egress free cloud storage
   - cloud pricing egress
 tags:
-  - RcloneView
   - cost-optimization
   - tips
-  - cloud-storage
   - best-practices
 ---
 

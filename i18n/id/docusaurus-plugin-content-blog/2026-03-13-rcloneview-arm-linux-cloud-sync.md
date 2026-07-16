@@ -16,7 +16,6 @@ keywords:
   - low power cloud backup
   - arm linux file sync
 tags:
-  - RcloneView
   - arm
   - linux
   - raspberry-pi

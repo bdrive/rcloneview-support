@@ -16,13 +16,11 @@ keywords:
   - sauvegarde google drive r2
   - interface de migration de stockage cloud
 tags:
-  - RcloneView
   - google-drive
   - cloudflare-r2
   - migration
   - cloud-migration
   - cloud-to-cloud
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

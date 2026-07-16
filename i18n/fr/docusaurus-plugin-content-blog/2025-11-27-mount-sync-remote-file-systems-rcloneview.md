@@ -16,7 +16,6 @@ keywords:
   - explorateur distant
   - automatisation de synchronisation
 tags:
-  - RcloneView
   - cloud
   - sync
   - mount

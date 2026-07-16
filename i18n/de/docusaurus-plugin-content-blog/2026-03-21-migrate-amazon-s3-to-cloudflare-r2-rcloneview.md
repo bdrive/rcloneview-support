@@ -16,7 +16,6 @@ keywords:
   - S3-kompatibler Speicher
   - Cloud-Migrationstool
 tags:
-  - RcloneView
   - amazon-s3
   - cloudflare-r2
   - cloud-migration

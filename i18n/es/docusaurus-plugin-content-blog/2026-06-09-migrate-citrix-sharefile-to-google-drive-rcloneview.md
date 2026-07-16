@@ -14,12 +14,10 @@ keywords:
   - alternativa a ShareFile Google Drive
   - GUI de migración de almacenamiento en la nube
 tags:
-  - RcloneView
   - sharefile
   - google-drive
   - cloud-to-cloud
   - migration
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

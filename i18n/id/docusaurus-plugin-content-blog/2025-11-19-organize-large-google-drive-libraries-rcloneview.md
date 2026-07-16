@@ -16,7 +16,6 @@ keywords:
   - manajemen file cloud
   - rclone gui
 tags:
-  - RcloneView
   - google-drive
   - productivity
   - cleanup

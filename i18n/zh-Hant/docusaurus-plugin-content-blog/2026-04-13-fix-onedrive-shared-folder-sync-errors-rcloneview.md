@@ -16,11 +16,9 @@ keywords:
   - OneDrive for Business sync
   - cloud sync troubleshooting
 tags:
-  - RcloneView
   - onedrive
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

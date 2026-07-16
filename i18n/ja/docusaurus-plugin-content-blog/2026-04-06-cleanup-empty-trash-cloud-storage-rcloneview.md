@@ -16,11 +16,8 @@ keywords:
   - reclaim cloud quota
   - cloud storage trash management
 tags:
-  - RcloneView
   - feature
   - cleanup
-  - cloud-storage
-  - guide
   - tips
   - cost-optimization
   - file-management

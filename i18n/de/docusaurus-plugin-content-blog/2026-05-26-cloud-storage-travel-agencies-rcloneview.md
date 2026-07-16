@@ -16,11 +16,7 @@ keywords:
   - Synchronisation von Reisemedien-Dateien
   - rclone Reisebüro Backup
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

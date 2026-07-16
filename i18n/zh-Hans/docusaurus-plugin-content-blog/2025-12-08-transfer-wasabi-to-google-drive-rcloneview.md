@@ -16,10 +16,7 @@ keywords:
   - s3 分片上传
   - 云自动化
 tags:
-  - RcloneView
   - cloud-migration
-  - cloud-storage
-  - backup
   - wasabi
   - google-drive
   - sync

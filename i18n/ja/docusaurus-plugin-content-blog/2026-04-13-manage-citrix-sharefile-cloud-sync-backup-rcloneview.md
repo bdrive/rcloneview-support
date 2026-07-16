@@ -16,11 +16,7 @@ keywords:
   - ShareFile 移行
   - RcloneView クラウド同期
 tags:
-  - RcloneView
   - sharefile
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

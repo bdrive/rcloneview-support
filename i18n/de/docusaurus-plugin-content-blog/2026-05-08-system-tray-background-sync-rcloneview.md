@@ -14,9 +14,7 @@ keywords:
   - Cloud-Synchronisation im Hintergrund laufen lassen
   - RcloneView kontinuierliches Backup
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - automation
 ---
 

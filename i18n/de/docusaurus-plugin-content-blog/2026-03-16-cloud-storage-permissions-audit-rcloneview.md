@@ -16,11 +16,9 @@ keywords:
   - Cloud-Speicher-Überprüfung
   - Multi-Cloud-Audit
 tags:
-  - RcloneView
   - organization
   - best-practices
   - tips
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

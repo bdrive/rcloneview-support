@@ -16,13 +16,11 @@ keywords:
   - meilleur stockage objet
   - comparatif stockage rcloneview
 tags:
-  - RcloneView
   - amazon-s3
   - cloudflare-r2
   - comparison
   - storage-comparison
   - cost-optimization
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,7 @@ keywords:
   - redémarrage de transfert cloud
   - récupération de synchronisation échouée
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

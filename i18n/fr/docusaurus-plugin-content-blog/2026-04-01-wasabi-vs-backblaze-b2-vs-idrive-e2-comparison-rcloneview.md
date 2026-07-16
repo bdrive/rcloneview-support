@@ -16,14 +16,11 @@ keywords:
   - avis idrive e2
   - meilleur stockage cloud pas cher pour la sauvegarde
 tags:
-  - RcloneView
   - wasabi
   - backblaze-b2
   - idrive-e2
   - comparison
   - storage-comparison
-  - cloud-storage
-  - backup
   - cost-optimization
 ---
 

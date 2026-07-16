@@ -16,12 +16,10 @@ keywords:
   - Amazon S3 backup
   - on-premise to cloud
 tags:
-  - RcloneView
   - seafile
   - amazon-s3
   - cloud-to-cloud
   - sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

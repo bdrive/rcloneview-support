@@ -16,9 +16,7 @@ keywords:
   - s3 permission error
   - cloud storage troubleshooting
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - tips
   - security
 ---

@@ -16,11 +16,7 @@ keywords:
   - pencadangan Seafile ke S3
   - sinkronisasi multi-cloud Seafile
 tags:
-  - RcloneView
   - seafile
-  - cloud-storage
-  - cloud-sync
-  - backup
   - self-hosted
 ---
 

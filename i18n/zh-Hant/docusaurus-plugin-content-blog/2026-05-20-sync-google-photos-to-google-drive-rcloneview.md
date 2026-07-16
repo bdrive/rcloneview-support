@@ -16,11 +16,8 @@ keywords:
   - 在 Google 服務之間傳輸相片
   - 雲端相片整理工具
 tags:
-  - RcloneView
   - google-photos
   - google-drive
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

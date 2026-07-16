@@ -14,11 +14,7 @@ keywords:
   - multi-cloud nonprofit strategy
   - RcloneView nonprofit guide
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

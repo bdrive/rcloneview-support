@@ -16,11 +16,9 @@ keywords:
   - automated dropbox backup
   - dropbox data protection
 tags:
-  - RcloneView
   - dropbox
   - s3
   - aws-s3
-  - backup
   - sync
 ---
 

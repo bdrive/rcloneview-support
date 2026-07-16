@@ -16,11 +16,8 @@ keywords:
   - fast cloud file navigation
   - cloud explorer keyboard shortcuts
 tags:
-  - RcloneView
   - feature
   - productivity
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

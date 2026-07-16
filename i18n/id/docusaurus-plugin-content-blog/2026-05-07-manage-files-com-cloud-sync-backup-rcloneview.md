@@ -14,10 +14,6 @@ keywords:
   - SFTP cloud sync
   - transfer file aman
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - sftp
 ---
 

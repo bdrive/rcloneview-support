@@ -16,7 +16,6 @@ keywords:
   - aws s3 file sharing
   - s3 to gdrive transfer
 tags:
-  - RcloneView
   - aws-s3
   - google-drive
   - collaboration

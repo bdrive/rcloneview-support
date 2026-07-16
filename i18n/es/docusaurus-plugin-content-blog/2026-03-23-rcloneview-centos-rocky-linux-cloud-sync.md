@@ -16,11 +16,9 @@ keywords:
   - GUI de rclone para Linux
   - sincronización en la nube para Linux empresarial
 tags:
-  - RcloneView
   - linux
   - platform
   - installation
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

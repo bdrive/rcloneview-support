@@ -16,7 +16,6 @@ keywords:
   - plan de corte de sharepoint
   - plano de migración en la nube
 tags:
-  - RcloneView
   - sharepoint
   - google-drive
   - migration

@@ -13,7 +13,6 @@ keywords:
   - cloud movie server
   - rclone mount plex
 tags:
-  - RcloneView
   - plex
   - vfs
   - google-drive

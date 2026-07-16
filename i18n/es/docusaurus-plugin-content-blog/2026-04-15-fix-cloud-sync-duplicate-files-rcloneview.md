@@ -16,10 +16,8 @@ keywords:
   - solución de duplicados de rclone
   - configuración incorrecta de sincronización en la nube
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - duplicates
   - file-management
 ---

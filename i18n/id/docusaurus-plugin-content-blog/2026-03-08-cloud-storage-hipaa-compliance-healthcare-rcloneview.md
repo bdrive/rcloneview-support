@@ -16,11 +16,9 @@ keywords:
   - patient data cloud security
   - healthcare it cloud storage
 tags:
-  - RcloneView
   - healthcare
   - hipaa
   - security
-  - cloud-storage
   - best-practices
 ---
 

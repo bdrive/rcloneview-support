@@ -16,10 +16,7 @@ keywords:
   - 學校 IT 雲端同步
   - Google Workspace for Education 備份
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
   - education
 ---
 

@@ -16,11 +16,7 @@ keywords:
   - cross-platform WebDAV client
   - WebDAV cloud backup automation
 tags:
-  - RcloneView
   - webdav
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

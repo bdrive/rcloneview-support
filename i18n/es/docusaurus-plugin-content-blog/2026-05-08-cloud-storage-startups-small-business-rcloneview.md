@@ -14,10 +14,7 @@ keywords:
   - herramienta multi-nube para startups
   - gestión de almacenamiento en la nube asequible
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
   - business
 ---
 

@@ -16,9 +16,7 @@ keywords:
   - copia de seguridad de onedrive
   - copia de seguridad de dropbox
 tags:
-  - RcloneView
   - external-drive
-  - backup
   - google-drive
   - onedrive
   - dropbox

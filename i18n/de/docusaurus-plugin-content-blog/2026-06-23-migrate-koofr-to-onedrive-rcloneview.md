@@ -16,12 +16,10 @@ keywords:
   - OneDrive Migrationssoftware
   - Koofr Cloud-Übertragung
 tags:
-  - RcloneView
   - koofr
   - onedrive
   - cloud-to-cloud
   - migration
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

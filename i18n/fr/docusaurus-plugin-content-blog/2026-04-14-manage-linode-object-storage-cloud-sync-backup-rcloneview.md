@@ -14,11 +14,7 @@ keywords:
   - outil de transfert de fichiers Linode
   - automatisation de sauvegarde cloud Linode
 tags:
-  - RcloneView
   - linode
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

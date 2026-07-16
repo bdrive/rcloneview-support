@@ -16,7 +16,6 @@ keywords:
   - cloud backup failover
   - prepare cloud outage
 tags:
-  - RcloneView
   - disaster-recovery
   - multi-cloud
   - best-practices

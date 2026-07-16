@@ -14,7 +14,6 @@ keywords:
   - migración de OneDrive desde B2
   - rclone B2 OneDrive GUI
 tags:
-  - RcloneView
   - backblaze-b2
   - onedrive
   - cloud-to-cloud

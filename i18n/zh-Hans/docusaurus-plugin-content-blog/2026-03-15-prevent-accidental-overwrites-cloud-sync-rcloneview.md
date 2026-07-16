@@ -16,11 +16,9 @@ keywords:
   - sync direction wrong
   - avoid data loss cloud
 tags:
-  - RcloneView
   - data-loss
   - safety
   - best-practices
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

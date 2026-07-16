@@ -14,11 +14,7 @@ keywords:
   - 管理 Google 相簿儲存空間
   - RcloneView Google 相簿
 tags:
-  - RcloneView
   - google-photos
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

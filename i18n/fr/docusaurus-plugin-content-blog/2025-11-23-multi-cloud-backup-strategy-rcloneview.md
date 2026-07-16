@@ -16,11 +16,9 @@ keywords:
   - sauvegardes planifiées
   - vérification checksum
 tags:
-  - RcloneView
   - cloud
   - sync
   - cloud-migration
-  - backup
   - tutorial
   - google-drive
   - onedrive

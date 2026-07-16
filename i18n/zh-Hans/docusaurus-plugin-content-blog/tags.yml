@@ -73,11 +73,6 @@ backblaze-b2:
   permalink: /backblaze-b2
   description: 关于 Backblaze B2 的文章。
 
-backup:
-  label: 备份
-  permalink: /backup
-  description: 关于备份的文章。
-
 best-practices:
   label: 最佳实践
   permalink: /best-practices
@@ -137,11 +132,6 @@ cloud-security:
   label: 云安全
   permalink: /cloud-security
   description: 关于云安全的文章。
-
-cloud-storage:
-  label: 云存储
-  permalink: /cloud-storage
-  description: 关于云存储的文章。
 
 cloud-storage-synchronization:
   label: 云存储同步
@@ -377,11 +367,6 @@ google-photos:
   label: Google Photos
   permalink: /google-photos
   description: 关于 Google Photos 的文章。
-
-guide:
-  label: 指南
-  permalink: /guide
-  description: 关于指南的文章。
 
 hard-drive:
   label: 硬盘
@@ -692,11 +677,6 @@ rclone-crypt:
   label: Rclone Crypt
   permalink: /rclone-crypt
   description: 关于 Rclone Crypt 的文章。
-
-RcloneView:
-  label: RcloneView
-  permalink: /rcloneview
-  description: 关于 RcloneView 的文章。
 
 reference:
   label: 参考资料

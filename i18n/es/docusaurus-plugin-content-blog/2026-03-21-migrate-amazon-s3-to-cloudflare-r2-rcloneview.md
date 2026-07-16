@@ -16,7 +16,6 @@ keywords:
   - almacenamiento compatible con S3
   - herramienta de migración en la nube
 tags:
-  - RcloneView
   - amazon-s3
   - cloudflare-r2
   - cloud-migration

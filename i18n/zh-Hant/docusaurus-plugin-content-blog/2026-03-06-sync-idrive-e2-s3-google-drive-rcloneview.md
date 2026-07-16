@@ -16,12 +16,9 @@ keywords:
   - idrive e2 物件儲存
   - s3 相容儲存 GUI
 tags:
-  - RcloneView
   - idrive-e2
   - s3-compatible
-  - cloud-storage
   - sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

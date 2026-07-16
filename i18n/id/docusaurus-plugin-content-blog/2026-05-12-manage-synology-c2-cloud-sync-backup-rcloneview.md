@@ -16,11 +16,7 @@ keywords:
   - transfer file Synology C2
   - pencadangan terjadwal Synology C2
 tags:
-  - RcloneView
   - synology
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
 ---
 

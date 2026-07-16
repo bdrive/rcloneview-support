@@ -15,10 +15,7 @@ keywords:
   - 摄影工作室云同步
   - 自动婚礼照片备份
 tags:
-  - RcloneView
   - photography
-  - cloud-storage
-  - backup
   - industry
 ---
 

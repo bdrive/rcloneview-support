@@ -16,10 +16,8 @@ keywords:
   - cloud cleanup tool
   - unnecessary cloud files
 tags:
-  - RcloneView
   - cost-optimization
   - tips
-  - cloud-storage
   - organization
 ---
 

@@ -16,7 +16,6 @@ keywords:
   - rclone gui
   - cloud to cloud transfer
 tags:
-  - RcloneView
   - cloud
   - sync
   - migration

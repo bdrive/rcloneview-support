@@ -12,7 +12,6 @@ keywords:
   - microsoft 365
   - rclone GUI
 tags:
-  - RcloneView
   - mega
   - onedrive
   - cloud-backup

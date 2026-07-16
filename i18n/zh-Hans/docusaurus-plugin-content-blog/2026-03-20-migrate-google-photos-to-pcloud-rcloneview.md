@@ -16,7 +16,6 @@ keywords:
   - 家庭照片存储
   - 安全照片存档
 tags:
-  - RcloneView
   - google-photos
   - pcloud
   - cloud-migration

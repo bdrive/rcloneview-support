@@ -16,13 +16,11 @@ keywords:
   - trabajos programados
   - almacenamiento en la nube cifrado
 tags:
-  - RcloneView
   - proton-drive
   - google-drive
   - onedrive
   - s3
   - cloud-backup
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -15,11 +15,9 @@ keywords:
   - solucionar errores de subida en la nube
   - acceso denegado en Backblaze B2
 tags:
-  - RcloneView
   - troubleshooting
   - backblaze-b2
   - tips
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

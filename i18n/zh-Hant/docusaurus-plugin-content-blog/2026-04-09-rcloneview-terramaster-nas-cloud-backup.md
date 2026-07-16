@@ -16,12 +16,9 @@ keywords:
   - terramaster file sync
   - nas to cloud transfer
 tags:
-  - RcloneView
   - nas
   - platform
   - cloud-backup
-  - backup
-  - guide
   - sftp
 ---
 

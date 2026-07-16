@@ -14,10 +14,8 @@ keywords:
   - RcloneView Bildergalerie
   - Cloud-Speicher Miniaturansicht-Funktion
 tags:
-  - RcloneView
   - feature
   - photography
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

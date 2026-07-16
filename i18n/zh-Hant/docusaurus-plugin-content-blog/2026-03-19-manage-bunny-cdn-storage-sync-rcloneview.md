@@ -16,8 +16,6 @@ keywords:
   - bunny storage backup
   - cdn content sync
 tags:
-  - RcloneView
-  - cloud-storage
   - sync
   - s3-compatible
   - performance

@@ -16,10 +16,7 @@ keywords:
   - solusi pencadangan cloud
   - sinkronisasi file vs alat pencadangan
 tags:
-  - RcloneView
   - comparison
-  - backup
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

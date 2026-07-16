@@ -16,11 +16,8 @@ keywords:
   - pop os deb install
   - pop os tiling cloud sync
 tags:
-  - RcloneView
   - linux
   - platform
-  - cloud-sync
-  - guide
   - installation
 ---
 

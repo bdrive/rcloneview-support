@@ -16,10 +16,7 @@ keywords:
   - 快速資料夾存取
   - 雲端組織
 tags:
-  - RcloneView
   - feature
-  - guide
-  - cloud-storage
   - productivity
 ---
 

@@ -28,11 +28,8 @@ keywords:
   - rclone
   - rclone gui
 tags:
-  - RcloneView
   - pcloud
   - encryption
-  - cloud-storage
-  - backup
   - sync
 ---
 

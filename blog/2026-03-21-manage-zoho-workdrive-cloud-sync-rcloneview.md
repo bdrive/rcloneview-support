@@ -16,11 +16,7 @@ keywords:
   - multi-cloud sync
   - Zoho integration
 tags:
-  - RcloneView
   - zoho
-  - cloud-storage
-  - cloud-sync
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

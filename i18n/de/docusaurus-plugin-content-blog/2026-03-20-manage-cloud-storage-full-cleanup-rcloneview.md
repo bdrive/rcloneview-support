@@ -16,8 +16,6 @@ keywords:
   - duplicate file removal
   - storage space recovery
 tags:
-  - RcloneView
-  - cloud-storage
   - cleanup
   - file-management
   - tips

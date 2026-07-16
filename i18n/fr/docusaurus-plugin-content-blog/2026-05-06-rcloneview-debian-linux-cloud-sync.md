@@ -16,12 +16,9 @@ keywords:
   - frontend GUI rclone Debian
   - logiciel de sauvegarde cloud Linux Debian
 tags:
-  - RcloneView
   - linux
   - debian
-  - cloud-sync
   - installation
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

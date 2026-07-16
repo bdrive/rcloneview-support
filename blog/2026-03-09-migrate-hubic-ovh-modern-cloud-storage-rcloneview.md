@@ -5,11 +5,9 @@ authors: [tayson]
 description: "Hubic is shutting down. Don't lose your data. Learn how to migrate from Hubic to Google Drive, OneDrive, or S3 with RcloneView—safely and quickly."
 keywords: ["hubic migration", "hubic alternative", "hubic to google drive", "hubic export data", "hubic ovh migration", "hubic backup tool", "hubic rclone transfer", "cloud migration", "data preservation", "legacy cloud storage"]
 tags:
-  - RcloneView
   - hubic
   - cloud-migration
   - cloud-backup
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

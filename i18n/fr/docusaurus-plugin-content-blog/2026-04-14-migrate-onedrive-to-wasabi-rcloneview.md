@@ -14,7 +14,6 @@ keywords:
   - déplacer des fichiers Microsoft OneDrive vers Wasabi
   - migration OneDrive RcloneView
 tags:
-  - RcloneView
   - onedrive
   - wasabi
   - cloud-to-cloud

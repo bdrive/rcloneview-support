@@ -26,10 +26,7 @@ keywords:
   - compliance
   - long term retention
 tags:
-  - RcloneView
-  - cloud-storage
   - cloud-migration
-  - backup
   - s3
   - sync
 ---

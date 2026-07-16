@@ -16,11 +16,8 @@ keywords:
   - appimage-run nixos
   - declarative cloud sync
 tags:
-  - RcloneView
   - linux
   - platform
-  - cloud-sync
-  - guide
   - installation
 ---
 

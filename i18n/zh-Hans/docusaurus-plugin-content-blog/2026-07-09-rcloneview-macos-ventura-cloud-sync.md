@@ -16,9 +16,7 @@ keywords:
   - Mac 备份到云端
   - macOS 隐私权限 云
 tags:
-  - RcloneView
   - macos
-  - cloud-sync
   - installation
   - platform
 ---

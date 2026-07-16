@@ -14,10 +14,7 @@ keywords:
   - copia de seguridad en la nube para estudios
   - gestión de medios multi-nube
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
   - media
 ---
 

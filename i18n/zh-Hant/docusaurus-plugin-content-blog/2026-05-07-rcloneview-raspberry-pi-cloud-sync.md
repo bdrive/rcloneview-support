@@ -14,10 +14,8 @@ keywords:
   - ARM Linux 雲端同步
   - Raspberry Pi 儲存
 tags:
-  - RcloneView
   - raspberry-pi
   - linux
-  - cloud-sync
   - installation
 ---
 

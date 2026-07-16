@@ -16,11 +16,8 @@ keywords:
   - Cloud-Speicher-Ordner organisieren
   - anbieterübergreifende Ordnerzusammenführung
 tags:
-  - RcloneView
   - feature
   - multi-cloud
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

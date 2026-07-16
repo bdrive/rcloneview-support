@@ -15,7 +15,6 @@ keywords:
   - Google Drive migration tool
   - decentralized cloud backup RcloneView
 tags:
-  - RcloneView
   - google-drive
   - storj
   - cloud-to-cloud

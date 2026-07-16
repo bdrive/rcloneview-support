@@ -16,8 +16,6 @@ keywords:
   - cloud storage fees explained
   - save money cloud storage
 tags:
-  - RcloneView
-  - cloud-storage
   - pricing
   - cost-optimization
   - tips

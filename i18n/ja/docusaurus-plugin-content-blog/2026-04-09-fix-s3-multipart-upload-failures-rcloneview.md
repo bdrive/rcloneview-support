@@ -16,11 +16,9 @@ keywords:
   - rclone s3 multipart
   - cloud upload fix
 tags:
-  - RcloneView
   - troubleshooting
   - amazon-s3
   - s3-compatible
-  - cloud-storage
   - tips
 ---
 

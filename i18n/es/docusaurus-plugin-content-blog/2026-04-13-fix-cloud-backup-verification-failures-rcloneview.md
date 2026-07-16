@@ -14,10 +14,8 @@ keywords:
   - solución de corrupción de copia de seguridad rclone
   - solución de problemas de verificación de sincronización en la nube
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

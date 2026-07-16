@@ -16,11 +16,9 @@ keywords:
   - sync two devices conflict
   - cloud file collision
 tags:
-  - RcloneView
   - troubleshooting
   - sync
   - tips
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

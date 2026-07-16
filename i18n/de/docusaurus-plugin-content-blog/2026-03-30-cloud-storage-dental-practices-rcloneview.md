@@ -16,11 +16,7 @@ keywords:
   - Datenschutz für Zahnarztpraxen
   - Cloud-Speicher für Zahnarztpraxis
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -13,10 +13,7 @@ keywords:
   - optimisation des performances
   - migration cloud
 tags:
-  - RcloneView
   - performance
-  - cloud-storage
-  - backup
   - sync
   - automation
 ---

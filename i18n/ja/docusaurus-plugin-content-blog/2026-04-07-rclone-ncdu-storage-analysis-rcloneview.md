@@ -14,7 +14,7 @@ keywords:
   - storage usage breakdown
   - cloud folder size
   - analyze remote storage
-tags: [RcloneView, feature, cloud-storage, tips, guide, cli, monitoring, dashboard, performance]
+tags: [feature, tips, cli, monitoring, dashboard, performance]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

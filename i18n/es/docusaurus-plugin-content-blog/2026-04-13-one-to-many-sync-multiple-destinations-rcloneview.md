@@ -16,10 +16,7 @@ keywords:
   - trabajo de copia de seguridad multi-nube
   - sincronización en la nube de uno a muchos
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
-  - backup
   - automation
 ---
 

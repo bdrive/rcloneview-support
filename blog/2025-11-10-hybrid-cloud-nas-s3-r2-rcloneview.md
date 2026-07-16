@@ -13,12 +13,10 @@ keywords:
   - cloudflare r2
   - object storage
 tags:
-  - RcloneView
   - hybrid-cloud
   - s3
   - cloudflare-r2
   - nas
-  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

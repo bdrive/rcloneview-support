@@ -14,9 +14,7 @@ keywords:
   - RcloneView 分層雲端備份
   - 自動將檔案移至雲端封存
 tags:
-  - RcloneView
   - multi-cloud
-  - cloud-storage
   - cost-optimization
   - tips
 ---

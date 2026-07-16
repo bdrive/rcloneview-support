@@ -16,11 +16,9 @@ keywords:
   - AI 对象存储
   - 数据集调度
 tags:
-  - RcloneView
   - ai
   - data-pipeline
   - s3
-  - cloud-storage
   - huggingface
   - automation
 ---

@@ -16,12 +16,8 @@ keywords:
   - rclone resume large file upload
   - fix interrupted sync rcloneview
 tags:
-  - RcloneView
-  - cloud-storage
   - troubleshooting
   - tips
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

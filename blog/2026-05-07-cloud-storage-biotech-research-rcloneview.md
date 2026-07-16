@@ -14,11 +14,7 @@ keywords:
   - encrypted research backup
   - NAS to cloud sync
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

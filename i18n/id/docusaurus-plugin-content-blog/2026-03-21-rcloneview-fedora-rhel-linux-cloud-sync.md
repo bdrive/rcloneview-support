@@ -16,11 +16,9 @@ keywords:
   - RHEL cloud backup
   - RedHat cloud integration
 tags:
-  - RcloneView
   - platform
   - linux
   - installation
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

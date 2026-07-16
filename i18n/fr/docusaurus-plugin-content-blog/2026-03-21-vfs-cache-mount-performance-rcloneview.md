@@ -16,7 +16,6 @@ keywords:
   - optimisation des performances
   - optimisation de l'accès aux fichiers
 tags:
-  - RcloneView
   - vfs
   - mount
   - performance

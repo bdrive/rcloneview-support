@@ -16,13 +16,9 @@ keywords:
   - file sync comparison
   - cloud storage manager 2026
 tags:
-  - RcloneView
   - comparison
   - compare
-  - cloud-storage
   - windows
-  - guide
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

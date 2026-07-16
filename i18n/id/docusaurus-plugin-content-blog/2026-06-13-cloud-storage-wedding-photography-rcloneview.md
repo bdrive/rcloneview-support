@@ -15,10 +15,7 @@ keywords:
   - sinkronisasi cloud studio fotografi
   - pencadangan otomatis foto pernikahan
 tags:
-  - RcloneView
   - photography
-  - cloud-storage
-  - backup
   - industry
 ---
 

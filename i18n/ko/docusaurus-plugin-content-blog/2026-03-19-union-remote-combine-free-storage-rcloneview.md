@@ -16,11 +16,8 @@ keywords:
   - 가상 클라우드 스토리지
   - 클라우드 스토리지 통합
 tags:
-  - RcloneView
   - feature
-  - cloud-storage
   - multi-cloud
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

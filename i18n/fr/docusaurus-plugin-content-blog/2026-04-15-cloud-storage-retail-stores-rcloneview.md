@@ -16,11 +16,7 @@ keywords:
   - automatisation cloud commerce de détail
   - sauvegarde point de vente
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - industry
-  - guide
   - business
 ---
 

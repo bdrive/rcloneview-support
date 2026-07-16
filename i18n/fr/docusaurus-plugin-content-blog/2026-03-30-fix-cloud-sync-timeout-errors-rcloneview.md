@@ -16,10 +16,8 @@ keywords:
   - délai d'attente de nouvelle tentative de transfert
   - correction d'erreur de synchronisation cloud
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - performance
 ---
 

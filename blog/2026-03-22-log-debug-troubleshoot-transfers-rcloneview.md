@@ -14,11 +14,9 @@ keywords:
   - rclone logging configuration
   - troubleshoot cloud transfers
 tags:
-  - RcloneView
   - feature
   - troubleshooting
   - monitoring
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

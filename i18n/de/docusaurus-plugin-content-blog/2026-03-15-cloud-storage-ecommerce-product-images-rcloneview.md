@@ -16,8 +16,6 @@ keywords:
   - product image cloud
   - ecommerce data backup
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - best-practices
   - sync

@@ -16,12 +16,8 @@ keywords:
   - 保険文書管理
   - クラウドストレージ コンプライアンス
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
   - compliance
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

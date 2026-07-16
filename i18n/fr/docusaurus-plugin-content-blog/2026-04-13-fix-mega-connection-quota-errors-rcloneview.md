@@ -16,11 +16,9 @@ keywords:
   - problème de synchronisation Mega
   - dépannage de synchronisation cloud
 tags:
-  - RcloneView
   - mega
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

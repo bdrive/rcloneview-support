@@ -16,11 +16,8 @@ keywords:
   - rcloneview workflow
   - cloud backup efficiency
 tags:
-  - RcloneView
-  - cloud-storage
   - sync
   - file-management
-  - backup
 ---
 
 import RvCta from '../src/components/RvCta';

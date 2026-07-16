@@ -16,7 +16,6 @@ keywords:
   - failover de copia de seguridad en la nube
   - preparación para interrupciones en la nube
 tags:
-  - RcloneView
   - disaster-recovery
   - multi-cloud
   - best-practices

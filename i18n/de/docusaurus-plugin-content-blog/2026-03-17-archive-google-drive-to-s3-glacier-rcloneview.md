@@ -16,7 +16,6 @@ keywords:
   - langzeit cloud-speicher
   - cloud-archivstrategie
 tags:
-  - RcloneView
   - google-drive
   - s3
   - glacier

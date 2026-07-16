@@ -16,10 +16,7 @@ keywords:
   - cloud backup gui windows
   - windows server backup solution
 tags:
-  - RcloneView
   - windows-server
-  - backup
-  - cloud-storage
   - platform
 ---
 

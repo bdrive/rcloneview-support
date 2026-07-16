@@ -16,9 +16,7 @@ keywords:
   - azure smb mount
   - azure files rclone
 tags:
-  - RcloneView
   - azure-files
-  - cloud-storage
   - mount
   - sync
   - multi-cloud

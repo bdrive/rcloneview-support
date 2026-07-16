@@ -73,11 +73,6 @@ backblaze-b2:
   permalink: /backblaze-b2
   description: Backblaze B2に関する投稿です。
 
-backup:
-  label: バックアップ
-  permalink: /backup
-  description: バックアップに関する投稿です。
-
 best-practices:
   label: ベストプラクティス
   permalink: /best-practices
@@ -137,11 +132,6 @@ cloud-security:
   label: クラウドセキュリティ
   permalink: /cloud-security
   description: クラウドセキュリティに関する投稿です。
-
-cloud-storage:
-  label: クラウドストレージ
-  permalink: /cloud-storage
-  description: クラウドストレージに関する投稿です。
 
 cloud-storage-synchronization:
   label: クラウドストレージ同期
@@ -377,11 +367,6 @@ google-photos:
   label: Google Photos
   permalink: /google-photos
   description: Google Photosに関する投稿です。
-
-guide:
-  label: ガイド
-  permalink: /guide
-  description: ガイドに関する投稿です。
 
 hard-drive:
   label: ハードドライブ
@@ -692,11 +677,6 @@ rclone-crypt:
   label: Rclone Crypt
   permalink: /rclone-crypt
   description: Rclone Cryptに関する投稿です。
-
-RcloneView:
-  label: RcloneView
-  permalink: /rcloneview
-  description: RcloneViewに関する投稿です。
 
 reference:
   label: リファレンス

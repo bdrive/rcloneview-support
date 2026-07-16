@@ -16,9 +16,6 @@ keywords:
   - risiko penyimpanan cloud
   - pencadangan cloud otomatis
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - best-practices
   - security
 ---

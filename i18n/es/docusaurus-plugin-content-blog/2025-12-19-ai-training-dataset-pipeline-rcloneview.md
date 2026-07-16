@@ -16,11 +16,9 @@ keywords:
   - almacenamiento de objetos para IA
   - programación de conjuntos de datos
 tags:
-  - RcloneView
   - ai
   - data-pipeline
   - s3
-  - cloud-storage
   - huggingface
   - automation
 ---

@@ -16,13 +16,11 @@ keywords:
   - google drive backup r2
   - cloud storage migration gui
 tags:
-  - RcloneView
   - google-drive
   - cloudflare-r2
   - migration
   - cloud-migration
   - cloud-to-cloud
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

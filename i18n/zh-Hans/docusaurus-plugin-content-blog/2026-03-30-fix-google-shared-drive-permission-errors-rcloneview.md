@@ -16,11 +16,9 @@ keywords:
   - 共享云端硬盘 rclone 设置
   - Google Drive 权限不足
 tags:
-  - RcloneView
   - troubleshooting
   - tips
   - google-drive
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

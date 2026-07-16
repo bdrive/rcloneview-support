@@ -16,9 +16,7 @@ keywords:
   - Mac zu Cloud sichern
   - macOS Datenschutzberechtigungen Cloud
 tags:
-  - RcloneView
   - macos
-  - cloud-sync
   - installation
   - platform
 ---

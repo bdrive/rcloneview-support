@@ -16,11 +16,9 @@ keywords:
   - engineering project cloud
   - cad file backup
 tags:
-  - RcloneView
   - architecture
   - engineering
   - cad
-  - cloud-storage
   - best-practices
 ---
 

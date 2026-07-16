@@ -16,12 +16,7 @@ keywords:
   - sauvegarde planifiée
   - gestion multi-cloud
 tags:
-  - RcloneView
   - jottacloud
-  - cloud-storage
-  - cloud-sync
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,7 @@ keywords:
   - opensuse file transfer
   - linux multi-cloud
 tags:
-  - RcloneView
   - linux
-  - cloud-sync
   - installation
 ---
 

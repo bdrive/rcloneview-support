@@ -16,12 +16,8 @@ keywords:
   - sauvegarde cloud IONOS
   - gérer les fichiers IONOS avec RcloneView
 tags:
-  - RcloneView
-  - cloud-storage
   - s3-compatible
   - european-cloud
-  - backup
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

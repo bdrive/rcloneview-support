@@ -16,11 +16,8 @@ keywords:
   - dropbox rclone backup
   - cheap dropbox backup solution
 tags:
-  - RcloneView
   - dropbox
   - backblaze-b2
-  - cloud-storage
-  - backup
   - sync
 ---
 

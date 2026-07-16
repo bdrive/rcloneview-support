@@ -16,10 +16,8 @@ keywords:
   - storj dcs rclone
   - storj multi cloud sync
 tags:
-  - RcloneView
   - storj
   - decentralized-storage
-  - cloud-storage
   - s3-compatible
 ---
 

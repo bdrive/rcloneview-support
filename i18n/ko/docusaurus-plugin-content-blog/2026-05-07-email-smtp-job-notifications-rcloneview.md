@@ -14,10 +14,8 @@ keywords:
   - 동기화 완료 알림
   - rclone 이메일 알림
 tags:
-  - RcloneView
   - feature
   - automation
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

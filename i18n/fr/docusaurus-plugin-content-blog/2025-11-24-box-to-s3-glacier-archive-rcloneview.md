@@ -26,10 +26,7 @@ keywords:
   - conformité
   - conservation à long terme
 tags:
-  - RcloneView
-  - cloud-storage
   - cloud-migration
-  - backup
   - s3
   - sync
 ---

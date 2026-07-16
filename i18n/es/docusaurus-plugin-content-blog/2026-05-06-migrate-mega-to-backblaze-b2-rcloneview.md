@@ -16,12 +16,10 @@ keywords:
   - migración de copia de seguridad de la nube de Mega
   - GUI de migración de Backblaze B2
 tags:
-  - RcloneView
   - mega
   - backblaze-b2
   - cloud-to-cloud
   - migration
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

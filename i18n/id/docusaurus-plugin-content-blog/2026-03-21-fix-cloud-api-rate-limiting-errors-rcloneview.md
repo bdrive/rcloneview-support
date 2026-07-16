@@ -16,9 +16,7 @@ keywords:
   - request backoff
   - error sinkronisasi cloud
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

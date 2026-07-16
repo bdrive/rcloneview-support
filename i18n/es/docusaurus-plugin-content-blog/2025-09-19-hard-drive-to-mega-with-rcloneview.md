@@ -12,7 +12,6 @@ keywords:
   - rclone GUI
   - trabajos programados
 tags:
-  - RcloneView
   - mega
   - hard-drive
   - cloud-backup

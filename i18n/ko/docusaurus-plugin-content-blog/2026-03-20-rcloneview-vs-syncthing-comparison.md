@@ -16,10 +16,7 @@ keywords:
   - P2P file sharing
   - decentralized sync
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,7 +14,6 @@ keywords:
   - interface graphique rclone
   - stockage économique
 tags:
-  - RcloneView
   - cloudflare-r2
   - aws-s3
   - storage-comparison

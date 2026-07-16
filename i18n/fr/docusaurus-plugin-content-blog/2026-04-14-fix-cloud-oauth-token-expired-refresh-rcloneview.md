@@ -14,10 +14,8 @@ keywords:
   - reconnexion fournisseur cloud rclone
   - corriger connexion cloud expirée RcloneView
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

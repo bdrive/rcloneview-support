@@ -16,10 +16,8 @@ keywords:
   - rclone easy interface
   - rclone without command line
 tags:
-  - RcloneView
   - rclone
   - comparison
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

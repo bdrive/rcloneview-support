@@ -16,12 +16,9 @@ keywords:
   - r2 bucket management
   - r2 multi-cloud sync
 tags:
-  - RcloneView
   - cloudflare-r2
   - r2
-  - cloud-storage
   - s3-compatible
-  - guide
   - object-storage
 ---
 

@@ -12,9 +12,7 @@ keywords:
   - 雲端同步
   - rclone 圖形化介面
 tags:
-  - RcloneView
   - google-drive
-  - cloud-sync
   - migration
 ---
 

@@ -16,11 +16,7 @@ keywords:
   - manajemen dokumen HR
   - penyimpanan cloud HR terenkripsi
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

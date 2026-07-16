@@ -14,7 +14,7 @@ keywords:
   - raspberry pi rclone
   - sincronización en la nube headless
   - copia de seguridad en la nube de bajo consumo
-tags: [RcloneView, linux, platform, cloud-sync, guide, installation, raspberry-pi, cloud-storage, automation]
+tags: [linux, platform, installation, raspberry-pi, automation]
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

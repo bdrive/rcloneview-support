@@ -16,12 +16,10 @@ keywords:
   - copia de seguridad de OneDrive en S3
   - reducir costos de OneDrive
 tags:
-  - RcloneView
   - onedrive
   - amazon-s3
   - cloud-to-cloud
   - migration
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

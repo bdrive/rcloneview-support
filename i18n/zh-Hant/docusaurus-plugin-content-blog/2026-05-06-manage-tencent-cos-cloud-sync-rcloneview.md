@@ -16,11 +16,7 @@ keywords:
   - 騰訊 COS 備份工具
   - 中國雲端儲存管理
 tags:
-  - RcloneView
   - tencent-cos
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
 ---
 

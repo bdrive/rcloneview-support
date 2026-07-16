@@ -14,10 +14,7 @@ keywords:
   - rclone gui
   - 雲端儲存比較
 tags:
-  - RcloneView
-  - cloud-storage
   - comparison
-  - backup
   - sync
   - automation
 ---

@@ -14,11 +14,7 @@ keywords:
   - cloud file transfer put.io
   - put.io sync cloud
 tags:
-  - RcloneView
   - putio
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

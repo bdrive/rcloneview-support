@@ -16,11 +16,7 @@ keywords:
   - 建築事務所檔案管理
   - 雲端備份營建檔案
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
   - cad
 ---
 

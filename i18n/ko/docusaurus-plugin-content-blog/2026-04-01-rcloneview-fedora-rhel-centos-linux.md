@@ -16,13 +16,9 @@ keywords:
   - rclone centos gui
   - rpm based linux cloud management
 tags:
-  - RcloneView
   - linux
   - platform
   - installation
-  - guide
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

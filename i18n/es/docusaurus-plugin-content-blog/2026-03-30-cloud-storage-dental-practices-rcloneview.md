@@ -16,11 +16,7 @@ keywords:
   - protección de datos en consultorios dentales
   - almacenamiento en la nube para consultorios dentales
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

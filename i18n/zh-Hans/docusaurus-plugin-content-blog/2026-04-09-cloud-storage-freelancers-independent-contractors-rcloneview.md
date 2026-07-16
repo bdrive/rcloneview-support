@@ -16,11 +16,7 @@ keywords:
   - 零工云存储
   - 自雇人士文件备份
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
-  - guide
   - productivity
 ---
 

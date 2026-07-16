@@ -17,9 +17,6 @@ keywords:
   - rcloneview crypt remote
 
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - sync
   - file-management
 ---

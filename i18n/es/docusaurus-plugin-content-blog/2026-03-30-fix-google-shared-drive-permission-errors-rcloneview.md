@@ -16,11 +16,9 @@ keywords:
   - configuración de rclone para Shared Drive
   - permisos insuficientes de Google Drive
 tags:
-  - RcloneView
   - troubleshooting
   - tips
   - google-drive
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

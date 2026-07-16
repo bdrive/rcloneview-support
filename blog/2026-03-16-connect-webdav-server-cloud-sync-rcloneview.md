@@ -16,11 +16,8 @@ keywords:
   - webdav nas sync
   - webdav multi cloud
 tags:
-  - RcloneView
   - webdav
   - sync
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

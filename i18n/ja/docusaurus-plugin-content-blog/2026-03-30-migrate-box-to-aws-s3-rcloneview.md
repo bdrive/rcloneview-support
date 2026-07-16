@@ -16,7 +16,6 @@ keywords:
   - box backup to s3
   - object storage migration
 tags:
-  - RcloneView
   - box
   - amazon-s3
   - cloud-to-cloud

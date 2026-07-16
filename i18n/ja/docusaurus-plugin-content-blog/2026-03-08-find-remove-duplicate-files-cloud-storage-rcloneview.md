@@ -16,8 +16,6 @@ keywords:
   - クラウド重複排除ツール
   - google drive クリーンアップ
 tags:
-  - RcloneView
-  - cloud-storage
   - duplicates
   - cleanup
   - tips

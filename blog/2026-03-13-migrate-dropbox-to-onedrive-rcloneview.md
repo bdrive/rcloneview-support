@@ -16,11 +16,9 @@ keywords:
   - cloud migration dropbox
   - dropbox to microsoft migration
 tags:
-  - RcloneView
   - dropbox
   - onedrive
   - migration
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

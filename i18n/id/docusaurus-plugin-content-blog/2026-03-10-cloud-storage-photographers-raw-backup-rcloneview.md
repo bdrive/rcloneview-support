@@ -16,10 +16,7 @@ keywords:
   - photographer cloud storage solution
   - backup camera raw files
 tags:
-  - RcloneView
   - photography
-  - backup
-  - cloud-storage
   - best-practices
 ---
 

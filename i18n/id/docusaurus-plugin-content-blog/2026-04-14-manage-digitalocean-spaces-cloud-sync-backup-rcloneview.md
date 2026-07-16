@@ -14,11 +14,7 @@ keywords:
   - sinkronisasi penyimpanan objek cloud
   - alat pencadangan DigitalOcean
 tags:
-  - RcloneView
   - digitalocean-spaces
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

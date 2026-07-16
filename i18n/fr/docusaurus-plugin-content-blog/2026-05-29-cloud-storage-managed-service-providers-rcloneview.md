@@ -14,10 +14,6 @@ keywords:
   - gestion multi-cloud MSP
   - automatisation de la sauvegarde des données clients
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
-  - guide
   - industry
   - multi-cloud
   - automation

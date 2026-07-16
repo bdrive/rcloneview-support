@@ -16,12 +16,7 @@ keywords:
   - google drive multi-cloud
   - google drive automated backup
 tags:
-  - RcloneView
   - google-drive
-  - cloud-storage
-  - cloud-sync
-  - guide
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

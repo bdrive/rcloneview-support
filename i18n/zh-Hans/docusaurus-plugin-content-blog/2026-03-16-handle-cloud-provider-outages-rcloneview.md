@@ -16,7 +16,6 @@ keywords:
   - 云备份故障转移
   - 准备应对云服务中断
 tags:
-  - RcloneView
   - disaster-recovery
   - multi-cloud
   - best-practices

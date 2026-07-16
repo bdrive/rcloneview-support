@@ -13,12 +13,10 @@ keywords:
   - cloud file sync
   - cloud backup
 tags:
-  - RcloneView
   - multi-cloud
   - google-drive
   - dropbox
   - onedrive
-  - cloud-sync
   - file-management
 ---
 

@@ -16,12 +16,10 @@ keywords:
   - copia de seguridad de google photos
   - exportar google photos
 tags:
-  - RcloneView
   - google-photos
   - onedrive
   - migration
   - cloud-migration
-  - guide
   - cloud-to-cloud
 ---
 

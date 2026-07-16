@@ -16,8 +16,6 @@ keywords:
   - frais de stockage cloud expliqués
   - économiser de l'argent sur le stockage cloud
 tags:
-  - RcloneView
-  - cloud-storage
   - pricing
   - cost-optimization
   - tips

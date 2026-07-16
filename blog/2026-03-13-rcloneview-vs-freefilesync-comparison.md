@@ -16,11 +16,9 @@ keywords:
   - file synchronization tools
   - freefilesync replacement cloud
 tags:
-  - RcloneView
   - comparison
   - freefilesync
   - sync
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

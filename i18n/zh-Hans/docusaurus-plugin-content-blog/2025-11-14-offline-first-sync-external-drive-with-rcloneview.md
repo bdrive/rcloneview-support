@@ -11,10 +11,8 @@ keywords:
   - rclone sync external drive
   - offline first
 tags:
-  - RcloneView
   - offline-sync
   - external-drive
-  - backup
   - google-drive
   - onedrive
   - dropbox

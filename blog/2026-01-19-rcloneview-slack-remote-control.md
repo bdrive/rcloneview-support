@@ -14,9 +14,6 @@ keywords:
   - remote job management
   - rcloneview job status
 tags:
-  - RcloneView
-  - backup
-  - cloud-storage
   - job-management
   - security
   - automation

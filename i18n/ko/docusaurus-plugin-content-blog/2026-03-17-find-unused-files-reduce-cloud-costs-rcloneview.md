@@ -16,10 +16,8 @@ keywords:
   - 클라우드 정리 도구
   - 불필요한 클라우드 파일
 tags:
-  - RcloneView
   - cost-optimization
   - tips
-  - cloud-storage
   - organization
 ---
 

@@ -16,11 +16,9 @@ keywords:
   - resolve OneDrive path error
   - long folder names OneDrive
 tags:
-  - RcloneView
   - troubleshooting
   - tips
   - onedrive
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

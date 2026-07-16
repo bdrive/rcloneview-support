@@ -14,11 +14,9 @@ keywords:
   - Transferencia de GCS a Wasabi
   - RcloneView Google Cloud Wasabi
 tags:
-  - RcloneView
   - google-cloud-storage
   - wasabi
   - cloud-to-cloud
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

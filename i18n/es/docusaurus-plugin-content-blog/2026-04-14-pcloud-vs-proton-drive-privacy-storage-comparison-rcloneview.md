@@ -14,7 +14,6 @@ keywords:
   - comparativa de copia de seguridad en la nube segura
   - sincronización en la nube cifrada RcloneView
 tags:
-  - RcloneView
   - comparison
   - pcloud
   - proton-drive

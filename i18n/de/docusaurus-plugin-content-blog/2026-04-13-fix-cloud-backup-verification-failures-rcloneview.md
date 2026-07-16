@@ -14,10 +14,8 @@ keywords:
   - Backup-Korruption rclone beheben
   - Cloud-Synchronisation Verifizierung Fehlerbehebung
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

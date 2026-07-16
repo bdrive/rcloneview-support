@@ -16,13 +16,9 @@ keywords:
   - backup versioning tool
   - cloud storage manager 2026
 tags:
-  - RcloneView
   - comparison
   - compare
   - cloud-backup
-  - backup
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

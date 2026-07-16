@@ -16,11 +16,7 @@ keywords:
   - transferencia en la nube wasabi
   - copia de seguridad multi-nube wasabi
 tags:
-  - RcloneView
   - wasabi
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

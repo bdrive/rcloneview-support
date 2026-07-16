@@ -16,11 +16,7 @@ keywords:
   - DSGVO-Cloud-Backup
   - Koofr rclone
 tags:
-  - RcloneView
   - koofr
-  - cloud-storage
-  - cloud-sync
-  - backup
   - european-cloud
 ---
 

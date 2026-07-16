@@ -16,8 +16,6 @@ keywords:
   - batch sync copy move
   - multi-job execution rcloneview
 tags:
-  - RcloneView
-  - cloud-storage
   - sync
   - file-management
   - job-management

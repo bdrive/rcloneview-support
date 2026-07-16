@@ -14,9 +14,7 @@ keywords:
   - keep cloud sync running background
   - RcloneView continuous backup
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - automation
 ---
 

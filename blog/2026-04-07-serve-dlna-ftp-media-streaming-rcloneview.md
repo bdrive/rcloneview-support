@@ -14,7 +14,7 @@ keywords:
   - ftp cloud storage
   - smart tv cloud streaming
   - rclone media player
-tags: [RcloneView, feature, media, guide, tips, cloud-storage, automation, mount]
+tags: [feature, media, tips, automation, mount]
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

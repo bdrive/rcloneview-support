@@ -16,12 +16,10 @@ keywords:
   - cloud upload optimization guide
   - rclone concurrent transfers tuning
 tags:
-  - RcloneView
   - troubleshooting
   - tips
   - performance
   - optimization
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

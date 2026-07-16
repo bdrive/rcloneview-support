@@ -16,12 +16,10 @@ keywords:
   - cloud to cloud transfer
   - mega to amazon s3
 tags:
-  - RcloneView
   - mega
   - amazon-s3
   - migration
   - cloud-migration
-  - guide
   - cloud-to-cloud
   - s3
 ---

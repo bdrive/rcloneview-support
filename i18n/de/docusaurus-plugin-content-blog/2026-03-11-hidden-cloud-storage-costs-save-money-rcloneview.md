@@ -16,8 +16,6 @@ keywords:
   - Cloud-Speicher-Gebühren erklärt
   - Geld sparen Cloud-Speicher
 tags:
-  - RcloneView
-  - cloud-storage
   - pricing
   - cost-optimization
   - tips

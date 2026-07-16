@@ -16,11 +16,7 @@ keywords:
   - box automated sync
   - box multi-cloud backup
 tags:
-  - RcloneView
   - box
-  - cloud-storage
-  - cloud-sync
-  - backup
   - file-management
 ---
 

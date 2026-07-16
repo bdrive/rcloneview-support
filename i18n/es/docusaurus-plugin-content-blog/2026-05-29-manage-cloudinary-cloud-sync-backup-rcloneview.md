@@ -14,11 +14,6 @@ keywords:
   - sincronizar archivos de Cloudinary
   - copia de seguridad de recursos digitales de Cloudinary
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
-  - guide
   - dam
 ---
 

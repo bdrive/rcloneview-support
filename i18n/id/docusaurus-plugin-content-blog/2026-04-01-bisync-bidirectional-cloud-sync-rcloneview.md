@@ -16,12 +16,8 @@ keywords:
   - sinkronisasi dua arah onedrive
   - cermin dua arah folder cloud
 tags:
-  - RcloneView
   - sync
-  - cloud-sync
   - feature
-  - guide
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

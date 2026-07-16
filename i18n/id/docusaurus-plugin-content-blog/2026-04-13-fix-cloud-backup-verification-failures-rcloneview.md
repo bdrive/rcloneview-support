@@ -14,10 +14,8 @@ keywords:
   - perbaikan korupsi pencadangan rclone
   - pemecahan masalah verifikasi sinkronisasi cloud
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

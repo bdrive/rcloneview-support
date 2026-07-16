@@ -5,11 +5,9 @@ authors: [tayson]
 description: "1Fichier는 파일 공유에는 편리하지만, 쌓인 파일을 정리하는 일은 골치 아픕니다. RcloneView로 1Fichier 파일을 Google Drive, OneDrive, S3로 다운로드하고 전체 과정을 자동화하는 방법을 알아보세요."
 keywords: ["1fichier download manager", "1fichier to cloud", "1fichier to google drive", "1fichier file manager", "1fichier rclone", "1fichier sync tool", "1fichier backup", "organize 1fichier files", "file hosting integration", "cloud backup"]
 tags:
-  - RcloneView
   - 1fichier
   - file-management
   - cloud-backup
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

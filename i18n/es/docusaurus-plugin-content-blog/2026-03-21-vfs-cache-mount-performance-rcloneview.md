@@ -16,7 +16,6 @@ keywords:
   - ajuste de rendimiento
   - optimización de acceso a archivos
 tags:
-  - RcloneView
   - vfs
   - mount
   - performance

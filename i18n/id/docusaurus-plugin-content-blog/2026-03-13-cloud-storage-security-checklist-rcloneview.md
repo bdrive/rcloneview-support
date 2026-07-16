@@ -16,11 +16,8 @@ keywords:
   - google drive aman
   - praktik terbaik enkripsi cloud
 tags:
-  - RcloneView
   - security
-  - cloud-storage
   - best-practices
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

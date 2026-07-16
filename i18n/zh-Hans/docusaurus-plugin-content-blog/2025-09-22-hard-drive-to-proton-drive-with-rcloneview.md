@@ -14,11 +14,9 @@ keywords:
   - 计划同步
   - 本地到云端
 tags:
-  - RcloneView
   - proton-drive
   - hard-drive
   - cloud-backup
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

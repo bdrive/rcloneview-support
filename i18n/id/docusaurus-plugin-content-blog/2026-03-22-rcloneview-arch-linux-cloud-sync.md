@@ -14,11 +14,9 @@ keywords:
   - arch aur package
   - linux cloud manager
 tags:
-  - RcloneView
   - linux
   - platform
   - installation
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

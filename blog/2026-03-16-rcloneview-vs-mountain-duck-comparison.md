@@ -16,10 +16,8 @@ keywords:
   - mountain duck review
   - best cloud mount software
 tags:
-  - RcloneView
   - comparison
   - mount
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

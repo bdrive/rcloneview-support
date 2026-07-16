@@ -16,11 +16,8 @@ keywords:
   - sinkronisasi multi-perangkat
   - pencadangan dua arah
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - sync
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

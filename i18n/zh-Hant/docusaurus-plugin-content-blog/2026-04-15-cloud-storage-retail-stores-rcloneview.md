@@ -16,11 +16,7 @@ keywords:
   - 零售雲端自動化
   - 銷售點備份
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - industry
-  - guide
   - business
 ---
 

@@ -16,12 +16,7 @@ keywords:
   - Gofile rclone
   - 大檔案上傳服務
 tags:
-  - RcloneView
   - gofile
-  - cloud-storage
-  - cloud-sync
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

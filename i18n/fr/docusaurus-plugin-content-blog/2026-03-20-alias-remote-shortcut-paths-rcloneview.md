@@ -16,10 +16,7 @@ keywords:
   - accès rapide aux dossiers
   - organisation du cloud
 tags:
-  - RcloneView
   - feature
-  - guide
-  - cloud-storage
   - productivity
 ---
 

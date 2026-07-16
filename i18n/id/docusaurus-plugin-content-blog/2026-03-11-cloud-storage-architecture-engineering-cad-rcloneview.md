@@ -16,11 +16,9 @@ keywords:
   - proyek teknik cloud
   - pencadangan file cad
 tags:
-  - RcloneView
   - architecture
   - engineering
   - cad
-  - cloud-storage
   - best-practices
 ---
 

@@ -16,10 +16,7 @@ keywords:
   - akses folder cepat
   - organisasi cloud
 tags:
-  - RcloneView
   - feature
-  - guide
-  - cloud-storage
   - productivity
 ---
 

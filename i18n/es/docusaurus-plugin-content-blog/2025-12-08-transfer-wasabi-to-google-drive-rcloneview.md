@@ -16,10 +16,7 @@ keywords:
   - subida multiparte s3
   - automatización en la nube
 tags:
-  - RcloneView
   - cloud-migration
-  - cloud-storage
-  - backup
   - wasabi
   - google-drive
   - sync

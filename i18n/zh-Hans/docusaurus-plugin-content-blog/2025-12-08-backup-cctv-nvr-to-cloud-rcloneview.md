@@ -16,7 +16,6 @@ keywords:
   - 计划备份
   - 灾难恢复
 tags:
-  - RcloneView
   - cloud
   - sync
   - nas

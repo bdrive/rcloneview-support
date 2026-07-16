@@ -15,9 +15,7 @@ keywords:
   - media workflow
   - multi cloud
 tags:
-  - RcloneView
   - media
-  - cloud-storage
   - mount
   - sync
 ---

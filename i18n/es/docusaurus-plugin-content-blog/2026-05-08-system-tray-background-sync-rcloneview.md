@@ -14,9 +14,7 @@ keywords:
   - mantener sincronización en la nube activa en segundo plano
   - RcloneView copia de seguridad continua
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - automation
 ---
 

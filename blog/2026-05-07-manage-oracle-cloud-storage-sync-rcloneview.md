@@ -14,12 +14,8 @@ keywords:
   - object storage
   - rclone oracle
 tags:
-  - RcloneView
   - oracle-cloud
   - object-storage
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

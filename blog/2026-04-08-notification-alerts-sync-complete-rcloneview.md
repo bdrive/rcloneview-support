@@ -16,12 +16,9 @@ keywords:
   - sync failure notification
   - cloud job monitoring
 tags:
-  - RcloneView
   - feature
   - automation
-  - cloud-sync
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

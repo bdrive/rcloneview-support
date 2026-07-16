@@ -16,7 +16,6 @@ keywords:
   - pcloud cloud storage
   - cross-cloud sync
 tags:
-  - RcloneView
   - dropbox
   - pcloud
   - cloud-to-cloud

@@ -16,12 +16,10 @@ keywords:
   - HiDrive file transfer tool
   - cloud to cloud sync HiDrive
 tags:
-  - RcloneView
   - hidrive
   - google-drive
   - cloud-to-cloud
   - sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

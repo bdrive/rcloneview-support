@@ -16,10 +16,8 @@ keywords:
   - rclone einfache oberfläche
   - rclone ohne kommandozeile
 tags:
-  - RcloneView
   - rclone
   - comparison
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

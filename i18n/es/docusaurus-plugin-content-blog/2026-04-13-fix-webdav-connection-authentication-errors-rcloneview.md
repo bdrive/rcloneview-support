@@ -16,11 +16,9 @@ keywords:
   - almacenamiento en la nube WebDAV
   - RcloneView WebDAV
 tags:
-  - RcloneView
   - webdav
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

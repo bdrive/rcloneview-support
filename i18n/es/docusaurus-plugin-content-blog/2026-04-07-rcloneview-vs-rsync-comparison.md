@@ -16,13 +16,9 @@ keywords:
   - rsync con soporte para la nube
   - gestor de almacenamiento en la nube 2026
 tags:
-  - RcloneView
   - comparison
   - compare
-  - cloud-storage
   - linux
-  - guide
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

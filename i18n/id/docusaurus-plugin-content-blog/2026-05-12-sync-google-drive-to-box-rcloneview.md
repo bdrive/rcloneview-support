@@ -16,11 +16,9 @@ keywords:
   - pencadangan cloud Box RcloneView
   - transfer file Google Drive Box
 tags:
-  - RcloneView
   - google-drive
   - box
   - cloud-to-cloud
-  - cloud-sync
   - migration
 ---
 

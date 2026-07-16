@@ -16,11 +16,8 @@ keywords:
   - jottacloud external drive
   - jottacloud file transfer
 tags:
-  - RcloneView
   - jottacloud
-  - cloud-storage
   - sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

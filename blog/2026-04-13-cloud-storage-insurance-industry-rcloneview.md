@@ -16,12 +16,8 @@ keywords:
   - insurance document management
   - cloud storage compliance
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
   - compliance
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

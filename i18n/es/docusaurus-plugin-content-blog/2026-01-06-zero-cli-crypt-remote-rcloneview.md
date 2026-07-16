@@ -16,9 +16,6 @@ keywords:
   - copia de seguridad centrada en la privacidad
   - rclone gui
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - encryption
   - file-management
 ---

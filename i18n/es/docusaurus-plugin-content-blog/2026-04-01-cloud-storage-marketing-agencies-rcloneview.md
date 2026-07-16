@@ -16,12 +16,8 @@ keywords:
   - advertising agency cloud storage
   - digital marketing file management
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - business
-  - guide
-  - backup
   - dam
   - media
 ---

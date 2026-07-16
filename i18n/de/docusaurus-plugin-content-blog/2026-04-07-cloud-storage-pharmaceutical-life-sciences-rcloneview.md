@@ -16,13 +16,9 @@ keywords:
   - encrypted cloud storage life sciences
   - audit trail cloud storage pharma
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
   - compliance
   - security
-  - backup
-  - guide
   - encryption
   - amazon-s3
 ---

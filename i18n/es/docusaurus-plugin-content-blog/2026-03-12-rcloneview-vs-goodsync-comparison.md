@@ -16,11 +16,9 @@ keywords:
   - comparación de copia de seguridad en la nube
   - herramienta de sincronización bidireccional
 tags:
-  - RcloneView
   - comparison
   - goodsync
   - sync
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

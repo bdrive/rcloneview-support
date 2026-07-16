@@ -16,7 +16,6 @@ keywords:
   - sens de synchronisation incorrect
   - correction d'une erreur de synchronisation cloud
 tags:
-  - RcloneView
   - sync
   - data-loss
   - safety

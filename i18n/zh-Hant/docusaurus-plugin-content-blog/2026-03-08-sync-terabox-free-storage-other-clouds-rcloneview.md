@@ -5,11 +5,9 @@ authors: [tayson]
 description: "解鎖 Terabox 龐大的 1TB 免費儲存空間。了解如何使用 RcloneView 將 Terabox 與 Google Drive、OneDrive、S3 及其他雲端服務同步，實現無縫備份與混合雲工作流程。"
 keywords: ["terabox sync", "terabox backup tool", "terabox to google drive", "terabox 1tb free sync", "terabox file manager", "terabox rclone", "terabox transfer files", "terabox cloud integration", "free storage sync", "hybrid cloud backup"]
 tags:
-  - RcloneView
   - terabox
   - cloud-backup
   - hybrid-cloud
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

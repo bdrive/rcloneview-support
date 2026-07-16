@@ -16,10 +16,8 @@ keywords:
   - remplacement d'expandrive
   - outil de montage de lecteur cloud
 tags:
-  - RcloneView
   - comparison
   - mount
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

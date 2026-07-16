@@ -16,8 +16,6 @@ keywords:
   - cloud devops tools
   - rcloneview
 tags:
-  - RcloneView
-  - cloud-storage
   - sync
   - file-management
   - cli

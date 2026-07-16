@@ -14,9 +14,7 @@ keywords:
   - 保持云同步后台运行
   - RcloneView 持续备份
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - automation
 ---
 

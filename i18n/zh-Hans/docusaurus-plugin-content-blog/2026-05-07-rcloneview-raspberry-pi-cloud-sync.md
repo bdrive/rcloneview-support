@@ -14,10 +14,8 @@ keywords:
   - ARM Linux 云同步
   - 树莓派存储
 tags:
-  - RcloneView
   - raspberry-pi
   - linux
-  - cloud-sync
   - installation
 ---
 

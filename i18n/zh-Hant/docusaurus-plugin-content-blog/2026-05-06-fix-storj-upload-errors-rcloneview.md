@@ -16,11 +16,9 @@ keywords:
   - Storj 備份錯誤解決
   - Storj rclone 錯誤修復
 tags:
-  - RcloneView
   - storj
   - troubleshooting
   - tips
-  - cloud-sync
   - decentralized-storage
 ---
 

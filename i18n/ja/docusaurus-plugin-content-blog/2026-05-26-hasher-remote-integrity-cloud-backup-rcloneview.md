@@ -16,10 +16,7 @@ keywords:
   - クラウドバックアップのハッシュ検証
   - rclone仮想リモートhasher
 tags:
-  - RcloneView
   - feature
-  - cloud-storage
-  - backup
   - tips
 ---
 

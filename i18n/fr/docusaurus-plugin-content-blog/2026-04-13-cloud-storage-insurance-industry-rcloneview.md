@@ -16,12 +16,8 @@ keywords:
   - gestion documentaire assurance
   - conformité stockage cloud
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
   - compliance
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,11 +16,8 @@ keywords:
   - de mail.ru cloud a s3
   - exportación de datos de mail.ru
 tags:
-  - RcloneView
   - mailru
-  - cloud-storage
   - migration
-  - backup
   - sync
 ---
 

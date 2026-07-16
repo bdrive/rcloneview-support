@@ -14,11 +14,7 @@ keywords:
   - otomatisasi pencadangan aset kreatif
   - penyimpanan cloud untuk file media
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

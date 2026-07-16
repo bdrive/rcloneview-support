@@ -16,11 +16,7 @@ keywords:
   - Europäischer Cloud-Speicher
   - Hetzner Bucket-Verwaltung
 tags:
-  - RcloneView
   - hetzner
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

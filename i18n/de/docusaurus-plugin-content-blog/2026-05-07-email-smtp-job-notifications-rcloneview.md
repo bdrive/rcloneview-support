@@ -14,10 +14,8 @@ keywords:
   - Benachrichtigung über Synchronisationsabschluss
   - rclone E-Mail-Benachrichtigung
 tags:
-  - RcloneView
   - feature
   - automation
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

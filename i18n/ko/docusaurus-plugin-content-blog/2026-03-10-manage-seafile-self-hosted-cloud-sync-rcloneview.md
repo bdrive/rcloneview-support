@@ -16,10 +16,8 @@ keywords:
   - seafile external backup
   - seafile multi cloud
 tags:
-  - RcloneView
   - seafile
   - self-hosted
-  - cloud-storage
   - sync
 ---
 

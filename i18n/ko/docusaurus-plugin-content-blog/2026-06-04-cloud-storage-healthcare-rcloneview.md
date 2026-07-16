@@ -16,11 +16,8 @@ keywords:
   - medical records cloud backup
   - healthcare data compliance cloud
 tags:
-  - RcloneView
   - healthcare
-  - cloud-storage
   - encryption
-  - backup
   - hipaa
 ---
 

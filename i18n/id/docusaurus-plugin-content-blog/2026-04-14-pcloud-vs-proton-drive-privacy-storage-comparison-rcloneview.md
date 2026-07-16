@@ -14,7 +14,6 @@ keywords:
   - perbandingan pencadangan cloud aman
   - sinkronisasi cloud terenkripsi RcloneView
 tags:
-  - RcloneView
   - comparison
   - pcloud
   - proton-drive

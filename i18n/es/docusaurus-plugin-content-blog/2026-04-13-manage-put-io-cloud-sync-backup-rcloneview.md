@@ -14,11 +14,7 @@ keywords:
   - transferencia de archivos en la nube put.io
   - sincronización en la nube put.io
 tags:
-  - RcloneView
   - putio
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

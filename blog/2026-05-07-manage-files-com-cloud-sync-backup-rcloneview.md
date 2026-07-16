@@ -14,10 +14,6 @@ keywords:
   - SFTP cloud sync
   - secure file transfer
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - sftp
 ---
 

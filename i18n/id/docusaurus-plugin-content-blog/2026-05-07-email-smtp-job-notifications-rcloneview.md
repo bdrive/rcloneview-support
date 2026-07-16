@@ -14,10 +14,8 @@ keywords:
   - peringatan penyelesaian sinkronisasi
   - notifikasi email rclone
 tags:
-  - RcloneView
   - feature
   - automation
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

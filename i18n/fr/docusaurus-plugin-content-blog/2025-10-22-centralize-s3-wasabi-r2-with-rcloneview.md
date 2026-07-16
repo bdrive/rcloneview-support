@@ -16,13 +16,10 @@ keywords:
   - sync
   - rclone gui
 tags:
-  - RcloneView
   - s3
   - wasabi
   - cloudflare-r2
-  - cloud-storage
   - sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

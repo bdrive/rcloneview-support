@@ -14,11 +14,9 @@ keywords:
   - sincronización de jottacloud atascada
   - solución jottacloud rcloneview
 tags:
-  - RcloneView
   - jottacloud
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

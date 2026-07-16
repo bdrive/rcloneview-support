@@ -14,11 +14,6 @@ keywords:
   - cloud media management
   - image CDN storage backup
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
-  - guide
   - dam
   - media
 ---

@@ -16,9 +16,7 @@ keywords:
   - large file cloud sync
   - RcloneView advanced
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - tips
 ---
 

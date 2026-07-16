@@ -16,11 +16,8 @@ keywords:
   - penyimpanan cloud virtual
   - agregasi penyimpanan cloud
 tags:
-  - RcloneView
   - feature
-  - cloud-storage
   - multi-cloud
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

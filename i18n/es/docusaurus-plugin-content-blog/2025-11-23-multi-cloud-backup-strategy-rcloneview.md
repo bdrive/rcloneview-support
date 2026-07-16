@@ -16,11 +16,9 @@ keywords:
   - copias de seguridad programadas
   - verificación de checksum
 tags:
-  - RcloneView
   - cloud
   - sync
   - cloud-migration
-  - backup
   - tutorial
   - google-drive
   - onedrive

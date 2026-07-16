@@ -16,10 +16,8 @@ keywords:
   - proton drive alternative backup
   - encrypted cloud sync proton
 tags:
-  - RcloneView
   - proton-drive
   - privacy
-  - cloud-storage
   - sync
 ---
 

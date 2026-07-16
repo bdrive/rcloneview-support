@@ -16,11 +16,8 @@ keywords:
   - 멀티 디바이스 동기화
   - 양방향 백업
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - sync
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

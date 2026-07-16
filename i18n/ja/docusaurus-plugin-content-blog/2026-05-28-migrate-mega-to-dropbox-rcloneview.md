@@ -16,7 +16,6 @@ keywords:
   - クラウド間でファイルを移動
   - MEGA Dropbox ファイルマネージャー
 tags:
-  - RcloneView
   - mega
   - dropbox
   - cloud-to-cloud

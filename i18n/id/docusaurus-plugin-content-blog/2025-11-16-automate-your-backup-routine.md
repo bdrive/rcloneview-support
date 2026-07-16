@@ -13,10 +13,7 @@ keywords:
   - pencadangan cloud
   - sinkronisasi
 tags:
-  - RcloneView
   - automation
-  - backup
-  - cloud-storage
   - sync
 ---
 

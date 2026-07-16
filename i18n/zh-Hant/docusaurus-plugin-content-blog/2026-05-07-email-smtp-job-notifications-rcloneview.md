@@ -14,10 +14,8 @@ keywords:
   - sync completion alert
   - rclone email notification
 tags:
-  - RcloneView
   - feature
   - automation
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

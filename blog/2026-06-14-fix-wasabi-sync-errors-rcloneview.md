@@ -15,12 +15,10 @@ keywords:
   - wasabi rate limit rclone
   - fix wasabi cloud sync rcloneview
 tags:
-  - RcloneView
   - wasabi
   - troubleshooting
   - tips
   - s3-compatible
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

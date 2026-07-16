@@ -16,7 +16,6 @@ keywords:
   - déplacer des fichiers entre clouds
   - gestionnaire de fichiers MEGA Dropbox
 tags:
-  - RcloneView
   - mega
   - dropbox
   - cloud-to-cloud

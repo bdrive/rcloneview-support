@@ -16,11 +16,8 @@ keywords:
   - mejores prácticas de seguridad
   - verificación de cumplimiento
 tags:
-  - RcloneView
-  - cloud-storage
   - security
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

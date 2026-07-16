@@ -16,11 +16,9 @@ keywords:
   - filezilla google drive
   - best file transfer tool
 tags:
-  - RcloneView
   - comparison
   - filezilla
   - ftp
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

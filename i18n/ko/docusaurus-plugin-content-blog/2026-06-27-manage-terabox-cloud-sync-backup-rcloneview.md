@@ -16,11 +16,7 @@ keywords:
   - RcloneView Terabox 가이드
   - 클라우드 스토리지 관리자 Terabox
 tags:
-  - RcloneView
   - terabox
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

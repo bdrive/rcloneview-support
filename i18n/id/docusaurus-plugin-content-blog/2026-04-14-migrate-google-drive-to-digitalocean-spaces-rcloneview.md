@@ -14,7 +14,6 @@ keywords:
   - migrasi Google Drive RcloneView
   - transfer file DigitalOcean Spaces
 tags:
-  - RcloneView
   - google-drive
   - digitalocean-spaces
   - cloud-to-cloud

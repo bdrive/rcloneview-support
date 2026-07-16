@@ -16,9 +16,7 @@ keywords:
   - macos cloud sync app
   - rclone gui macos
 tags:
-  - RcloneView
   - macos
-  - cloud-storage
   - mount
   - sync
   - platform

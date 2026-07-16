@@ -16,11 +16,8 @@ keywords:
   - construction project cloud
   - building project file sync
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - best-practices
-  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

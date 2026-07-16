@@ -16,10 +16,8 @@ keywords:
   - cloud transfer hang
   - rclone timeout recovery
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - performance
 ---
 

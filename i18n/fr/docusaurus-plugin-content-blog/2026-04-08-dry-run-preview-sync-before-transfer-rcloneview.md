@@ -16,11 +16,8 @@ keywords:
   - cloud transfer preview
   - compare before sync
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

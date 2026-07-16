@@ -16,13 +16,11 @@ keywords:
   - b2 data transfer
   - object storage migration gui
 tags:
-  - RcloneView
   - backblaze-b2
   - wasabi
   - migration
   - cloud-migration
   - s3-compatible
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

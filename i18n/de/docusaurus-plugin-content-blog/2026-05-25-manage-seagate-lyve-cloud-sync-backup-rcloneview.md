@@ -16,10 +16,6 @@ keywords:
   - Cloud-Dateiübertragungstool
   - Lyve Cloud Dateimanager
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

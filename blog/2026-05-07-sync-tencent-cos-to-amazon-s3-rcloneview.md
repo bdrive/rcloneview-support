@@ -14,12 +14,10 @@ keywords:
   - China cloud to global
   - cross-region cloud sync
 tags:
-  - RcloneView
   - tencent-cos
   - amazon-s3
   - cloud-to-cloud
   - sync
-  - backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

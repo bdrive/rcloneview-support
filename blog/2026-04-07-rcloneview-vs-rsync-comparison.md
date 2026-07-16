@@ -16,13 +16,9 @@ keywords:
   - rsync with cloud support
   - cloud storage manager 2026
 tags:
-  - RcloneView
   - comparison
   - compare
-  - cloud-storage
   - linux
-  - guide
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

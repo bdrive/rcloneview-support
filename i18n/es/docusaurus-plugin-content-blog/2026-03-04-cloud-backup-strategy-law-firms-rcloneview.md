@@ -16,9 +16,6 @@ keywords:
   - legal industry cloud storage
   - encrypted backup law firm
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - encryption
   - compliance
   - enterprise

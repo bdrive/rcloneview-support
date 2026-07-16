@@ -16,9 +16,6 @@ keywords:
   - pencadangan nas rclone
   - strategi pencadangan synology
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - sync
   - file-management
 ---

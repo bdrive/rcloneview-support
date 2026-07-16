@@ -16,11 +16,8 @@ keywords:
   - Backup-Größe reduzieren
   - rclone Komprimierung
 tags:
-  - RcloneView
   - feature
   - cost-optimization
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -14,11 +14,7 @@ keywords:
   - 建築師雲端備份
   - 專案封存雲端儲存
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

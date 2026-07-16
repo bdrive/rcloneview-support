@@ -16,7 +16,6 @@ keywords:
   - synchronisation planifiée
   - interface rclone
 tags:
-  - RcloneView
   - synology
   - cloud-backup
   - s3

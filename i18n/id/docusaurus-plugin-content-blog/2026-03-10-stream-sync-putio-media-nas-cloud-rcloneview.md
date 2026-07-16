@@ -16,9 +16,7 @@ keywords:
   - putio to nas
   - putio automated download
 tags:
-  - RcloneView
   - putio
-  - cloud-storage
   - media
   - sync
   - nas

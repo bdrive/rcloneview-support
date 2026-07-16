@@ -16,7 +16,6 @@ keywords:
   - scheduled backup
   - disaster recovery
 tags:
-  - RcloneView
   - cloud
   - sync
   - nas

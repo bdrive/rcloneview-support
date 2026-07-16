@@ -16,11 +16,9 @@ keywords:
   - rclone slow transfer
   - fix rclone memory
 tags:
-  - RcloneView
   - troubleshooting
   - performance
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

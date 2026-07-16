@@ -16,8 +16,6 @@ keywords:
   - 제품 이미지 클라우드
   - 이커머스 데이터 백업
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - best-practices
   - sync

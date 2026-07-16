@@ -15,10 +15,7 @@ keywords:
   - cloud-synchronisation für fotostudios
   - automatisches backup von hochzeitsfotos
 tags:
-  - RcloneView
   - photography
-  - cloud-storage
-  - backup
   - industry
 ---
 

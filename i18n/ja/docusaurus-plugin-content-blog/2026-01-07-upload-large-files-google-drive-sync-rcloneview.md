@@ -17,10 +17,7 @@ keywords:
   - upload large files
 
 tags:
-  - RcloneView
-  - cloud-storage
   - sync
-  - backup
   - file-management
 ---
 

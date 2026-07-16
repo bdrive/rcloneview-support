@@ -16,11 +16,9 @@ keywords:
   - s3 to azure storage
   - multi cloud migration
 tags:
-  - RcloneView
   - aws-s3
   - azure
   - migration
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

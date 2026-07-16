@@ -14,7 +14,6 @@ keywords:
   - error de frase de contraseña de clave SFTP
   - solución de conexión SFTP rclone
 tags:
-  - RcloneView
   - sftp
   - troubleshooting
   - tips

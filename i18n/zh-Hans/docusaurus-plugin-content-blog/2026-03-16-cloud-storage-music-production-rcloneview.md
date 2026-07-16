@@ -16,11 +16,8 @@ keywords:
   - 音频制作云
   - 录音棚云存储
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - best-practices
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,9 +16,7 @@ keywords:
   - alat multi cloud explorer
   - perbandingan cloud manager 2026
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
   - multi-cloud
 ---
 

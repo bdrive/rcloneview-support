@@ -16,9 +16,7 @@ keywords:
   - error de permisos s3
   - solución de problemas de almacenamiento en la nube
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - tips
   - security
 ---

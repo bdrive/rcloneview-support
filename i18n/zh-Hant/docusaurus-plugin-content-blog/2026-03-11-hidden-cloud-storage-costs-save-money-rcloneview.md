@@ -16,8 +16,6 @@ keywords:
   - 雲端儲存費用說明
   - 節省雲端儲存費用
 tags:
-  - RcloneView
-  - cloud-storage
   - pricing
   - cost-optimization
   - tips

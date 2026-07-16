@@ -14,7 +14,6 @@ keywords:
   - Cloudflare R2 connection issues
   - rclone R2 upload fix
 tags:
-  - RcloneView
   - cloudflare-r2
   - troubleshooting
   - tips

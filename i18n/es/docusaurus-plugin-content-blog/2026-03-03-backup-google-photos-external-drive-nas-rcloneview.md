@@ -16,10 +16,7 @@ keywords:
   - guardar google photos localmente
   - alternativa a la exportación de google photos
 tags:
-  - RcloneView
   - google-photos
-  - backup
-  - cloud-storage
   - sync
   - nas
 ---

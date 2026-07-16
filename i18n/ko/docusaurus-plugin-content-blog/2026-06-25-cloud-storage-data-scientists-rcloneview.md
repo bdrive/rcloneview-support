@@ -15,11 +15,7 @@ keywords:
   - data science multi-cloud tool
   - rcloneview data science workflow
 tags:
-  - RcloneView
-  - cloud-storage
   - ai
-  - backup
-  - guide
   - industry
   - amazon-s3
   - google-drive

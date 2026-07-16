@@ -16,7 +16,6 @@ keywords:
   - wasabi to aws s3
   - cloud storage migration cost
 tags:
-  - RcloneView
   - wasabi
   - backblaze-b2
   - aws-s3

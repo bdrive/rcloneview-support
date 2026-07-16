@@ -16,11 +16,8 @@ keywords:
   - synology automated backup
   - synology nas cloud manager
 tags:
-  - RcloneView
   - synology
   - nas
-  - backup
-  - cloud-storage
   - platform
 ---
 

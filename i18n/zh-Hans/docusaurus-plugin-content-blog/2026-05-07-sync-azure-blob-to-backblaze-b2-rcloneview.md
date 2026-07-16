@@ -14,12 +14,10 @@ keywords:
   - 存储成本节省
   - rclone azure b2
 tags:
-  - RcloneView
   - azure
   - backblaze-b2
   - cloud-to-cloud
   - migration
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

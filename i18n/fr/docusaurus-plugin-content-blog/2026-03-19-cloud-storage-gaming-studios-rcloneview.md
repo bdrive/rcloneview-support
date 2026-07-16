@@ -16,11 +16,8 @@ keywords:
   - stockage cloud pour jeux indépendants
   - archive de build de jeu
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - best-practices
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

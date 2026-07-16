@@ -13,10 +13,8 @@ keywords:
   - copia de seguridad en la nube
   - continuidad del negocio
 tags:
-  - RcloneView
   - disaster-recovery
   - multi-cloud
-  - backup
   - sync
 ---
 

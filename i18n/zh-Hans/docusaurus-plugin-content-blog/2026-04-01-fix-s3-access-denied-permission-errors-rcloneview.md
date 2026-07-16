@@ -16,13 +16,10 @@ keywords:
   - troubleshoot s3 rclone
   - fix s3 errors rcloneview
 tags:
-  - RcloneView
   - amazon-s3
   - aws-s3
   - troubleshooting
   - tips
-  - guide
-  - cloud-storage
   - security
 ---
 

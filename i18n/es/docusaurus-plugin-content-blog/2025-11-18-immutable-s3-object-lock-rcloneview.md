@@ -14,8 +14,6 @@ keywords:
   - inmutabilidad de copias de seguridad en la nube
   - copia de seguridad de cumplimiento normativo
 tags:
-  - RcloneView
-  - backup
   - security
   - s3
   - wasabi

@@ -16,11 +16,8 @@ keywords:
   - protección del historial de trabajos
   - protección del historial de transferencias
 tags:
-  - RcloneView
   - security
-  - backup
   - job-management
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

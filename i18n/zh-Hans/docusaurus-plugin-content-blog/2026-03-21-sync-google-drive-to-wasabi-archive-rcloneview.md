@@ -16,10 +16,8 @@ keywords:
   - Google Drive 归档
   - 热存储
 tags:
-  - RcloneView
   - google-drive
   - wasabi
-  - cloud-sync
   - archive
 ---
 

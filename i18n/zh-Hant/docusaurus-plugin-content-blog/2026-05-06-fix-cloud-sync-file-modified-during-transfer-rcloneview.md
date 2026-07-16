@@ -16,10 +16,8 @@ keywords:
   - rclone modified during transfer
   - cloud backup file conflict resolution
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - data-recovery
 ---
 

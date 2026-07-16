@@ -14,12 +14,10 @@ keywords:
   - rclone GUI
   - scheduled sync
 tags:
-  - RcloneView
   - Backblaze
   - dropbox
   - cloud-file-transfer
   - cloud-migration
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

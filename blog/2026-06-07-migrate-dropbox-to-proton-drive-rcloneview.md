@@ -16,13 +16,11 @@ keywords:
   - switch from Dropbox to Proton Drive
   - Proton Drive sync RcloneView
 tags:
-  - RcloneView
   - dropbox
   - proton-drive
   - migration
   - cloud-to-cloud
   - privacy
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

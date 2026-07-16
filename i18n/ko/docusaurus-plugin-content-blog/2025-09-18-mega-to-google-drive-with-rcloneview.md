@@ -13,7 +13,6 @@ keywords:
   - scheduled jobs
   - cloud file transfer
 tags:
-  - RcloneView
   - mega
   - google-drive
   - cloud-migration

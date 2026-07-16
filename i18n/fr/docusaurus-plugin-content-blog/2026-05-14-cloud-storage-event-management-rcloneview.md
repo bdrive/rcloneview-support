@@ -16,12 +16,7 @@ keywords:
   - sauvegarde cloud pour la photographie événementielle
   - synchronisation automatisée des fichiers d'événements
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

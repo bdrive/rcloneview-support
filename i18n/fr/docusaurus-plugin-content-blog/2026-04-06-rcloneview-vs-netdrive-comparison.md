@@ -16,12 +16,8 @@ keywords:
   - rclone gui vs netdrive
   - comparaison de montage de stockage cloud 2026
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
   - mount
-  - cloud-sync
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

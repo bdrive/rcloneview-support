@@ -14,7 +14,6 @@ keywords:
   - folder compare timeout fix
   - optimize RcloneView compare
 tags:
-  - RcloneView
   - folder-comparison
   - troubleshooting
   - tips

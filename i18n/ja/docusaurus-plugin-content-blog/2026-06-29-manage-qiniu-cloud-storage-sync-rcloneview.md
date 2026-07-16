@@ -16,10 +16,6 @@ keywords:
   - Qiniu Kodo S3 desktop client
   - manage Qiniu buckets GUI
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

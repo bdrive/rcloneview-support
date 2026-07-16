@@ -14,10 +14,8 @@ keywords:
   - rclone Netzwerk-Wiederholungseinstellungen
   - RcloneView Synchronisation fortsetzen
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

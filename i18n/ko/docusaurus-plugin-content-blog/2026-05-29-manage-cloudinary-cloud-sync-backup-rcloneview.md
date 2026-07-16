@@ -14,11 +14,6 @@ keywords:
   - sync Cloudinary files
   - digital asset backup Cloudinary
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
-  - guide
   - dam
 ---
 

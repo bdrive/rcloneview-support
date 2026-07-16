@@ -15,10 +15,7 @@ keywords:
   - sincronización en la nube para estudios de fotografía
   - copia de seguridad automática de fotos de boda
 tags:
-  - RcloneView
   - photography
-  - cloud-storage
-  - backup
   - industry
 ---
 

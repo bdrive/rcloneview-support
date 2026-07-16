@@ -16,10 +16,8 @@ keywords:
   - rclone modificado durante la transferencia
   - resolución de conflictos de archivos en copia de seguridad en la nube
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - data-recovery
 ---
 

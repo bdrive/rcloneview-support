@@ -16,7 +16,6 @@ keywords:
   - scheduler auto mount
   - multi cloud explorer
 tags:
-  - RcloneView
   - google-drive
   - mount
   - windows

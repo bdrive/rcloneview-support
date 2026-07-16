@@ -15,12 +15,9 @@ keywords:
   - Hetzner Cloud-Backup-Tool
   - OneDrive Off-Site-Backup
 tags:
-  - RcloneView
   - onedrive
   - hetzner
   - sftp
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

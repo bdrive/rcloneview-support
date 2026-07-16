@@ -16,10 +16,8 @@ keywords:
   - コスト効率の良いバックアップ
   - マルチクラウド戦略
 tags:
-  - RcloneView
   - backblaze-b2
   - azure
-  - cloud-sync
   - cloud-to-cloud
 ---
 

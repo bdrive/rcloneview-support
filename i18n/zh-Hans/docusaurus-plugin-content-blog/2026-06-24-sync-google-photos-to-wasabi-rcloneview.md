@@ -14,11 +14,9 @@ keywords:
   - rclone Google 相册 Wasabi
   - 云照片库备份
 tags:
-  - RcloneView
   - google-photos
   - wasabi
   - cloud-to-cloud
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

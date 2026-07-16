@@ -13,10 +13,8 @@ keywords:
   - sauvegarde cloud
   - continuité d'activité
 tags:
-  - RcloneView
   - disaster-recovery
   - multi-cloud
-  - backup
   - sync
 ---
 

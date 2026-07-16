@@ -16,7 +16,6 @@ keywords:
   - 同步方向错了
   - 修复云同步失误
 tags:
-  - RcloneView
   - sync
   - data-loss
   - safety

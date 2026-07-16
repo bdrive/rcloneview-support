@@ -16,7 +16,6 @@ keywords:
   - automated cloud backup
   - google drive redundancy
 tags:
-  - RcloneView
   - google-drive
   - digitalocean-spaces
   - cloud-to-cloud

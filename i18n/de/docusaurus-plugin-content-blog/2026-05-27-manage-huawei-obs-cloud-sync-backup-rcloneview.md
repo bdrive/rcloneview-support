@@ -15,10 +15,6 @@ keywords:
   - Huawei Cloud Dateimanager
   - OBS Bucket Synchronisation rclone
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

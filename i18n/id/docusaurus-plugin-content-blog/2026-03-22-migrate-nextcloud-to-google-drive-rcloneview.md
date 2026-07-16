@@ -16,7 +16,6 @@ keywords:
   - pelestarian struktur folder
   - konsolidasi penyimpanan cloud
 tags:
-  - RcloneView
   - nextcloud
   - google-drive
   - cloud-migration

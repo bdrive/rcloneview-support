@@ -16,11 +16,7 @@ keywords:
   - almacenamiento en la nube para trabajadores gig
   - copia de seguridad de archivos para autónomos
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
-  - guide
   - productivity
 ---
 

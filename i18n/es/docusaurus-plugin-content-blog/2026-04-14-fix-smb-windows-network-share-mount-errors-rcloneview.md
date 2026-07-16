@@ -14,7 +14,6 @@ keywords:
   - solucionar error de conexión de unidad de red RcloneView
   - error de permisos de recurso compartido SMB
 tags:
-  - RcloneView
   - troubleshooting
   - smb
   - tips

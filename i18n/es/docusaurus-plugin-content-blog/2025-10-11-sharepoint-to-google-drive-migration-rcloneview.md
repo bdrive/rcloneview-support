@@ -16,13 +16,11 @@ keywords:
   - office 365 a google drive
   - guía de migración de sharepoint
 tags:
-  - RcloneView
   - migration
   - sharepoint
   - google-drive
   - microsoft-365
   - business
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

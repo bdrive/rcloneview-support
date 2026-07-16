@@ -16,7 +16,6 @@ keywords:
   - dirección de sincronización errónea
   - solución a error de sincronización en la nube
 tags:
-  - RcloneView
   - sync
   - data-loss
   - safety

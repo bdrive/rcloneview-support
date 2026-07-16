@@ -16,10 +16,6 @@ keywords:
   - 云文件传输工具
   - Lyve Cloud 文件管理器
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

@@ -16,9 +16,6 @@ keywords:
   - rclone nas backup
   - synology backup strategy
 tags:
-  - RcloneView
-  - cloud-storage
-  - backup
   - sync
   - file-management
 ---

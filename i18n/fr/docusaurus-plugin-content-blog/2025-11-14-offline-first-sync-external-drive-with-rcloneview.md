@@ -11,10 +11,8 @@ keywords:
   - synchronisation rclone disque externe
   - hors ligne d'abord
 tags:
-  - RcloneView
   - offline-sync
   - external-drive
-  - backup
   - google-drive
   - onedrive
   - dropbox

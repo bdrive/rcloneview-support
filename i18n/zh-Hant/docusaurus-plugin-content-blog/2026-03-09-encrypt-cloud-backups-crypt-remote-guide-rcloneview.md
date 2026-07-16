@@ -16,12 +16,10 @@ keywords:
   - 加密 s3 檔案
   - 加密雲端儲存工具
 tags:
-  - RcloneView
   - encryption
   - crypt
   - security
   - feature
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

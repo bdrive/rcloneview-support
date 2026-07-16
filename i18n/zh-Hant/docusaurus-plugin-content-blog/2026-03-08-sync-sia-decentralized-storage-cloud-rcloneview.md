@@ -16,10 +16,8 @@ keywords:
   - sia cloud manager
   - sia renterd rclone
 tags:
-  - RcloneView
   - sia
   - decentralized-storage
-  - cloud-storage
   - sync
 ---
 

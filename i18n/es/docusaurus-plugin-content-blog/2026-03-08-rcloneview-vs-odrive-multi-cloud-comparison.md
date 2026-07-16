@@ -16,9 +16,7 @@ keywords:
   - reseña de gestor multi-nube
   - agregador de almacenamiento en la nube
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
   - multi-cloud
 ---
 

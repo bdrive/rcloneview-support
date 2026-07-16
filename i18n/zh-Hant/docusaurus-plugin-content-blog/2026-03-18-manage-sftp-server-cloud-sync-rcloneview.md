@@ -16,11 +16,8 @@ keywords:
   - sftp remote manager
   - linux server cloud sync
 tags:
-  - RcloneView
   - sftp
   - sync
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

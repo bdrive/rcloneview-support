@@ -16,11 +16,8 @@ keywords:
   - qnap rcloneview
   - qnap automated backup
 tags:
-  - RcloneView
   - qnap
   - nas
-  - backup
-  - cloud-storage
   - platform
 ---
 

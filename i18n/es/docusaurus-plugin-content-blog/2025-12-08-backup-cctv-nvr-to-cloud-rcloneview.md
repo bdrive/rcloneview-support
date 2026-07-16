@@ -16,7 +16,6 @@ keywords:
   - copia de seguridad programada
   - recuperación ante desastres
 tags:
-  - RcloneView
   - cloud
   - sync
   - nas

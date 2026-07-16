@@ -16,12 +16,9 @@ keywords:
   - 403 forbidden nube
   - permiso OAuth nube
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - security
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,11 +16,7 @@ keywords:
   - s3 农业存储
   - 多云农业
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
-  - guide
   - automation
 ---
 

@@ -16,10 +16,7 @@ keywords:
   - tâche de sauvegarde multi-cloud
   - synchronisation cloud one to many
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
-  - backup
   - automation
 ---
 

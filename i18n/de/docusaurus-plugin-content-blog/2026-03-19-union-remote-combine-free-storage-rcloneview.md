@@ -16,11 +16,8 @@ keywords:
   - virtueller Cloud-Speicher
   - Cloud-Speicher aggregieren
 tags:
-  - RcloneView
   - feature
-  - cloud-storage
   - multi-cloud
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

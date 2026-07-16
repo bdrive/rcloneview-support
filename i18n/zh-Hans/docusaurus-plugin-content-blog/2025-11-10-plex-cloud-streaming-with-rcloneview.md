@@ -13,7 +13,6 @@ keywords:
   - rcloneview
   - vfs cache plex
 tags:
-  - RcloneView
   - plex
   - google-drive
   - onedrive

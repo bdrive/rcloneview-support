@@ -16,12 +16,10 @@ keywords:
   - Koofr rclone sync
   - GDPR cloud to S3
 tags:
-  - RcloneView
   - koofr
   - amazon-s3
   - cloud-to-cloud
   - sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,11 +16,7 @@ keywords:
   - sauvegarde cloud conforme HIPAA
   - logiciel pour clinique vétérinaire
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,12 +16,8 @@ keywords:
   - S3-compatible storage GUI
   - cloud storage sync
 tags:
-  - RcloneView
   - idrive-e2
   - s3-compatible
-  - cloud-storage
-  - backup
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

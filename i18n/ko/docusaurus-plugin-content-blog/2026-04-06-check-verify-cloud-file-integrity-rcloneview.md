@@ -16,10 +16,7 @@ keywords:
   - rcloneview check feature
   - cloud data integrity tool
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
-  - guide
   - tips
   - best-practices
   - security

@@ -16,11 +16,7 @@ keywords:
   - stockage cloud travailleur gig
   - sauvegarde de fichiers indépendant
 tags:
-  - RcloneView
   - industry
-  - cloud-storage
-  - backup
-  - guide
   - productivity
 ---
 

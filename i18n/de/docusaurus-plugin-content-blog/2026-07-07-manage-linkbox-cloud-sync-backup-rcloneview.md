@@ -14,10 +14,6 @@ keywords:
   - Cloud-Dateimanager
   - Linkbox-Alternative Client
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - file-management
 ---
 

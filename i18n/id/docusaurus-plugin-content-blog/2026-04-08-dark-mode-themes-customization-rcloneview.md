@@ -16,10 +16,8 @@ keywords:
   - mode terang
   - tema sistem
 tags:
-  - RcloneView
   - feature
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

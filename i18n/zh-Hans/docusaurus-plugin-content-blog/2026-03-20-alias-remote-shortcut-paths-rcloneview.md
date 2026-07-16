@@ -16,10 +16,7 @@ keywords:
   - 快速文件夹访问
   - 云端整理
 tags:
-  - RcloneView
   - feature
-  - guide
-  - cloud-storage
   - productivity
 ---
 

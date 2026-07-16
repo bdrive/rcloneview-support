@@ -16,11 +16,8 @@ keywords:
   - pratinjau transfer cloud
   - bandingkan sebelum sinkronisasi
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

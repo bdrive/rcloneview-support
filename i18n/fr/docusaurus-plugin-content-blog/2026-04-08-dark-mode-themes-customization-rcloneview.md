@@ -16,10 +16,8 @@ keywords:
   - mode clair
   - thème système
 tags:
-  - RcloneView
   - feature
   - tips
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

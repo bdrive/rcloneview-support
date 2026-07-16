@@ -16,9 +16,7 @@ keywords:
   - cloud sync software
   - cross-platform cloud drive
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
   - windows
   - mount
 ---

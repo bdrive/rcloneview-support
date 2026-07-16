@@ -14,8 +14,6 @@ keywords:
   - immuabilité des sauvegardes cloud
   - sauvegarde de conformité
 tags:
-  - RcloneView
-  - backup
   - security
   - s3
   - wasabi

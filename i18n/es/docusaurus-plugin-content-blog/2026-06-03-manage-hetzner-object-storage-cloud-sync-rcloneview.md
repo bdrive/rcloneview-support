@@ -16,11 +16,7 @@ keywords:
   - almacenamiento en la nube europeo
   - gestión de buckets de Hetzner
 tags:
-  - RcloneView
   - hetzner
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

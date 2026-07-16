@@ -16,11 +16,8 @@ keywords:
   - 檔案同步驗證
   - 資料遺失防範
 tags:
-  - RcloneView
-  - cloud-storage
   - sync
   - file-management
-  - backup
 ---
 
 import RvCta from '@site/src/components/RvCta';

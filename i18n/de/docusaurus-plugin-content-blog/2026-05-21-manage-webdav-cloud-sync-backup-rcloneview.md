@@ -16,11 +16,7 @@ keywords:
   - plattformübergreifender WebDAV-Client
   - WebDAV Cloud-Backup-Automatisierung
 tags:
-  - RcloneView
   - webdav
-  - cloud-storage
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

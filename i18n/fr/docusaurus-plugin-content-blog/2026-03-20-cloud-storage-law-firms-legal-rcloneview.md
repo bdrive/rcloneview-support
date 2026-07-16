@@ -16,8 +16,6 @@ keywords:
   - gestion multi-cloud
   - dossiers d'affaires juridiques
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - compliance
   - security

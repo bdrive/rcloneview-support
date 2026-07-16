@@ -13,10 +13,8 @@ keywords:
   - pencadangan cloud
   - kelangsungan bisnis
 tags:
-  - RcloneView
   - disaster-recovery
   - multi-cloud
-  - backup
   - sync
 ---
 

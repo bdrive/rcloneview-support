@@ -14,11 +14,9 @@ keywords:
   - configuración de registro de rclone
   - solucionar problemas de transferencias en la nube
 tags:
-  - RcloneView
   - feature
   - troubleshooting
   - monitoring
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

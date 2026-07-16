@@ -16,12 +16,9 @@ keywords:
   - 403 forbidden cloud
   - OAuth permission cloud
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
   - security
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

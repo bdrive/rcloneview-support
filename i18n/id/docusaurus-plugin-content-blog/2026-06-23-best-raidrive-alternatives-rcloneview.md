@@ -16,9 +16,7 @@ keywords:
   - perangkat lunak sinkronisasi cloud
   - drive cloud lintas platform
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
   - windows
   - mount
 ---

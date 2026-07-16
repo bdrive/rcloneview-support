@@ -16,11 +16,7 @@ keywords:
   - HR文書管理
   - 暗号化HRクラウドストレージ
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

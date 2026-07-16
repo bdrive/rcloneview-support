@@ -16,11 +16,9 @@ keywords:
   - microsoft to google migration
   - onedrive migration tool
 tags:
-  - RcloneView
   - onedrive
   - google-drive
   - migration
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

@@ -16,10 +16,7 @@ keywords:
   - eliminación accidental de almacenamiento en la nube
   - estrategia de copia de seguridad de archivos en la nube
 tags:
-  - RcloneView
   - data-recovery
-  - backup
-  - cloud-storage
   - tips
 ---
 

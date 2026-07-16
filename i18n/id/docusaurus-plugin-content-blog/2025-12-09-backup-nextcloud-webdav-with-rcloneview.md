@@ -16,11 +16,8 @@ keywords:
   - rclone check
   - cloud automation
 tags:
-  - RcloneView
-  - backup
   - webdav
   - nextcloud
-  - cloud-storage
   - sync
 ---
 

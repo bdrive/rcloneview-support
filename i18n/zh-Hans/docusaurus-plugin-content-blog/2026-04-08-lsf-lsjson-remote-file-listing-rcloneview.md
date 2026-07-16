@@ -16,12 +16,9 @@ keywords:
   - 目录比较
   - 云文件浏览器
 tags:
-  - RcloneView
   - feature
   - file-management
   - tips
-  - guide
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

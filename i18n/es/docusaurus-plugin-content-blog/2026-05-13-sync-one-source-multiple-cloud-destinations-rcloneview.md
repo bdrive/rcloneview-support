@@ -16,9 +16,6 @@ keywords:
   - one source multiple backups RcloneView
   - automated multi-destination sync
 tags:
-  - RcloneView
-  - backup
-  - cloud-sync
   - multi-cloud
   - feature
   - automation

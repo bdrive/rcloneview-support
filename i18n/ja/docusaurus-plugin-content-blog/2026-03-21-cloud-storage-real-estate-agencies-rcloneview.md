@@ -16,11 +16,8 @@ keywords:
   - エージェント向けクラウドバックアップ
   - 書類コンプライアンス
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
   - business
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

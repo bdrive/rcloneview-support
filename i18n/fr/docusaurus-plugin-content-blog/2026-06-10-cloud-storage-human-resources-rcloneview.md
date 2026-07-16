@@ -16,11 +16,7 @@ keywords:
   - gestion des documents RH
   - stockage cloud RH chiffré
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

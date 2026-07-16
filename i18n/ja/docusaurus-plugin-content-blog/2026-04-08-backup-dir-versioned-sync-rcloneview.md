@@ -16,11 +16,7 @@ keywords:
   - バックアップ付き同期
   - rclone suffix
 tags:
-  - RcloneView
   - feature
-  - cloud-sync
-  - backup
-  - guide
   - tips
 ---
 

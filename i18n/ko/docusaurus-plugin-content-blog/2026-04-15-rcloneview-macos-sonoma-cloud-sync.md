@@ -16,11 +16,8 @@ keywords:
   - Mac 클라우드 백업 2026
   - macOS 클라우드 마운트
 tags:
-  - RcloneView
   - macos
-  - cloud-sync
   - installation
-  - backup
   - platform
 ---
 

@@ -14,9 +14,7 @@ keywords:
   - tiered cloud backup RcloneView
   - move files cloud archive automatically
 tags:
-  - RcloneView
   - multi-cloud
-  - cloud-storage
   - cost-optimization
   - tips
 ---

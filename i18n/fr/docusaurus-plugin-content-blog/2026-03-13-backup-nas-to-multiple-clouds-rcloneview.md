@@ -16,9 +16,7 @@ keywords:
   - multi cloud backup plan
   - nas off site backup
 tags:
-  - RcloneView
   - nas
-  - backup
   - multi-cloud
   - best-practices
 ---

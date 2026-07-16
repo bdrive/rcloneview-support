@@ -14,10 +14,8 @@ keywords:
   - flag rclone
   - error sinkronisasi file
 tags:
-  - RcloneView
   - troubleshooting
   - tips
-  - cloud-sync
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

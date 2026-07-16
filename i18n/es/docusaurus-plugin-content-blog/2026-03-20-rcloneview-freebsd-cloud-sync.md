@@ -16,11 +16,8 @@ keywords:
   - instalación FreeBSD
   - sistema operativo BSD
 tags:
-  - RcloneView
   - platform
   - installation
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

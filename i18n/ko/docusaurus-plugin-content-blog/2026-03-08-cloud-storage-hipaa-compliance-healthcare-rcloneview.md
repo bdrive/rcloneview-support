@@ -16,11 +16,9 @@ keywords:
   - 환자 데이터 클라우드 보안
   - 헬스케어 it 클라우드 스토리지
 tags:
-  - RcloneView
   - healthcare
   - hipaa
   - security
-  - cloud-storage
   - best-practices
 ---
 

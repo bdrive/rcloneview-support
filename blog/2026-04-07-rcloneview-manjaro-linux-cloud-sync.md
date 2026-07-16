@@ -16,13 +16,9 @@ keywords:
   - rcloneview appimage manjaro
   - manjaro aur rcloneview
 tags:
-  - RcloneView
   - linux
   - platform
-  - cloud-sync
-  - guide
   - installation
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -16,10 +16,6 @@ keywords:
   - outil de transfert de fichiers cloud
   - gestionnaire de fichiers Lyve Cloud
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
 ---

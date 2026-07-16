@@ -14,7 +14,6 @@ keywords:
   - OneDrive Storj sync
   - rclone OneDrive Storj GUI
 tags:
-  - RcloneView
   - onedrive
   - storj
   - cloud-to-cloud

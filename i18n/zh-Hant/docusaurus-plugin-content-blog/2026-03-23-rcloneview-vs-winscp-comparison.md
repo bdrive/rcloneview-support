@@ -16,9 +16,7 @@ keywords:
   - cross-platform file sync
   - cloud storage tool
 tags:
-  - RcloneView
   - comparison
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

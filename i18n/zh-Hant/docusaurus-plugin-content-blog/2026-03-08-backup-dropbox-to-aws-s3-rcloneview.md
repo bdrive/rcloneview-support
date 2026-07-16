@@ -16,11 +16,8 @@ keywords:
   - automated dropbox backup
   - dropbox migration s3
 tags:
-  - RcloneView
   - dropbox
   - aws-s3
-  - backup
-  - cloud-storage
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

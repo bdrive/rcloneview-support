@@ -16,11 +16,8 @@ keywords:
   - cloud upload size limit
   - chunker rcloneview
 tags:
-  - RcloneView
   - feature
   - performance
-  - cloud-storage
-  - guide
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -16,7 +16,6 @@ keywords:
   - solución de problemas de montaje
   - RcloneView Windows
 tags:
-  - RcloneView
   - troubleshooting
   - windows
   - mount

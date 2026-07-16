@@ -16,11 +16,9 @@ keywords:
   - tips power user
   - efisiensi rcloneview
 tags:
-  - RcloneView
   - feature
   - tips
   - productivity
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

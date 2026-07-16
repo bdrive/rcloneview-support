@@ -16,12 +16,9 @@ keywords:
   - problemas de copia de seguridad de Dropbox
   - resolver problemas de sincronización en la nube
 tags:
-  - RcloneView
   - dropbox
   - troubleshooting
   - tips
-  - cloud-sync
-  - backup
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

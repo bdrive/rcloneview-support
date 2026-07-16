@@ -13,10 +13,8 @@ keywords:
   - cloud backup
   - business continuity
 tags:
-  - RcloneView
   - disaster-recovery
   - multi-cloud
-  - backup
   - sync
 ---
 

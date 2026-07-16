@@ -16,10 +16,7 @@ keywords:
   - uptobox multi cloud
   - manage uptobox files
 tags:
-  - RcloneView
-  - cloud-storage
   - sync
-  - backup
   - file-management
 ---
 

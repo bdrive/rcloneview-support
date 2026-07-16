@@ -73,11 +73,6 @@ backblaze-b2:
   permalink: /backblaze-b2
   description: Postingan tentang Backblaze B2.
 
-backup:
-  label: Pencadangan
-  permalink: /backup
-  description: Postingan tentang Pencadangan.
-
 best-practices:
   label: Praktik Terbaik
   permalink: /best-practices
@@ -137,11 +132,6 @@ cloud-security:
   label: Keamanan Cloud
   permalink: /cloud-security
   description: Postingan tentang Keamanan Cloud.
-
-cloud-storage:
-  label: Penyimpanan Cloud
-  permalink: /cloud-storage
-  description: Postingan tentang Penyimpanan Cloud.
 
 cloud-storage-synchronization:
   label: Sinkronisasi Penyimpanan Cloud
@@ -377,11 +367,6 @@ google-photos:
   label: Google Photos
   permalink: /google-photos
   description: Postingan tentang Google Photos.
-
-guide:
-  label: Panduan
-  permalink: /guide
-  description: Postingan tentang Panduan.
 
 hard-drive:
   label: Hard Disk
@@ -692,11 +677,6 @@ rclone-crypt:
   label: Rclone Crypt
   permalink: /rclone-crypt
   description: Postingan tentang Rclone Crypt.
-
-RcloneView:
-  label: RcloneView
-  permalink: /rcloneview
-  description: Postingan tentang RcloneView.
 
 reference:
   label: Referensi

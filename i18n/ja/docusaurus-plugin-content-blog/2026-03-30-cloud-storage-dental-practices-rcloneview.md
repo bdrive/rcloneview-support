@@ -16,11 +16,7 @@ keywords:
   - 歯科医院 データ保護
   - クラウドストレージ 歯科クリニック
 tags:
-  - RcloneView
-  - cloud-storage
   - industry
-  - backup
-  - guide
 ---
 
 import CloudSupportGrid from '@site/src/components/CloudSupportGrid';

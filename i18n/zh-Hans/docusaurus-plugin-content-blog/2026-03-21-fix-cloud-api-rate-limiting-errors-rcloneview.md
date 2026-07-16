@@ -16,9 +16,7 @@ keywords:
   - 请求退避
   - 云同步错误
 tags:
-  - RcloneView
   - troubleshooting
-  - cloud-storage
   - performance
   - tips
 ---

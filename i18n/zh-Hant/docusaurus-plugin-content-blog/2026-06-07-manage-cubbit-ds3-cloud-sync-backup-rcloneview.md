@@ -16,10 +16,6 @@ keywords:
   - S3 相容儲存管理
   - Cubbit DS3 檔案管理員
 tags:
-  - RcloneView
-  - cloud-storage
-  - cloud-sync
-  - backup
   - s3-compatible
   - object-storage
   - european-cloud

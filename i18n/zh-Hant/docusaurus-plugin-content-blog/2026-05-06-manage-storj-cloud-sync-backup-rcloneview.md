@@ -16,11 +16,7 @@ keywords:
   - Storj 桌面用戶端
   - Storj S3 相容 GUI
 tags:
-  - RcloneView
   - storj
-  - cloud-storage
-  - cloud-sync
-  - backup
   - decentralized-storage
 ---
 

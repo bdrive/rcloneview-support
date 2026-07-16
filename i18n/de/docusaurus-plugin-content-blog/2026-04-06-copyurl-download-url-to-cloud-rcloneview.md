@@ -16,10 +16,8 @@ keywords:
   - download dataset to cloud
   - rcloneview url download feature
 tags:
-  - RcloneView
   - feature
   - cloud-file-transfer
-  - guide
   - tips
   - productivity
   - automation

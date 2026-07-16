@@ -15,7 +15,6 @@ keywords:
   - interface rclone
   - gestion du stockage cloud
 tags:
-  - RcloneView
   - hard-drive-backup
   - onedrive-sync
   - file-management

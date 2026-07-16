@@ -16,11 +16,8 @@ keywords:
   - mega rclone backup
   - mega affordable backup
 tags:
-  - RcloneView
   - mega
   - backblaze-b2
-  - cloud-storage
-  - backup
   - sync
 ---
 

@@ -16,11 +16,7 @@ keywords:
   - オンプレミスS3バックアップツール
   - MinIOクラウド同期
 tags:
-  - RcloneView
   - minio
-  - cloud-storage
-  - cloud-sync
-  - backup
   - self-hosted
   - s3-compatible
 ---

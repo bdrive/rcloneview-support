@@ -16,11 +16,9 @@ keywords:
   - Backblaze B2 照片归档
   - 自动化 Google 相册备份
 tags:
-  - RcloneView
   - google-photos
   - backblaze-b2
   - cloud-to-cloud
-  - backup
   - sync
 ---
 

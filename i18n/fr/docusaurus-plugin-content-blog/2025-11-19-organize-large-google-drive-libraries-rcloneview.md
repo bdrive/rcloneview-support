@@ -16,7 +16,6 @@ keywords:
   - gestion des fichiers cloud
   - interface graphique rclone
 tags:
-  - RcloneView
   - google-drive
   - productivity
   - cleanup
