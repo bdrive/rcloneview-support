@@ -93,6 +93,10 @@ const config = {
         sidebarPath: require.resolve('./sidebarsReleaseNotes.js'),
       },
     ],
+
+    // /blog/archive 라우트를 슬림한 props 로 다시 등록한다.
+    // 기본 라우트는 아래 blog.archiveBasePath: null 로 꺼져 있다.
+    './src/plugins/blog-archive-slim.js',
   ],
 
   presets: [
@@ -122,6 +126,11 @@ const config = {
           // 인라인해 9로케일 빌드가 3.1GB 까지 커지는 주범이었음.
           // 전체 목록은 /blog/archive (All Posts — 카테고리/연도 뷰 + 필터) 가 담당.
           blogSidebarCount: 0,
+
+          // 기본 archive 라우트 비활성화 — 포스트 `content` 까지 통째로 넘겨
+          // 청크가 로케일당 8.9MB 였다. 같은 경로를 src/plugins/blog-archive-slim.js
+          // 가 슬림한 props 로 대신 등록한다.
+          archiveBasePath: null,
 
           /*
           // Please change this to your repo.
