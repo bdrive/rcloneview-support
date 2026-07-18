@@ -121,22 +121,19 @@ git commit -m "i18n: translate N more blog posts into all 8 locales (batch X)"
 3. MDX import는 `@site/src/...` 별칭 사용
 4. 글 발행 시 8로케일 번역을 같은 PR에 포함 (위 2장 파이프라인 재사용)
 
-## 6. 배포 전환 계획 (작업 #6 — 구현 완료, 사람 단계 대기)
+## 6. 배포 (작업 #6 — 종결: 기존 Pages 방식 유지)
 
-> **👉 실행은 [DEPLOYMENT_R2_ko.md](./DEPLOYMENT_R2_ko.md) 를 따를 것** — 초보자용
-> 상세 가이드. deploy.yml 과 Worker 코드는 저장소에 구현돼 있고,
-> 남은 것은 R2 버킷·토큰·시크릿 생성(사람)과 wrangler deploy 뿐이다.
+> **2026-07-18 결정**: Cloudflare 계정이 **Pages Pro 플랜(파일 10만 개 한도)**으로
+> 확인됐다 (R2 전환은 Free 플랜의 2만 개 한도를 전제로 세운 계획이었음).
+> 빌드도 846MB / 약 33,000 파일로 감축돼(→ `docs/journals/2026-07-16-build-size-reduction_ko.md`)
+> 한도 내이므로, **기존 방식(빌드 산출물을 www 저장소 `support/`에 커밋 →
+> Pages 배포)을 그대로 유지**한다.
+> 당시 구현했던 R2 킷(`.github/workflows/deploy.yml`, `workers/support-router/`,
+> `DEPLOYMENT_R2_ko.md`)은 저장소에서 제거됨 — 필요해지면 git 히스토리에서 복원.
 
-목표 구조는 I18N_OVERVIEW_ko.md 4장. 실행 단계:
+유효하게 남은 후속 작업:
 
-1. **[사람]** Cloudflare 대시보드: R2 버킷 `rcloneview-support` 생성, R2 API 토큰 발급 (Object Read & Write)
-2. **[사람]** GitHub support 저장소 Settings → Secrets → Actions에 등록: `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_ENDPOINT`(`https://<account_id>.r2.cloudflarestorage.com`)
-3. **[Claude]** `.github/workflows/deploy.yml` 작성 — `on: push/pull_request: branches [main]`, PR은 빌드 검사만, push는 빌드 후 `rclone sync build/ r2:rcloneview-support --delete-after --fast-list`
-4. **[Claude]** Worker 작성 — `rcloneview.com/support/*` 라우트: `/support` 프리픽스 제거 → R2 조회, 디렉터리 URL이면 `index.html`, 미존재 시 `404.html`, 캐시 헤더. **[사람]** `wrangler deploy` 인증
-5. 동작 확인 후 **[Claude]** www 저장소에서 `support/` 제거 + 블로그 봇의 www 커밋 단계 제거
-6. **[사람]** 언어별 sitemap을 Search Console/Bing Webmaster에 등록
-
-주의: www가 Cloudflare **Pages(git 연동)**인지 확정 필요 — Pages라면 Worker 라우트와의 우선순위 확인. (2026-07 시점 미확정, 사장님이 대시보드 확인 예정)
+1. **[사람]** 언어별 sitemap을 Search Console/Bing Webmaster에 등록
 
 ## 7. 참고 파일
 
