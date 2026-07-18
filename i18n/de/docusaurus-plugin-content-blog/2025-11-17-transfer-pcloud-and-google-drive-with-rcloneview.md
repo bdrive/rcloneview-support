@@ -74,7 +74,6 @@ RcloneView verbindet die Zuverlässigkeit von rclone mit einem visuellen Workflo
 3. Klicken Sie im rechten Bereich auf **+** und öffnen Sie Ihren **Google Drive**-Remote.
 4. Navigieren Sie zu den Quell- und Zielordnern, die Sie verschieben möchten.
 
-<!-- Image placeholder: add `/support/images/en/tutorials/open-pcloud-and-google-drive-remotes.png` if available -->
 <img src="/support/images/en/howto/remote-storage-connection-settings/pcloud-first-in-explorer.png" alt="open pcloud and google drive remotes" class="img-medium img-center" />
 
 ## Vier Methoden für pCloud-↔-Google-Drive-Übertragungen

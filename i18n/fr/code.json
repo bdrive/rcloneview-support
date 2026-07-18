@@ -56,7 +56,7 @@
     "description": "The name for the light color mode"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 élément|{count} éléments",
+    "message": "1 élément|{count} éléments|{count} éléments",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
@@ -76,7 +76,7 @@
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un document tagué|{count} documents tagués",
+    "message": "Un document tagué|{count} documents tagués|{count} documents tagués",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
@@ -219,7 +219,7 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture|{readingTime} minutes de lecture",
+    "message": "Une minute de lecture|{readingTime} minutes de lecture|{readingTime} minutes de lecture",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.breadcrumbs.home": {
@@ -262,7 +262,7 @@
     "message": "Voir les {count} résultats"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "Un document trouvé|{count} documents trouvés",
+    "message": "Un document trouvé|{count} documents trouvés|{count} documents trouvés",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.existingResultsTitle": {
@@ -390,7 +390,7 @@
     "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.blog.post.plurals": {
-    "message": "Un article|{count} articles",
+    "message": "Un article|{count} articles|{count} articles",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {

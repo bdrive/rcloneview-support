@@ -49,7 +49,6 @@ import RvCta from '@site/src/components/RvCta';
 - [Google Drive 리모트 추가하기](https://rcloneview.com/support/howto/#step-2-adding-remote-storage-google-drive-example)
 - [리모트 관리자](https://rcloneview.com/support/howto/rcloneview-basic/remote-manager/)
 
-<!-- Image placeholder: add `/support/images/en/tutorials/rcloneview-multi-cloud-explorer.png` if available -->
 <img src="/support/images/en/tutorials/new-remote-all-remotes.png" alt="rcloneview multi cloud explorer" class="img-large img-center" />
 
 ## 듀얼 패널 탐색기의 생산성

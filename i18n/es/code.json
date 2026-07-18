@@ -16,7 +16,7 @@
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Navegación por la página de la lista de blogs ",
+    "message": "Navegación por la página de la lista de blogs",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
@@ -60,7 +60,7 @@
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 artículo|{count} artículos",
+    "message": "1 artículo|{count} artículos|{count} artículos",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
@@ -76,7 +76,7 @@
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un documento etiquetado|{count} documentos etiquetados",
+    "message": "Un documento etiquetado|{count} documentos etiquetados|{count} documentos etiquetados",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
@@ -219,7 +219,7 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "Lectura de un minuto|{readingTime} min de lectura",
+    "message": "Lectura de un minuto|{readingTime} min de lectura|{readingTime} min de lectura",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -259,7 +259,7 @@
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "Un documento encontrado|{count} documentos encontrados",
+    "message": "Un documento encontrado|{count} documentos encontrados|{count} documentos encontrados",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.existingResultsTitle": {
@@ -390,7 +390,7 @@
     "description": "The placeholder of the input of the DocSearch pop-up modal"
   },
   "theme.blog.post.plurals": {
-    "message": "Una publicación|{count} publicaciones",
+    "message": "Una publicación|{count} publicaciones|{count} publicaciones",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {

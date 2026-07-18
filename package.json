@@ -5,8 +5,10 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "prebuild": "node scripts/check-image-refs.mjs",
     "build": "docusaurus build",
     "postbuild": "node scripts/prune-locale-static.mjs",
+    "check:images": "node scripts/check-image-refs.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

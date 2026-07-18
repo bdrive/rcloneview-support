@@ -113,6 +113,8 @@ git commit -m "i18n: translate N more blog posts into all 8 locales (batch X)"
 | `<!-- truncate -->`가 MDX 컴파일 실패 | 순수 MDX에선 HTML 주석 불가 (Docusaurus는 전처리함) | mdx_check.mjs가 컴파일 전에 주석 제거 |
 | 빌드 시 undefined tag 경고 | 원문이 tags.yml에 없는 태그 사용 | 37포스트 재매핑 (S3→s3 등). **신규 글은 tags.yml에 정의된 소문자 태그만** |
 | 태그 라벨이 영어로만 표시 | 태그도 로케일별 번역 필요 | `i18n/{loc}/docusaurus-plugin-content-blog/tags.yml` 생성 (라벨만 번역, key/permalink는 영어 유지) |
+| 라이브에 깨진 이미지 노출 | template.md 카탈로그에 실재하지 않는 파일명 36개가 실려 있었고 봇이 그중에서 골라 씀 | 가짜 항목 제거 + `scripts/check-image-refs.mjs`가 prebuild로 전 콘텐츠의 자산 참조 실재 여부 검사 (누락 시 빌드 실패) |
+| 태그 페이지 제목 중복(ko "게시물개의 게시물", ja "件件") / id는 항상 단수 표시 | `{nPosts}`가 이미 단위 포함 문자열인데 템플릿이 단위를 또 붙임; id는 복수형 카테고리가 1개뿐이라 2형 메시지의 첫 형(단수)만 선택됨 | code.json 교정. **규칙: `\|` 분절 수는 로케일의 `Intl.PluralRules` 카테고리 수와 일치**(ko/ja/zh/id=1형, de=2형, es/fr=3형), `{nPosts}`·`{nDocsTagged}` 뒤에 단위 반복 금지 |
 
 ## 5. 신규 글 작성 봇에 반영할 규칙 (작업 #5)
 
@@ -120,6 +122,7 @@ git commit -m "i18n: translate N more blog posts into all 8 locales (batch X)"
 2. 내부 링크는 baseUrl 없이 `/howto/...`, `/blog/...` 형태
 3. MDX import는 `@site/src/...` 별칭 사용
 4. 글 발행 시 8로케일 번역을 같은 PR에 포함 (위 2장 파이프라인 재사용)
+5. 이미지·비디오는 static/에 실재하는 파일만 참조 (template.md 카탈로그는 2026-07-18 실측 정리됨). 발행 전 `npm run check:images`로 확인 — 없는 파일명을 지어내면 빌드가 실패한다
 
 ## 6. 배포 (작업 #6 — 종결: 기존 Pages 방식 유지)
 

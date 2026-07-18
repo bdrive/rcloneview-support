@@ -37,7 +37,6 @@ import RvCta from '@site/src/components/RvCta';
 
 <!-- truncate -->
 
-<!-- Image placeholder: add `/support/images/en/tutorials/dam-multi-cloud-rcloneview.png` if available -->
 <img src="/support/images/en/tutorials/new-remote-all-remotes.png" alt="multi cloud digital asset management with rcloneview" class="img-large img-center" />
 
 ## 为什么创作者在数字资产管理上举步维艰

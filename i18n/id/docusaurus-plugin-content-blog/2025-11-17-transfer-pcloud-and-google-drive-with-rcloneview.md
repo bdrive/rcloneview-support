@@ -74,7 +74,6 @@ RcloneView menggabungkan keandalan rclone dengan alur kerja visual sehingga tim 
 3. Di panel kanan, klik **+** dan buka remote **Google Drive** Anda.
 4. Navigasikan ke folder sumber dan tujuan yang ingin Anda pindahkan.
 
-<!-- Image placeholder: add `/support/images/en/tutorials/open-pcloud-and-google-drive-remotes.png` if available -->
 <img src="/support/images/en/howto/remote-storage-connection-settings/pcloud-first-in-explorer.png" alt="open pcloud and google drive remotes" class="img-medium img-center" />
 
 ## Empat metode untuk transfer pCloud ↔ Google Drive

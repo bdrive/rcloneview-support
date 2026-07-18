@@ -71,8 +71,6 @@ RcloneView baut auf rclone auf, sodass Sie Zuverlässigkeit und erweiterte Optio
 3. Klicken Sie im rechten Fenster auf **+** und öffnen Sie Ihr **Google Drive**-Remote.
 4. Navigieren Sie zu den Quell- und Ziel-Buckets/-Ordnern, die Sie verschieben möchten.
 
-<!-- Image placeholder: add `/support/images/en/tutorials/open-storj-and-google-drive-remotes.png` if available -->
-<img src="/support/images/en/tutorials/open-storj-and-google-drive-remotes.png" alt="open storj and google drive remotes" class="img-medium img-center" />
 
 ## Vier Methoden für Storj ↔ Google Drive-Übertragungen
 

@@ -74,7 +74,6 @@ RcloneView combines rclone’s reliability with a visual workflow so teams and a
 3. In the right pane, click **+** and open your **Google Drive** remote.
 4. Navigate to the source and destination folders you plan to move.
 
-<!-- Image placeholder: add `/support/images/en/tutorials/open-pcloud-and-google-drive-remotes.png` if available -->
 <img src="/support/images/en/howto/remote-storage-connection-settings/pcloud-first-in-explorer.png" alt="open pcloud and google drive remotes" class="img-medium img-center" />
 
 ## Four methods for pCloud ↔ Google Drive transfers

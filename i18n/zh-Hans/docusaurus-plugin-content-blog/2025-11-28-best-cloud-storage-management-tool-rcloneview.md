@@ -49,7 +49,6 @@ import RvCta from '@site/src/components/RvCta';
 - [添加 Google Drive 远程](https://rcloneview.com/support/howto/#step-2-adding-remote-storage-google-drive-example)
 - [远程管理器](https://rcloneview.com/support/howto/rcloneview-basic/remote-manager/)
 
-<!-- Image placeholder: add `/support/images/en/tutorials/rcloneview-multi-cloud-explorer.png` if available -->
 <img src="/support/images/en/tutorials/new-remote-all-remotes.png" alt="rcloneview multi cloud explorer" class="img-large img-center" />
 
 ## 双栏资源管理器提升效率

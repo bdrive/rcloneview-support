@@ -74,7 +74,6 @@ RcloneView는 rclone의 신뢰성과 시각적 워크플로를 결합해 팀과 
 3. 오른쪽 창에서 **+**를 클릭하고 **Google Drive** 리모트를 엽니다.
 4. 이동할 원본 폴더와 대상 폴더로 이동합니다.
 
-<!-- Image placeholder: add `/support/images/en/tutorials/open-pcloud-and-google-drive-remotes.png` if available -->
 <img src="/support/images/en/howto/remote-storage-connection-settings/pcloud-first-in-explorer.png" alt="open pcloud and google drive remotes" class="img-medium img-center" />
 
 ## pCloud ↔ Google Drive 전송을 위한 네 가지 방법
