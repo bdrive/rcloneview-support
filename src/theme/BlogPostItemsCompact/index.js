@@ -15,6 +15,13 @@
  * 거치지 않는다.
  *
  * 시각 언어는 @theme/BlogArchivePage 의 목록을 따른다.
+ *
+ * 구조화 데이터: 각 항목에 schema.org 마이크로데이터(Blog > BlogPosting)를
+ * 부착한다. Docusaurus 3.x 는 /blog 목록에만 JSON-LD 를 넣고 태그/저자
+ * 페이지에는 아무것도 넣지 않는데, JSON-LD 방식은 제목·날짜·설명을 통째로
+ * 복제해 4,700개 목록 페이지 기준 +11~50MB 가 든다. 마이크로데이터는 이미
+ * 렌더된 요소에 속성만 붙이므로 페이지당 ~1KB(전체 +5MB 미만)로 같은 정보를
+ * 전달한다.
  */
 import React from 'react';
 import Link from '@docusaurus/Link';
@@ -32,18 +39,30 @@ export default function BlogPostItemsCompact({items}) {
   });
 
   return (
-    <ul className={styles.list}>
+    <ul className={styles.list} itemScope itemType="https://schema.org/Blog">
       {items.map(({content: BlogPostContent}) => {
         const {permalink, title, date, description} = BlogPostContent.metadata;
         return (
-          <li key={permalink} className={styles.item}>
-            <Heading as="h2" className={styles.title}>
-              <Link to={permalink}>{title}</Link>
+          <li
+            key={permalink}
+            className={styles.item}
+            itemProp="blogPost"
+            itemScope
+            itemType="https://schema.org/BlogPosting">
+            <Heading as="h2" className={styles.title} itemProp="headline">
+              {/* itemProp="url" 은 <a> 의 href 를 값으로 삼는다 */}
+              <Link to={permalink} itemProp="url">
+                {title}
+              </Link>
             </Heading>
-            <time dateTime={date} className={styles.date}>
+            <time dateTime={date} itemProp="datePublished" className={styles.date}>
               {dateTimeFormat.format(new Date(date))}
             </time>
-            {description && <p className={styles.description}>{description}</p>}
+            {description && (
+              <p className={styles.description} itemProp="description">
+                {description}
+              </p>
+            )}
           </li>
         );
       })}
