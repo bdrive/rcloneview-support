@@ -83,7 +83,7 @@ RcloneView builds a visual workflow on top of rclone so even complex multi-cloud
 3. Press **Connect**, complete OAuth login in the browser, and allow permissions.
 4. Save the remote.
 
-👉 Guide: [Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)
+👉 Guide: [Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)
 
 ---
 
@@ -110,7 +110,7 @@ RcloneView builds a visual workflow on top of rclone so even complex multi-cloud
 
 
 👉 Reference:  
-[Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)  
+[Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)  
 [Drag & Drop files](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)  
 
 ---
@@ -129,7 +129,7 @@ RcloneView builds a visual workflow on top of rclone so even complex multi-cloud
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />  
 
 
-👉 Guide: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)  
+👉 Guide: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)  
 
 
 ---
@@ -150,9 +150,9 @@ RcloneView builds a visual workflow on top of rclone so even complex multi-cloud
 
 👉 Learn more:
 
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 ---
 
@@ -166,7 +166,7 @@ RcloneView builds a visual workflow on top of rclone so even complex multi-cloud
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="create job schedule" class="img-large img-center" />  
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ---
 

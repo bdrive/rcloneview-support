@@ -20,7 +20,6 @@ tags:
   - cloud-backup
   - webdav
   - s3
-  - offsite-backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -75,8 +74,8 @@ Before starting your backup setup:
 4. **Decide your schedule** — daily syncs, weekly archives, or continuous mirroring.  
 
 🔍 Helpful guides:  
-- [Connect NAS via WebDAV in RcloneView](/support/howto/remote-storage-connection-settings/webdav)  
-- [Add S3-compatible Remote (Wasabi, Cloudflare R2, etc.)](/support/howto/remote-storage-connection-settings/s3)  
+- [Connect NAS via WebDAV in RcloneView](/howto/remote-storage-connection-settings/webdav)  
+- [Add S3-compatible Remote (Wasabi, Cloudflare R2, etc.)](/howto/remote-storage-connection-settings/s3)  
 
 ---
 
@@ -99,14 +98,14 @@ Choose the method that fits your workflow:
 ### A) **Drag & Drop (One-time copy)**  
 Drag folders from your NAS side to the cloud remote pane for quick uploads. Perfect for ad-hoc backups or small archives.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ---
 
 ### B) **Compare & Copy (Incremental updates)**  
 Preview what’s new, changed, or missing before syncing. Copy only updated files to minimize bandwidth usage.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results highlighting changed files in RcloneView" class="img-medium img-center" />
 
@@ -117,9 +116,9 @@ Set up a **Sync Job** that mirrors your NAS to the cloud automatically.
 Run **dry-runs** first, then configure recurring schedules (e.g., nightly or weekly).  
 
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a scheduled NAS to Cloud backup job" class="img-medium img-center" />
 

@@ -105,7 +105,7 @@ Filters are safest when you validate them visually:
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results filters" class="img-large img-center" />
 
-Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents)
+Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ## Filter-first workflow (safe by design)
 
@@ -146,7 +146,7 @@ Once the filters are correct, save the Sync as a Job:
 <img src="/support/images/en/howto/rcloneview-basic/add-job-scheduling.png" alt="Add job scheduling" class="img-large img-center" />
 </div>
 
-Guide: [/support/howto/rcloneview-basic/create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs)
+Guide: [/support/howto/rcloneview-basic/create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs)
 
 ## Scheduling filtered syncs
 
@@ -154,7 +154,7 @@ Use Job Scheduling to automate selective backups:
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Create job schedule" class="img-large img-center" />
 
-Guide: [/support/howto/rcloneview-advanced/job-scheduling-and-execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+Guide: [/support/howto/rcloneview-advanced/job-scheduling-and-execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ## Real-world wins from filter rules
 

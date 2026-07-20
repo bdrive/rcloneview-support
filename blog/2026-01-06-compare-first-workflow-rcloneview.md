@@ -92,7 +92,7 @@ Only run Sync after Compare matches expectations. Add **Dry Run** for an extra s
 
 <img src="/support/images/en/howto/rcloneview-basic/sync-dry-run.png" alt="Sync dry run" class="img-large img-center" />
 
-Guide: [/support/howto/rcloneview-basic/synchronize-remote-storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
+Guide: [/support/howto/rcloneview-basic/synchronize-remote-storages](/howto/rcloneview-basic/synchronize-remote-storages)
 
 ## Real accident scenarios (and how Compare prevents them)
 
@@ -120,7 +120,7 @@ Repeated full syncs trigger excessive API calls and traffic. Compare limits chan
 - **Make Compare a habit**, not an option.  
 - **Treat Compare as a checkpoint** before any Job runs.
 
-Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents)
+Guide: [/support/howto/rcloneview-basic/compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Job history" class="img-large img-center" />
 

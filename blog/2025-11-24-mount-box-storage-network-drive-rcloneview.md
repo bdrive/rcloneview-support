@@ -55,14 +55,14 @@ Box is excellent for collaboration, but local sync clients can bloat disks and s
 
 ## Step 1 — Connect Box in RcloneView
 
-- Add Box via `+ New Remote` (OAuth flow). Guide: [add-oath-online-login](/support/howto/remote-storage-connection-settings/add-oath-online-login).
+- Add Box via `+ New Remote` (OAuth flow). Guide: [add-oath-online-login](/howto/remote-storage-connection-settings/add-oath-online-login).
 - Verify the remote in **Remote Explorer** so you know folders and depth look right.  
 
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
 
 ## Step 2 — Mount Box as a Drive (Windows or macOS)
 
-- Open **Mount Manager** and select your Box remote. Guide: [mount-cloud-storage-as-a-local-drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
+- Open **Mount Manager** and select your Box remote. Guide: [mount-cloud-storage-as-a-local-drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
 - Choose a target:
   - Windows: assign a drive letter (e.g., `B:`) using `cmount` under the hood.
   - macOS: pick a mount path (e.g., `/Volumes/Box`).
@@ -73,7 +73,7 @@ Box is excellent for collaboration, but local sync clients can bloat disks and s
 
 ## Step 3 — (Optional) Use Compare Before Big Moves
 
-- Run **Compare** to see differences between Box and a local or secondary cloud before making structural changes: [compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents).
+- Run **Compare** to see differences between Box and a local or secondary cloud before making structural changes: [compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents).
 - Catch missing or newer files without risking an accidental overwrite.  
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />
@@ -81,7 +81,7 @@ Box is excellent for collaboration, but local sync clients can bloat disks and s
 
 ## Step 5 — (Optional) Sync Jobs and Backups
 
-- Mirror critical Box folders to a backup target (S3, Wasabi, NAS) with **copy** or **sync** jobs: [create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs).
+- Mirror critical Box folders to a backup target (S3, Wasabi, NAS) with **copy** or **sync** jobs: [create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs).
 - Start with copy for safety; switch to sync after validating results.
 - Schedule off-hours runs so workday mounts stay snappy.  
 

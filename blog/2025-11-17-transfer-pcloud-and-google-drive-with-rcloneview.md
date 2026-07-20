@@ -64,8 +64,8 @@ RcloneView combines rclone’s reliability with a visual workflow so teams and a
   <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />
   
   👉 Learn more:
-  - [Add Google Drive Remote](/support/howto/#step-2-adding-remote-storage-google-drive-example)
-  - [Add a new remote (OAuth)](/support/howto/remote-storage-connection-settings/add-oath-online-login)
+  - [Add Google Drive Remote](/howto/#step-2-adding-remote-storage-google-drive-example)
+  - [Add a new remote (OAuth)](/howto/remote-storage-connection-settings/add-oath-online-login)
 
 ## Step 2: Open both remotes in the Explorer pane
 
@@ -74,7 +74,6 @@ RcloneView combines rclone’s reliability with a visual workflow so teams and a
 3. In the right pane, click **+** and open your **Google Drive** remote.
 4. Navigate to the source and destination folders you plan to move.
 
-<!-- Image placeholder: add `/support/images/en/tutorials/open-pcloud-and-google-drive-remotes.png` if available -->
 <img src="/support/images/en/howto/remote-storage-connection-settings/pcloud-first-in-explorer.png" alt="open pcloud and google drive remotes" class="img-medium img-center" />
 
 ## Four methods for pCloud ↔ Google Drive transfers
@@ -87,7 +86,7 @@ RcloneView combines rclone’s reliability with a visual workflow so teams and a
 
   <img src="/support/images/en/tutorials/wasabi-drag-and-drop.png" alt="drag and drop" class="img-large img-center" />
     
-  👉 More details: [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+  👉 More details: [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ### Method 2: Compare, then copy or delete
 
@@ -100,7 +99,7 @@ RcloneView combines rclone’s reliability with a visual workflow so teams and a
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />
   
 
-👉 Learn more: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
+👉 Learn more: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ### Method 3: Sync or save as a Job
 
@@ -113,9 +112,9 @@ RcloneView combines rclone’s reliability with a visual workflow so teams and a
      
 
 👉 Learn more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 
 ### Method 4: Schedule recurring sync jobs
@@ -126,7 +125,7 @@ RcloneView combines rclone’s reliability with a visual workflow so teams and a
 4. Enable the job and let RcloneView run it automatically.
 5. Check logs and history to verify successful runs.
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="configure job schedule" class="img-large img-center" />
 
 ## Tips for smooth transfers

@@ -73,5 +73,5 @@ You can see **`Local Disk`** in left pane of RcloneView.
 
 ## Related Guides
 
-- Alias overview and other virtual remotes: [Alias Remote Guide](../remote-storage-connection-settings/alias-remote.md)
-- General Explorer controls and tabs: [Browse and Manage Remote Storage](../rcloneview-basic/browse-and-manage-remote-storage.md)
+- Alias overview and other virtual remotes: [Alias Remote Guide](/howto/remote-storage-connection-settings/alias-remote)
+- General Explorer controls and tabs: [Browse and Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)

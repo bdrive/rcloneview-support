@@ -38,7 +38,7 @@ You will need to purchase a [**PLUS license**](https://rcloneview.com/src/pricin
 
 You can configure scheduling when:
 
-- Creating a new job ([Step 4: Scheduling](../rcloneview-basic/create-sync-jobs.md#step4-scheduling-available-with-plus-license))
+- Creating a new job ([Step 4: Scheduling](/howto/rcloneview-basic/create-sync-jobs#step4-scheduling-available-with-plus-license))
 - Editing an existing job to add a schedule
 
 ## Add or Edit a Job to Configure Scheduling

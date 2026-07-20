@@ -211,6 +211,6 @@ Type these commands in any chat where the bot is present:
 
 ## Wrap-up
 
-Telegram turns RcloneView into a mobile command center: you stay notified, you can start or stop jobs instantly, and you respond faster to failures. Set it up once, keep the tokens safe, and manage your cloud automation with confidence even when you are away from your desk.
+Slack turns RcloneView into a mobile command center: you stay notified, you can start or stop jobs instantly, and you respond faster to failures. Set it up once, keep the tokens safe, and manage your cloud automation with confidence even when you are away from your desk.
 
 <CloudSupportGrid />

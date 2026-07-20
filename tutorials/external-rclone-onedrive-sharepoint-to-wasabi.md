@@ -53,7 +53,7 @@ curl -u admin:admin -X POST "http://<SERVER-IP>:5572/rc/noop"
 ```
    A `{}` response means the daemon is ready for RcloneView.
 
-👉 Need a refresher? See [Run Rclone on AWS EC2](/support/howto/cloud-storage-setting/run-rclone-on-aws-ec2).
+👉 Need a refresher? See [Run Rclone on AWS EC2](/howto/cloud-storage-setting/run-rclone-on-aws-ec2).
 
 ## Part 2. Open a New RcloneView Window
 
@@ -63,7 +63,7 @@ Each RcloneView window can pair with a different Rclone instance.
 2. Click **`New Window`** from the **Home** menu.  
 3. A second window opens; this one will connect to the external Rclone you just launched.
 
-👉 Learn more: [Using Multiple Rclone Connections with New Window](/support/howto/rcloneview-advanced/multi-window).
+👉 Learn more: [Using Multiple Rclone Connections with New Window](/howto/rcloneview-advanced/multi-window).
 
 ## Part 3. Connect RcloneView to the External Rclone
 
@@ -92,7 +92,7 @@ All remotes you create now live inside the external Rclone process and are share
 3. Enter **Access Key**, **Secret Key**, and the **endpoint** for your region (for example `s3.ap-northeast-2.wasabisys.com`).  
 4. Save the remote (e.g., name it `wasabi-prod`).
 
-👉 Details: [How to Add Wasabi Remote](/support/tutorials/#2-add-wasabi-as-a-remote-in-rcloneview).
+👉 Details: [How to Add Wasabi Remote](/tutorials/#2-add-wasabi-as-a-remote-in-rcloneview).
 
 ### ➕ Add OneDrive (Works Without a Local Browser)
 
@@ -100,7 +100,7 @@ All remotes you create now live inside the external Rclone process and are share
 2. If the server has a browser, complete the standard OAuth flow in RcloneView.  
 3. If the server is headless or cannot open a browser, follow the headless/CLI method: generate the token on a device with a browser and paste it into the server-side config.  
 
-👉 Step-by-step headless flow: [Add Microsoft remotes from EC2/headless](/support/howto/remote-storage-connection-settings/ec2-onedrive-headless).
+👉 Step-by-step headless flow: [Add Microsoft remotes from EC2/headless](/howto/remote-storage-connection-settings/ec2-onedrive-headless).
 After saving, you should see two remotes listed in the Explorer: **OneDrive** and **Wasabi**.
 
 ## Part 5. Transfer or Sync to Wasabi
@@ -120,9 +120,9 @@ After saving, you should see two remotes listed in the Explorer: **OneDrive** an
 4. Check **Job History** for logs and outcomes.
 
 👉 More on jobs and scheduling:  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ## Quick Tips for Faster Wasabi Uploads
 
@@ -138,13 +138,13 @@ By hosting Rclone as a remote daemon and steering it from a dedicated RcloneView
 
 - **Auth & Remotes**  
   - [Add Microsoft remotes from EC2/headless](https://rcloneview.com/support/howto/remote-storage-connection-settings/ec2-onedrive-headless)  
-  - [How to Add S3-Compatible Remote](/support/howto/remote-storage-connection-settings/s3)  
+  - [How to Add S3-Compatible Remote](/howto/remote-storage-connection-settings/s3)  
 - **External Rclone & Windows**  
-  - [Using Multiple Rclone Connections with New Window](/support/howto/rcloneview-advanced/multi-window)  
-  - [Run Rclone on AWS EC2](/support/howto/cloud-storage-setting/run-rclone-on-aws-ec2)  
+  - [Using Multiple Rclone Connections with New Window](/howto/rcloneview-advanced/multi-window)  
+  - [Run Rclone on AWS EC2](/howto/cloud-storage-setting/run-rclone-on-aws-ec2)  
 - **Transfers & Automation**  
-  - [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-  - [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-  - [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+  - [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+  - [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+  - [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <CloudSupportGrid />

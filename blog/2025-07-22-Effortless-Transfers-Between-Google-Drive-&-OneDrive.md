@@ -19,7 +19,6 @@ tags:
   - file-management
   - cloud-file-transfer
   - cloud-storage-synchronization
-  - google-to-onedrive
 ---
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
 import cloudIcons from '../src/contexts/cloudIcons';

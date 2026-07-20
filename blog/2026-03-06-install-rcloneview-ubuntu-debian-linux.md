@@ -21,7 +21,6 @@ tags:
   - ubuntu
   - debian
   - installation
-  - setup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

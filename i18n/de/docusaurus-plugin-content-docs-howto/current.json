@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.howtoSidebar.category.Remote Storage Connection Settings": {
+    "message": "Remote-Speicher-Verbindungseinstellungen",
+    "description": "The label for category Remote Storage Connection Settings in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Remote Storage Connection Settings.link.generated-index.description": {
+    "message": "Anleitung zum Einrichten von Remote-Speicher-Verbindungen.",
+    "description": "The generated-index page description for category Remote Storage Connection Settings in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Connect Remote Storages using CLI": {
+    "message": "Remote-Speicher per CLI verbinden",
+    "description": "The label for category Connect Remote Storages using CLI in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Connect Remote Storages using CLI.link.generated-index.description": {
+    "message": "Anleitung zum Einrichten von Remote-Speicher-Verbindungen über die CLI.",
+    "description": "The generated-index page description for category Connect Remote Storages using CLI in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.RcloneView - Basics": {
+    "message": "RcloneView – Grundlagen",
+    "description": "The label for category RcloneView - Basics in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.RcloneView - Basics.link.generated-index.description": {
+    "message": "Lernen Sie hier die wichtigsten RcloneView-Funktionen wie Dateivergleich, Synchronisation und Cloud-Remote-Einrichtung — ideal für Einsteiger.",
+    "description": "The generated-index page description for category RcloneView - Basics in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.RcloneView - Advanced": {
+    "message": "RcloneView – Fortgeschritten",
+    "description": "The label for category RcloneView - Advanced in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.RcloneView - Advanced.link.generated-index.description": {
+    "message": "Entdecken Sie erweiterte Funktionen wie geplante Jobs, Multi-Window-Unterstützung, externe Rclone-Integration und mehr.",
+    "description": "The generated-index page description for category RcloneView - Advanced in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Cloud Setup Prerequisites": {
+    "message": "Cloud-Vorbereitung",
+    "description": "The label for category Cloud Setup Prerequisites in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Cloud Setup Prerequisites.link.generated-index.description": {
+    "message": "Erfahren Sie, wie Sie externe Cloud-Dienste für die Nutzung mit RcloneView vorbereiten.",
+    "description": "The generated-index page description for category Cloud Setup Prerequisites in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar howtoSidebar"
+  }
+}

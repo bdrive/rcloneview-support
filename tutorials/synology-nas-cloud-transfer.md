@@ -140,8 +140,8 @@ After selecting your NAS and connection method, RcloneView will automatically gu
 📌 **Need more help with each method?**  
 Here are detailed setup guides:
 
-- 👉 [How to Add SFTP Remote](/support/howto/remote-storage-connection-settings/sftp)
-- 👉 [How to Add WebDAV Remote](/support/howto/remote-storage-connection-settings/webdav)
+- 👉 [How to Add SFTP Remote](/howto/remote-storage-connection-settings/sftp)
+- 👉 [How to Add WebDAV Remote](/howto/remote-storage-connection-settings/webdav)
 
 
 
@@ -181,10 +181,10 @@ For performance, RcloneView enables a **VFS cache** during heavy operations. Ini
 
 For full details and additional methods, see:
 
-- [Method 1: Mount from Remote Explorer](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#method-1-mount-from-remote-explorer)
-- [Method 2: Mount via Mount Manager](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#method-2-mount-via-mount-manager)
-- [View and Manage Mounted Drives](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#view-and-manage-mounted-drives)
-- [Quick Mount from System Tray](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#view-and-manage-mounted-drives)
+- [Method 1: Mount from Remote Explorer](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#method-1-mount-from-remote-explorer)
+- [Method 2: Mount via Mount Manager](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#method-2-mount-via-mount-manager)
+- [View and Manage Mounted Drives](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#view-and-manage-mounted-drives)
+- [Quick Mount from System Tray](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive#view-and-manage-mounted-drives)
 
 ## **🚚 Step 3: Transfer or Sync Files**
 
@@ -204,7 +204,7 @@ Once your NAS is connected as a Remote, RcloneView gives you **4 powerful ways t
     
 <img src="/support/images/en/tutorials/synology-nas-to-google-drag-and-drop.png" alt="synology nas to google drag and drop" class="img-medium img-center" />
 
-  👉 Learn more: [Browse Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+  👉 Learn more: [Browse Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 
 ### **🔍 Method 2: Compare Folder Contents**
@@ -226,7 +226,7 @@ Once your NAS is connected as a Remote, RcloneView gives you **4 powerful ways t
     
 <img src="/support/images/en/tutorials/compare-synology-nas-and-google-drive.png" alt="compare synology nas and google drive" class="img-medium img-center" />
 
-  👉 Learn more: [Compare Folders](/support/howto/rcloneview-basic/compare-folder-contents)
+  👉 Learn more: [Compare Folders](/howto/rcloneview-basic/compare-folder-contents)
 
 
 ### **🔁 Method 3: Sync or One-Time Job**
@@ -245,9 +245,9 @@ Once your NAS is connected as a Remote, RcloneView gives you **4 powerful ways t
 
 👉 Learn more:
 
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
     
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
     
 
 
@@ -265,7 +265,7 @@ Once your NAS is connected as a Remote, RcloneView gives you **4 powerful ways t
   ✅ Jobs will run automatically in background at the scheduled time.
  
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 
 
@@ -287,14 +287,14 @@ No command line. No scripts. Just fast, powerful, and flexible cloud file manage
   
 ## **🔗 Related Guides**
 
-- [How to Add SFTP Remote](/support/howto/remote-storage-connection-settings/sftp)
-- [How to Add WebDAV Remote](/support/howto/remote-storage-connection-settings/webdav)
-- [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
-- [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [How to Add SFTP Remote](/howto/remote-storage-connection-settings/sftp)
+- [How to Add WebDAV Remote](/howto/remote-storage-connection-settings/webdav)
+- [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
+- [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 🧠 **Start connecting your NAS to the cloud today with RcloneView.**
 

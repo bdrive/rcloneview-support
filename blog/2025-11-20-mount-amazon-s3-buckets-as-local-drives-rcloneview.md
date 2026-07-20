@@ -20,7 +20,7 @@ tags:
   - amazon-s3
   - mount
   - windows
-  - macOS
+  - macos
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -41,7 +41,7 @@ Amazon S3 is everywhere: logs, ML artifacts, backups, and static websites. Yet t
 
 ## Why Pick RcloneView Instead of DIY CLI Mounts
 
-- **Guided IAM setup**: Remote Manager walks you through keys, roles, and endpoints using the [Amazon S3 guide](/support/howto/remote-storage-connection-settings/s3) so credentials stay scoped.
+- **Guided IAM setup**: Remote Manager walks you through keys, roles, and endpoints using the [Amazon S3 guide](/howto/remote-storage-connection-settings/s3) so credentials stay scoped.
 - **Driver helpers**: WinFsp and macFUSE prompts are embedded; no manual downloads or registry edits.
 - **Template-driven mounts**: Mount Manager stores every S3 mount with cache size, drive letter, and auto-start toggles.
 - **Multi-cloud extras**: While S3 is mounted, you can Compare, Sync, or Copy to Google Drive, Dropbox, Wasabi, NAS, or external disks in the same UI.
@@ -74,10 +74,10 @@ Mount Manager (Remote -> Mount Manager) keeps every mount as a reusable profile.
 
 Mounts are just the start. RcloneView lets you layer automation:
 
-- **Compare** the mounted bucket vs. a local folder to verify deployments (see [Compare folder contents](/support/howto/rcloneview-basic/compare-folder-contents)).  
+- **Compare** the mounted bucket vs. a local folder to verify deployments (see [Compare folder contents](/howto/rcloneview-basic/compare-folder-contents)).  
 
   <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />
-- **Sync** S3 to external drives or NAS using [Create sync jobs](/support/howto/rcloneview-basic/create-sync-jobs) and [Synchronize remote storages](/support/howto/rcloneview-basic/synchronize-remote-storages) for nightlies.
+- **Sync** S3 to external drives or NAS using [Create sync jobs](/howto/rcloneview-basic/create-sync-jobs) and [Synchronize remote storages](/howto/rcloneview-basic/synchronize-remote-storages) for nightlies.
 
   <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />
 - **Multi-cloud hops**: keep Google Drive, Dropbox, or Wasabi mounts open simultaneously to drag files across Finder/Explorer windows.

@@ -8,7 +8,6 @@ authors:
 tags:
   - reference
   - RcloneView
-  - content-style
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -519,12 +518,6 @@ Use these to show the actual UI. Copy-paste the HTML image tags:
   <img src="/support/images/en/howto/rcloneview-basic/sync-filtering-settings.png" alt="sync-filtering-settings.png" class="img-large img-center" />
 - sync remote folder select
   <img src="/support/images/en/howto/rcloneview-basic/sync-remote-folder-select.png" alt="sync-remote-folder-select.png" class="img-large img-center" />
-- sync tab
-  <img src="/support/images/en/howto/rcloneview-basic/sync-tab.png" alt="sync-tab.png" class="img-large img-center" />
-- system tray right click menu
-  <img src="/support/images/en/howto/rcloneview-basic/system-tray-right-click-menu.png" alt="system-tray-right-click-menu.png" class="img-large img-center" />
-- wizard external rclone installation
-  <img src="/support/images/en/howto/rcloneview-basic/wizard-external-rclone-installation.png" alt="wizard-external-rclone-installation.png" class="img-large img-center" />
 
 ### Images (English / howto ? cloud-storage-setting)
 
@@ -539,72 +532,6 @@ Use these to show the actual UI. Copy-paste the HTML image tags:
 
 ### Images (English / howto ? remote-storage-connection-settings ? root)
 
-- add azure blob storage
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-azure-blob-storage.png" alt="add-azure-blob-storage.png" class="img-large img-center" />
-- add box remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-box-remote.png" alt="add-box-remote.png" class="img-large img-center" />
-- add dropbox remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-dropbox-remote.png" alt="add-dropbox-remote.png" class="img-large img-center" />
-- add google drive remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-google-drive-remote.png" alt="add-google-drive-remote.png" class="img-large img-center" />
-- add google drive shared drive
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-google-drive-shared-drive.png" alt="add-google-drive-shared-drive.png" class="img-large img-center" />
-- add google drive with team drive
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-google-drive-with-team-drive.png" alt="add-google-drive-with-team-drive.png" class="img-large img-center" />
-- add mega remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-mega-remote.png" alt="add-mega-remote.png" class="img-large img-center" />
-- add onedrive remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-onedrive-remote.png" alt="add-onedrive-remote.png" class="img-large img-center" />
-- add pcloud remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-pcloud-remote.png" alt="add-pcloud-remote.png" class="img-large img-center" />
-- add proton remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-proton-remote.png" alt="add-proton-remote.png" class="img-large img-center" />
-- add remote for wasabi
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-remote-for-wasabi.png" alt="add-remote-for-wasabi.png" class="img-large img-center" />
-- add r2 remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-r2-remote.png" alt="add-r2-remote.png" class="img-large img-center" />
-- add rclone remote for aws s3
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-rclone-remote-for-aws-s3.png" alt="add-rclone-remote-for-aws-s3.png" class="img-large img-center" />
-- add rclone remote for idrive e2
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-rclone-remote-for-idrive-e2.png" alt="add-rclone-remote-for-idrive-e2.png" class="img-large img-center" />
-- add rclone remote for r2
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-rclone-remote-for-r2.png" alt="add-rclone-remote-for-r2.png" class="img-large img-center" />
-- add rclone remote for s3 compatible storage
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-rclone-remote-for-s3-compatible-storage.png" alt="add-rclone-remote-for-s3-compatible-storage.png" class="img-large img-center" />
-- add s3 compatible remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-s3-compatible-remote.png" alt="add-s3-compatible-remote.png" class="img-large img-center" />
-- add s3 remote for aws
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-s3-remote-for-aws.png" alt="add-s3-remote-for-aws.png" class="img-large img-center" />
-- add s3 remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-s3-remote.png" alt="add-s3-remote.png" class="img-large img-center" />
-- add sftp remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-sftp-remote.png" alt="add-sftp-remote.png" class="img-large img-center" />
-- add storj remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-storj-remote.png" alt="add-storj-remote.png" class="img-large img-center" />
-- add union remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-union-remote.png" alt="add-union-remote.png" class="img-large img-center" />
-- add webdav remote
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-webdav-remote.png" alt="add-webdav-remote.png" class="img-large img-center" />
-- add webdav remote2
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-webdav-remote2.png" alt="add-webdav-remote2.png" class="img-large img-center" />
-- add webdav remote3
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-webdav-remote3.png" alt="add-webdav-remote3.png" class="img-large img-center" />
-- add webdav remote4
-  <img src="/support/images/en/howto/remote-storage-connection-settings/add-webdav-remote4.png" alt="add-webdav-remote4.png" class="img-large img-center" />
-- added webdav remote on system tray
-  <img src="/support/images/en/howto/remote-storage-connection-settings/added-webdav-remote-on-system-tray.png" alt="added-webdav-remote-on-system-tray.png" class="img-large img-center" />
-- added webdav remote on system tray2
-  <img src="/support/images/en/howto/remote-storage-connection-settings/added-webdav-remote-on-system-tray2.png" alt="added-webdav-remote-on-system-tray2.png" class="img-large img-center" />
-- added webdav remote on system tray3
-  <img src="/support/images/en/howto/remote-storage-connection-settings/added-webdav-remote-on-system-tray3.png" alt="added-webdav-remote-on-system-tray3.png" class="img-large img-center" />
-- copy google drive client id
-  <img src="/support/images/en/howto/remote-storage-connection-settings/copy-google-drive-client-id.png" alt="copy-google-drive-client-id.png" class="img-large img-center" />
-- copy google drive client id2
-  <img src="/support/images/en/howto/remote-storage-connection-settings/copy-google-drive-client-id2.png" alt="copy-google-drive-client-id2.png" class="img-large img-center" />
-- copy onedrive client id
-  <img src="/support/images/en/howto/remote-storage-connection-settings/copy-onedrive-client-id.png" alt="copy-onedrive-client-id.png" class="img-large img-center" />
-- copy onedrive client id2
-  <img src="/support/images/en/howto/remote-storage-connection-settings/copy-onedrive-client-id2.png" alt="copy-onedrive-client-id2.png" class="img-large img-center" />
 - google drive shared with me options
   <img src="/support/images/en/howto/remote-storage-connection-settings/google-drive-shared-with-me-options.png" alt="google-drive-shared-with-me-options.png" class="img-large img-center" />
 - on home quick access wizard for storj

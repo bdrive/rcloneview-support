@@ -75,7 +75,7 @@ Before you begin:
 6. **Pilot first** — run a small test to validate paths, permissions, and throughput.
 
 🔍 Helpful overview:
-- [Cloud ↔ Synology tutorial](/support/tutorials/synology-nas-cloud-transfer)
+- [Cloud ↔ Synology tutorial](/tutorials/synology-nas-cloud-transfer)
 
 
 ## 3) Step 2 — Wire up connections in RcloneView
@@ -95,9 +95,9 @@ RcloneView wraps rclone’s configuration into a guided, click-through flow.
 4. Confirm both appear side-by-side in the Explorer pane.
 
 🔍 Helpful guides:  
-- [Quick OAuth Setup (Google Drive, etc.)](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
-- [Add S3 Remote (Amazon S3/Wasabi)](/support/howto/remote-storage-connection-settings/s3)
-- [Cloud ↔ Synology tutorial](/support/tutorials/synology-nas-cloud-transfer)
+- [Quick OAuth Setup (Google Drive, etc.)](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
+- [Add S3 Remote (Amazon S3/Wasabi)](/howto/remote-storage-connection-settings/s3)
+- [Cloud ↔ Synology tutorial](/tutorials/synology-nas-cloud-transfer)
 
 <img src="/support/images/en/tutorials/synology-nas-webdav-and-google-drive.png" alt="synology nas webdav and google drive" class="img-medium img-center" />
 
@@ -109,13 +109,13 @@ RcloneView offers three straightforward approaches. Start small, then scale with
 - Open **Synology (Local/WebDAV/SFTP)** on one side and your **cloud** on the other, then **drag folders/files across**.  
 - Great for selective moves and quick wins.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### B) Compare & Copy (preview changes)
 - Run **Compare** to see what’s new/changed on the NAS vs. your cloud bucket/drive.  
 - Copy only deltas—fewer surprises, faster runs.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results highlighting changed files" class="img-medium img-center" />
 
@@ -124,9 +124,9 @@ RcloneView offers three straightforward approaches. Start small, then scale with
 - **Dry-run** first, then save as a reusable **Job** and add a schedule (nightly/weekly).  
 
 👉 See more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a saved job in RcloneView" class="img-medium img-center" />
 

@@ -18,7 +18,7 @@ tags:
   - google-drive
   - onedrive
   - dropbox
-  - S3
+  - s3
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -89,9 +89,9 @@ Add the services you plan to use (Google Drive, Dropbox, OneDrive, S3/Wasabi/R2,
 <img src="/support/images/en/howto/remote-storage-connection-settings/add-new-remote.png" alt="Add a new remote in RcloneView" class="img-large img-center" />
 
 Helpful links:
-- [Connect OAuth-based providers (Google Drive/Dropbox/OneDrive)](/support/howto/remote-storage-connection-settings/add-oath-online-login)
-- [Add S3-compatible storage (AWS/Wasabi/R2/B2)](/support/howto/remote-storage-connection-settings/s3)
-- [Cloudflare R2 credentials setup](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
+- [Connect OAuth-based providers (Google Drive/Dropbox/OneDrive)](/howto/remote-storage-connection-settings/add-oath-online-login)
+- [Add S3-compatible storage (AWS/Wasabi/R2/B2)](/howto/remote-storage-connection-settings/s3)
+- [Cloudflare R2 credentials setup](/howto/cloud-storage-setting/cloudflare-r2-credential)
 
 ### Step 2 — Create a backup or sync job
 
@@ -99,7 +99,7 @@ Open **Job Manager** → **Add Job**. Select source and destination folders. Cho
 
 <img src="/support/images/en/howto/rcloneview-basic/add-job-configure-storage.png" alt="Configure source and destination when creating a backup job" class="img-large img-center" />
 
-👉 Learn more: [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
+👉 Learn more: [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
 
 ### Step 3 — Configure preferences
 
@@ -113,7 +113,7 @@ Open **Job Manager** → **Add Job**. Select source and destination folders. Cho
 
 In Step 4 of the job wizard, toggle scheduling, choose **Daily**, and set a time (e.g., 03:00). Add retries (e.g., 3 attempts) for resilience.  
 
-👉 Learn more: [Job Scheduling & Execution (Plus)](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling & Execution (Plus)](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="create-job-schedule.png" class="img-large img-center" />
 

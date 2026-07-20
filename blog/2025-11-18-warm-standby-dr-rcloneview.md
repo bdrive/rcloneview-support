@@ -20,7 +20,7 @@ tags:
   - multi-cloud
   - backup
   - sync
-  - S3
+  - s3
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

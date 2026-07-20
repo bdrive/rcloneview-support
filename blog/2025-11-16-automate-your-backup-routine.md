@@ -68,9 +68,9 @@ RcloneView rides on the rclone engine but wraps it with Jobs, Compare, and sched
 <img src="/support/images/en/howto/remote-storage-connection-settings/add-new-remote.png" alt="add new remote" class="img-large img-center" />
 
 🔍 Helpful links:
-- [How to Add S3-Compatible Storage](/support/howto/remote-storage-connection-settings/s3)
-- [Add a new remote (OAuth)](/support/howto/remote-storage-connection-settings/add-oath-online-login)
-- [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [How to Add S3-Compatible Storage](/howto/remote-storage-connection-settings/s3)
+- [Add a new remote (OAuth)](/howto/remote-storage-connection-settings/add-oath-online-login)
+- [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ---
 
@@ -86,9 +86,9 @@ RcloneView rides on the rclone engine but wraps it with Jobs, Compare, and sched
 <img src="/support/images/en/howto/rcloneview-basic/add-job-in-job-manager.png" alt="add job in job manager" class="img-large img-center" />
 
 👉 Learn more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 ---
 
@@ -102,7 +102,7 @@ RcloneView rides on the rclone engine but wraps it with Jobs, Compare, and sched
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="configure job schedule" class="img-large img-center" />
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ---
 
@@ -115,7 +115,7 @@ RcloneView rides on the rclone engine but wraps it with Jobs, Compare, and sched
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="compare view" class="img-large img-center" />
 
-👉 Learn more: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
+👉 Learn more: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ---
 

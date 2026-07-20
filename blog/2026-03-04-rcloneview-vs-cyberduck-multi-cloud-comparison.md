@@ -20,7 +20,7 @@ tags:
   - comparison
   - cloud-storage
   - file-management
-  - tools
+  - tips
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

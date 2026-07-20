@@ -19,7 +19,7 @@ tags:
   - google-drive
   - dropbox
   - s3
-  - Wasabi
+  - wasabi
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

@@ -19,7 +19,7 @@ tags:
   - compare
   - backup
   - sync
-  - Integrity
+  - safety
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

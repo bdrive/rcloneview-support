@@ -55,7 +55,7 @@ Unlike ad-hoc exports, RcloneView keeps every transfer auditable with timestamps
 ## Prerequisites (5 minutes)
 
 1. [Download RcloneView](https://rcloneview.com/src/download.html) for Windows, macOS, or Linux.
-2. Add MEGA via **`+ New Remote`** following the [MEGA connection guide](/support/howto/remote-storage-connection-settings/mega). Bring either a session ID or email/password with 2FA.
+2. Add MEGA via **`+ New Remote`** following the [MEGA connection guide](/howto/remote-storage-connection-settings/mega). Bring either a session ID or email/password with 2FA.
 3. (Optional) Add a destination cloud such as Google Drive, S3, Wasabi, or a local NAS using the same wizard.
 4. In **Settings → General**, enable **Config Password** if you want the rclone configuration itself encrypted (see `howto/rcloneview-basic/general-settings.md`).
 
@@ -83,7 +83,7 @@ With `mega-crypt:` ready, you can work visually without CLI memorization.
 ### Compare and preview
 
 1. Split Explorer so the left pane shows `mega-crypt:` and the right pane shows the target (e.g., `gdrive-vault:` or a local NAS).
-2. Click **Compare** to preview deltas. If you have a Plus license, use the **Filter** icon to hide cache/temp folders. The [Compare folders guide](/support/howto/rcloneview-basic/compare-folder-contents) covers include/exclude logic.
+2. Click **Compare** to preview deltas. If you have a Plus license, use the **Filter** icon to hide cache/temp folders. The [Compare folders guide](/howto/rcloneview-basic/compare-folder-contents) covers include/exclude logic.
 3. Review the Compare results and filters before running copy or sync so filenames, sizes, and timestamps match expectations.
 
 ### Save as a reusable Job

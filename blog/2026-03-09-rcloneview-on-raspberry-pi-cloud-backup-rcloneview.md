@@ -21,7 +21,7 @@ tags:
   - backup
   - cloud-storage
   - platform
-  - diy
+  - self-hosted
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

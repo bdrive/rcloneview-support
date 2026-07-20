@@ -18,7 +18,6 @@ tags:
   - cloud-backup
   - offline-sync
   - external-drive
-  - portable-backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -65,8 +64,8 @@ Before connecting your clouds:
 5. *(Optional)* **Plan filters** — exclude cache files, temporary folders, or huge archives.
 
 🔍 Helpful guides:  
-- [Browse & manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)  
-- [Connect Cloud Storage Remotes in RcloneView](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
+- [Browse & manage remote storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)  
+- [Connect Cloud Storage Remotes in RcloneView](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)
 
 ## Step 2 — Connect your cloud storage in RcloneView
 
@@ -84,13 +83,13 @@ RcloneView gives you three flexible methods to manage your cloud-to-drive sync.
 ### A) **Drag & Drop (Manual Copy)**  
 Browse your cloud on one side and your local folder on the other—then **drag folders or files across** for one-off copies.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### B) **Compare & Copy (Preview Differences)**  
 Run **Compare** to see what’s new or changed between your cloud folder and your drive.  
 Copy only the updates, skipping duplicates or old versions.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results highlighting changed files in RcloneView" class="img-medium img-center" />
 
@@ -99,9 +98,9 @@ Use **Sync** to automatically mirror your selected cloud folders to your local d
 Run a **dry-run** first, then save it as a **Job** for reuse.  
 
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a scheduled sync job to local drive" class="img-medium img-center" />
 

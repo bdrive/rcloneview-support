@@ -20,7 +20,7 @@ tags:
   - box
   - dropbox
   - migration
-  - Scheduler
+  - automation
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -47,11 +47,11 @@ RcloneView addresses all of it with Remote Manager, the dual-pane Explorer, Comp
 
 ## RcloneView Migration Blueprint
 
-1. **Connect** Box and Dropbox inside [Remote Manager](/support/howto/rcloneview-basic/remote-manager) using the OAuth wizard documented in [Add OAuth Online Login](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide) for Box and Dropbox.
-2. **Organize** remotes with color labels and scoped root paths so each job only touches a single Box library or Dropbox team folder. See [Browse and manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage).
-3. **Template** Copy/Sync jobs via [Create sync jobs](/support/howto/rcloneview-basic/create-sync-jobs) and [Synchronize remote storages](/support/howto/rcloneview-basic/synchronize-remote-storages), then preview changes with [Compare folder contents](/support/howto/rcloneview-basic/compare-folder-contents).
-4. **Automate** deltas through [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution) while tracking throughput in [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring).
-5. **Validate** with read-only mounts from [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) so stakeholders can double-check Dropbox before the cutover.
+1. **Connect** Box and Dropbox inside [Remote Manager](/howto/rcloneview-basic/remote-manager) using the OAuth wizard documented in [Add OAuth Online Login](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide) for Box and Dropbox.
+2. **Organize** remotes with color labels and scoped root paths so each job only touches a single Box library or Dropbox team folder. See [Browse and manage remote storage](/howto/rcloneview-basic/browse-and-manage-remote-storage).
+3. **Template** Copy/Sync jobs via [Create sync jobs](/howto/rcloneview-basic/create-sync-jobs) and [Synchronize remote storages](/howto/rcloneview-basic/synchronize-remote-storages), then preview changes with [Compare folder contents](/howto/rcloneview-basic/compare-folder-contents).
+4. **Automate** deltas through [Job scheduling and execution](/howto/rcloneview-advanced/job-scheduling-and-execution) while tracking throughput in [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring).
+5. **Validate** with read-only mounts from [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) so stakeholders can double-check Dropbox before the cutover.
 
 ## Step 1 -- Prepare Connectors and Access Controls
 
@@ -70,19 +70,19 @@ The Compare snapshot is your starting inventory.
 
 ## Step 3 -- Seed Copy Jobs and Preserve Metadata
 
-- Build Copy jobs for each business unit using the templates in [Create sync jobs](/support/howto/rcloneview-basic/create-sync-jobs); Copy ensures Box remains untouched.
+- Build Copy jobs for each business unit using the templates in [Create sync jobs](/howto/rcloneview-basic/create-sync-jobs); Copy ensures Box remains untouched.
 - Enable Box Docs filters (documented in the same guide) so ephemeral Box Notes or website shortcuts do not clutter Dropbox.  
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running an encrypted sync job in RcloneView" class="img-large img-center" />  
     
-- Run each job once manually, observe throughput in [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring).  
+- Run each job once manually, observe throughput in [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring).  
 
   <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="transfer monitoring" class="img-large img-center" />  
     
 
 ## Step 4 -- Automate Delta Windows with Scheduler
 
-Open **Scheduler**, enable it globally, and assign the following cadences (all documented in [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)):
+Open **Scheduler**, enable it globally, and assign the following cadences (all documented in [Job scheduling and execution](/howto/rcloneview-advanced/job-scheduling-and-execution)):
 
 - **Intraday mini-syncs** for fast-changing folders (creative briefs, deal rooms). Keep concurrency low to avoid Box throttling.
 - **Nightly full sync** for the rest of the library so Dropbox is always within a few minutes of Box before the final cutover.
@@ -94,7 +94,7 @@ Scheduler gives you centralized visibility: missed runs are highlighted, and eve
 ## Step 5 -- Cutover and Mount-Based QA
 
 1. Announce a write freeze for Box (read-only access stays available) and trigger the final Sync + Compare sequence.
-2. Mount the Dropbox destination read-only via [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) so business owners can validate folder depth, previews, and sharing shortcuts.
+2. Mount the Dropbox destination read-only via [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) so business owners can validate folder depth, previews, and sharing shortcuts.
 
 
 <img src="/support/images/en/howto/rcloneview-basic/mount-from-remote-explorer.png" alt="mount from remote explorer" class="img-large img-center" />

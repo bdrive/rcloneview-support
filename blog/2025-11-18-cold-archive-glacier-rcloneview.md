@@ -20,7 +20,7 @@ tags:
   - archive
   - s3
   - glacier
-  - Wasabi
+  - wasabi
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

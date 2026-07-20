@@ -43,7 +43,7 @@ Select the job you want to run, then click the **`Run`** button to execute it.
 - `Source` : The folder in the remote storage that serves as the source.  
 - `Destination` : The folder in the remote storage that acts as the destination.   
 - `Upcoming Schedule` : Shows the next scheduled time this job will run. If no schedule is set, it displays as **Unscheduled**.    
-  ⚠️ _This feature is available only with a PLUS license._ See:: [How to configure Job Scheduling](../rcloneview-advanced/job-scheduling-and-execution.md). 
+  ⚠️ _This feature is available only with a PLUS license._ See:: [How to configure Job Scheduling](/howto/rcloneview-advanced/job-scheduling-and-execution). 
 - `Last execution` : The most recent time this job was automatically executed via the schedule.   
 - `Created At` : The date and time the job was created.  
 - `History` : Opens the execution history for this job. Clicking it will open the full history window.  
@@ -57,7 +57,7 @@ Toolbars for managing Jobs
 
 After selecting a job, you can manage it using the toolbar options below:
 
-- **`Add Job`** : Creates and adds a new job. [See: How to create Job](./create-sync-jobs.md)  
+- **`Add Job`** : Creates and adds a new job. [See: How to create Job](/howto/rcloneview-basic/create-sync-jobs)  
 - **`Edit Job`** : Edits the selected job.
 - **`Duplicate`** : Creates a copy of the selected job. 
   The duplicated job is automatically named with a suffix such as (1), (2), …, (n).
@@ -135,7 +135,7 @@ Field Descriptions
 	- Scheduled : -Automatically run by RcloneView 
 - `Start Time` : When the job started   
 - `Time Spent` : Total duration of the sync  
-- `Status` : Job의 수행 결과  
+- `Status` : Execution result of the job  
 	- Completed : Success   
 	- Errored : Failed, with error messages available. 
 - `Total Size` : Total data size transferred

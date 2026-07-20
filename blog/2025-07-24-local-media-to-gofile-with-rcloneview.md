@@ -67,7 +67,7 @@ RcloneView wraps rclone’s configuration into a guided flow.
 2. Select **Gofile**, then paste your **Account API token** from Gofile **My Profile**. *(Premium required for rclone connections.)* 
 3. Name it (e.g., `MyGofile`) and save.  
 
-🔍 Helpful guide: (Add Gofile Remote)[/support/howto/remote-storage-connection-settings/gofile] 
+🔍 Helpful guide: [Add Gofile Remote](/howto/remote-storage-connection-settings/gofile) 
 
 <img src="/support/images/en/howto/remote-storage-connection-settings/add-gofile-remote-verify.png" alt="add go file remote verify" class="img-medium img-center" />
 
@@ -78,12 +78,12 @@ RcloneView offers three clear ways to move and maintain your media. Start small,
 ### A) Drag & Drop (manual, ad-hoc)
 - Open your **Local** media on the left, **Gofile** on the right, then **drag folders/files across**—simple and visual.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### B) Compare & Copy (preview changes)
 - Use **Compare** to see what’s new or changed before copying, reducing surprises and retries.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare results in RcloneView showing changed files" class="img-medium img-center" />
 
@@ -92,9 +92,9 @@ RcloneView offers three clear ways to move and maintain your media. Start small,
 - **Dry-run** first, then save as a reusable job and set a schedule (e.g., nightly).  
 
 👉 See more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Run a saved job in RcloneView" class="img-medium img-center" />
 
@@ -115,7 +115,7 @@ RcloneView offers three clear ways to move and maintain your media. Start small,
 **A.** Yes—rclone’s Gofile backend requires a **premium** Gofile account and an **Account API token** from **My Profile**. 
 
 **Q. Can I generate public share links for my uploads?**  
-**A.** Yes. RcloneView nsupports `link` to create public links (file or folder; folders can download as ZIP; expiry supported on some backends).
+**A.** Yes. RcloneView supports `link` to create public links (file or folder; folders can download as ZIP; expiry supported on some backends).
 
 
 **Ready to put your media library online—your way?**  

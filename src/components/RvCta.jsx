@@ -4,6 +4,7 @@
 import React, { useMemo } from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { translate } from '@docusaurus/Translate';
 
 const styles = `
 :root{
@@ -58,19 +59,58 @@ const styles = `
 `;
 
 export default function RvCta({
-  title = 'Manage & Sync All Clouds in One Place',
-  subtitle = 'RcloneView is a cross-platform GUI for rclone. Compare folders, transfer or sync files, and automate multi-cloud workflows with a clean, visual interface.',
-  bullets = [
-    'One-click jobs: Copy · Sync · Compare',
-    'Schedulers & history for reliable automation',
-    'Works with Google Drive, OneDrive, Dropbox, S3, WebDAV, SFTP and more',
-  ],
+  title,
+  subtitle,
+  bullets,
   imageSrc = '/img/rcloneview-preview.png',
-  imageAlt = 'RcloneView app preview',
+  imageAlt,
   downloadUrl = '/download',
-  badges = ['Windows','macOS','Linux'],
+  badges = ['Windows', 'macOS', 'Linux'],
   className,
 }) {
+  // 기본 문구는 로케일별로 번역 (i18n/{locale}/code.json).
+  // MDX에서 prop으로 넘기면 그 값이 우선한다.
+  const resolvedTitle =
+    title ??
+    translate({
+      id: 'rvCta.title',
+      message: 'Manage & Sync All Clouds in One Place',
+      description: 'Blog CTA title',
+    });
+  const resolvedSubtitle =
+    subtitle ??
+    translate({
+      id: 'rvCta.subtitle',
+      message:
+        'RcloneView is a cross-platform GUI for rclone. Compare folders, transfer or sync files, and automate multi-cloud workflows with a clean, visual interface.',
+      description: 'Blog CTA subtitle',
+    });
+  const resolvedBullets = bullets ?? [
+    translate({
+      id: 'rvCta.bullet.jobs',
+      message: 'One-click jobs: Copy · Sync · Compare',
+      description: 'Blog CTA bullet 1',
+    }),
+    translate({
+      id: 'rvCta.bullet.schedulers',
+      message: 'Schedulers & history for reliable automation',
+      description: 'Blog CTA bullet 2',
+    }),
+    translate({
+      id: 'rvCta.bullet.providers',
+      message:
+        'Works with Google Drive, OneDrive, Dropbox, S3, WebDAV, SFTP and more',
+      description: 'Blog CTA bullet 3',
+    }),
+  ];
+  const resolvedImageAlt =
+    imageAlt ??
+    translate({
+      id: 'rvCta.imageAlt',
+      message: 'RcloneView app preview',
+      description: 'Blog CTA image alt text',
+    });
+
   const resolvedImage = useBaseUrl(imageSrc);
 
   const resolvedDownload = useMemo(() => {
@@ -97,15 +137,15 @@ export default function RvCta({
       <style dangerouslySetInnerHTML={{ __html: styles }} />
       <div className="rv-cta__card">
         <div className="rv-cta__media">
-          <img src={resolvedImage} alt={imageAlt} loading="lazy" />
+          <img src={resolvedImage} alt={resolvedImageAlt} loading="lazy" />
         </div>
         <div className="rv-cta__body">
-          <h2 id="rv-cta-title">{title}</h2>
-          <p className="rv-cta__subtitle">{subtitle}</p>
+          <h2 id="rv-cta-title">{resolvedTitle}</h2>
+          <p className="rv-cta__subtitle">{resolvedSubtitle}</p>
 
-          {bullets?.length > 0 && (
+          {resolvedBullets?.length > 0 && (
             <ul className="rv-cta__bullets" role="list">
-              {bullets.map((b, i) => <li key={i}>{b}</li>)}
+              {resolvedBullets.map((b, i) => <li key={i}>{b}</li>)}
             </ul>
           )}
 
@@ -120,12 +160,26 @@ export default function RvCta({
             to={resolvedDownload}
             target={resolvedDownload.startsWith('http') ? '_blank' : undefined}
             rel={resolvedDownload.startsWith('http') ? 'noopener' : undefined}
-            aria-label="Download RcloneView"
+            aria-label={translate({
+              id: 'rvCta.button.ariaLabel',
+              message: 'Download RcloneView',
+              description: 'Blog CTA button aria-label',
+            })}
           >
-            Get Started Free →
+            {translate({
+              id: 'rvCta.button',
+              message: 'Get Started Free →',
+              description: 'Blog CTA button text',
+            })}
           </Link>
 
-          <p className="rv-cta__fineprint">Free core features. Plus automations available.</p>
+          <p className="rv-cta__fineprint">
+            {translate({
+              id: 'rvCta.fineprint',
+              message: 'Free core features. Plus automations available.',
+              description: 'Blog CTA fine print',
+            })}
+          </p>
         </div>
       </div>
 

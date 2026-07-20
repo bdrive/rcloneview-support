@@ -1,12 +1,19 @@
 import React from "react"; // ✅ 꼭 포함할 것
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Translate from "@docusaurus/Translate";
 import { DocSearch } from "@docsearch/react";
 import "@docsearch/css";
 
 import "../css/navbar.css";
 
 export default function CustomNavbar() {
+  const {
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+  // www(루트 사이트)도 /{locale}/ 미러 구조로 다국어화됨 — 로케일 유지 링크
+  const wwwUrl = (p) => (currentLocale === "en" ? p : `/${currentLocale}${p}`);
   return (
     <>
       <nav className="navbar navbar-expand-lg" id="mainNav">
@@ -52,23 +59,38 @@ export default function CustomNavbar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="/src/pricing.html">
+                <a className="nav-link" href={wwwUrl("/src/pricing.html")}>
                   Plus
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/src/download.html">
-                  Download
+                <a className="nav-link" href={wwwUrl("/src/download.html")}>
+                  <Translate id="navbar.download" description="Navbar label">
+                    Download
+                  </Translate>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/support/release-notes/">
-                  Release Notes
+                {/* 로케일 인지 링크 — 하드코딩(/support/...)은 ko 등에서 en 으로 이탈 */}
+                <a className="nav-link" href={useBaseUrl("/release-notes/")}>
+                  <Translate id="navbar.releaseNotes" description="Navbar label">
+                    Release Notes
+                  </Translate>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/support/">
-                  Support
+                <a className="nav-link" href={useBaseUrl("/")}>
+                  <Translate id="navbar.support" description="Navbar label">
+                    Support
+                  </Translate>
+                </a>
+              </li>
+              <li className="nav-item">
+                {/* 블로그 인덱스 — 전체 목록(Archive)은 블로그 안에서 진입 */}
+                <a className="nav-link" href={useBaseUrl("/blog")}>
+                  <Translate id="navbar.blog" description="Navbar label">
+                    Blog
+                  </Translate>
                 </a>
               </li>
               {/* <li className="nav-item">

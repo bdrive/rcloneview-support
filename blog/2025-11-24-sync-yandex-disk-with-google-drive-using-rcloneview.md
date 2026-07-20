@@ -56,7 +56,7 @@ import RvCta from '../src/components/RvCta';
 
 ## Step 1 — Connect Both Remotes
 
-- Add Yandex Disk (WebDAV or OAuth) via `+ New Remote`. Guide: [add-oath-online-login](/support/howto/remote-storage-connection-settings/add-oath-online-login).
+- Add Yandex Disk (WebDAV or OAuth) via `+ New Remote`. Guide: [add-oath-online-login](/howto/remote-storage-connection-settings/add-oath-online-login).
 - Add Google Drive with the same flow; choose the right scope (My Drive or Shared Drive).
 - Verify both in **Remote Explorer** so you know paths and permissions are correct.
 - Optional sanity checks: confirm time zone and modified-time consistency on a few test files to avoid surprise overwrites.  
@@ -65,7 +65,7 @@ import RvCta from '../src/components/RvCta';
 
 ## Step 2 — Compare Before You Sync
 
-- Open **Compare** to see what differs between Yandex Disk and Google Drive: [compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents).
+- Open **Compare** to see what differs between Yandex Disk and Google Drive: [compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents).
 - Filter by extensions if you want to focus on docs, media, or archives.
 - Save the compare as a job so you can re-run checks after each sync.
 - Use compare as your dry-run: it shows adds/updates/deletes without changing data.
@@ -77,7 +77,7 @@ import RvCta from '../src/components/RvCta';
 
 ## Step 3 — Build a Safe Sync Job
 
-- Create a job from Yandex Disk to Google Drive (or bidirectional if needed): [create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs).
+- Create a job from Yandex Disk to Google Drive (or bidirectional if needed): [create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs).
 - Start with **copy** for the first run to avoid unintended deletes; switch to **sync** once validated.
 - Enable checksum verification to catch any silent corruption.
 - Exclude temp/cache folders so you only move what matters.
@@ -92,7 +92,7 @@ import RvCta from '../src/components/RvCta';
 ## Step 4 — Schedule and Monitor
 
 - Set the scheduler for off-hours to reduce API throttling: [Job Scheduling](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)    
-- Watch live throughput and stalled files in **Transfer Monitor**: [real-time-transfer-monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring).
+- Watch live throughput and stalled files in **Transfer Monitor**: [real-time-transfer-monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring).
 - Notification habit: review Job History each morning during migration weeks to catch anomalies early.  
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="create job schedule" class="img-large img-center" />
@@ -100,7 +100,7 @@ import RvCta from '../src/components/RvCta';
 
 ## Step 5 — Mount for On-Demand Access (Optional)
 
-- Mount either cloud locally to browse without downloading everything: [mount-cloud-storage-as-a-local-drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
+- Mount either cloud locally to browse without downloading everything: [mount-cloud-storage-as-a-local-drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive).
 - Windows: assign a drive letter; macOS: choose a mount path under `/Volumes`.
 - Good for validation: open a few files directly from each mount after a sync to confirm permissions and readability.  
 

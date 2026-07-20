@@ -109,7 +109,7 @@ Once you have your **Access Key**, **Secret Key**, and **Endpoint**, return to R
 <img src="/support/images/en/tutorials/verify-wasabi-in-remote-manager.png" alt="verify wasabi in remote manager" class="img-large img-center" />
 
 For more details, see the general S3‑compatible guide:  
-- [How to Add S3-Compatible Remote](/support/howto/remote-storage-connection-settings/s3)
+- [How to Add S3-Compatible Remote](/howto/remote-storage-connection-settings/s3)
 
 ---
 
@@ -125,7 +125,7 @@ Once the remote is created, you can browse buckets and objects inside RcloneView
 <img src="/support/images/en/tutorials/wasabi-remote-in-rcloneview-explorer.png" alt="wasabi remote in rcloneview explorer" class="img-large img-center" />
 
 For more general navigation tips, refer to:  
-- [File Management with RcloneView](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [File Management with RcloneView](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ---
 
@@ -154,7 +154,7 @@ Drag & drop is the simplest way to copy files.
 
 <img src="/support/images/en/tutorials/wasabi-drag-and-drop.png" alt="wasabi drag and drop" class="img-large img-center" />
 For multi‑selection, right‑click actions, and more, see:  
-- [File Management with RcloneView](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [File Management with RcloneView](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ---
 
@@ -175,7 +175,7 @@ Typical use case: compare a local backup folder with a Wasabi backup folder.
 
 <img src="/support/images/en/tutorials/wasabi-and-local-compare-and-copy.png" alt="wasabi and local compare and copy" class="img-large img-center" />
 Learn more:  
-- [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
+- [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ---
 
@@ -212,7 +212,7 @@ After running Sync, you can monitor the progress of transferring file in real-ti
 <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="wasabi real time monitoring transferring" class="img-large img-center" />
 
 Reference:  
-- [Synchronize Remote Storages Instantly](/support/howto/rcloneview-basic/synchronize-remote-storages)
+- [Synchronize Remote Storages Instantly](/howto/rcloneview-basic/synchronize-remote-storages)
 
 #### 4.3.2 Save a Sync Job for re‑use
 
@@ -227,8 +227,8 @@ Configure a sync as above (source on the left, Wasabi destination on the right).
 On supported platforms (such as Windows), RcloneView can show a system notification when the job finishes.
 
 Reference:  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 #### 4.3.3 Schedule automatic Wasabi backups (Job Scheduling)
 
@@ -247,7 +247,7 @@ Open **Job Manager** from the toolbar.
 
 
 For deeper details:  
-- [Job Scheduling and Automated Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Job Scheduling and Automated Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 ---
 
@@ -265,7 +265,7 @@ Make sure your Wasabi remote is configured and working.
 
 <img src="/support/images/en/tutorials/mount-wasabi-as-local-drive.png" alt="mount wasabi as local drive" class="img-large img-center" />
 More information:  
-- [Mount Cloud Storage as a Local Drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)
+- [Mount Cloud Storage as a Local Drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)
 
 ---
 

@@ -23,7 +23,7 @@ tags:
   - nas
   - sftp
   - webdav
-  - SMB
+  - smb
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

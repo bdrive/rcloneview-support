@@ -111,7 +111,7 @@ RcloneView exposes these in the Mount UI so you can see all interactions in one 
 
 <img src="/support/images/en/howto/rcloneview-basic/mount-from-remote-explorer.png" alt="Mount from Remote Explorer" class="img-large img-center" />
 
-Guide: [/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)
+Guide: [/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive)
 
 ## Practical mount performance profiles
 

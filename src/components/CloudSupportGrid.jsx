@@ -1,6 +1,7 @@
 // src/components/CloudSupportGrid.jsx
 
 import React from "react";
+import { translate } from "@docusaurus/Translate";
 import cloudIcons from "../contexts/cloudIcons";
 
 export default function CloudSupportGrid({ data }) {
@@ -8,7 +9,13 @@ export default function CloudSupportGrid({ data }) {
 
   return (
     <section className="py-12 px-4 bg-white rounded-xl shadow-md text-center">
-      <h2 className="text-2xl font-semibold mb-6">Supported Cloud Providers</h2>
+      <h2 className="text-2xl font-semibold mb-6">
+        {translate({
+          id: "cloudGrid.title",
+          message: "Supported Cloud Providers",
+          description: "Cloud provider grid title",
+        })}
+      </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-4 gap-y-3 justify-items-center leading-none">
         {items.map((cloud, idx) => (
@@ -35,7 +42,11 @@ export default function CloudSupportGrid({ data }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          View All Providers →
+          {translate({
+            id: "cloudGrid.viewAll",
+            message: "View All Providers →",
+            description: "Cloud provider grid link",
+          })}
         </a>
       </div>
 
@@ -44,7 +55,11 @@ export default function CloudSupportGrid({ data }) {
           href="https://rcloneview.com/src/download.html"
           className="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
         >
-          Connect Your Clouds →
+          {translate({
+            id: "cloudGrid.connect",
+            message: "Connect Your Clouds →",
+            description: "Cloud provider grid CTA",
+          })}
         </a>
       </div>
     </section>

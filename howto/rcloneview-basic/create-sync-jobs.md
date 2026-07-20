@@ -36,7 +36,7 @@ There are two main ways to create a Job:
 
 You can create a Job by configuring your Sync task and clicking **Save to Jobs** in the Sync window.  
 
-👉 See:  [Instantly Create a Job from Sync](./synchronize-remote-storages.md#save-sync-operation-as-a-job)
+👉 See:  [Instantly Create a Job from Sync](/howto/rcloneview-basic/synchronize-remote-storages#save-sync-operation-as-a-job)
 
 You can view and run saved jobs by clicking the **`Job Manager`** toolbar in the Home menu.
 
@@ -206,7 +206,7 @@ Job scheduling allows you to automatically run jobs at specified intervals or ti
 
 💡 This feature is available exclusively with the [**PLUS license**](https://rcloneview.com/src/pricing.html).  
 
-For more details, refer to [Setting Up a Job Schedule](../rcloneview-advanced/job-scheduling-and-execution.md).   
+For more details, refer to [Setting Up a Job Schedule](/howto/rcloneview-advanced/job-scheduling-and-execution).   
 
 Finally, review the job you’ve created in the list to ensure everything is set correctly.
 

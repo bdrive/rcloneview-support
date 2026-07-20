@@ -94,13 +94,13 @@ RcloneView provides three intuitive ways to move or sync data.
 Browse your Google Drive on one side and Dropbox or OneDrive on the other.  
 Simply **drag and drop** files or folders to copy instantly.  
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ### B) **Compare & Copy (Selective Sync)**  
 Use **Compare** to preview what’s new, changed, or missing between drives.  
 Copy only what’s updated to save bandwidth and time.  
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare and sync cloud folders in RcloneView" class="img-medium img-center" />
 
@@ -110,9 +110,9 @@ Set it to run nightly or weekly for hands-off consistency.
 Always **dry-run** first to confirm expected actions.  
 
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a scheduled sync job between cloud drives" class="img-medium img-center" />
 

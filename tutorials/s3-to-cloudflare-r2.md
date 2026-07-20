@@ -72,8 +72,8 @@ Whether you’re moving terabytes of data or just a few folders, RcloneView lets
 4. Click **Save** to complete the setup.
 
 👉 Learn more:   
-- [How to Add S3 Remote](/support/howto/remote-storage-connection-settings/s3)
-- [How to get AWS S3 Access credential](/support/howto/cloud-storage-setting/aws-account-info)
+- [How to Add S3 Remote](/howto/remote-storage-connection-settings/s3)
+- [How to get AWS S3 Access credential](/howto/cloud-storage-setting/aws-account-info)
 ### Step 2: Add Cloudflare R2 Remote
 
 1. Again, click **`+ New Remote`** in the `Remote` tab.
@@ -85,8 +85,8 @@ Whether you’re moving terabytes of data or just a few folders, RcloneView lets
 1. Click **Save** to complete the R2 remote setup.
 
 👉 Learn more:   
-- [How to Add S3 Remote](/support/howto/remote-storage-connection-settings/s3)
-- [How to get cloudflare R2 Access credential](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
+- [How to Add S3 Remote](/howto/remote-storage-connection-settings/s3)
+- [How to get cloudflare R2 Access credential](/howto/cloud-storage-setting/cloudflare-r2-credential)
 
 ### Step 3: Open Remotes in Dual-Pane Explorer
 
@@ -106,7 +106,7 @@ Whether you’re moving terabytes of data or just a few folders, RcloneView lets
 - Drag and drop them into the Cloudflare R2 pane on the right.
 - The transfer begins automatically, with progress shown in the **`Transfer`** tab.
 
-👉 Learn more: [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+👉 Learn more: [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
 
 ---
 
@@ -121,7 +121,7 @@ Whether you’re moving terabytes of data or just a few folders, RcloneView lets
 4. Click **Copy →** to migrate selected files from S3 to R2.
 5. Use **Delete** for cleanup if needed.
 
-👉 Learn more: [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
+👉 Learn more: [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
 
 ---
 
@@ -138,9 +138,9 @@ Whether you’re moving terabytes of data or just a few folders, RcloneView lets
   3. Save and run manually or set a schedule.
 
 👉 Learn more:
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
 
 ---
 
@@ -154,7 +154,7 @@ Whether you’re moving terabytes of data or just a few folders, RcloneView lets
 
 RcloneView will run the sync at your specified times. Check execution details and logs in **`Job History`** and receive notifications upon completion.
 
-👉 Learn more: [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+👉 Learn more: [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 
 ---
@@ -169,14 +169,14 @@ Try it today and future-proof your cloud storage setup with Cloudflare R2.
 
 ## 🔗 Related Guides
 
-- [How to Add S3 Remote](/support/howto/remote-storage-connection-settings/s3)
-- [How to get AWS S3 Access credential](/support/howto/cloud-storage-setting/aws-account-info)
-- [How to get cloudflare R2 Access credential](/support/howto/cloud-storage-setting/cloudflare-r2-credential)
-- [Browse & Manage Remote Storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
-- [Compare Folder Contents](/support/howto/rcloneview-basic/compare-folder-contents)
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)
-- [Execute & Manage Jobs](/support/howto/rcloneview-basic/execute-manage-job)
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [How to Add S3 Remote](/howto/remote-storage-connection-settings/s3)
+- [How to get AWS S3 Access credential](/howto/cloud-storage-setting/aws-account-info)
+- [How to get cloudflare R2 Access credential](/howto/cloud-storage-setting/cloudflare-r2-credential)
+- [Browse & Manage Remote Storage](/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [Compare Folder Contents](/howto/rcloneview-basic/compare-folder-contents)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)
+- [Execute & Manage Jobs](/howto/rcloneview-basic/execute-manage-job)
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <CloudSupportGrid />

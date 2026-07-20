@@ -1,0 +1,884 @@
+1fichier:
+  label: 1Fichier
+  permalink: /1fichier
+  description: Beiträge über 1Fichier.
+
+accounting:
+  label: Buchhaltung
+  permalink: /accounting
+  description: Beiträge über Buchhaltung.
+
+ai:
+  label: AI
+  permalink: /ai
+  description: Beiträge über AI.
+
+alibaba-cloud:
+  label: Alibaba Cloud
+  permalink: /alibaba-cloud
+  description: Beiträge über Alibaba Cloud.
+
+amazon-s3:
+  label: Amazon S3
+  permalink: /amazon-s3
+  description: Beiträge über Amazon S3.
+
+api:
+  label: API
+  permalink: /api
+  description: Beiträge über API.
+
+architecture:
+  label: Architektur
+  permalink: /architecture
+  description: Beiträge über Architektur.
+
+archive:
+  label: Archiv
+  permalink: /archive
+  description: Beiträge über Archiv.
+
+arm:
+  label: Arm
+  permalink: /arm
+  description: Beiträge über Arm.
+
+automation:
+  label: Automatisierung
+  permalink: /automation
+  description: Beiträge über Automatisierung.
+
+aws-s3:
+  label: AWS S3
+  permalink: /aws-s3
+  description: Beiträge über AWS S3.
+
+azure:
+  label: Azure
+  permalink: /azure
+  description: Beiträge über Azure.
+
+azure-files:
+  label: Azure Files
+  permalink: /azure-files
+  description: Beiträge über Azure Files.
+
+Backblaze:
+  label: Backblaze
+  permalink: /backblaze
+  description: Beiträge über Backblaze.
+
+backblaze-b2:
+  label: Backblaze B2
+  permalink: /backblaze-b2
+  description: Beiträge über Backblaze B2.
+
+backup:
+  label: Backup
+  permalink: /backup
+  description: Beiträge über Backup.
+
+best-practices:
+  label: Bewährte Praktiken
+  permalink: /best-practices
+  description: Beiträge über bewährte Praktiken.
+
+box:
+  label: Box
+  permalink: /box
+  description: Beiträge über Box.
+
+business:
+  label: Unternehmen
+  permalink: /business
+  description: Beiträge über Unternehmen.
+
+cad:
+  label: CAD
+  permalink: /cad
+  description: Beiträge über CAD.
+
+cctv:
+  label: CCTV
+  permalink: /cctv
+  description: Beiträge über CCTV.
+
+cleanup:
+  label: Bereinigung
+  permalink: /cleanup
+  description: Beiträge über Bereinigung.
+
+cli:
+  label: CLI
+  permalink: /cli
+  description: Beiträge über CLI.
+
+cloud:
+  label: Cloud
+  permalink: /cloud
+  description: Beiträge über Cloud.
+
+cloud-backup:
+  label: Cloud-Backup
+  permalink: /cloud-backup
+  description: Beiträge über Cloud-Backup.
+
+cloud-file-transfer:
+  label: Cloud-Dateiübertragung
+  permalink: /cloud-file-transfer
+  description: Beiträge über Cloud-Dateiübertragung.
+
+cloud-migration:
+  label: Cloud-Migration
+  permalink: /cloud-migration
+  description: Beiträge über Cloud-Migration.
+
+cloud-security:
+  label: Cloud-Sicherheit
+  permalink: /cloud-security
+  description: Beiträge über Cloud-Sicherheit.
+
+cloud-storage:
+  label: Cloud-Speicher
+  permalink: /cloud-storage
+  description: Beiträge über Cloud-Speicher.
+
+cloud-storage-synchronization:
+  label: Cloud-Speicher-Synchronisation
+  permalink: /cloud-storage-synchronization
+  description: Beiträge über Cloud-Speicher-Synchronisation.
+
+cloud-sync:
+  label: Cloud-Synchronisation
+  permalink: /cloud-sync
+  description: Beiträge über Cloud-Synchronisation.
+
+cloud-to-cloud:
+  label: Cloud-zu-Cloud
+  permalink: /cloud-to-cloud
+  description: Beiträge über Cloud-zu-Cloud.
+
+cloudflare:
+  label: Cloudflare
+  permalink: /cloudflare
+  description: Beiträge über Cloudflare.
+
+cloudflare-r2:
+  label: Cloudflare R2
+  permalink: /cloudflare-r2
+  description: Beiträge über Cloudflare R2.
+
+collaboration:
+  label: Zusammenarbeit
+  permalink: /collaboration
+  description: Beiträge über Zusammenarbeit.
+
+compare:
+  label: Vergleichen
+  permalink: /compare
+  description: Beiträge über Vergleichen.
+
+comparison:
+  label: Vergleich
+  permalink: /comparison
+  description: Beiträge über Vergleich.
+
+compliance:
+  label: Compliance
+  permalink: /compliance
+  description: Beiträge über Compliance.
+
+copy:
+  label: Kopieren
+  permalink: /copy
+  description: Beiträge über Kopieren.
+
+cost-optimization:
+  label: Kostenoptimierung
+  permalink: /cost-optimization
+  description: Beiträge über Kostenoptimierung.
+
+crypt:
+  label: Crypt
+  permalink: /crypt
+  description: Beiträge über Crypt.
+
+dam:
+  label: Digitales Asset-Management
+  permalink: /dam
+  description: Beiträge über digitales Asset-Management.
+
+dashboard:
+  label: Dashboard
+  permalink: /dashboard
+  description: Beiträge über Dashboard.
+
+data-loss:
+  label: Datenverlust
+  permalink: /data-loss
+  description: Beiträge über Datenverlust.
+
+data-pipeline:
+  label: Datenpipeline
+  permalink: /data-pipeline
+  description: Beiträge über Datenpipeline.
+
+data-recovery:
+  label: Datenwiederherstellung
+  permalink: /data-recovery
+  description: Beiträge über Datenwiederherstellung.
+
+debian:
+  label: Debian
+  permalink: /debian
+  description: Beiträge über Debian.
+
+decentralized-storage:
+  label: Dezentraler Speicher
+  permalink: /decentralized-storage
+  description: Beiträge über dezentralen Speicher.
+
+digital-preservation:
+  label: Digitale Bewahrung
+  permalink: /digital-preservation
+  description: Beiträge über digitale Bewahrung.
+
+digitalocean-spaces:
+  label: DigitalOcean Spaces
+  permalink: /digitalocean-spaces
+  description: Beiträge über DigitalOcean Spaces.
+
+disaster-recovery:
+  label: Notfallwiederherstellung
+  permalink: /disaster-recovery
+  description: Beiträge über Notfallwiederherstellung.
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Beiträge über Docker.
+
+drag-and-drop:
+  label: Drag & Drop
+  permalink: /drag-and-drop
+  description: Beiträge über Drag & Drop.
+
+dropbox:
+  label: Dropbox
+  permalink: /dropbox
+  description: Beiträge über Dropbox.
+
+duplicates:
+  label: Duplikate
+  permalink: /duplicates
+  description: Beiträge über Duplikate.
+
+education:
+  label: Bildung
+  permalink: /education
+  description: Beiträge über Bildung.
+
+encryption:
+  label: Verschlüsselung
+  permalink: /encryption
+  description: Beiträge über Verschlüsselung.
+
+engineering:
+  label: Technik
+  permalink: /engineering
+  description: Beiträge über Technik.
+
+enterprise:
+  label: Unternehmen
+  permalink: /enterprise
+  description: Beiträge über Unternehmen.
+
+european-cloud:
+  label: Europäische Cloud
+  permalink: /european-cloud
+  description: Beiträge über europäische Cloud.
+
+external-drive:
+  label: Externe Festplatte
+  permalink: /external-drive
+  description: Beiträge über externe Festplatten.
+
+feature:
+  label: Funktion
+  permalink: /feature
+  description: Beiträge über Funktion.
+
+file-management:
+  label: Dateiverwaltung
+  permalink: /file-management
+  description: Beiträge über Dateiverwaltung.
+
+filezilla:
+  label: FileZilla
+  permalink: /filezilla
+  description: Beiträge über FileZilla.
+
+filters:
+  label: Filter
+  permalink: /filters
+  description: Beiträge über Filter.
+
+finance:
+  label: Finanzen
+  permalink: /finance
+  description: Beiträge über Finanzen.
+
+folder-comparison:
+  label: Ordnervergleich
+  permalink: /folder-comparison
+  description: Beiträge über Ordnervergleich.
+
+freefilesync:
+  label: FreeFileSync
+  permalink: /freefilesync
+  description: Beiträge über FreeFileSync.
+
+ftp:
+  label: FTP
+  permalink: /ftp
+  description: Beiträge über FTP.
+
+glacier:
+  label: Glacier
+  permalink: /glacier
+  description: Beiträge über Glacier.
+
+gofile:
+  label: Gofile
+  permalink: /gofile
+  description: Beiträge über Gofile.
+
+goodsync:
+  label: GoodSync
+  permalink: /goodsync
+  description: Beiträge über GoodSync.
+
+google-cloud-storage:
+  label: Google Cloud Storage
+  permalink: /google-cloud-storage
+  description: Beiträge über Google Cloud Storage.
+
+google-drive:
+  label: Google Drive
+  permalink: /google-drive
+  description: Beiträge über Google Drive.
+
+google-drive-sync:
+  label: Google Drive Sync
+  permalink: /google-drive-sync
+  description: Beiträge über Google Drive Sync.
+
+google-photos:
+  label: Google Photos
+  permalink: /google-photos
+  description: Beiträge über Google Photos.
+
+guide:
+  label: Anleitung
+  permalink: /guide
+  description: Beiträge über Anleitung.
+
+hard-drive:
+  label: Festplatte
+  permalink: /hard-drive
+  description: Beiträge über Festplatte.
+
+hard-drive-backup:
+  label: Festplatten-Backup
+  permalink: /hard-drive-backup
+  description: Beiträge über Festplatten-Backup.
+
+healthcare:
+  label: Gesundheitswesen
+  permalink: /healthcare
+  description: Beiträge über Gesundheitswesen.
+
+hetzner:
+  label: Hetzner
+  permalink: /hetzner
+  description: Beiträge über Hetzner.
+
+hidrive:
+  label: HiDrive
+  permalink: /hidrive
+  description: Beiträge über HiDrive.
+
+hipaa:
+  label: HIPAA
+  permalink: /hipaa
+  description: Beiträge über HIPAA.
+
+history:
+  label: Verlauf
+  permalink: /history
+  description: Beiträge über Verlauf.
+
+hubic:
+  label: Hubic
+  permalink: /hubic
+  description: Beiträge über Hubic.
+
+huggingface:
+  label: HuggingFace
+  permalink: /huggingface
+  description: Beiträge über HuggingFace.
+
+hybrid-cloud:
+  label: Hybrid-Cloud
+  permalink: /hybrid-cloud
+  description: Beiträge über Hybrid-Cloud.
+
+idrive-e2:
+  label: IDrive E2
+  permalink: /idrive-e2
+  description: Beiträge über IDrive E2.
+
+industry:
+  label: Branche
+  permalink: /industry
+  description: Beiträge über Branche.
+
+innovation:
+  label: Innovation
+  permalink: /innovation
+  description: Beiträge über Innovation.
+
+installation:
+  label: Installation
+  permalink: /installation
+  description: Beiträge über Installation.
+
+internet-archive:
+  label: Internet Archive
+  permalink: /internet-archive
+  description: Beiträge über Internet Archive.
+
+job-history:
+  label: Auftragsverlauf
+  permalink: /job-history
+  description: Beiträge über Auftragsverlauf.
+
+job-management:
+  label: Auftragsverwaltung
+  permalink: /job-management
+  description: Beiträge über Auftragsverwaltung.
+
+jottacloud:
+  label: Jottacloud
+  permalink: /jottacloud
+  description: Beiträge über Jottacloud.
+
+koofr:
+  label: Koofr
+  permalink: /koofr
+  description: Beiträge über Koofr.
+
+linode:
+  label: Linode
+  permalink: /linode
+  description: Beiträge über Linode.
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Beiträge über Linux.
+
+macos:
+  label: macOS
+  permalink: /macos
+  description: Beiträge über macOS.
+
+mailru:
+  label: Mail.ru
+  permalink: /mailru
+  description: Beiträge über Mail.ru.
+
+media:
+  label: Medien
+  permalink: /media
+  description: Beiträge über Medien.
+
+mega:
+  label: MEGA
+  permalink: /mega
+  description: Beiträge über MEGA.
+
+microsoft-365:
+  label: Microsoft 365
+  permalink: /microsoft-365
+  description: Beiträge über Microsoft 365.
+
+migration:
+  label: Migration
+  permalink: /migration
+  description: Beiträge über Migration.
+
+minio:
+  label: MinIO
+  permalink: /minio
+  description: Beiträge über MinIO.
+
+monitoring:
+  label: Überwachung
+  permalink: /monitoring
+  description: Beiträge über Überwachung.
+
+mount:
+  label: Einbinden
+  permalink: /mount
+  description: Beiträge über Einbinden.
+
+move:
+  label: Verschieben
+  permalink: /move
+  description: Beiträge über Verschieben.
+
+multi-cloud:
+  label: Multi-Cloud
+  permalink: /multi-cloud
+  description: Beiträge über Multi-Cloud.
+
+nas:
+  label: NAS
+  permalink: /nas
+  description: Beiträge über NAS.
+
+nextcloud:
+  label: Nextcloud
+  permalink: /nextcloud
+  description: Beiträge über Nextcloud.
+
+nonprofit:
+  label: Gemeinnützige Organisationen
+  permalink: /nonprofit
+  description: Beiträge über gemeinnützige Organisationen.
+
+object-storage:
+  label: Objektspeicher
+  permalink: /object-storage
+  description: Beiträge über Objektspeicher.
+
+offline-sync:
+  label: Offline-Synchronisation
+  permalink: /offline-sync
+  description: Beiträge über Offline-Synchronisation.
+
+onedrive:
+  label: OneDrive
+  permalink: /onedrive
+  description: Beiträge über OneDrive.
+
+onedrive-sync:
+  label: OneDrive Sync
+  permalink: /onedrive-sync
+  description: Beiträge über OneDrive Sync.
+
+opendrive:
+  label: OpenDrive
+  permalink: /opendrive
+  description: Beiträge über OpenDrive.
+
+openstack:
+  label: OpenStack
+  permalink: /openstack
+  description: Beiträge über OpenStack.
+
+optimization:
+  label: Optimierung
+  permalink: /optimization
+  description: Beiträge über Optimierung.
+
+oracle-cloud:
+  label: Oracle Cloud
+  permalink: /oracle-cloud
+  description: Beiträge über Oracle Cloud.
+
+organization:
+  label: Organisation
+  permalink: /organization
+  description: Beiträge über Organisation.
+
+pcloud:
+  label: pCloud
+  permalink: /pcloud
+  description: Beiträge über pCloud.
+
+performance:
+  label: Leistung
+  permalink: /performance
+  description: Beiträge über Leistung.
+
+photography:
+  label: Fotografie
+  permalink: /photography
+  description: Beiträge über Fotografie.
+
+pikpak:
+  label: PikPak
+  permalink: /pikpak
+  description: Beiträge über PikPak.
+
+platform:
+  label: Plattform
+  permalink: /platform
+  description: Beiträge über Plattform.
+
+plex:
+  label: Plex
+  permalink: /plex
+  description: Beiträge über Plex.
+
+pricing:
+  label: Preise
+  permalink: /pricing
+  description: Beiträge über Preise.
+
+privacy:
+  label: Datenschutz
+  permalink: /privacy
+  description: Beiträge über Datenschutz.
+
+productivity:
+  label: Produktivität
+  permalink: /productivity
+  description: Beiträge über Produktivität.
+
+proton-drive:
+  label: Proton Drive
+  permalink: /proton-drive
+  description: Beiträge über Proton Drive.
+
+putio:
+  label: Put.io
+  permalink: /putio
+  description: Beiträge über Put.io.
+
+qnap:
+  label: QNAP
+  permalink: /qnap
+  description: Beiträge über QNAP.
+
+quatrix:
+  label: Quatrix
+  permalink: /quatrix
+  description: Beiträge über Quatrix.
+
+r2:
+  label: R2
+  permalink: /r2
+  description: Beiträge über R2.
+
+ransomware:
+  label: Ransomware
+  permalink: /ransomware
+  description: Beiträge über Ransomware.
+
+raspberry-pi:
+  label: Raspberry Pi
+  permalink: /raspberry-pi
+  description: Beiträge über Raspberry Pi.
+
+rclone:
+  label: Rclone
+  permalink: /rclone
+  description: Beiträge über Rclone.
+
+rclone-crypt:
+  label: Rclone Crypt
+  permalink: /rclone-crypt
+  description: Beiträge über Rclone Crypt.
+
+RcloneView:
+  label: RcloneView
+  permalink: /rcloneview
+  description: Beiträge über RcloneView.
+
+reference:
+  label: Referenz
+  permalink: /reference
+  description: Beiträge über Referenz.
+
+remote-work:
+  label: Remote-Arbeit
+  permalink: /remote-work
+  description: Beiträge über Remote-Arbeit.
+
+s3:
+  label: S3
+  permalink: /s3
+  description: Beiträge über S3.
+
+s3-compatible:
+  label: S3 Compatible
+  permalink: /s3-compatible
+  description: Beiträge über S3 Compatible.
+
+safety:
+  label: Schutz
+  permalink: /safety
+  description: Beiträge über Schutz.
+
+seafile:
+  label: Seafile
+  permalink: /seafile
+  description: Beiträge über Seafile.
+
+security:
+  label: Sicherheit
+  permalink: /security
+  description: Beiträge über Sicherheit.
+
+self-hosted:
+  label: Selbstgehostet
+  permalink: /self-hosted
+  description: Beiträge über Selbstgehostet.
+
+sftp:
+  label: SFTP
+  permalink: /sftp
+  description: Beiträge über SFTP.
+
+sharefile:
+  label: ShareFile
+  permalink: /sharefile
+  description: Beiträge über ShareFile.
+
+sharepoint:
+  label: SharePoint
+  permalink: /sharepoint
+  description: Beiträge über SharePoint.
+
+sia:
+  label: Sia
+  permalink: /sia
+  description: Beiträge über Sia.
+
+slack:
+  label: Slack
+  permalink: /slack
+  description: Beiträge über Slack.
+
+smb:
+  label: SMB
+  permalink: /smb
+  description: Beiträge über SMB.
+
+storage-comparison:
+  label: Speichervergleich
+  permalink: /storage-comparison
+  description: Beiträge über Speichervergleich.
+
+storj:
+  label: Storj
+  permalink: /storj
+  description: Beiträge über Storj.
+
+sugarsync:
+  label: SugarSync
+  permalink: /sugarsync
+  description: Beiträge über SugarSync.
+
+swift:
+  label: Swift
+  permalink: /swift
+  description: Beiträge über Swift.
+
+sync:
+  label: Synchronisation
+  permalink: /sync
+  description: Beiträge über Synchronisation.
+
+synology:
+  label: Synology
+  permalink: /synology
+  description: Beiträge über Synology.
+
+tencent-cos:
+  label: Tencent COS
+  permalink: /tencent-cos
+  description: Beiträge über Tencent COS.
+
+terabox:
+  label: Terabox
+  permalink: /terabox
+  description: Beiträge über Terabox.
+
+tips:
+  label: Tipps
+  permalink: /tips
+  description: Beiträge über Tipps.
+
+troubleshooting:
+  label: Fehlerbehebung
+  permalink: /troubleshooting
+  description: Beiträge über Fehlerbehebung.
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Beiträge über Tutorial.
+
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: Beiträge über Ubuntu.
+
+university:
+  label: Universität
+  permalink: /university
+  description: Beiträge über Universität.
+
+vfs:
+  label: VFS
+  permalink: /vfs
+  description: Beiträge über VFS.
+
+video-production:
+  label: Videoproduktion
+  permalink: /video-production
+  description: Beiträge über Videoproduktion.
+
+wasabi:
+  label: Wasabi
+  permalink: /wasabi
+  description: Beiträge über Wasabi.
+
+webdav:
+  label: WebDAV
+  permalink: /webdav
+  description: Beiträge über WebDAV.
+
+windows:
+  label: Windows
+  permalink: /windows
+  description: Beiträge über Windows.
+
+windows-server:
+  label: Windows Server
+  permalink: /windows-server
+  description: Beiträge über Windows Server.
+
+workspace:
+  label: Arbeitsbereich
+  permalink: /workspace
+  description: Beiträge über Arbeitsbereich.
+
+yandex:
+  label: Yandex
+  permalink: /yandex
+  description: Beiträge über Yandex.
+
+yandex-disk:
+  label: Yandex Disk
+  permalink: /yandex-disk
+  description: Beiträge über Yandex Disk.
+
+zoho:
+  label: Zoho
+  permalink: /zoho
+  description: Beiträge über Zoho.

@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.howtoSidebar.category.Remote Storage Connection Settings": {
+    "message": "远程存储连接设置",
+    "description": "The label for category Remote Storage Connection Settings in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Remote Storage Connection Settings.link.generated-index.description": {
+    "message": "了解如何设置远程存储连接。",
+    "description": "The generated-index page description for category Remote Storage Connection Settings in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Connect Remote Storages using CLI": {
+    "message": "使用 CLI 连接远程存储",
+    "description": "The label for category Connect Remote Storages using CLI in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Connect Remote Storages using CLI.link.generated-index.description": {
+    "message": "了解如何使用 CLI 设置远程存储连接。",
+    "description": "The generated-index page description for category Connect Remote Storages using CLI in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.RcloneView - Basics": {
+    "message": "RcloneView - 基础",
+    "description": "The label for category RcloneView - Basics in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.RcloneView - Basics.link.generated-index.description": {
+    "message": "从这里开始学习 RcloneView 的核心功能,如文件对比、同步和云端远程设置 — 适合新手。",
+    "description": "The generated-index page description for category RcloneView - Basics in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.RcloneView - Advanced": {
+    "message": "RcloneView - 高级",
+    "description": "The label for category RcloneView - Advanced in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.RcloneView - Advanced.link.generated-index.description": {
+    "message": "探索计划任务、多窗口支持、外部 Rclone 集成等高级功能。",
+    "description": "The generated-index page description for category RcloneView - Advanced in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Cloud Setup Prerequisites": {
+    "message": "云服务准备",
+    "description": "The label for category Cloud Setup Prerequisites in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.Cloud Setup Prerequisites.link.generated-index.description": {
+    "message": "了解如何准备外部云服务以配合 RcloneView 使用。",
+    "description": "The generated-index page description for category Cloud Setup Prerequisites in sidebar howtoSidebar"
+  },
+  "sidebar.howtoSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar howtoSidebar"
+  }
+}

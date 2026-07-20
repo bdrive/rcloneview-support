@@ -65,7 +65,7 @@ If you have ever stared at a wall of rclone output wondering why a job failed, R
 
 Re-run the failing command inside the built-in Terminal to remove variables like wrong working directories or configs.
 
-- Open the **Terminal** tab and type `rclone ` to see all commands (autocomplete). [Guide](/support/howto/rcloneview-basic/using-terminal-in-rcloneview)
+- Open the **Terminal** tab and type `rclone ` to see all commands (autocomplete). [Guide](/howto/rcloneview-basic/using-terminal-in-rcloneview)
 - Add `-vv` to capture verbose output you can copy or share.
 
 Examples:
@@ -82,8 +82,8 @@ rclone sync src: dst: -vv --transfers=8
 
 The Job Monitor and History views show which files failed and how often.
 
-- **Job Monitor**: live Transfer tab for active jobs, plus Completed/API logs for finished runs. [See steps](/support/howto/rcloneview-basic/real-time-transfer-monitoring)
-- **History**: open a specific job’s History from the Job Manager to review per-file outcomes. [See steps](/support/howto/rcloneview-basic/execute-manage-job)
+- **Job Monitor**: live Transfer tab for active jobs, plus Completed/API logs for finished runs. [See steps](/howto/rcloneview-basic/real-time-transfer-monitoring)
+- **History**: open a specific job’s History from the Job Manager to review per-file outcomes. [See steps](/howto/rcloneview-basic/execute-manage-job)
 
 <img src="/support/images/en/howto/rcloneview-basic/transfer-log.png" alt="Job Monitor transfer log" class="img-medium img-center" />
 

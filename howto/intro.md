@@ -66,7 +66,7 @@ However, **some providers require additional configuration** in the `Options` ta
 - **Google Drive Shared with Me** – Enable `shared_with_me`
 - **Box for Business** – Select `enterprise` for box_sub_type
 
-👉 See guide: [Connect via Web Browser Login](./remote-storage-connection-settings/add-oath-online-login.md#supported-cloud-providers--setup-requirements)
+👉 See guide: [Connect via Web Browser Login](/howto/remote-storage-connection-settings/add-oath-online-login#supported-cloud-providers--setup-requirements)
 :::
 
 ## **Step 3: Connecting Your Remote Storage (GoogleDrive Single Sign-On)**

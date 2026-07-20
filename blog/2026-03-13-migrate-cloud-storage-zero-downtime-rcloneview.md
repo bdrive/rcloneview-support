@@ -20,7 +20,6 @@ tags:
   - migration
   - cloud-storage
   - best-practices
-  - strategy
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

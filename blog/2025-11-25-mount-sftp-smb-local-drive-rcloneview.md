@@ -20,7 +20,7 @@ tags:
   - mount
   - sftp
   - smb
-  - NAS
+  - nas
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -58,11 +58,11 @@ RcloneView supports both, alongside Google Drive, S3, Dropbox, OneDrive, and mor
 
 ## Why Use RcloneView for SFTP/SMB Mounting
 
-- **No CLI required**: All `rclone mount` flags are generated in the GUI; see [Remote Manager](/support/howto/rcloneview-basic/remote-manager) for remotes and [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) for guided mounts.
+- **No CLI required**: All `rclone mount` flags are generated in the GUI; see [Remote Manager](/howto/rcloneview-basic/remote-manager) for remotes and [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) for guided mounts.
 - **Cross-platform**: Windows (WinFsp), macOS (macFUSE), Linux (FUSE) with consistent UI.
 - **True local mounts**: Drive letters on Windows or `/Volumes/Server` on macOS; standard mount points on Linux.
 - **Performance ready**: VFS cache, thumbnail streaming, buffering controls, and read-ahead tuning surfaced in the Mount dialog.
-- **Unified control**: Manage SFTP/SMB alongside cloud storage, schedule remounts, and monitor throughput in one place (see [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution) and [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring)).
+- **Unified control**: Manage SFTP/SMB alongside cloud storage, schedule remounts, and monitor throughput in one place (see [Job scheduling and execution](/howto/rcloneview-advanced/job-scheduling-and-execution) and [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring)).
 
 ## Step-by-Step — Mount SFTP or SMB with RcloneView
 
@@ -71,7 +71,7 @@ RcloneView supports both, alongside Google Drive, S3, Dropbox, OneDrive, and mor
 - Open **Remote Manager** → **Add Remote** → choose **SFTP** or **SMB**.
 - Enter **Host/IP** and **Port**.
 - Authenticate with **Username/Password** or **SSH Key** for SFTP. For SMB, set domain/user if required.
-- Save the remote; consider enabling a config password in [General Settings](/support/howto/rcloneview-basic/general-settings).
+- Save the remote; consider enabling a config password in [General Settings](/howto/rcloneview-basic/general-settings).
   <img src="/support/images/en/blog/add-sftp-remote.png" alt="Add SFTP Remote" class="img-large img-center" />
 
 ### 2) Create a Mount Job
@@ -111,7 +111,7 @@ RcloneView supports both, alongside Google Drive, S3, Dropbox, OneDrive, and mor
 - Use an **NVMe/SSD cache directory** to accelerate thumbnails and scrubbing.
 - Increase **Read-ahead** and **buffer-size** for large sequential reads/writes.
 - Prefer **LAN** for SMB when throughput matters; for SFTP over WAN, use SSH keys for stability.
-- Monitor transfers in [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring) and schedule remounts via [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution).
+- Monitor transfers in [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring) and schedule remounts via [Job scheduling and execution](/howto/rcloneview-advanced/job-scheduling-and-execution).
 
 ## Conclusion — Self-Hosted Meets Multi-Cloud
 

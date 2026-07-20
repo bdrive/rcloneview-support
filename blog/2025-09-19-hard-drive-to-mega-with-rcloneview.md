@@ -50,20 +50,20 @@ import RvCta from '../src/components/RvCta';
 3. Confirm both appear in Explorer  
 
 🔍 Helpful guides:  
-- [Add Mega](/support/howto/remote-storage-connection-settings/mega)
+- [Add Mega](/howto/remote-storage-connection-settings/mega)
 
 <img src="/support/images/en/blog/open-local-hard-drive-and-mega.png" alt="open local hard drive and mega" class="img-medium img-center" />
 
 ## Step 3 — Back Up Options
 
 - **Drag & Drop**: select and upload manually  
-👉 [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)  
+👉 [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)  
 
 - **Compare & Copy**: see changed/new files, sync selectively  
-👉 [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)  
+👉 [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)  
 
 - **Sync & Jobs**: set automated schedules for ongoing protection  
-👉 [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)  
+👉 [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)  
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Automated hard drive to Mega backup" class="img-medium img-center" />
 

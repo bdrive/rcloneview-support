@@ -20,7 +20,6 @@ tags:
   - google-drive
   - productivity
   - cleanup
-  - Workflow
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -49,7 +48,7 @@ Messy Google Drive trees start innocently: designers drop exports into random fo
 RcloneView taps proven rclone backends to surface Drive content like a local file manager:
 
 - **Dual-pane Explorer:** mount two Drive folders or compare Drive vs. archive space to see what changed before deleting anything.
-- **Compare view controls:** highlight left-only, right-only, and different files, then copy or delete in bulk using the same UI documented in [/support/howto/rcloneview-basic/compare-folder-contents](/support/howto/rcloneview-basic/compare-folder-contents).
+- **Compare view controls:** highlight left-only, right-only, and different files, then copy or delete in bulk using the same UI documented in [/support/howto/rcloneview-basic/compare-folder-contents](/howto/rcloneview-basic/compare-folder-contents).
 - **Filtering toolbox:** Plus license customers can exclude caches, renders, or `.git/` folders directly inside Compare filters, following the steps in the same guide's filtering section.
 - **Result toggles & jump tools:** switch views (Left-only, Right-only, Different) and use the Compare “Find” icons to jump to folders with the biggest size/count differences.
 - **Safe actions:** every delete or copy uses rclone's checks to ensure you only touch files highlighted by Compare, so you avoid accidental nuke-and-pray operations.
@@ -73,7 +72,7 @@ Open Remote Explorer and attach the Drive locations you care about (Shared Drive
 
 ### 2. Snapshot with Compare
 
-Open the two folders you want to analyze -- for example, `drive_creative:/2023/Projects` on the left and `drive_creative:/Archive/2023` on the right. Hit **Compare** (Home ribbon). When the summary window reports completion, switch to the Compare tab to see aggregate counts and file states ([full walkthrough](/support/howto/rcloneview-basic/compare-folder-contents#display-by-selected-result-type)).
+Open the two folders you want to analyze -- for example, `drive_creative:/2023/Projects` on the left and `drive_creative:/Archive/2023` on the right. Hit **Compare** (Home ribbon). When the summary window reports completion, switch to the Compare tab to see aggregate counts and file states ([full walkthrough](/howto/rcloneview-basic/compare-folder-contents#display-by-selected-result-type)).
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare shared folder and My Drive contents" class="img-large img-center" />
   
@@ -104,7 +103,7 @@ Need to move dozens of project folders into a new taxonomy? Use the Explorer pan
 
 ### 7. Log, repeat, and automate reports
 
-Save a Compare preset per department so you can re-run the same cleanup monthly. Pair it with a one-off Sync job (see [/support/howto/rcloneview-basic/create-sync-jobs](/support/howto/rcloneview-basic/create-sync-jobs)) configured as `Copy` plus `--dry-run` to email stakeholders a report of items that will be archived or deleted.
+Save a Compare preset per department so you can re-run the same cleanup monthly. Pair it with a one-off Sync job (see [/support/howto/rcloneview-basic/create-sync-jobs](/howto/rcloneview-basic/create-sync-jobs)) configured as `Copy` plus `--dry-run` to email stakeholders a report of items that will be archived or deleted.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running an encrypted sync job in RcloneView" class="img-large img-center" />
   

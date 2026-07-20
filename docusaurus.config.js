@@ -31,9 +31,22 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
+  // RcloneView Desktop 앱과 동일한 9개 언어. 데스크톱 ARB의 zh/zh_TW는
+  // Docusaurus/hreflang 관례에 따라 zh-Hans/zh-Hant로 매핑.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ko', 'ja', 'zh-Hans', 'zh-Hant', 'de', 'es', 'fr', 'id'],
+    localeConfigs: {
+      en: {label: 'English'},
+      ko: {label: '한국어'},
+      ja: {label: '日本語'},
+      'zh-Hans': {label: '简体中文'},
+      'zh-Hant': {label: '繁體中文'},
+      de: {label: 'Deutsch'},
+      es: {label: 'Español'},
+      fr: {label: 'Français'},
+      id: {label: 'Bahasa Indonesia'},
+    },
   },
 
   // tailwindcss 설정 - jay
@@ -80,6 +93,10 @@ const config = {
         sidebarPath: require.resolve('./sidebarsReleaseNotes.js'),
       },
     ],
+
+    // /blog/archive 라우트를 슬림한 props 로 다시 등록한다.
+    // 기본 라우트는 아래 blog.archiveBasePath: null 로 꺼져 있다.
+    './src/plugins/blog-archive-slim.js',
   ],
 
   presets: [
@@ -105,9 +122,15 @@ const config = {
             xslt: true,
           },
 
-          // ✅ 추가
-          blogSidebarTitle: 'Recent posts',
-          blogSidebarCount: 'ALL', // 또는 충분히 큰 숫자(예: 100)
+          // 사이드바 제거 — 'ALL' 은 모든 글 페이지 HTML 에 620개 링크(~120KB)를
+          // 인라인해 9로케일 빌드가 3.1GB 까지 커지는 주범이었음.
+          // 전체 목록은 /blog/archive (All Posts — 카테고리/연도 뷰 + 필터) 가 담당.
+          blogSidebarCount: 0,
+
+          // 기본 archive 라우트 비활성화 — 포스트 `content` 까지 통째로 넘겨
+          // 청크가 로케일당 8.9MB 였다. 같은 경로를 src/plugins/blog-archive-slim.js
+          // 가 슬림한 props 로 대신 등록한다.
+          archiveBasePath: null,
 
           /*
           // Please change this to your repo.

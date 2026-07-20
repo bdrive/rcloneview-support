@@ -1,0 +1,884 @@
+1fichier:
+  label: 1Fichier
+  permalink: /1fichier
+  description: 关于 1Fichier 的文章。
+
+accounting:
+  label: 会计
+  permalink: /accounting
+  description: 关于会计的文章。
+
+ai:
+  label: AI
+  permalink: /ai
+  description: 关于 AI 的文章。
+
+alibaba-cloud:
+  label: Alibaba Cloud
+  permalink: /alibaba-cloud
+  description: 关于 Alibaba Cloud 的文章。
+
+amazon-s3:
+  label: Amazon S3
+  permalink: /amazon-s3
+  description: 关于 Amazon S3 的文章。
+
+api:
+  label: API
+  permalink: /api
+  description: 关于 API 的文章。
+
+architecture:
+  label: 架构
+  permalink: /architecture
+  description: 关于架构的文章。
+
+archive:
+  label: 归档
+  permalink: /archive
+  description: 关于归档的文章。
+
+arm:
+  label: Arm
+  permalink: /arm
+  description: 关于 Arm 的文章。
+
+automation:
+  label: 自动化
+  permalink: /automation
+  description: 关于自动化的文章。
+
+aws-s3:
+  label: AWS S3
+  permalink: /aws-s3
+  description: 关于 AWS S3 的文章。
+
+azure:
+  label: Azure
+  permalink: /azure
+  description: 关于 Azure 的文章。
+
+azure-files:
+  label: Azure Files
+  permalink: /azure-files
+  description: 关于 Azure Files 的文章。
+
+Backblaze:
+  label: Backblaze
+  permalink: /backblaze
+  description: 关于 Backblaze 的文章。
+
+backblaze-b2:
+  label: Backblaze B2
+  permalink: /backblaze-b2
+  description: 关于 Backblaze B2 的文章。
+
+backup:
+  label: 备份
+  permalink: /backup
+  description: 关于备份的文章。
+
+best-practices:
+  label: 最佳实践
+  permalink: /best-practices
+  description: 关于最佳实践的文章。
+
+box:
+  label: Box
+  permalink: /box
+  description: 关于 Box 的文章。
+
+business:
+  label: 商业
+  permalink: /business
+  description: 关于商业的文章。
+
+cad:
+  label: CAD
+  permalink: /cad
+  description: 关于 CAD 的文章。
+
+cctv:
+  label: CCTV
+  permalink: /cctv
+  description: 关于 CCTV 的文章。
+
+cleanup:
+  label: 清理
+  permalink: /cleanup
+  description: 关于清理的文章。
+
+cli:
+  label: CLI
+  permalink: /cli
+  description: 关于 CLI 的文章。
+
+cloud:
+  label: 云
+  permalink: /cloud
+  description: 关于云的文章。
+
+cloud-backup:
+  label: 云备份
+  permalink: /cloud-backup
+  description: 关于云备份的文章。
+
+cloud-file-transfer:
+  label: 云文件传输
+  permalink: /cloud-file-transfer
+  description: 关于云文件传输的文章。
+
+cloud-migration:
+  label: 云迁移
+  permalink: /cloud-migration
+  description: 关于云迁移的文章。
+
+cloud-security:
+  label: 云安全
+  permalink: /cloud-security
+  description: 关于云安全的文章。
+
+cloud-storage:
+  label: 云存储
+  permalink: /cloud-storage
+  description: 关于云存储的文章。
+
+cloud-storage-synchronization:
+  label: 云存储同步
+  permalink: /cloud-storage-synchronization
+  description: 关于云存储同步的文章。
+
+cloud-sync:
+  label: 云同步
+  permalink: /cloud-sync
+  description: 关于云同步的文章。
+
+cloud-to-cloud:
+  label: 云到云
+  permalink: /cloud-to-cloud
+  description: 关于云到云的文章。
+
+cloudflare:
+  label: Cloudflare
+  permalink: /cloudflare
+  description: 关于 Cloudflare 的文章。
+
+cloudflare-r2:
+  label: Cloudflare R2
+  permalink: /cloudflare-r2
+  description: 关于 Cloudflare R2 的文章。
+
+collaboration:
+  label: 协作
+  permalink: /collaboration
+  description: 关于协作的文章。
+
+compare:
+  label: 比较
+  permalink: /compare
+  description: 关于比较的文章。
+
+comparison:
+  label: 对比
+  permalink: /comparison
+  description: 关于对比的文章。
+
+compliance:
+  label: 合规
+  permalink: /compliance
+  description: 关于合规的文章。
+
+copy:
+  label: 复制
+  permalink: /copy
+  description: 关于复制的文章。
+
+cost-optimization:
+  label: 成本优化
+  permalink: /cost-optimization
+  description: 关于成本优化的文章。
+
+crypt:
+  label: Crypt
+  permalink: /crypt
+  description: 关于 Crypt 的文章。
+
+dam:
+  label: 数字资产管理
+  permalink: /dam
+  description: 关于数字资产管理的文章。
+
+dashboard:
+  label: 仪表盘
+  permalink: /dashboard
+  description: 关于仪表盘的文章。
+
+data-loss:
+  label: 数据丢失
+  permalink: /data-loss
+  description: 关于数据丢失的文章。
+
+data-pipeline:
+  label: 数据管道
+  permalink: /data-pipeline
+  description: 关于数据管道的文章。
+
+data-recovery:
+  label: 数据恢复
+  permalink: /data-recovery
+  description: 关于数据恢复的文章。
+
+debian:
+  label: Debian
+  permalink: /debian
+  description: 关于 Debian 的文章。
+
+decentralized-storage:
+  label: 去中心化存储
+  permalink: /decentralized-storage
+  description: 关于去中心化存储的文章。
+
+digital-preservation:
+  label: 数字保存
+  permalink: /digital-preservation
+  description: 关于数字保存的文章。
+
+digitalocean-spaces:
+  label: DigitalOcean Spaces
+  permalink: /digitalocean-spaces
+  description: 关于 DigitalOcean Spaces 的文章。
+
+disaster-recovery:
+  label: 灾难恢复
+  permalink: /disaster-recovery
+  description: 关于灾难恢复的文章。
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: 关于 Docker 的文章。
+
+drag-and-drop:
+  label: 拖放
+  permalink: /drag-and-drop
+  description: 关于拖放的文章。
+
+dropbox:
+  label: Dropbox
+  permalink: /dropbox
+  description: 关于 Dropbox 的文章。
+
+duplicates:
+  label: 重复文件
+  permalink: /duplicates
+  description: 关于重复文件的文章。
+
+education:
+  label: 教育
+  permalink: /education
+  description: 关于教育的文章。
+
+encryption:
+  label: 加密
+  permalink: /encryption
+  description: 关于加密的文章。
+
+engineering:
+  label: 工程
+  permalink: /engineering
+  description: 关于工程的文章。
+
+enterprise:
+  label: 企业
+  permalink: /enterprise
+  description: 关于企业的文章。
+
+european-cloud:
+  label: 欧洲云
+  permalink: /european-cloud
+  description: 关于欧洲云的文章。
+
+external-drive:
+  label: 外部硬盘
+  permalink: /external-drive
+  description: 关于外部硬盘的文章。
+
+feature:
+  label: 功能
+  permalink: /feature
+  description: 关于功能的文章。
+
+file-management:
+  label: 文件管理
+  permalink: /file-management
+  description: 关于文件管理的文章。
+
+filezilla:
+  label: FileZilla
+  permalink: /filezilla
+  description: 关于 FileZilla 的文章。
+
+filters:
+  label: 过滤器
+  permalink: /filters
+  description: 关于过滤器的文章。
+
+finance:
+  label: 金融
+  permalink: /finance
+  description: 关于金融的文章。
+
+folder-comparison:
+  label: 文件夹比较
+  permalink: /folder-comparison
+  description: 关于文件夹比较的文章。
+
+freefilesync:
+  label: FreeFileSync
+  permalink: /freefilesync
+  description: 关于 FreeFileSync 的文章。
+
+ftp:
+  label: FTP
+  permalink: /ftp
+  description: 关于 FTP 的文章。
+
+glacier:
+  label: Glacier
+  permalink: /glacier
+  description: 关于 Glacier 的文章。
+
+gofile:
+  label: Gofile
+  permalink: /gofile
+  description: 关于 Gofile 的文章。
+
+goodsync:
+  label: GoodSync
+  permalink: /goodsync
+  description: 关于 GoodSync 的文章。
+
+google-cloud-storage:
+  label: Google Cloud Storage
+  permalink: /google-cloud-storage
+  description: 关于 Google Cloud Storage 的文章。
+
+google-drive:
+  label: Google Drive
+  permalink: /google-drive
+  description: 关于 Google Drive 的文章。
+
+google-drive-sync:
+  label: Google Drive Sync
+  permalink: /google-drive-sync
+  description: 关于 Google Drive Sync 的文章。
+
+google-photos:
+  label: Google Photos
+  permalink: /google-photos
+  description: 关于 Google Photos 的文章。
+
+guide:
+  label: 指南
+  permalink: /guide
+  description: 关于指南的文章。
+
+hard-drive:
+  label: 硬盘
+  permalink: /hard-drive
+  description: 关于硬盘的文章。
+
+hard-drive-backup:
+  label: 硬盘备份
+  permalink: /hard-drive-backup
+  description: 关于硬盘备份的文章。
+
+healthcare:
+  label: 医疗保健
+  permalink: /healthcare
+  description: 关于医疗保健的文章。
+
+hetzner:
+  label: Hetzner
+  permalink: /hetzner
+  description: 关于 Hetzner 的文章。
+
+hidrive:
+  label: HiDrive
+  permalink: /hidrive
+  description: 关于 HiDrive 的文章。
+
+hipaa:
+  label: HIPAA
+  permalink: /hipaa
+  description: 关于 HIPAA 的文章。
+
+history:
+  label: 历史
+  permalink: /history
+  description: 关于历史的文章。
+
+hubic:
+  label: Hubic
+  permalink: /hubic
+  description: 关于 Hubic 的文章。
+
+huggingface:
+  label: HuggingFace
+  permalink: /huggingface
+  description: 关于 HuggingFace 的文章。
+
+hybrid-cloud:
+  label: 混合云
+  permalink: /hybrid-cloud
+  description: 关于混合云的文章。
+
+idrive-e2:
+  label: IDrive E2
+  permalink: /idrive-e2
+  description: 关于 IDrive E2 的文章。
+
+industry:
+  label: 行业
+  permalink: /industry
+  description: 关于行业的文章。
+
+innovation:
+  label: 创新
+  permalink: /innovation
+  description: 关于创新的文章。
+
+installation:
+  label: 安装
+  permalink: /installation
+  description: 关于安装的文章。
+
+internet-archive:
+  label: Internet Archive
+  permalink: /internet-archive
+  description: 关于 Internet Archive 的文章。
+
+job-history:
+  label: 任务历史
+  permalink: /job-history
+  description: 关于任务历史的文章。
+
+job-management:
+  label: 任务管理
+  permalink: /job-management
+  description: 关于任务管理的文章。
+
+jottacloud:
+  label: Jottacloud
+  permalink: /jottacloud
+  description: 关于 Jottacloud 的文章。
+
+koofr:
+  label: Koofr
+  permalink: /koofr
+  description: 关于 Koofr 的文章。
+
+linode:
+  label: Linode
+  permalink: /linode
+  description: 关于 Linode 的文章。
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: 关于 Linux 的文章。
+
+macos:
+  label: macOS
+  permalink: /macos
+  description: 关于 macOS 的文章。
+
+mailru:
+  label: Mail.ru
+  permalink: /mailru
+  description: 关于 Mail.ru 的文章。
+
+media:
+  label: 媒体
+  permalink: /media
+  description: 关于媒体的文章。
+
+mega:
+  label: MEGA
+  permalink: /mega
+  description: 关于 MEGA 的文章。
+
+microsoft-365:
+  label: Microsoft 365
+  permalink: /microsoft-365
+  description: 关于 Microsoft 365 的文章。
+
+migration:
+  label: 迁移
+  permalink: /migration
+  description: 关于迁移的文章。
+
+minio:
+  label: MinIO
+  permalink: /minio
+  description: 关于 MinIO 的文章。
+
+monitoring:
+  label: 监控
+  permalink: /monitoring
+  description: 关于监控的文章。
+
+mount:
+  label: 挂载
+  permalink: /mount
+  description: 关于挂载的文章。
+
+move:
+  label: 移动
+  permalink: /move
+  description: 关于移动的文章。
+
+multi-cloud:
+  label: 多云
+  permalink: /multi-cloud
+  description: 关于多云的文章。
+
+nas:
+  label: NAS
+  permalink: /nas
+  description: 关于 NAS 的文章。
+
+nextcloud:
+  label: Nextcloud
+  permalink: /nextcloud
+  description: 关于 Nextcloud 的文章。
+
+nonprofit:
+  label: 非营利组织
+  permalink: /nonprofit
+  description: 关于非营利组织的文章。
+
+object-storage:
+  label: 对象存储
+  permalink: /object-storage
+  description: 关于对象存储的文章。
+
+offline-sync:
+  label: 离线同步
+  permalink: /offline-sync
+  description: 关于离线同步的文章。
+
+onedrive:
+  label: OneDrive
+  permalink: /onedrive
+  description: 关于 OneDrive 的文章。
+
+onedrive-sync:
+  label: OneDrive Sync
+  permalink: /onedrive-sync
+  description: 关于 OneDrive Sync 的文章。
+
+opendrive:
+  label: OpenDrive
+  permalink: /opendrive
+  description: 关于 OpenDrive 的文章。
+
+openstack:
+  label: OpenStack
+  permalink: /openstack
+  description: 关于 OpenStack 的文章。
+
+optimization:
+  label: 优化
+  permalink: /optimization
+  description: 关于优化的文章。
+
+oracle-cloud:
+  label: Oracle Cloud
+  permalink: /oracle-cloud
+  description: 关于 Oracle Cloud 的文章。
+
+organization:
+  label: 组织管理
+  permalink: /organization
+  description: 关于组织管理的文章。
+
+pcloud:
+  label: pCloud
+  permalink: /pcloud
+  description: 关于 pCloud 的文章。
+
+performance:
+  label: 性能
+  permalink: /performance
+  description: 关于性能的文章。
+
+photography:
+  label: 摄影
+  permalink: /photography
+  description: 关于摄影的文章。
+
+pikpak:
+  label: PikPak
+  permalink: /pikpak
+  description: 关于 PikPak 的文章。
+
+platform:
+  label: 平台
+  permalink: /platform
+  description: 关于平台的文章。
+
+plex:
+  label: Plex
+  permalink: /plex
+  description: 关于 Plex 的文章。
+
+pricing:
+  label: 定价
+  permalink: /pricing
+  description: 关于定价的文章。
+
+privacy:
+  label: 隐私
+  permalink: /privacy
+  description: 关于隐私的文章。
+
+productivity:
+  label: 生产力
+  permalink: /productivity
+  description: 关于生产力的文章。
+
+proton-drive:
+  label: Proton Drive
+  permalink: /proton-drive
+  description: 关于 Proton Drive 的文章。
+
+putio:
+  label: Put.io
+  permalink: /putio
+  description: 关于 Put.io 的文章。
+
+qnap:
+  label: QNAP
+  permalink: /qnap
+  description: 关于 QNAP 的文章。
+
+quatrix:
+  label: Quatrix
+  permalink: /quatrix
+  description: 关于 Quatrix 的文章。
+
+r2:
+  label: R2
+  permalink: /r2
+  description: 关于 R2 的文章。
+
+ransomware:
+  label: 勒索软件
+  permalink: /ransomware
+  description: 关于勒索软件的文章。
+
+raspberry-pi:
+  label: Raspberry Pi
+  permalink: /raspberry-pi
+  description: 关于 Raspberry Pi 的文章。
+
+rclone:
+  label: Rclone
+  permalink: /rclone
+  description: 关于 Rclone 的文章。
+
+rclone-crypt:
+  label: Rclone Crypt
+  permalink: /rclone-crypt
+  description: 关于 Rclone Crypt 的文章。
+
+RcloneView:
+  label: RcloneView
+  permalink: /rcloneview
+  description: 关于 RcloneView 的文章。
+
+reference:
+  label: 参考资料
+  permalink: /reference
+  description: 关于参考资料的文章。
+
+remote-work:
+  label: 远程办公
+  permalink: /remote-work
+  description: 关于远程办公的文章。
+
+s3:
+  label: S3
+  permalink: /s3
+  description: 关于 S3 的文章。
+
+s3-compatible:
+  label: S3 Compatible
+  permalink: /s3-compatible
+  description: 关于 S3 Compatible 的文章。
+
+safety:
+  label: 安全性
+  permalink: /safety
+  description: 关于安全性的文章。
+
+seafile:
+  label: Seafile
+  permalink: /seafile
+  description: 关于 Seafile 的文章。
+
+security:
+  label: 安全
+  permalink: /security
+  description: 关于安全的文章。
+
+self-hosted:
+  label: 自托管
+  permalink: /self-hosted
+  description: 关于自托管的文章。
+
+sftp:
+  label: SFTP
+  permalink: /sftp
+  description: 关于 SFTP 的文章。
+
+sharefile:
+  label: ShareFile
+  permalink: /sharefile
+  description: 关于 ShareFile 的文章。
+
+sharepoint:
+  label: SharePoint
+  permalink: /sharepoint
+  description: 关于 SharePoint 的文章。
+
+sia:
+  label: Sia
+  permalink: /sia
+  description: 关于 Sia 的文章。
+
+slack:
+  label: Slack
+  permalink: /slack
+  description: 关于 Slack 的文章。
+
+smb:
+  label: SMB
+  permalink: /smb
+  description: 关于 SMB 的文章。
+
+storage-comparison:
+  label: 存储对比
+  permalink: /storage-comparison
+  description: 关于存储对比的文章。
+
+storj:
+  label: Storj
+  permalink: /storj
+  description: 关于 Storj 的文章。
+
+sugarsync:
+  label: SugarSync
+  permalink: /sugarsync
+  description: 关于 SugarSync 的文章。
+
+swift:
+  label: Swift
+  permalink: /swift
+  description: 关于 Swift 的文章。
+
+sync:
+  label: 同步
+  permalink: /sync
+  description: 关于同步的文章。
+
+synology:
+  label: Synology
+  permalink: /synology
+  description: 关于 Synology 的文章。
+
+tencent-cos:
+  label: Tencent COS
+  permalink: /tencent-cos
+  description: 关于 Tencent COS 的文章。
+
+terabox:
+  label: Terabox
+  permalink: /terabox
+  description: 关于 Terabox 的文章。
+
+tips:
+  label: 技巧
+  permalink: /tips
+  description: 关于技巧的文章。
+
+troubleshooting:
+  label: 故障排查
+  permalink: /troubleshooting
+  description: 关于故障排查的文章。
+
+tutorial:
+  label: 教程
+  permalink: /tutorial
+  description: 关于教程的文章。
+
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: 关于 Ubuntu 的文章。
+
+university:
+  label: 大学
+  permalink: /university
+  description: 关于大学的文章。
+
+vfs:
+  label: VFS
+  permalink: /vfs
+  description: 关于 VFS 的文章。
+
+video-production:
+  label: 视频制作
+  permalink: /video-production
+  description: 关于视频制作的文章。
+
+wasabi:
+  label: Wasabi
+  permalink: /wasabi
+  description: 关于 Wasabi 的文章。
+
+webdav:
+  label: WebDAV
+  permalink: /webdav
+  description: 关于 WebDAV 的文章。
+
+windows:
+  label: Windows
+  permalink: /windows
+  description: 关于 Windows 的文章。
+
+windows-server:
+  label: Windows Server
+  permalink: /windows-server
+  description: 关于 Windows Server 的文章。
+
+workspace:
+  label: 工作区
+  permalink: /workspace
+  description: 关于工作区的文章。
+
+yandex:
+  label: Yandex
+  permalink: /yandex
+  description: 关于 Yandex 的文章。
+
+yandex-disk:
+  label: Yandex Disk
+  permalink: /yandex-disk
+  description: 关于 Yandex Disk 的文章。
+
+zoho:
+  label: Zoho
+  permalink: /zoho
+  description: 关于 Zoho 的文章。

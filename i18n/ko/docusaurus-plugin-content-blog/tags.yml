@@ -1,0 +1,884 @@
+1fichier:
+  label: 1Fichier
+  permalink: /1fichier
+  description: 1Fichier 관련 게시물입니다.
+
+accounting:
+  label: 회계
+  permalink: /accounting
+  description: 회계 관련 게시물입니다.
+
+ai:
+  label: AI
+  permalink: /ai
+  description: AI 관련 게시물입니다.
+
+alibaba-cloud:
+  label: Alibaba Cloud
+  permalink: /alibaba-cloud
+  description: Alibaba Cloud 관련 게시물입니다.
+
+amazon-s3:
+  label: Amazon S3
+  permalink: /amazon-s3
+  description: Amazon S3 관련 게시물입니다.
+
+api:
+  label: API
+  permalink: /api
+  description: API 관련 게시물입니다.
+
+architecture:
+  label: 아키텍처
+  permalink: /architecture
+  description: 아키텍처 관련 게시물입니다.
+
+archive:
+  label: 아카이브
+  permalink: /archive
+  description: 아카이브 관련 게시물입니다.
+
+arm:
+  label: Arm
+  permalink: /arm
+  description: Arm 관련 게시물입니다.
+
+automation:
+  label: 자동화
+  permalink: /automation
+  description: 자동화 관련 게시물입니다.
+
+aws-s3:
+  label: AWS S3
+  permalink: /aws-s3
+  description: AWS S3 관련 게시물입니다.
+
+azure:
+  label: Azure
+  permalink: /azure
+  description: Azure 관련 게시물입니다.
+
+azure-files:
+  label: Azure Files
+  permalink: /azure-files
+  description: Azure Files 관련 게시물입니다.
+
+Backblaze:
+  label: Backblaze
+  permalink: /backblaze
+  description: Backblaze 관련 게시물입니다.
+
+backblaze-b2:
+  label: Backblaze B2
+  permalink: /backblaze-b2
+  description: Backblaze B2 관련 게시물입니다.
+
+backup:
+  label: 백업
+  permalink: /backup
+  description: 백업 관련 게시물입니다.
+
+best-practices:
+  label: 모범 사례
+  permalink: /best-practices
+  description: 모범 사례 관련 게시물입니다.
+
+box:
+  label: Box
+  permalink: /box
+  description: Box 관련 게시물입니다.
+
+business:
+  label: 비즈니스
+  permalink: /business
+  description: 비즈니스 관련 게시물입니다.
+
+cad:
+  label: CAD
+  permalink: /cad
+  description: CAD 관련 게시물입니다.
+
+cctv:
+  label: CCTV
+  permalink: /cctv
+  description: CCTV 관련 게시물입니다.
+
+cleanup:
+  label: 정리
+  permalink: /cleanup
+  description: 정리 관련 게시물입니다.
+
+cli:
+  label: CLI
+  permalink: /cli
+  description: CLI 관련 게시물입니다.
+
+cloud:
+  label: 클라우드
+  permalink: /cloud
+  description: 클라우드 관련 게시물입니다.
+
+cloud-backup:
+  label: 클라우드 백업
+  permalink: /cloud-backup
+  description: 클라우드 백업 관련 게시물입니다.
+
+cloud-file-transfer:
+  label: 클라우드 파일 전송
+  permalink: /cloud-file-transfer
+  description: 클라우드 파일 전송 관련 게시물입니다.
+
+cloud-migration:
+  label: 클라우드 마이그레이션
+  permalink: /cloud-migration
+  description: 클라우드 마이그레이션 관련 게시물입니다.
+
+cloud-security:
+  label: 클라우드 보안
+  permalink: /cloud-security
+  description: 클라우드 보안 관련 게시물입니다.
+
+cloud-storage:
+  label: 클라우드 스토리지
+  permalink: /cloud-storage
+  description: 클라우드 스토리지 관련 게시물입니다.
+
+cloud-storage-synchronization:
+  label: 클라우드 스토리지 동기화
+  permalink: /cloud-storage-synchronization
+  description: 클라우드 스토리지 동기화 관련 게시물입니다.
+
+cloud-sync:
+  label: 클라우드 동기화
+  permalink: /cloud-sync
+  description: 클라우드 동기화 관련 게시물입니다.
+
+cloud-to-cloud:
+  label: 클라우드 간 전송
+  permalink: /cloud-to-cloud
+  description: 클라우드 간 전송 관련 게시물입니다.
+
+cloudflare:
+  label: Cloudflare
+  permalink: /cloudflare
+  description: Cloudflare 관련 게시물입니다.
+
+cloudflare-r2:
+  label: Cloudflare R2
+  permalink: /cloudflare-r2
+  description: Cloudflare R2 관련 게시물입니다.
+
+collaboration:
+  label: 협업
+  permalink: /collaboration
+  description: 협업 관련 게시물입니다.
+
+compare:
+  label: 비교
+  permalink: /compare
+  description: 비교 관련 게시물입니다.
+
+comparison:
+  label: 비교
+  permalink: /comparison
+  description: 비교 관련 게시물입니다.
+
+compliance:
+  label: 컴플라이언스
+  permalink: /compliance
+  description: 컴플라이언스 관련 게시물입니다.
+
+copy:
+  label: 복사
+  permalink: /copy
+  description: 복사 관련 게시물입니다.
+
+cost-optimization:
+  label: 비용 최적화
+  permalink: /cost-optimization
+  description: 비용 최적화 관련 게시물입니다.
+
+crypt:
+  label: Crypt
+  permalink: /crypt
+  description: Crypt 관련 게시물입니다.
+
+dam:
+  label: 디지털 자산 관리
+  permalink: /dam
+  description: 디지털 자산 관리 관련 게시물입니다.
+
+dashboard:
+  label: 대시보드
+  permalink: /dashboard
+  description: 대시보드 관련 게시물입니다.
+
+data-loss:
+  label: 데이터 손실
+  permalink: /data-loss
+  description: 데이터 손실 관련 게시물입니다.
+
+data-pipeline:
+  label: 데이터 파이프라인
+  permalink: /data-pipeline
+  description: 데이터 파이프라인 관련 게시물입니다.
+
+data-recovery:
+  label: 데이터 복구
+  permalink: /data-recovery
+  description: 데이터 복구 관련 게시물입니다.
+
+debian:
+  label: Debian
+  permalink: /debian
+  description: Debian 관련 게시물입니다.
+
+decentralized-storage:
+  label: 분산 스토리지
+  permalink: /decentralized-storage
+  description: 분산 스토리지 관련 게시물입니다.
+
+digital-preservation:
+  label: 디지털 보존
+  permalink: /digital-preservation
+  description: 디지털 보존 관련 게시물입니다.
+
+digitalocean-spaces:
+  label: DigitalOcean Spaces
+  permalink: /digitalocean-spaces
+  description: DigitalOcean Spaces 관련 게시물입니다.
+
+disaster-recovery:
+  label: 재해 복구
+  permalink: /disaster-recovery
+  description: 재해 복구 관련 게시물입니다.
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Docker 관련 게시물입니다.
+
+drag-and-drop:
+  label: 드래그 앤 드롭
+  permalink: /drag-and-drop
+  description: 드래그 앤 드롭 관련 게시물입니다.
+
+dropbox:
+  label: Dropbox
+  permalink: /dropbox
+  description: Dropbox 관련 게시물입니다.
+
+duplicates:
+  label: 중복 파일
+  permalink: /duplicates
+  description: 중복 파일 관련 게시물입니다.
+
+education:
+  label: 교육
+  permalink: /education
+  description: 교육 관련 게시물입니다.
+
+encryption:
+  label: 암호화
+  permalink: /encryption
+  description: 암호화 관련 게시물입니다.
+
+engineering:
+  label: 엔지니어링
+  permalink: /engineering
+  description: 엔지니어링 관련 게시물입니다.
+
+enterprise:
+  label: 엔터프라이즈
+  permalink: /enterprise
+  description: 엔터프라이즈 관련 게시물입니다.
+
+european-cloud:
+  label: 유럽 클라우드
+  permalink: /european-cloud
+  description: 유럽 클라우드 관련 게시물입니다.
+
+external-drive:
+  label: 외장 드라이브
+  permalink: /external-drive
+  description: 외장 드라이브 관련 게시물입니다.
+
+feature:
+  label: 기능
+  permalink: /feature
+  description: 기능 관련 게시물입니다.
+
+file-management:
+  label: 파일 관리
+  permalink: /file-management
+  description: 파일 관리 관련 게시물입니다.
+
+filezilla:
+  label: FileZilla
+  permalink: /filezilla
+  description: FileZilla 관련 게시물입니다.
+
+filters:
+  label: 필터
+  permalink: /filters
+  description: 필터 관련 게시물입니다.
+
+finance:
+  label: 금융
+  permalink: /finance
+  description: 금융 관련 게시물입니다.
+
+folder-comparison:
+  label: 폴더 비교
+  permalink: /folder-comparison
+  description: 폴더 비교 관련 게시물입니다.
+
+freefilesync:
+  label: FreeFileSync
+  permalink: /freefilesync
+  description: FreeFileSync 관련 게시물입니다.
+
+ftp:
+  label: FTP
+  permalink: /ftp
+  description: FTP 관련 게시물입니다.
+
+glacier:
+  label: Glacier
+  permalink: /glacier
+  description: Glacier 관련 게시물입니다.
+
+gofile:
+  label: Gofile
+  permalink: /gofile
+  description: Gofile 관련 게시물입니다.
+
+goodsync:
+  label: GoodSync
+  permalink: /goodsync
+  description: GoodSync 관련 게시물입니다.
+
+google-cloud-storage:
+  label: Google Cloud Storage
+  permalink: /google-cloud-storage
+  description: Google Cloud Storage 관련 게시물입니다.
+
+google-drive:
+  label: Google Drive
+  permalink: /google-drive
+  description: Google Drive 관련 게시물입니다.
+
+google-drive-sync:
+  label: Google Drive Sync
+  permalink: /google-drive-sync
+  description: Google Drive Sync 관련 게시물입니다.
+
+google-photos:
+  label: Google Photos
+  permalink: /google-photos
+  description: Google Photos 관련 게시물입니다.
+
+guide:
+  label: 가이드
+  permalink: /guide
+  description: 가이드 관련 게시물입니다.
+
+hard-drive:
+  label: 하드 드라이브
+  permalink: /hard-drive
+  description: 하드 드라이브 관련 게시물입니다.
+
+hard-drive-backup:
+  label: 하드 드라이브 백업
+  permalink: /hard-drive-backup
+  description: 하드 드라이브 백업 관련 게시물입니다.
+
+healthcare:
+  label: 헬스케어
+  permalink: /healthcare
+  description: 헬스케어 관련 게시물입니다.
+
+hetzner:
+  label: Hetzner
+  permalink: /hetzner
+  description: Hetzner 관련 게시물입니다.
+
+hidrive:
+  label: HiDrive
+  permalink: /hidrive
+  description: HiDrive 관련 게시물입니다.
+
+hipaa:
+  label: HIPAA
+  permalink: /hipaa
+  description: HIPAA 관련 게시물입니다.
+
+history:
+  label: 히스토리
+  permalink: /history
+  description: 히스토리 관련 게시물입니다.
+
+hubic:
+  label: Hubic
+  permalink: /hubic
+  description: Hubic 관련 게시물입니다.
+
+huggingface:
+  label: HuggingFace
+  permalink: /huggingface
+  description: HuggingFace 관련 게시물입니다.
+
+hybrid-cloud:
+  label: 하이브리드 클라우드
+  permalink: /hybrid-cloud
+  description: 하이브리드 클라우드 관련 게시물입니다.
+
+idrive-e2:
+  label: IDrive E2
+  permalink: /idrive-e2
+  description: IDrive E2 관련 게시물입니다.
+
+industry:
+  label: 산업
+  permalink: /industry
+  description: 산업 관련 게시물입니다.
+
+innovation:
+  label: 혁신
+  permalink: /innovation
+  description: 혁신 관련 게시물입니다.
+
+installation:
+  label: 설치
+  permalink: /installation
+  description: 설치 관련 게시물입니다.
+
+internet-archive:
+  label: Internet Archive
+  permalink: /internet-archive
+  description: Internet Archive 관련 게시물입니다.
+
+job-history:
+  label: 작업 기록
+  permalink: /job-history
+  description: 작업 기록 관련 게시물입니다.
+
+job-management:
+  label: 작업 관리
+  permalink: /job-management
+  description: 작업 관리 관련 게시물입니다.
+
+jottacloud:
+  label: Jottacloud
+  permalink: /jottacloud
+  description: Jottacloud 관련 게시물입니다.
+
+koofr:
+  label: Koofr
+  permalink: /koofr
+  description: Koofr 관련 게시물입니다.
+
+linode:
+  label: Linode
+  permalink: /linode
+  description: Linode 관련 게시물입니다.
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Linux 관련 게시물입니다.
+
+macos:
+  label: macOS
+  permalink: /macos
+  description: macOS 관련 게시물입니다.
+
+mailru:
+  label: Mail.ru
+  permalink: /mailru
+  description: Mail.ru 관련 게시물입니다.
+
+media:
+  label: 미디어
+  permalink: /media
+  description: 미디어 관련 게시물입니다.
+
+mega:
+  label: MEGA
+  permalink: /mega
+  description: MEGA 관련 게시물입니다.
+
+microsoft-365:
+  label: Microsoft 365
+  permalink: /microsoft-365
+  description: Microsoft 365 관련 게시물입니다.
+
+migration:
+  label: 마이그레이션
+  permalink: /migration
+  description: 마이그레이션 관련 게시물입니다.
+
+minio:
+  label: MinIO
+  permalink: /minio
+  description: MinIO 관련 게시물입니다.
+
+monitoring:
+  label: 모니터링
+  permalink: /monitoring
+  description: 모니터링 관련 게시물입니다.
+
+mount:
+  label: 마운트
+  permalink: /mount
+  description: 마운트 관련 게시물입니다.
+
+move:
+  label: 이동
+  permalink: /move
+  description: 이동 관련 게시물입니다.
+
+multi-cloud:
+  label: 멀티 클라우드
+  permalink: /multi-cloud
+  description: 멀티 클라우드 관련 게시물입니다.
+
+nas:
+  label: NAS
+  permalink: /nas
+  description: NAS 관련 게시물입니다.
+
+nextcloud:
+  label: Nextcloud
+  permalink: /nextcloud
+  description: Nextcloud 관련 게시물입니다.
+
+nonprofit:
+  label: 비영리
+  permalink: /nonprofit
+  description: 비영리 관련 게시물입니다.
+
+object-storage:
+  label: 오브젝트 스토리지
+  permalink: /object-storage
+  description: 오브젝트 스토리지 관련 게시물입니다.
+
+offline-sync:
+  label: 오프라인 동기화
+  permalink: /offline-sync
+  description: 오프라인 동기화 관련 게시물입니다.
+
+onedrive:
+  label: OneDrive
+  permalink: /onedrive
+  description: OneDrive 관련 게시물입니다.
+
+onedrive-sync:
+  label: OneDrive Sync
+  permalink: /onedrive-sync
+  description: OneDrive Sync 관련 게시물입니다.
+
+opendrive:
+  label: OpenDrive
+  permalink: /opendrive
+  description: OpenDrive 관련 게시물입니다.
+
+openstack:
+  label: OpenStack
+  permalink: /openstack
+  description: OpenStack 관련 게시물입니다.
+
+optimization:
+  label: 최적화
+  permalink: /optimization
+  description: 최적화 관련 게시물입니다.
+
+oracle-cloud:
+  label: Oracle Cloud
+  permalink: /oracle-cloud
+  description: Oracle Cloud 관련 게시물입니다.
+
+organization:
+  label: 조직화
+  permalink: /organization
+  description: 조직화 관련 게시물입니다.
+
+pcloud:
+  label: pCloud
+  permalink: /pcloud
+  description: pCloud 관련 게시물입니다.
+
+performance:
+  label: 성능
+  permalink: /performance
+  description: 성능 관련 게시물입니다.
+
+photography:
+  label: 사진
+  permalink: /photography
+  description: 사진 관련 게시물입니다.
+
+pikpak:
+  label: PikPak
+  permalink: /pikpak
+  description: PikPak 관련 게시물입니다.
+
+platform:
+  label: 플랫폼
+  permalink: /platform
+  description: 플랫폼 관련 게시물입니다.
+
+plex:
+  label: Plex
+  permalink: /plex
+  description: Plex 관련 게시물입니다.
+
+pricing:
+  label: 가격
+  permalink: /pricing
+  description: 가격 관련 게시물입니다.
+
+privacy:
+  label: 개인정보 보호
+  permalink: /privacy
+  description: 개인정보 보호 관련 게시물입니다.
+
+productivity:
+  label: 생산성
+  permalink: /productivity
+  description: 생산성 관련 게시물입니다.
+
+proton-drive:
+  label: Proton Drive
+  permalink: /proton-drive
+  description: Proton Drive 관련 게시물입니다.
+
+putio:
+  label: Put.io
+  permalink: /putio
+  description: Put.io 관련 게시물입니다.
+
+qnap:
+  label: QNAP
+  permalink: /qnap
+  description: QNAP 관련 게시물입니다.
+
+quatrix:
+  label: Quatrix
+  permalink: /quatrix
+  description: Quatrix 관련 게시물입니다.
+
+r2:
+  label: R2
+  permalink: /r2
+  description: R2 관련 게시물입니다.
+
+ransomware:
+  label: 랜섬웨어
+  permalink: /ransomware
+  description: 랜섬웨어 관련 게시물입니다.
+
+raspberry-pi:
+  label: Raspberry Pi
+  permalink: /raspberry-pi
+  description: Raspberry Pi 관련 게시물입니다.
+
+rclone:
+  label: Rclone
+  permalink: /rclone
+  description: Rclone 관련 게시물입니다.
+
+rclone-crypt:
+  label: Rclone Crypt
+  permalink: /rclone-crypt
+  description: Rclone Crypt 관련 게시물입니다.
+
+RcloneView:
+  label: RcloneView
+  permalink: /rcloneview
+  description: RcloneView 관련 게시물입니다.
+
+reference:
+  label: 참고 자료
+  permalink: /reference
+  description: 참고 자료 관련 게시물입니다.
+
+remote-work:
+  label: 원격 근무
+  permalink: /remote-work
+  description: 원격 근무 관련 게시물입니다.
+
+s3:
+  label: S3
+  permalink: /s3
+  description: S3 관련 게시물입니다.
+
+s3-compatible:
+  label: S3 호환
+  permalink: /s3-compatible
+  description: S3 호환 관련 게시물입니다.
+
+safety:
+  label: 안전
+  permalink: /safety
+  description: 안전 관련 게시물입니다.
+
+seafile:
+  label: Seafile
+  permalink: /seafile
+  description: Seafile 관련 게시물입니다.
+
+security:
+  label: 보안
+  permalink: /security
+  description: 보안 관련 게시물입니다.
+
+self-hosted:
+  label: 셀프 호스팅
+  permalink: /self-hosted
+  description: 셀프 호스팅 관련 게시물입니다.
+
+sftp:
+  label: SFTP
+  permalink: /sftp
+  description: SFTP 관련 게시물입니다.
+
+sharefile:
+  label: ShareFile
+  permalink: /sharefile
+  description: ShareFile 관련 게시물입니다.
+
+sharepoint:
+  label: SharePoint
+  permalink: /sharepoint
+  description: SharePoint 관련 게시물입니다.
+
+sia:
+  label: Sia
+  permalink: /sia
+  description: Sia 관련 게시물입니다.
+
+slack:
+  label: Slack
+  permalink: /slack
+  description: Slack 관련 게시물입니다.
+
+smb:
+  label: SMB
+  permalink: /smb
+  description: SMB 관련 게시물입니다.
+
+storage-comparison:
+  label: 스토리지 비교
+  permalink: /storage-comparison
+  description: 스토리지 비교 관련 게시물입니다.
+
+storj:
+  label: Storj
+  permalink: /storj
+  description: Storj 관련 게시물입니다.
+
+sugarsync:
+  label: SugarSync
+  permalink: /sugarsync
+  description: SugarSync 관련 게시물입니다.
+
+swift:
+  label: Swift
+  permalink: /swift
+  description: Swift 관련 게시물입니다.
+
+sync:
+  label: 동기화
+  permalink: /sync
+  description: 동기화 관련 게시물입니다.
+
+synology:
+  label: Synology
+  permalink: /synology
+  description: Synology 관련 게시물입니다.
+
+tencent-cos:
+  label: Tencent COS
+  permalink: /tencent-cos
+  description: Tencent COS 관련 게시물입니다.
+
+terabox:
+  label: Terabox
+  permalink: /terabox
+  description: Terabox 관련 게시물입니다.
+
+tips:
+  label: 팁
+  permalink: /tips
+  description: 팁 관련 게시물입니다.
+
+troubleshooting:
+  label: 문제 해결
+  permalink: /troubleshooting
+  description: 문제 해결 관련 게시물입니다.
+
+tutorial:
+  label: 튜토리얼
+  permalink: /tutorial
+  description: 튜토리얼 관련 게시물입니다.
+
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: Ubuntu 관련 게시물입니다.
+
+university:
+  label: 대학교
+  permalink: /university
+  description: 대학교 관련 게시물입니다.
+
+vfs:
+  label: VFS
+  permalink: /vfs
+  description: VFS 관련 게시물입니다.
+
+video-production:
+  label: 영상 제작
+  permalink: /video-production
+  description: 영상 제작 관련 게시물입니다.
+
+wasabi:
+  label: Wasabi
+  permalink: /wasabi
+  description: Wasabi 관련 게시물입니다.
+
+webdav:
+  label: WebDAV
+  permalink: /webdav
+  description: WebDAV 관련 게시물입니다.
+
+windows:
+  label: Windows
+  permalink: /windows
+  description: Windows 관련 게시물입니다.
+
+windows-server:
+  label: Windows Server
+  permalink: /windows-server
+  description: Windows Server 관련 게시물입니다.
+
+workspace:
+  label: 워크스페이스
+  permalink: /workspace
+  description: 워크스페이스 관련 게시물입니다.
+
+yandex:
+  label: Yandex
+  permalink: /yandex
+  description: Yandex 관련 게시물입니다.
+
+yandex-disk:
+  label: Yandex Disk
+  permalink: /yandex-disk
+  description: Yandex Disk 관련 게시물입니다.
+
+zoho:
+  label: Zoho
+  permalink: /zoho
+  description: Zoho 관련 게시물입니다.

@@ -95,7 +95,7 @@ Yes - select WebDAV and the appropriate vendor/preset or “other” to match yo
 Yes - reuse the same WebDAV source in multiple jobs (e.g., Nextcloud -> Drive and Nextcloud -> Wasabi).
 
 **Do scheduled jobs run if the app is locked?**  
-Jobs run as configured; App Lock simply protects UI access (see [Enable App Lock](/support/tutorials/enable-app-lock)).
+Jobs run as configured; App Lock simply protects UI access (see [Enable App Lock](/tutorials/enable-app-lock)).
 
 ## Wrap-up
 

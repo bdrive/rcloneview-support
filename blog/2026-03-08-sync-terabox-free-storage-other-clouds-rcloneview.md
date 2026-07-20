@@ -9,7 +9,7 @@ tags:
   - terabox
   - cloud-backup
   - hybrid-cloud
-  - free-storage
+  - cloud-storage
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';

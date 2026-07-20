@@ -1,0 +1,52 @@
+/* 태그/저자 페이지의 압축 항목 목록.
+   @theme/BlogArchivePage/styles.module.css 의 목록 톤(emphasis 계열 보조색,
+   본문색 링크 + primary 호버, tabular 날짜)을 그대로 따른다. 다만 archive 는
+   제목만이라 2단 조밀 목록인 반면, 여기는 설명 한 줄이 붙으므로 1단으로 두고
+   행 사이를 구분선으로 나눈다. */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.item:first-child {
+  padding-top: 0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.title {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin: 0 0 0.3rem;
+}
+
+.title a {
+  color: var(--ifm-font-color-base);
+}
+
+.title a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.date {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.description {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0.3rem 0 0;
+}

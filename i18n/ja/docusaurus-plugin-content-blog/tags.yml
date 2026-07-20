@@ -1,0 +1,884 @@
+1fichier:
+  label: 1Fichier
+  permalink: /1fichier
+  description: 1Fichierに関する投稿です。
+
+accounting:
+  label: 会計
+  permalink: /accounting
+  description: 会計に関する投稿です。
+
+ai:
+  label: AI
+  permalink: /ai
+  description: AIに関する投稿です。
+
+alibaba-cloud:
+  label: Alibaba Cloud
+  permalink: /alibaba-cloud
+  description: Alibaba Cloudに関する投稿です。
+
+amazon-s3:
+  label: Amazon S3
+  permalink: /amazon-s3
+  description: Amazon S3に関する投稿です。
+
+api:
+  label: API
+  permalink: /api
+  description: APIに関する投稿です。
+
+architecture:
+  label: アーキテクチャ
+  permalink: /architecture
+  description: アーキテクチャに関する投稿です。
+
+archive:
+  label: アーカイブ
+  permalink: /archive
+  description: アーカイブに関する投稿です。
+
+arm:
+  label: Arm
+  permalink: /arm
+  description: Armに関する投稿です。
+
+automation:
+  label: 自動化
+  permalink: /automation
+  description: 自動化に関する投稿です。
+
+aws-s3:
+  label: AWS S3
+  permalink: /aws-s3
+  description: AWS S3に関する投稿です。
+
+azure:
+  label: Azure
+  permalink: /azure
+  description: Azureに関する投稿です。
+
+azure-files:
+  label: Azure Files
+  permalink: /azure-files
+  description: Azure Filesに関する投稿です。
+
+Backblaze:
+  label: Backblaze
+  permalink: /backblaze
+  description: Backblazeに関する投稿です。
+
+backblaze-b2:
+  label: Backblaze B2
+  permalink: /backblaze-b2
+  description: Backblaze B2に関する投稿です。
+
+backup:
+  label: バックアップ
+  permalink: /backup
+  description: バックアップに関する投稿です。
+
+best-practices:
+  label: ベストプラクティス
+  permalink: /best-practices
+  description: ベストプラクティスに関する投稿です。
+
+box:
+  label: Box
+  permalink: /box
+  description: Boxに関する投稿です。
+
+business:
+  label: ビジネス
+  permalink: /business
+  description: ビジネスに関する投稿です。
+
+cad:
+  label: CAD
+  permalink: /cad
+  description: CADに関する投稿です。
+
+cctv:
+  label: CCTV
+  permalink: /cctv
+  description: CCTVに関する投稿です。
+
+cleanup:
+  label: クリーンアップ
+  permalink: /cleanup
+  description: クリーンアップに関する投稿です。
+
+cli:
+  label: CLI
+  permalink: /cli
+  description: CLIに関する投稿です。
+
+cloud:
+  label: クラウド
+  permalink: /cloud
+  description: クラウドに関する投稿です。
+
+cloud-backup:
+  label: クラウドバックアップ
+  permalink: /cloud-backup
+  description: クラウドバックアップに関する投稿です。
+
+cloud-file-transfer:
+  label: クラウドファイル転送
+  permalink: /cloud-file-transfer
+  description: クラウドファイル転送に関する投稿です。
+
+cloud-migration:
+  label: クラウド移行
+  permalink: /cloud-migration
+  description: クラウド移行に関する投稿です。
+
+cloud-security:
+  label: クラウドセキュリティ
+  permalink: /cloud-security
+  description: クラウドセキュリティに関する投稿です。
+
+cloud-storage:
+  label: クラウドストレージ
+  permalink: /cloud-storage
+  description: クラウドストレージに関する投稿です。
+
+cloud-storage-synchronization:
+  label: クラウドストレージ同期
+  permalink: /cloud-storage-synchronization
+  description: クラウドストレージ同期に関する投稿です。
+
+cloud-sync:
+  label: クラウド同期
+  permalink: /cloud-sync
+  description: クラウド同期に関する投稿です。
+
+cloud-to-cloud:
+  label: クラウド間転送
+  permalink: /cloud-to-cloud
+  description: クラウド間転送に関する投稿です。
+
+cloudflare:
+  label: Cloudflare
+  permalink: /cloudflare
+  description: Cloudflareに関する投稿です。
+
+cloudflare-r2:
+  label: Cloudflare R2
+  permalink: /cloudflare-r2
+  description: Cloudflare R2に関する投稿です。
+
+collaboration:
+  label: コラボレーション
+  permalink: /collaboration
+  description: コラボレーションに関する投稿です。
+
+compare:
+  label: 比較
+  permalink: /compare
+  description: 比較に関する投稿です。
+
+comparison:
+  label: 比較
+  permalink: /comparison
+  description: 比較に関する投稿です。
+
+compliance:
+  label: コンプライアンス
+  permalink: /compliance
+  description: コンプライアンスに関する投稿です。
+
+copy:
+  label: コピー
+  permalink: /copy
+  description: コピーに関する投稿です。
+
+cost-optimization:
+  label: コスト最適化
+  permalink: /cost-optimization
+  description: コスト最適化に関する投稿です。
+
+crypt:
+  label: Crypt
+  permalink: /crypt
+  description: Cryptに関する投稿です。
+
+dam:
+  label: デジタルアセット管理
+  permalink: /dam
+  description: デジタルアセット管理に関する投稿です。
+
+dashboard:
+  label: ダッシュボード
+  permalink: /dashboard
+  description: ダッシュボードに関する投稿です。
+
+data-loss:
+  label: データ損失
+  permalink: /data-loss
+  description: データ損失に関する投稿です。
+
+data-pipeline:
+  label: データパイプライン
+  permalink: /data-pipeline
+  description: データパイプラインに関する投稿です。
+
+data-recovery:
+  label: データ復旧
+  permalink: /data-recovery
+  description: データ復旧に関する投稿です。
+
+debian:
+  label: Debian
+  permalink: /debian
+  description: Debianに関する投稿です。
+
+decentralized-storage:
+  label: 分散型ストレージ
+  permalink: /decentralized-storage
+  description: 分散型ストレージに関する投稿です。
+
+digital-preservation:
+  label: デジタル保存
+  permalink: /digital-preservation
+  description: デジタル保存に関する投稿です。
+
+digitalocean-spaces:
+  label: DigitalOcean Spaces
+  permalink: /digitalocean-spaces
+  description: DigitalOcean Spacesに関する投稿です。
+
+disaster-recovery:
+  label: 災害復旧
+  permalink: /disaster-recovery
+  description: 災害復旧に関する投稿です。
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Dockerに関する投稿です。
+
+drag-and-drop:
+  label: ドラッグアンドドロップ
+  permalink: /drag-and-drop
+  description: ドラッグアンドドロップに関する投稿です。
+
+dropbox:
+  label: Dropbox
+  permalink: /dropbox
+  description: Dropboxに関する投稿です。
+
+duplicates:
+  label: 重複ファイル
+  permalink: /duplicates
+  description: 重複ファイルに関する投稿です。
+
+education:
+  label: 教育
+  permalink: /education
+  description: 教育に関する投稿です。
+
+encryption:
+  label: 暗号化
+  permalink: /encryption
+  description: 暗号化に関する投稿です。
+
+engineering:
+  label: エンジニアリング
+  permalink: /engineering
+  description: エンジニアリングに関する投稿です。
+
+enterprise:
+  label: エンタープライズ
+  permalink: /enterprise
+  description: エンタープライズに関する投稿です。
+
+european-cloud:
+  label: ヨーロッパのクラウド
+  permalink: /european-cloud
+  description: ヨーロッパのクラウドに関する投稿です。
+
+external-drive:
+  label: 外付けドライブ
+  permalink: /external-drive
+  description: 外付けドライブに関する投稿です。
+
+feature:
+  label: 機能
+  permalink: /feature
+  description: 機能に関する投稿です。
+
+file-management:
+  label: ファイル管理
+  permalink: /file-management
+  description: ファイル管理に関する投稿です。
+
+filezilla:
+  label: FileZilla
+  permalink: /filezilla
+  description: FileZillaに関する投稿です。
+
+filters:
+  label: フィルター
+  permalink: /filters
+  description: フィルターに関する投稿です。
+
+finance:
+  label: 金融
+  permalink: /finance
+  description: 金融に関する投稿です。
+
+folder-comparison:
+  label: フォルダー比較
+  permalink: /folder-comparison
+  description: フォルダー比較に関する投稿です。
+
+freefilesync:
+  label: FreeFileSync
+  permalink: /freefilesync
+  description: FreeFileSyncに関する投稿です。
+
+ftp:
+  label: FTP
+  permalink: /ftp
+  description: FTPに関する投稿です。
+
+glacier:
+  label: Glacier
+  permalink: /glacier
+  description: Glacierに関する投稿です。
+
+gofile:
+  label: Gofile
+  permalink: /gofile
+  description: Gofileに関する投稿です。
+
+goodsync:
+  label: GoodSync
+  permalink: /goodsync
+  description: GoodSyncに関する投稿です。
+
+google-cloud-storage:
+  label: Google Cloud Storage
+  permalink: /google-cloud-storage
+  description: Google Cloud Storageに関する投稿です。
+
+google-drive:
+  label: Google Drive
+  permalink: /google-drive
+  description: Google Driveに関する投稿です。
+
+google-drive-sync:
+  label: Google Drive Sync
+  permalink: /google-drive-sync
+  description: Google Drive Syncに関する投稿です。
+
+google-photos:
+  label: Google Photos
+  permalink: /google-photos
+  description: Google Photosに関する投稿です。
+
+guide:
+  label: ガイド
+  permalink: /guide
+  description: ガイドに関する投稿です。
+
+hard-drive:
+  label: ハードドライブ
+  permalink: /hard-drive
+  description: ハードドライブに関する投稿です。
+
+hard-drive-backup:
+  label: ハードドライブのバックアップ
+  permalink: /hard-drive-backup
+  description: ハードドライブのバックアップに関する投稿です。
+
+healthcare:
+  label: ヘルスケア
+  permalink: /healthcare
+  description: ヘルスケアに関する投稿です。
+
+hetzner:
+  label: Hetzner
+  permalink: /hetzner
+  description: Hetznerに関する投稿です。
+
+hidrive:
+  label: HiDrive
+  permalink: /hidrive
+  description: HiDriveに関する投稿です。
+
+hipaa:
+  label: HIPAA
+  permalink: /hipaa
+  description: HIPAAに関する投稿です。
+
+history:
+  label: 履歴
+  permalink: /history
+  description: 履歴に関する投稿です。
+
+hubic:
+  label: Hubic
+  permalink: /hubic
+  description: Hubicに関する投稿です。
+
+huggingface:
+  label: HuggingFace
+  permalink: /huggingface
+  description: HuggingFaceに関する投稿です。
+
+hybrid-cloud:
+  label: ハイブリッドクラウド
+  permalink: /hybrid-cloud
+  description: ハイブリッドクラウドに関する投稿です。
+
+idrive-e2:
+  label: IDrive E2
+  permalink: /idrive-e2
+  description: IDrive E2に関する投稿です。
+
+industry:
+  label: 業界
+  permalink: /industry
+  description: 業界に関する投稿です。
+
+innovation:
+  label: イノベーション
+  permalink: /innovation
+  description: イノベーションに関する投稿です。
+
+installation:
+  label: インストール
+  permalink: /installation
+  description: インストールに関する投稿です。
+
+internet-archive:
+  label: Internet Archive
+  permalink: /internet-archive
+  description: Internet Archiveに関する投稿です。
+
+job-history:
+  label: ジョブ履歴
+  permalink: /job-history
+  description: ジョブ履歴に関する投稿です。
+
+job-management:
+  label: ジョブ管理
+  permalink: /job-management
+  description: ジョブ管理に関する投稿です。
+
+jottacloud:
+  label: Jottacloud
+  permalink: /jottacloud
+  description: Jottacloudに関する投稿です。
+
+koofr:
+  label: Koofr
+  permalink: /koofr
+  description: Koofrに関する投稿です。
+
+linode:
+  label: Linode
+  permalink: /linode
+  description: Linodeに関する投稿です。
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Linuxに関する投稿です。
+
+macos:
+  label: macOS
+  permalink: /macos
+  description: macOSに関する投稿です。
+
+mailru:
+  label: Mail.ru
+  permalink: /mailru
+  description: Mail.ruに関する投稿です。
+
+media:
+  label: メディア
+  permalink: /media
+  description: メディアに関する投稿です。
+
+mega:
+  label: MEGA
+  permalink: /mega
+  description: MEGAに関する投稿です。
+
+microsoft-365:
+  label: Microsoft 365
+  permalink: /microsoft-365
+  description: Microsoft 365に関する投稿です。
+
+migration:
+  label: 移行
+  permalink: /migration
+  description: 移行に関する投稿です。
+
+minio:
+  label: MinIO
+  permalink: /minio
+  description: MinIOに関する投稿です。
+
+monitoring:
+  label: モニタリング
+  permalink: /monitoring
+  description: モニタリングに関する投稿です。
+
+mount:
+  label: マウント
+  permalink: /mount
+  description: マウントに関する投稿です。
+
+move:
+  label: 移動
+  permalink: /move
+  description: 移動に関する投稿です。
+
+multi-cloud:
+  label: マルチクラウド
+  permalink: /multi-cloud
+  description: マルチクラウドに関する投稿です。
+
+nas:
+  label: NAS
+  permalink: /nas
+  description: NASに関する投稿です。
+
+nextcloud:
+  label: Nextcloud
+  permalink: /nextcloud
+  description: Nextcloudに関する投稿です。
+
+nonprofit:
+  label: 非営利団体
+  permalink: /nonprofit
+  description: 非営利団体に関する投稿です。
+
+object-storage:
+  label: オブジェクトストレージ
+  permalink: /object-storage
+  description: オブジェクトストレージに関する投稿です。
+
+offline-sync:
+  label: オフライン同期
+  permalink: /offline-sync
+  description: オフライン同期に関する投稿です。
+
+onedrive:
+  label: OneDrive
+  permalink: /onedrive
+  description: OneDriveに関する投稿です。
+
+onedrive-sync:
+  label: OneDrive Sync
+  permalink: /onedrive-sync
+  description: OneDrive Syncに関する投稿です。
+
+opendrive:
+  label: OpenDrive
+  permalink: /opendrive
+  description: OpenDriveに関する投稿です。
+
+openstack:
+  label: OpenStack
+  permalink: /openstack
+  description: OpenStackに関する投稿です。
+
+optimization:
+  label: 最適化
+  permalink: /optimization
+  description: 最適化に関する投稿です。
+
+oracle-cloud:
+  label: Oracle Cloud
+  permalink: /oracle-cloud
+  description: Oracle Cloudに関する投稿です。
+
+organization:
+  label: 整理
+  permalink: /organization
+  description: 整理に関する投稿です。
+
+pcloud:
+  label: pCloud
+  permalink: /pcloud
+  description: pCloudに関する投稿です。
+
+performance:
+  label: パフォーマンス
+  permalink: /performance
+  description: パフォーマンスに関する投稿です。
+
+photography:
+  label: 写真
+  permalink: /photography
+  description: 写真に関する投稿です。
+
+pikpak:
+  label: PikPak
+  permalink: /pikpak
+  description: PikPakに関する投稿です。
+
+platform:
+  label: プラットフォーム
+  permalink: /platform
+  description: プラットフォームに関する投稿です。
+
+plex:
+  label: Plex
+  permalink: /plex
+  description: Plexに関する投稿です。
+
+pricing:
+  label: 料金
+  permalink: /pricing
+  description: 料金に関する投稿です。
+
+privacy:
+  label: プライバシー
+  permalink: /privacy
+  description: プライバシーに関する投稿です。
+
+productivity:
+  label: 生産性
+  permalink: /productivity
+  description: 生産性に関する投稿です。
+
+proton-drive:
+  label: Proton Drive
+  permalink: /proton-drive
+  description: Proton Driveに関する投稿です。
+
+putio:
+  label: Put.io
+  permalink: /putio
+  description: Put.ioに関する投稿です。
+
+qnap:
+  label: QNAP
+  permalink: /qnap
+  description: QNAPに関する投稿です。
+
+quatrix:
+  label: Quatrix
+  permalink: /quatrix
+  description: Quatrixに関する投稿です。
+
+r2:
+  label: R2
+  permalink: /r2
+  description: R2に関する投稿です。
+
+ransomware:
+  label: ランサムウェア
+  permalink: /ransomware
+  description: ランサムウェアに関する投稿です。
+
+raspberry-pi:
+  label: Raspberry Pi
+  permalink: /raspberry-pi
+  description: Raspberry Piに関する投稿です。
+
+rclone:
+  label: Rclone
+  permalink: /rclone
+  description: Rcloneに関する投稿です。
+
+rclone-crypt:
+  label: Rclone Crypt
+  permalink: /rclone-crypt
+  description: Rclone Cryptに関する投稿です。
+
+RcloneView:
+  label: RcloneView
+  permalink: /rcloneview
+  description: RcloneViewに関する投稿です。
+
+reference:
+  label: リファレンス
+  permalink: /reference
+  description: リファレンスに関する投稿です。
+
+remote-work:
+  label: リモートワーク
+  permalink: /remote-work
+  description: リモートワークに関する投稿です。
+
+s3:
+  label: S3
+  permalink: /s3
+  description: S3に関する投稿です。
+
+s3-compatible:
+  label: S3互換
+  permalink: /s3-compatible
+  description: S3互換に関する投稿です。
+
+safety:
+  label: 安全性
+  permalink: /safety
+  description: 安全性に関する投稿です。
+
+seafile:
+  label: Seafile
+  permalink: /seafile
+  description: Seafileに関する投稿です。
+
+security:
+  label: セキュリティ
+  permalink: /security
+  description: セキュリティに関する投稿です。
+
+self-hosted:
+  label: セルフホスト
+  permalink: /self-hosted
+  description: セルフホストに関する投稿です。
+
+sftp:
+  label: SFTP
+  permalink: /sftp
+  description: SFTPに関する投稿です。
+
+sharefile:
+  label: ShareFile
+  permalink: /sharefile
+  description: ShareFileに関する投稿です。
+
+sharepoint:
+  label: SharePoint
+  permalink: /sharepoint
+  description: SharePointに関する投稿です。
+
+sia:
+  label: Sia
+  permalink: /sia
+  description: Siaに関する投稿です。
+
+slack:
+  label: Slack
+  permalink: /slack
+  description: Slackに関する投稿です。
+
+smb:
+  label: SMB
+  permalink: /smb
+  description: SMBに関する投稿です。
+
+storage-comparison:
+  label: ストレージ比較
+  permalink: /storage-comparison
+  description: ストレージ比較に関する投稿です。
+
+storj:
+  label: Storj
+  permalink: /storj
+  description: Storjに関する投稿です。
+
+sugarsync:
+  label: SugarSync
+  permalink: /sugarsync
+  description: SugarSyncに関する投稿です。
+
+swift:
+  label: Swift
+  permalink: /swift
+  description: Swiftに関する投稿です。
+
+sync:
+  label: 同期
+  permalink: /sync
+  description: 同期に関する投稿です。
+
+synology:
+  label: Synology
+  permalink: /synology
+  description: Synologyに関する投稿です。
+
+tencent-cos:
+  label: Tencent COS
+  permalink: /tencent-cos
+  description: Tencent COSに関する投稿です。
+
+terabox:
+  label: Terabox
+  permalink: /terabox
+  description: Teraboxに関する投稿です。
+
+tips:
+  label: ヒント
+  permalink: /tips
+  description: ヒントに関する投稿です。
+
+troubleshooting:
+  label: トラブルシューティング
+  permalink: /troubleshooting
+  description: トラブルシューティングに関する投稿です。
+
+tutorial:
+  label: チュートリアル
+  permalink: /tutorial
+  description: チュートリアルに関する投稿です。
+
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: Ubuntuに関する投稿です。
+
+university:
+  label: 大学
+  permalink: /university
+  description: 大学に関する投稿です。
+
+vfs:
+  label: VFS
+  permalink: /vfs
+  description: VFSに関する投稿です。
+
+video-production:
+  label: 動画制作
+  permalink: /video-production
+  description: 動画制作に関する投稿です。
+
+wasabi:
+  label: Wasabi
+  permalink: /wasabi
+  description: Wasabiに関する投稿です。
+
+webdav:
+  label: WebDAV
+  permalink: /webdav
+  description: WebDAVに関する投稿です。
+
+windows:
+  label: Windows
+  permalink: /windows
+  description: Windowsに関する投稿です。
+
+windows-server:
+  label: Windows Server
+  permalink: /windows-server
+  description: Windows Serverに関する投稿です。
+
+workspace:
+  label: ワークスペース
+  permalink: /workspace
+  description: ワークスペースに関する投稿です。
+
+yandex:
+  label: Yandex
+  permalink: /yandex
+  description: Yandexに関する投稿です。
+
+yandex-disk:
+  label: Yandex Disk
+  permalink: /yandex-disk
+  description: Yandex Diskに関する投稿です。
+
+zoho:
+  label: Zoho
+  permalink: /zoho
+  description: Zohoに関する投稿です。

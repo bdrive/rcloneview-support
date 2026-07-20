@@ -23,7 +23,7 @@ author: Jay
 # Add OneDrive to External Rclone on AWS EC2 (Headless)
 
 :::info Related prerequisite
-If you need a full EC2 setup walkthrough, see 👉 [How to Run Rclone Engine on AWS EC2](../cloud-storage-setting/run-rclone-on-aws-ec2.md).
+If you need a full EC2 setup walkthrough, see 👉 [How to Run Rclone Engine on AWS EC2](/howto/cloud-storage-setting/run-rclone-on-aws-ec2).
 :::
 
 ---
@@ -51,7 +51,7 @@ The process: generate a OneDrive OAuth token on a machine with a browser, then p
 <img src="/support/images/en/howto/remote-storage-connection-settings/copy-onedrive-oauth-token-from-embedded-rclone.png" alt="copy onedrive oauth token from embedded rclone" class="img-medium img-center" />
 
 
-👉 More about editing remotes: [Edit Remote Settings](../rcloneview-basic/remote-manager.md#edit-remote-settings)
+👉 More about editing remotes: [Edit Remote Settings](/howto/rcloneview-basic/remote-manager#edit-remote-settings)
 
 ---
 
@@ -61,8 +61,8 @@ Open a **new window** or use your current session in RcloneView to connect to yo
 
 - Open `Settings` -> **`Connection Manager`** to either create a new connection to your EC2-hosted Rclone or connect to an existing one if already configured.
 
-👉 Learn more: [Connect External Rclone](../rcloneview-basic/connection-manager.md#add-a-new-external-rclone)  
-👉 Learn more: [New Window Feature](../rcloneview-advanced/multi-window.md#new-window-feature-managing-both-models)
+👉 Learn more: [Connect External Rclone](/howto/rcloneview-basic/connection-manager#add-a-new-external-rclone)  
+👉 Learn more: [New Window Feature](/howto/rcloneview-advanced/multi-window#new-window-feature-managing-both-models)
 
 ---
 
@@ -89,9 +89,9 @@ Once configured, your EC2-based Rclone can now access OneDrive even without brow
 
 ## Related links
 
-- [How to Run Rclone Engine on AWS EC2](../cloud-storage-setting/run-rclone-on-aws-ec2.md)  
-- [Connection Manager](../rcloneview-basic/connection-manager.md#add-a-new-external-rclone)  
-- [Multi-Window Usage](../rcloneview-advanced/multi-window.md#new-window-feature-managing-both-models)  
-- [Create Sync Jobs](../rcloneview-basic/create-sync-jobs.md)  
-- [Execute and Manage Jobs](../rcloneview-basic/execute-manage-job.md)  
-- [Job Scheduling and Execution](../rcloneview-advanced/job-scheduling-and-execution.md)
+- [How to Run Rclone Engine on AWS EC2](/howto/cloud-storage-setting/run-rclone-on-aws-ec2)  
+- [Connection Manager](/howto/rcloneview-basic/connection-manager#add-a-new-external-rclone)  
+- [Multi-Window Usage](/howto/rcloneview-advanced/multi-window#new-window-feature-managing-both-models)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Execute and Manage Jobs](/howto/rcloneview-basic/execute-manage-job)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)

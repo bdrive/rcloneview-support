@@ -21,7 +21,6 @@ tags:
   - google-drive
   - onedrive
   - s3
-  - secure-backup
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -83,8 +82,8 @@ Before creating your encrypted cloud backup:
 4. *(Optional)* **Back up unencrypted versions** before applying encryption.
 
 🔍 Helpful guides:  
-- [Add Cloud Storage Remote in RcloneView](/support/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
-- [S3-Compatible Cloud Setup](/support/howto/remote-storage-connection-settings/s3)
+- [Add Cloud Storage Remote in RcloneView](/howto/remote-storage-connection-settings/add-oath-online-login#quick-setup-guide)  
+- [S3-Compatible Cloud Setup](/howto/remote-storage-connection-settings/s3)
 
 ---
 
@@ -116,7 +115,7 @@ You can now use all of RcloneView’s powerful features—**Drag & Drop**, **Com
 Simply drag folders from your local drive into your encrypted remote (e.g., `Drive-Encrypted:`).  
 RcloneView encrypts each file as it uploads.
 
-👉 See more: [Copying Files using Drag and Drop](/support/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
+👉 See more: [Copying Files using Drag and Drop](/howto/rcloneview-basic/browse-and-manage-remote-storage#copying-files-using-drag-and-drop)
 
 ---
 
@@ -124,7 +123,7 @@ RcloneView encrypts each file as it uploads.
 Run **Compare** to preview updates and differences between your local folder and the encrypted remote.  
 Only changed files will be re-encrypted and uploaded.
 
-👉 See more: [Compare and Manage Files](/support/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
+👉 See more: [Compare and Manage Files](/howto/rcloneview-basic/compare-folder-contents#compare-results-and-manage-files)
 
 ---
 
@@ -133,9 +132,9 @@ Automate your encryption routine.
 Create a **Sync Job** that mirrors local folders into your crypt remote every night or week—ensuring all new files are encrypted and safely stored off-site.
 
 👉 See more:  
-- [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages)  
-- [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs)  
-- [Job Scheduling and Execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages)  
+- [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs)  
+- [Job Scheduling and Execution](/howto/rcloneview-advanced/job-scheduling-and-execution)
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running an encrypted sync job in RcloneView" class="img-medium img-center" />
 

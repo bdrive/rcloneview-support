@@ -20,7 +20,7 @@ tags:
   - sharepoint
   - google-drive
   - migration
-  - Scheduler
+  - automation
 ---
 
 import CloudSupportGrid from '../src/components/CloudSupportGrid';
@@ -47,23 +47,23 @@ A zero-downtime strategy means running multi-phase syncs while both platforms st
 
 ## Migration Blueprint: Multi-Cloud Control Panel
 
-1. **Connect both sides** using [Remote Manager](/support/howto/rcloneview-basic/remote-manager) along with the provider guides for [SharePoint for Business](/support/howto/remote-storage-connection-settings/connect-using-cli/add-sharepoint-for-business) and [Google Shared Drives](/support/howto/remote-storage-connection-settings/connect-using-cli/add-google-shared-drive). RcloneView isolates OAuth tokens per tenant and stores them with the protections.
+1. **Connect both sides** using [Remote Manager](/howto/rcloneview-basic/remote-manager) along with the provider guides for [SharePoint for Business](/howto/remote-storage-connection-settings/connect-using-cli/add-sharepoint-for-business) and [Google Shared Drives](/howto/remote-storage-connection-settings/connect-using-cli/add-google-shared-drive). RcloneView isolates OAuth tokens per tenant and stores them with the protections.
 2. **Organize Explorer panes** so each pane references a matching library vs. Shared Drive.
-3. **Templates for jobs** come from [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs) and [Synchronize Remote Storages](/support/howto/rcloneview-basic/synchronize-remote-storages). Copy jobs seed the target; Sync jobs handle onedirectional clean-up; Compare runs validate.
-4. **Mounts for QA** follow [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive), letting power users preview content inside Finder or Explorer before cutover.
-5. **Schedulers + monitoring** rely on [Job scheduling and execution](/support/howto/rcloneview-advanced/job-scheduling-and-execution) and [Real-time transfer monitoring](/support/howto/rcloneview-basic/real-time-transfer-monitoring) to keep delta runs predictable.  
+3. **Templates for jobs** come from [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs) and [Synchronize Remote Storages](/howto/rcloneview-basic/synchronize-remote-storages). Copy jobs seed the target; Sync jobs handle onedirectional clean-up; Compare runs validate.
+4. **Mounts for QA** follow [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive), letting power users preview content inside Finder or Explorer before cutover.
+5. **Schedulers + monitoring** rely on [Job scheduling and execution](/howto/rcloneview-advanced/job-scheduling-and-execution) and [Real-time transfer monitoring](/howto/rcloneview-basic/real-time-transfer-monitoring) to keep delta runs predictable.  
 
 <img src="/support/images/en/blog/new-remote.png" alt="Open multiple cloud remotes in RcloneView" class="img-large img-center" />  
   
 
 ## Step 1 -- Harden Connectors & Metadata
 
-- Label every remote (`sp-marketing`, `sp-pmo`, `gdrive-regional-apac`) and restrict the root path to the specific library. This keeps remote browsing fast inside [Browse and manage remote storage](/support/howto/rcloneview-basic/browse-and-manage-remote-storage).
+- Label every remote (`sp-marketing`, `sp-pmo`, `gdrive-regional-apac`) and restrict the root path to the specific library. This keeps remote browsing fast inside [Browse and manage remote storage](/howto/rcloneview-basic/browse-and-manage-remote-storage).
 
 ## Step 2 -- Baseline with Compare Runs
 
 1. Open the dual-pane Explorer, point the left side at SharePoint, right side at the empty Shared Drive.
-2. Use [Compare folder contents](/support/howto/rcloneview-basic/compare-folder-contents) to detect size, checksum, and timestamp deltas.
+2. Use [Compare folder contents](/howto/rcloneview-basic/compare-folder-contents) to detect size, checksum, and timestamp deltas.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare SharePoint library to Google Shared Drive before migrating" class="img-large img-center" />
 
@@ -71,7 +71,7 @@ Baseline Compare snapshots give you a forensic record of the original state and 
 
 ## Step 3 -- Stage Copy + Sync Jobs
 
-- Create a **Copy** job per business unit to hydrate the Shared Drive without deleting anything on SharePoint. Reference: [Create Sync Jobs](/support/howto/rcloneview-basic/create-sync-jobs).  
+- Create a **Copy** job per business unit to hydrate the Shared Drive without deleting anything on SharePoint. Reference: [Create Sync Jobs](/howto/rcloneview-basic/create-sync-jobs).  
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running an encrypted sync job in RcloneView" class="img-large img-center" />  
    
@@ -87,7 +87,7 @@ Open Scheduler, enable it globally, then assign cadences per job:
 
 1. **Freeze writes** on SharePoint (communicate via Teams/Slack) but keep the site online for read-only needs.
 2. Run the final Sync + Compare job set. Use the Compare diff to confirm only a handful of files changed since the last delta.
-3. Mount the new Shared Drive with [Mount cloud storage as a local drive](/support/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) and have business owners spot-check complex folder trees.  
+3. Mount the new Shared Drive with [Mount cloud storage as a local drive](/howto/rcloneview-basic/mount-cloud-storage-as-a-local-drive) and have business owners spot-check complex folder trees.  
 
 <img src="/support/images/en/howto/rcloneview-basic/mount-from-remote-explorer.png" alt="mount from remote explorer" class="img-large img-center" />  
        
