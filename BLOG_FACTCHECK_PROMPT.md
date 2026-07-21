@@ -275,17 +275,21 @@ Replace {DATE} with today's date in YYYY-MM-DD format.
   git commit -m "blog: deploy auto-generated posts for ${DATE}"
   git push -u origin blog/deploy/${DATE}
 
-6-B. Push rcloneview-support (validated source .md files):
+6-B. Push rcloneview-support (validated English source + 8-locale translations):
 
   cd ../rcloneview-support
   git checkout -b blog/verified/${DATE}
-  git add blog/${DATE}-*.md
-  git commit -m "blog: verified posts for ${DATE}"
+  git add blog/${DATE}-*.md                                    # English source (fixed)
+  git add i18n/*/docusaurus-plugin-content-blog/${DATE}-*.md   # STEP 4.7 translations (8 locales)
+  git commit -m "blog: verified posts + 8-locale translations for ${DATE}"
   git push -u origin blog/verified/${DATE}
 
 NOTE: This creates a NEW branch (blog/verified/) separate from the Generator's
-branch (blog/auto/). The verified branch contains the fact-checked versions
-with any fixes applied.
+branch (blog/auto/). The verified branch contains the fact-checked English
+versions AND their STEP 4.7 translations — support is the source of truth for
+i18n, so the translations must live here (not only in the www build output).
+Every surviving post has 8 translation files (one per locale); REMOVE'd and
+deduped posts have none, so the ${DATE} glob stages exactly the survivors.
 
 NOTE on author rotation: authors are DATE-DERIVED (Generator Rule 18) and need
 no state. There is NO `blog/.rotation-state` file — do not stage or commit one.
@@ -300,16 +304,17 @@ STEP 6.5: CREATE PULL REQUESTS
 After both branches are pushed, create PRs using the GitHub MCP tool
 (mcp__github__create_pull_request). Create both PRs simultaneously.
 
-PR 1 — rcloneview-support (fact-checked source):
+PR 1 — rcloneview-support (fact-checked source + translations):
   owner: bdrive
   repo:  rcloneview-support
   head:  blog/verified/{DATE}
   base:  main
-  title: "blog: verified posts for {DATE}"
+  title: "blog: verified posts + translations for {DATE}"
   body:
     ## Summary
     - Fact-checked auto-generated blog posts for {DATE}
     - {N passed} passed, {N fixed} fixed, {N removed} removed
+    - {N surviving} posts translated into 8 locales (STEP 4.7)
 
     ## Validation Results
     {paste the validation table from Step 4}
@@ -319,6 +324,7 @@ PR 1 — rcloneview-support (fact-checked source):
 
     ## Companion PR
     Build output → bdrive/rcloneview_www branch blog/deploy/{DATE}
+    (Merge both PRs together — source+i18n here, build output there.)
 
 PR 2 — rcloneview_www (build output):
   owner: bdrive
