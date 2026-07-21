@@ -7,9 +7,11 @@
 //   root:  "<저장소 절대경로>"    (선택) 미지정 시 로컬 기본 경로.
 //          루틴 컨테이너에서는 반드시 넘길 것 — Fact-checker 가 `pwd` 결과 주입.
 //
-// 용도 2가지:
-//   ① 소급 번역(로컬): {"posts": [...]}  — root 생략, 기본 경로 사용
-//   ② 신규 글 발행(Fact-checker STEP 4.7): {"posts": [...], "root": "<pwd>"}
+// 용도: 로컬에서 사람이 돌리는 소급 번역 전용. {"posts": [...]} (root 생략).
+//   ⚠️ 무인 루틴(Fact-checker)에서는 이 스크립트를 쓰지 않는다 — 루틴 컨테이너의
+//      Workflow 도구가 승인 프롬프트에 걸려 멈추기 때문(2026-07-21 실측).
+//      신규 글 발행 시 번역은 Fact-checker 가 STEP 4.7 에서 인라인(자기 Read/Write)
+//      으로 처리한다. root 인자는 과거 루틴 연동 잔재라 로컬에선 생략하면 된다.
 //
 // 동작: posts × 8로케일 쌍마다 Sonnet 에이전트가 blog/ 원문을 읽어 번역하고
 //       i18n/{locale}/docusaurus-plugin-content-blog/ 에 직접 파일을 쓴다.
