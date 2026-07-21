@@ -2,7 +2,7 @@
 slug: best-cloudmounter-alternatives-rcloneview
 title: "Best CloudMounter Alternatives — Cross-Platform Cloud Mount and Sync with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Looking for CloudMounter alternatives? Compare RcloneView, Mountain Duck, and ExpanDrive for cross-platform cloud mounting, sync, and free object storage write access."
 keywords:
   - CloudMounter alternatives

@@ -2,7 +2,7 @@
 slug: manage-selectel-cloud-sync-backup-rcloneview
 title: "Manage Selectel Storage — Sync and Backup Files with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Connect Selectel Object Storage to RcloneView for S3-compatible file browsing, sync, mounting, and backup on Windows, macOS, and Linux."
 keywords:
   - Selectel storage
