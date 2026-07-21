@@ -178,19 +178,87 @@ Example:
 After deletion, verify no duplicate slugs remain before proceeding to build.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 5: BUILD
+STEP 4.7: TRANSLATE SURVIVING POSTS INTO 8 LOCALES
 ═══════════════════════════════════════════════════════════════════
 
-Run the build in the rcloneview-support directory:
+The site is served in 9 languages. Every post that survived validation
+(PASS or FIX — NOT REMOVE, NOT deleted as a duplicate) must be translated into
+all 8 non-English locales, or it would appear untranslated on /support/ko/,
+/support/ja/, etc. while the rest of the blog is localized.
 
-  yarn build --out-dir ../rcloneview_www/support
+1. Build the survivor list — today's-date files STILL present in blog/ after
+   STEP 3 (REMOVE) and STEP 4.5 (duplicate deletion):
 
-Watch the build output carefully. Docusaurus build may show WARNINGS (not errors) that still need action:
+     ls blog/${DATE}-*.md
 
-- "[WARNING] Duplicate routes found!" — This means Step 4.5 missed something. Stop, re-run Step 4.5 to find and remove the remaining duplicates, then rebuild.
-- "[ERROR]" or non-zero exit code — Report the error and stop. Do not proceed to deployment.
+   Collect just the basenames (e.g. "2026-07-21-mount-koofr-on-windows.md").
+   If the list is empty, skip to STEP 5.
 
-Only proceed to Step 6 if the build completes with NO duplicate route warnings.
+2. Capture the absolute repo path — the translation workflow writes files by
+   absolute path, so it must know where this checkout lives:
+
+     REPO=$(pwd)        # must be the rcloneview-support checkout root
+
+3. Run the translation batch with the Workflow tool (NOT `node`). Pass the
+   survivor basenames and the repo root:
+
+     Workflow({
+       scriptPath: "scripts/blog-i18n-batch.workflow.js",
+       args: { "posts": ["<basename1>.md", "<basename2>.md"], "root": "<REPO>" }
+     })
+
+   It spawns a Sonnet translator per (post × locale) and writes each
+   i18n/{locale}/docusaurus-plugin-content-blog/{basename}. Read the returned
+   summary: `failed` MUST be 0. If any pair failed, re-run the Workflow for the
+   missing posts before continuing.
+
+4. Validate the translations (I18N_RUNBOOK_ko.md 2장 ③, steps 1-3):
+
+     .venv/bin/python scripts/validate_i18n.py    # "문제 0건"
+     node scripts/mdx_check.mjs                    # "실패 0"
+
+   (If .venv is missing: python3 -m venv .venv && .venv/bin/pip install pyyaml)
+   Open and fix any file the validator flags, then re-validate. Do NOT proceed
+   to build until both pass — the full 9-locale build in STEP 5 is the final gate.
+
+═══════════════════════════════════════════════════════════════════
+STEP 5: BUILD (9 locales) AND MIRROR INTO www
+═══════════════════════════════════════════════════════════════════
+
+Build with the npm script — do NOT use `yarn build --out-dir …`. The
+`--out-dir` form silently skips the postbuild prune (prune-locale-static.mjs
+hardcodes the build/ path), leaving dead per-locale static copies that bloat
+the output and can blow past Cloudflare Pages' file-count limit. `npm run build`
+runs the full chain in order:
+  - prebuild:  scripts/check-image-refs.mjs — FAILS the build if any post (incl.
+    the new translations) references an image/video not in static/ (catches
+    invented filenames)
+  - docusaurus build → build/  (all 9 locales, includes the STEP 4.7 translations)
+  - postbuild: scripts/prune-locale-static.mjs — removes dead per-locale static
+    copies (keeps the output near ~858MB / ~33k files instead of ballooning)
+
+Run it in the rcloneview-support directory and check the exit code DIRECTLY —
+never pipe to tail/head, which masks the real exit code:
+
+  npm run build
+  echo "build exit=$?"        # must be 0
+
+Watch the output and act on these:
+- prebuild "✘ static/ 에 없는 자산 참조 …" — a post references a missing asset.
+  Fix the reference (or add the file), then rebuild. Do NOT proceed.
+- "[WARNING] Duplicate routes found!" — STEP 4.5 missed a duplicate slug.
+  Re-run STEP 4.5, then rebuild.
+- "[ERROR]" or non-zero exit — report the error and stop. Do not deploy.
+
+Only proceed once the exit code is 0 with no duplicate-route warnings.
+
+Then mirror the fresh build into the www checkout's support/ folder. `--delete`
+makes support/ an EXACT copy of build/, so files this build dropped (a REMOVE'd
+post, replaced assets) are removed from www too:
+
+  rsync -a --delete build/ ../rcloneview_www/support/
+
+(support/ contains ONLY Docusaurus build output, so --delete is safe here.)
 
 ═══════════════════════════════════════════════════════════════════
 STEP 6: DEPLOY — PUSH BOTH REPOSITORIES
@@ -203,21 +271,25 @@ Replace {DATE} with today's date in YYYY-MM-DD format.
 
   cd ../rcloneview_www
   git checkout -b blog/deploy/${DATE}
-  git add support/
+  git add -A support/      # -A so rsync --delete removals are also staged
   git commit -m "blog: deploy auto-generated posts for ${DATE}"
   git push -u origin blog/deploy/${DATE}
 
-6-B. Push rcloneview-support (validated source .md files):
+6-B. Push rcloneview-support (validated English source + 8-locale translations):
 
   cd ../rcloneview-support
   git checkout -b blog/verified/${DATE}
-  git add blog/${DATE}-*.md
-  git commit -m "blog: verified posts for ${DATE}"
+  git add blog/${DATE}-*.md                                    # English source (fixed)
+  git add i18n/*/docusaurus-plugin-content-blog/${DATE}-*.md   # STEP 4.7 translations (8 locales)
+  git commit -m "blog: verified posts + 8-locale translations for ${DATE}"
   git push -u origin blog/verified/${DATE}
 
 NOTE: This creates a NEW branch (blog/verified/) separate from the Generator's
-branch (blog/auto/). The verified branch contains the fact-checked versions
-with any fixes applied.
+branch (blog/auto/). The verified branch contains the fact-checked English
+versions AND their STEP 4.7 translations — support is the source of truth for
+i18n, so the translations must live here (not only in the www build output).
+Every surviving post has 8 translation files (one per locale); REMOVE'd and
+deduped posts have none, so the ${DATE} glob stages exactly the survivors.
 
 NOTE on author rotation: authors are DATE-DERIVED (Generator Rule 18) and need
 no state. There is NO `blog/.rotation-state` file — do not stage or commit one.
@@ -232,16 +304,17 @@ STEP 6.5: CREATE PULL REQUESTS
 After both branches are pushed, create PRs using the GitHub MCP tool
 (mcp__github__create_pull_request). Create both PRs simultaneously.
 
-PR 1 — rcloneview-support (fact-checked source):
+PR 1 — rcloneview-support (fact-checked source + translations):
   owner: bdrive
   repo:  rcloneview-support
   head:  blog/verified/{DATE}
   base:  main
-  title: "blog: verified posts for {DATE}"
+  title: "blog: verified posts + translations for {DATE}"
   body:
     ## Summary
     - Fact-checked auto-generated blog posts for {DATE}
     - {N passed} passed, {N fixed} fixed, {N removed} removed
+    - {N surviving} posts translated into 8 locales (STEP 4.7)
 
     ## Validation Results
     {paste the validation table from Step 4}
@@ -251,6 +324,7 @@ PR 1 — rcloneview-support (fact-checked source):
 
     ## Companion PR
     Build output → bdrive/rcloneview_www branch blog/deploy/{DATE}
+    (Merge both PRs together — source+i18n here, build output there.)
 
 PR 2 — rcloneview_www (build output):
   owner: bdrive
