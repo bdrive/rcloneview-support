@@ -178,7 +178,7 @@ Example:
 After deletion, verify no duplicate slugs remain before proceeding to build.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 4.7: TRANSLATE SURVIVING POSTS INTO 8 LOCALES
+STEP 4.7: TRANSLATE SURVIVING POSTS INTO 8 LOCALES (inline)
 ═══════════════════════════════════════════════════════════════════
 
 The site is served in 9 languages. Every post that survived validation
@@ -186,33 +186,59 @@ The site is served in 9 languages. Every post that survived validation
 all 8 non-English locales, or it would appear untranslated on /support/ko/,
 /support/ja/, etc. while the rest of the blog is localized.
 
-1. Build the survivor list — today's-date files STILL present in blog/ after
-   STEP 3 (REMOVE) and STEP 4.5 (duplicate deletion):
+Do the translation INLINE with your own Read/Write tools. Do NOT use the
+Workflow tool and do NOT spawn subagents (the Workflow tool is gated behind an
+interactive approval prompt that a scheduled/unattended routine cannot pass —
+Read/Write/Bash run without prompts, so translate each file yourself).
+
+1. Survivor list — today's-date files STILL present in blog/ after STEP 3
+   (REMOVE) and STEP 4.5 (duplicate deletion):
 
      ls blog/${DATE}-*.md
 
-   Collect just the basenames (e.g. "2026-07-21-mount-koofr-on-windows.md").
    If the list is empty, skip to STEP 5.
 
-2. Capture the absolute repo path — the translation workflow writes files by
-   absolute path, so it must know where this checkout lives:
+2. For EACH surviving post AND EACH of the 8 locales
+   (ko, ja, zh-Hans, zh-Hant, de, es, fr, id):
+   - Read the English source: blog/{filename}
+   - Translate it per the RULES below
+   - Write the result to: i18n/{locale}/docusaurus-plugin-content-blog/{filename}
+     (same filename; create the file — it does not exist yet)
 
-     REPO=$(pwd)        # must be the rcloneview-support checkout root
+   That is 8 files per surviving post. Work through them post-by-post,
+   locale-by-locale until all exist.
 
-3. Run the translation batch with the Workflow tool (NOT `node`). Pass the
-   survivor basenames and the repo root:
+   TRANSLATION RULES — output must stay a valid, buildable Docusaurus post:
+   a. The written file contains ONLY the translated Markdown. No commentary.
+   b. Frontmatter (between the first pair of --- lines): translate ONLY the
+      values of "title", "description", and the human-readable strings in
+      "keywords". Keep every other key/value BYTE-IDENTICAL: slug, date,
+      authors, tags, image. Keep YAML quoting valid.
+   c. NEVER translate or alter: code blocks and inline code, URLs and link
+      targets, image paths, product names (RcloneView, rclone, NetDrive…),
+      cloud provider names, CLI commands/flags, HTML tags.
+   d. MDX import lines: rewrite paths '../src/...' → '@site/src/...'
+      (e.g. import RvCta from '@site/src/components/RvCta';). i18n files sit
+      deeper, so the relative '../src' path breaks — the alias is required.
+      Keep everything else in the import identical.
+   e. Preserve Markdown structure EXACTLY: heading hierarchy, lists, tables,
+      admonitions (:::tip etc.), the <!-- truncate --> marker, and the SAME
+      number of code blocks.
+   f. Translate link TEXT (incl. "Related Guides" item titles) but never the
+      link URL. Internal links (/howto/…, /blog/…) unchanged.
+   g. Terminology — use consistently per locale:
+      | en | ko | ja | zh-Hans | zh-Hant | de | es | fr | id |
+      |---|---|---|---|---|---|---|---|---|
+      | remote | 리모트 | リモート | 远程 | 遠端 | Remote | remoto | distant | remote |
+      | mount | 마운트 | マウント | 挂载 | 掛載 | einbinden(mount) | montar | monter | mount |
+      | sync | 동기화 | 同期 | 同步 | 同步 | Synchronisation | sincronización | synchronisation | sinkronisasi |
+      | backup | 백업 | バックアップ | 备份 | 備份 | Backup | copia de seguridad | sauvegarde | pencadangan |
+      | transfer | 전송 | 転送 | 传输 | 傳輸 | Übertragung | transferencia | transfert | transfer |
+      | cloud storage | 클라우드 스토리지 | クラウドストレージ | 云存储 | 雲端儲存 | Cloud-Speicher | almacenamiento en la nube | stockage cloud | penyimpanan cloud |
+      (Chinese: zh-Hans = Simplified, zh-Hant = Traditional.)
+      Do NOT add or remove content; natural technical tone for native readers.
 
-     Workflow({
-       scriptPath: "scripts/blog-i18n-batch.workflow.js",
-       args: { "posts": ["<basename1>.md", "<basename2>.md"], "root": "<REPO>" }
-     })
-
-   It spawns a Sonnet translator per (post × locale) and writes each
-   i18n/{locale}/docusaurus-plugin-content-blog/{basename}. Read the returned
-   summary: `failed` MUST be 0. If any pair failed, re-run the Workflow for the
-   missing posts before continuing.
-
-4. Validate the translations (I18N_RUNBOOK_ko.md 2장 ③, steps 1-3):
+3. Validate the translations (I18N_RUNBOOK_ko.md 2장 ③, steps 1-3):
 
      .venv/bin/python scripts/validate_i18n.py    # "문제 0건"
      node scripts/mdx_check.mjs                    # "실패 0"
@@ -220,6 +246,10 @@ all 8 non-English locales, or it would appear untranslated on /support/ko/,
    (If .venv is missing: python3 -m venv .venv && .venv/bin/pip install pyyaml)
    Open and fix any file the validator flags, then re-validate. Do NOT proceed
    to build until both pass — the full 9-locale build in STEP 5 is the final gate.
+
+(For LOCAL, human-run retroactive translation of many old posts, the parallel
+Sonnet batch scripts/blog-i18n-batch.workflow.js is still available via the
+Workflow tool — but a routine must use the inline method above.)
 
 ═══════════════════════════════════════════════════════════════════
 STEP 5: BUILD (9 locales) AND MIRROR INTO www
