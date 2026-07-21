@@ -178,6 +178,50 @@ Example:
 After deletion, verify no duplicate slugs remain before proceeding to build.
 
 ═══════════════════════════════════════════════════════════════════
+STEP 4.7: TRANSLATE SURVIVING POSTS INTO 8 LOCALES
+═══════════════════════════════════════════════════════════════════
+
+The site is served in 9 languages. Every post that survived validation
+(PASS or FIX — NOT REMOVE, NOT deleted as a duplicate) must be translated into
+all 8 non-English locales, or it would appear untranslated on /support/ko/,
+/support/ja/, etc. while the rest of the blog is localized.
+
+1. Build the survivor list — today's-date files STILL present in blog/ after
+   STEP 3 (REMOVE) and STEP 4.5 (duplicate deletion):
+
+     ls blog/${DATE}-*.md
+
+   Collect just the basenames (e.g. "2026-07-21-mount-koofr-on-windows.md").
+   If the list is empty, skip to STEP 5.
+
+2. Capture the absolute repo path — the translation workflow writes files by
+   absolute path, so it must know where this checkout lives:
+
+     REPO=$(pwd)        # must be the rcloneview-support checkout root
+
+3. Run the translation batch with the Workflow tool (NOT `node`). Pass the
+   survivor basenames and the repo root:
+
+     Workflow({
+       scriptPath: "scripts/blog-i18n-batch.workflow.js",
+       args: { "posts": ["<basename1>.md", "<basename2>.md"], "root": "<REPO>" }
+     })
+
+   It spawns a Sonnet translator per (post × locale) and writes each
+   i18n/{locale}/docusaurus-plugin-content-blog/{basename}. Read the returned
+   summary: `failed` MUST be 0. If any pair failed, re-run the Workflow for the
+   missing posts before continuing.
+
+4. Validate the translations (I18N_RUNBOOK_ko.md 2장 ③, steps 1-3):
+
+     .venv/bin/python scripts/validate_i18n.py    # "문제 0건"
+     node scripts/mdx_check.mjs                    # "실패 0"
+
+   (If .venv is missing: python3 -m venv .venv && .venv/bin/pip install pyyaml)
+   Open and fix any file the validator flags, then re-validate. Do NOT proceed
+   to build until both pass — the full 9-locale build in STEP 5 is the final gate.
+
+═══════════════════════════════════════════════════════════════════
 STEP 5: BUILD
 ═══════════════════════════════════════════════════════════════════
 
