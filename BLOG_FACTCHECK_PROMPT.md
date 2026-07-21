@@ -282,13 +282,19 @@ Watch the output and act on these:
 
 Only proceed once the exit code is 0 with no duplicate-route warnings.
 
-Then mirror the fresh build into the www checkout's support/ folder. `--delete`
-makes support/ an EXACT copy of build/, so files this build dropped (a REMOVE'd
-post, replaced assets) are removed from www too:
+Then mirror the fresh build into the www checkout's support/ folder — it must
+become an EXACT copy of build/, so files this build dropped (a REMOVE'd post,
+replaced assets) are removed from www too.
 
-  rsync -a --delete build/ ../rcloneview_www/support/
+The routine container does NOT have rsync (and cannot install it — no network).
+support/ contains ONLY Docusaurus build output, so replace the folder wholesale:
 
-(support/ contains ONLY Docusaurus build output, so --delete is safe here.)
+  rm -rf ../rcloneview_www/support
+  cp -a build ../rcloneview_www/support
+
+(This reproduces `rsync -a --delete build/ support/`: old support/ is deleted,
+then the fresh build is copied in its place. STEP 6-A's `git add -A support/`
+then stages the adds AND deletes.)
 
 ═══════════════════════════════════════════════════════════════════
 STEP 6: DEPLOY — PUSH BOTH REPOSITORIES
@@ -301,7 +307,7 @@ Replace {DATE} with today's date in YYYY-MM-DD format.
 
   cd ../rcloneview_www
   git checkout -b blog/deploy/${DATE}
-  git add -A support/      # -A so rsync --delete removals are also staged
+  git add -A support/      # -A so the folder-replace (rm+cp) removals are also staged
   git commit -m "blog: deploy auto-generated posts for ${DATE}"
   git push -u origin blog/deploy/${DATE}
 
