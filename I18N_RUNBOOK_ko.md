@@ -121,7 +121,7 @@ git commit -m "i18n: translate N more blog posts into all 8 locales (batch X)"
 1. 태그는 `blog/tags.yml`에 정의된 소문자 키만 사용
 2. 내부 링크는 baseUrl 없이 `/howto/...`, `/blog/...` 형태
 3. MDX import는 `@site/src/...` 별칭 사용
-4. 글 발행 시 8로케일 번역을 같은 PR에 포함 — **구현됨**: Fact-checker STEP 4.7 이 검증 통과 글을 `scripts/blog-i18n-batch.workflow.js`(Workflow 도구, `{posts, root}`)로 번역하고 2장 ③ 검증을 돈다. (남은 작업: 빌드 명령을 `npm run build`+복사로 교체해 프룬 적용, verified 브랜치에 `i18n/` 커밋 추가 — 계획 2·3단계)
+4. 글 발행 시 8로케일 번역을 같은 PR에 포함 — **구현됨**: Fact-checker STEP 4.7 이 검증 통과 글을 `scripts/blog-i18n-batch.workflow.js`(Workflow 도구, `{posts, root}`)로 번역하고 2장 ③ 검증을 돈다. STEP 5 빌드는 `npm run build`(prebuild 이미지검사 + postbuild 프룬) 후 `rsync -a --delete build/ ../rcloneview_www/support/` 로 반영 — 구 `yarn build --out-dir`(프룬 no-op) 교체 완료. (남은 작업: verified 브랜치에 `i18n/` 커밋 추가 — 계획 3단계)
 5. 이미지·비디오는 static/에 실재하는 파일만 참조 (template.md 카탈로그는 2026-07-18 실측 정리됨). 발행 전 `npm run check:images`로 확인 — 없는 파일명을 지어내면 빌드가 실패한다
 
 ## 6. 배포 (작업 #6 — 종결: 기존 Pages 방식 유지)

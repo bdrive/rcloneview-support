@@ -222,19 +222,43 @@ all 8 non-English locales, or it would appear untranslated on /support/ko/,
    to build until both pass — the full 9-locale build in STEP 5 is the final gate.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 5: BUILD
+STEP 5: BUILD (9 locales) AND MIRROR INTO www
 ═══════════════════════════════════════════════════════════════════
 
-Run the build in the rcloneview-support directory:
+Build with the npm script — do NOT use `yarn build --out-dir …`. The
+`--out-dir` form silently skips the postbuild prune (prune-locale-static.mjs
+hardcodes the build/ path), leaving dead per-locale static copies that bloat
+the output and can blow past Cloudflare Pages' file-count limit. `npm run build`
+runs the full chain in order:
+  - prebuild:  scripts/check-image-refs.mjs — FAILS the build if any post (incl.
+    the new translations) references an image/video not in static/ (catches
+    invented filenames)
+  - docusaurus build → build/  (all 9 locales, includes the STEP 4.7 translations)
+  - postbuild: scripts/prune-locale-static.mjs — removes dead per-locale static
+    copies (keeps the output near ~858MB / ~33k files instead of ballooning)
 
-  yarn build --out-dir ../rcloneview_www/support
+Run it in the rcloneview-support directory and check the exit code DIRECTLY —
+never pipe to tail/head, which masks the real exit code:
 
-Watch the build output carefully. Docusaurus build may show WARNINGS (not errors) that still need action:
+  npm run build
+  echo "build exit=$?"        # must be 0
 
-- "[WARNING] Duplicate routes found!" — This means Step 4.5 missed something. Stop, re-run Step 4.5 to find and remove the remaining duplicates, then rebuild.
-- "[ERROR]" or non-zero exit code — Report the error and stop. Do not proceed to deployment.
+Watch the output and act on these:
+- prebuild "✘ static/ 에 없는 자산 참조 …" — a post references a missing asset.
+  Fix the reference (or add the file), then rebuild. Do NOT proceed.
+- "[WARNING] Duplicate routes found!" — STEP 4.5 missed a duplicate slug.
+  Re-run STEP 4.5, then rebuild.
+- "[ERROR]" or non-zero exit — report the error and stop. Do not deploy.
 
-Only proceed to Step 6 if the build completes with NO duplicate route warnings.
+Only proceed once the exit code is 0 with no duplicate-route warnings.
+
+Then mirror the fresh build into the www checkout's support/ folder. `--delete`
+makes support/ an EXACT copy of build/, so files this build dropped (a REMOVE'd
+post, replaced assets) are removed from www too:
+
+  rsync -a --delete build/ ../rcloneview_www/support/
+
+(support/ contains ONLY Docusaurus build output, so --delete is safe here.)
 
 ═══════════════════════════════════════════════════════════════════
 STEP 6: DEPLOY — PUSH BOTH REPOSITORIES
@@ -247,7 +271,7 @@ Replace {DATE} with today's date in YYYY-MM-DD format.
 
   cd ../rcloneview_www
   git checkout -b blog/deploy/${DATE}
-  git add support/
+  git add -A support/      # -A so rsync --delete removals are also staged
   git commit -m "blog: deploy auto-generated posts for ${DATE}"
   git push -u origin blog/deploy/${DATE}
 
