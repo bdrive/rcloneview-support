@@ -2,33 +2,10 @@ import React from "react";
 import Translate from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { useAlternatePageUtils } from "@docusaurus/theme-common/internal";
 import "../css/footer.css";
 
-// 언어 선택 — 푸터 하단 오른쪽 (netdrive.net 패턴). navbar 에서 이동.
-function LocaleSelect() {
-  const {
-    i18n: { currentLocale, locales, localeConfigs },
-  } = useDocusaurusContext();
-  const alternatePageUtils = useAlternatePageUtils();
-  if (locales.length <= 1) return null;
-  return (
-    <select
-      value={currentLocale}
-      aria-label="Select language"
-      style={{ background: "transparent", border: "none", cursor: "pointer", color: "#6c757d", font: "inherit", marginLeft: "1rem" }}
-      onChange={(e) => {
-        window.location.href = alternatePageUtils.createUrl({ locale: e.target.value, fullyQualified: false });
-      }}
-    >
-      {locales.map((locale) => (
-        <option key={locale} value={locale} style={{ color: "#333" }}>
-          {localeConfigs[locale].label}
-        </option>
-      ))}
-    </select>
-  );
-}
+// 언어 선택기는 상단 네비바(CustomNavbar)로 이동함 (2026-07, www 와 통일).
+// 푸터에는 더 이상 두지 않는다.
 
 export default function Footer() {
   const {
@@ -63,7 +40,6 @@ export default function Footer() {
               <a className="link-dark text-decoration-none" href="mailto:rcloneview@bdrive.com" style={{ color: "#6c757d" }}>
                 <Translate id="footer.contactSupport" description="Footer link">Contact Support</Translate>
               </a>
-              <LocaleSelect />
             </div>
           </div>
         </div>
