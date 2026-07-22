@@ -2,33 +2,10 @@ import React from "react";
 import Translate from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { useAlternatePageUtils } from "@docusaurus/theme-common/internal";
 import "../css/footer.css";
 
-// 언어 선택 — 푸터 하단 오른쪽 (netdrive.net 패턴). navbar 에서 이동.
-function LocaleSelect() {
-  const {
-    i18n: { currentLocale, locales, localeConfigs },
-  } = useDocusaurusContext();
-  const alternatePageUtils = useAlternatePageUtils();
-  if (locales.length <= 1) return null;
-  return (
-    <select
-      value={currentLocale}
-      aria-label="Select language"
-      style={{ background: "transparent", border: "none", cursor: "pointer", color: "#6c757d", font: "inherit", marginLeft: "1rem" }}
-      onChange={(e) => {
-        window.location.href = alternatePageUtils.createUrl({ locale: e.target.value, fullyQualified: false });
-      }}
-    >
-      {locales.map((locale) => (
-        <option key={locale} value={locale} style={{ color: "#333" }}>
-          {localeConfigs[locale].label}
-        </option>
-      ))}
-    </select>
-  );
-}
+// 언어 선택기는 상단 네비바(CustomNavbar)로 이동함 (2026-07, www 와 통일).
+// 푸터에는 더 이상 두지 않는다.
 
 export default function Footer() {
   const {
@@ -40,11 +17,13 @@ export default function Footer() {
     <>
       <footer className="footer py-4" style={{ background: "#fff", fontFamily: "Poppins", fontSize: "0.9rem" }}>
         <div className="container">
-          <div className="footerMobile" style={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
-            <div className="col-lg-6 text-lg-start" style={{ color: "#6c757d" }}>
+          <div className="footerMobile" style={{ display: "flex", alignItems: "center", flexWrap: "wrap", columnGap: "1rem", rowGap: "0.5rem" }}>
+            {/* col-lg-* 고정폭 제거 — 긴 번역(독일어 등)이 col-lg-5(41%) 를 넘겨
+                2줄로 접히던 문제 해소. space-between(footer.css) 로 좌/우 배치. */}
+            <div className="text-lg-start" style={{ color: "#6c757d" }}>
               Copyright &copy; Bdrive lnc. All rights reserved.
             </div>
-            <div className="col-lg-5 text-lg-end">
+            <div className="text-lg-end">
               <a className="link-dark text-decoration-none me-3" href={wwwUrl("/src/about-us.html")} style={{ color: "#6c757d" }}>
                 <Translate id="footer.aboutUs" description="Footer link">About Us</Translate>
               </a>
@@ -63,7 +42,6 @@ export default function Footer() {
               <a className="link-dark text-decoration-none" href="mailto:rcloneview@bdrive.com" style={{ color: "#6c757d" }}>
                 <Translate id="footer.contactSupport" description="Footer link">Contact Support</Translate>
               </a>
-              <LocaleSelect />
             </div>
           </div>
         </div>
