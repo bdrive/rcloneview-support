@@ -653,12 +653,16 @@
   z-index: 99999 !important;
 }
 /* ── 언어 선택 드롭다운 (상단 네비바, www 와 동일 시각) ────────────────── */
-.lang-nav-item { position: relative; display: flex; align-items: center; }
+/* 상단정렬(flex-start): 일반 nav-link 는 늘어난 li 상단에 흐르므로(중심 y≈26),
+   토글도 li 중앙(center)이 아닌 상단에 둬야 세로 정렬이 맞는다. */
+.lang-nav-item { position: relative; display: flex; align-items: flex-start; }
 .lang-toggle {
   display: flex; align-items: center; gap: 6px; cursor: pointer;
-  /* #mainNav .nav-link 와 동일한 폰트·세로 박스로 다른 메뉴와 정렬 맞춤 */
-  font-family: "Poppins", sans-serif; font-size: 18.4px; line-height: 1.5; color: #fff;
-  letter-spacing: .0625em; background: none; border: none; margin: 0 0.5rem; padding: 0.5rem 0;
+  /* #mainNav .nav-link 와 동일한 폰트·라인박스로 다른 메뉴와 정렬 일치.
+     line-height 는 nav-link 와 같은 1.65 (1.5 이면 박스가 짧아 미세 어긋남),
+     세로 padding 은 0 — 0.5rem 이면 박스가 44px 로 커져 중심이 7px 내려갔음. */
+  font-family: "Poppins", sans-serif; font-size: 18.4px; line-height: 1.65; color: #fff;
+  letter-spacing: .0625em; background: none; border: none; margin: 0 0.5rem; padding: 0;
   white-space: nowrap;
 }
 .lang-toggle:hover { color: #fff; opacity: .85; }
