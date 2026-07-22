@@ -17,11 +17,13 @@ export default function Footer() {
     <>
       <footer className="footer py-4" style={{ background: "#fff", fontFamily: "Poppins", fontSize: "0.9rem" }}>
         <div className="container">
-          <div className="footerMobile" style={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
-            <div className="col-lg-6 text-lg-start" style={{ color: "#6c757d" }}>
+          <div className="footerMobile" style={{ display: "flex", alignItems: "center", flexWrap: "wrap", columnGap: "1rem", rowGap: "0.5rem" }}>
+            {/* col-lg-* 고정폭 제거 — 긴 번역(독일어 등)이 col-lg-5(41%) 를 넘겨
+                2줄로 접히던 문제 해소. space-between(footer.css) 로 좌/우 배치. */}
+            <div className="text-lg-start" style={{ color: "#6c757d" }}>
               Copyright &copy; Bdrive lnc. All rights reserved.
             </div>
-            <div className="col-lg-5 text-lg-end">
+            <div className="text-lg-end">
               <a className="link-dark text-decoration-none me-3" href={wwwUrl("/src/about-us.html")} style={{ color: "#6c757d" }}>
                 <Translate id="footer.aboutUs" description="Footer link">About Us</Translate>
               </a>

@@ -656,8 +656,10 @@
 .lang-nav-item { position: relative; display: flex; align-items: center; }
 .lang-toggle {
   display: flex; align-items: center; gap: 6px; cursor: pointer;
-  font-family: "Poppins", sans-serif; font-size: 1rem; color: #fff;
-  letter-spacing: .0625em; background: none; border: none; padding: .5rem; white-space: nowrap;
+  /* #mainNav .nav-link 와 동일한 폰트·세로 박스로 다른 메뉴와 정렬 맞춤 */
+  font-family: "Poppins", sans-serif; font-size: 18.4px; line-height: 1.5; color: #fff;
+  letter-spacing: .0625em; background: none; border: none; margin: 0 0.5rem; padding: 0.5rem 0;
+  white-space: nowrap;
 }
 .lang-toggle:hover { color: #fff; opacity: .85; }
 .lang-toggle .lang-globe { width: 18px; height: 18px; flex: none; }
