@@ -46,7 +46,7 @@ OneDrive connects through a standard browser-based OAuth login in RcloneView's N
 
 The Sync wizard's first step is where the source (Zoho WorkDrive folder) and destination (OneDrive folder) get selected, along with a job name and sync direction. One-way sync — modifying only the destination — is the stable, official mode and the right choice for a backup-style job where WorkDrive stays the source of truth. Step 2 covers transfer concurrency and equality checking, useful to tune down if WorkDrive's API responds slowly under heavy parallel requests. Step 3's filtering settings let you scope the job to just the folders or file types that matter, using predefined filters for documents and media or custom exclusion rules like `/.tmp/*`.
 
-Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license, and the same applies here — syncing between Zoho WorkDrive and OneDrive requires no license upgrade, since 1:N sync and basic Sync & Job Management are both included in the FREE tier.
+Syncing between Zoho WorkDrive and OneDrive requires no license upgrade, since 1:N sync and basic Sync & Job Management are both included in the FREE tier.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Configuring a sync job from Zoho WorkDrive to OneDrive" class="img-large img-center" />
 
