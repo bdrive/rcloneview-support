@@ -4,8 +4,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Translate from "@docusaurus/Translate";
 import { useAlternatePageUtils } from "@docusaurus/theme-common/internal";
-import { DocSearch } from "@docsearch/react";
-import "@docsearch/css";
+import LocalizedDocSearch from "./LocalizedDocSearch";
 
 import "../css/navbar.css";
 
@@ -110,10 +109,7 @@ export default function CustomNavbar() {
 
           {/* 🔍 DocSearch 모바일용 – MENU 버튼 왼쪽           */}
           <div className="mr-2" id="mobile-docsearch">
-            <DocSearch
-              appId="UGRR3WR5TO"
-              indexName="rcloneview-support"
-              apiKey="1bb2a6e53b0388ab8305806bd89350e2"
+            <LocalizedDocSearch
               placeholder=""
               translations={{
                 button: {
@@ -139,7 +135,7 @@ export default function CustomNavbar() {
               {/* 🔍 DocSearch 버튼 – Plus 앞에 위치 */}
               <li className="nav-item">
                 <div className="docsearch-desktop-only">
-                  <DocSearch appId="UGRR3WR5TO" indexName="rcloneview-support" apiKey="1bb2a6e53b0388ab8305806bd89350e2" />
+                  <LocalizedDocSearch />
                 </div>
               </li>
 
