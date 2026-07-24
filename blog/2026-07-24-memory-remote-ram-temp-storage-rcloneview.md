@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Need a scratch space that disappears the moment you close it? RcloneView's **Memory** virtual remote gives you RAM-based storage for testing sync jobs and staging transfers without touching disk.
 
-Among RcloneView's virtual remotes — Alias, Crypt, Cache, Chunker, Combine, Union, Hasher, and Compress — Memory stands out as the simplest: it stores data entirely in RAM for the life of the session, with nothing written to disk and nothing left behind on exit. That makes it a practical tool for testing sync configurations, validating filter rules, or staging small transfers before they hit a real cloud destination. This guide covers when and how to use it inside RcloneView.
+Among RcloneView's virtual remotes — Alias, Crypt, Cache, Chunker, Combine, Union, Hasher, and Compress — Memory stands apart: it stores data entirely in RAM for the life of the session, with nothing written to disk and nothing left behind on exit. That makes it a practical tool for testing sync configurations, validating filter rules, or staging small transfers before they hit a real cloud destination. This guide covers when and how to use it inside RcloneView.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 

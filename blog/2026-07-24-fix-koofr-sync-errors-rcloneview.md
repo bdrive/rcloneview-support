@@ -71,7 +71,7 @@ If files appear copied but Koofr shows different sizes or timestamps than the so
 
 **How to fix it:**
 
-Run a Dry Run before the real sync to preview exactly what will be copied or deleted — this catches direction mistakes before they touch your data. Then use Folder Compare between the source and Koofr remote to confirm both sides match. Unlike mount-only tools, RcloneView also syncs and compares folders side by side on the FREE license, so you can verify results without leaving the app.
+Run a Dry Run before the real sync to preview exactly what will be copied or deleted — this catches direction mistakes before they touch your data. Then use Folder Compare between the source and Koofr remote to confirm both sides match. RcloneView's sync and Folder Compare tools are both available on the FREE license, so you can verify results without leaving the app.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparing source and Koofr folders in RcloneView" class="img-large img-center" />
 
