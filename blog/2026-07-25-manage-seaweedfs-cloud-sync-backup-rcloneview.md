@@ -2,7 +2,7 @@
 slug: manage-seaweedfs-cloud-sync-backup-rcloneview
 title: "Manage SeaweedFS Storage — Sync and Backup Files with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Connect self-hosted SeaweedFS object storage to RcloneView for cross-platform mounting, syncing, and backup — no CLI required."
 keywords:
   - SeaweedFS RcloneView
