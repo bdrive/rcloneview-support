@@ -71,8 +71,11 @@ function hasStagedChanges(repoDir) {
   try {
     git(repoDir, ['diff', '--cached', '--quiet']);
     return false; // 종료코드 0 = 차이 없음
-  } catch {
-    return true;
+  } catch (err) {
+    // --quiet 은 차이가 있을 때만 1 로 끝난다. 그 밖의 실패(저장소 손상, ENOBUFS 등)를
+    // "변경 있음"으로 삼키면 헛커밋 + force-push + PR 갱신으로 이어진다.
+    if (err.status === 1) return true;
+    throw err;
   }
 }
 
@@ -102,8 +105,11 @@ function main() {
   const a = parseArgs(process.argv.slice(2));
   for (const k of ['build', 'repo', 'branch', 'message']) {
     if (!a[k]) {
+      // process.exit 은 파이프로 연결된 stderr 의 쓰기 대기분을 잘라낼 수 있다.
+      // Actions 에서는 그게 곧 원인을 알려주는 ::error:: 주석이 사라진다는 뜻이다.
       console.error(`::error::--${k} 인자가 없다`);
-      process.exit(1);
+      process.exitCode = 1;
+      return;
     }
   }
 
@@ -117,7 +123,8 @@ function main() {
     });
   } catch (err) {
     console.error(`::error::${err.message}`);
-    process.exit(1);
+    process.exitCode = 1;
+    return;
   }
 
   const line = `changed=${result.changed}\ncount=${result.count}\n`;

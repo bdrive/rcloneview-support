@@ -6,8 +6,11 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
 import { stageBuild, sync, verifyCounts } from './sync-www-support.mjs';
+
+const cli = fileURLToPath(new URL('./sync-www-support.mjs', import.meta.url));
 
 function tmpdir() {
   return fs.mkdtempSync(path.join(os.tmpdir(), 'sync-www-'));
@@ -141,6 +144,25 @@ test('파일 수가 어긋나면 verifyCounts 가 예외를 던진다', () => {
   execFileSync('git', ['-C', repo, 'rm', '--cached', '-q', 'support/ko/index.html']);
 
   assert.throws(() => verifyCounts(build, repo), /파일 수 불일치 — build=2 support=1/);
+});
+
+test('CLI 가 GITHUB_OUTPUT 파일에 changed 와 count 를 쓴다', () => {
+  // 이 쓰기가 깨지면 steps.sync.outputs.changed 가 비어 push 와 PR 스텝이 둘 다
+  // 건너뛰어지고, 잡은 초록으로 끝난다 — 배포도 알림도 없는 최악의 실패 모양이다.
+  const build = makeBuild({ 'index.html': 'A', 'ko/index.html': 'B' });
+  const repo = makeRepo();
+  const outFile = path.join(tmpdir(), 'github-output');
+  fs.writeFileSync(outFile, '');
+
+  execFileSync(
+    process.execPath,
+    [cli, '--build', build, '--repo', repo, '--branch', 'deploy/support', '--message', 'CLI 커밋'],
+    { encoding: 'utf8', env: { ...process.env, GITHUB_OUTPUT: outFile } },
+  );
+
+  const written = fs.readFileSync(outFile, 'utf8');
+  assert.match(written, /^changed=true$/m);
+  assert.match(written, /^count=2$/m);
 });
 
 test('ls-files 출력이 1MiB 를 넘는 규모에서도 sync 가 끝난다', () => {
