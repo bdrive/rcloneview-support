@@ -101,3 +101,13 @@ test('push 와 PR 생성은 변경이 있을 때만 돈다', () => {
   assert.ok(bodies.includes('gh pr create'));
   assert.ok(bodies.includes('gh pr edit'));
 });
+
+test('실패 알림 스텝이 있고 기본 GITHUB_TOKEN 을 쓴다', () => {
+  const notify = job.steps.find((s) => String(s.if ?? '').includes('failure()'));
+  assert.ok(notify, '실패 알림 스텝이 있어야 한다');
+  assert.ok(String(notify.if).includes("github.event_name != 'pull_request'"));
+  assert.equal(notify.env.GH_TOKEN, '${{ github.token }}');
+  assert.ok(notify.run.includes('gh issue create'));
+  assert.ok(notify.run.includes('gh issue comment'), '중복 이슈 대신 코멘트를 달아야 한다');
+  assert.ok(notify.run.includes('gh label create'), '라벨이 없으면 issue create 가 실패한다');
+});

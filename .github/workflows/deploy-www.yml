@@ -126,3 +126,21 @@ jobs:
           else
             gh pr edit "$PR" -R bdrive/rcloneview_www --body-file body.md
           fi
+
+      - name: Report failure
+        if: failure() && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          gh label create deploy-failure --force -c B60205 -d "support 배포 자동화 실패"
+          ISSUE=$(gh issue list -R "${GITHUB_REPOSITORY}" --label deploy-failure \
+                    --state open --json number --jq '.[0].number // empty')
+          if [ -z "$ISSUE" ]; then
+            gh issue create -R "${GITHUB_REPOSITORY}" --label deploy-failure \
+              --title "support 배포 자동화 실패" \
+              --body "커밋 ${GITHUB_SHA} 처리 중 실패했습니다. 실행 로그: ${RUN_URL}"
+          else
+            gh issue comment "$ISSUE" -R "${GITHUB_REPOSITORY}" \
+              --body "커밋 ${GITHUB_SHA} 에서 다시 실패했습니다: ${RUN_URL}"
+          fi
