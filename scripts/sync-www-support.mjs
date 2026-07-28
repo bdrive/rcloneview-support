@@ -8,8 +8,16 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
+// execFileSync 의 기본 maxBuffer 는 1MiB 인데 이 규모에서는 턱없이 모자란다.
+// 실측(2026-07-28): 실제 www 에서 `git ls-files support` 출력이 1,666,095 바이트(33,609줄)로
+// 기본값의 1.59배라 countStaged 가 매 실행마다 ENOBUFS 로 죽는다.
+// `git commit` 도 변경 경로마다 create/delete mode 한 줄을 찍어 전체 교체 시 2MB 를 넘는다.
+// 호출 지점마다 따로 챙기지 않도록 여기서 한 번에 올린다.
 export function git(repoDir, args) {
-  return execFileSync('git', ['-C', repoDir, ...args], { encoding: 'utf8' });
+  return execFileSync('git', ['-C', repoDir, ...args], {
+    encoding: 'utf8',
+    maxBuffer: 256 * 1024 * 1024,
+  });
 }
 
 // 브랜치를 현재 HEAD(= www main) 기준으로 새로 만들고 support/ 를 교체한다.

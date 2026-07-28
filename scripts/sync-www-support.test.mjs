@@ -143,6 +143,37 @@ test('파일 수가 어긋나면 verifyCounts 가 예외를 던진다', () => {
   assert.throws(() => verifyCounts(build, repo), /파일 수 불일치 — build=2 support=1/);
 });
 
+test('ls-files 출력이 1MiB 를 넘는 규모에서도 sync 가 끝난다', () => {
+  // 실측(2026-07-28): 실제 www 에서 `git ls-files support` 출력은 1,666,095 바이트로
+  // execFileSync 기본 maxBuffer(1MiB)를 1.59배 넘겨 countStaged 가 ENOBUFS 로 죽었다.
+  // 여기서는 파일 33,609개 대신 긴 경로로 같은 임계값을 넘겨 같은 조건을 만든다.
+  const seg = 'a'.repeat(150);
+  const dir = `${seg}/${seg}/${seg}`;
+  const files = {};
+  for (let i = 0; i < 2600; i += 1) {
+    files[`${dir}/page-${i}.html`] = 'x';
+  }
+  const build = makeBuild(files);
+  const repo = makeRepo();
+
+  const result = sync({
+    buildDir: build,
+    repoDir: repo,
+    branch: 'deploy/support',
+    message: '대용량 커밋',
+  });
+
+  assert.equal(result.changed, true);
+  assert.equal(result.count, 2600);
+
+  // 이 테스트가 조용히 회귀 방지 능력을 잃지 않도록 임계값 자체를 확인한다
+  const raw = execFileSync('git', ['-C', repo, 'ls-files', 'support'], {
+    encoding: 'utf8',
+    maxBuffer: 256 * 1024 * 1024,
+  });
+  assert.ok(raw.length > 1024 * 1024, `ls-files 출력이 1MiB 이하다: ${raw.length}`);
+});
+
 test('변경이 없으면 changed=false 이고 커밋이 늘지 않는다', () => {
   const build = makeBuild({ 'index.html': 'A' });
   const repo = makeRepo();
