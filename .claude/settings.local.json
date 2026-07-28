@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git branch:*)",
+      "Bash(gh pr:*)",
+      "Bash(cp \"/var/folders/9m/jknqqpmn00119s2fyzk4wm840000gn/T/clipboard-2026-03-27-122802-2FDC23D7.png\" /Users/ysh/work/rcloneview-support/static/images/en/tutorials/web-frontend/web-server-settings.png)",
+      "Bash(cp \"/var/folders/9m/jknqqpmn00119s2fyzk4wm840000gn/T/clipboard-2026-03-27-122807-24501129.png\" /Users/ysh/work/rcloneview-support/static/images/en/tutorials/web-frontend/web-server-running.png)",
+      "Bash(cp \"/var/folders/9m/jknqqpmn00119s2fyzk4wm840000gn/T/clipboard-2026-03-27-122922-ED55124A.png\" /Users/ysh/work/rcloneview-support/static/images/en/tutorials/web-frontend/web-frontend-explorer.png)"
+    ]
+  }
+}
