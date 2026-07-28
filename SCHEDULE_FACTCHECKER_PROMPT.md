@@ -3,7 +3,7 @@
 > **Schedule:** Daily 10:00 AM (Generator 완료 후 1시간 뒤)
 > **Model:** Opus 4.7
 > **Folder:** C:\workspace\bdrive\source\rcloneview-support
-> **Role:** 생성된 블로그 독립 검증 + 빌드 + 배포
+> **Role:** 생성된 블로그 독립 검증 + 빌드 + 소스 푸시
 
 ---
 
