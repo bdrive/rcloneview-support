@@ -3,7 +3,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
+import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
 
@@ -21,7 +23,9 @@ test('트리거가 push(main), pull_request(main), workflow_dispatch 다', () =>
 });
 
 test('동시성 그룹이 잡혀 있고 이전 실행을 취소한다', () => {
-  assert.equal(wf.concurrency.group, 'deploy-support');
+  // 그룹 문자열 자체는 이벤트별로 갈라지므로 고정값으로 못 박지 않는다
+  assert.equal(typeof wf.concurrency.group, 'string');
+  assert.ok(wf.concurrency.group.length > 0, '동시성 그룹이 비어 있다');
   assert.equal(wf.concurrency['cancel-in-progress'], true);
 });
 
@@ -100,6 +104,38 @@ test('push 와 PR 생성은 변경이 있을 때만 돈다', () => {
   assert.ok(bodies.includes('push --force origin deploy/support'));
   assert.ok(bodies.includes('gh pr create'));
   assert.ok(bodies.includes('gh pr edit'));
+});
+
+test('변경이 없으면 열린 PR 에 stale 표시를 남긴다', () => {
+  // hasStagedChanges 는 인덱스를 www main 과 비교하지 열린 PR 과 비교하지 않는다.
+  // 그래서 changed=false 여도 이전 실행이 남긴 PR 이 낡은 채로 열려 있을 수 있다.
+  const stale = job.steps.find((s) =>
+    String(s.if ?? '').includes("steps.sync.outputs.changed == 'false'"),
+  );
+  assert.ok(stale, 'changed=false 로 게이트된 스텝이 있어야 한다');
+  assert.ok(String(stale.if).includes("github.event_name != 'pull_request'"));
+  assert.ok(stale.run.includes('gh pr list'), '열린 PR 을 먼저 찾아야 한다');
+  assert.ok(stale.run.includes('.[0].number // empty'), '기존 PR 스텝과 같은 관용구를 쓴다');
+  assert.ok(stale.run.includes('gh pr comment'), '코멘트로 stale 표시를 남겨야 한다');
+});
+
+test('모든 run 블록이 bash 문법 검사를 통과한다', () => {
+  // 구조 단언으로는 heredoc 이나 따옴표 깨짐이 보이지 않는다
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'wf-lint-'));
+  const runs = job.steps.filter((s) => s.run);
+  assert.ok(runs.length > 0, 'run 블록이 하나는 있어야 한다');
+
+  runs.forEach((s, i) => {
+    const f = path.join(dir, `step-${i}.sh`);
+    fs.writeFileSync(f, s.run);
+
+    const r = spawnSync('bash', ['-n', f], { encoding: 'utf8' });
+    const label = s.name ?? s.uses;
+    assert.equal(r.status, 0, `bash 문법 오류 — ${label}: ${r.stderr}`);
+    // 끝나지 않은 heredoc 은 bash -n 이 경고만 하고 종료코드 0 으로 끝난다.
+    // 종료코드만 보면 정작 heredoc 회귀를 놓치므로 stderr 도 비어 있어야 한다.
+    assert.equal(r.stderr, '', `bash 경고 — ${label}: ${r.stderr}`);
+  });
 });
 
 test('실패 알림 스텝이 있고 기본 GITHUB_TOKEN 을 쓴다', () => {
