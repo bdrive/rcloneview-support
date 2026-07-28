@@ -286,7 +286,7 @@ rcloneview_www/support/ 를 교체하는 PR 을 자동으로 만든다.
 STEP 6: PUSH VERIFIED SOURCE
 ═══════════════════════════════════════════════════════════════════
 
-After successful build, commit and push changes to both repositories.
+After successful build, commit and push the verified source.
 Replace {DATE} with today's date in YYYY-MM-DD format.
 
 6. Push rcloneview-support (validated English source + 8-locale translations):
@@ -312,13 +312,13 @@ its own date. Just verify the surviving posts use the date-correct authors
 (Guideline Section 7 author order check) and FIX the `authors:` field if not.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 6.5: CREATE PULL REQUESTS
+STEP 6.5: CREATE PULL REQUEST
 ═══════════════════════════════════════════════════════════════════
 
-After both branches are pushed, create PRs using the GitHub MCP tool
-(mcp__github__create_pull_request). Create the PR.
+After the branch is pushed, create the PR using the GitHub MCP tool
+(mcp__github__create_pull_request).
 
-PR 1 — rcloneview-support (fact-checked source + translations):
+PR — rcloneview-support (fact-checked source + translations):
   owner: bdrive
   repo:  rcloneview-support
   head:  blog/verified/{DATE}

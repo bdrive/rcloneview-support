@@ -155,7 +155,7 @@ Only proceed to Step 6 if the build completes with NO duplicate route warnings.
 STEP 6: PUSH SOURCE
 ═══════════════════════════════════════════════════════════════════
 
-After successful build, deploy the built files:
+After successful build, push the source:
 
 6. Commit and push rcloneview-support (source .md files):
   cd ../rcloneview-support
