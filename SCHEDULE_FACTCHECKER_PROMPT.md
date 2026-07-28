@@ -22,12 +22,6 @@ In rcloneview-support:
   git checkout main
   git pull origin main
 
-Also sync rcloneview_www (needed later for deployment):
-  cd ../rcloneview_www
-  git checkout main
-  git pull origin main
-  cd ../rcloneview-support
-
 If there are local uncommitted changes that prevent checkout or pull, report the issue and stop. Do NOT force-overwrite local changes.
 
 This ensures you work with the latest Fact-Check Guideline, Feature Spec, and blog posts.
@@ -147,8 +141,8 @@ STEP 5: BUILD
 
 Run these commands in the rcloneview-support directory:
 
-  yarn install --frozen-lockfile
-  yarn build --out-dir ../rcloneview_www/support
+  npm ci
+  npm run build
 
 Watch the build output carefully. Docusaurus build may show WARNINGS (not errors) that still need action:
 
@@ -158,21 +152,12 @@ Watch the build output carefully. Docusaurus build may show WARNINGS (not errors
 Only proceed to Step 6 if the build completes with NO duplicate route warnings.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 6: DEPLOY TO rcloneview_www
+STEP 6: PUSH SOURCE
 ═══════════════════════════════════════════════════════════════════
 
 After successful build, deploy the built files:
 
-6-A. Commit and push rcloneview_www (build output):
-  cd ../rcloneview_www
-  git checkout main
-  git pull origin main
-  git checkout -b blog/deploy/{DATE}
-  git add support/
-  git commit -m "blog: deploy auto-generated posts for {DATE}"
-  git push -u origin blog/deploy/{DATE}
-
-6-B. Commit and push rcloneview-support (source .md files):
+6. Commit and push rcloneview-support (source .md files):
   cd ../rcloneview-support
   git checkout main
   git pull origin main
@@ -192,8 +177,7 @@ Output final summary:
 - Build status (success/fail)
 - Branches pushed:
   - rcloneview-support: blog/auto/{DATE}
-  - rcloneview_www: blog/deploy/{DATE}
-- Action needed: "Merge both branches to main via GitHub PR"
+- Action needed: "Merge the support branch to main via GitHub PR — www 반영은 Actions 가 자동으로 처리한다"
 
 Now execute all steps. Start by reading BLOG_FACTCHECK_GUIDELINE.md.
 ```
