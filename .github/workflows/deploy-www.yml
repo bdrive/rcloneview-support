@@ -1,0 +1,56 @@
+# support 사이트 빌드 → rcloneview_www/support 동기화 PR 생성
+#
+# 흐름: main push → 9로케일 빌드 → www 체크아웃 → support/ 통째 교체
+#       → deploy/support 브랜치 force-push → PR 생성/갱신 → 사람이 머지
+#       → Cloudflare Pages 가 www main 을 자동 배포
+# PR 이벤트에서는 빌드 검증만 하고 배포하지 않는다.
+#
+# 필요한 시크릿은 .github/workflows/README.md 참고.
+#
+# 주의: `secrets` 컨텍스트는 `if:` 표현식에서 쓸 수 없다.
+#       2026-07-18 의 구 deploy.yml 이 이 때문에 잡 생성 단계에서 실패했다.
+
+name: Deploy support build to www
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-support
+  cancel-in-progress: true # 최신 main 상태만 의미가 있다
+
+permissions:
+  contents: read
+  issues: write # 실패 알림용 (support 저장소 내부)
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline --no-audit --fund=false
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Build (9 locales)
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
+        run: npm run build
+
+      - name: Free disk space
+        # node_modules 가 6.7GB 다. www 체크아웃 전에 비워야 러너 디스크(약 14GB)가 버틴다.
+        run: rm -rf node_modules
