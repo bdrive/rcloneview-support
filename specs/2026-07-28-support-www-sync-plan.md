@@ -971,7 +971,19 @@ git commit -m "feat(ci): 배포 실패 알림과 GitHub App 설정 문서 추가
 
 - [ ] **Step 1: `BLOG_FACTCHECK_PROMPT.md` 수정**
 
-네 군데를 고친다.
+여섯 군데를 고친다.
+
+(0) 6행의 저장소 목록 — 루틴이 더는 www 를 건드리지 않으므로 다음 줄을
+
+```
+> **Repositories:** bdrive/rcloneview-support + bdrive/rcloneview_www (둘 다 등록)
+```
+
+다음으로 바꾼다.
+
+```
+> **Repositories:** bdrive/rcloneview-support
+```
 
 (1) STEP 0 의 sibling 디렉터리 확인(55~59행) — 항목 4 전체를 지운다. 지울 내용:
 
@@ -1055,10 +1067,12 @@ STEP 5 빌드는 `npm run build`(prebuild 이미지검사 + postbuild 프룬)로
 
 ```bash
 cd /Users/ysh/work/rcloneview-support
-grep -rn "rcloneview_www" *.md | grep -viE "자동|actions|deploy-www|워크플로"
+grep -n "rcloneview_www" BLOG_FACTCHECK_PROMPT.md SCHEDULE_FACTCHECKER_PROMPT.md I18N_RUNBOOK_ko.md
 ```
 
-Expected: 결과 없음. 남아 있다면 그 줄이 수동 배포 지시인지 확인하고 마저 고친다.
+Expected: 세 파일 모두 결과 없음. 남아 있다면 그 줄이 수동 배포 지시인지 확인하고 마저 고친다.
+
+`LOCAL_TESTING_ko.md`(18·19·50행)와 `I18N_OVERVIEW_ko.md`(118행)에도 `rcloneview_www` 가 나오지만 각각 로컬 프리뷰 안내와 "별건: www 자체 다국어화" 언급이라 배포 지시가 아니다. **손대지 않는다.**
 
 - [ ] **Step 5: 테스트가 여전히 통과하는지 확인**
 
