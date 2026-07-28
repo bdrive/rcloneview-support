@@ -54,3 +54,75 @@ jobs:
       - name: Free disk space
         # node_modules 가 6.7GB 다. www 체크아웃 전에 비워야 러너 디스크(약 14GB)가 버틴다.
         run: rm -rf node_modules
+
+      - name: Generate app token
+        id: app-token
+        if: github.event_name != 'pull_request'
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: bdrive
+          repositories: rcloneview_www
+
+      - name: Checkout www
+        if: github.event_name != 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          repository: bdrive/rcloneview_www
+          ref: main
+          token: ${{ steps.app-token.outputs.token }}
+          path: www
+          fetch-depth: 1
+
+      - name: Configure bot identity
+        if: github.event_name != 'pull_request'
+        env:
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          BOT_ID=$(gh api "/users/${APP_SLUG}[bot]" --jq .id)
+          git -C www config user.name  "${APP_SLUG}[bot]"
+          git -C www config user.email "${BOT_ID}+${APP_SLUG}[bot]@users.noreply.github.com"
+
+      - name: Sync support/ and commit
+        id: sync
+        if: github.event_name != 'pull_request'
+        run: |
+          node scripts/sync-www-support.mjs \
+            --build build \
+            --repo www \
+            --branch deploy/support \
+            --message "deploy(support): ${GITHUB_SHA:0:9} 빌드 산출물 동기화"
+
+      - name: Push deploy branch
+        if: github.event_name != 'pull_request' && steps.sync.outputs.changed == 'true'
+        run: git -C www push --force origin deploy/support
+
+      - name: Create or update PR
+        if: github.event_name != 'pull_request' && steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          FILE_COUNT: ${{ steps.sync.outputs.count }}
+        run: |
+          cat > body.md <<EOF
+          ## 요약
+
+          \`rcloneview-support\` main 의 Docusaurus 빌드 산출물을 \`support/\` 에 반영합니다.
+
+          - 소스 커밋: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
+          - support/ 파일 수: ${FILE_COUNT}
+          - 워크플로 실행: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
+
+          이 PR 은 자동 생성됩니다. support main 에 새 푸시가 들어오면 같은 브랜치가
+          갱신되고 이 본문도 최신 소스 커밋으로 교체됩니다.
+          EOF
+
+          PR=$(gh pr list -R bdrive/rcloneview_www --head deploy/support \
+                 --state open --json number --jq '.[0].number // empty')
+          if [ -z "$PR" ]; then
+            gh pr create -R bdrive/rcloneview_www --base main --head deploy/support \
+              --title "deploy(support): 빌드 산출물 동기화" --body-file body.md
+          else
+            gh pr edit "$PR" -R bdrive/rcloneview_www --body-file body.md
+          fi

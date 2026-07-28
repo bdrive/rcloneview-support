@@ -63,3 +63,41 @@ test('러너 Node 는 20 이고 타임아웃이 잡혀 있다', () => {
   assert.equal(setup.with['node-version'], 20);
   assert.ok(job['timeout-minutes'] >= 60);
 });
+
+test('배포 스텝은 전부 pull_request 를 배제하는 가드를 갖는다', () => {
+  const tokenIdx = job.steps.findIndex((s) => s.id === 'app-token');
+  assert.ok(tokenIdx > 0, 'app-token 스텝이 있어야 한다');
+
+  for (const s of job.steps.slice(tokenIdx)) {
+    assert.ok(s.if, `가드 없는 배포 스텝: ${s.name ?? s.uses}`);
+    assert.ok(
+      String(s.if).includes("github.event_name != 'pull_request'"),
+      `pull_request 가드 없음: ${s.name ?? s.uses}`,
+    );
+  }
+});
+
+test('www 체크아웃이 얕은 클론이고 www/ 하위로 간다', () => {
+  const co = job.steps.find((s) => s.with?.repository === 'bdrive/rcloneview_www');
+  assert.equal(co.with.path, 'www');
+  assert.equal(co.with['fetch-depth'], 1);
+  assert.equal(co.with.ref, 'main');
+});
+
+test('앱 토큰은 www 저장소 하나로만 범위가 좁혀져 있다', () => {
+  const t = job.steps.find((s) => s.id === 'app-token');
+  assert.ok(String(t.uses).startsWith('actions/create-github-app-token@'));
+  assert.equal(t.with.owner, 'bdrive');
+  assert.equal(t.with.repositories, 'rcloneview_www');
+});
+
+test('push 와 PR 생성은 변경이 있을 때만 돈다', () => {
+  const gated = job.steps.filter((s) =>
+    String(s.if ?? '').includes("steps.sync.outputs.changed == 'true'"),
+  );
+  const bodies = gated.map((s) => s.run ?? '').join('\n');
+  assert.equal(gated.length, 2, 'push 스텝과 PR 스텝 두 개여야 한다');
+  assert.ok(bodies.includes('push --force origin deploy/support'));
+  assert.ok(bodies.includes('gh pr create'));
+  assert.ok(bodies.includes('gh pr edit'));
+});
