@@ -81,7 +81,8 @@ on:
   workflow_dispatch:          # 수동 재실행
 
 concurrency:
-  group: deploy-support
+  # 이벤트별로 그룹을 가른다 (아래 설명)
+  group: deploy-support-${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
   cancel-in-progress: true    # 최신 main 상태만 의미가 있으므로 이전 실행은 취소
 
 permissions:
@@ -91,6 +92,16 @@ permissions:
 
 `cancel-in-progress: true`가 안전한 이유: www로의 반영은 마지막 단계의 단일 ref
 force-push 한 번뿐이고 git의 ref 갱신은 원자적이다. 중간에 취소되면 아무것도 반영되지 않는다.
+
+**그룹을 이벤트별로 가르는 이유:** 그룹 이름이 상수면 트리거 종류와 무관하게 모든 실행이
+같은 그룹에 들어간다. 그러면 배포가 도는 25~40분 사이에 누가 PR을 하나 열기만 해도
+진행 중인 프로덕션 배포가 취소된다. 게다가 취소는 `failure()`가 아니라서
+`if: failure()`로 걸어 둔 실패 알림 스텝이 돌지 않는다. www PR도 없고 이슈도 없는 채로
+히스토리만 초록에 가깝게 남아 아무도 눈치채지 못한다.
+
+push끼리의 취소는 그대로 유지해야 한다(더 새 빌드가 이전 빌드를 대체하는 것이 맞다).
+그래서 `pull_request`일 때만 `github.head_ref`로 그룹을 갈라 PR 실행이 자기들끼리만
+취소하게 하고, push와 `workflow_dispatch`는 `main` 그룹을 공유하게 둔다.
 
 ## 5. 실행 순서
 
@@ -291,7 +302,12 @@ support 저장소 내부 작업이므로 기본 `GITHUB_TOKEN`으로 충분하�
 봇 커밋 아이덴티티는 워크플로가 `create-github-app-token`의 `app-slug` 출력에서
 유도하므로(5장), 앱 이름이 무엇이든 별도 설정이 필요 없다.
 
-`push` 트리거는 포크 PR에 시크릿을 노출하지 않으므로, support가 public이어도 시크릿은 안전하다.
+support가 public이어도 포크 PR에 시크릿이 노출되지 않는 이유는 트리거 종류가 아니라 둘이다.
+첫째, GitHub은 포크에서 온 `pull_request` 실행에 시크릿을 아예 넘기지 않는다.
+둘째, 토큰을 다루는 배포 스텝마다 `github.event_name != 'pull_request'` 가드가 있어
+PR 경로에서는 실행되지 않는다.
+따라서 `pull_request_target`으로 바꾸면 첫 번째 보호가 사라지므로 쓰지 않는다.
+
 남는 위험은 "support에 write 권한이 있는 구성원은 워크플로를 통해 토큰을 사용할 수 있다"이며,
 앱을 `rcloneview_www` 하나에만 설치해 영향 범위를 제한한다.
 
@@ -384,7 +400,12 @@ push하는 데 문제가 없다.
 
 - 워크플로 비활성: GitHub Actions 화면에서 workflow disable, 또는 `.github/workflows/deploy-www.yml` 삭제
 - 문서 정리 되돌리기: 해당 커밋 `git revert`
-- 잘못 배포된 내용: www에서 해당 머지 커밋을 revert (Pages가 자동 재배포)
+- 잘못 배포된 내용: **support를 먼저 고친다.** support가 소스 오브 트루스이므로
+  www만 revert하면 다음 push 때 같은 소스로 다시 빌드되어 되돌린 내용이 되살아난다.
+  1. support에서 문제 커밋을 revert하거나 수정해 main에 머지 → 자동화가 새 PR을 만들고,
+     그것을 머지하면 정상 상태가 배포된다
+  2. 즉시 복구가 필요하면 1과 별개로 www의 해당 머지 커밋을 revert (Pages가 자동 재배포).
+     단, 1을 하지 않으면 다음 배포에서 되돌아온다
 - GitHub App 회수: 앱 설치 제거 또는 private key 폐기
 
 ## 13. 산출물

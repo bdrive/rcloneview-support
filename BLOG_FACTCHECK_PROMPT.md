@@ -4,7 +4,7 @@
 > **Trigger:** API (Generator 완료 시 자동 호출)
 > **Model:** Opus 4.8
 > **Repositories:** bdrive/rcloneview-support
-> **Last Updated:** 2026-06-23
+> **Last Updated:** 2026-07-28
 
 ---
 
@@ -15,7 +15,7 @@ Environment name: blog-automation (Generator와 공유 가능)
 Network: unrestricted
 
 Setup script:
-  cd rcloneview-support && yarn install --frozen-lockfile
+  cd rcloneview-support && npm ci
 ```
 
 ---
