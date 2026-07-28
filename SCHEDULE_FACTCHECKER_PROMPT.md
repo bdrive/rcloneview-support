@@ -10,7 +10,7 @@
 ## Prompt
 
 ```
-You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and deploy.
+You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and push the verified source.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 0: SYNC WITH MAIN BRANCH
@@ -147,7 +147,7 @@ Run these commands in the rcloneview-support directory:
 Watch the build output carefully. Docusaurus build may show WARNINGS (not errors) that still need action:
 
 - "[WARNING] Duplicate routes found!" — This means Step 4.5 missed something. Stop, re-run Step 4.5 to find and remove the remaining duplicates, then rebuild.
-- "[ERROR]" or non-zero exit code — Report the error and stop. Do not proceed to deployment.
+- "[ERROR]" or non-zero exit code — Report the error and stop. Do not push.
 
 Only proceed to Step 6 if the build completes with NO duplicate route warnings.
 

@@ -23,7 +23,7 @@ Setup script:
 ## Prompt
 
 ```
-You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and deploy.
+You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and push the verified source.
 
 This routine is triggered via API by the Generator routine.
 The trigger text contains the Generator's branch name (e.g., "Branch: blog/auto/2026-05-06").
@@ -246,7 +246,7 @@ Sonnet batch scripts/blog-i18n-batch.workflow.js is still available via the
 Workflow tool — but a routine must use the inline method above.)
 
 ═══════════════════════════════════════════════════════════════════
-STEP 5: BUILD (9 locales) AND MIRROR INTO www
+STEP 5: BUILD (9 locales)
 ═══════════════════════════════════════════════════════════════════
 
 Build with the npm script — do NOT use `yarn build --out-dir …`. The
@@ -272,7 +272,7 @@ Watch the output and act on these:
   Fix the reference (or add the file), then rebuild. Do NOT proceed.
 - "[WARNING] Duplicate routes found!" — STEP 4.5 missed a duplicate slug.
   Re-run STEP 4.5, then rebuild.
-- "[ERROR]" or non-zero exit — report the error and stop. Do not deploy.
+- "[ERROR]" or non-zero exit — report the error and stop. Do not push.
 
 Only proceed once the exit code is 0 with no duplicate-route warnings.
 
