@@ -18,7 +18,7 @@ export function stageBuild({ buildDir, repoDir, branch }) {
     throw new Error(`빌드 디렉터리가 없다: ${buildDir}`);
   }
 
-  git(repoDir, ['switch', '-C', branch]);
+  git(repoDir, ['switch', '-C', branch, '-q']);
 
   const dest = path.join(repoDir, 'support');
   fs.rmSync(dest, { recursive: true, force: true });
