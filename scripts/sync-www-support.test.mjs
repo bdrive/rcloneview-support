@@ -7,7 +7,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 
-import { stageBuild } from './sync-www-support.mjs';
+import { stageBuild, sync, verifyCounts } from './sync-www-support.mjs';
 
 function tmpdir() {
   return fs.mkdtempSync(path.join(os.tmpdir(), 'sync-www-'));
@@ -100,4 +100,63 @@ test('.gitignore 패턴에 걸리는 파일도 전부 스테이징된다', () =>
     'support/docs/build/x.html',
     'support/index.html',
   ]);
+});
+
+test('파일 수가 일치하면 커밋하고 개수를 돌려준다', () => {
+  const build = makeBuild({ 'index.html': 'A', 'ko/index.html': 'B' });
+  const repo = makeRepo();
+
+  const result = sync({
+    buildDir: build,
+    repoDir: repo,
+    branch: 'deploy/support',
+    message: '테스트 커밋',
+  });
+
+  assert.equal(result.changed, true);
+  assert.equal(result.count, 2);
+
+  const subject = execFileSync('git', ['-C', repo, 'log', '-1', '--format=%s'], {
+    encoding: 'utf8',
+  }).trim();
+  assert.equal(subject, '테스트 커밋');
+});
+
+test('파일 수가 맞으면 verifyCounts 가 개수를 돌려준다', () => {
+  const build = makeBuild({ 'index.html': 'A', 'ko/index.html': 'B' });
+  const repo = makeRepo();
+
+  stageBuild({ buildDir: build, repoDir: repo, branch: 'deploy/support' });
+
+  assert.equal(verifyCounts(build, repo), 2);
+});
+
+test('파일 수가 어긋나면 verifyCounts 가 예외를 던진다', () => {
+  const build = makeBuild({ 'index.html': 'A', 'ko/index.html': 'B' });
+  const repo = makeRepo();
+
+  // 스테이징까지 마친 뒤 인덱스에서 한 개를 빼 불일치를 만든다.
+  // 실제로는 .gitignore 나 중첩 .git 때문에 add 가 파일을 빠뜨릴 때 이 상태가 된다.
+  stageBuild({ buildDir: build, repoDir: repo, branch: 'deploy/support' });
+  execFileSync('git', ['-C', repo, 'rm', '--cached', '-q', 'support/ko/index.html']);
+
+  assert.throws(() => verifyCounts(build, repo), /파일 수 불일치 — build=2 support=1/);
+});
+
+test('변경이 없으면 changed=false 이고 커밋이 늘지 않는다', () => {
+  const build = makeBuild({ 'index.html': 'A' });
+  const repo = makeRepo();
+
+  sync({ buildDir: build, repoDir: repo, branch: 'deploy/support', message: '1차' });
+  const before = execFileSync('git', ['-C', repo, 'rev-list', '--count', 'HEAD'], {
+    encoding: 'utf8',
+  }).trim();
+
+  const result = sync({ buildDir: build, repoDir: repo, branch: 'deploy/support', message: '2차' });
+
+  const after = execFileSync('git', ['-C', repo, 'rev-list', '--count', 'HEAD'], {
+    encoding: 'utf8',
+  }).trim();
+  assert.equal(result.changed, false);
+  assert.equal(after, before);
 });
