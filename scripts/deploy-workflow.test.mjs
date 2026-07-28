@@ -44,7 +44,11 @@ test('빌드 경로 스텝에는 조건이 없다 — PR 에서도 검증돼야 
 
 test('단위 테스트가 빌드보다 먼저 돈다', () => {
   const idx = (needle) => job.steps.findIndex((s) => (s.run ?? '').includes(needle));
-  assert.ok(idx('npm test') < idx('npm run build'));
+  const testIdx = idx('npm test');
+  const buildIdx = idx('npm run build');
+  assert.notEqual(testIdx, -1, 'npm test 스텝이 있어야 한다');
+  assert.notEqual(buildIdx, -1, 'npm run build 스텝이 있어야 한다');
+  assert.ok(testIdx < buildIdx);
 });
 
 test('빌드가 실패하면 뒤 스텝으로 넘어가지 않는다', () => {
