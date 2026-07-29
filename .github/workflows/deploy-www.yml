@@ -1,0 +1,193 @@
+# support 사이트 빌드 → rcloneview_www/support 동기화 PR 생성
+#
+# 흐름: main push → 9로케일 빌드 → www 체크아웃 → support/ 통째 교체
+#       → deploy/support 브랜치 force-push → PR 생성/갱신 → 사람이 머지
+#       → Cloudflare Pages 가 www main 을 자동 배포
+# PR 이벤트에서는 빌드 검증만 하고 배포하지 않는다.
+#
+# 필요한 시크릿은 .github/workflows/README.md 참고.
+#
+# 주의: `secrets` 컨텍스트는 `if:` 표현식에서 쓸 수 없다.
+#       2026-07-18 의 구 deploy.yml 이 이 때문에 잡 생성 단계에서 실패했다.
+
+name: Deploy support build to www
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  # 이벤트별로 그룹을 나눈다. 그룹이 상수면 배포가 도는 25~40분 사이에 누가 PR 만 열어도
+  # 진행 중인 배포가 취소되는데, 취소는 failure() 가 아니라서 알림도 뜨지 않는다.
+  # push 끼리의 취소(더 새 빌드가 이전 빌드를 대체)는 그대로 유지한다.
+  group: deploy-support-${{ github.event_name == 'pull_request' && github.head_ref || 'main' }}
+  cancel-in-progress: true # 최신 main 상태만 의미가 있다
+
+permissions:
+  contents: read
+  issues: write # 실패 알림용 (support 저장소 내부)
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline --no-audit --fund=false
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Build (9 locales)
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
+        run: npm run build
+
+      - name: Free disk space
+        # node_modules 가 6.7GB 다. www 체크아웃 전에 비워야 러너 디스크(약 14GB)가 버틴다.
+        run: rm -rf node_modules
+
+      # 아래 배포 스텝은 전부 main 에서만 돈다. workflow_dispatch 는 아무 브랜치에서나
+      # 실행할 수 있는데, ref 가드가 없으면 그 브랜치의 빌드가 프로덕션 www 로 나간다.
+      - name: Generate app token
+        id: app-token
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: bdrive
+          repositories: rcloneview_www
+
+      - name: Checkout www
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/checkout@v4
+        with:
+          repository: bdrive/rcloneview_www
+          ref: main
+          token: ${{ steps.app-token.outputs.token }}
+          path: www
+          fetch-depth: 1
+
+      - name: Configure bot identity
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          git -C www config user.name "${APP_SLUG}[bot]"
+
+          # 토큰 범위는 rcloneview_www 하나뿐이라 /users 는 범위 밖 엔드포인트다.
+          # bash -e 에서 이게 실패하면 스텝째로 죽어 40분짜리 빌드가 통째로 버려진다.
+          # user.email 은 git 이 커밋을 거부하므로 생략할 수 없고, 대신 숫자 ID 없는
+          # 주소로 물러선다 (커밋이 봇 계정에 연결되지 않을 뿐 동작에는 지장이 없다).
+          BOT_ID=$(gh api "/users/${APP_SLUG}[bot]" --jq .id 2>/dev/null || echo '')
+          if [ -n "$BOT_ID" ]; then
+            git -C www config user.email "${BOT_ID}+${APP_SLUG}[bot]@users.noreply.github.com"
+          else
+            git -C www config user.email "${APP_SLUG}[bot]@users.noreply.github.com"
+          fi
+
+      - name: Sync support/ and commit
+        id: sync
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          node scripts/sync-www-support.mjs \
+            --build build \
+            --repo www \
+            --branch deploy/support \
+            --message "deploy(support): ${GITHUB_SHA:0:9} 빌드 산출물 동기화"
+
+      - name: Push deploy branch
+        # 인증 설정이 없어 보이지만, 위 actions/checkout 이 앱 토큰을
+        # www/.git/config 에 심어 둬서 이 push 가 그대로 통한다.
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && steps.sync.outputs.changed == 'true'
+        run: git -C www push --force origin deploy/support
+
+      - name: Create or update PR
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          FILE_COUNT: ${{ steps.sync.outputs.count }}
+        run: |
+          cat > body.md <<EOF
+          ## 요약
+
+          \`rcloneview-support\` main 의 Docusaurus 빌드 산출물을 \`support/\` 에 반영합니다.
+
+          - 소스 커밋: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
+          - support/ 파일 수: ${FILE_COUNT}
+          - 워크플로 실행: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
+
+          이 PR 은 자동 생성됩니다. support main 에 새 푸시가 들어오면 같은 브랜치가
+          갱신되고 이 본문도 최신 소스 커밋으로 교체됩니다.
+          EOF
+
+          PR=$(gh pr list -R bdrive/rcloneview_www --head deploy/support \
+                 --state open --json number --jq '.[0].number // empty')
+          if [ -z "$PR" ]; then
+            gh pr create -R bdrive/rcloneview_www --base main --head deploy/support \
+              --title "deploy(support): 빌드 산출물 동기화" --body-file body.md
+          else
+            gh pr edit "$PR" -R bdrive/rcloneview_www --body-file body.md
+          fi
+
+      - name: Mark stale PR
+        # changed=false 는 "빌드 결과가 www main 과 같다"는 뜻이지 "열린 PR 이 최신"이라는
+        # 뜻이 아니다. 이전 실행이 만든 PR 은 그대로 열려 있고, 그 사이 소스가 원래대로
+        # 되돌아온 경우 그 PR 을 머지하면 이미 철회된 내용이 프로덕션에 나간다.
+        # 사람이 머지 버튼을 누르기 전에 표시해 둔다.
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && steps.sync.outputs.changed == 'false'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          PR=$(gh pr list -R bdrive/rcloneview_www --head deploy/support \
+                 --state open --json number --jq '.[0].number // empty')
+          if [ -z "$PR" ]; then
+            echo "열린 deploy/support PR 이 없다 — 할 일 없음"
+            exit 0
+          fi
+
+          cat > stale.md <<EOF
+          ⚠️ 이 PR 은 더 이상 최신 소스와 일치하지 않습니다.
+
+          이후 support 커밋(${GITHUB_SHA})의 빌드 결과가 www main 과 같아져 반영할
+          변경이 없습니다. 이 PR 은 그보다 앞선 빌드를 담고 있으므로 **머지하지 말고
+          닫아 주세요.** 머지하면 이미 되돌려진 내용이 배포됩니다.
+
+          실행 로그: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
+          EOF
+
+          gh pr comment "$PR" -R bdrive/rcloneview_www --body-file stale.md
+
+      - name: Report failure
+        if: failure() && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          # -R 이 없으면 cwd 의 git 리모트에서 저장소를 유추한다. 하필 checkout 이
+          # 실패한 경우에 알림 자체가 같이 죽으므로 명시한다.
+          gh label create deploy-failure --force -R "${GITHUB_REPOSITORY}" \
+            -c B60205 -d "support 배포 자동화 실패"
+          ISSUE=$(gh issue list -R "${GITHUB_REPOSITORY}" --label deploy-failure \
+                    --state open --json number --jq '.[0].number // empty')
+          if [ -z "$ISSUE" ]; then
+            gh issue create -R "${GITHUB_REPOSITORY}" --label deploy-failure \
+              --title "support 배포 자동화 실패" \
+              --body "커밋 ${GITHUB_SHA} 처리 중 실패했습니다. 실행 로그: ${RUN_URL}"
+          else
+            gh issue comment "$ISSUE" -R "${GITHUB_REPOSITORY}" \
+              --body "커밋 ${GITHUB_SHA} 에서 다시 실패했습니다: ${RUN_URL}"
+          fi

@@ -3,14 +3,14 @@
 > **Schedule:** Daily 10:00 AM (Generator 완료 후 1시간 뒤)
 > **Model:** Opus 4.7
 > **Folder:** C:\workspace\bdrive\source\rcloneview-support
-> **Role:** 생성된 블로그 독립 검증 + 빌드 + 배포
+> **Role:** 생성된 블로그 독립 검증 + 빌드 + 소스 푸시
 
 ---
 
 ## Prompt
 
 ```
-You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and deploy.
+You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and push the verified source.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 0: SYNC WITH MAIN BRANCH
@@ -21,12 +21,6 @@ Before reading any files or running any commands, ensure the local repository is
 In rcloneview-support:
   git checkout main
   git pull origin main
-
-Also sync rcloneview_www (needed later for deployment):
-  cd ../rcloneview_www
-  git checkout main
-  git pull origin main
-  cd ../rcloneview-support
 
 If there are local uncommitted changes that prevent checkout or pull, report the issue and stop. Do NOT force-overwrite local changes.
 
@@ -147,32 +141,23 @@ STEP 5: BUILD
 
 Run these commands in the rcloneview-support directory:
 
-  yarn install --frozen-lockfile
-  yarn build --out-dir ../rcloneview_www/support
+  npm ci
+  npm run build
 
 Watch the build output carefully. Docusaurus build may show WARNINGS (not errors) that still need action:
 
 - "[WARNING] Duplicate routes found!" — This means Step 4.5 missed something. Stop, re-run Step 4.5 to find and remove the remaining duplicates, then rebuild.
-- "[ERROR]" or non-zero exit code — Report the error and stop. Do not proceed to deployment.
+- "[ERROR]" or non-zero exit code — Report the error and stop. Do not push.
 
 Only proceed to Step 6 if the build completes with NO duplicate route warnings.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 6: DEPLOY TO rcloneview_www
+STEP 6: PUSH SOURCE
 ═══════════════════════════════════════════════════════════════════
 
-After successful build, deploy the built files:
+After successful build, push the source:
 
-6-A. Commit and push rcloneview_www (build output):
-  cd ../rcloneview_www
-  git checkout main
-  git pull origin main
-  git checkout -b blog/deploy/{DATE}
-  git add support/
-  git commit -m "blog: deploy auto-generated posts for {DATE}"
-  git push -u origin blog/deploy/{DATE}
-
-6-B. Commit and push rcloneview-support (source .md files):
+6. Commit and push rcloneview-support (source .md files):
   cd ../rcloneview-support
   git checkout main
   git pull origin main
@@ -192,8 +177,7 @@ Output final summary:
 - Build status (success/fail)
 - Branches pushed:
   - rcloneview-support: blog/auto/{DATE}
-  - rcloneview_www: blog/deploy/{DATE}
-- Action needed: "Merge both branches to main via GitHub PR"
+- Action needed: "Merge the support branch to main via GitHub PR — www 반영은 Actions 가 자동으로 처리한다"
 
 Now execute all steps. Start by reading BLOG_FACTCHECK_GUIDELINE.md.
 ```

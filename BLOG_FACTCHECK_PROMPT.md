@@ -3,8 +3,8 @@
 > **Routine:** Blog Fact-Checker — Cloud Routine
 > **Trigger:** API (Generator 완료 시 자동 호출)
 > **Model:** Opus 4.8
-> **Repositories:** bdrive/rcloneview-support + bdrive/rcloneview_www (둘 다 등록)
-> **Last Updated:** 2026-06-23
+> **Repositories:** bdrive/rcloneview-support
+> **Last Updated:** 2026-07-28
 
 ---
 
@@ -15,7 +15,7 @@ Environment name: blog-automation (Generator와 공유 가능)
 Network: unrestricted
 
 Setup script:
-  cd rcloneview-support && yarn install --frozen-lockfile
+  cd rcloneview-support && npm ci
 ```
 
 ---
@@ -23,7 +23,7 @@ Setup script:
 ## Prompt
 
 ```
-You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and deploy.
+You are an independent fact-checker for RcloneView blog posts. You have NOT seen how these posts were written. Your job is to validate every post against strict guidelines, then build and push the verified source.
 
 This routine is triggered via API by the Generator routine.
 The trigger text contains the Generator's branch name (e.g., "Branch: blog/auto/2026-05-06").
@@ -51,12 +51,6 @@ If the branch does not exist, output "Generator branch not found: ${BRANCH}" and
   ls blog/${DATE}-*.md
 
 If no files match today's date, output "No posts found for today on branch ${BRANCH}" and stop.
-
-4. Verify rcloneview_www exists as a sibling directory:
-
-  ls ../rcloneview_www/
-
-If not found, report the directory structure (ls ../) and stop.
 
 ═══════════════════════════════════════════════════════════════════
 STEP 1: READ VALIDATION RULES
@@ -252,7 +246,7 @@ Sonnet batch scripts/blog-i18n-batch.workflow.js is still available via the
 Workflow tool — but a routine must use the inline method above.)
 
 ═══════════════════════════════════════════════════════════════════
-STEP 5: BUILD (9 locales) AND MIRROR INTO www
+STEP 5: BUILD (9 locales)
 ═══════════════════════════════════════════════════════════════════
 
 Build with the npm script — do NOT use `yarn build --out-dir …`. The
@@ -278,40 +272,24 @@ Watch the output and act on these:
   Fix the reference (or add the file), then rebuild. Do NOT proceed.
 - "[WARNING] Duplicate routes found!" — STEP 4.5 missed a duplicate slug.
   Re-run STEP 4.5, then rebuild.
-- "[ERROR]" or non-zero exit — report the error and stop. Do not deploy.
+- "[ERROR]" or non-zero exit — report the error and stop. Do not push.
 
 Only proceed once the exit code is 0 with no duplicate-route warnings.
 
-Then mirror the fresh build into the www checkout's support/ folder — it must
-become an EXACT copy of build/, so files this build dropped (a REMOVE'd post,
-replaced assets) are removed from www too.
-
-The routine container does NOT have rsync (and cannot install it — no network).
-support/ contains ONLY Docusaurus build output, so replace the folder wholesale:
-
-  rm -rf ../rcloneview_www/support
-  cp -a build ../rcloneview_www/support
-
-(This reproduces `rsync -a --delete build/ support/`: old support/ is deleted,
-then the fresh build is copied in its place. STEP 6-A's `git add -A support/`
-then stages the adds AND deletes.)
+빌드가 통과하면 여기서 끝이다. www 반영은 자동이다 —
+STEP 6 에서 support 브랜치를 push 하고 그 PR 이 main 에 머지되면,
+.github/workflows/deploy-www.yml 이 같은 빌드를 다시 돌려
+rcloneview_www/support/ 를 교체하는 PR 을 자동으로 만든다.
+이 단계의 빌드는 머지 전에 깨진 콘텐츠를 걸러내기 위한 검증이다.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 6: DEPLOY — PUSH BOTH REPOSITORIES
+STEP 6: PUSH VERIFIED SOURCE
 ═══════════════════════════════════════════════════════════════════
 
-After successful build, commit and push changes to both repositories.
+After successful build, commit and push the verified source.
 Replace {DATE} with today's date in YYYY-MM-DD format.
 
-6-A. Push rcloneview_www (build output):
-
-  cd ../rcloneview_www
-  git checkout -b blog/deploy/${DATE}
-  git add -A support/      # -A so the folder-replace (rm+cp) removals are also staged
-  git commit -m "blog: deploy auto-generated posts for ${DATE}"
-  git push -u origin blog/deploy/${DATE}
-
-6-B. Push rcloneview-support (validated English source + 8-locale translations):
+6. Push rcloneview-support (validated English source + 8-locale translations):
 
   cd ../rcloneview-support
   git checkout -b blog/verified/${DATE}
@@ -334,13 +312,13 @@ its own date. Just verify the surviving posts use the date-correct authors
 (Guideline Section 7 author order check) and FIX the `authors:` field if not.
 
 ═══════════════════════════════════════════════════════════════════
-STEP 6.5: CREATE PULL REQUESTS
+STEP 6.5: CREATE PULL REQUEST
 ═══════════════════════════════════════════════════════════════════
 
-After both branches are pushed, create PRs using the GitHub MCP tool
-(mcp__github__create_pull_request). Create both PRs simultaneously.
+After the branch is pushed, create the PR using the GitHub MCP tool
+(mcp__github__create_pull_request).
 
-PR 1 — rcloneview-support (fact-checked source + translations):
+PR — rcloneview-support (fact-checked source + translations):
   owner: bdrive
   repo:  rcloneview-support
   head:  blog/verified/{DATE}
@@ -358,31 +336,6 @@ PR 1 — rcloneview-support (fact-checked source + translations):
     ## Changes
     {bullet list of each fix/removal with brief reason}
 
-    ## Companion PR
-    Build output → bdrive/rcloneview_www branch blog/deploy/{DATE}
-    (Merge both PRs together — source+i18n here, build output there.)
-
-PR 2 — rcloneview_www (build output):
-  owner: bdrive
-  repo:  rcloneview_www
-  head:  blog/deploy/{DATE}
-  base:  main
-  title: "blog: deploy auto-generated posts for {DATE}"
-  body:
-    ## Summary
-    - Docusaurus build output for verified blog posts on {DATE}
-    - Built from bdrive/rcloneview-support branch blog/verified/{DATE}
-
-    ## Posts deployed
-    {table listing each surviving post slug and its status (new/updated)}
-
-    ## Companion PR
-    Fact-checked source → bdrive/rcloneview-support branch blog/verified/{DATE}
-
-    ## Notes
-    - Build completed with no duplicate route warnings
-    - Merge this PR together with the companion source PR
-
 ═══════════════════════════════════════════════════════════════════
 STEP 7: SUMMARY
 ═══════════════════════════════════════════════════════════════════
@@ -393,11 +346,9 @@ Output final summary:
 - Build status (success/fail)
 - Branches pushed:
   - rcloneview-support: blog/verified/{DATE} (fact-checked source)
-  - rcloneview_www: blog/deploy/{DATE} (build output)
 - PRs created:
   - rcloneview-support: {PR URL}
-  - rcloneview_www: {PR URL}
-- Action needed: "Merge both PRs to main"
+- Action needed: "Merge the support PR to main — www 반영은 Actions 가 자동으로 처리한다"
 
 Now execute all steps. Start by checking out the Generator branch.
 ```

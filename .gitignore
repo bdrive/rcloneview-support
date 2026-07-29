@@ -54,3 +54,6 @@ coverage
 
 # 로컬 빌드 로그 (검증용, 커밋 금지)
 build.log
+
+# Superpowers 작업 스크래치 (원장·리뷰 패키지 등, 커밋 금지)
+.superpowers/
