@@ -53,7 +53,7 @@ Unlike mount-only tools, RcloneView also syncs and compares folders — on the F
 
 ## Verifying the Fix with Dry Run
 
-Before committing to a full sync, use RcloneView's Dry Run feature to preview exactly which folders and files will be created or changed. Dry Run lists the pending operations without touching the destination, which is the fastest way to confirm your empty folders will actually appear before you run the job for real — especially useful if you're retrofitting the setting onto a job that's already been running for a while.
+Before committing to a full sync, use RcloneView's Dry Run feature to preview exactly which folders and files will be created or changed. Dry Run lists the pending operations without touching the destination, which is a reliable way to confirm your empty folders will actually appear before you run the job for real — especially useful if you're retrofitting the setting onto a job that's already been running for a while.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-run-click.png" alt="Running a dry run preview before executing a sync job in RcloneView" class="img-large img-center" />
 
