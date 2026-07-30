@@ -2,7 +2,7 @@
 slug: manage-petabox-cloud-sync-backup-rcloneview
 title: "Manage Petabox Storage — Sync and Backup Files with RcloneView"
 authors:
-  - jay
+  - steve
 description: "Connect Petabox S3-compatible object storage to RcloneView for cross-platform file browsing, sync, and automated backup."
 keywords:
   - Petabox storage

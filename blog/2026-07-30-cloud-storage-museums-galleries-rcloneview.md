@@ -2,7 +2,7 @@
 slug: cloud-storage-museums-galleries-rcloneview
 title: "Cloud Storage for Museums and Galleries — Preserve Digital Collections with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Manage high-resolution collection scans and archival records across multiple clouds with RcloneView, built for museums and galleries."
 keywords:
   - cloud storage for museums
