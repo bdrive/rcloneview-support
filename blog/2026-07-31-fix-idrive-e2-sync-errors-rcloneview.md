@@ -2,7 +2,7 @@
 slug: fix-idrive-e2-sync-errors-rcloneview
 title: "Fix IDrive e2 Sync Errors — Troubleshoot S3-Compatible Storage with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Fix common IDrive e2 sync errors in RcloneView, from access key issues to stalled transfers and mismatched files, with clear step-by-step solutions."
 keywords:
   - idrive e2 sync errors

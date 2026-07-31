@@ -2,7 +2,7 @@
 slug: cloud-storage-museums-archives-rcloneview
 title: "Cloud Storage for Museums and Archives — Preserve Digital Collections with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Manage cloud storage for museums and archives with RcloneView, syncing high-resolution scans and metadata across providers for long-term digital preservation."
 keywords:
   - cloud storage museums
@@ -47,9 +47,9 @@ This matters most for institutions without a large digital preservation budget: 
 
 ## Verifying Fixity Without Command-Line Tools
 
-Archivists talk about "fixity" — confirming a file hasn't changed or degraded since it was ingested. RcloneView's Folder Compare view puts this within reach of non-technical collections staff: point it at the working copy and the preservation copy, enable checksum comparison in the sync settings, and the tool flags anything that differs by size or hash rather than assuming a successful copy means an identical one.
+Archivists talk about "fixity" — confirming a file hasn't changed or degraded since it was ingested. RcloneView's Folder Compare view puts this within reach of non-technical collections staff: point it at the working copy and the preservation copy, and the tool flags anything that differs by size rather than assuming a successful copy means an identical one. Enabling checksum comparison on the sync job itself adds file-hash verification before a preservation copy is even made.
 
-Scheduled comparison jobs (PLUS license) can run this check on a recurring basis, so drift or corruption in a stored collection surfaces automatically instead of being discovered years later during a research request.
+Running this comparison on a regular manual cadence, or pairing it with a scheduled sync job (PLUS license) that has checksum comparison enabled, helps surface drift or corruption in a stored collection before it's discovered years later during a research request.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparing archival master files between two storage locations in RcloneView" class="img-large img-center" />
 
