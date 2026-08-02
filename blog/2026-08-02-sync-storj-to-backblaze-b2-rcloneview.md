@@ -2,7 +2,7 @@
 slug: sync-storj-to-backblaze-b2-rcloneview
 title: "Sync Storj to Backblaze B2 — Cloud Backup with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Sync files from Storj decentralized storage to Backblaze B2 with RcloneView. Keep a redundant off-network copy of your S3-compatible data."
 keywords:
   - Storj to Backblaze B2

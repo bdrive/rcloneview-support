@@ -2,7 +2,7 @@
 slug: fix-macos-empty-folders-permissions-rcloneview
 title: "Fix macOS Empty Desktop and Documents Folders — Permission Fix with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Fix RcloneView showing empty Desktop, Documents, or Downloads folders on macOS. Grant the right privacy permissions and restore full file access."
 keywords:
   - macOS empty folders fix
