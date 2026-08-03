@@ -48,7 +48,7 @@ Once the remote is saved, it appears as a tab in the Explorer panel with full fo
 
 ## Syncing Magalu Buckets with Other Storage
 
-Object storage rarely lives in isolation — most teams pair it with another cloud for redundancy or with local infrastructure for staging. RcloneView's Sync wizard lets you set a Magalu bucket as either source or destination, choose one-way or bidirectional sync direction, and apply filters like max file size or file age before anything transfers.
+Object storage rarely lives in isolation — most teams pair it with another cloud for redundancy or with local infrastructure for staging. RcloneView's Sync wizard lets you set a Magalu bucket as either source or destination, choose one-way sync or bidirectional sync (Beta), and apply filters like max file size or file age before anything transfers.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Configuring a sync job between a Magalu Cloud bucket and another remote" class="img-large img-center" />
 
