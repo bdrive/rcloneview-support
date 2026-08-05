@@ -2,7 +2,7 @@
 slug: cloud-storage-telecommunications-rcloneview
 title: "Cloud Storage for Telecommunications Companies — Secure Multi-Cloud Backup with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "How telecommunications companies use RcloneView to back up call recordings, network logs, and customer data across multiple cloud providers."
 keywords:
   - cloud storage for telecommunications
