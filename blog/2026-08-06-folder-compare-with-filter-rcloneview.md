@@ -41,7 +41,7 @@ A raw comparison between two large directory trees treats every file as equally 
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Filtered folder comparison results in RcloneView" class="img-large img-center" />
 
-Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license — with filtered comparison layered on top as a PLUS-tier refinement for teams that need it.
+RcloneView also syncs and compares folders — on the FREE license — with filtered comparison layered on top as a PLUS-tier refinement for teams that need it.
 
 ## Setting Up Filter Rules
 
