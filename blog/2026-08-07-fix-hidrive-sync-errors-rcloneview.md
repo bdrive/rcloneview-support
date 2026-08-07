@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Stalled uploads, expired sessions, and silent sync failures on HiDrive usually trace back to a handful of fixable causes — here's how to diagnose and resolve them in RcloneView.
 
-HiDrive users backing up photos, documents, or business files often hit sync jobs that stop mid-transfer or fail to authenticate after weeks of inactivity. These issues are rarely caused by the storage itself — they're almost always a token, timing, or filtering mismatch that RcloneView can surface and fix directly from its interface. Unlike mount-only tools, RcloneView also syncs and compares folders on HiDrive — on the FREE license, no upgrade required.
+HiDrive users backing up photos, documents, or business files often hit sync jobs that stop mid-transfer or fail to authenticate after weeks of inactivity. These issues are rarely caused by the storage itself — they're almost always a token, timing, or filtering mismatch that RcloneView can surface and fix directly from its interface. RcloneView also syncs and compares folders on HiDrive — on the FREE license, no upgrade required.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 

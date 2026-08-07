@@ -55,7 +55,7 @@ Enable checksum comparison in Advanced Settings so RcloneView only re-transfers 
 
 ## Automating and Monitoring the Backup
 
-Run a Dry Run first to preview exactly which files will copy, then execute the job and watch progress live in the Transferring tab of the Info View — transfer speed, file count, and total size update in real time. PLUS license holders can attach a crontab-style schedule so the sync repeats automatically without manual intervention, and Job History keeps a permanent record of each run's duration and outcome for auditing later.
+Run a Dry Run first to preview exactly which files will copy, then execute the job and use live transfer monitoring in the Transferring tab of the Info View, which shows transfer speed, file count, and total size as the job progresses. PLUS license holders can attach a crontab-style schedule so the sync repeats automatically without manual intervention, and Job History keeps a permanent record of each run's duration and outcome for auditing later.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling a recurring Google Drive to Hetzner Storage Box sync job in RcloneView" class="img-large img-center" />
 
