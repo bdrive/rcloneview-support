@@ -58,6 +58,8 @@ After running the sync, use RcloneView's Folder Compare to check both sides dire
 
 If you're maintaining the structure long-term rather than doing a one-off migration, save the job with the empty-directories option checked so every scheduled run keeps recreating the placeholder folders as needed.
 
+<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling a recurring RcloneView sync job to keep the empty folder structure current" class="img-large img-center" />
+
 ## Getting Started
 
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html).
