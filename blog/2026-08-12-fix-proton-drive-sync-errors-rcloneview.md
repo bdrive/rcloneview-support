@@ -2,7 +2,7 @@
 slug: fix-proton-drive-sync-errors-rcloneview
 title: "Fix Proton Drive Sync Errors — Troubleshooting Guide for RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Troubleshoot Proton Drive authentication, 2FA, and sync failures in RcloneView with practical fixes and logging steps."
 keywords:
   - Proton Drive sync errors
@@ -51,7 +51,7 @@ A job that starts but never completes often points to a filter rule excluding mo
 
 ## Reading Job History and Enabling Debug Logs
 
-Job History records whether a run Completed, Errored, or was Canceled, along with the exact time it stopped — that timestamp is the fastest way to correlate a failure with a specific file or network event.
+Job History records whether a run Completed, Errored, or was Canceled, along with the exact time it stopped — that timestamp is a reliable way to correlate a failure with a specific file or network event.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Reviewing Proton Drive job history status in RcloneView" class="img-large img-center" />
 
