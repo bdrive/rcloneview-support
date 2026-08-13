@@ -2,7 +2,7 @@
 slug: migrate-seafile-to-onedrive-rcloneview
 title: "Migrate Seafile to OneDrive — Transfer Files with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Move libraries from a self-hosted Seafile server to Microsoft OneDrive using RcloneView's dual-pane explorer and job wizard, with dry-run verification."
 keywords:
   - Seafile migration

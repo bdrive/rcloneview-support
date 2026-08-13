@@ -2,7 +2,7 @@
 slug: fix-terabox-sync-errors-rcloneview
 title: "Fix Terabox Sync Errors — How to Resolve with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "Diagnose and resolve common Terabox sync failures in RcloneView, from connection timeouts to stalled transfers, using logs, retries, and filters."
 keywords:
   - Terabox sync errors
