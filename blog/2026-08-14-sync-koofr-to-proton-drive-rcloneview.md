@@ -3,7 +3,7 @@ slug: sync-koofr-to-proton-drive-rcloneview
 title: "Sync Koofr to Proton Drive — Cloud Backup with RcloneView"
 authors:
   - alex
-description: "Learn how to sync files from Koofr to Proton Drive using RcloneView, a cross-platform GUI for keeping two clouds automatically backed up."
+description: "Learn how to sync files from Koofr to Proton Drive using RcloneView, a cross-platform GUI for keeping two clouds backed up in sync."
 keywords:
   - sync Koofr to Proton Drive
   - Koofr Proton Drive backup
@@ -67,7 +67,7 @@ Each execution logs to Job History with duration, transfer speed, file count, an
 3. Create a one-way sync job from Koofr to Proton Drive and run a Dry Run first.
 4. Save the job and, if you're on PLUS, attach a schedule for hands-off recurring backups.
 
-Once configured, your Koofr files stay mirrored on Proton Drive automatically, giving you an encrypted copy without ever leaving RcloneView.
+Once configured, each sync run keeps your Koofr files mirrored on Proton Drive, giving you an encrypted copy without ever leaving RcloneView.
 
 ---
 
