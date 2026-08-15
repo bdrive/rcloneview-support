@@ -2,7 +2,7 @@
 slug: fix-pikpak-sync-errors-rcloneview
 title: "Fix PikPak Sync Errors — Resolve Connection Issues with RcloneView"
 authors:
-  - jay
+  - steve
 description: "Troubleshoot common PikPak sync and connection failures in RcloneView with dry-run checks, retry settings, and OAuth re-authentication steps."
 keywords:
   - PikPak sync errors

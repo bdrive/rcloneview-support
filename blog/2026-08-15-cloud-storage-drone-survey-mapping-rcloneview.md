@@ -2,7 +2,7 @@
 slug: cloud-storage-drone-survey-mapping-rcloneview
 title: "Cloud Storage for Drone Survey and Mapping Companies — Manage Large Datasets with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Manage drone survey imagery, orthomosaics, and LiDAR datasets across cloud storage providers with RcloneView's sync, mount, and compare tools."
 keywords:
   - drone survey cloud storage
@@ -58,7 +58,7 @@ Before handing a project off to a client or archiving it, use Folder Compare to 
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparing local drone survey files against cloud storage in RcloneView" class="img-large img-center" />
 
-For recurring survey clients, save these as scheduled sync jobs so each new flight's data lands in the right client folder automatically, with Job History giving you a record of exactly when each dataset was delivered.
+For recurring survey clients, save these as scheduled sync jobs (PLUS license) so each new flight's data lands in the right client folder on the schedule you configure, with Job History giving you a record of exactly when each dataset was delivered.
 
 ## Getting Started
 
