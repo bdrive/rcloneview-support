@@ -2,7 +2,7 @@
 slug: cloud-storage-surveying-firms-rcloneview
 title: "Cloud Storage for Surveying Firms — Manage Large Field Data Files with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Surveying firms handle huge LiDAR, point cloud, and GPS datasets. See how RcloneView syncs, backs up, and mounts field data across cloud storage."
 keywords:
   - cloud storage for surveyors

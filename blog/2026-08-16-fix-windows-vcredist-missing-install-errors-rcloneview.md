@@ -2,7 +2,7 @@
 slug: fix-windows-vcredist-missing-install-errors-rcloneview
 title: "Fix Windows VC++ Redistributable Errors — Install RcloneView Successfully"
 authors:
-  - tayson
+  - kai
 description: "RcloneView won't launch on Windows? Fix missing VC++ Redistributable errors and get RcloneView installed for cloud mount, sync, and backup."
 keywords:
   - RcloneView install error
