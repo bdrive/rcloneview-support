@@ -2,7 +2,7 @@
 slug: cloud-storage-public-libraries-rcloneview
 title: "Cloud Storage for Public Libraries — Digitize and Share Collections with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "Manage digitized archives, multi-branch backups, and patron records across cloud storage for public libraries using RcloneView."
 keywords:
   - cloud storage for libraries

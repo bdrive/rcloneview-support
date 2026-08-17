@@ -2,7 +2,7 @@
 slug: fix-synology-nas-detection-connection-errors-rcloneview
 title: "Fix Synology NAS Detection and Connection Errors — Reliable Backups with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Troubleshoot Synology NAS auto-detection and connection failures in RcloneView, with fixes for local network discovery and manual setup."
 keywords:
   - Synology NAS RcloneView
