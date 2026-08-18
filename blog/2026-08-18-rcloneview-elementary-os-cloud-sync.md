@@ -36,7 +36,7 @@ Elementary OS is built on Ubuntu LTS but ships its own Pantheon desktop, and use
 
 ## Installing RcloneView on Elementary OS
 
-Since Elementary OS is Debian/Ubuntu-based, RcloneView installs from the .deb package available on the official [download page](https://rcloneview.com/src/download.html) — grab the x86_64 build (or aarch64 if you're running Elementary on ARM64 hardware) and install it with `sudo apt install ./rclone_view-{version}-linux-{arch}.deb` from a terminal. There's no Flathub or Snap Store package to reach for here — the .deb direct download is the only supported installation path, and AppImage is also available if you'd rather skip package management entirely.
+Since Elementary OS is Debian/Ubuntu-based, RcloneView installs from the .deb package available on the official [download page](https://rcloneview.com/src/download.html) — grab the x86_64 build (or aarch64 if you're running Elementary on ARM64 hardware) and install it with `sudo dpkg -i rclone_view-*-linux-{arch}.deb` from a terminal. There's no Flathub or Snap Store package to reach for here — the .deb direct download is the only supported installation path, and AppImage is also available if you'd rather skip package management entirely.
 
 Elementary OS ships GTK+ and a Wayland/X11 session by default through Pantheon, which covers RcloneView's display and toolkit requirements out of the box. The one thing worth confirming after install is `libayatana-appindicator3-1`, since RcloneView's system tray icon depends on it and some minimal Elementary installs trim indicator libraries to keep the desktop lean.
 
@@ -61,7 +61,7 @@ Job History records every run with status, duration, and transfer speed, which m
 ## Getting Started
 
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html) — grab the x86_64 or aarch64 .deb for Elementary OS.
-2. Install with `sudo apt install ./rclone_view-{version}-linux-{arch}.deb`.
+2. Install with `sudo dpkg -i rclone_view-*-linux-{arch}.deb`.
 3. Add your first cloud remote through Remote tab > New Remote.
 4. Set up a sync or mount to start managing cloud storage directly from the Pantheon desktop.
 

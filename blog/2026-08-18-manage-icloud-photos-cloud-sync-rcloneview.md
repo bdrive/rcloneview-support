@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Connect your iCloud Photos library in RcloneView and back it up to another cloud without exporting albums by hand.
 
-Apple's Photos ecosystem keeps years of images and videos locked inside iCloud, and getting a second copy elsewhere usually means exporting albums one at a time through the Photos app. RcloneView connects to iCloud Photos as its own dedicated remote — a separate package from iCloud Drive — so you can browse the library directly and copy it to Google Drive, Amazon S3, or a local backup drive without the manual export step. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license, so the destination side of a photo backup costs nothing extra to set up.
+Apple's Photos ecosystem keeps years of images and videos locked inside iCloud, and getting a second copy elsewhere usually means exporting albums one at a time through the Photos app. RcloneView connects to iCloud Photos as its own dedicated remote — a separate package from iCloud Drive — so you can browse the library directly and copy it to Google Drive, Amazon S3, or a local backup drive without the manual export step. Connect S3, Azure File Storage, or Backblaze B2 with full read/write on the FREE license, so the destination side of a photo backup costs nothing extra to set up.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -39,7 +39,7 @@ Apple's Photos ecosystem keeps years of images and videos locked inside iCloud, 
 
 ## Connecting iCloud Photos as a Remote
 
-iCloud Photos is added through Remote tab > New Remote in RcloneView, and it's set up as its own code-verified package distinct from iCloud Drive — the two behave as separate remotes even though both come from the same Apple account. Once authenticated, the library appears in the Explorer panel just like any other cloud storage, with folders, thumbnails, and file metadata you can browse and select from.
+iCloud Photos is added through Remote tab > New Remote in RcloneView, and it's set up as its own dedicated remote type, separate from iCloud Drive — the two behave as separate remotes even though both come from the same Apple account. Once authenticated, the library appears in the Explorer panel just like any other cloud storage, with folders, thumbnails, and file metadata you can browse and select from.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding an iCloud Photos remote in RcloneView" class="img-large img-center" />
 
