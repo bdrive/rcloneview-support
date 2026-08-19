@@ -91,6 +91,5 @@ Box는 엔터프라이즈 수준의 거버넌스와 협업을 처리하며, Rclo
 
 - [RcloneView로 Box 스토리지를 네트워크 드라이브로 마운트하기](https://rcloneview.com/support/blog/mount-box-storage-network-drive-rcloneview)
 - [RcloneView로 Dropbox를 AWS S3에 백업하기](https://rcloneview.com/support/blog/backup-dropbox-to-aws-s3-rcloneview)
-- [Icedrive 스토리지 관리 — RcloneView로 파일 동기화 및 백업하기](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 
 <CloudSupportGrid />

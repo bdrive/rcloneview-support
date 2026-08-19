@@ -63,6 +63,16 @@ You MUST read BOTH parts. Sections 18 (Distribution) and 19 (Limitations) are at
 Do NOT invent features, installation methods, or capabilities not in this file.
 Pay special attention to Sections 18 (Distribution) and 19 (Limitations).
 
+PROVIDER WHITELIST (HARD RULE — a violation here caused a real forum complaint):
+Section 10 (10.1-10.5) of the Feature Spec is the COMPLETE list of storage
+services you may write about (plus Section 11 virtual remotes). If a service is
+not there — TeraBox, Baidu Netdisk, MediaFire, Degoo, Sync.com, Tresorit,
+Internxt, Filen, Icedrive, Hubic — you MUST NOT write about it, mention it in
+free-tier tables or examples, or link to it, no matter how strong its search
+volume is. Popularity is not support: rclone has no backend for these services,
+so any how-to would be fabricated. If you are ever unsure whether a service is
+supported, pick a different topic from the whitelist instead.
+
 ═══════════════════════════════════════════════════════════════════
 STEP 1.5: READ COMPETITOR KNOWLEDGE (ONLY IF WRITING A COMPARISON POST)
 ═══════════════════════════════════════════════════════════════════
@@ -124,11 +134,15 @@ the same category two days in a row when feasible.
    - Format: "Manage {Provider} Storage — Sync and Backup Files with RcloneView"
    - Slug: manage-{provider}-cloud-sync-backup-rcloneview
    - Tags: RcloneView, {provider-tag}, cloud-storage, cloud-sync, backup
+   - {Provider} MUST be listed in Feature Spec Section 10 (PROVIDER WHITELIST rule
+     in STEP 1). Verify before writing; if it is not there, choose another provider.
 
 2. CROSS-PROVIDER TRANSFERS: Migration/sync between two specific providers
    - Format: "Migrate {Source} to {Destination} — Transfer Files with RcloneView" OR "Sync {Source} to {Destination} — Cloud Backup with RcloneView"
    - Slug: migrate-{source}-to-{dest}-rcloneview OR sync-{source}-to-{dest}-rcloneview
    - Tags: RcloneView, {source-tag}, {dest-tag}, cloud-to-cloud, migration OR sync
+   - BOTH {Source} and {Destination} MUST be listed in Feature Spec Section 10
+     (PROVIDER WHITELIST rule in STEP 1).
 
 3. PAIN POINTS / TROUBLESHOOTING: Common cloud storage problems and solutions
    - Format: "Fix {Problem} — {Solution} with RcloneView" OR "{Problem} — How to Resolve with RcloneView"

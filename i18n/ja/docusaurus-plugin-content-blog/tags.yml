@@ -418,11 +418,6 @@ history:
   permalink: /history
   description: 履歴に関する投稿です。
 
-hubic:
-  label: Hubic
-  permalink: /hubic
-  description: Hubicに関する投稿です。
-
 huggingface:
   label: HuggingFace
   permalink: /huggingface
@@ -802,11 +797,6 @@ tencent-cos:
   label: Tencent COS
   permalink: /tencent-cos
   description: Tencent COSに関する投稿です。
-
-terabox:
-  label: Terabox
-  permalink: /terabox
-  description: Teraboxに関する投稿です。
 
 tips:
   label: ヒント

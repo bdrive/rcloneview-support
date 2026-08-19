@@ -76,6 +76,5 @@ Uloz.to 是一個熱門的檔案託管與儲存服務,但它的網頁介面並�
 
 - [管理 Linkbox 儲存空間——使用 RcloneView 同步與備份檔案](https://rcloneview.com/support/blog/manage-linkbox-cloud-sync-backup-rcloneview)
 - [管理 Pixeldrain 雲端同步——使用 RcloneView 備份檔案](https://rcloneview.com/support/blog/manage-pixeldrain-cloud-sync-rcloneview)
-- [管理 Terabox 儲存空間——使用 RcloneView 同步與備份檔案](https://rcloneview.com/support/blog/manage-terabox-cloud-sync-backup-rcloneview)
 
 <CloudSupportGrid />

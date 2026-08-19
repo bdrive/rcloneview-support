@@ -29,7 +29,7 @@ import RvCta from '@site/src/components/RvCta';
 
 # Union 遠端 — 用 RcloneView 將多個免費雲端帳號合併成一個巨大的儲存池
 
-> Google 提供 15 GB，OneDrive 提供 5 GB，Dropbox 提供 2 GB，Terabox 提供 1 TB。個別來看都很小，但合併成一個 union 遠端後，就是一個免費的多 TB 儲存池。
+> Google 提供 15 GB，OneDrive 提供 5 GB，Dropbox 提供 2 GB，MEGA 提供 20 GB。個別來看都很小，但合併成一個 union 遠端後，就是一個可觀的免費儲存池。
 
 大多數雲端服務都提供免費儲存方案，但單獨使用時空間都太小，難以應付正式用途。Rclone 的 union 遠端可以將多個儲存位置合併成單一虛擬檔案系統。RcloneView 讓你能以視覺化的方式完成設定，接著就能像瀏覽一個巨大的雲端硬碟一樣，瀏覽、同步並管理這個合併後的儲存池。
 
@@ -53,12 +53,10 @@ Union 遠端會將多個遠端合併成一個虛擬視圖：
 | OneDrive | 5 GB |
 | Dropbox | 2 GB |
 | pCloud | 10 GB |
-| Terabox | 1 TB |
 | MEGA | 20 GB |
-| Icedrive | 10 GB |
 | Koofr | 10 GB |
 
-合併後：可能超過 1 TB 的免費儲存空間。
+合併後：跨多個供應商共超過 60 GB 的免費儲存空間。
 
 ## 設定 Union 遠端
 
@@ -80,7 +78,7 @@ Union 遠端會將多個遠端合併成一個虛擬視圖：
 
 ### 建立分層儲存池
 
-在同一個儲存池中，結合快速儲存（Google Drive）與大容量儲存（Terabox）。
+在同一個儲存池中，結合快速儲存（Google Drive）與大容量儲存（MEGA）。
 
 ## 瀏覽合併後的儲存池
 

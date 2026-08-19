@@ -29,7 +29,7 @@ import RvCta from '@site/src/components/RvCta';
 
 # Union Remote — Mehrere kostenlose Cloud-Konten mit RcloneView zu einem riesigen Speicherpool kombinieren
 
-> 15 GB von Google. 5 GB von OneDrive. 2 GB von Dropbox. 1 TB von Terabox. Einzeln sind sie klein. Kombiniert zu einem Union Remote sind sie ein kostenloser Multi-Terabyte-Speicherpool.
+> 15 GB von Google. 5 GB von OneDrive. 2 GB von Dropbox. 20 GB von MEGA. Einzeln sind sie klein. Kombiniert zu einem Union Remote sind sie ein großer kostenloser Speicherpool.
 
 Die meisten Cloud-Anbieter bieten kostenlose Speicherkontingente, doch einzeln sind sie für ernsthafte Nutzung zu klein. Der Union Remote von rclone fasst mehrere Speicherorte zu einem einzigen virtuellen Dateisystem zusammen. Mit RcloneView richten Sie dies visuell ein und durchsuchen, synchronisieren und verwalten anschließend den kombinierten Pool, als wäre er ein einziges riesiges Laufwerk.
 
@@ -53,12 +53,10 @@ Ein Union Remote kombiniert mehrere Remotes zu einer virtuellen Ansicht:
 | OneDrive | 5 GB |
 | Dropbox | 2 GB |
 | pCloud | 10 GB |
-| Terabox | 1 TB |
 | MEGA | 20 GB |
-| Icedrive | 10 GB |
 | Koofr | 10 GB |
 
-Kombiniert: potenziell über 1 TB kostenloser Speicher.
+Kombiniert: über 60 GB kostenloser Speicher über mehrere Anbieter hinweg.
 
 ## Einen Union Remote einrichten
 
@@ -80,7 +78,7 @@ Verteilen Sie Backup-Daten auf mehrere kostenlose Konten für Redundanz. Wenn ei
 
 ### Einen gestaffelten Speicherpool erstellen
 
-Kombinieren Sie schnellen Speicher (Google Drive) mit großem Speicher (Terabox) in einem Pool.
+Kombinieren Sie schnellen Speicher (Google Drive) mit großem Speicher (MEGA) in einem Pool.
 
 ## Den kombinierten Pool durchsuchen
 

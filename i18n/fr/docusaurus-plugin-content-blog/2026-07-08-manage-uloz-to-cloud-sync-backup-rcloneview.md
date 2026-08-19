@@ -76,6 +76,5 @@ Intégrer Uloz.to dans un véritable flux de gestion de fichiers signifie moins 
 
 - [Gérer le stockage Linkbox — Synchronisez et sauvegardez vos fichiers avec RcloneView](https://rcloneview.com/support/blog/manage-linkbox-cloud-sync-backup-rcloneview)
 - [Gérer la synchronisation cloud Pixeldrain — Sauvegardez vos fichiers avec RcloneView](https://rcloneview.com/support/blog/manage-pixeldrain-cloud-sync-rcloneview)
-- [Gérer le stockage Terabox — Synchronisez et sauvegardez vos fichiers avec RcloneView](https://rcloneview.com/support/blog/manage-terabox-cloud-sync-backup-rcloneview)
 
 <CloudSupportGrid />

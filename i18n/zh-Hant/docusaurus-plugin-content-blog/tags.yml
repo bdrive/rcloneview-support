@@ -418,11 +418,6 @@ history:
   permalink: /history
   description: 關於歷史的文章。
 
-hubic:
-  label: Hubic
-  permalink: /hubic
-  description: 關於 Hubic 的文章。
-
 huggingface:
   label: HuggingFace
   permalink: /huggingface
@@ -802,11 +797,6 @@ tencent-cos:
   label: Tencent COS
   permalink: /tencent-cos
   description: 關於 Tencent COS 的文章。
-
-terabox:
-  label: Terabox
-  permalink: /terabox
-  description: 關於 Terabox 的文章。
 
 tips:
   label: 技巧

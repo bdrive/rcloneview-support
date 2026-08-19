@@ -91,6 +91,5 @@ Box 在企業層級處理治理與協作事務，而 RcloneView 則確保資料�
 
 - [使用 RcloneView 將 Box 儲存空間掛載為網路磁碟機](https://rcloneview.com/support/blog/mount-box-storage-network-drive-rcloneview)
 - [使用 RcloneView 將 Dropbox 備份至 AWS S3](https://rcloneview.com/support/blog/backup-dropbox-to-aws-s3-rcloneview)
-- [管理 Icedrive 儲存空間 — 使用 RcloneView 同步與備份檔案](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 
 <CloudSupportGrid />

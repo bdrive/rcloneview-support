@@ -58,6 +58,7 @@ Rules that MUST be followed when auto-generating blog posts.
 | Comparisons with other products are allowed ONLY in comparison posts, sourced from `COMPETITORS_SPEC.md` | See Section 9. Outside that scope, no product comparisons (legal + unverifiable risk) |
 | Do not describe rclone features as RcloneView-exclusive | RcloneView is a GUI frontend for rclone |
 | Do not fabricate installation commands or package names | Only use methods from Feature Spec Section 18. See Section 1.5 below |
+| Do not feature or mention any storage service absent from Feature Spec Section 10 | rclone has no backend for it — the post would be false. Caused a real forum complaint (TeraBox, 2026-08). See Section 1.7 below |
 | Do not describe RcloneView as headless/CLI/server tool | It is a GUI-only app requiring a display server. See Section 1.6 below |
 | Do not claim availability on unofficial package managers | AUR, Snap Store, Flathub, Homebrew — none are official channels |
 | Do not cite specific performance numbers | Transfer speed, throughput etc. are environment-dependent and unverifiable |
@@ -143,6 +144,21 @@ RcloneView is a **GUI desktop application**. Every blog post MUST respect these 
 | Any Linux distro | GTK+3 and X11/Wayland requirement | Package manager installation (unless it's dpkg/rpm with downloaded file) |
 | Server / NAS | Use Connection Manager to connect to remote rclone; don't install RcloneView on server | RcloneView as server software |
 | Docker | Not applicable — use rclone CLI in Docker | Docker image for RcloneView |
+
+### 1.7 Supported Storage Service Validation (Provider Whitelist)
+
+**Background (real incident):** In August 2026 a forum user reported that our blog claimed RcloneView supports TeraBox. rclone has NO TeraBox backend — the post described a completely fabricated "select TeraBox from the provider list + OAuth" flow. Similar fabricated posts existed for Hubic (backend removed from rclone; service shut down) and Icedrive (WebDAV-only, and Icedrive is sunsetting WebDAV as of April 2026). All were removed.
+
+**The whitelist:** `RCLONEVIEW_FEATURE_SPEC.md` Section 10 (10.1–10.5) plus the virtual remotes in Section 11. This is the ONLY list of storage services a post may feature.
+
+| Rule | Details |
+|------|---------|
+| Featured provider MUST be in Feature Spec Section 10 | "Featured" = appears in the title, slug, tags, keywords, or is the subject of setup instructions |
+| Popularity is NOT support | TeraBox, Baidu Netdisk, MediaFire, Degoo, Sync.com, Tresorit, Internxt, Filen, Icedrive have huge search volume — and NO rclone backend. Never write about them |
+| Gateway access (WebDAV/FTP/SFTP/S3-compatible) needs official proof | A post may describe reaching a service via a generic protocol ONLY if the service officially documents that endpoint today (not historically). Cite the condition (e.g., "requires paid plan"). If unsure, do not publish |
+| Dead or dying services are banned as featured topics | A service that shut down or deprecated its API/protocol (Hubic, Uptobox seizure, Icedrive WebDAV sunset) must not get a how-to post, even if a backend still exists in rclone |
+| Do not name unsupported services even in passing | Free-tier tables, union-remote examples, and "Related Guides" links must only reference whitelisted services |
+| Machine gate | `node scripts/check-provider-support.mjs` scans every blog post (all 9 locales) against a blacklist of known-unsupported services and FAILS the build on any hit. Run it before publishing; extend its blacklist when a new unsupported service becomes popular |
 
 ---
 
@@ -343,6 +359,12 @@ When these expressions appear in generated blog posts, automatically remove or r
 ## 7. Fact-Check Checklist
 
 Final verification checklist before blog publication:
+
+**Provider Support (Section 1.7 — caused a real forum complaint):**
+- [ ] Is the featured storage service listed in `RCLONEVIEW_FEATURE_SPEC.md` Section 10 (or a Section 11 virtual remote)?
+- [ ] Are there ZERO mentions of unsupported services (TeraBox, Baidu Netdisk, MediaFire, Degoo, Sync.com, Tresorit, Internxt, Filen, Icedrive, Hubic, ...)? A post featuring one is REMOVE, not FIX
+- [ ] If the post uses WebDAV/FTP/S3-gateway access, is that endpoint officially documented by the service today, with conditions stated?
+- [ ] Does `node scripts/check-provider-support.mjs` pass?
 
 **Terminology & Expression:**
 - [ ] Is the product name exactly "RcloneView"?
