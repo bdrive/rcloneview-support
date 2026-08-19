@@ -91,6 +91,5 @@ Box menangani tata kelola dan kolaborasi di tingkat perusahaan, dan RcloneView m
 
 - [Mount Penyimpanan Box sebagai Network Drive dengan RcloneView](https://rcloneview.com/support/blog/mount-box-storage-network-drive-rcloneview)
 - [Pencadangan Dropbox ke AWS S3 dengan RcloneView](https://rcloneview.com/support/blog/backup-dropbox-to-aws-s3-rcloneview)
-- [Kelola Penyimpanan Icedrive — Sinkronisasi dan Pencadangan File dengan RcloneView](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 
 <CloudSupportGrid />

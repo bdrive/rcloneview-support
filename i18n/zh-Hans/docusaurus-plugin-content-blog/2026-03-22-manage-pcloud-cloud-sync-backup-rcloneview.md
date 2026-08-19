@@ -66,7 +66,6 @@ pCloud 的零知识加密使其非常适合注重隐私的用户。然而，在�
 
 **相关指南：**
 
-- [使用 RcloneView 管理 Icedrive 云同步和备份](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 - [使用 RcloneView 同步两个 Google Drive 账户](https://rcloneview.com/support/blog/sync-two-google-drive-accounts-rcloneview)
 - [远程管理 — 在 RcloneView 中添加、编辑、删除远程](https://rcloneview.com/support/blog/remote-management-add-edit-delete-rcloneview)
 

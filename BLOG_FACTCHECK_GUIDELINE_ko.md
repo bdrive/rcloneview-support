@@ -58,6 +58,7 @@
 | 다른 제품과의 직접 비교 금지 | 법적 리스크 및 검증 불가 |
 | rclone 자체 기능을 RcloneView 고유 기능처럼 서술하지 않는다 | RcloneView는 rclone의 GUI 프론트엔드 |
 | 설치 명령이나 패키지 이름을 날조하지 않는다 | Feature Spec Section 18의 방법만 사용. 아래 1.5 참조 |
+| Feature Spec Section 10에 없는 스토리지 서비스를 다루거나 언급하지 않는다 | rclone에 해당 백엔드가 없어 글 자체가 거짓이 됨. 실제 포럼 컴플레인 발생(TeraBox, 2026-08). 아래 1.7 참조 |
 | RcloneView를 헤드리스/CLI/서버 도구로 설명하지 않는다 | 디스플레이 서버 필수 GUI 앱. 아래 1.6 참조 |
 | 비공식 패키지 매니저 배포를 주장하지 않는다 | AUR, Snap Store, Flathub, Homebrew — 모두 비공식 |
 | 구체적 성능 수치를 인용하지 않는다 | 전송 속도 등은 환경 의존적이며 검증 불가 |
@@ -143,6 +144,21 @@ RcloneView는 **GUI 데스크톱 애플리케이션**이다. 모든 블로그 �
 | 모든 Linux 배포판 | GTK+3 및 X11/Wayland 요구사항 | 패키지 매니저 설치 (dpkg/rpm + 다운로드 파일 제외) |
 | 서버 / NAS | Connection Manager로 원격 rclone에 연결; 서버에 RcloneView 설치하지 않기 | RcloneView가 서버 소프트웨어 |
 | Docker | 해당 없음 — Docker에서는 rclone CLI 사용 | RcloneView용 Docker 이미지 |
+
+### 1.7 지원 스토리지 검증 (프로바이더 화이트리스트)
+
+**배경 (실사고):** 2026년 8월, 블로그가 TeraBox 지원을 주장한다는 포럼 제보가 있었다. rclone에는 TeraBox 백엔드가 없으며, 해당 글은 "프로바이더 목록에서 TeraBox 선택 + OAuth"라는 완전히 날조된 절차를 담고 있었다. Hubic(rclone 백엔드 제거 + 서비스 종료), Icedrive(WebDAV 전용 접근이었으나 2026년 4월부터 WebDAV 단계적 폐지)도 같은 유형의 글이 있어 전부 삭제됐다.
+
+**화이트리스트:** `RCLONEVIEW_FEATURE_SPEC.md` Section 10 (10.1~10.5) + Section 11 가상 리모트. 블로그가 다룰 수 있는 스토리지 서비스는 이 목록이 전부다.
+
+| 규칙 | 상세 |
+|------|------|
+| 글의 대상 프로바이더는 반드시 Feature Spec Section 10에 있어야 한다 | "대상" = 제목·슬러그·태그·키워드에 등장하거나 설정 절차의 주제인 경우 |
+| 인기 ≠ 지원 | TeraBox, Baidu Netdisk, MediaFire, Degoo, Sync.com, Tresorit, Internxt, Filen, Icedrive는 검색량이 많지만 rclone 백엔드가 없다. 절대 다루지 않는다 |
+| 게이트웨이 접근(WebDAV/FTP/SFTP/S3 호환)은 공식 근거 필수 | 해당 서비스가 그 엔드포인트를 현재(과거가 아니라) 공식 문서로 제공할 때만 서술 가능. 조건(예: 유료 플랜 필요)을 명시. 불확실하면 게시하지 않는다 |
+| 종료됐거나 종료 중인 서비스는 금지 | 서비스가 폐쇄됐거나 API/프로토콜을 폐지 중이면(Hubic, Uptobox 압수, Icedrive WebDAV 폐지) rclone 백엔드가 남아 있어도 how-to 글을 쓰지 않는다 |
+| 미지원 서비스는 지나가는 언급도 금지 | 무료 용량 표, union 리모트 예시, Related Guides 링크에도 화이트리스트 서비스만 사용 |
+| 기계적 게이트 | `node scripts/check-provider-support.mjs`가 블로그 전체(9개 로케일)를 미지원 서비스 블랙리스트와 대조해 걸리면 빌드를 실패시킨다. 게시 전 반드시 실행하고, 새 미지원 서비스가 유행하면 블랙리스트를 확장한다 |
 
 ---
 
@@ -340,6 +356,12 @@ RcloneView는 **GUI 데스크톱 애플리케이션**이다. 모든 블로그 �
 ## 7. Fact-Check Checklist
 
 블로그 게시 전 최종 검증 체크리스트:
+
+**지원 스토리지 (Section 1.7 — 실제 포럼 컴플레인 발생):**
+- [ ] 글의 대상 스토리지가 `RCLONEVIEW_FEATURE_SPEC.md` Section 10(또는 Section 11 가상 리모트)에 있는가?
+- [ ] 미지원 서비스(TeraBox, Baidu Netdisk, MediaFire, Degoo, Sync.com, Tresorit, Internxt, Filen, Icedrive, Hubic 등) 언급이 0건인가? 미지원 서비스를 다루는 글은 FIX가 아니라 REMOVE
+- [ ] WebDAV/FTP/S3 게이트웨이 접근을 서술했다면, 그 엔드포인트가 현재 공식 문서에 있고 조건을 명시했는가?
+- [ ] `node scripts/check-provider-support.mjs`가 통과하는가?
 
 **용어 및 표현:**
 - [ ] 제품명이 "RcloneView"로 정확히 표기되었는가?

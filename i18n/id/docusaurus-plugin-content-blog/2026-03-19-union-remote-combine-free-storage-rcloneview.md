@@ -29,7 +29,7 @@ import RvCta from '@site/src/components/RvCta';
 
 # Union Remote — Gabungkan Beberapa Akun Cloud Gratis Menjadi Satu Kolam Penyimpanan Raksasa dengan RcloneView
 
-> 15 GB dari Google. 5 GB dari OneDrive. 2 GB dari Dropbox. 1 TB dari Terabox. Secara individu jumlahnya kecil. Digabungkan menjadi union remote, semuanya menjadi kolam penyimpanan multi-terabyte gratis.
+> 15 GB dari Google. 5 GB dari OneDrive. 2 GB dari Dropbox. 20 GB dari MEGA. Secara individu jumlahnya kecil. Digabungkan menjadi union remote, semuanya menjadi satu kolam penyimpanan gratis yang besar.
 
 Sebagian besar penyedia cloud menawarkan tingkat penyimpanan gratis, tetapi secara individu kapasitasnya terlalu kecil untuk penggunaan serius. Union remote milik rclone menggabungkan beberapa lokasi penyimpanan menjadi satu sistem file virtual. RcloneView memungkinkan Anda mengatur ini secara visual, lalu menjelajahi, melakukan sinkronisasi, dan mengelola kolam gabungan tersebut seolah-olah itu adalah satu drive raksasa.
 
@@ -53,12 +53,10 @@ Union remote menggabungkan beberapa remote menjadi satu tampilan virtual:
 | OneDrive | 5 GB |
 | Dropbox | 2 GB |
 | pCloud | 10 GB |
-| Terabox | 1 TB |
 | MEGA | 20 GB |
-| Icedrive | 10 GB |
 | Koofr | 10 GB |
 
-Digabungkan: berpotensi lebih dari 1 TB penyimpanan gratis.
+Digabungkan: lebih dari 60 GB penyimpanan gratis di berbagai penyedia.
 
 ## Mengatur Union Remote
 
@@ -80,7 +78,7 @@ Sebarkan data pencadangan ke beberapa akun gratis untuk redundansi. Jika satu pr
 
 ### Buat kolam penyimpanan bertingkat
 
-Gabungkan penyimpanan cepat (Google Drive) dengan penyimpanan besar (Terabox) dalam satu kolam.
+Gabungkan penyimpanan cepat (Google Drive) dengan penyimpanan besar (MEGA) dalam satu kolam.
 
 ## Menjelajahi Kolam Gabungan
 

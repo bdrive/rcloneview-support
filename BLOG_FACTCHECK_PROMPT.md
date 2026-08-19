@@ -81,6 +81,17 @@ Read each post and check against the FULL checklist in Guideline Section 7.
 
 For EACH post, verify these critical items:
 
+PROVIDER SUPPORT (Guideline Section 1.7 — caused a real forum complaint):
+- [ ] Featured storage service listed in RCLONEVIEW_FEATURE_SPEC.md Section 10
+      (or Section 11 virtual remote)? If NOT → REMOVE the post (not FIX).
+- [ ] Zero mentions of unsupported services anywhere (TeraBox, Baidu Netdisk,
+      MediaFire, Degoo, Sync.com, Tresorit, Internxt, Filen, Icedrive, Hubic)?
+      Passing mentions in tables/examples/links must be FIXed out.
+- [ ] WebDAV/FTP/S3-gateway access claims backed by the service's CURRENT
+      official docs, with conditions stated (e.g., "requires paid plan")?
+- [ ] Run `node scripts/check-provider-support.mjs` — it must exit 0. It scans
+      all 9 locales; any hit is a build blocker.
+
 INSTALLATION & DISTRIBUTION (most common AI hallucination):
 - [ ] Every install instruction matches Guideline Section 1.5 valid methods?
 - [ ] No fabricated commands? (yay, pacman, snap, flatpak, brew, apt repo, dnf repo, pip, npm, docker)

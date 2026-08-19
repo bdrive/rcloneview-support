@@ -66,7 +66,6 @@ Lindungi data pCloud Anda hari ini dengan strategi pencadangan otomatis yang cer
 
 **Panduan Terkait:**
 
-- [Kelola Sinkronisasi dan Pencadangan Cloud Icedrive dengan RcloneView](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 - [Sinkronkan Dua Akun Google Drive dengan RcloneView](https://rcloneview.com/support/blog/sync-two-google-drive-accounts-rcloneview)
 - [Pengelolaan Remote — Menambah, Mengedit, Menghapus Remote di RcloneView](https://rcloneview.com/support/blog/remote-management-add-edit-delete-rcloneview)
 

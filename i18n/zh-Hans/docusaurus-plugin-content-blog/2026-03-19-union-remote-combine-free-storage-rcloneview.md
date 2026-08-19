@@ -29,7 +29,7 @@ import RvCta from '@site/src/components/RvCta';
 
 # 联合远程（Union Remote）——通过 RcloneView 将多个免费云账户合并为一个巨大的存储池
 
-> Google 提供 15 GB，OneDrive 提供 5 GB，Dropbox 提供 2 GB，Terabox 提供 1 TB。单独来看它们都很小，但合并成一个联合远程后，就是一个免费的多 TB 存储池。
+> Google 提供 15 GB，OneDrive 提供 5 GB，Dropbox 提供 2 GB，MEGA 提供 20 GB。单独来看它们都很小，但合并成一个联合远程后，就是一个可观的免费存储池。
 
 大多数云服务商都提供免费存储层，但单独使用往往容量太小，难以满足实际需求。rclone 的联合远程（union remote）可以将多个存储位置合并为一个虚拟文件系统。RcloneView 让你可以通过可视化方式完成设置，然后像浏览、同步和管理一个巨大的驱动器一样，操作这个合并后的存储池。
 
@@ -53,12 +53,10 @@ import RvCta from '@site/src/components/RvCta';
 | OneDrive | 5 GB |
 | Dropbox | 2 GB |
 | pCloud | 10 GB |
-| Terabox | 1 TB |
 | MEGA | 20 GB |
-| Icedrive | 10 GB |
 | Koofr | 10 GB |
 
-合并后：可能拥有超过 1 TB 的免费存储空间。
+合并后：跨多个提供商拥有超过 60 GB 的免费存储空间。
 
 ## 设置联合远程
 
@@ -80,7 +78,7 @@ import RvCta from '@site/src/components/RvCta';
 
 ### 创建分层存储池
 
-将高速存储（Google Drive）与大容量存储（Terabox）合并到同一个存储池中。
+将高速存储（Google Drive）与大容量存储（MEGA）合并到同一个存储池中。
 
 ## 浏览合并后的存储池
 

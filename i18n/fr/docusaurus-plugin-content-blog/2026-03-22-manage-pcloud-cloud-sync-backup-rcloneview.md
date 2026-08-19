@@ -66,7 +66,6 @@ Protégez dès aujourd'hui vos données pCloud grâce à des stratégies de sauv
 
 **Guides connexes :**
 
-- [Gérer la synchronisation et la sauvegarde cloud Icedrive avec RcloneView](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 - [Synchroniser deux comptes Google Drive avec RcloneView](https://rcloneview.com/support/blog/sync-two-google-drive-accounts-rcloneview)
 - [Gestion des distants — Ajouter, modifier, supprimer des distants dans RcloneView](https://rcloneview.com/support/blog/remote-management-add-edit-delete-rcloneview)
 

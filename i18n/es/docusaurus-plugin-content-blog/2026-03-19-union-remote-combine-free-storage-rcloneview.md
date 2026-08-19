@@ -29,7 +29,7 @@ import RvCta from '@site/src/components/RvCta';
 
 # Remoto Union — Combina Varias Cuentas de Nube Gratuitas en un Gigantesco Fondo de Almacenamiento con RcloneView
 
-> 15 GB de Google. 5 GB de OneDrive. 2 GB de Dropbox. 1 TB de Terabox. Por separado son pequeños. Combinados en un remoto union, son un fondo de almacenamiento gratuito de varios terabytes.
+> 15 GB de Google. 5 GB de OneDrive. 2 GB de Dropbox. 20 GB de MEGA. Por separado son pequeños. Combinados en un remoto union, son un gran fondo de almacenamiento gratuito.
 
 La mayoría de los proveedores de nube ofrecen niveles de almacenamiento gratuitos, pero por separado son demasiado pequeños para un uso serio. El remoto union de rclone fusiona varias ubicaciones de almacenamiento en un único sistema de archivos virtual. RcloneView te permite configurarlo de forma visual y luego explorar, sincronizar y gestionar el fondo combinado como si fuera una sola unidad gigante.
 
@@ -53,12 +53,10 @@ Un remoto union combina varios remotos en una única vista virtual:
 | OneDrive | 5 GB |
 | Dropbox | 2 GB |
 | pCloud | 10 GB |
-| Terabox | 1 TB |
 | MEGA | 20 GB |
-| Icedrive | 10 GB |
 | Koofr | 10 GB |
 
-Combinado: potencialmente más de 1 TB de almacenamiento gratuito.
+Combinado: más de 60 GB de almacenamiento gratuito entre varios proveedores.
 
 ## Configura un Remoto Union
 
@@ -80,7 +78,7 @@ Distribuye los datos de copia de seguridad entre varias cuentas gratuitas para l
 
 ### Crear un fondo de almacenamiento por niveles
 
-Combina almacenamiento rápido (Google Drive) con almacenamiento amplio (Terabox) en un solo fondo.
+Combina almacenamiento rápido (Google Drive) con almacenamiento amplio (MEGA) en un solo fondo.
 
 ## Explora el Fondo Combinado
 

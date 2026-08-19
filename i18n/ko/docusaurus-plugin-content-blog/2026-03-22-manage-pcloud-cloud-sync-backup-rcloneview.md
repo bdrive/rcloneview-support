@@ -66,7 +66,6 @@ pCloud 연결은 몇 분이면 완료됩니다. RcloneView는 pCloud 계정으�
 
 **관련 가이드:**
 
-- [RcloneView로 Icedrive 클라우드 동기화 및 백업 관리하기](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 - [RcloneView로 두 개의 Google Drive 계정 동기화하기](https://rcloneview.com/support/blog/sync-two-google-drive-accounts-rcloneview)
 - [리모트 관리 — RcloneView에서 리모트 추가, 편집, 삭제하기](https://rcloneview.com/support/blog/remote-management-add-edit-delete-rcloneview)
 

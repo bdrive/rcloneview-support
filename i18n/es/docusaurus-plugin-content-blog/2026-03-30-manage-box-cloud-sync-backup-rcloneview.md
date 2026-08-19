@@ -91,6 +91,5 @@ Box gestiona la gobernanza y la colaboración a nivel empresarial, y RcloneView 
 
 - [Montar el almacenamiento de Box como unidad de red con RcloneView](https://rcloneview.com/support/blog/mount-box-storage-network-drive-rcloneview)
 - [Copia de seguridad de Dropbox a AWS S3 con RcloneView](https://rcloneview.com/support/blog/backup-dropbox-to-aws-s3-rcloneview)
-- [Gestiona el almacenamiento de Icedrive — Sincroniza y haz copias de seguridad de archivos con RcloneView](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 
 <CloudSupportGrid />

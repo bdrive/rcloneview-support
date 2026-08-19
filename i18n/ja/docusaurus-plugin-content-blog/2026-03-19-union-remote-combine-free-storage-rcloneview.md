@@ -29,7 +29,7 @@ import RvCta from '@site/src/components/RvCta';
 
 # ユニオンリモート — RcloneViewで複数の無料クラウドアカウントを1つの巨大なストレージプールに統合
 
-> Googleから15GB、OneDriveから5GB、Dropboxから2GB、Teraboxから1TB。それぞれは小さくても、ユニオンリモートに統合すれば無料のマルチテラバイトストレージプールになります。
+> Googleから15GB、OneDriveから5GB、Dropboxから2GB、MEGAから20GB。それぞれは小さくても、ユニオンリモートに統合すれば1つの大きな無料ストレージプールになります。
 
 多くのクラウドプロバイダーは無料ストレージ枠を提供していますが、個別に見ると本格的な用途には容量が足りません。rcloneのユニオンリモートは、複数のストレージ場所を1つの仮想ファイルシステムに統合します。RcloneViewを使えば、これを視覚的に設定した上で、統合されたプールをまるで1つの巨大なドライブのように閲覧、同期、管理できます。
 
@@ -53,12 +53,10 @@ import RvCta from '@site/src/components/RvCta';
 | OneDrive | 5 GB |
 | Dropbox | 2 GB |
 | pCloud | 10 GB |
-| Terabox | 1 TB |
 | MEGA | 20 GB |
-| Icedrive | 10 GB |
 | Koofr | 10 GB |
 
-合計: 1TBを超える無料ストレージになる可能性があります。
+合計: 複数のプロバイダーで60GBを超える無料ストレージになります。
 
 ## ユニオンリモートのセットアップ
 
@@ -80,7 +78,7 @@ import RvCta from '@site/src/components/RvCta';
 
 ### 階層型ストレージプールを作成する
 
-高速なストレージ(Google Drive)と大容量ストレージ(Terabox)を1つのプールに組み合わせます。
+高速なストレージ(Google Drive)と大容量ストレージ(MEGA)を1つのプールに組み合わせます。
 
 ## 統合プールを閲覧する
 

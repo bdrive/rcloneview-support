@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 # Union Remote — Combine Multiple Free Cloud Accounts into One Giant Storage Pool with RcloneView
 
-> 15 GB from Google. 5 GB from OneDrive. 2 GB from Dropbox. 1 TB from Terabox. Individually they're small. Combined into a union remote, they're a free multi-terabyte storage pool.
+> 15 GB from Google. 5 GB from OneDrive. 2 GB from Dropbox. 20 GB from MEGA. Individually they're small. Combined into a union remote, they're one large free storage pool.
 
 Most cloud providers offer free storage tiers, but individually they're too small for serious use. Rclone's union remote merges multiple storage locations into a single virtual filesystem. RcloneView lets you set this up visually and then browse, sync, and manage the combined pool as if it were one giant drive.
 
@@ -53,12 +53,10 @@ A union remote combines multiple remotes into one virtual view:
 | OneDrive | 5 GB |
 | Dropbox | 2 GB |
 | pCloud | 10 GB |
-| Terabox | 1 TB |
 | MEGA | 20 GB |
-| Icedrive | 10 GB |
 | Koofr | 10 GB |
 
-Combined: potentially over 1 TB of free storage.
+Combined: 60+ GB of free storage across providers.
 
 ## Set Up a Union Remote
 
@@ -80,7 +78,7 @@ Spread backup data across multiple free accounts for redundancy. If one provider
 
 ### Create a tiered storage pool
 
-Combine fast storage (Google Drive) with large storage (Terabox) in one pool.
+Combine fast storage (Google Drive) with large storage (MEGA) in one pool.
 
 ## Browse the Combined Pool
 

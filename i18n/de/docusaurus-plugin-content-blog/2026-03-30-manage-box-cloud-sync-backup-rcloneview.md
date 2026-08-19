@@ -91,6 +91,5 @@ Box übernimmt Governance und Zusammenarbeit auf Unternehmensebene, und RcloneVi
 
 - [Box-Speicher mit RcloneView als Netzlaufwerk einbinden](https://rcloneview.com/support/blog/mount-box-storage-network-drive-rcloneview)
 - [Dropbox mit RcloneView auf AWS S3 sichern](https://rcloneview.com/support/blog/backup-dropbox-to-aws-s3-rcloneview)
-- [Icedrive-Speicher verwalten — Dateien mit RcloneView synchronisieren und sichern](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 
 <CloudSupportGrid />

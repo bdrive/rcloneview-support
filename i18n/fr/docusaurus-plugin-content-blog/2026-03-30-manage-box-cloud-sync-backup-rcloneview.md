@@ -91,6 +91,5 @@ Box gère la gouvernance et la collaboration au niveau de l'entreprise, et Rclon
 
 - [Monter le stockage Box comme lecteur réseau avec RcloneView](https://rcloneview.com/support/blog/mount-box-storage-network-drive-rcloneview)
 - [Sauvegarder Dropbox vers AWS S3 avec RcloneView](https://rcloneview.com/support/blog/backup-dropbox-to-aws-s3-rcloneview)
-- [Gérer le stockage Icedrive — Synchroniser et sauvegarder vos fichiers avec RcloneView](https://rcloneview.com/support/blog/manage-icedrive-cloud-sync-backup-rcloneview)
 
 <CloudSupportGrid />
