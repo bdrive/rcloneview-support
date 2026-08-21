@@ -2,7 +2,7 @@
 slug: fix-seafile-sync-errors-rcloneview
 title: "Fix Seafile Sync Errors — Troubleshooting Guide with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "Diagnose and resolve common Seafile sync failures in RcloneView, from library access errors to stalled transfers and checksum mismatches."
 keywords:
   - fix seafile sync errors

@@ -2,7 +2,7 @@
 slug: manage-dropbox-business-cloud-sync-backup-rcloneview
 title: "Manage Dropbox for Business Storage — Sync and Backup Files with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Connect Dropbox for Business to RcloneView for cross-platform file browsing, cloud-to-cloud sync, and scheduled backups of team accounts."
 keywords:
   - dropbox for business
