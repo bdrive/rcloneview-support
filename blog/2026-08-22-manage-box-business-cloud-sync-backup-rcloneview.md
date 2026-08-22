@@ -50,7 +50,7 @@ Unlike mount-only tools, RcloneView also syncs and compares folders — on the F
 
 Once connected, the File Explorer panel shows the enterprise folder structure with the same Name, Type, Modified date, and Size columns used across every remote, plus a collapsible folder tree for navigating deep department hierarchies. The breadcrumb path bar's Copy Full Path option outputs the `remote:path` format, which is handy when handing a location off to the built-in rclone Terminal for a quick `rclone about` storage check.
 
-Ctrl+Click and Shift+Click multi-selection make it easy to pull a specific project folder out of a large enterprise space instead of working through the entire account.
+Ctrl+Click and Shift+Click multi-selection let you pull a specific project folder out of a large enterprise space instead of working through the entire account.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Browsing Box for Business enterprise folders in RcloneView Explorer" class="img-large img-center" />
 
