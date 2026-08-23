@@ -2,7 +2,7 @@
 slug: folder-compare-size-change-discovery-rcloneview
 title: "Find the Biggest Changes — Folder Compare Size Discovery in RcloneView"
 authors:
-  - jay
+  - steve
 description: "Use RcloneView's Folder Compare size discovery tools to locate which cloud folders changed the most, fastest, or need review before syncing."
 keywords:
   - folder compare size discovery

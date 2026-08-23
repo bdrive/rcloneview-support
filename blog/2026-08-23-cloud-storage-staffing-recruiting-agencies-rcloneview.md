@@ -2,7 +2,7 @@
 slug: cloud-storage-staffing-recruiting-agencies-rcloneview
 title: "Cloud Storage for Staffing & Recruiting Agencies — Manage Candidate Files with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Staffing and recruiting agencies use RcloneView to organize, back up, and sync candidate files, resumes, and contracts across cloud storage providers."
 keywords:
   - cloud storage for staffing agencies
