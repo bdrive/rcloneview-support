@@ -49,7 +49,7 @@ Rather than dragging folders one at a time, set up a one-way sync job in the 4-s
 
 ## Monitoring the Transfer and Confirming Completion
 
-Large libraries take time, and Apple's servers can be slower to respond than other providers under sustained transfer. The Transferring tab shows live progress, speed, and file counts, while Job History records the completed run with total size and any errored files so you can spot anything that needs a retry. If iCloud Drive throttles mid-transfer, RcloneView's automatic retry settings resume the job without needing to restart from the beginning.
+Large libraries take time, especially for substantial photo or document collections. The Transferring tab shows live progress, speed, and file counts, while Job History records the completed run with total size and any errored files so you can spot anything that needs a retry. If a transfer is interrupted mid-way, RcloneView's automatic retry setting reruns the sync (default 3 attempts) to pick up anything that didn't complete.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Job history showing a completed iCloud Drive to Dropbox transfer in RcloneView" class="img-large img-center" />
 

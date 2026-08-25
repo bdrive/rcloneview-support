@@ -45,7 +45,7 @@ Field reporters and stringers often upload directly to whatever cloud account is
 
 ## Scheduled Backup Jobs for Daily Deadlines
 
-Newsroom production is deadline-driven, and backup can't depend on someone remembering to run it. A sync job configured in RcloneView's Job Manager can run automatically at a set time each day — after the evening broadcast closes, for example — copying that day's finished packages from an editing workstation's local drive to a cloud archive. Job History then gives producers a record of exactly what transferred, when, and whether anything failed, which matters when a story needs to be re-pulled for a follow-up.
+Newsroom production is deadline-driven, and backup can't depend on someone remembering to run it. With a PLUS license, a sync job configured in RcloneView's Job Manager can run automatically at a set time each day — after the evening broadcast closes, for example — copying that day's finished packages from an editing workstation's local drive to a cloud archive. Job History then gives producers a record of exactly what transferred, when, and whether anything failed, which matters when a story needs to be re-pulled for a follow-up.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling a daily backup job for newsroom footage in RcloneView" class="img-large img-center" />
 
@@ -60,7 +60,7 @@ Interview subjects and embedded footage sources aren't always available for a se
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html).
 2. Connect the cloud accounts your reporters and editors already use — Google Drive, Dropbox, OneDrive, Box, or S3-compatible archive storage.
 3. Set up a folder compare to confirm today's footage is fully mirrored before clearing local drives.
-4. Create a scheduled sync job to move finished packages into your long-term archive automatically.
+4. Create a scheduled sync job (PLUS license) to move finished packages into your long-term archive automatically.
 
 A newsroom that can trust its backup runs on schedule spends less time chasing missing files and more time on the next story.
 
