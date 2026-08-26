@@ -29,9 +29,9 @@ import RvCta from '../src/components/RvCta';
 
 # Manage Box for Business — Sync and Backup Files with RcloneView
 
-> Box for Business accounts need one extra setting most GUIs get wrong — RcloneView handles it, then gives you a full file manager on top.
+> Box for Business accounts need one extra setting during connection — RcloneView handles it, then gives you a full file manager on top.
 
-Box for Business runs on a different account type than a personal Box account, and connecting it correctly requires enabling an enterprise flag most desktop tools never expose. A design agency with shared enterprise folders across a dozen seats can't afford a broken remote that silently browses the wrong workspace. RcloneView adds the correct setting during setup, then treats Box for Business like any other remote — browsable, syncable, and mountable from one window.
+Box for Business runs on a different account type than a personal Box account, and connecting it correctly requires enabling an enterprise flag during remote setup. A design agency with shared enterprise folders across a dozen seats can't afford a broken remote that silently browses the wrong workspace. RcloneView adds the correct setting during setup, then treats Box for Business like any other remote — browsable, syncable, and mountable from one window.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 

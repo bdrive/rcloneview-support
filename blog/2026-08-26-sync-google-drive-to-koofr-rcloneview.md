@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > Keep a European-hosted mirror of your Google Drive on Koofr without writing a single rclone command.
 
-Teams with EU-based clients or data residency preferences often want a second copy of their Google Drive content sitting on European infrastructure. Koofr, based in the EU, is a natural fit for that role, but manually re-uploading files after every change isn't sustainable. RcloneView connects both accounts and runs the sync automatically, keeping the Koofr copy current without any manual file shuffling.
+Teams with EU-based clients or data residency preferences often want a second copy of their Google Drive content sitting on European infrastructure. Koofr, based in the EU, is a natural fit for that role, but manually re-uploading files after every change isn't sustainable. RcloneView connects both accounts and runs the sync as a saved job, keeping the Koofr copy current without any manual file shuffling.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -63,7 +63,7 @@ Before committing to a full transfer, run Dry Run to preview exactly which files
 3. Create a one-way sync job with checksum comparison enabled.
 4. Run a dry run, then execute the job to build your first Koofr mirror.
 
-A standing Google Drive to Koofr sync gives you a European-hosted backup that updates itself, so your recovery copy never depends on remembering to run it manually.
+A standing Google Drive to Koofr sync gives you a European-hosted backup you can rerun in a couple of clicks, so your recovery copy never depends on rebuilding the job from scratch.
 
 ---
 
