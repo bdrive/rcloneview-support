@@ -2,7 +2,7 @@
 slug: cloud-storage-fashion-apparel-brands-rcloneview
 title: "Cloud Storage for Fashion Brands — Streamline Design and Product Asset Management with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Manage lookbooks, tech packs, and product photography across design, production, and retail teams with RcloneView's multi-cloud file management."
 keywords:
   - cloud storage fashion brands

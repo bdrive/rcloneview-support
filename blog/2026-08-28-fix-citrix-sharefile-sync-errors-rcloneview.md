@@ -2,7 +2,7 @@
 slug: fix-citrix-sharefile-sync-errors-rcloneview
 title: "Fix Citrix ShareFile Sync Errors — Resolve Connection Issues with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Troubleshoot Citrix ShareFile connection and sync errors in RcloneView, from Root Folder ID misconfiguration to authentication timeouts."
 keywords:
   - citrix sharefile errors
