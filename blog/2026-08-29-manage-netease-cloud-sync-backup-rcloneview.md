@@ -40,7 +40,7 @@ Teams that provision storage through Netease's S3-compatible object service ofte
 
 ## Connecting Netease Object Storage
 
-Adding Netease to RcloneView follows the standard S3-compatible remote flow: create a new remote, select the S3 protocol type, then enter your Access Key ID, Secret Access Key, and the Netease endpoint URL for your bucket's region. Once saved, the remote appears as its own tab in the Explorer, and every folder inside it browses exactly like a local drive — no separate console tab or CLI session needed to check what's actually in a bucket.
+Adding Netease to RcloneView follows the standard S3-compatible remote flow: create a new remote, select the S3 protocol type, then enter your Access Key ID, Secret Access Key, and the Netease endpoint URL for your bucket's region. Once saved, the remote appears as its own tab in the Explorer, and every folder inside it browses the same way a local drive does — no separate console tab or CLI session needed to check what's actually in a bucket.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding a new S3-compatible remote for Netease object storage in RcloneView" class="img-large img-center" />
 
