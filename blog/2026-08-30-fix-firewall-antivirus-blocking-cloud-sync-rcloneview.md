@@ -2,7 +2,7 @@
 slug: fix-firewall-antivirus-blocking-cloud-sync-rcloneview
 title: "Fix Firewall and Antivirus Blocking Cloud Sync — Resolve Connection Errors with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Diagnose and fix cloud sync jobs that stall or fail because a firewall, antivirus, or endpoint security tool is blocking RcloneView's connections."
 keywords:
   - firewall blocking cloud sync
