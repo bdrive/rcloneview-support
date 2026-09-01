@@ -2,7 +2,7 @@
 slug: auto-mount-startup-rcloneview
 title: "Auto Mount on Startup — Always-Ready Cloud Drives in RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Configure RcloneView's Auto Mount on Startup so your cloud drives are ready the moment your computer boots, without manually remounting each time."
 keywords:
   - auto mount cloud drive startup

@@ -2,7 +2,7 @@
 slug: fix-crypt-remote-password-decrypt-errors-rcloneview
 title: "Fix Crypt Remote Decryption Errors — Password and Config Issues with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Troubleshoot crypt remote decryption failures, bad-decrypt errors, and lost passwords in RcloneView. Practical fixes for encrypted cloud storage."
 keywords:
   - crypt remote decryption error
@@ -57,7 +57,7 @@ If the crypt remote was rebuilt after a config wipe and you still have the origi
 
 There is no backdoor: rclone's crypt encryption is designed so that without the correct password, the data is unrecoverable — not by RcloneView, not by rclone, not by the cloud provider. If a password is truly lost, the practical path forward is prevention rather than recovery. Export your rclone config regularly through Settings, and store the exported file (or at minimum the crypt password) somewhere secure and separate from the machine running RcloneView.
 
-Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license — so once a crypt remote is working correctly, you can run a Dry Run sync against it to confirm decryption succeeds before trusting it with new data. This catches password mismatches before they cause a failed backup job.
+RcloneView also syncs and compares folders on the FREE license, so once a crypt remote is working correctly, you can run a Dry Run sync against it to confirm decryption succeeds before trusting it with new data. This catches password mismatches before they cause a failed backup job.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Folder compare view verifying crypt remote contents match expectations" class="img-large img-center" />
 
