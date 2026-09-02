@@ -2,7 +2,7 @@
 slug: migrate-azure-files-to-onedrive-rcloneview
 title: "Migrate Azure Files to OneDrive — Transfer Files with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Migrate Azure File Storage to OneDrive with RcloneView. Move business files between clouds with drag-and-drop, sync jobs, and dry-run previews."
 keywords:
   - migrate azure files to onedrive

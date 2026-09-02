@@ -2,7 +2,7 @@
 slug: cloud-storage-mining-industry-rcloneview
 title: "Cloud Storage for Mining Companies — Manage Survey Data with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "Centralize drone survey, LiDAR, and GIS data from remote mine sites with RcloneView — cloud storage built for mining operations."
 keywords:
   - cloud storage for mining companies
