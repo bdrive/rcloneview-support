@@ -2,7 +2,7 @@
 slug: cache-remote-accelerate-slow-storage-rcloneview
 title: "Cache Remote — Accelerate Slow Cloud Storage in RcloneView"
 authors:
-  - alex
+  - robin
 description: "Learn how RcloneView's cache virtual remote speeds up slow cloud backends by caching directory listings and file data, including Plex integration."
 keywords:
   - rclone cache remote
@@ -75,7 +75,7 @@ A cache remote won't make your internet connection faster, but for browsing patt
 **Related Guides:**
 
 - [Virtual Remotes in RcloneView — Combine, Union, and Alias Explained](https://rcloneview.com/support/blog/virtual-remotes-combine-union-alias-rcloneview)
-- [Plex Cloud Streaming with RcloneView](https://rcloneview.com/support/blog/plex-cloud-streaming-with-rcloneview)
+- [Plex Cloud Streaming with RcloneView](https://rcloneview.com/support/blog/plex-cloud-mount-rcloneview)
 - [Plex Buffering Fix — VFS Cache Tuning in RcloneView](https://rcloneview.com/support/blog/plex-vfs-cache-rcloneview)
 
 <CloudSupportGrid />

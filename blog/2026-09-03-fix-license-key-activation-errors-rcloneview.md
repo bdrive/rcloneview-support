@@ -2,7 +2,7 @@
 slug: fix-license-key-activation-errors-rcloneview
 title: "Fix License Key Activation Errors — Resolve PLUS License Issues with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Troubleshoot RcloneView PLUS license activation failures — email mismatches, invalid keys, and used coupons — and get scheduling and multi-window features unlocked."
 keywords:
   - rcloneview license activation error
