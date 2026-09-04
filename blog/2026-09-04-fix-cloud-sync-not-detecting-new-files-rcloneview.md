@@ -2,7 +2,7 @@
 slug: fix-cloud-sync-not-detecting-new-files-rcloneview
 title: "Fix Cloud Sync Not Detecting New Files — How to Resolve with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Fix cloud sync jobs that miss new or recently changed files in RcloneView by adjusting cache settings, filters, and refresh behavior."
 keywords:
   - cloud sync not detecting new files

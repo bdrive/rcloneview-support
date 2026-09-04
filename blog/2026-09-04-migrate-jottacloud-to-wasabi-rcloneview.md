@@ -2,7 +2,7 @@
 slug: migrate-jottacloud-to-wasabi-rcloneview
 title: "Migrate Jottacloud to Wasabi — Transfer Files with RcloneView"
 authors:
-  - jay
+  - steve
 description: "Migrate files from Jottacloud to Wasabi object storage with RcloneView, using dry run previews and checksum verification for a safe transfer."
 keywords:
   - migrate jottacloud to wasabi
