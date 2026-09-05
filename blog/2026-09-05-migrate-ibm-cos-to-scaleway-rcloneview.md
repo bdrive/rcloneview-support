@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move buckets between two S3-compatible object storage providers directly, with dry-run previews and checksum verification along the way.
 
-Teams shift object storage providers for data-residency requirements, regional latency, or simply to consolidate infrastructure, but manually re-uploading terabytes of bucket contents between two S3-compatible endpoints is slow and error-prone. RcloneView connects to both IBM Cloud Object Storage and Scaleway Object Storage as standard S3-compatible remotes, then transfers data bucket-to-bucket without routing files through a local disk first. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license.
+Teams shift object storage providers for data-residency requirements, regional latency, or simply to consolidate infrastructure, but manually re-uploading terabytes of bucket contents between two S3-compatible endpoints is slow and error-prone. RcloneView connects to both IBM Cloud Object Storage and Scaleway Object Storage as standard S3-compatible remotes, then transfers data bucket-to-bucket without routing files through a local disk first. Connect S3, Azure File Storage, or Backblaze B2 with full read/write on the FREE license.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -55,7 +55,7 @@ Enabling checksum comparison in the job's advanced settings verifies files by ha
 
 ## Monitoring and Scheduling the Transfer
 
-Large object storage migrations rarely finish in one sitting. The Transferring tab shows live progress, speed, and file counts for the running job, and Job History keeps a record of each completed or interrupted run — including status, duration, and total size transferred — so you can confirm the migration finished cleanly or pick up where a canceled job left off.
+Large object storage migrations rarely finish in one sitting. The Transferring tab shows live progress, speed, and file counts for the running job, and Job History keeps a record of each completed or canceled run — including status, duration, and total size transferred — so you can confirm the migration finished cleanly or pick up where a canceled job left off.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Reviewing job history after migrating buckets from IBM COS to Scaleway" class="img-large img-center" />
 

@@ -32,7 +32,7 @@ import RvCta from '../src/components/RvCta';
 
 > Treat your organization's Box for Business account like any other drive — browse, sync, mount, and back it up from one desktop app.
 
-Box for Business accounts often hold years of shared departmental files spread across dozens of nested team folders, and IT staff need a reliable way to inspect, move, and protect that content without living inside a browser tab. RcloneView connects to Box for Business through the same OAuth login used for personal Box accounts, then applies the enterprise-specific configuration flag so the app can see your organization's full folder structure. Once connected, the account behaves like any other remote in RcloneView's explorer, sync, and mount tools. Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license.
+Box for Business accounts often hold years of shared departmental files spread across dozens of nested team folders, and IT staff need a reliable way to inspect, move, and protect that content without living inside a browser tab. RcloneView connects to Box for Business through the same OAuth login used for personal Box accounts, then applies the enterprise-specific configuration flag so the app can see your organization's full folder structure. Once connected, the account behaves like any other remote in RcloneView's explorer, sync, and mount tools, with sync and folder compare available on the FREE license.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
