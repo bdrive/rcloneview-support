@@ -2,7 +2,7 @@
 slug: fix-google-cloud-storage-auth-errors-rcloneview
 title: "Fix Google Cloud Storage Authentication Errors — Resolve with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "Troubleshoot Google Cloud Storage authentication failures in RcloneView, from missing Project Numbers to expired OAuth tokens."
 keywords:
   - Google Cloud Storage authentication error

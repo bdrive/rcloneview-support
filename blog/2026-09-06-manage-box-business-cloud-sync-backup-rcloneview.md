@@ -2,7 +2,7 @@
 slug: manage-box-business-cloud-sync-backup-rcloneview
 title: "Manage Box for Business — Enterprise Cloud Sync and Backup with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Configure Box for Business in RcloneView for enterprise sync, backup, and mount workflows across your admin-managed Box account."
 keywords:
   - Box for Business
@@ -50,7 +50,7 @@ A common scenario for IT teams is backing up a Box for Business account to a sec
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Configuring a Box for Business backup sync job in RcloneView" class="img-large img-center" />
 
-For departments juggling shared drives across dozens of Box folders, filtering by max file age or predefined document filters keeps nightly jobs focused only on what changed, rather than re-scanning the entire account every run. Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license — so enterprise backup workflows don't require an upgrade to get started.
+For departments juggling shared drives across dozens of Box folders, filtering by max file age or predefined document filters keeps nightly jobs focused only on what changed, rather than re-scanning the entire account every run. RcloneView also syncs and compares folders — on the FREE license — so enterprise backup workflows don't require an upgrade to get started.
 
 ## Scheduling Recurring Enterprise Backups
 
