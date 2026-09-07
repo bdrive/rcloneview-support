@@ -2,7 +2,7 @@
 slug: cloud-storage-maritime-shipping-rcloneview
 title: "Cloud Storage for Maritime and Shipping — Centralize Fleet Data with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Centralize vessel documents, cargo records, and inspection photos across clouds and offices with RcloneView for maritime and shipping teams."
 keywords:
   - cloud storage for shipping companies
@@ -45,7 +45,7 @@ Folder Compare then shows exactly which office has the latest version of a given
 
 ## Scheduled Backups for Compliance Records
 
-Regulatory retention requirements mean cargo manifests and safety records need a backup that runs on its own, not one someone remembers to trigger manually. With a PLUS license, set up crontab-style scheduling so records sync automatically overnight to a second cloud, keeping a copy independent of whichever account an auditor might request first.
+Regulatory retention requirements mean cargo manifests and safety records need a backup that runs on its own, not one someone remembers to trigger manually. With a PLUS license, set up crontab-style scheduling so records sync overnight to a second cloud on a fixed schedule, keeping a copy independent of whichever account an auditor might request first.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling an automated backup job for shipping compliance records" class="img-large img-center" />
 

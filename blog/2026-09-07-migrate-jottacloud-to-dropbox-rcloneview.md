@@ -2,7 +2,7 @@
 slug: migrate-jottacloud-to-dropbox-rcloneview
 title: "Migrate Jottacloud to Dropbox — Transfer Files with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Move files from Jottacloud to Dropbox with RcloneView. Sync folders, verify transfers, and keep both remotes in one window."
 keywords:
   - migrate jottacloud to dropbox
@@ -51,7 +51,7 @@ Use the Sync wizard from the Home tab to configure Jottacloud as the source and 
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Configuring a cloud-to-cloud sync job from Jottacloud to Dropbox" class="img-large img-center" />
 
-Run a Dry Run first. It lists exactly which files will copy without touching either account, which is the fastest way to catch a misconfigured filter before it affects thousands of files.
+Run a Dry Run first. It lists exactly which files will copy without touching either account, which catches a misconfigured filter before it affects thousands of files.
 
 ## Verifying Every File Landed Correctly
 
