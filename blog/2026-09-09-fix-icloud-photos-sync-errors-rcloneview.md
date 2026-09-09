@@ -2,7 +2,7 @@
 slug: fix-icloud-photos-sync-errors-rcloneview
 title: "Fix iCloud Photos Sync Errors — How to Resolve with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Troubleshoot iCloud Photos sync errors in RcloneView, from library authentication failures to slow listings, and get your photo backups running reliably."
 keywords:
   - iCloud Photos sync errors

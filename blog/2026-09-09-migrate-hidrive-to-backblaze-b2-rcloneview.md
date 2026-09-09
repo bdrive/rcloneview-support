@@ -2,7 +2,7 @@
 slug: migrate-hidrive-to-backblaze-b2-rcloneview
 title: "Migrate HiDrive to Backblaze B2 — Transfer Files with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Migrate files from HiDrive to Backblaze B2 with RcloneView — a cross-platform GUI that moves data between the two providers without staging files locally."
 keywords:
   - migrate HiDrive to Backblaze B2
