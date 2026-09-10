@@ -2,7 +2,7 @@
 slug: rcloneview-windows-11-cloud-sync
 title: "RcloneView on Windows 11 — Cloud Storage Sync and Backup"
 authors:
-  - casey
+  - morgan
 description: "Install and run RcloneView on Windows 11 to mount, sync, and back up 90+ cloud storage providers from one desktop application."
 keywords:
   - rcloneview windows 11
@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 > Windows 11 tightened its file explorer and permission model compared to earlier releases — here is how to run RcloneView smoothly on it for mounting, syncing, and backing up cloud storage.
 
-Windows 11's redesigned shell and stricter default security posture change a few things for desktop apps that touch storage and drive letters. **RcloneView** runs natively on Windows 11 as a standard desktop application, giving you one interface to browse, sync, and mount over 90 cloud storage providers instead of juggling separate vendor apps for Google Drive, OneDrive, Dropbox, and S3-compatible storage.
+Windows 11's redesigned shell and stricter default security posture change a few things for desktop apps that touch storage and drive letters. **RcloneView** runs natively on Windows 11 as a standard desktop application, giving you one interface to browse, sync, and mount 90+ cloud storage providers instead of juggling separate vendor apps for Google Drive, OneDrive, Dropbox, and S3-compatible storage.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -61,7 +61,7 @@ The four-step sync wizard covers source and destination selection, transfer conc
 
 ## Monitoring Jobs from the System Tray
 
-RcloneView minimizes to the Windows 11 system tray, where you can view mounted drives, toggle mounts on and off, and start new mounts without reopening the full window. Active transfers appear in the Transferring tab at the bottom of the main window, showing progress percentage, speed, and file counts in real time.
+RcloneView minimizes to the Windows 11 system tray, where you can view mounted drives, toggle mounts on and off, and start new mounts without reopening the full window. Active transfers appear in the Transferring tab at the bottom of the main window, with live progress percentage, speed, and file counts.
 
 ## Getting Started
 

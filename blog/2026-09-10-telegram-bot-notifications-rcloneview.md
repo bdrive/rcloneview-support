@@ -1,8 +1,8 @@
 ---
 slug: telegram-bot-notifications-rcloneview
-title: "Telegram Bot Notifications — Real-Time Cloud Sync Alerts in RcloneView"
+title: "Telegram Bot Notifications — Live Cloud Sync Alerts in RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Configure Telegram Bot alerts in RcloneView to get instant job status notifications for cloud sync, backup, and transfer tasks on your phone."
 keywords:
   - rcloneview telegram
@@ -27,7 +27,7 @@ import CloudSupportGrid from '../src/components/CloudSupportGrid';
 import cloudIcons from '../src/contexts/cloudIcons';
 import RvCta from '../src/components/RvCta';
 
-# Telegram Bot Notifications — Real-Time Cloud Sync Alerts in RcloneView
+# Telegram Bot Notifications — Live Cloud Sync Alerts in RcloneView
 
 > Stop tabbing back to your desktop to check on a transfer — let a Telegram message tell you the moment a cloud sync job finishes, fails, or needs attention.
 
