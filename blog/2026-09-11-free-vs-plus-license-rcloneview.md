@@ -2,7 +2,7 @@
 slug: free-vs-plus-license-rcloneview
 title: "FREE vs PLUS License — Feature Comparison in RcloneView"
 authors:
-  - robin
+  - alex
 description: "Compare RcloneView FREE and PLUS license features side by side — scheduling, multi-window, auto mount, and filtered compare — to pick the right plan."
 keywords:
   - RcloneView license

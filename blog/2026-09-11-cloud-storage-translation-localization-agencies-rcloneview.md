@@ -2,7 +2,7 @@
 slug: cloud-storage-translation-localization-agencies-rcloneview
 title: "Cloud Storage for Translation & Localization Agencies — Centralize Multilingual Files with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Centralize client deliverables across Google Drive, Dropbox, OneDrive, and Box for translation and localization agencies with RcloneView."
 keywords:
   - cloud storage for translation agencies
@@ -55,6 +55,8 @@ Missing a single file in a multilingual deliverable — say, one language pair o
 Legal contracts, medical records, and patent filings routinely pass through translation agencies under strict confidentiality agreements. A Crypt virtual remote wraps an existing cloud folder with file name, folder name, and content encryption, so even if a client's storage account is compromised, the agency's working copies stay unreadable without the encryption password.
 
 ## Getting Started
+
+<img src="/support/images/en/blog/new-remote.png" alt="Adding a new client remote via Remote Manager in RcloneView" class="img-large img-center" />
 
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html).
 2. Add a remote for each client's cloud platform via Remote Manager — most connect with a single OAuth login.
