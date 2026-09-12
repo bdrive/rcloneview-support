@@ -2,7 +2,7 @@
 slug: fix-minio-connection-authentication-errors-rcloneview
 title: "Fix MinIO Connection and Authentication Errors — Resolve with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Troubleshoot MinIO connection refused and access denied errors in RcloneView with endpoint, credential, and TLS checks for self-hosted S3 storage."
 keywords:
   - minio connection error

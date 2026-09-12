@@ -2,7 +2,7 @@
 slug: migrate-seafile-to-backblaze-b2-rcloneview
 title: "Migrate Seafile to Backblaze B2 — Transfer Files with RcloneView"
 authors:
-  - jay
+  - steve
 description: "Move libraries from self-hosted Seafile to Backblaze B2 with RcloneView, a cross-platform GUI for reliable cloud-to-cloud transfers."
 keywords:
   - migrate seafile to backblaze b2
