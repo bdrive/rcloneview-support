@@ -53,7 +53,7 @@ For campuses standardizing on a shared provider going forward, RcloneView's clou
 
 ## Protecting Member Records and Finance Files
 
-Membership directories, counseling notes, and giving records carry a higher sensitivity bar than sermon media, and many smaller organizations don't have a dedicated IT person enforcing where these files can and can't live. Pairing a cloud remote with RcloneView's Crypt virtual remote encrypts file names and contents before they leave the local machine, so even a compromised cloud account credential doesn't expose readable member data. Scheduled sync jobs (available on the PLUS license) can then run those backups automatically overnight rather than depending on someone remembering to do it manually.
+Membership directories, counseling notes, and giving records carry a higher sensitivity bar than sermon media, and many smaller organizations don't have a dedicated IT person enforcing where these files can and can't live. Pairing a cloud remote with RcloneView's Crypt virtual remote encrypts file names and contents before they leave the local machine, so even a compromised cloud account credential doesn't expose readable member data. Scheduled sync jobs (available on the PLUS License) can then run those backups automatically overnight rather than depending on someone remembering to do it manually.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling an automated backup job for church records in RcloneView" class="img-large img-center" />
 
