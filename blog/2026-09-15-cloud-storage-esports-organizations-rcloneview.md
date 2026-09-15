@@ -2,7 +2,7 @@
 slug: cloud-storage-esports-organizations-rcloneview
 title: "Cloud Storage for Esports Organizations — Manage VODs and Sponsor Assets with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Esports organizations use RcloneView to sync tournament VODs, highlight clips, and sponsor assets across cloud storage without scripting a custom pipeline."
 keywords:
   - esports cloud storage

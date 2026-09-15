@@ -2,7 +2,7 @@
 slug: best-mountain-duck-alternatives-rcloneview
 title: "Best Mountain Duck Alternatives — Cross-Platform Cloud Mount and Sync with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Looking for a Mountain Duck alternative? Compare RcloneView, ExpanDrive, and CloudMounter for cross-platform mounting, free sync, and object storage write access."
 keywords:
   - Mountain Duck alternative
@@ -55,7 +55,7 @@ RcloneView is a GUI built on rclone that runs on Windows, macOS, and Linux. Unli
 
 ## Other Alternatives Worth Knowing
 
-**ExpanDrive** runs on Windows, macOS, and Linux, is now free for its personal tier, and pairs mounting with a fast multi-threaded transfer engine — a close match on platform breadth, though it doesn't include RcloneView's folder compare or its 90+ rclone-backed provider list. **CloudMounter** focuses on macOS and Windows with strong client-side AES-256 encryption and a clean interface, but has no dedicated sync feature and no Linux build. Each is a solid mounting tool in its own right; the practical difference is that RcloneView pairs mounting with sync, folder compare, and scheduling across all three operating systems from one app.
+**ExpanDrive** runs on Windows, macOS, and Linux, and as of June 2026 its personal tier is free, pairing mounting with a fast multi-threaded transfer engine — a close match on platform breadth, though it doesn't include RcloneView's folder compare or its 90+ rclone-backed provider list. **CloudMounter** focuses on macOS and Windows with strong client-side AES-256 encryption and a clean interface, but has no dedicated sync feature and no Linux build. Each is a solid mounting tool in its own right; the practical difference is that RcloneView pairs mounting with sync, folder compare, and scheduling across all three operating systems from one app.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparing folder contents before syncing in RcloneView" class="img-large img-center" />
 
