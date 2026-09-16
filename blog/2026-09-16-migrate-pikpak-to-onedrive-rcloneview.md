@@ -2,7 +2,7 @@
 slug: migrate-pikpak-to-onedrive-rcloneview
 title: "Migrate PikPak to OneDrive — Transfer Files with RcloneView"
 authors:
-  - jay
+  - steve
 description: "Move files from PikPak to OneDrive with RcloneView, an rclone GUI that migrates cloud storage without any command-line work."
 keywords:
   - migrate pikpak to onedrive

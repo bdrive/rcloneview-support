@@ -2,7 +2,7 @@
 slug: fix-ftp-connection-errors-rcloneview
 title: "Fix FTP Connection Errors — Troubleshooting with RcloneView"
 authors:
-  - steve
+  - jay
 description: "Troubleshoot FTP connection failures in RcloneView, from stuck remotes to authentication errors, using the built-in terminal and log tools."
 keywords:
   - fix ftp connection errors
@@ -50,7 +50,7 @@ RcloneView also includes a full rclone terminal alongside the GUI, on the FREE l
 
 <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Testing an FTP remote connection from the RcloneView terminal" class="img-large img-center" />
 
-That raw error text is the fastest way to tell an authentication rejection apart from a timeout, which point to completely different fixes.
+That raw error text is a quick way to tell an authentication rejection apart from a timeout, which point to completely different fixes.
 
 ## Collect Logs for Persistent Failures
 
