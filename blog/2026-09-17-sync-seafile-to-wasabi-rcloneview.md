@@ -2,7 +2,7 @@
 slug: sync-seafile-to-wasabi-rcloneview
 title: "Sync Seafile to Wasabi — Cloud Backup with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Sync a self-hosted Seafile library to Wasabi S3-compatible storage with RcloneView. Keep an off-site copy without exporting files by hand."
 keywords:
   - sync Seafile to Wasabi

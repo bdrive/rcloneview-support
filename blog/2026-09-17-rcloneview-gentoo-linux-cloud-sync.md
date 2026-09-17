@@ -2,7 +2,7 @@
 slug: rcloneview-gentoo-linux-cloud-sync
 title: "RcloneView on Gentoo Linux — Cloud Storage Sync and Backup"
 authors:
-  - kai
+  - tayson
 description: "Run RcloneView on Gentoo Linux via AppImage and manage 90+ cloud providers with drag-and-drop sync, mount, and scheduled backup from one GUI."
 keywords:
   - RcloneView Gentoo
