@@ -45,7 +45,7 @@ This matters because rclone is strict about that syntax: a colon separates the r
 
 ## Why It Beats Manual Path Entry
 
-Typing paths by hand doesn't scale once folder names include unicode characters, spaces, or deep nesting — exactly the kind of paths that are easy to mistype and hard to debug. Copy Full Path sidesteps all of that by copying the literal string RcloneView already resolved when it rendered the folder tree, so what you paste is guaranteed to match what the remote actually contains. Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license — and Copy Full Path works the same way across all three: Explorer, Sync job configuration, and Folder Compare.
+Typing paths by hand doesn't scale once folder names include unicode characters, spaces, or deep nesting — exactly the kind of paths that are easy to mistype and hard to debug. Copy Full Path sidesteps all of that by copying the literal string RcloneView already resolved when it rendered the folder tree, so what you paste is guaranteed to match what the remote actually contains. RcloneView also syncs and compares folders — on the FREE license — and Copy Full Path works the same way across all three: Explorer, Sync job configuration, and Folder Compare.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Selecting a folder path for comparison in RcloneView" class="img-large img-center" />
 
