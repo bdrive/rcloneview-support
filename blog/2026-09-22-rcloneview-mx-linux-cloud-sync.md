@@ -2,7 +2,7 @@
 slug: rcloneview-mx-linux-cloud-sync
 title: "RcloneView on MX Linux — Cloud Storage Sync and Backup"
 authors:
-  - morgan
+  - casey
 description: "Run RcloneView on MX Linux via .deb or AppImage and manage 90+ cloud providers with drag-and-drop sync, mount, and scheduled backup in one GUI."
 keywords:
   - RcloneView MX Linux

@@ -2,7 +2,7 @@
 slug: migrate-pikpak-to-mega-rcloneview
 title: "Migrate PikPak to Mega — Transfer Files with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "Move files from PikPak to Mega with RcloneView, an rclone GUI that transfers cloud storage directly between remotes without local downloads."
 keywords:
   - migrate pikpak to mega
@@ -55,7 +55,7 @@ In Step 2, raise the number of file transfers if you're moving many small files 
 
 ## Monitor and Verify the Transfer
 
-Start the job and switch to the **Transferring** tab to watch progress, speed, and file count update in real time. Once it finishes, check **Job History** for the total size and file count transferred, then run **Folder Compare** between the PikPak source and the Mega destination to confirm both sides match before you consider the migration complete.
+Start the job and switch to the **Transferring** tab for live transfer monitoring of progress, speed, and file count. Once it finishes, check **Job History** for the total size and file count transferred, then run **Folder Compare** between the PikPak source and the Mega destination to confirm both sides match before you consider the migration complete.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Job History showing a completed PikPak to Mega migration" class="img-large img-center" />
 
