@@ -2,7 +2,7 @@
 slug: fix-rclone-config-password-errors-rcloneview
 title: "Fix Rclone Config Password Errors — Resolve Encrypted Config Issues with RcloneView"
 authors:
-  - alex
+  - robin
 description: "Troubleshoot rclone.conf Config Password errors in RcloneView — lockouts, decrypt failures, and forgotten passwords — and get your remotes reconnected."
 keywords:
   - rclone config password error
@@ -38,7 +38,7 @@ RcloneView's Settings tab includes a **Config Password** option under Embedded R
 
 ## Recognizing a Config Password Problem
 
-The symptom is usually total, not partial: instead of one remote failing to connect, every remote — Google Drive, S3, Dropbox, all of them — fails at once, often right after RcloneView starts or after the embedded rclone process restarts. Check the **Log** tab in the bottom Info View, or enable file-based logging in Settings > Embedded Rclone with log level set to DEBUG, then restart the embedded rclone process. A config decryption failure shows up clearly in the log rather than as a provider-specific auth error, which is the fastest way to tell this apart from an expired OAuth token or a revoked API key.
+The symptom is usually total, not partial: instead of one remote failing to connect, every remote — Google Drive, S3, Dropbox, all of them — fails at once, often right after RcloneView starts or after the embedded rclone process restarts. Check the **Log** tab in the bottom Info View, or enable file-based logging in Settings > Embedded Rclone with log level set to DEBUG, then restart the embedded rclone process. A config decryption failure shows up clearly in the log rather than as a provider-specific auth error, which is a clear way to tell this apart from an expired OAuth token or a revoked API key.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Reviewing job history and logs after a config password error in RcloneView" class="img-large img-center" />
 

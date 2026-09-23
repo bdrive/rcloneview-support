@@ -2,7 +2,7 @@
 slug: manage-http-remote-cloud-sync-rcloneview
 title: "Manage HTTP Remote Storage — Browse and Sync Files with RcloneView"
 authors:
-  - robin
+  - alex
 description: "Connect a read-only HTTP file index to RcloneView and sync its contents to Google Drive, S3, Backblaze B2, and 90+ cloud storage providers."
 keywords:
   - HTTP remote RcloneView
@@ -59,7 +59,7 @@ If the HTTP index is updated periodically — nightly builds, weekly dataset ref
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling a recurring job to pull files from an HTTP remote in RcloneView" class="img-large img-center" />
 
-With a **PLUS license**, attach a crontab-style schedule to the job so new files published on the HTTP server land in your cloud archive automatically, and check the **Job History** tab afterward to confirm transfer counts and catch any files the source server stopped serving.
+With a **PLUS license**, attach a crontab-style schedule to the job so new files published on the HTTP server are pulled into your cloud archive on that schedule, and check the **Job History** tab afterward to confirm transfer counts and catch any files the source server stopped serving.
 
 ## Getting Started
 
@@ -75,7 +75,7 @@ Once an HTTP source is connected, pulling files into your cloud archive becomes 
 
 **Related Guides:**
 
-- [Connect Any WebDAV Server to RcloneView — Sync with Google Drive, S3, and 70+ Clouds](https://rcloneview.com/support/blog/connect-webdav-server-cloud-sync-rcloneview)
+- [Connect Any WebDAV Server to RcloneView — Sync with Google Drive, S3, and 90+ Clouds](https://rcloneview.com/support/blog/connect-webdav-server-cloud-sync-rcloneview)
 - [Connect Any SFTP Server to RcloneView — Sync Remote Servers with Cloud Storage](https://rcloneview.com/support/blog/manage-sftp-server-cloud-sync-rcloneview)
 - [Manage FTP Server Storage — Sync and Backup Files with RcloneView](https://rcloneview.com/support/blog/manage-ftp-server-cloud-sync-backup-rcloneview)
 
