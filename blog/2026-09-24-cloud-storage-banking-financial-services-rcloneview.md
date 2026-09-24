@@ -2,7 +2,7 @@
 slug: cloud-storage-banking-financial-services-rcloneview
 title: "Cloud Storage for Banking and Financial Services — Secure Multi-Cloud Backup with RcloneView"
 authors:
-  - steve
+  - jay
 description: "See how banking and financial services teams use RcloneView to encrypt, back up, and manage multi-cloud storage across providers with full audit visibility."
 keywords:
   - cloud storage banking
@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > Give banking and financial services teams one console to encrypt, back up, and audit files across every cloud they already use.
 
-Financial institutions rarely run on a single cloud — client records might live in Google Drive or SharePoint, while transaction archives sit in Amazon S3 or Azure Blob Storage for cost and compliance reasons. RcloneView gives these teams a single desktop interface to browse, encrypt, and synchronize files across 90+ storage providers without asking staff to learn a different tool for each one. Connect S3, Azure, or Backblaze B2 with full read/write access on the FREE license, which matters for institutions that need to move data between providers without upgrading just to test a workflow.
+Financial institutions rarely run on a single cloud — client records might live in Google Drive or OneDrive, while transaction archives sit in Amazon S3 or Azure File Storage for cost and compliance reasons. RcloneView gives these teams a single desktop interface to browse, encrypt, and synchronize files across 90+ storage providers without asking staff to learn a different tool for each one. Connect S3, Azure File Storage, or Backblaze B2 with full read/write access on the FREE license, which matters for institutions that need to move data between providers without upgrading just to test a workflow.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -38,7 +38,7 @@ Financial institutions rarely run on a single cloud — client records might liv
 
 ## Encrypting Sensitive Records Before They Reach the Cloud
 
-Financial data — account statements, loan documents, KYC files — needs protection before it leaves a workstation. RcloneView supports rclone's Crypt virtual remote, which encrypts file names, folder names, and file contents on top of any existing remote. Point Crypt at your S3 bucket or Azure container, and every file written through that remote is encrypted client-side, so the underlying cloud provider only ever stores ciphertext.
+Financial data — account statements, loan documents, KYC files — needs protection before it leaves a workstation. RcloneView supports rclone's Crypt virtual remote, which encrypts file names, folder names, and file contents on top of any existing remote. Point Crypt at your S3 bucket or Azure File Storage share, and every file written through that remote is encrypted client-side, so the underlying cloud provider only ever stores ciphertext.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Setting up an encrypted Crypt remote for financial records in RcloneView" class="img-large img-center" />
 
@@ -46,7 +46,7 @@ This matters most for institutions juggling multiple vendors, where an encrypted
 
 ## Keeping Branch and Department Data in Sync
 
-Many financial services firms operate across branches or departments that each maintain their own cloud folder structure. RcloneView's Folder Compare shows exactly which files differ between a branch's local drive and the central cloud archive, so discrepancies get caught before quarter-end reporting rather than after. Sync jobs can then run on a schedule (PLUS license) to keep branch folders mirrored to a central OneDrive or SharePoint tenant automatically.
+Many financial services firms operate across branches or departments that each maintain their own cloud folder structure. RcloneView's Folder Compare shows exactly which files differ between a branch's local drive and the central cloud archive, so discrepancies get caught before quarter-end reporting rather than after. Sync jobs can then run on a schedule (PLUS license) to keep branch folders mirrored to a central OneDrive tenant.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Syncing branch office files to a central financial services cloud archive" class="img-large img-center" />
 

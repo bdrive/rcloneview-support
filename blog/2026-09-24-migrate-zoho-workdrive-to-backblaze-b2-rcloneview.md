@@ -2,7 +2,7 @@
 slug: migrate-zoho-workdrive-to-backblaze-b2-rcloneview
 title: "Migrate Zoho WorkDrive to Backblaze B2 — Transfer Files with RcloneView"
 authors:
-  - jay
+  - steve
 description: "Move files from Zoho WorkDrive to Backblaze B2 directly with RcloneView, using cloud-to-cloud transfer, dry run preview, and job scheduling."
 keywords:
   - migrate Zoho WorkDrive to Backblaze B2
