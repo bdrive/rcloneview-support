@@ -2,7 +2,7 @@
 slug: get-public-link-share-files-rcloneview
 title: "Get Public Link — Share Cloud Files Instantly with RcloneView"
 authors:
-  - tayson
+  - kai
 description: "Learn how to generate shareable public links for cloud files directly from RcloneView's file explorer, no browser tab required."
 keywords:
   - get public link

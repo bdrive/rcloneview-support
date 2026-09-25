@@ -2,7 +2,7 @@
 slug: fix-embedded-rclone-crash-restart-rcloneview
 title: "Fix Embedded Rclone Crashes — Restart and Recover with RcloneView"
 authors:
-  - kai
+  - tayson
 description: "Troubleshoot embedded rclone connection drops in RcloneView with restart steps, logging, and external rclone fallback options."
 keywords:
   - embedded rclone crash
