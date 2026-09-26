@@ -2,7 +2,7 @@
 slug: sync-seafile-to-dropbox-rcloneview
 title: "Sync Seafile to Dropbox — Cloud Backup with RcloneView"
 authors:
-  - morgan
+  - casey
 description: "Back up a self-hosted Seafile server to Dropbox with RcloneView, using scheduled sync jobs and dry run previews for safe, verified transfers."
 keywords:
   - sync Seafile to Dropbox
@@ -38,7 +38,7 @@ Seafile is popular precisely because it keeps data under an organization's own c
 
 ## Connecting Seafile and Dropbox
 
-Seafile is added as a remote through its WebDAV endpoint — enter the server URL, library path, and account credentials, and RcloneView verifies the connection before saving. Dropbox uses the simpler OAuth flow: a browser window opens, the account is authorized, and the remote appears as a tab automatically. Once both are configured, the Remote Manager lists them side by side, and either can be edited later without disturbing the other.
+Seafile is added as a remote with its server URL, library, and account credentials, and RcloneView verifies the connection before saving. Dropbox uses the simpler OAuth flow: a browser window opens, the account is authorized, and the remote appears as a tab automatically. Once both are configured, the Remote Manager lists them side by side, and either can be edited later without disturbing the other.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding a self-hosted Seafile server and Dropbox as remotes in RcloneView" class="img-large img-center" />
 
@@ -61,7 +61,7 @@ Turn on checksum comparison in Advanced Settings so RcloneView confirms files ma
 ## Getting Started
 
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html).
-2. Add your Seafile server as a WebDAV remote with its library path and credentials.
+2. Add your Seafile server as a remote with its library path and credentials.
 3. Add Dropbox via the OAuth login flow.
 4. Run a Dry Run, then execute the sync job and confirm results in Job History.
 

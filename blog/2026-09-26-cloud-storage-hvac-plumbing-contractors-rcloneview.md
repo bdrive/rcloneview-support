@@ -2,7 +2,7 @@
 slug: cloud-storage-hvac-plumbing-contractors-rcloneview
 title: "Cloud Storage for HVAC and Plumbing Contractors — Organize Job Files with RcloneView"
 authors:
-  - casey
+  - morgan
 description: "HVAC and plumbing contractors juggle job-site photos, invoices, and permits across devices — RcloneView centralizes cloud storage for field crews."
 keywords:
   - cloud storage for HVAC contractors
