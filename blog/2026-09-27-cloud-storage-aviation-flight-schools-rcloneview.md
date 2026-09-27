@@ -37,7 +37,7 @@ A flight school running out of two airfields ends up with training videos, stude
 
 ## Centralizing Records Across Locations
 
-Connect the cloud storage each office already uses as a remote in RcloneView — Google Drive for shared training curricula, a Backblaze B2 or Wasabi bucket for the bulk of archived flight footage, OneDrive or SharePoint if the school runs on Microsoft 365 for administrative paperwork. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, so a front-desk PC at one airfield and an instructor's laptop at another can both browse the same remotes without any provider lock-in forcing everyone onto the same platform.
+Connect the cloud storage each office already uses as a remote in RcloneView — Google Drive for shared training curricula, a Backblaze B2 or Wasabi bucket for the bulk of archived flight footage, OneDrive if the school runs on Microsoft 365 for administrative paperwork. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, so a front-desk PC at one airfield and an instructor's laptop at another can both browse the same remotes without any provider lock-in forcing everyone onto the same platform.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding cloud storage remotes for flight school records in RcloneView" class="img-large img-center" />
 
