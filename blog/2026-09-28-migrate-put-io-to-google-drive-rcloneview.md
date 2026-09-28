@@ -39,7 +39,7 @@ Put.io is a great landing zone for downloaded torrents and remote files, but it'
 
 ## Connecting Put.io and Google Drive Side by Side
 
-RcloneView's Explorer supports up to four panels at once, so you can open your Put.io account in one panel and your Google Drive in another, viewed side by side. Put.io is added via its Access Token, generated from your Put.io account settings, while Google Drive uses browser-based OAuth login with no separate API key needed. Once both remotes are configured, each shows up as its own tab, and switching between them is instant.
+RcloneView's Explorer supports up to four panels at once, so you can open your Put.io account in one panel and your Google Drive in another, viewed side by side. Both Put.io and Google Drive are added the same way — browser-based OAuth login, with no separate API key or access token to copy manually. Once both remotes are configured, each shows up as its own tab, and switching between them is instant.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding Put.io and Google Drive as separate remotes in RcloneView" class="img-large img-center" />
 
@@ -64,8 +64,8 @@ Job History also keeps a record of the transfer — file counts, total size, and
 ## Getting Started
 
 1. **Download RcloneView** from [rcloneview.com](https://rcloneview.com/src/download.html).
-2. Add your Put.io remote using your Access Token from Put.io account settings.
-3. Add your Google Drive remote via the browser OAuth login flow.
+2. Add your Put.io remote via the browser OAuth login flow.
+3. Add your Google Drive remote the same way, via browser OAuth login.
 4. Create a Copy or Move job from Put.io to your destination folder, run a Dry Run, then execute.
 
 Clearing out Put.io storage into a permanent Google Drive home keeps your downloads organized without a second manual upload step.
