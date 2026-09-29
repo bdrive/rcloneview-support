@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move files shared through Gofile into Backblaze B2 object storage, and check every file arrived, without writing a single command.
 
-Gofile is convenient for handing files to other people, but it is a poor place to keep the only copy of anything important. Backblaze B2 is object storage built for long-term retention, with bucket-level control over what you keep. RcloneView connects both services in one window and copies between them directly, so nothing has to pass through a manual download and re-upload on your own disk first.
+Gofile is convenient for handing files to other people, but it is a poor place to keep the only copy of anything important. Backblaze B2 is object storage built for long-term retention, with bucket-level control over what you keep. RcloneView connects both services in one window and copies between them from one interface, so you do not have to download and re-upload each file by hand.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
