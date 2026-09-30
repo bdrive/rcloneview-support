@@ -39,7 +39,7 @@ A tax practice accumulates thousands of PDFs each season: W-2s, prior-year retur
 
 ## Back Up Local Client Folders to the Cloud
 
-Suppose a two-person practice keeps client folders on a local disk, one per client per year. Add a cloud remote such as Backblaze B2, Amazon S3, or OneDrive in **New Remote**, then open the local folder in one Explorer panel and the cloud destination in the other. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license.
+Suppose a two-person practice keeps client folders on a local disk, one per client per year. Add a cloud remote such as Backblaze B2, Amazon S3, or OneDrive in **New Remote**, then open the local folder in one Explorer panel and the cloud destination in the other.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding a cloud remote for tax client backups in RcloneView" class="img-large img-center" />
 
@@ -61,7 +61,7 @@ Job History lists each run with its status, duration, size, and file count, so y
 
 ## Verify Before You Archive the Season
 
-At the end of the season, open **Compare** with the local folder on the left and the cloud copy on the right. Filter for left-only or different files to find anything missing, then copy it across. Only after a clean comparison should you clear space on the office machine.
+At the end of the season, open **Compare** with the local folder on the left and the cloud copy on the right. Filter for left-only or different files to find anything missing, then copy it across. Once the comparison is clean, you can clear space on the office machine.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparing local client folders with the cloud backup" class="img-large img-center" />
 

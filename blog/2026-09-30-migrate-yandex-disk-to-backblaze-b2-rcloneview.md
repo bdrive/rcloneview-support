@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Copy everything from Yandex Disk into a Backblaze B2 bucket, and confirm every file arrived, without touching a command line.
 
-If your files live on Yandex Disk but you want an independent, bucket-based copy in Backblaze B2, the usual route is a slow download-and-reupload through your own machine. RcloneView connects both services in one window and runs the transfer between them, with a dry run beforehand and a folder comparison afterward.
+If your files live on Yandex Disk but you want an independent, bucket-based copy in Backblaze B2, the usual route is a manual download-and-reupload through your own machine. RcloneView connects both services in one window and runs the transfer between them, with a dry run beforehand and a folder comparison afterward.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -74,7 +74,7 @@ When the job finishes, open **Compare** from the Home tab with Yandex Disk on th
 3. Run a Dry Run, then start the copy or sync job.
 4. Use Folder Compare to confirm the bucket matches the source.
 
-A verified second copy in object storage means Yandex Disk no longer has to be the only place your files live.
+A verified second copy in object storage means Yandex Disk is no longer the sole place your files live.
 
 ---
 
