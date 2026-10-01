@@ -40,15 +40,15 @@ A landscaping company accumulates files in scattered places: before-and-after ph
 
 Start with a predictable folder structure on the office machine: one folder per client, with subfolders for photos, designs, estimates, and invoices. Photos from crews can be dropped into the client folder at the end of each day.
 
-Open the local folder in one RcloneView Explorer panel and your cloud remote in another. Thumbnail view makes it easy to confirm site photos landed in the right job folder before they are uploaded.
+Open the local folder in one RcloneView Explorer panel and your cloud remote in another. The File Explorer lets you confirm site photos landed in the right job folder before they are uploaded.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding a cloud remote for landscaping job files in RcloneView" class="img-large img-center" />
 
 ## Choose Storage That Fits the Business
 
-RcloneView supports Google Drive, OneDrive, Dropbox, Backblaze B2, Wasabi, Amazon S3, and 90+ other providers, so you can use an account you already have or pick object storage for large photo archives. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license.
+RcloneView supports Google Drive, OneDrive, Dropbox, Backblaze B2, Wasabi, Amazon S3, and 90+ other providers, so you can use an account you already have or pick object storage for large photo archives.
 
-If clients' addresses and contracts are involved, add a Crypt remote on top of the destination. File names and contents are encrypted before upload, so the provider never sees them.
+If clients' addresses and contracts are involved, add a Crypt remote on top of the destination. File names and contents are encrypted via rclone Crypt before upload.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Copying job folders to cloud storage in RcloneView" class="img-large img-center" />
 

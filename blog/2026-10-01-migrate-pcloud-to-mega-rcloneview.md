@@ -54,7 +54,7 @@ Keep the source untouched until you have verified the result. A copy job leaves 
 
 ## Preview with Dry Run and Tune Transfers
 
-Run a Dry Run first. It lists the files that would be copied or deleted without changing anything, which catches a wrong destination folder before it costs hours. In the advanced step you can adjust concurrent file transfers and equality checkers. MEGA can be sensitive to heavy parallelism, so lower values are a reasonable start if you see errors.
+Run a Dry Run first. It lists the files that would be copied or deleted without changing anything, which catches a wrong destination folder before it costs hours. In the advanced step you can adjust concurrent file transfers and equality checkers. If you see errors, lowering these values is a reasonable first step.
 
 Use the filtering step to skip file types or folders you do not want to carry over, such as old installers or Google Docs exports.
 
@@ -62,7 +62,7 @@ Use the filtering step to skip file types or folders you do not want to carry ov
 
 ## Verify with Folder Compare
 
-After the transfer, open **Compare** with pCloud on the left and MEGA on the right. Filter to left-only and different files to see anything missing or mismatched, and copy the remainder across directly from the compare view. The Transferring tab and Job History record speed, size, and status for each run.
+After the transfer, open **Compare** with pCloud on the left and MEGA on the right. Filter to left-only and different files to see anything missing or mismatched, and copy the remainder across directly from the compare view. The Transferring tab and Job History record size and status for each run.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Folder Compare between pCloud and MEGA" class="img-large img-center" />
 
