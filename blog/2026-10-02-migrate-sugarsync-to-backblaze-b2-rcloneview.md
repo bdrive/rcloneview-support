@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move years of SugarSync folders into Backblaze B2 buckets without downloading and re-uploading by hand.
 
-Teams that have used SugarSync for a long time often want their archives in object storage, where buckets and application keys are easier to automate. RcloneView connects to both services in one window, so you can copy folders straight from SugarSync to Backblaze B2 and check the result before retiring the old account. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license.
+Teams that have used SugarSync for a long time often want their archives in object storage, where buckets and application keys suit automation. RcloneView connects to both services in one window, so you can copy folders straight from SugarSync to Backblaze B2 and check the result before retiring the old account. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 

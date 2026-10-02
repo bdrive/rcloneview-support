@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 # Fix Gofile Sync Errors — Token, Upload, and Listing Problems Resolved with RcloneView
 
-> Most Gofile sync failures trace back to a handful of causes: a stale token, a wrong root folder, or a transfer that needs retrying — and RcloneView makes each one easy to spot.
+> Most Gofile sync failures trace back to a handful of causes: a stale token, a wrong root folder, or a transfer that needs retrying — and RcloneView surfaces each one in its job history and logs.
 
 Gofile authenticates with an Account API Token rather than a browser login, so errors usually surface as "unauthorized" messages or folders that look empty. Instead of guessing from a command line, you can use RcloneView's job history, logs, and terminal to see exactly which step failed. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux.
 
