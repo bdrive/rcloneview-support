@@ -50,11 +50,11 @@ Drag a folder from the Google Drive panel to the Mega panel. Dragging between di
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer from Google Drive to Mega" class="img-large img-center" />
 
-Google-native files such as Docs and Sheets are exported by Google on transfer. If you do not want them, the predefined "Google Docs" filter in the filtering step excludes them. You can also cap file size or age so only relevant data moves.
+If you do not want Google Docs files in the transfer, the predefined "Google Docs" filter in the filtering step excludes them. You can also cap file size or age so only relevant data moves.
 
 ## Preview and Monitor the Job
 
-Run a Dry Run first. It lists the files that would be copied, so you can catch a wrong source folder before it costs you hours. Then start the job and watch the Transferring tab for speed, file count, and progress. Mega applies its own account limits, so lowering the number of concurrent file transfers in Advanced Settings can keep long runs steady.
+Run a Dry Run first. It lists the files that would be copied, so you can catch a wrong source folder before it costs you hours. Then start the job and watch the Transferring tab for speed, file count, and progress. If long runs struggle, you can adjust the number of concurrent file transfers in Advanced Settings.
 
 <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitoring transfer progress in RcloneView" class="img-large img-center" />
 

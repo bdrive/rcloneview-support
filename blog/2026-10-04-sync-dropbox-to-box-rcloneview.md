@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > Keep a second copy of your Dropbox files in Box, managed from a single desktop window.
 
-Teams often work in Dropbox while clients or partners insist on Box. Keeping both in step by hand means constant downloading and re-uploading. RcloneView links the two accounts as remotes and syncs folders directly between them, with previews and history so you always know what changed. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license as well, if you later want a third copy.
+Teams often work in Dropbox while clients or partners insist on Box. Keeping both in step by hand means constant downloading and re-uploading. RcloneView links the two accounts as remotes and syncs folders directly between them, with previews and history so you always know what changed.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -38,7 +38,7 @@ Teams often work in Dropbox while clients or partners insist on Box. Keeping bot
 
 ## Add Dropbox and Box as Remotes
 
-Both providers use OAuth browser login, so no API keys are needed. Click New Remote, pick Dropbox, and approve access in your browser; repeat for Box. For business accounts, the spec calls for the Dropbox for Business setting (`dropbox_business = true`) or Box for Business (`box_sub_type = enterprise`), so choose those variants when relevant.
+Both providers use OAuth browser login, so no API keys are needed. Click New Remote, pick Dropbox, and approve access in your browser; repeat for Box. For business accounts, use the Dropbox for Business setting (`dropbox_business = true`) or the Box for Business setting (`box_sub_type = enterprise`), so choose those variants when relevant.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Creating Dropbox and Box remotes in RcloneView" class="img-large img-center" />
 
