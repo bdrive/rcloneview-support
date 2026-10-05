@@ -28,9 +28,9 @@ import RvCta from '../src/components/RvCta';
 
 # Migrate Mega to Cloudflare R2 — Transfer Files with RcloneView
 
-> Move a Mega library into Cloudflare R2 buckets without downloading everything to your own disk first.
+> Move a Mega library into Cloudflare R2 buckets with RcloneView, previewing the job before it runs.
 
-Mega suits personal storage, but projects that need bucket-style access, an S3-compatible API, or a clear separation between storage and sharing often end up on object storage. RcloneView connects Mega and Cloudflare R2 as remotes and transfers between them directly, with previews, monitoring, and a history of every run.
+Mega suits personal storage, but projects that need bucket-style access, an S3-compatible API, or a clear separation between storage and sharing often end up on object storage. RcloneView connects Mega and Cloudflare R2 as remotes and transfers between them in a single job, with previews, monitoring, and a history of every run.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -42,7 +42,7 @@ Open New Remote and choose Mega. It uses account credentials: your email and pas
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding Mega and Cloudflare R2 remotes in RcloneView" class="img-large img-center" />
 
-RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, so both remotes sit side by side in the Explorer once they are saved.
+RcloneView supports 90+ cloud storage services on Windows, macOS, and Linux, and both remotes sit side by side in the Explorer once they are saved.
 
 ## Preview Before You Transfer
 
@@ -54,7 +54,7 @@ Consider a video editor with 800 GB of project archives on Mega. In Step 2 you c
 
 ## Monitor and Verify
 
-Once the job starts, the Transferring tab shows progress, speed, and file counts, and you can cancel a run if needed. Mega may limit transfers on some accounts, so keep an eye on errors and rerun the job if a session stops early. Job History keeps status, duration, size, and file counts.
+Once the job starts, the Transferring tab shows progress, speed, and file counts, and you can cancel a run if needed. Keep an eye on errors, and rerun the job if a session stops early. Job History keeps status, duration, size, and file counts.
 
 <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitoring a Mega to R2 transfer in RcloneView" class="img-large img-center" />
 
@@ -69,7 +69,7 @@ When it finishes, open Folder Compare with Mega on one side and R2 on the other.
 3. Create a sync job from Mega to the R2 bucket and run a Dry Run.
 4. Start the transfer, then confirm the result with Folder Compare.
 
-A careful, previewed migration means your Mega files arrive in R2 complete and ready to use.
+A previewed migration with a final Folder Compare check lets you confirm what reached R2.
 
 ---
 
