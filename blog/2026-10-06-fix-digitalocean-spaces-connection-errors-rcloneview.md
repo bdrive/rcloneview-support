@@ -55,7 +55,7 @@ RcloneView includes a Terminal tab in the bottom Info View. Run `rclone listremo
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="RcloneView job history showing errored transfers" class="img-large img-center" />
 
-Check the Log tab and Job History for repeated failures. If errors appear only on large transfers, lower the number of file transfers in the job's Advanced Settings to ease the load. You can also reach Spaces alongside other S3-compatible services with full read/write on the FREE license.
+Check the Log tab and Job History for repeated failures. If errors appear only on large transfers, lower the number of file transfers in the job's Advanced Settings to ease the load.
 
 ## Rule Out Network and Time Problems
 
