@@ -41,7 +41,7 @@ Switching from pCloud to Dropbox usually means a team has standardized on Dropbo
 
 Both pCloud and Dropbox use OAuth browser login in RcloneView, so no API keys are needed. Open the Remote tab, click **New Remote**, choose pCloud, and sign in when the browser opens. Repeat for Dropbox. If you use a Dropbox Business account, enable the `dropbox_business = true` setting during configuration.
 
-RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, so both accounts appear side by side as Explorer panels.
+RcloneView supports 90+ cloud storage services on Windows, macOS, and Linux, so both accounts appear side by side as Explorer panels.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding pCloud and Dropbox remotes in RcloneView" class="img-large img-center" />
 
@@ -49,13 +49,13 @@ RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, an
 
 Before moving anything, open the Sync wizard and select pCloud as the source and a Dropbox folder as the destination. Use **Copy** semantics for a first migration so nothing on the source is touched. Run a **Dry Run** to list every file that would be transferred and confirm the folder structure lands where you expect.
 
-Say a designer has 400 GB of project folders in pCloud. A dry run lets you spot oversized files or unwanted subfolders, which you can exclude in Step 3 using max file size, file age, or custom filter rules.
+Say a designer has 400 GB of project folders in pCloud. A dry run lets you spot oversized files or unwanted subfolders, which you can exclude in the Sync wizard's filtering step using max file size, file age, or custom filter rules.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer from pCloud to Dropbox" class="img-large img-center" />
 
 ## Run the Transfer and Monitor Progress
 
-Start the job and watch the Transferring tab for progress, speed, and file counts. In Advanced Settings you can adjust the number of file transfers and enable checksum comparison. If the run fails partway, the job's retry setting (default 3) re-attempts the sync, and re-running only copies what is missing.
+Start the job and watch the Transferring tab for progress and file counts. In Advanced Settings you can adjust the number of file transfers and enable checksum comparison. If the run fails partway, the job's retry setting (default 3) re-attempts the sync, and re-running only copies what is missing.
 
 Because the data moves between the two services through rclone, you do not need free local disk space for the full library.
 

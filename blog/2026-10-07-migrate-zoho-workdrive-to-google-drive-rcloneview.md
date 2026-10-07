@@ -41,7 +41,7 @@ When a company moves from the Zoho suite to Google Workspace, the WorkDrive team
 
 Zoho WorkDrive needs one extra setting: you must select your **Region** when creating the remote, and it must match the data center of your Zoho account. Google Drive uses OAuth browser login. Open the Remote tab, click **New Remote**, and add each service in turn.
 
-Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license.
+Basic sync and folder comparison are available with the FREE license.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Creating Zoho WorkDrive and Google Drive remotes" class="img-large img-center" />
 
