@@ -577,6 +577,14 @@
     "message": "Des guides pas à pas pour maîtriser RcloneView.",
     "description": "Card description"
   },
+  "home.demo": {
+    "message": "Démo interactive",
+    "description": "Card title"
+  },
+  "home.demoDesc": {
+    "message": "Découvrez comment fonctionne RcloneView.",
+    "description": "Card description"
+  },
   "home.helpGuides": {
     "message": "Guides d’aide",
     "description": "Card title"

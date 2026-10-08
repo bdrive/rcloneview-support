@@ -577,6 +577,14 @@
     "message": "RcloneView をマスターするためのステップバイステップガイド。",
     "description": "Card description"
   },
+  "home.demo": {
+    "message": "インタラクティブデモ",
+    "description": "Card title"
+  },
+  "home.demoDesc": {
+    "message": "RcloneView の動作を確認しましょう。",
+    "description": "Card description"
+  },
   "home.helpGuides": {
     "message": "ヘルプガイド",
     "description": "Card title"

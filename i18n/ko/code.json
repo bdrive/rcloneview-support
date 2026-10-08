@@ -577,6 +577,14 @@
     "message": "RcloneView를 마스터하기 위한 단계별 가이드.",
     "description": "Card description"
   },
+  "home.demo": {
+    "message": "인터랙티브 데모",
+    "description": "Card title"
+  },
+  "home.demoDesc": {
+    "message": "RcloneView가 어떻게 동작하는지 확인해 보세요.",
+    "description": "Card description"
+  },
   "home.helpGuides": {
     "message": "도움말 가이드",
     "description": "Card title"

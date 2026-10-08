@@ -577,6 +577,14 @@
     "message": "Panduan langkah demi langkah untuk menguasai RcloneView.",
     "description": "Card description"
   },
+  "home.demo": {
+    "message": "Demo Interaktif",
+    "description": "Card title"
+  },
+  "home.demoDesc": {
+    "message": "Lihat cara kerja RcloneView.",
+    "description": "Card description"
+  },
   "home.helpGuides": {
     "message": "Panduan Bantuan",
     "description": "Card title"

@@ -10,7 +10,12 @@ import LocalizedDocSearch from "../components/LocalizedDocSearch";
 // import styles from './Support.module.css';  // CSS 모듈 또는 custom.css에서 클래스 정의
 
 export default function SupportPage() {
-  const { siteConfig } = useDocusaurusContext();
+  const {
+    siteConfig,
+    i18n: { currentLocale },
+  } = useDocusaurusContext();
+  // www 데모 페이지도 /{locale}/ 미러 구조 — 현재 로케일의 데모로 연결 (CustomNavbar 의 wwwUrl 과 동일 규칙)
+  const demoUrl = `https://rcloneview.com${currentLocale === "en" ? "" : `/${currentLocale}`}/demo/`;
   return (
     <Layout
       title={translate({ id: "home.title", message: "RcloneView Support Center", description: "Support home title" })}
@@ -38,7 +43,7 @@ export default function SupportPage() {
         </div>
         {/* Tutorials 버튼부터 하단 영역까지 전체 회색 배경 */}
         <div className="bg-gray-100 w-full py-12" style={{ flex: 1 }}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl mx-auto">
             <Link
               to="/tutorials/"
               className="bg-white p-6 rounded-xl border border-gray-200 shadow-md hover:shadow-xl transition duration-300 text-center hover:no-underline"
@@ -51,6 +56,21 @@ export default function SupportPage() {
                 <Translate id="home.tutorialsDesc" description="Card description">Step-by-step guides to master RcloneView.</Translate>
               </p>
             </Link>
+
+            <a
+              href={demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-6 rounded-xl border border-gray-200 shadow-md hover:shadow-xl transition duration-300 text-center hover:no-underline"
+            >
+              <div className="text-5xl mb-4">🖥️</div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2" style={{ fontFamily: "Poppins" }}>
+                <Translate id="home.demo" description="Card title">Interactive Demo</Translate>
+              </h3>
+              <p className="text-gray-600" style={{ fontFamily: "Poppins" }}>
+                <Translate id="home.demoDesc" description="Card description">See how RcloneView works.</Translate>
+              </p>
+            </a>
 
             <Link
               to="/howto/"
