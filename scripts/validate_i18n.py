@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """i18n 번역본 구조/YAML 검증 + 알려진 아티팩트 자동 교정.
 
-번역 배치 후 검증 파이프라인의 1+2단계 (I18N_RUNBOOK_ko.md 참고):
+번역 배치 후 검증 파이프라인의 1+2단계 (rcloneview-blog-automation/I18N_RUNBOOK_ko.md 참고):
   .venv/bin/python scripts/validate_i18n.py     # "문제 0건"이어야 통과
 이후 3단계 `node scripts/mdx_check.mjs`, 4단계 전체 빌드로 이어진다.
 
