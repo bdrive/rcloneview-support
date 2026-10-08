@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // 블로그가 rclone/RcloneView 가 지원하지 않는 스토리지 서비스를 다루거나
-// 언급하지 않는지 검사한다. 지원 목록의 근거는 RCLONEVIEW_FEATURE_SPEC.md
+// 언급하지 않는지 검사한다. 지원 목록의 근거는 bdrive/rcloneview-blog-automation 의 RCLONEVIEW_FEATURE_SPEC.md
 // Section 10 (BLOG_FACTCHECK_GUIDELINE.md Section 1.7 참조).
 //
 // 재발 방지 장치: 블로그 봇이 rclone 백엔드가 없는 TeraBox 를 "provider
@@ -61,7 +61,7 @@ if (hits.length === 0) {
   process.exit(0);
 }
 
-console.error(`✘ 미지원 스토리지 서비스 언급 ${hits.length}건 — 블로그는 Feature Spec Section 10 의 서비스만 다룰 수 있다 (BLOG_FACTCHECK_GUIDELINE.md §1.7)`);
+console.error(`✘ 미지원 스토리지 서비스 언급 ${hits.length}건 — 블로그는 Feature Spec Section 10 의 서비스만 다룰 수 있다 (rcloneview-blog-automation/BLOG_FACTCHECK_GUIDELINE.md §1.7)`);
 for (const h of hits) {
   console.error(`  ${h.file}:${h.line} [${h.service}] ${h.text}`);
 }

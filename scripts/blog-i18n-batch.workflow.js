@@ -15,7 +15,7 @@
 //
 // 동작: posts × 8로케일 쌍마다 Sonnet 에이전트가 blog/ 원문을 읽어 번역하고
 //       i18n/{locale}/docusaurus-plugin-content-blog/ 에 직접 파일을 쓴다.
-// 실행 후 반드시 I18N_RUNBOOK_ko.md 2장 ③의 검증 단계를 거칠 것.
+// 실행 후 반드시 rcloneview-blog-automation/I18N_RUNBOOK_ko.md 2장 ③의 검증 단계를 거칠 것.
 
 export const meta = {
   name: 'blog-i18n-batch',

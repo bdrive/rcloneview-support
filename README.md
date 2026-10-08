@@ -39,3 +39,7 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## 운영 문서
+
+블로그 자동화·운영 문서(프롬프트·가이드라인·스펙)는 비공개 리포 `bdrive/rcloneview-blog-automation` 에 있다.

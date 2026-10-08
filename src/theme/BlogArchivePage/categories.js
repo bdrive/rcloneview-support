@@ -1,7 +1,7 @@
 /**
  * 블로그 아카이브 카테고리 분류 규칙.
  *
- * 규칙 설계 근거와 갱신 방법: 저장소 루트의 BLOG_ARCHIVE_CATEGORIES.md 참조.
+ * 규칙 설계 근거와 갱신 방법: bdrive/rcloneview-blog-automation 의 BLOG_ARCHIVE_CATEGORIES.md 참조.
  * 판정 순서: ① 슬러그 동사 프리픽스 → ② 태그(우선순위순) → ③ 프로바이더 태그
  * → ④ 폴백(platforms). 순서가 분포를 결정하므로 임의로 바꾸지 말 것.
  */
