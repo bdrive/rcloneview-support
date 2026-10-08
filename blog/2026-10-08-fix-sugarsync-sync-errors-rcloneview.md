@@ -54,7 +54,7 @@ For the exact message per file, go to Settings > Embedded Rclone, enable rclone 
 
 ## Lower Concurrency and Preview the Rerun
 
-Intermittent upload failures often ease when fewer files move at once. In Step 2 of the sync wizard, reduce the number of file transfers and set equality checkers to 4 or less, which is the guidance for slow backends. Keep "Retry entire sync if fails" at 3 so transient failures are retried automatically.
+Intermittent upload failures often ease when fewer files move at once. In Step 2 of the sync wizard, reduce the number of file transfers and set equality checkers to 4 or less, which is the guidance for slow backends. Keep "Retry entire sync if fails" at 3 so transient failures are retried up to three times.
 
 Before rerunning, use Dry Run to review which files will be copied or deleted, so the retry cannot surprise you.
 

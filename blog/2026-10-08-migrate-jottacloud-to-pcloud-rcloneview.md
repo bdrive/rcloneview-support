@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > RcloneView moves a Jottacloud library into pCloud with a previewed, verifiable cloud-to-cloud transfer instead of a manual download and re-upload.
 
-Switching from Jottacloud to pCloud usually means years of photos, documents, and archives that nobody wants to download and upload by hand. RcloneView connects both services as remotes and transfers the data between them, so you can preview, run, and verify the move from one window. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license as well, in case part of the data needs a third destination.
+Switching from Jottacloud to pCloud usually means years of photos, documents, and archives that nobody wants to download and upload by hand. RcloneView connects both services as remotes and transfers the data between them, so you can preview, run, and verify the move from one window.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
