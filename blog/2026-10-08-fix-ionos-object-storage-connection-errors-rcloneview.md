@@ -29,9 +29,9 @@ import RvCta from '../src/components/RvCta';
 
 # Fix IONOS Object Storage Connection Errors — Endpoint and Key Problems Resolved with RcloneView
 
-> Most IONOS Object Storage connection failures come down to the endpoint, the region, or the key pair — and RcloneView makes each one easy to check.
+> Most IONOS Object Storage connection failures come down to the endpoint, the region, or the key pair — and RcloneView gives you a GUI-based way to check each one.
 
-IONOS Object Storage is accessed through rclone's S3 protocol, which means a single mistyped endpoint or a swapped key can produce errors that look unrelated. RcloneView lets you inspect the remote, read the logs, and test commands in the built-in terminal without leaving the app. Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license.
+IONOS Object Storage is accessed through rclone's S3 protocol, which means a single mistyped endpoint or a swapped key can produce errors that look unrelated. RcloneView lets you inspect the remote, read the logs, and test commands in the built-in terminal without leaving the app.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
