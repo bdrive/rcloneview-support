@@ -4,7 +4,7 @@
 > **Trigger:** API (Generator 완료 시 자동 호출)
 > **Model:** Opus 4.8
 > **Repositories:** bdrive/rcloneview-support
-> **Last Updated:** 2026-07-28
+> **Last Updated:** 2026-10-08 (STEP 5 — 빌드 실행·대기 절차 고정)
 
 ---
 
@@ -272,20 +272,48 @@ runs the full chain in order:
   - postbuild: scripts/prune-locale-static.mjs — removes dead per-locale static
     copies (keeps the output near ~858MB / ~33k files instead of ballooning)
 
-Run it in the rcloneview-support directory and check the exit code DIRECTLY —
-never pipe to tail/head, which masks the real exit code:
+HOW TO RUN IT — the full 9-locale build takes about 32 minutes in this
+sandbox, longer than any single Bash call may run. Follow this procedure
+EXACTLY; do not improvise.
 
-  npm run build
-  echo "build exit=$?"        # must be 0
+  a. Launch the build DETACHED from the tool's task tracking so no tool time
+     limit can kill it. Do NOT use the Bash tool's `run_in_background` option
+     and do NOT use the Monitor tool for the build — a background task is
+     killed when its timeout (max 10 min) expires; that is how the 2026-10-08
+     run lost its build with only en/ko finished.
+
+       cd /home/user/rcloneview-support
+       rm -f /tmp/build.log
+       setsid nohup bash -c 'npm run build; echo "build exit=$?"' \
+         > /tmp/build.log 2>&1 < /dev/null &
+       sleep 5; tail -3 /tmp/build.log     # prebuild checks must be starting
+
+  b. Wait in the FOREGROUND, at most 9 minutes per Bash call (the foreground
+     limit is 10 min). Each call blocks until the exit line appears or 9
+     minutes pass. Exit code 124 just means "9 minutes elapsed, still
+     building" — run the same call again. Expect 4–5 rounds.
+     Do NOT end your turn while the build is running. If the stop hook asks
+     you to commit, keep waiting — do not commit or push yet.
+
+       timeout 540 bash -c 'until grep -q "^build exit=" /tmp/build.log; do sleep 20; done'
+       grep -E '^build exit=|Generated static files|Duplicate routes|\[ERROR\]' /tmp/build.log | tail -12
+
+     Repeat (b) until `build exit=` is present. If 8 rounds (~72 min) pass
+     without it, report "build did not finish" and stop — do not push.
+
+  c. Judge the result ONLY from the log, never from a pipe's exit code:
+
+       grep -q '^build exit=0' /tmp/build.log && echo BUILD_OK   # must print BUILD_OK
+       grep -c 'Duplicate routes' /tmp/build.log                 # must be 0
 
 Watch the output and act on these:
 - prebuild "✘ static/ 에 없는 자산 참조 …" — a post references a missing asset.
-  Fix the reference (or add the file), then rebuild. Do NOT proceed.
+  Fix the reference (or add the file), then rebuild from (a). Do NOT proceed.
 - "[WARNING] Duplicate routes found!" — STEP 4.5 missed a duplicate slug.
-  Re-run STEP 4.5, then rebuild.
-- "[ERROR]" or non-zero exit — report the error and stop. Do not push.
+  Re-run STEP 4.5, then rebuild from (a).
+- "[ERROR]" or `build exit=` other than 0 — report the error and stop. Do not push.
 
-Only proceed once the exit code is 0 with no duplicate-route warnings.
+Only proceed once `build exit=0` is in the log with no duplicate-route warnings.
 
 빌드가 통과하면 여기서 끝이다. www 반영은 자동이다 —
 STEP 6 에서 support 브랜치를 push 하고 그 PR 이 main 에 머지되면,
