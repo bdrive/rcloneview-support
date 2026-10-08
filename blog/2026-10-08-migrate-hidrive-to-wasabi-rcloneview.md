@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move a HiDrive archive into Wasabi object storage with a visual workflow: connect, preview, transfer, verify.
 
-HiDrive works well as a personal or team file store, but long-term archives often belong in S3-style object storage with predictable API access. RcloneView connects both services in one window, so you can copy folders cloud-to-cloud without downloading everything to your own disk first. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license.
+HiDrive works well as a personal or team file store, but long-term archives often belong in S3-style object storage with predictable API access. RcloneView connects both services in one window, so you can copy folders cloud-to-cloud without downloading everything to your own disk first.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -49,7 +49,7 @@ Add both from the Remote tab with New Remote. Then open each in an Explorer pane
 
 Imagine a design studio moving 800 GB of finished project folders out of HiDrive. Before touching anything, build the transfer as a job. Choose HiDrive as the source and a Wasabi bucket path as the destination, then use One-way "Modifying destination only" mode.
 
-Run a Dry Run first. It lists the files that would be copied or deleted without making changes, which is the safest way to catch a wrong destination folder.
+Run a Dry Run first. It lists the files that would be copied or deleted without making changes, which is a reliable way to catch a wrong destination folder.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer from HiDrive to Wasabi in RcloneView" class="img-large img-center" />
 
@@ -74,7 +74,7 @@ After the job finishes, open Compare with HiDrive on one side and Wasabi on the 
 3. Create a one-way job from HiDrive to your Wasabi bucket and run a Dry Run.
 4. Run the transfer, then verify with Folder Compare.
 
-A previewed, verified migration keeps your HiDrive files safe until you are sure everything has landed in Wasabi.
+A previewed, verified migration leaves your HiDrive files untouched until you are sure everything has landed in Wasabi.
 
 ---
 
