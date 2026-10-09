@@ -577,6 +577,14 @@
     "message": "Schritt-für-Schritt-Anleitungen, um RcloneView zu meistern.",
     "description": "Card description"
   },
+  "home.demo": {
+    "message": "Interaktive Demo",
+    "description": "Card title"
+  },
+  "home.demoDesc": {
+    "message": "Sehen Sie, wie RcloneView funktioniert.",
+    "description": "Card description"
+  },
   "home.helpGuides": {
     "message": "Hilfe-Guides",
     "description": "Card title"

@@ -577,6 +577,14 @@
     "message": "掌握 RcloneView 的逐步指南。",
     "description": "Card description"
   },
+  "home.demo": {
+    "message": "互動式示範",
+    "description": "Card title"
+  },
+  "home.demoDesc": {
+    "message": "瞭解 RcloneView 的運作方式。",
+    "description": "Card description"
+  },
   "home.helpGuides": {
     "message": "說明指南",
     "description": "Card title"
