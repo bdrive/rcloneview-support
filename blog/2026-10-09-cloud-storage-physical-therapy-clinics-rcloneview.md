@@ -76,7 +76,7 @@ Job History records the status, duration, size, and file count of every run, whi
 3. Create a Crypt remote on the backup destination for sensitive folders.
 4. Run a Dry Run, start the job, and review Job History to confirm the result.
 
-A tested, encrypted second copy means a failed disk or a ransomware incident stops being a crisis for your clinic.
+A tested, encrypted second copy gives your clinic a recovery option after a failed disk or a ransomware incident.
 
 ---
 
