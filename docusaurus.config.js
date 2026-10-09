@@ -175,12 +175,12 @@ const config = {
       async: true,
     },
 
-    // Plausible via Cloudflare Worker Proxy
+    // Plausible via same-domain proxy (rcloneview.com/workshop, /calendar → Cloudflare Worker)
     {
-      src: 'https://round-breeze-3e9d.jay-e45.workers.dev/workshop/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js?v=20250331',
+      src: '/workshop/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js?v=20250331',
       defer: true,
       'data-domain': 'rcloneview.com',
-      'data-api': 'https://round-breeze-3e9d.jay-e45.workers.dev/calendar/event',
+      'data-api': '/calendar/event',
     },
   
   ],
