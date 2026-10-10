@@ -59,8 +59,6 @@ export default function SupportPage() {
 
             <a
               href={demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="bg-white p-6 rounded-xl border border-gray-200 shadow-md hover:shadow-xl transition duration-300 text-center hover:no-underline"
             >
               <div className="text-5xl mb-4">🖥️</div>
