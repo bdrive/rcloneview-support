@@ -1,20 +1,20 @@
 ---
 slug: backup-google-photos-external-drive-nas-rcloneview
-title: "Cara Mencadangkan Semua Google Photos ke Hard Drive Eksternal atau NAS dengan RcloneView"
+title: "Cara Mencadangkan Google Photos ke Drive Eksternal atau NAS — Google Takeout + RcloneView"
 authors:
   - tayson
-description: "Unduh dan cadangkan seluruh pustaka Google Photos Anda ke hard drive eksternal, NAS, atau cloud lain — secara otomatis dan tanpa kehilangan struktur album — menggunakan RcloneView."
+description: "Google Photos tidak lagi mengizinkan aplikasi pihak ketiga mengunduh pustaka foto Anda yang sudah ada. Ekspor dengan Google Takeout ke Google Drive, lalu gunakan RcloneView untuk menyalin hasil ekspor ke drive eksternal, NAS, atau cloud lain — dan pastikan foto baru tetap tercadangkan dengan RcloneView Mobile."
 keywords:
-  - google photos backup
-  - download all google photos
-  - google photos to external drive
-  - google photos to nas
-  - backup google photos automatically
-  - google photos to hard drive
+  - pencadangan google photos
+  - google photos ke drive eksternal
+  - google photos ke nas
+  - google takeout ke nas
+  - pencadangan google takeout
   - google photos rclone
-  - google photos sync nas
-  - save google photos locally
-  - google photos export alternative
+  - pembatasan api google photos
+  - simpan google photos secara lokal
+  - ekspor google photos
+  - pencadangan foto rcloneview mobile
 tags:
   - RcloneView
   - google-photos
@@ -28,190 +28,125 @@ import CloudSupportGrid from '@site/src/components/CloudSupportGrid';
 import cloudIcons from '@site/src/contexts/cloudIcons';
 import RvCta from '@site/src/components/RvCta';
 
-# Cara Mencadangkan Semua Google Photos ke Hard Drive Eksternal atau NAS dengan RcloneView
+# Cara Mencadangkan Google Photos ke Drive Eksternal atau NAS — Google Takeout + RcloneView
 
-> Google Photos menyimpan kenangan Anda, tetapi bagaimana jika akun Anda terkunci, penyimpanan penuh, atau Google mengubah kebijakannya? Pencadangan lokal memastikan foto Anda selalu menjadi milik Anda.
+> Sejak 31 Maret 2025, Google Photos hanya mengizinkan aplikasi pihak ketiga — termasuk rclone dan RcloneView — melihat foto yang mereka unggah sendiri. Cara yang andal untuk mengeluarkan pustaka foto Anda yang sudah ada adalah Google Takeout, dan RcloneView melanjutkan dari sana.
 
-Google Photos memang praktis — sampai suatu saat tidak lagi. Batas penyimpanan, penangguhan akun, dan perubahan kebijakan semuanya dapat mengancam akses ke bertahun-tahun foto dan video yang tak tergantikan. Google Takeout memang ada, tetapi sangat lambat, gagal pada pustaka besar, dan tidak mendukung pembaruan bertahap.
+Google Photos menyimpan foto dan video selama bertahun-tahun yang tidak tergantikan, tetapi kuota penyimpanan, akun yang terkunci, dan perubahan kebijakan semuanya bisa memutus akses Anda ke sana. Banyak panduan — termasuk versi lama panduan ini — menyarankan Anda menghubungkan Google Photos ke alat sinkronisasi lalu mengunduh semuanya. Cara itu sudah tidak berfungsi: Google menutup akses tersebut pada 2025.
 
-RcloneView menawarkan cara yang lebih baik: terhubung langsung ke Google Photos, jelajahi pustaka Anda secara visual, dan sinkronisasi semuanya ke hard drive eksternal, NAS, atau cloud lain — dengan penjadwalan otomatis sehingga foto-foto mendatang juga tercadangkan.
+Panduan ini menunjukkan jalur yang berfungsi saat ini. Ekspor pustaka Anda dengan **Google Takeout** langsung ke Google Drive, biarkan **RcloneView** menyalin hasil ekspor ke drive eksternal, NAS, atau cloud lain, dan gunakan **RcloneView Mobile** agar foto baru tidak lagi melewati Google Photos sebagai perantara.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
 <!-- truncate -->
 
-## Mengapa Perlu Mencadangkan Google Photos Secara Lokal?
+## Apa yang Berubah: Pembatasan API Google Photos (2025)
 
-### Google Takeout saja tidak cukup
+Pada 31 Maret 2025 Google menghapus scope pustaka penuh dari Photos Library API. Dalam kata-kata Google sendiri, aplikasi pihak ketiga "can now only list, search, and retrieve albums and media items that were created by your app." Panggilan album bersama mengembalikan `403 PERMISSION_DENIED`.
 
-Google Takeout memungkinkan Anda mengekspor foto, tetapi memiliki keterbatasan yang signifikan:
+Inilah artinya saat Anda menambahkan remote **Google Photos** di RcloneView:
 
-- **Lambat dan tidak andal** — Pustaka besar sering gagal di tengah proses ekspor, sehingga Anda harus mengulang dari awal.
-- **Tidak ada pembaruan bertahap** — Setiap ekspor adalah dump penuh. Punya 500 foto baru bulan ini? Ekspor semuanya lagi.
-- **Format arsip ZIP** — Anda mendapatkan puluhan file ZIP yang perlu diekstrak dan diatur secara manual.
-- **Tidak ada otomasi** — Ini adalah proses yang sepenuhnya manual setiap kali dilakukan.
+- **Remote terlihat hampir kosong.** Remote hanya menampilkan foto yang diunggah melalui RcloneView atau rclone. Unggahan dari ponsel, unggahan dari web, dan semua yang lain di pustaka Anda tidak terlihat oleh API, sehingga job Copy melaporkan "no changes" atau menyalin nol file.
+- **Ini bukan masalah koneksi.** RcloneView 1.6 dan yang lebih baru menjelaskan pembatasan ini di dalam aplikasi saat Anda membuka remote Google Photos, alih-alih menampilkan sesuatu yang tampak seperti akun kosong.
+- **Album bersama sama sekali tidak dapat diakses.**
+- **Anda memerlukan OAuth client ID sendiri.** Client ID Google Photos bersama milik rclone akan dihentikan sepanjang 2026. Ketika koneksi tidak dapat dibuat, wizard koneksi RcloneView memandu Anda membuatnya.
 
-### Risiko nyata dari penyimpanan yang hanya mengandalkan cloud
+Cara resmi dari Google untuk mengekspor pustaka yang sudah ada adalah **Google Takeout** — jadi di sinilah pencadangan dimulai.
 
-- **Kuota penyimpanan terlampaui** — Setelah mencapai 15 GB (dibagi dengan Gmail dan Drive), Google mulai meminta Anda untuk menghapus data atau membayar.
-- **Akun terkunci** — Pelanggaran kebijakan, bahkan yang tidak disengaja, dapat membekukan seluruh akun Google Anda.
-- **Perubahan layanan** — Google pernah menghentikan produk sebelumnya (Google+, Picasa). Strategi data Anda harus mempertimbangkan hal ini.
+## Langkah 1: Ekspor Pustaka Anda dengan Google Takeout
 
-Pencadangan lokal ke hard drive eksternal atau NAS memberi Anda salinan independen yang tidak dapat diambil oleh perubahan kebijakan apa pun.
+1. Buka [takeout.google.com](https://takeout.google.com) dan masuk dengan akun yang memiliki foto tersebut.
+2. Klik **Deselect all**, lalu centang **Google Photos** saja. Gunakan **All photo albums included** untuk membatasi ekspor ke album atau tahun tertentu jika Anda ingin membagi pustaka besar menjadi beberapa kelompok.
+3. Di bawah **Destination**, pilih **Add to Drive**. Google menempatkan hasil ekspor di folder `Takeout` pada Google Drive Anda, yang dapat langsung dijangkau RcloneView. Dropbox, OneDrive, dan Box juga tersedia — RcloneView mendukung ketiganya — dan **Send download link via email** berfungsi jika Anda lebih suka menyalin dari komputer Anda.
+4. Pilih tipe arsip (`.zip`) dan ukuran (1 GB hingga 50 GB). Arsip yang lebih besar berarti lebih sedikit file yang harus ditangani.
+5. Klik **Create export**. Google akan mengirim email saat ekspor siap; pustaka besar bisa memakan waktu berjam-jam bahkan berhari-hari.
 
-## Menyiapkan Google Photos sebagai Remote
+Hal yang perlu diketahui sebelum memulai:
 
-### Langkah 1: Menambahkan Google Photos di RcloneView
+- Setiap foto dan video tiba dalam kualitas asli bersama file metadata `.json` yang berisi tanggal pengambilan, deskripsi, dan lokasi.
+- Ekspor yang ditambahkan ke Google Drive dihitung dalam penyimpanan Google Anda sampai Anda menghapusnya, jadi pastikan Drive memiliki ruang yang cukup — atau ekspor secara bertahap.
+- Takeout adalah ekspor satu kali tanpa mode inkremental. Langkah 4 membahas cara menjaga foto mendatang tetap tercadangkan tanpa mengulanginya.
 
-Buka RcloneView dan buat remote baru:
+## Langkah 2: Tambahkan Google Drive di RcloneView
 
-1. Klik tombol **Add Remote** di Remote Manager.
-2. Pilih **Google Photos** dari daftar penyedia.
-3. Ikuti alur autentikasi OAuth — RcloneView akan membuka browser Anda untuk mengizinkan akses.
-4. Setelah diotorisasi, pustaka Google Photos Anda akan muncul sebagai remote yang dapat dijelajahi.
+1. Buka RcloneView dan klik **Add Remote** di Remote Manager.
+2. Pilih **Google Drive** dan selesaikan [login OAuth berbasis browser](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login).
+3. Buka remote tersebut di [Explorer](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage) dan navigasikan ke folder `Takeout`. Setiap ekspor berupa satu file `.zip` terpisah (atau beberapa, untuk pustaka yang lebih besar).
 
-<img src="/support/images/en/blog/new-remote.png" alt="Add Google Photos as a remote in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/blog/open-multiple-google-drive-remotes.png" alt="Remote Google Drive dengan folder Takeout terbuka di RcloneView Explorer" class="img-large img-center" />
 
-### Langkah 2: Menjelajahi Pustaka Foto Anda
+## Langkah 3: Salin Hasil Ekspor ke Tujuan Pencadangan Anda
 
-Setelah terhubung, Anda dapat menjelajahi pustaka Google Photos langsung di [Explorer](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage) milik RcloneView. Google Photos mengatur file berdasarkan:
+RcloneView menyalin arsip persis apa adanya — tidak mengekstraknya — sehingga Anda cukup mengekstrak sekali di mesin tujuan setelah penyalinan selesai.
 
-- **Folder Tahun/Bulan** — Foto disusun dalam jalur bergaya `media/by-year/2024/01`.
-- **Album** — Album Anda muncul sebagai folder terpisah di bawah jalur `album`.
-- **Album bersama** — Dapat diakses di bawah `shared-album`.
+### Hard drive eksternal
 
-Ini memudahkan Anda melihat dengan tepat apa yang sedang dicadangkan sebelum memulai transfer.
+1. Sambungkan drive dan catat path-nya (`E:\` di Windows, `/Volumes/...` di macOS, `/media/...` di Linux).
+2. Buat [job Copy](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs): **Source** = folder `Takeout` pada remote Google Drive Anda, **Destination** = sebuah folder di drive.
+3. Jalankan job, lalu ekstrak arsip di drive.
 
-<img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Browse Google Photos library in RcloneView Explorer" class="img-large img-center" />
+Gunakan **Copy**, bukan Sync: job Copy tidak pernah menghapus apa pun di tujuan.
 
-## Strategi Pencadangan 1: Google Photos → Hard Drive Eksternal
+### Synology NAS
 
-Pendekatan paling sederhana — salin semuanya ke hard drive eksternal yang terhubung melalui USB.
+RcloneView [mendeteksi perangkat Synology NAS](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer) di jaringan Anda secara otomatis, sehingga NAS muncul di tab Local tanpa konfigurasi apa pun.
 
-### Cara mengaturnya
+1. Buat job Copy dengan folder `Takeout` sebagai sumber dan folder bersama di NAS (misalnya `/photos/google-takeout`) sebagai tujuan.
+2. Jalankan, lalu ekstrak arsip di NAS.
 
-1. **Hubungkan hard drive eksternal Anda** dan catat huruf drive (Windows) atau titik mount (Mac/Linux).
-2. **Buat job Copy** di RcloneView:
-   - **Source**: Remote Google Photos Anda (pilih folder `media/by-year` untuk semua foto)
-   - **Destination**: Jalur hard drive eksternal Anda (misalnya, `E:\Google Photos Backup`)
-3. **Jalankan job tersebut** — RcloneView akan mengunduh semua foto dan video sambil mempertahankan struktur folder.
+<img src="/support/images/en/blog/synology-nas-autodection-and-connection.png" alt="Synology NAS terdeteksi otomatis di RcloneView untuk penyalinan Google Takeout" class="img-large img-center" />
 
-### Pengaturan yang disarankan
+### Cloud lain
 
-- **Transfer paralel**: 4–6 (API Google Photos memiliki batas laju/rate limit)
-- **Jenis job**: Copy (bukan Sync — Anda tidak ingin menghapus file lokal jika Anda menghapusnya dari Google Photos)
+Ingin salinan di lokasi terpisah (off-site)? Arahkan job Copy ke remote lain mana pun — Amazon S3, Backblaze B2, Wasabi, OneDrive, dan sebagainya. RcloneView memindahkan data dari cloud ke cloud melalui engine rclone-nya; arsip tidak perlu melewati penyimpanan komputer Anda.
 
-### Untuk pembaruan bertahap
+### Verifikasi dan bersihkan
 
-Setelah pencadangan awal, proses selanjutnya hanya mengunduh foto baru. RcloneView membandingkan apa yang sudah ada di drive Anda dan melewati file yang sudah ada. Ini mengubah pencadangan pertama yang memakan waktu berjam-jam menjadi pembaruan harian yang cepat.
+- Gunakan [Folder Comparison](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents) untuk memastikan setiap arsip tiba dengan ukuran yang sama.
+- Periksa [Job History](https://rcloneview.com/support/howto/rcloneview-basic/execute-manage-job#view-job-history) untuk log transfer.
+- Setelah penyalinan terverifikasi, hapus folder `Takeout` dari Google Drive untuk mengembalikan penyimpanan yang ditempatinya.
 
-## Strategi Pencadangan 2: Google Photos → NAS Synology
+<img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Folder Comparison antara hasil ekspor Takeout dan salinan di NAS" class="img-large img-center" />
 
-Bagi pengguna dengan NAS Synology, RcloneView menawarkan pengalaman yang lebih terintegrasi lagi. Sejak v1.0, perangkat NAS Synology [terdeteksi secara otomatis](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer) di jaringan Anda.
+## Langkah 4: Jaga Foto Baru Tetap Tercadangkan dengan RcloneView Mobile
 
-### Cara mengaturnya
+Takeout tidak dapat berjalan secara inkremental, jadi mengulanginya setiap bulan bukanlah rencana yang baik. Untuk foto yang Anda ambil mulai sekarang, keluarkan Google Photos dari alurnya:
 
-1. **Jalankan RcloneView** — NAS Synology Anda akan otomatis muncul di tab Local.
-2. **Buat job Copy**:
-   - **Source**: Remote Google Photos
-   - **Destination**: Folder bersama di NAS Anda (misalnya, `/photos/google-backup`)
-3. **Jadwalkan job tersebut** untuk berjalan setiap hari atau setiap minggu menggunakan [Job Scheduling](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution).
+- **RcloneView Mobile** (Android dan iOS) mencadangkan foto dan video ponsel Anda langsung ke cloud milik Anda sendiri — remote yang sama dengan yang Anda gunakan di RcloneView desktop, tanpa server di antaranya. Pencadangan foto termasuk dalam RcloneView Plus. Dapatkan dari [halaman unduhan](https://rcloneview.com/src/download.html).
+- Di desktop, job Copy terjadwal (fitur PLUS, lihat [Job Scheduling](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)) kemudian mencerminkan folder cloud tersebut ke NAS atau drive eksternal Anda — setiap hari, setiap minggu, kapan pun Anda mau.
 
-<img src="/support/images/en/blog/synology-nas-autodection-and-connection.png" alt="Synology NAS auto-detection for Google Photos backup" class="img-large img-center" />
+<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Menjadwalkan penyalinan berulang dari folder foto di cloud ke NAS" class="img-large img-center" />
 
-### Mengapa NAS ideal untuk pencadangan foto
+Ponsel, cloud, dan NAS Anda tetap selaras tanpa Google Photos yang menentukan apa yang boleh Anda unduh.
 
-- **Selalu aktif** — Berbeda dengan hard drive eksternal, NAS Anda selalu terhubung dan siap digunakan.
-- **Perlindungan RAID** — Sebagian besar setup NAS menggunakan RAID untuk perlindungan dari kegagalan disk.
-- **Akses dari mana saja** — Lihat foto yang sudah dicadangkan dari perangkat mana pun di jaringan Anda.
-- **Pencadangan cloud sekunder** — Gunakan job RcloneView lain untuk mensinkronkan NAS ke S3 atau Backblaze B2 demi redundansi offsite.
+## Apa Gunanya Remote Google Photos Saat Ini
 
-## Strategi Pencadangan 3: Google Photos → Cloud Lain
+Remote ini tidak sia-sia — hanya saja bekerja ke arah sebaliknya:
 
-Ingin menyimpan salinan di penyedia cloud yang berbeda? RcloneView membuat transfer cloud-ke-cloud menjadi mulus:
-
-- **Google Photos → OneDrive** — Manfaatkan penyimpanan Microsoft 365 Anda.
-- **Google Photos → AWS S3** — Arsipkan ke penyimpanan objek yang murah dan tahan lama.
-- **Google Photos → Backblaze B2** — Penyimpanan pencadangan tanpa batas berbiaya rendah.
-- **Google Photos → Wasabi** — Kompatibel S3 tanpa biaya egress.
-
-Cukup buat job Copy dengan Google Photos sebagai source dan cloud target Anda sebagai destination. Tidak ada data yang melewati penyimpanan mesin lokal Anda — RcloneView menangani transfer melalui mesin rclone-nya.
-
-## Mengotomatiskan Pencadangan Foto Anda
-
-Pencadangan sekali jalan itu bagus. Pencadangan otomatis dan berulang lebih baik lagi.
-
-### Menyiapkan pencadangan terjadwal
-
-1. **Buat job Copy** Anda menggunakan salah satu strategi di atas.
-2. **Buka Job Scheduling** dan atur jadwal berulang:
-   - **Setiap hari pukul 2 pagi** — Menangkap semua foto baru dari hari sebelumnya.
-   - **Setiap minggu pada hari Minggu** — Pendekatan yang lebih ringan untuk pustaka yang lebih kecil.
-3. **Tambahkan notifikasi** agar Anda tahu prosesnya berhasil:
-   - [Notifikasi Slack](https://rcloneview.com/support/blog/rcloneview-slack-remote-control) untuk tim
-   - [Notifikasi Telegram](https://rcloneview.com/support/blog/rcloneview-telegram-remote-control) untuk penggunaan pribadi
-   - [Notifikasi Discord](https://rcloneview.com/support/blog/rcloneview-discord-remote-control) untuk komunitas
-
-<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Schedule automatic Google Photos backups" class="img-large img-center" />
-
-### Menggunakan Batch Jobs untuk pencadangan multi-destinasi
-
-Dengan [Batch Jobs](https://rcloneview.com/support/blog/batch-jobs-run-multiple-cloud-tasks-rcloneview) v1.3, Anda dapat mencadangkan Google Photos ke beberapa destinasi dalam satu rangkaian otomatis:
-
-1. Copy Google Photos → Hard Drive Eksternal
-2. Copy Google Photos → NAS
-3. Copy Google Photos → Backblaze B2
-
-Satu klik (atau satu pemicu terjadwal) menjalankan ketiganya sekaligus.
-
-## Pemantauan dan Verifikasi
-
-### Pemantauan transfer secara real-time
-
-Pantau kemajuan pencadangan Anda secara real-time — lihat jumlah file, kecepatan transfer, dan perkiraan waktu penyelesaian.
-
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitor Google Photos backup progress" class="img-large img-center" />
-
-### Verifikasi dengan Folder Comparison
-
-Setelah pencadangan selesai, gunakan [Folder Comparison](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents) untuk memverifikasi bahwa salinan lokal Anda cocok dengan pustaka Google Photos. Ini memberi Anda keyakinan bahwa tidak ada yang terlewat.
-
-<img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare Google Photos with local backup" class="img-large img-center" />
-
-### Memeriksa Job History
-
-Tinjau [Job History](https://rcloneview.com/support/howto/rcloneview-basic/execute-manage-job#view-job-history) untuk melihat log lengkap dari proses pencadangan sebelumnya, termasuk file yang ditransfer, error yang terjadi, dan total durasinya.
-
-## Tips untuk Pustaka Google Photos yang Besar
-
-Jika Anda memiliki puluhan ribu foto:
-
-1. **Mulai dari tahun-tahun terbaru** — Cadangkan 2–3 tahun terakhir dahulu, lalu lanjutkan mundur. Ini melindungi kenangan terbaru Anda lebih cepat.
-2. **Gunakan Copy bertahap** — Setelah proses awal, hanya file baru yang ditransfer.
-3. **Bersabarlah dengan batas laju** — Batas API Google Photos lebih ketat dibandingkan Google Drive. Jaga transfer paralel di angka 4–6.
-4. **Coba lagi saat gagal** — Fitur Retry Failed Jobs v1.3 menangani error API sementara dengan baik.
-5. **Pertimbangkan penjadwalan di luar jam sibuk** — Jalankan pencadangan besar pada malam hari untuk menghindari kepadatan jaringan.
+- **Mengunggah.** Job Copy dari NAS atau komputer Anda ke folder `upload` milik remote atau ke sebuah album akan menambahkan foto-foto tersebut ke pustaka Google Photos Anda, tempat aplikasi Google Photos menampilkannya seperti unggahan lainnya.
+- **Membaca kembali apa yang diunggah RcloneView.** Apa pun yang masuk melalui RcloneView dapat dicantumkan dan disalin keluar lagi.
+- **Catatan penting.** Unduhan melalui API tidak dalam resolusi asli dan kehilangan data lokasi EXIF, jadi perlakukan Google Photos sebagai penampil yang praktis, bukan sebagai arsip. Dan Anda tetap memerlukan OAuth client ID sendiri.
 
 ## Memulai
 
-1. **Unduh RcloneView** dari [rcloneview.com](https://rcloneview.com/src/download.html) (Windows, macOS, Linux).
-2. **Tambahkan Google Photos** sebagai remote menggunakan autentikasi OAuth.
-3. **Jelajahi pustaka Anda** di Explorer untuk melihat apa yang sedang dicadangkan.
-4. **Buat job Copy** ke destinasi pilihan Anda (hard drive eksternal, NAS, atau cloud).
-5. **Jadwalkan** untuk pencadangan berulang secara otomatis.
-6. **Verifikasi** dengan Folder Comparison setelah proses pertama selesai.
+1. **Ekspor** pustaka Google Photos Anda dengan Google Takeout, dikirim ke Google Drive.
+2. **Unduh RcloneView** dari [rcloneview.com](https://rcloneview.com/src/download.html) (Windows, macOS, Linux) dan tambahkan Google Drive sebagai remote.
+3. **Buat job Copy** dari folder `Takeout` ke drive eksternal, NAS, atau cloud lain Anda, lalu ekstrak arsip di sana.
+4. **Verifikasi** salinan dengan Folder Comparison dan hapus hasil ekspor dari Drive.
+5. **Pasang RcloneView Mobile** agar foto baru langsung masuk ke cloud Anda sendiri, dan jadwalkan job desktop untuk mencerminkannya ke NAS.
 
-Foto Anda tak tergantikan. Pencadangan Anda seharusnya tidak bergantung pada satu penyedia saja. RcloneView memudahkan Anda menyimpan salinan independen — secara otomatis, andal, dan tanpa perlu CLI sama sekali.
+Foto Anda tidak tergantikan. Satu kali ekspor ditambah satu job terjadwal memberi Anda salinan yang tidak bisa diambil oleh perubahan kebijakan apa pun.
 
 ---
 
-**Panduan Terkait:**
+**Related Guides:**
 
-- [Tambah Remote via Login Berbasis Browser (OAuth)](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)
-- [Menjelajahi & Mengelola Remote](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
-- [Membandingkan Isi Folder](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)
-- [Membuat Job Sinkronisasi](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs)
+- [Perbaiki Error Sinkronisasi Google Photos di RcloneView](https://rcloneview.com/support/blog/fix-google-photos-sync-errors-rcloneview)
+- [Tambahkan Remote melalui Login Berbasis Browser (OAuth)](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)
+- [Telusuri & Kelola Remote](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [Bandingkan Isi Folder](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)
+- [Buat Job Sinkronisasi](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs)
 - [Penjadwalan Job](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)
-- [Deteksi Otomatis dan Koneksi NAS Synology](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)
+- [Deteksi Otomatis dan Koneksi Synology NAS](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)
 
 <CloudSupportGrid />

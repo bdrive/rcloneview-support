@@ -85,7 +85,7 @@ Haz copias de seguridad en dos proveedores para una protección máxima:
 |-------|---------------|-----------------|
 | Documents | Google Drive | Backblaze B2 |
 | Media | Backblaze B2 | Wasabi |
-| Photos | Google Photos (via Drive) | S3 |
+| Photos | Google Drive | S3 |
 | Appdata | B2 | S3 Glacier |
 
 ## Supervisa tus copias de seguridad

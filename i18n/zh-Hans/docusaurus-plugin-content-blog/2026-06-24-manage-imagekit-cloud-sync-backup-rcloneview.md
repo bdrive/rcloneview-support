@@ -75,7 +75,7 @@ import RvCta from '@site/src/components/RvCta';
 **相关指南:**
 
 - [管理 Cloudinary 存储 — 使用 RcloneView 同步和备份文件](https://rcloneview.com/support/blog/manage-cloudinary-cloud-sync-backup-rcloneview)
-- [管理 Google Photos 存储 — 使用 RcloneView 同步和备份文件](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [使用 RcloneView 将 Google 相册备份到外部驱动器或 NAS](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 - [使用 RcloneView 进行拖放式云端传输指南](https://rcloneview.com/support/blog/drag-drop-cloud-transfer-guide-rcloneview)
 
 <CloudSupportGrid />

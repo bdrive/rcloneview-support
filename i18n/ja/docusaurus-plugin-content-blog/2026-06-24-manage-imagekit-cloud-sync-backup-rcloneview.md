@@ -75,7 +75,7 @@ RcloneViewを使えば、コマンドを一切書くことなく、ImageKitの�
 **関連ガイド:**
 
 - [Cloudinaryストレージの管理 — RcloneViewでファイルを同期・バックアップ](https://rcloneview.com/support/blog/manage-cloudinary-cloud-sync-backup-rcloneview)
-- [Google Photosストレージの管理 — RcloneViewでファイルを同期・バックアップ](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [RcloneViewでGoogleフォトを外付けドライブやNASにバックアップする](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 - [RcloneViewによるドラッグ＆ドロップ クラウド転送ガイド](https://rcloneview.com/support/blog/drag-drop-cloud-transfer-guide-rcloneview)
 
 <CloudSupportGrid />

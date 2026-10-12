@@ -1,20 +1,20 @@
 ---
 slug: backup-google-photos-external-drive-nas-rcloneview
-title: "RcloneView로 Google 포토를 외장 드라이브나 NAS에 백업하는 방법"
+title: "Google Photos를 외장 드라이브나 NAS에 백업하는 방법 — Google Takeout + RcloneView"
 authors:
   - tayson
-description: "RcloneView를 사용해 Google 포토 라이브러리 전체를 외장 하드 드라이브, NAS, 또는 다른 클라우드로 자동으로, 앨범 구조를 유지한 채로 다운로드하고 백업하세요."
+description: "Google Photos는 더 이상 서드파티 앱이 기존 라이브러리를 다운로드하도록 허용하지 않습니다. Google Takeout으로 Google Drive에 내보낸 뒤, RcloneView로 그 내보내기 파일을 외장 드라이브, NAS 또는 다른 클라우드에 복사하고, RcloneView Mobile로 새 사진을 계속 백업하세요."
 keywords:
-  - google photos backup
-  - download all google photos
-  - google photos to external drive
-  - google photos to nas
-  - backup google photos automatically
-  - google photos to hard drive
+  - google 포토 백업
+  - google 포토 외장 드라이브
+  - google 포토 nas
+  - google takeout nas
+  - google takeout 백업
   - google photos rclone
-  - google photos sync nas
-  - save google photos locally
-  - google photos export alternative
+  - google 포토 api 제한
+  - google 포토 로컬 저장
+  - google 포토 내보내기
+  - rcloneview mobile 사진 백업
 tags:
   - RcloneView
   - google-photos
@@ -28,190 +28,125 @@ import CloudSupportGrid from '@site/src/components/CloudSupportGrid';
 import cloudIcons from '@site/src/contexts/cloudIcons';
 import RvCta from '@site/src/components/RvCta';
 
-# RcloneView로 Google 포토를 외장 드라이브나 NAS에 백업하는 방법
+# Google Photos를 외장 드라이브나 NAS에 백업하는 방법 — Google Takeout + RcloneView
 
-> Google 포토는 소중한 추억을 저장해주지만, 계정이 잠기거나 저장 공간이 가득 차거나 Google이 정책을 변경하면 어떻게 될까요? 로컬 백업이 있으면 사진이 항상 내 것으로 남습니다.
+> 2025년 3월 31일부터 Google Photos는 rclone과 RcloneView를 포함한 서드파티 앱이 직접 업로드한 사진만 볼 수 있도록 제한합니다. 기존 라이브러리를 꺼내는 확실한 방법은 Google Takeout이며, 그 이후는 RcloneView가 이어받습니다.
 
-Google 포토는 편리하지만 늘 그런 것은 아닙니다. 저장 공간 제한, 계정 정지, 정책 변경은 모두 수년간 쌓인 소중한 사진과 동영상에 대한 접근을 위협할 수 있습니다. Google 테이크아웃이 존재하긴 하지만 속도가 매우 느리고, 대용량 라이브러리에서는 실패하며, 증분 업데이트를 지원하지 않습니다.
+Google Photos에는 대체할 수 없는 수년간의 사진과 동영상이 담겨 있지만, 저장 용량 한도, 계정 잠금, 정책 변경 등으로 언제든 접근이 막힐 수 있습니다. 이 글의 이전 버전을 포함해 많은 가이드가 Google Photos를 동기화 도구에 연결해 전부 다운로드하라고 안내했습니다. 하지만 Google이 2025년에 그 길을 닫아 버려 이제는 통하지 않습니다.
 
-RcloneView는 더 나은 방법을 제공합니다. Google 포토에 직접 연결하고, 라이브러리를 시각적으로 탐색하며, 외장 드라이브, NAS, 또는 다른 클라우드로 전체를 동기화할 수 있습니다. 자동 예약 기능까지 있어 앞으로 추가되는 사진도 계속 백업됩니다.
+이 가이드는 지금도 동작하는 방법을 보여 드립니다. **Google Takeout**으로 라이브러리를 Google Drive에 바로 내보내고, **RcloneView**로 그 내보내기 파일을 외장 드라이브, NAS 또는 다른 클라우드에 복사한 다음, **RcloneView Mobile**을 사용해 앞으로의 새 사진은 Google Photos를 거치지 않도록 하세요.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
 <!-- truncate -->
 
-## 왜 Google 포토를 로컬에 백업해야 할까요?
+## 무엇이 바뀌었나: Google Photos API 제한 (2025)
 
-### Google 테이크아웃만으로는 부족합니다
+2025년 3월 31일, Google은 Photos Library API에서 전체 라이브러리 범위(scope)를 제거했습니다. Google의 표현을 빌리면, 서드파티 앱은 "이제 앱이 생성한 앨범과 미디어 항목만 나열, 검색, 조회할 수 있습니다." 공유 앨범 호출은 `403 PERMISSION_DENIED`를 반환합니다.
 
-Google 테이크아웃으로 사진을 내보낼 수 있지만, 다음과 같은 심각한 한계가 있습니다.
+RcloneView에서 **Google Photos** 리모트를 추가하면 다음과 같은 일이 생깁니다.
 
-- **느리고 불안정함** — 대용량 라이브러리는 내보내기 도중 실패하는 경우가 많아 처음부터 다시 시작해야 합니다.
-- **증분 업데이트 불가** — 내보낼 때마다 전체를 다시 덤프합니다. 이번 달에 새 사진이 500장 생겼다면, 전체를 다시 내보내야 합니다.
-- **ZIP 압축 파일 형식** — 수십 개의 ZIP 파일을 받게 되며, 이를 수동으로 압축 해제하고 정리해야 합니다.
-- **자동화 불가** — 매번 완전히 수동으로 진행해야 하는 프로세스입니다.
+- **리모트가 거의 비어 보입니다.** RcloneView나 rclone을 통해 업로드한 사진만 표시됩니다. 휴대폰 업로드, 웹 업로드 등 라이브러리의 나머지 모든 항목은 API에서 보이지 않으므로, 복사(Copy) 작업은 "변경 사항 없음"으로 보고하거나 파일을 0개 복사합니다.
+- **연결 문제가 아닙니다.** RcloneView 1.6 이상에서는 Google Photos 리모트를 열 때, 빈 계정처럼 보여 주는 대신 앱 안에서 이 제한을 설명해 줍니다.
+- **공유 앨범은 전혀 접근할 수 없습니다.**
+- **직접 만든 OAuth 클라이언트 ID가 필요합니다.** rclone의 공용 Google Photos 클라이언트 ID는 2026년 중에 폐기됩니다. 연결할 수 없을 때는 RcloneView 연결 마법사가 클라이언트 ID 생성 과정을 안내합니다.
 
-### 클라우드 단독 저장의 실질적인 위험
+기존 라이브러리를 내보내는 Google의 공식 방법은 **Google Takeout**이므로, 백업은 여기서부터 시작합니다.
 
-- **저장 공간 한도 초과** — 15GB(Gmail, Drive와 공유)에 도달하면 Google이 삭제하거나 결제할 것을 요청하기 시작합니다.
-- **계정 잠금** — 정책 위반은 실수로라도 전체 Google 계정을 정지시킬 수 있습니다.
-- **서비스 변경** — Google은 과거에 여러 제품(Google+, Picasa)을 중단한 적이 있습니다. 데이터 전략은 이를 감안해야 합니다.
+## 1단계: Google Takeout으로 라이브러리 내보내기
 
-외장 드라이브나 NAS에 로컬 백업을 해두면, 어떤 정책 변경으로도 빼앗을 수 없는 독립적인 사본을 확보할 수 있습니다.
+1. [takeout.google.com](https://takeout.google.com)을 열고 사진을 소유한 계정으로 로그인합니다.
+2. **모두 선택 해제**를 클릭한 다음 **Google Photos**만 선택합니다. 큰 라이브러리를 여러 번에 나누어 내보내려면 **모든 사진 앨범 포함**에서 특정 앨범이나 연도로 범위를 제한할 수 있습니다.
+3. **대상**(Destination)에서 **Drive에 추가**를 선택합니다. Google이 내보내기 파일을 Google Drive의 `Takeout` 폴더에 넣어 주며, RcloneView가 여기에 바로 접근할 수 있습니다. Dropbox, OneDrive, Box도 선택할 수 있고(RcloneView는 세 곳 모두 지원합니다), 컴퓨터에서 복사하려면 **이메일로 다운로드 링크 보내기**도 사용할 수 있습니다.
+4. 아카이브 형식(`.zip`)과 크기(1GB~50GB)를 고릅니다. 아카이브가 클수록 다룰 파일 수가 줄어듭니다.
+5. **내보내기 만들기**를 클릭합니다. 준비되면 Google이 이메일로 알려 주며, 라이브러리가 크면 몇 시간에서 며칠까지 걸릴 수 있습니다.
 
-## Google 포토를 리모트로 설정하기
+시작하기 전에 알아 둘 점은 다음과 같습니다.
 
-### 1단계: RcloneView에 Google 포토 추가하기
+- 각 사진과 동영상은 원본 화질로 제공되며, 촬영 날짜, 설명, 위치가 담긴 `.json` 메타데이터 파일이 함께 들어 있습니다.
+- Google Drive에 추가된 내보내기 파일은 삭제하기 전까지 Google 저장 용량에 포함됩니다. Drive에 여유 공간이 있는지 확인하거나, 나누어 내보내세요.
+- Takeout은 증분 모드가 없는 일회성 내보내기입니다. 반복하지 않고 앞으로의 사진을 계속 백업하는 방법은 4단계에서 다룹니다.
 
-RcloneView를 열고 새 리모트를 만듭니다.
+## 2단계: RcloneView에서 Google Drive 추가
 
-1. 리모트 관리자에서 **리모트 추가** 버튼을 클릭합니다.
-2. 제공업체 목록에서 **Google 포토**를 선택합니다.
-3. OAuth 인증 절차를 따릅니다 — RcloneView가 브라우저를 열어 접근 권한을 승인하도록 안내합니다.
-4. 인증이 완료되면 Google 포토 라이브러리가 탐색 가능한 리모트로 표시됩니다.
+1. RcloneView를 열고 리모트 관리자(Remote Manager)에서 **Add Remote**를 클릭합니다.
+2. **Google Drive**를 선택하고 [브라우저 기반 OAuth 로그인](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)을 완료합니다.
+3. [탐색기(Explorer)](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)에서 리모트를 열고 `Takeout` 폴더로 이동합니다. 내보내기마다 별도의 `.zip` 파일이 생성되며, 라이브러리가 크면 여러 개로 나뉩니다.
 
-<img src="/support/images/en/blog/new-remote.png" alt="Add Google Photos as a remote in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/blog/open-multiple-google-drive-remotes.png" alt="Google Drive remote with the Takeout folder open in RcloneView Explorer" class="img-large img-center" />
 
-### 2단계: 사진 라이브러리 탐색하기
+## 3단계: 내보내기 파일을 백업 대상에 복사
 
-연결이 완료되면 RcloneView의 [탐색기](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)에서 Google 포토 라이브러리를 바로 탐색할 수 있습니다. Google 포토는 다음과 같은 방식으로 파일을 정리합니다.
+RcloneView는 아카이브를 압축 해제하지 않고 그대로 복사하므로, 복사가 끝난 뒤 대상 컴퓨터에서 한 번 압축을 풀면 됩니다.
 
-- **연도/월 폴더** — 사진은 `media/by-year/2024/01` 형태의 경로로 배치됩니다.
-- **앨범** — 앨범은 `album` 경로 아래에 별도 폴더로 표시됩니다.
-- **공유 앨범** — `shared-album` 아래에서 확인할 수 있습니다.
+### 외장 하드 드라이브
 
-이를 통해 전송을 시작하기 전에 정확히 무엇을 백업하는지 쉽게 확인할 수 있습니다.
+1. 드라이브를 연결하고 경로를 확인합니다(Windows는 `E:\`, macOS는 `/Volumes/...`, Linux는 `/media/...`).
+2. [복사(Copy) 작업](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs)을 만듭니다. **소스** = Google Drive 리모트의 `Takeout` 폴더, **대상** = 드라이브의 폴더.
+3. 작업을 실행한 뒤 드라이브에서 아카이브의 압축을 풉니다.
 
-<img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Browse Google Photos library in RcloneView Explorer" class="img-large img-center" />
+동기화(Sync)가 아니라 **복사**(Copy)를 사용하세요. 복사 작업은 대상에 있는 어떤 것도 삭제하지 않습니다.
 
-## 백업 전략 1: Google 포토 → 외장 하드 드라이브
+### Synology NAS
 
-가장 간단한 방법 — USB로 연결한 외장 드라이브에 모든 것을 복사합니다.
+RcloneView는 네트워크의 [Synology NAS 장치를 자동으로 감지](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)하므로, 별도 설정 없이 로컬 탭에 NAS가 나타납니다.
 
-### 설정 방법
+1. `Takeout` 폴더를 소스로, NAS의 공유 폴더(예: `/photos/google-takeout`)를 대상으로 하는 복사 작업을 만듭니다.
+2. 작업을 실행한 뒤 NAS에서 아카이브의 압축을 풉니다.
 
-1. **외장 드라이브를 연결**하고 드라이브 문자(Windows) 또는 마운트 지점(Mac/Linux)을 확인합니다.
-2. RcloneView에서 **복사 작업을 생성**합니다.
-   - **원본**: Google 포토 리모트(모든 사진을 대상으로 하려면 `media/by-year` 폴더 선택)
-   - **대상**: 외장 드라이브 경로(예: `E:\Google Photos Backup`)
-3. **작업을 실행**합니다 — RcloneView가 폴더 구조를 유지하면서 모든 사진과 동영상을 다운로드합니다.
+<img src="/support/images/en/blog/synology-nas-autodection-and-connection.png" alt="Synology NAS auto-detected in RcloneView for the Google Takeout copy" class="img-large img-center" />
 
-### 권장 설정
+### 다른 클라우드
 
-- **병렬 전송 수**: 4~6개 (Google 포토 API에는 속도 제한이 있습니다)
-- **작업 유형**: 복사(동기화 아님 — Google 포토에서 사진을 삭제해도 로컬 파일을 삭제하고 싶지는 않을 것입니다)
+오프사이트 사본을 원하시나요? 복사 작업의 대상을 Amazon S3, Backblaze B2, Wasabi, OneDrive 등 다른 리모트로 지정하세요. RcloneView는 rclone 엔진을 통해 클라우드에서 클라우드로 데이터를 이동하므로, 아카이브가 컴퓨터의 저장소를 거치지 않아도 됩니다.
 
-### 증분 업데이트를 위해
+### 검증 및 정리
 
-초기 백업 이후에는 이후 실행에서 새 사진만 다운로드합니다. RcloneView는 드라이브에 이미 있는 파일과 비교해 기존 파일은 건너뜁니다. 이를 통해 몇 시간이 걸리는 최초 백업이 빠른 일일 업데이트로 바뀝니다.
+- [폴더 비교(Folder Comparison)](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)를 사용해 모든 아카이브가 같은 크기로 도착했는지 확인합니다.
+- [작업 기록(Job History)](https://rcloneview.com/support/howto/rcloneview-basic/execute-manage-job#view-job-history)에서 전송 로그를 확인합니다.
+- 복사가 검증되면 Google Drive에서 `Takeout` 폴더를 삭제해 차지하던 저장 용량을 되찾습니다.
 
-## 백업 전략 2: Google 포토 → Synology NAS
+<img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Folder Comparison between the Takeout export and the NAS copy" class="img-large img-center" />
 
-Synology NAS를 사용하는 사용자라면 RcloneView는 훨씬 더 통합된 경험을 제공합니다. v1.0부터 Synology NAS 기기는 네트워크에서 [자동으로 감지](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)됩니다.
+## 4단계: RcloneView Mobile로 새 사진 계속 백업
 
-### 설정 방법
+Takeout은 증분 실행이 불가능하므로 매달 반복하는 것은 해법이 아닙니다. 지금부터 찍는 사진은 Google Photos를 거치지 않도록 하세요.
 
-1. **RcloneView를 실행**하면 Synology NAS가 로컬 탭에 자동으로 표시됩니다.
-2. **복사 작업을 생성**합니다.
-   - **원본**: Google 포토 리모트
-   - **대상**: NAS의 공유 폴더(예: `/photos/google-backup`)
-3. [작업 예약](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution) 기능을 사용해 매일 또는 매주 실행되도록 **작업을 예약**합니다.
+- **RcloneView Mobile**(Android 및 iOS)은 휴대폰의 사진과 동영상을 중간 서버 없이 사용자 본인의 클라우드로 직접 백업합니다. 데스크톱의 RcloneView에서 쓰는 것과 같은 리모트를 사용합니다. 사진 백업은 RcloneView Plus에 포함되어 있습니다. [다운로드 페이지](https://rcloneview.com/src/download.html)에서 받으세요.
+- 데스크톱에서는 예약된 복사 작업(PLUS 기능, [작업 스케줄링](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution) 참고)이 그 클라우드 폴더를 NAS나 외장 드라이브에 매일, 매주 등 원하는 주기로 미러링합니다.
 
-<img src="/support/images/en/blog/synology-nas-autodection-and-connection.png" alt="Synology NAS auto-detection for Google Photos backup" class="img-large img-center" />
+<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling the recurring copy from the cloud photo folder to the NAS" class="img-large img-center" />
 
-### 사진 백업에 NAS가 이상적인 이유
+Google Photos가 다운로드 가능 여부를 좌우하지 않아도, 휴대폰, 클라우드, NAS가 계속 같은 상태를 유지합니다.
 
-- **항상 켜져 있음** — 외장 드라이브와 달리 NAS는 항상 연결되어 준비된 상태입니다.
-- **RAID 보호** — 대부분의 NAS 구성은 디스크 장애 방지를 위해 RAID를 사용합니다.
-- **어디서나 접근 가능** — 네트워크 상의 어떤 기기에서도 백업된 사진을 볼 수 있습니다.
-- **2차 클라우드 백업** — 다른 RcloneView 작업을 사용해 NAS를 S3나 Backblaze B2로 동기화하면 오프사이트 이중화를 확보할 수 있습니다.
+## Google Photos 리모트의 남은 쓰임새
 
-## 백업 전략 3: Google 포토 → 다른 클라우드
+이 리모트가 쓸모없어진 것은 아니며, 반대 방향으로 동작할 뿐입니다.
 
-다른 클라우드 제공업체에도 사본을 보관하고 싶으신가요? RcloneView는 클라우드 간 전송을 원활하게 처리합니다.
-
-- **Google 포토 → OneDrive** — Microsoft 365 저장 공간을 활용합니다.
-- **Google 포토 → AWS S3** — 저렴하고 내구성이 뛰어난 오브젝트 스토리지에 아카이브합니다.
-- **Google 포토 → Backblaze B2** — 저비용 무제한 백업 스토리지입니다.
-- **Google 포토 → Wasabi** — 유출(egress) 비용 없는 S3 호환 스토리지입니다.
-
-Google 포토를 원본으로, 원하는 클라우드를 대상으로 설정해 복사 작업을 생성하기만 하면 됩니다. 로컬 기기의 저장 공간을 거치지 않고, RcloneView가 rclone 엔진을 통해 직접 전송을 처리합니다.
-
-## 사진 백업 자동화하기
-
-일회성 백업도 좋지만, 자동화된 반복 백업이 더 낫습니다.
-
-### 예약 백업 설정하기
-
-1. 위의 전략 중 하나를 사용해 **복사 작업을 생성**합니다.
-2. **작업 예약**을 열고 반복 일정을 설정합니다.
-   - **매일 오전 2시** — 전날 추가된 새 사진을 모두 포착합니다.
-   - **매주 일요일** — 라이브러리가 작은 경우에 적합한 가벼운 방식입니다.
-3. 작업이 잘 실행되었는지 알 수 있도록 **알림을 추가**합니다.
-   - 팀을 위한 [Slack 알림](https://rcloneview.com/support/blog/rcloneview-slack-remote-control)
-   - 개인용 [Telegram 알림](https://rcloneview.com/support/blog/rcloneview-telegram-remote-control)
-   - 커뮤니티를 위한 [Discord 알림](https://rcloneview.com/support/blog/rcloneview-discord-remote-control)
-
-<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Schedule automatic Google Photos backups" class="img-large img-center" />
-
-### 다중 대상 백업을 위한 배치 작업 사용하기
-
-v1.3의 [배치 작업](https://rcloneview.com/support/blog/batch-jobs-run-multiple-cloud-tasks-rcloneview)을 사용하면 하나의 자동화된 시퀀스로 Google 포토를 여러 대상에 백업할 수 있습니다.
-
-1. Google 포토 → 외장 드라이브 복사
-2. Google 포토 → NAS 복사
-3. Google 포토 → Backblaze B2 복사
-
-한 번의 클릭(또는 한 번의 예약 트리거)으로 세 가지 작업이 모두 실행됩니다.
-
-## 모니터링 및 검증
-
-### 실시간 전송 모니터링
-
-백업 진행 상황을 실시간으로 확인하세요 — 파일 수, 전송 속도, 예상 완료 시간을 볼 수 있습니다.
-
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitor Google Photos backup progress" class="img-large img-center" />
-
-### 폴더 비교로 검증하기
-
-백업이 완료되면 [폴더 비교](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents) 기능을 사용해 로컬 사본이 Google 포토 라이브러리와 일치하는지 확인하세요. 빠진 것이 없다는 확신을 얻을 수 있습니다.
-
-<img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare Google Photos with local backup" class="img-large img-center" />
-
-### 작업 기록 확인하기
-
-[작업 기록](https://rcloneview.com/support/howto/rcloneview-basic/execute-manage-job#view-job-history)을 확인하면 전송된 파일, 발생한 오류, 총 소요 시간 등 과거 백업 실행 전체 기록을 볼 수 있습니다.
-
-## 대용량 Google 포토 라이브러리를 위한 팁
-
-사진이 수만 장에 달한다면 다음을 참고하세요.
-
-1. **최근 연도부터 시작하기** — 최근 2~3년치를 먼저 백업하고 그다음 과거로 거슬러 올라가세요. 가장 최근 추억을 가장 빠르게 보호할 수 있습니다.
-2. **증분 복사 사용하기** — 최초 실행 이후에는 새 파일만 전송됩니다.
-3. **속도 제한에 여유를 갖기** — Google 포토 API의 제한은 Google 드라이브보다 더 엄격합니다. 병렬 전송 수를 4~6개로 유지하세요.
-4. **실패 시 재시도하기** — v1.3의 실패한 작업 재시도 기능이 일시적인 API 오류를 원활하게 처리합니다.
-5. **비수기 시간대 예약을 고려하기** — 네트워크 혼잡을 피하려면 대용량 백업을 야간에 실행하세요.
+- **업로드.** NAS나 컴퓨터에서 리모트의 `upload` 폴더 또는 앨범으로 복사 작업을 실행하면 해당 사진이 Google Photos 라이브러리에 추가되고, Google Photos 앱에서 다른 업로드와 똑같이 표시됩니다.
+- **RcloneView가 업로드한 항목 다시 읽기.** RcloneView를 통해 올린 것은 무엇이든 나열하고 다시 복사해 나갈 수 있습니다.
+- **주의 사항.** API를 통한 다운로드는 원본 해상도가 아니며 EXIF 위치 데이터가 제거됩니다. 따라서 Google Photos는 편리한 뷰어로만 여기고 아카이브로 삼지 마세요. 또한 직접 만든 OAuth 클라이언트 ID가 여전히 필요합니다.
 
 ## 시작하기
 
-1. [rcloneview.com](https://rcloneview.com/src/download.html)에서 **RcloneView를 다운로드**하세요(Windows, macOS, Linux).
-2. OAuth 인증을 사용해 **Google 포토를 리모트로 추가**하세요.
-3. 무엇을 백업하는지 확인하기 위해 탐색기에서 **라이브러리를 탐색**하세요.
-4. 선택한 대상(외장 드라이브, NAS, 또는 클라우드)으로 **복사 작업을 생성**하세요.
-5. 자동 반복 백업을 위해 **예약**하세요.
-6. 첫 실행 후 폴더 비교로 **검증**하세요.
+1. Google Takeout으로 Google Photos 라이브러리를 **내보내고**, Google Drive로 전달받습니다.
+2. [rcloneview.com](https://rcloneview.com/src/download.html)에서 **RcloneView를 다운로드**(Windows, macOS, Linux)하고 Google Drive를 리모트로 추가합니다.
+3. `Takeout` 폴더에서 외장 드라이브, NAS 또는 다른 클라우드로 **복사 작업을 만들고**, 그곳에서 아카이브의 압축을 풉니다.
+4. 폴더 비교로 복사본을 **검증**하고 Drive에서 내보내기 파일을 삭제합니다.
+5. **RcloneView Mobile을 설치**해 새 사진이 본인의 클라우드로 바로 가도록 하고, 이를 NAS로 미러링하는 데스크톱 작업을 예약합니다.
 
-사진은 다시 되돌릴 수 없는 소중한 자산입니다. 백업이 단일 제공업체에 의존해서는 안 됩니다. RcloneView를 사용하면 CLI 없이도 자동으로, 안정적으로 독립적인 사본을 유지할 수 있습니다.
+사진은 대체할 수 없습니다. 한 번의 내보내기와 하나의 예약 작업이면 어떤 정책 변경으로도 빼앗기지 않는 사본을 갖게 됩니다.
 
 ---
 
 **관련 가이드:**
 
-- [브라우저 기반 로그인(OAuth)으로 리모트 추가하기](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)
+- [RcloneView에서 Google Photos 동기화 오류 해결하기](https://rcloneview.com/support/blog/fix-google-photos-sync-errors-rcloneview)
+- [브라우저 기반 로그인(OAuth)으로 리모트 추가](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)
 - [리모트 탐색 및 관리](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
-- [폴더 내용 비교하기](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)
-- [동기화 작업 생성하기](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs)
-- [작업 예약](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [폴더 내용 비교](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)
+- [동기화 작업 만들기](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs)
+- [작업 스케줄링](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)
 - [Synology NAS 자동 감지 및 연결](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)
 
 <CloudSupportGrid />

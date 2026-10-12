@@ -1,20 +1,20 @@
 ---
 slug: backup-google-photos-external-drive-nas-rcloneview
-title: "Comment sauvegarder toutes vos photos Google Photos sur un disque externe ou un NAS avec RcloneView"
+title: "Comment sauvegarder Google Photos sur un disque externe ou un NAS — Google Takeout + RcloneView"
 authors:
   - tayson
-description: "Téléchargez et sauvegardez toute votre bibliothèque Google Photos sur un disque dur externe, un NAS ou un autre cloud — automatiquement et sans perdre la structure de vos albums — grâce à RcloneView."
+description: "Google Photos ne permet plus aux applications tierces de télécharger votre bibliothèque existante. Exportez-la avec Google Takeout vers Google Drive, puis utilisez RcloneView pour copier l'export vers un disque externe, un NAS ou un autre stockage cloud — et gardez vos nouvelles photos sauvegardées avec RcloneView Mobile."
 keywords:
-  - google photos backup
-  - download all google photos
-  - google photos to external drive
-  - google photos to nas
-  - backup google photos automatically
-  - google photos to hard drive
+  - sauvegarde google photos
+  - google photos vers disque externe
+  - google photos vers nas
+  - google takeout vers nas
+  - sauvegarde google takeout
   - google photos rclone
-  - google photos sync nas
-  - save google photos locally
-  - google photos export alternative
+  - restriction de l'API google photos
+  - enregistrer google photos en local
+  - export google photos
+  - sauvegarde de photos rcloneview mobile
 tags:
   - RcloneView
   - google-photos
@@ -28,190 +28,125 @@ import CloudSupportGrid from '@site/src/components/CloudSupportGrid';
 import cloudIcons from '@site/src/contexts/cloudIcons';
 import RvCta from '@site/src/components/RvCta';
 
-# Comment sauvegarder toutes vos photos Google Photos sur un disque externe ou un NAS avec RcloneView
+# Comment sauvegarder Google Photos sur un disque externe ou un NAS — Google Takeout + RcloneView
 
-> Google Photos conserve vos souvenirs, mais que se passe-t-il si votre compte est bloqué, si le stockage est saturé, ou si Google change ses règles ? Une sauvegarde locale garantit que vos photos vous appartiennent toujours.
+> Depuis le 31 mars 2025, Google Photos ne permet aux applications tierces — rclone et RcloneView inclus — de voir que les photos qu'elles ont elles-mêmes téléversées. La méthode fiable pour récupérer votre bibliothèque existante est Google Takeout, et RcloneView prend ensuite le relais.
 
-Google Photos est pratique — jusqu'à ce qu'il ne le soit plus. Les limites de stockage, les suspensions de compte et les changements de règles peuvent tous menacer l'accès à des années de photos et vidéos irremplaçables. Google Takeout existe, mais il est terriblement lent, échoue sur les grandes bibliothèques et ne prend pas en charge les mises à jour incrémentielles.
+Google Photos conserve des années de photos et de vidéos irremplaçables, mais les quotas de stockage, les blocages de compte et les changements de politique peuvent vous en couper l'accès. De nombreux guides — y compris une version antérieure de celui-ci — vous conseillaient de connecter Google Photos à un outil de synchronisation et de tout télécharger. Cela ne fonctionne plus : Google a fermé cette porte en 2025.
 
-RcloneView offre une meilleure solution : connectez-vous directement à Google Photos, parcourez votre bibliothèque visuellement, et synchronisez tout vers un disque externe, un NAS ou un autre cloud — avec une planification automatique pour que les futures photos soient également sauvegardées.
+Ce guide présente la méthode qui fonctionne aujourd'hui. Exportez votre bibliothèque avec **Google Takeout** directement dans Google Drive, laissez **RcloneView** copier l'export vers un disque externe, un NAS ou un autre stockage cloud, et utilisez **RcloneView Mobile** pour que vos nouvelles photos n'aient plus besoin de passer par Google Photos.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
 <!-- truncate -->
 
-## Pourquoi sauvegarder Google Photos localement ?
+## Ce qui a changé : les restrictions de l'API Google Photos (2025)
 
-### Google Takeout ne suffit pas
+Le 31 mars 2025, Google a supprimé les portées d'accès à l'ensemble de la bibliothèque de l'API Photos Library. Selon les termes mêmes de Google, les applications tierces « peuvent désormais uniquement lister, rechercher et récupérer les albums et les éléments multimédias créés par votre application ». Les appels aux albums partagés renvoient `403 PERMISSION_DENIED`.
 
-Google Takeout permet d'exporter des photos, mais présente des limites importantes :
+Voici ce que cela signifie lorsque vous ajoutez un distant **Google Photos** dans RcloneView :
 
-- **Lent et peu fiable** — Les grandes bibliothèques échouent souvent en cours d'exportation, ce qui oblige à tout recommencer.
-- **Pas de mise à jour incrémentielle** — Chaque exportation est un dump complet. Vous avez pris 500 nouvelles photos ce mois-ci ? Il faut tout exporter à nouveau.
-- **Format d'archive ZIP** — Vous obtenez des dizaines de fichiers ZIP qu'il faut extraire et organiser manuellement.
-- **Aucune automatisation** — C'est un processus entièrement manuel à chaque fois.
+- **Le distant semble presque vide.** Il n'affiche que les photos téléversées via RcloneView ou rclone. Les envois depuis le téléphone, depuis le web et tout le reste de votre bibliothèque sont invisibles pour l'API, si bien qu'une tâche de copie signale « aucun changement » ou copie zéro fichier.
+- **Ce n'est pas un problème de connexion.** RcloneView 1.6 et versions ultérieures explique cette restriction dans l'application lorsque vous ouvrez un distant Google Photos, au lieu d'afficher ce qui ressemble à un compte vide.
+- **Les albums partagés ne sont pas accessibles** du tout.
+- **Vous avez besoin de votre propre identifiant client OAuth.** L'identifiant client Google Photos partagé de rclone sera retiré au cours de 2026. Lorsqu'une connexion ne peut pas être établie, l'assistant de connexion de RcloneView vous guide pour en créer un.
 
-### Les vrais risques du stockage uniquement dans le cloud
+La méthode officielle de Google pour exporter une bibliothèque existante est **Google Takeout** — c'est donc par là que commence la sauvegarde.
 
-- **Quota de stockage dépassé** — Une fois les 15 Go atteints (partagés avec Gmail et Drive), Google vous invite à supprimer des données ou à payer.
-- **Blocage de compte** — Une violation des règles, même accidentelle, peut geler l'intégralité de votre compte Google.
-- **Changements de service** — Google a déjà abandonné des produits par le passé (Google+, Picasa). Votre stratégie de données doit en tenir compte.
+## Étape 1 : exporter votre bibliothèque avec Google Takeout
 
-Une sauvegarde locale sur un disque externe ou un NAS vous donne une copie indépendante qu'aucun changement de règles ne peut vous retirer.
+1. Ouvrez [takeout.google.com](https://takeout.google.com) et connectez-vous avec le compte qui possède les photos.
+2. Cliquez sur **Tout désélectionner**, puis cochez uniquement **Google Photos**. Utilisez **Tous les albums photo inclus** pour limiter l'export à certains albums ou à certaines années si vous souhaitez diviser une grande bibliothèque en plusieurs lots.
+3. Sous **Destination**, choisissez **Ajouter à Drive**. Google place l'export dans un dossier `Takeout` de votre Google Drive, auquel RcloneView peut accéder directement. Dropbox, OneDrive et Box sont également proposés — RcloneView prend en charge ces trois services — et **Envoyer le lien de téléchargement par e-mail** fonctionne si vous préférez copier depuis votre ordinateur.
+4. Choisissez le type d'archive (`.zip`) et la taille (de 1 Go à 50 Go). Des archives plus volumineuses signifient moins de fichiers à gérer.
+5. Cliquez sur **Créer l'export**. Google vous envoie un e-mail lorsqu'il est prêt ; une grande bibliothèque peut prendre des heures, voire des jours.
 
-## Configurer Google Photos comme remote
+À savoir avant de commencer :
 
-### Étape 1 : Ajouter Google Photos dans RcloneView
+- Chaque photo et chaque vidéo arrive en qualité d'origine, accompagnée d'un fichier de métadonnées `.json` contenant la date de prise de vue, la description et la localisation.
+- Un export ajouté à Google Drive est décompté de votre espace de stockage Google jusqu'à ce que vous le supprimiez ; assurez-vous donc que Drive dispose de suffisamment d'espace — ou exportez par lots.
+- Takeout est un export ponctuel, sans mode incrémentiel. L'étape 4 explique comment continuer à sauvegarder vos futures photos sans le répéter.
 
-Ouvrez RcloneView et créez un nouveau remote :
+## Étape 2 : ajouter Google Drive dans RcloneView
 
-1. Cliquez sur le bouton **Add Remote** dans le Remote Manager.
-2. Sélectionnez **Google Photos** dans la liste des fournisseurs.
-3. Suivez le flux d'authentification OAuth — RcloneView ouvrira votre navigateur pour autoriser l'accès.
-4. Une fois autorisé, votre bibliothèque Google Photos apparaît comme un remote consultable.
+1. Ouvrez RcloneView et cliquez sur **Add Remote** dans le Remote Manager.
+2. Choisissez **Google Drive** et terminez la [connexion OAuth via le navigateur](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login).
+3. Ouvrez le distant dans l'[Explorer](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage) et accédez au dossier `Takeout`. Chaque export est un fichier `.zip` distinct (ou plusieurs, pour les bibliothèques plus volumineuses).
 
-<img src="/support/images/en/blog/new-remote.png" alt="Add Google Photos as a remote in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/blog/open-multiple-google-drive-remotes.png" alt="Distant Google Drive avec le dossier Takeout ouvert dans l'Explorer de RcloneView" class="img-large img-center" />
 
-### Étape 2 : Parcourir votre bibliothèque de photos
+## Étape 3 : copier l'export vers votre destination de sauvegarde
 
-Une fois connecté, vous pouvez parcourir votre bibliothèque Google Photos directement dans l'[Explorer](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage) de RcloneView. Google Photos organise les fichiers de la façon suivante :
+RcloneView copie les archives telles quelles — il ne les extrait pas — vous les décompressez donc une seule fois sur la machine de destination, une fois la copie terminée.
 
-- **Dossiers Année/Mois** — Les photos sont classées selon des chemins de type `media/by-year/2024/01`.
-- **Albums** — Vos albums apparaissent comme des dossiers distincts sous le chemin `album`.
-- **Albums partagés** — Accessibles sous `shared-album`.
+### Disque dur externe
 
-Cela permet de voir précisément ce que vous sauvegardez avant de lancer un transfert.
+1. Connectez le disque et notez son chemin (`E:\` sous Windows, `/Volumes/...` sous macOS, `/media/...` sous Linux).
+2. Créez une [tâche de copie](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs) : **Source** = le dossier `Takeout` du distant Google Drive, **Destination** = un dossier sur le disque.
+3. Exécutez la tâche, puis extrayez les archives sur le disque.
 
-<img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Browse Google Photos library in RcloneView Explorer" class="img-large img-center" />
+Utilisez **Copy** et non Sync : une tâche de copie ne supprime jamais rien à la destination.
 
-## Stratégie de sauvegarde 1 : Google Photos → Disque dur externe
+### NAS Synology
 
-L'approche la plus simple — copier l'ensemble vers un disque externe connecté en USB.
+RcloneView [détecte automatiquement les NAS Synology](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer) présents sur votre réseau, de sorte que le NAS apparaît dans l'onglet Local sans aucune configuration.
 
-### Comment procéder
+1. Créez une tâche de copie avec le dossier `Takeout` comme source et un dossier partagé du NAS (par exemple `/photos/google-takeout`) comme destination.
+2. Exécutez-la, puis extrayez les archives sur le NAS.
 
-1. **Connectez votre disque externe** et notez la lettre du lecteur (Windows) ou le point de montage (Mac/Linux).
-2. **Créez une tâche de copie (Copy job)** dans RcloneView :
-   - **Source** : votre remote Google Photos (sélectionnez le dossier `media/by-year` pour toutes les photos)
-   - **Destination** : le chemin de votre disque externe (par exemple, `E:\Google Photos Backup`)
-3. **Lancez la tâche** — RcloneView télécharge toutes les photos et vidéos en conservant la structure des dossiers.
+<img src="/support/images/en/blog/synology-nas-autodection-and-connection.png" alt="NAS Synology détecté automatiquement dans RcloneView pour la copie Google Takeout" class="img-large img-center" />
 
-### Paramètres recommandés
+### Un autre stockage cloud
 
-- **Transferts parallèles** : 4 à 6 (l'API Google Photos impose des limites de débit)
-- **Type de tâche** : Copy (et non Sync — vous ne voulez pas supprimer les fichiers locaux si vous les retirez de Google Photos)
+Vous préférez une copie hors site ? Dirigez la tâche de copie vers n'importe quel autre distant — Amazon S3, Backblaze B2, Wasabi, OneDrive, etc. RcloneView déplace les données de cloud à cloud grâce à son moteur rclone ; les archives n'ont pas besoin de transiter par le stockage de votre ordinateur.
 
-### Pour les mises à jour incrémentielles
+### Vérifier et nettoyer
 
-Après la sauvegarde initiale, les exécutions suivantes ne téléchargent que les nouvelles photos. RcloneView compare ce qui se trouve déjà sur votre disque et ignore les fichiers existants. Une première sauvegarde de plusieurs heures devient ainsi une mise à jour quotidienne rapide.
+- Utilisez la [comparaison de dossiers](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents) pour confirmer que chaque archive est arrivée avec la même taille.
+- Consultez l'[historique des tâches](https://rcloneview.com/support/howto/rcloneview-basic/execute-manage-job#view-job-history) pour le journal de transfert.
+- Une fois la copie vérifiée, supprimez le dossier `Takeout` de Google Drive pour récupérer l'espace de stockage qu'il occupe.
 
-## Stratégie de sauvegarde 2 : Google Photos → NAS Synology
+<img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparaison de dossiers entre l'export Takeout et la copie sur le NAS" class="img-large img-center" />
 
-Pour les utilisateurs disposant d'un NAS Synology, RcloneView offre une expérience encore plus intégrée. Depuis la v1.0, les appareils NAS Synology sont [détectés automatiquement](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer) sur votre réseau.
+## Étape 4 : garder les nouvelles photos sauvegardées avec RcloneView Mobile
 
-### Comment procéder
+Takeout ne peut pas fonctionner de façon incrémentielle ; le répéter chaque mois n'est donc pas une solution. Pour les photos que vous prendrez à partir de maintenant, sortez Google Photos de la chaîne :
 
-1. **Lancez RcloneView** — votre NAS Synology devrait apparaître automatiquement dans l'onglet Local.
-2. **Créez une tâche de copie** :
-   - **Source** : remote Google Photos
-   - **Destination** : un dossier partagé sur votre NAS (par exemple, `/photos/google-backup`)
-3. **Planifiez la tâche** pour qu'elle s'exécute quotidiennement ou hebdomadairement via la [planification des tâches](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution).
+- **RcloneView Mobile** (Android et iOS) sauvegarde les photos et vidéos de votre téléphone directement vers votre propre stockage cloud — les mêmes distants que ceux que vous utilisez dans RcloneView sur ordinateur, sans serveur intermédiaire. La sauvegarde de photos est incluse avec RcloneView Plus. Téléchargez-le depuis la [page de téléchargement](https://rcloneview.com/src/download.html).
+- Sur ordinateur, une tâche de copie planifiée (fonctionnalité PLUS, voir [Planification des tâches](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)) réplique ensuite ce dossier cloud vers votre NAS ou votre disque externe — chaque jour, chaque semaine, à la fréquence de votre choix.
 
-<img src="/support/images/en/blog/synology-nas-autodection-and-connection.png" alt="Synology NAS auto-detection for Google Photos backup" class="img-large img-center" />
+<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Planification de la copie récurrente du dossier de photos cloud vers le NAS" class="img-large img-center" />
 
-### Pourquoi le NAS est idéal pour la sauvegarde de photos
+Votre téléphone, votre stockage cloud et votre NAS restent synchronisés sans que Google Photos décide de ce que vous pouvez télécharger.
 
-- **Toujours actif** — Contrairement à un disque externe, votre NAS est toujours connecté et prêt.
-- **Protection RAID** — La plupart des configurations NAS utilisent le RAID pour se protéger des pannes de disque.
-- **Accès depuis n'importe où** — Consultez vos photos sauvegardées depuis n'importe quel appareil de votre réseau.
-- **Sauvegarde cloud secondaire** — Utilisez une autre tâche RcloneView pour synchroniser le NAS vers S3 ou Backblaze B2 afin d'assurer une redondance hors site.
+## À quoi sert encore le distant Google Photos
 
-## Stratégie de sauvegarde 3 : Google Photos → Un autre cloud
+Le distant n'est pas inutile — il fonctionne simplement dans l'autre sens :
 
-Vous souhaitez conserver une copie chez un autre fournisseur cloud ? RcloneView simplifie les transferts de cloud à cloud :
-
-- **Google Photos → OneDrive** — Exploitez votre espace de stockage Microsoft 365.
-- **Google Photos → AWS S3** — Archivez vers un stockage d'objets peu coûteux et durable.
-- **Google Photos → Backblaze B2** — Stockage de sauvegarde illimité à faible coût.
-- **Google Photos → Wasabi** — Compatible S3, sans frais de sortie de données.
-
-Il suffit de créer une tâche de copie avec Google Photos comme source et le cloud cible comme destination. Aucune donnée ne transite par le stockage local de votre machine — RcloneView gère le transfert via son moteur rclone.
-
-## Automatiser la sauvegarde de vos photos
-
-Une sauvegarde ponctuelle, c'est bien. Une sauvegarde automatisée et récurrente, c'est mieux.
-
-### Configurer des sauvegardes planifiées
-
-1. **Créez votre tâche de copie** en utilisant l'une des stratégies ci-dessus.
-2. **Ouvrez la planification des tâches (Job Scheduling)** et définissez une planification récurrente :
-   - **Quotidienne à 2h du matin** — Récupère toutes les nouvelles photos de la veille.
-   - **Hebdomadaire le dimanche** — Une approche plus légère pour les bibliothèques plus petites.
-3. **Ajoutez des notifications** pour savoir que tout s'est bien passé :
-   - [Alertes Slack](https://rcloneview.com/support/blog/rcloneview-slack-remote-control) pour les équipes
-   - [Alertes Telegram](https://rcloneview.com/support/blog/rcloneview-telegram-remote-control) pour un usage personnel
-   - [Alertes Discord](https://rcloneview.com/support/blog/rcloneview-discord-remote-control) pour les communautés
-
-<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Schedule automatic Google Photos backups" class="img-large img-center" />
-
-### Utiliser les tâches par lot (Batch Jobs) pour une sauvegarde multi-destinations
-
-Avec les [tâches par lot (Batch Jobs)](https://rcloneview.com/support/blog/batch-jobs-run-multiple-cloud-tasks-rcloneview) de la v1.3, vous pouvez sauvegarder Google Photos vers plusieurs destinations en une seule séquence automatisée :
-
-1. Copier Google Photos → Disque externe
-2. Copier Google Photos → NAS
-3. Copier Google Photos → Backblaze B2
-
-Un seul clic (ou un seul déclencheur planifié) exécute les trois.
-
-## Suivi et vérification
-
-### Suivi du transfert en temps réel
-
-Suivez la progression de votre sauvegarde en temps réel — nombre de fichiers, vitesses de transfert et temps estimé jusqu'à la fin.
-
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitor Google Photos backup progress" class="img-large img-center" />
-
-### Vérifier avec la comparaison de dossiers
-
-Une fois la sauvegarde terminée, utilisez la [comparaison de dossiers](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents) pour vérifier que votre copie locale correspond à la bibliothèque Google Photos. Cela vous garantit que rien n'a été oublié.
-
-<img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare Google Photos with local backup" class="img-large img-center" />
-
-### Consulter l'historique des tâches
-
-Consultez l'[historique des tâches](https://rcloneview.com/support/howto/rcloneview-basic/execute-manage-job#view-job-history) pour voir un journal complet des sauvegardes précédentes, incluant les fichiers transférés, les erreurs rencontrées et la durée totale.
-
-## Conseils pour les grandes bibliothèques Google Photos
-
-Si vous avez des dizaines de milliers de photos :
-
-1. **Commencez par les années récentes** — Sauvegardez d'abord les 2 à 3 dernières années, puis remontez dans le temps. Vous protégez ainsi vos souvenirs les plus récents en priorité.
-2. **Utilisez la copie incrémentielle** — Après la première exécution, seuls les nouveaux fichiers sont transférés.
-3. **Soyez patient avec les limites de débit** — Les limites de l'API Google Photos sont plus strictes que celles de Google Drive. Gardez les transferts parallèles entre 4 et 6.
-4. **Relancez en cas d'échec** — La fonctionnalité Retry Failed Jobs de la v1.3 gère avec souplesse les erreurs temporaires de l'API.
-5. **Envisagez une planification hors heures de pointe** — Exécutez les grandes sauvegardes la nuit pour éviter la congestion réseau.
+- **Le téléversement.** Une tâche de copie depuis votre NAS ou votre ordinateur vers le dossier `upload` du distant ou vers un album ajoute ces photos à votre bibliothèque Google Photos, où l'application Google Photos les affiche comme n'importe quel autre envoi.
+- **La relecture de ce que RcloneView a téléversé.** Tout ce qui a été envoyé via RcloneView peut être listé et copié à nouveau.
+- **Réserves.** Les téléchargements via l'API ne sont pas en résolution d'origine et perdent les données de localisation EXIF ; considérez donc Google Photos comme une visionneuse pratique, et non comme l'archive. Et vous avez toujours besoin de votre propre identifiant client OAuth.
 
 ## Pour commencer
 
-1. **Téléchargez RcloneView** depuis [rcloneview.com](https://rcloneview.com/src/download.html) (Windows, macOS, Linux).
-2. **Ajoutez Google Photos** comme remote via l'authentification OAuth.
-3. **Parcourez votre bibliothèque** dans l'Explorer pour voir ce que vous sauvegardez.
-4. **Créez une tâche de copie** vers la destination de votre choix (disque externe, NAS ou cloud).
-5. **Planifiez-la** pour des sauvegardes récurrentes automatiques.
-6. **Vérifiez** avec la comparaison de dossiers après la première exécution.
+1. **Exportez** votre bibliothèque Google Photos avec Google Takeout, livrée dans Google Drive.
+2. **Téléchargez RcloneView** depuis [rcloneview.com](https://rcloneview.com/src/download.html) (Windows, macOS, Linux) et ajoutez Google Drive comme distant.
+3. **Créez une tâche de copie** du dossier `Takeout` vers votre disque externe, votre NAS ou un autre stockage cloud, puis extrayez-y les archives.
+4. **Vérifiez** la copie avec la comparaison de dossiers et supprimez l'export de Drive.
+5. **Installez RcloneView Mobile** pour que les nouvelles photos aillent directement vers votre propre stockage cloud, et planifiez une tâche sur ordinateur pour les répliquer vers le NAS.
 
-Vos photos sont irremplaçables. Votre sauvegarde ne devrait pas dépendre d'un seul fournisseur. RcloneView facilite le maintien d'une copie indépendante — automatiquement, de manière fiable, et sans aucune ligne de commande requise.
+Vos photos sont irremplaçables. Un export et une tâche planifiée vous donnent une copie qu'aucun changement de politique ne pourra vous retirer.
 
 ---
 
-**Guides associés :**
+**Guides connexes :**
 
-- [Ajouter un remote via une connexion par navigateur (OAuth)](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)
-- [Parcourir et gérer les remotes](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [Corriger les erreurs de synchronisation de Google Photos dans RcloneView](https://rcloneview.com/support/blog/fix-google-photos-sync-errors-rcloneview)
+- [Ajouter un distant via la connexion par navigateur (OAuth)](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)
+- [Parcourir et gérer les distants](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
 - [Comparer le contenu des dossiers](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)
 - [Créer des tâches de synchronisation](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs)
 - [Planification des tâches](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)
-- [Détection et connexion automatique du NAS Synology](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)
+- [Détection automatique et connexion d'un NAS Synology](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)
 
 <CloudSupportGrid />

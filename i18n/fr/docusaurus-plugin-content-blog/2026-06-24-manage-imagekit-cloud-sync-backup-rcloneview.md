@@ -75,7 +75,7 @@ Avec RcloneView, votre médiathèque ImageKit devient partie intégrante d'une s
 **Guides connexes :**
 
 - [Gérer le stockage Cloudinary — Synchroniser et sauvegarder vos fichiers avec RcloneView](https://rcloneview.com/support/blog/manage-cloudinary-cloud-sync-backup-rcloneview)
-- [Gérer le stockage Google Photos — Synchroniser et sauvegarder vos fichiers avec RcloneView](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [Sauvegarder Google Photos vers un disque externe ou un NAS avec RcloneView](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 - [Guide de transfert cloud par glisser-déposer avec RcloneView](https://rcloneview.com/support/blog/drag-drop-cloud-transfer-guide-rcloneview)
 
 <CloudSupportGrid />

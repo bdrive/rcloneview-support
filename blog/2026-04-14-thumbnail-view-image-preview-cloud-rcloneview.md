@@ -85,6 +85,6 @@ Thumbnail View turns RcloneView into a visual cloud file manager for media workf
 
 - [Declutter Your Cloud Photo Library with RcloneView](https://rcloneview.com/support/blog/declutter-cloud-photo-library-rcloneview)
 - [Photographer Multi-Cloud Delivery with RcloneView](https://rcloneview.com/support/blog/photographer-multi-cloud-delivery-with-rcloneview)
-- [Manage Google Photos Storage — Sync and Backup with RcloneView](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [Backup Google Photos to External Drive or NAS with RcloneView](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 
 <CloudSupportGrid />

@@ -85,6 +85,6 @@ La Vista de miniaturas convierte a RcloneView en un gestor de archivos visual en
 
 - [Ordena tu biblioteca de fotos en la nube con RcloneView](https://rcloneview.com/support/blog/declutter-cloud-photo-library-rcloneview)
 - [Entrega multicloud para fotógrafos con RcloneView](https://rcloneview.com/support/blog/photographer-multi-cloud-delivery-with-rcloneview)
-- [Gestiona el almacenamiento de Google Photos — Sincronización y copia de seguridad con RcloneView](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [Hacer copia de seguridad de Google Photos en una unidad externa o NAS con RcloneView](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 
 <CloudSupportGrid />

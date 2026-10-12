@@ -75,7 +75,7 @@ Dengan RcloneView, pustaka media ImageKit Anda menjadi bagian dari strategi penc
 **Panduan Terkait:**
 
 - [Kelola Penyimpanan Cloudinary — Sinkronisasi dan Cadangkan File dengan RcloneView](https://rcloneview.com/support/blog/manage-cloudinary-cloud-sync-backup-rcloneview)
-- [Kelola Penyimpanan Google Photos — Sinkronisasi dan Cadangkan File dengan RcloneView](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [Cadangkan Google Photos ke Drive Eksternal atau NAS dengan RcloneView](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 - [Panduan Transfer Cloud dengan Drag and Drop menggunakan RcloneView](https://rcloneview.com/support/blog/drag-drop-cloud-transfer-guide-rcloneview)
 
 <CloudSupportGrid />

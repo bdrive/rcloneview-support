@@ -75,7 +75,7 @@ RcloneView를 사용하면 명령어를 하나도 작성하지 않고도 ImageKi
 **관련 가이드:**
 
 - [Cloudinary 스토리지 관리 — RcloneView로 파일 동기화 및 백업하기](https://rcloneview.com/support/blog/manage-cloudinary-cloud-sync-backup-rcloneview)
-- [Google Photos 스토리지 관리 — RcloneView로 파일 동기화 및 백업하기](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [RcloneView로 Google Photos를 외장 드라이브 또는 NAS에 백업하기](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 - [RcloneView 드래그 앤 드롭 클라우드 전송 가이드](https://rcloneview.com/support/blog/drag-drop-cloud-transfer-guide-rcloneview)
 
 <CloudSupportGrid />
