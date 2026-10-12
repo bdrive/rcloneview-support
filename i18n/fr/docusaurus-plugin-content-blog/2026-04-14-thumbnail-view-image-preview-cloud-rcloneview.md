@@ -85,6 +85,6 @@ La Vue Miniatures transforme RcloneView en un gestionnaire de fichiers cloud vis
 
 - [Désencombrez votre bibliothèque photo cloud avec RcloneView](https://rcloneview.com/support/blog/declutter-cloud-photo-library-rcloneview)
 - [Livraison multi-cloud pour photographes avec RcloneView](https://rcloneview.com/support/blog/photographer-multi-cloud-delivery-with-rcloneview)
-- [Gérer le stockage Google Photos — Synchronisation et sauvegarde avec RcloneView](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [Sauvegarder Google Photos vers un disque externe ou un NAS avec RcloneView](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 
 <CloudSupportGrid />

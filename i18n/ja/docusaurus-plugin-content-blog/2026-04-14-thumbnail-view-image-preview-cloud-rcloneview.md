@@ -85,6 +85,6 @@ import RvCta from '@site/src/components/RvCta';
 
 - [RcloneViewでクラウド写真ライブラリを整理する](https://rcloneview.com/support/blog/declutter-cloud-photo-library-rcloneview)
 - [RcloneViewによる写真家のためのマルチクラウド納品](https://rcloneview.com/support/blog/photographer-multi-cloud-delivery-with-rcloneview)
-- [Google Photosのストレージ管理 — RcloneViewによる同期とバックアップ](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [RcloneViewでGoogleフォトを外付けドライブやNASにバックアップする](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 
 <CloudSupportGrid />

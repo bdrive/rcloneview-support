@@ -85,6 +85,6 @@ import RvCta from '@site/src/components/RvCta';
 
 - [RcloneView로 클라우드 사진 라이브러리 정리하기](https://rcloneview.com/support/blog/declutter-cloud-photo-library-rcloneview)
 - [RcloneView를 활용한 사진작가의 멀티 클라우드 전달](https://rcloneview.com/support/blog/photographer-multi-cloud-delivery-with-rcloneview)
-- [Google Photos 스토리지 관리 — RcloneView로 동기화 및 백업](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [RcloneView로 Google Photos를 외장 드라이브 또는 NAS에 백업하기](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 
 <CloudSupportGrid />

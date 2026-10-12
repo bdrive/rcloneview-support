@@ -85,6 +85,6 @@ import RvCta from '@site/src/components/RvCta';
 
 - [用 RcloneView 整理您的雲端照片庫](https://rcloneview.com/support/blog/declutter-cloud-photo-library-rcloneview)
 - [攝影師使用 RcloneView 進行多雲端交付](https://rcloneview.com/support/blog/photographer-multi-cloud-delivery-with-rcloneview)
-- [管理 Google 相簿儲存空間——使用 RcloneView 進行同步與備份](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [使用 RcloneView 將 Google 相簿備份到外接硬碟或 NAS](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 
 <CloudSupportGrid />

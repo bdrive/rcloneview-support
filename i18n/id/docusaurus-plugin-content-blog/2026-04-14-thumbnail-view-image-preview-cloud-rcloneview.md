@@ -85,6 +85,6 @@ Thumbnail View mengubah RcloneView menjadi pengelola file cloud visual untuk alu
 
 - [Rapikan Pustaka Foto Cloud Anda dengan RcloneView](https://rcloneview.com/support/blog/declutter-cloud-photo-library-rcloneview)
 - [Pengiriman Multi-Cloud untuk Fotografer dengan RcloneView](https://rcloneview.com/support/blog/photographer-multi-cloud-delivery-with-rcloneview)
-- [Kelola Penyimpanan Google Photos — Sinkronisasi dan Pencadangan dengan RcloneView](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [Cadangkan Google Photos ke Drive Eksternal atau NAS dengan RcloneView](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 
 <CloudSupportGrid />

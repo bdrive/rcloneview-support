@@ -1,20 +1,20 @@
 ---
 slug: backup-google-photos-external-drive-nas-rcloneview
-title: "如何使用 RcloneView 将所有 Google Photos 备份到外接硬盘或 NAS"
+title: "如何将 Google 相册备份到外置硬盘或 NAS — Google Takeout + RcloneView"
 authors:
   - tayson
-description: "使用 RcloneView 将整个 Google Photos 照片库下载并备份到外接硬盘、NAS 或其他云存储 —— 自动完成，且不会丢失相册结构。"
+description: "Google 相册不再允许第三方应用下载您已有的图库。请先用 Google Takeout 将图库导出到 Google Drive，再用 RcloneView 把导出文件复制到外置硬盘、NAS 或其他云存储，并通过 RcloneView Mobile 持续备份新照片。"
 keywords:
-  - google photos backup
-  - download all google photos
-  - google photos to external drive
-  - google photos to nas
-  - backup google photos automatically
-  - google photos to hard drive
+  - google photos 备份
+  - google photos 到外置硬盘
+  - google photos 到 nas
+  - google takeout 到 nas
+  - google takeout 备份
   - google photos rclone
-  - google photos sync nas
-  - save google photos locally
-  - google photos export alternative
+  - google photos api 限制
+  - 将 google photos 保存到本地
+  - google photos 导出
+  - rcloneview mobile 照片备份
 tags:
   - RcloneView
   - google-photos
@@ -28,190 +28,125 @@ import CloudSupportGrid from '@site/src/components/CloudSupportGrid';
 import cloudIcons from '@site/src/contexts/cloudIcons';
 import RvCta from '@site/src/components/RvCta';
 
-# 如何使用 RcloneView 将所有 Google Photos 备份到外接硬盘或 NAS
+# 如何将 Google 相册备份到外置硬盘或 NAS — Google Takeout + RcloneView
 
-> Google Photos 保存着你的珍贵回忆，但如果账号被锁定、存储空间用尽,或者 Google 更改政策,会发生什么?本地备份能确保这些照片始终属于你。
+> 自 2025 年 3 月 31 日起，Google 相册只允许第三方应用（包括 rclone 和 RcloneView）查看它们自己上传的照片。导出现有图库的可靠方法是使用 Google Takeout，之后的工作交给 RcloneView。
 
-Google Photos 很方便 —— 直到出问题为止。存储限制、账号封禁和政策变更都可能威胁到你多年积累的珍贵照片和视频。Google Takeout 虽然存在,但速度极慢,面对大型照片库容易失败,而且不支持增量更新。
+Google 相册中保存着多年来无可替代的照片和视频，但存储配额、账号被锁定以及政策变更，都可能让您无法再访问它们。许多指南（包括本文的早期版本）都建议把 Google 相册连接到同步工具并下载全部内容。这种方法如今已经行不通：Google 在 2025 年关闭了这扇门。
 
-RcloneView 提供了更好的方式:直接连接到 Google Photos,可视化浏览你的照片库,并将所有内容同步到外接硬盘、NAS 或其他云存储 —— 还能自动定时执行,确保未来新增的照片也能被备份。
+本指南介绍目前行之有效的方法。使用 **Google Takeout** 将图库直接导出到 Google Drive，再由 **RcloneView** 把导出文件复制到外置硬盘、NAS 或其他云存储，并通过 **RcloneView Mobile** 让今后的新照片不再经由 Google 相册中转。
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
 <!-- truncate -->
 
-## 为什么要在本地备份 Google Photos?
+## 发生了什么变化：Google Photos API 限制（2025）
 
-### Google Takeout 还不够好
+2025 年 3 月 31 日，Google 移除了 Photos Library API 中针对完整图库的权限范围（scope）。用 Google 自己的话说，第三方应用"现在只能列出、搜索和检索由您的应用创建的相册和媒体项目"。共享相册的调用会返回 `403 PERMISSION_DENIED`。
 
-Google Takeout 可以导出照片,但存在明显的局限性:
+在 RcloneView 中添加 **Google Photos** 远程后，这意味着：
 
-- **速度慢且不可靠** —— 大型照片库经常在导出过程中失败,需要重新开始。
-- **不支持增量更新** —— 每次导出都是完整转储。这个月新增了 500 张照片?那就得重新导出全部内容。
-- **ZIP 压缩包格式** —— 你会得到几十个 ZIP 文件,需要手动解压和整理。
-- **无法自动化** —— 每次都是完全手动的流程。
+- **该远程看起来几乎是空的。** 它只显示通过 RcloneView 或 rclone 上传的照片。手机上传、网页上传以及图库中的其他所有内容，API 都看不到，因此复制（Copy）任务会报告"没有变化"或复制 0 个文件。
+- **这不是连接问题。** RcloneView 1.6 及更高版本在您打开 Google Photos 远程时，会在应用内说明这一限制，而不是显示一个看似为空的账号。
+- **共享相册完全无法访问。**
+- **您需要自己的 OAuth 客户端 ID。** rclone 共用的 Google Photos 客户端 ID 将在 2026 年内停用。当无法建立连接时，RcloneView 的连接向导会指导您创建客户端 ID。
 
-### 仅依赖云存储的真实风险
+Google 官方支持的现有图库导出方式是 **Google Takeout**，所以备份就从这里开始。
 
-- **超出存储配额** —— 一旦达到 15 GB(与 Gmail 和 Drive 共享),Google 就会开始提示你删除文件或付费升级。
-- **账号被锁定** —— 违反政策(即使是无意的)也可能冻结你的整个 Google 账号。
-- **服务变更** —— Google 曾经停止过一些产品(Google+、Picasa)。你的数据策略应该考虑到这一点。
+## 第 1 步：使用 Google Takeout 导出图库
 
-将照片备份到外接硬盘或 NAS,能让你拥有一份独立的副本,不受任何政策变更的影响。
+1. 打开 [takeout.google.com](https://takeout.google.com)，使用拥有这些照片的账号登录。
+2. 点击 **Deselect all**（全部取消选择），然后只勾选 **Google 相册**。如果想把大型图库分批导出，可以通过 **All photo albums included** 将导出范围限定为特定相册或年份。
+3. 在 **Destination**（目标位置）中选择 **Add to Drive**。Google 会把导出文件放入您 Google Drive 中的 `Takeout` 文件夹，RcloneView 可以直接访问。同时也提供 Dropbox、OneDrive 和 Box 选项（RcloneView 均支持这三者）；如果您更愿意从电脑上复制，也可以选择 **Send download link via email**。
+4. 选择归档类型（`.zip`）和大小（1 GB 到 50 GB）。归档越大，需要处理的文件就越少。
+5. 点击 **Create export**。导出完成后 Google 会通过邮件通知您；大型图库可能需要数小时甚至数天。
 
-## 将 Google Photos 设置为远程
+开始之前需要了解：
 
-### 步骤 1:在 RcloneView 中添加 Google Photos
+- 每张照片和每个视频都以原始画质导出，并附带一个 `.json` 元数据文件，其中包含拍摄日期、描述和位置。
+- 添加到 Google Drive 的导出文件会占用您的 Google 存储空间，直到您将其删除，因此请确认 Drive 有足够空间，或者分批导出。
+- Takeout 是一次性导出，没有增量模式。第 4 步会介绍如何在无需重复导出的情况下持续备份今后的照片。
 
-打开 RcloneView 并创建一个新的远程:
+## 第 2 步：在 RcloneView 中添加 Google Drive
 
-1. 点击远程管理器中的 **Add Remote** 按钮。
-2. 从提供商列表中选择 **Google Photos**。
-3. 按照 OAuth 身份验证流程操作 —— RcloneView 会打开浏览器以授权访问。
-4. 授权完成后,你的 Google Photos 照片库将显示为一个可浏览的远程。
+1. 打开 RcloneView，在远程管理器（Remote Manager）中点击 **Add Remote**。
+2. 选择 **Google Drive**，并完成[基于浏览器的 OAuth 登录](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)。
+3. 在[资源管理器（Explorer）](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)中打开该远程，并进入 `Takeout` 文件夹。每次导出都是一个单独的 `.zip` 文件（图库较大时则有多个）。
 
-<img src="/support/images/en/blog/new-remote.png" alt="Add Google Photos as a remote in RcloneView" class="img-large img-center" />
+<img src="/support/images/en/blog/open-multiple-google-drive-remotes.png" alt="Google Drive remote with the Takeout folder open in RcloneView Explorer" class="img-large img-center" />
 
-### 步骤 2:浏览你的照片库
+## 第 3 步：将导出文件复制到备份目标
 
-连接完成后,你可以在 RcloneView 的[资源管理器](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)中直接浏览你的 Google Photos 照片库。Google Photos 按以下方式组织文件:
+RcloneView 会原样复制这些归档文件，不会解压，因此复制完成后，您需要在目标所在的机器上解压一次。
 
-- **年/月文件夹** —— 照片按照 `media/by-year/2024/01` 这样的路径排列。
-- **相册** —— 你的相册会显示为 `album` 路径下的单独文件夹。
-- **共享相册** —— 可在 `shared-album` 下访问。
+### 外置硬盘
 
-这样你可以在开始传输之前清楚地看到要备份的内容。
+1. 连接硬盘，并记下它的路径（Windows 上为 `E:\`，macOS 上为 `/Volumes/...`，Linux 上为 `/media/...`）。
+2. 创建一个[复制任务](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs)：**源（Source）** 为 Google Drive 远程上的 `Takeout` 文件夹，**目标（Destination）** 为硬盘上的某个文件夹。
+3. 运行该任务，然后在硬盘上解压这些归档文件。
 
-<img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Browse Google Photos library in RcloneView Explorer" class="img-large img-center" />
+请使用 **Copy**（复制）而不是 Sync（同步）：复制任务绝不会删除目标端的任何内容。
 
-## 备份方案 1:Google Photos → 外接硬盘
+### Synology NAS
 
-最简单的方式 —— 将所有内容复制到通过 USB 连接的外接硬盘。
+RcloneView 会在您的网络中[自动检测 Synology NAS 设备](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)，因此 NAS 无需任何配置即可显示在本地（Local）标签页中。
 
-### 如何设置
+1. 创建一个复制任务，以 `Takeout` 文件夹为源，以 NAS 上的共享文件夹（例如 `/photos/google-takeout`）为目标。
+2. 运行任务，然后在 NAS 上解压这些归档文件。
 
-1. **连接你的外接硬盘**,并记下驱动器盘符(Windows)或挂载点(Mac/Linux)。
-2. **在 RcloneView 中创建复制任务**:
-   - **源**:你的 Google Photos 远程(选择 `media/by-year` 文件夹以获取所有照片)
-   - **目标**:你的外接硬盘路径(例如 `E:\Google Photos Backup`)
-3. **运行任务** —— RcloneView 会下载所有照片和视频,同时保留文件夹结构。
+<img src="/support/images/en/blog/synology-nas-autodection-and-connection.png" alt="Synology NAS auto-detected in RcloneView for the Google Takeout copy" class="img-large img-center" />
 
-### 推荐设置
+### 其他云存储
 
-- **并行传输数**:4–6(Google Photos API 有速率限制)
-- **任务类型**:复制(而非同步 —— 你不希望在从 Google Photos 中删除文件后,本地文件也被删除)
+想要一份异地副本？将复制任务指向任何其他远程即可，例如 Amazon S3、Backblaze B2、Wasabi、OneDrive 等。RcloneView 通过其 rclone 引擎在云与云之间直接传输数据，归档文件无需经过您电脑的存储空间。
 
-### 增量更新
+### 验证与清理
 
-首次完整备份后,后续运行只会下载新增的照片。RcloneView 会比对硬盘上已有的内容,跳过已存在的文件。这样一来,耗时数小时的首次备份就能变成快速的日常更新。
+- 使用[文件夹比较（Folder Comparison）](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)确认每个归档文件都已到达，且大小一致。
+- 在[任务历史（Job History）](https://rcloneview.com/support/howto/rcloneview-basic/execute-manage-job#view-job-history)中查看传输日志。
+- 确认复制无误后，删除 Google Drive 中的 `Takeout` 文件夹，以回收它占用的存储空间。
 
-## 备份方案 2:Google Photos → Synology NAS
+<img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Folder Comparison between the Takeout export and the NAS copy" class="img-large img-center" />
 
-对于使用 Synology NAS 的用户,RcloneView 提供了更加集成的体验。自 v1.0 起,Synology NAS 设备会在你的网络中被[自动检测](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)到。
+## 第 4 步：使用 RcloneView Mobile 持续备份新照片
 
-### 如何设置
+Takeout 无法增量运行，所以每月重复一次并不是长久之计。对于今后拍摄的照片，请把 Google 相册从流程中去掉：
 
-1. **启动 RcloneView** —— 你的 Synology NAS 应该会自动出现在本地选项卡中。
-2. **创建复制任务**:
-   - **源**:Google Photos 远程
-   - **目标**:NAS 上的共享文件夹(例如 `/photos/google-backup`)
-3. **安排任务**,使用[任务调度](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)按每日或每周运行。
+- **RcloneView Mobile**（Android 和 iOS）可将手机中的照片和视频直接备份到您自己的云存储，使用的远程与桌面版 RcloneView 相同，中间没有任何服务器。照片备份功能包含在 RcloneView Plus 中。请从[下载页面](https://rcloneview.com/src/download.html)获取。
+- 在桌面端，通过定时复制任务（PLUS 功能，参见[任务计划（Job Scheduling）](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)），即可把该云端文件夹镜像到您的 NAS 或外置硬盘，每天、每周，随您设定。
 
-<img src="/support/images/en/blog/synology-nas-autodection-and-connection.png" alt="Synology NAS auto-detection for Google Photos backup" class="img-large img-center" />
+<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling the recurring copy from the cloud photo folder to the NAS" class="img-large img-center" />
 
-### 为什么 NAS 是照片备份的理想选择
+这样，您的手机、云存储和 NAS 就能保持同步，而不再由 Google 相册来决定您能下载什么。
 
-- **始终在线** —— 与外接硬盘不同,你的 NAS 始终保持连接并处于就绪状态。
-- **RAID 保护** —— 大多数 NAS 系统使用 RAID 来防止磁盘故障。
-- **随时随地访问** —— 可以从网络中的任何设备查看已备份的照片。
-- **二级云备份** —— 使用另一个 RcloneView 任务将 NAS 同步到 S3 或 Backblaze B2,以实现异地冗余备份。
+## Google Photos 远程仍然适用的场景
 
-## 备份方案 3:Google Photos → 其他云存储
+这个远程并非毫无用处，只是它的作用方向变了：
 
-想在不同的云存储提供商中保留一份副本?RcloneView 让云到云的传输变得无缝顺畅:
-
-- **Google Photos → OneDrive** —— 充分利用你的 Microsoft 365 存储空间。
-- **Google Photos → AWS S3** —— 归档到廉价、耐用的对象存储。
-- **Google Photos → Backblaze B2** —— 低成本无限制的备份存储。
-- **Google Photos → Wasabi** —— 兼容 S3,且无出站流量费用。
-
-只需创建一个复制任务,以 Google Photos 作为源,以目标云存储作为目的地即可。数据不会经过本地设备存储 —— RcloneView 通过其 rclone 引擎处理传输。
-
-## 自动化你的照片备份
-
-一次性备份固然不错,但自动化、周期性的备份更胜一筹。
-
-### 设置定时备份
-
-1. **创建你的复制任务**,使用上述任意一种方案。
-2. **打开任务调度**,设置周期性计划:
-   - **每天凌晨 2 点** —— 捕获前一天所有新增的照片。
-   - **每周日一次** —— 适合较小照片库的轻量方案。
-3. **添加通知**,以便了解任务是否成功执行:
-   - [Slack 提醒](https://rcloneview.com/support/blog/rcloneview-slack-remote-control),适合团队使用
-   - [Telegram 提醒](https://rcloneview.com/support/blog/rcloneview-telegram-remote-control),适合个人使用
-   - [Discord 提醒](https://rcloneview.com/support/blog/rcloneview-discord-remote-control),适合社区使用
-
-<img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Schedule automatic Google Photos backups" class="img-large img-center" />
-
-### 使用批量任务实现多目标备份
-
-借助 v1.3 的[批量任务](https://rcloneview.com/support/blog/batch-jobs-run-multiple-cloud-tasks-rcloneview)功能,你可以在一个自动化流程中将 Google Photos 备份到多个目标:
-
-1. 将 Google Photos 复制到外接硬盘
-2. 将 Google Photos 复制到 NAS
-3. 将 Google Photos 复制到 Backblaze B2
-
-只需一次点击(或一次定时触发),即可运行全部三项任务。
-
-## 监控与验证
-
-### 实时传输监控
-
-实时查看备份进度 —— 包括文件数量、传输速度和预计完成时间。
-
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitor Google Photos backup progress" class="img-large img-center" />
-
-### 使用文件夹比较进行验证
-
-备份完成后,使用[文件夹比较](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)功能来验证本地副本是否与 Google Photos 照片库一致。这能让你确信没有遗漏任何内容。
-
-<img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Compare Google Photos with local backup" class="img-large img-center" />
-
-### 查看任务历史
-
-查看[任务历史](https://rcloneview.com/support/howto/rcloneview-basic/execute-manage-job#view-job-history),了解以往备份运行的完整记录,包括已传输的文件、遇到的错误以及总耗时。
-
-## 应对大型 Google Photos 照片库的技巧
-
-如果你有数万张照片:
-
-1. **从最近几年开始** —— 先备份最近 2–3 年的内容,再逐步向前推进。这样能最快保护你最新的珍贵回忆。
-2. **使用增量复制** —— 首次运行之后,只会传输新文件。
-3. **耐心应对速率限制** —— Google Photos API 的限制比 Google Drive 更严格。请将并行传输数保持在 4–6 之间。
-4. **失败后重试** —— v1.3 的失败任务重试功能能够妥善处理临时性 API 错误。
-5. **考虑安排在非高峰时段** —— 在夜间运行大型备份,以避免网络拥堵。
+- **上传。** 将 NAS 或电脑上的内容通过复制任务传到该远程的 `upload` 文件夹或某个相册中，这些照片就会添加到您的 Google 相册图库，Google 相册应用会像显示其他上传内容一样显示它们。
+- **读回 RcloneView 上传的内容。** 通过 RcloneView 上传的任何内容，都可以再次列出并复制出来。
+- **注意事项。** 通过 API 下载的照片不是原始分辨率，并且会丢失 EXIF 位置信息，因此请把 Google 相册当作方便的查看工具，而不是归档库。同时，您仍然需要自己的 OAuth 客户端 ID。
 
 ## 开始使用
 
-1. 从 [rcloneview.com](https://rcloneview.com/src/download.html) **下载 RcloneView**(支持 Windows、macOS、Linux)。
-2. 使用 OAuth 身份验证**添加 Google Photos** 作为远程。
-3. 在资源管理器中**浏览你的照片库**,查看要备份的内容。
-4. **创建复制任务**,指向你选择的目标(外接硬盘、NAS 或云存储)。
-5. **设置定时计划**,实现自动周期性备份。
-6. 首次运行后,使用文件夹比较进行**验证**。
+1. 使用 Google Takeout **导出**您的 Google 相册图库，并将其投递到 Google Drive。
+2. 从 [rcloneview.com](https://rcloneview.com/src/download.html) **下载 RcloneView**（Windows、macOS、Linux），并将 Google Drive 添加为远程。
+3. **创建复制任务**，将 `Takeout` 文件夹复制到您的外置硬盘、NAS 或其他云存储，然后在目标位置解压归档文件。
+4. 使用文件夹比较**验证**复制结果，并删除 Drive 中的导出文件。
+5. **安装 RcloneView Mobile**，让新照片直接进入您自己的云存储，并安排一个桌面端任务将它们镜像到 NAS。
 
-你的照片是无可替代的。你的备份也不应该依赖单一提供商。RcloneView 让你轻松保留一份独立副本 —— 自动、可靠,且无需任何命令行操作。
+您的照片无可替代。一次导出加一个定时任务，就能为您留下一份任何政策变更都无法夺走的副本。
 
 ---
 
-**相关指南:**
+**相关指南：**
 
-- [通过浏览器登录方式添加远程(OAuth)](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)
-- [浏览与管理远程存储](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
+- [在 RcloneView 中修复 Google 相册同步错误](https://rcloneview.com/support/blog/fix-google-photos-sync-errors-rcloneview)
+- [通过浏览器登录（OAuth）添加远程](https://rcloneview.com/support/howto/remote-storage-connection-settings/add-oath-online-login)
+- [浏览和管理远程](https://rcloneview.com/support/howto/rcloneview-basic/browse-and-manage-remote-storage)
 - [比较文件夹内容](https://rcloneview.com/support/howto/rcloneview-basic/compare-folder-contents)
 - [创建同步任务](https://rcloneview.com/support/howto/rcloneview-basic/create-sync-jobs)
-- [任务调度](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)
+- [任务计划](https://rcloneview.com/support/howto/rcloneview-advanced/job-scheduling-and-execution)
 - [Synology NAS 自动检测与连接](https://rcloneview.com/support/tutorials/synology-nas-cloud-transfer)
 
 <CloudSupportGrid />

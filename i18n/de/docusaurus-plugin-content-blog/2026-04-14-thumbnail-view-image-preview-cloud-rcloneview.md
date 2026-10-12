@@ -85,6 +85,6 @@ Die Miniaturansicht macht RcloneView zu einem visuellen Cloud-Dateimanager für 
 
 - [Cloud-Fotobibliothek mit RcloneView aufräumen](https://rcloneview.com/support/blog/declutter-cloud-photo-library-rcloneview)
 - [Multi-Cloud-Lieferung für Fotografen mit RcloneView](https://rcloneview.com/support/blog/photographer-multi-cloud-delivery-with-rcloneview)
-- [Google Photos-Speicher verwalten — Synchronisation und Backup mit RcloneView](https://rcloneview.com/support/blog/manage-google-photos-cloud-sync-backup-rcloneview)
+- [Google Fotos auf externer Festplatte oder NAS mit RcloneView sichern](https://rcloneview.com/support/blog/backup-google-photos-external-drive-nas-rcloneview)
 
 <CloudSupportGrid />
