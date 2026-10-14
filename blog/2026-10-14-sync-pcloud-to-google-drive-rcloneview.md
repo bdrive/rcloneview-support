@@ -3,7 +3,7 @@ slug: sync-pcloud-to-google-drive-rcloneview
 title: "Sync pCloud to Google Drive — Cloud Backup with RcloneView"
 authors:
   - jay
-description: "Sync pCloud to Google Drive with RcloneView: connect both remotes, preview with Dry Run, and schedule cloud-to-cloud backups without downloading files locally."
+description: "Sync pCloud to Google Drive with RcloneView: connect both remotes, preview with Dry Run, and schedule cloud-to-cloud backups from one window."
 keywords:
   - sync pcloud to google drive
   - pcloud to google drive backup
@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > Keep a second copy of your pCloud files in Google Drive with a cloud-to-cloud sync job you can preview, run, and schedule from one window.
 
-Relying on a single cloud for important files leaves you exposed to account lockouts, accidental deletions, and sync mistakes. Mirroring pCloud into Google Drive gives you an independent copy on a different provider. RcloneView connects both services through OAuth, then moves data directly between them as a sync job. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux.
+Relying on a single cloud for important files leaves you exposed to account lockouts, accidental deletions, and sync mistakes. Mirroring pCloud into Google Drive gives you an independent copy on a different provider. RcloneView connects both services through OAuth, then syncs data between them as a job. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -56,7 +56,7 @@ The sync wizard has four steps: pick source and destination, tune advanced setti
 
 ## Monitor and Schedule
 
-Run the job and watch transfer progress live, then review results in Job History. With a PLUS license, add a crontab-style schedule so the mirror refreshes nightly without you opening the app.
+Run the job and watch transfer progress live, then review results in Job History. With a PLUS license, add a crontab-style schedule so the mirror refreshes on a recurring basis (RcloneView stays running in the System Tray).
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Scheduling a pCloud to Google Drive sync job in RcloneView" class="img-large img-center" />
 
