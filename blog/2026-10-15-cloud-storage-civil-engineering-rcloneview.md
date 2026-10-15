@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Keep drawings, survey data and closed-out projects safe across several clouds without scripting a single command.
 
-A mid-sized civil engineering firm may juggle active road-design projects on Google Drive, client deliverables in Box or SharePoint, and years of closed-out archives on a NAS. Each location has its own interface, which makes consistent backups hard. RcloneView brings all of them into one window so you can copy, compare and schedule transfers visually.
+A mid-sized civil engineering firm may juggle active road-design projects on Google Drive, client deliverables in Box or OneDrive, and years of closed-out archives on a NAS. Each location has its own interface, which makes consistent backups hard. RcloneView brings all of them into one window so you can copy, compare and schedule transfers visually.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -39,7 +39,7 @@ A mid-sized civil engineering firm may juggle active road-design projects on Goo
 
 ## Why Engineering Data Needs a Multi-Cloud Approach
 
-Engineering projects produce large, mixed file sets: CAD drawings, GIS exports, point-cloud scans, calculation spreadsheets and signed PDF packages. Clients often dictate where deliverables must live, so a single provider rarely covers everything. RcloneView connects to 90+ providers, so Google Drive, Box, SharePoint, Amazon S3 and your local NAS can all sit side by side in the Explorer.
+Engineering projects produce large, mixed file sets: CAD drawings, GIS exports, point-cloud scans, calculation spreadsheets and signed PDF packages. Clients often dictate where deliverables must live, so a single provider rarely covers everything. RcloneView connects to 90+ providers, so Google Drive, Box, OneDrive, Amazon S3 and your local NAS can all sit side by side in the Explorer.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding cloud remotes in RcloneView for an engineering firm" class="img-large img-center" />
 
