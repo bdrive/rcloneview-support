@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move an entire Mega account into pCloud with a previewable, verifiable copy job instead of a manual download-and-reupload.
 
-Switching from Mega to pCloud usually means thousands of files across nested folders, and the browser route forces you to download everything first. RcloneView connects both services side by side and transfers cloud-to-cloud, with a Dry Run to preview the job and Folder Compare to confirm nothing was missed. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux.
+Switching from Mega to pCloud usually means thousands of files across nested folders, and the browser route forces you to download everything first. RcloneView connects both services side by side and transfers cloud-to-cloud, with a Dry Run to preview the job and Folder Compare to confirm nothing was missed. RcloneView manages 90+ cloud storage services from one window on Windows, macOS, and Linux.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -55,7 +55,7 @@ Choose Copy rather than Sync if pCloud already holds files you want to keep, bec
 
 Drag a folder from the Mega panel to the pCloud panel for a quick one-off copy, or save a job for repeatable runs. Dragging between different remotes copies rather than moves, so your Mega data stays intact until you are satisfied.
 
-Follow progress in the Transferring tab, which shows speed, file count, and percentage. If you are moving a large archive, lower the number of concurrent transfers in Advanced Settings so Mega's account limits are less likely to interrupt the run. The job retries automatically if it fails.
+Follow progress in the Transferring tab, which shows speed, file count, and percentage. If you are moving a large archive, lower the number of concurrent transfers in Advanced Settings so Mega's account limits are less likely to interrupt the run. Sync jobs retry the entire run if it fails (default: 3 times).
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer from Mega to pCloud" class="img-large img-center" />
 

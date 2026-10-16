@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 > When RcloneView cannot reach your external rclone server, the cause is almost always one of five things you can check in minutes.
 
-RcloneView ships with an embedded rclone, but many users point it at an external rclone running on a NAS, VPS, or AWS EC2 instance through the Connect Manager. When that link fails with "connection refused", a timeout, or an authentication error, a short checklist finds the cause. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license once the connection works.
+RcloneView ships with an embedded rclone, but many users point it at an external rclone running on a NAS, VPS, or AWS EC2 instance through the Connect Manager. When that link fails with "connection refused", a timeout, or an authentication error, a short checklist finds the cause.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
