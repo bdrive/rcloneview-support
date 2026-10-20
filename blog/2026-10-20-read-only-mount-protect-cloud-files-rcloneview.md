@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 > Mount a remote as a local drive that can be browsed and copied from, but never changed.
 
-A mounted cloud drive behaves like any other disk, which means a stray delete, a drag in the wrong direction, or an application that rewrites files can change your cloud data. When the goal is only to read, such as reviewing an archive or opening reference files, the safest drive is one that cannot be written to. RcloneView's mount settings include a Read only option for exactly this. RcloneView mounts and syncs 90+ providers from one window on Windows, macOS, and Linux.
+A mounted cloud drive behaves like any other disk, which means a stray delete, a drag in the wrong direction, or an application that rewrites files can change your cloud data. When the goal is only to read, such as reviewing an archive or opening reference files, a drive that cannot be written to is the lowest-risk choice. RcloneView's mount settings include a Read only option for exactly this. RcloneView mounts and syncs 90+ providers from one window on Windows, macOS, and Linux.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -66,7 +66,7 @@ With a PLUS license, Auto mount can attach your drives at startup.
 3. Create a new mount, select the remote and folder, and tick Read only.
 4. Save and mount, then open the drive from your file explorer.
 
-Read-only access lets you open everything and risk nothing.
+Read-only access lets you open everything without risking changes.
 
 ---
 
