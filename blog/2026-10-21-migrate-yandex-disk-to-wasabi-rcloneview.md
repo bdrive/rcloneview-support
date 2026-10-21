@@ -41,7 +41,7 @@ Yandex Disk works as a personal drive, but long-term archives and shared project
 
 Yandex Disk signs in through the browser: choose it under **Remote > New Remote**, approve access, and the remote connects. Wasabi is configured as an S3-compatible provider. Create a bucket in the Wasabi console, generate an Access Key and Secret Key, then enter them in RcloneView together with the endpoint for your bucket's region.
 
-Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license, and the same applies to Wasabi.
+Wasabi is an S3-compatible provider, so it works with the same remote setup as other S3-compatible services.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding Yandex Disk and Wasabi remotes in RcloneView" class="img-large img-center" />
 
@@ -57,7 +57,7 @@ If part of the disk holds disposable files, use the job's filtering step to excl
 
 Create a job with Yandex Disk as source and your Wasabi bucket as destination. Pick Copy so the source stays intact until you have verified the result. Run a **Dry Run** to preview the file list, then start the job. In Advanced Settings you can enable **checksum** comparison, which checks hashes plus size when the provider supports them, and tune the number of concurrent file transfers if Yandex slows down.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitoring a Yandex Disk to Wasabi transfer in real time" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring for a Yandex Disk to Wasabi transfer" class="img-large img-center" />
 
 ## Verify and Schedule Follow-Ups
 

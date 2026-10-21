@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 # Migrate Koofr to Dropbox — Transfer Files with RcloneView
 
-> Move a Koofr library into Dropbox directly between the two clouds, with a preview before anything is copied and a comparison afterwards.
+> Move a Koofr library into Dropbox as a cloud-to-cloud transfer, with a preview before anything is copied and a comparison afterwards.
 
 Moving from Koofr to Dropbox usually means a shared team folder, a client workflow, or an app that only integrates with Dropbox. Downloading everything to a laptop and re-uploading is slow and fragile. RcloneView, a GUI built on rclone, connects both services as remotes and transfers between them in one job, and you can watch progress the whole way.
 
@@ -41,7 +41,7 @@ Moving from Koofr to Dropbox usually means a shared team folder, a client workfl
 
 Open the Remote tab and click **New Remote**. Dropbox uses browser-based OAuth: RcloneView opens a login page, you approve access, and the remote connects without an API key. If your target is a Dropbox for Business account, enable the `dropbox_business` setting when you create the remote. Add Koofr the same way from the provider list and sign in with the account you are leaving.
 
-RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, so both remotes sit side by side in the same explorer.
+RcloneView manages 90+ cloud storage services from one window on Windows, macOS, and Linux, so both remotes sit side by side in the same explorer.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding Koofr and Dropbox remotes in RcloneView" class="img-large img-center" />
 
