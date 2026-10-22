@@ -28,7 +28,7 @@ import RvCta from '../src/components/RvCta';
 
 > When a Files.com job fails, RcloneView's job history, DEBUG logs, and Folder Compare show whether the cause is the remote, the transfer load, or files that never arrived.
 
-A Files.com sync that stops with a vague error, or finishes with folders that look incomplete, is hard to diagnose from the command line alone. RcloneView puts the remote check, the job record, the log, and a side-by-side comparison in one window, so you can work from evidence instead of rerunning blindly. Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license.
+A Files.com sync that stops with a vague error, or finishes with folders that look incomplete, is hard to diagnose from the command line alone. RcloneView puts the remote check, the job record, the log, and a side-by-side comparison in one window, so you can work from evidence instead of rerunning blindly. RcloneView also syncs and compares folders, with basic sync and folder comparison available on the FREE license.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
