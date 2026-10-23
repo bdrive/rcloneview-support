@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 > Keep an independent copy of your Box content in Wasabi object storage with a repeatable one-way sync.
 
-Box is a convenient place to collaborate, but a second copy outside the platform protects you from accidental deletions, account lockouts, and retention gaps. Wasabi is S3-compatible object storage, which makes it a natural target for that copy. RcloneView connects both services in one window, and it does so on the FREE license: Connect S3-compatible storage with full read/write, no upgrade needed.
+Box is a convenient place to collaborate, but a second copy outside the platform protects you from accidental deletions, account lockouts, and retention gaps. Wasabi is S3-compatible object storage, which makes it a natural target for that copy. RcloneView connects both services in one window, and basic sync and Dry Run are available with the FREE license.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -45,7 +45,7 @@ Once both remotes appear in the Remote Manager, open them in two Explorer panels
 
 ## Preview with Dry Run Before You Sync
 
-Imagine a design agency with 800 GB of client project folders in Box. Before the first sync, run a Dry Run. It lists which files would be copied and which would be deleted, without changing anything. This is the cheapest insurance against pointing a sync at the wrong bucket path.
+Imagine a design agency with 800 GB of client project folders in Box. Before the first sync, run a Dry Run. It lists which files would be copied and which would be deleted, without changing anything. This helps you avoid pointing a sync at the wrong bucket path.
 
 For a backup, one-way sync ("Modifying destination only") is the right direction: Box stays the source of truth and Wasabi mirrors it. Remember that a sync also deletes destination files that no longer exist in the source, so use a dedicated bucket or prefix for the mirror.
 
