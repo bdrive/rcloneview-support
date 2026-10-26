@@ -41,7 +41,7 @@ Koofr and Mega take different approaches to storage, and moving between them by 
 
 Open **Remote > New Remote** and add Koofr using the credentials the setup dialog asks for. Then add Mega with your email and password. Mega is a credential-entry remote rather than OAuth, so there is no browser step. Once both appear in Remote Manager, you can open each in its own Explorer panel.
 
-Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license, and Koofr and Mega sit alongside them in the same list.
+Koofr and Mega sit alongside the other supported providers in the same remote list.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Creating Koofr and Mega remotes in RcloneView" class="img-large img-center" />
 
