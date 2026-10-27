@@ -51,7 +51,7 @@ Drag a folder from the PikPak panel onto the pCloud panel. Dragging between diff
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer from PikPak to pCloud" class="img-large img-center" />
 
-RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, so the same tool covers this migration and whatever you connect next.
+RcloneView manages 90+ cloud storage services from one window on Windows, macOS, and Linux, so the same tool covers this migration and whatever you connect next.
 
 ## Preview with Dry Run
 

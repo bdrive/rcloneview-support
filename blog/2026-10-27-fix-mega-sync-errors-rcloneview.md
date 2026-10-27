@@ -47,11 +47,9 @@ You can also test from the built-in Terminal tab with `rclone about "mymega:"`, 
 
 ## Reduce Concurrency in the Job
 
-Many errors on Mega show up under heavy parallel load. Edit the job and open Step 2, Advanced Settings. Lower **Number of file transfers** and set **Number of equality checkers** to 4 or less for a slow backend. Keep **Retry entire sync if fails** at its default of 3 so transient failures get another chance.
+Heavy parallel load is a common suspect when a backend starts erroring. Edit the job and open Step 2, Advanced Settings. Lower **Number of file transfers** and set **Number of equality checkers** to 4 or less for a slow backend. Keep **Retry entire sync if fails** at its default of 3 so transient failures get another chance.
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Editing job advanced settings in RcloneView" class="img-large img-center" />
-
-Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license if you need a second destination to compare behavior against.
 
 ## Read Job History and Logs
 
