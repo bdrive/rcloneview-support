@@ -69,7 +69,7 @@ When the job finishes, open **Compare** on the Dropbox and pCloud folders. Left-
 3. Create a Copy job with Dropbox as source, then run a Dry Run.
 4. Run the job, then verify with Folder Compare before retiring the old account.
 
-Keep Dropbox untouched until Compare shows no left-only files, and the move is effectively risk-free.
+Keep Dropbox untouched until Compare shows no left-only files, so the original stays available as a fallback.
 
 ---
 
