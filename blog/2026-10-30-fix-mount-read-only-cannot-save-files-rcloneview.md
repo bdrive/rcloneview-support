@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 > When a mounted cloud drive refuses saves, the cause is usually a mount setting or a permission, and both are quick to check.
 
-You mounted a remote, opened a document, and saving fails, or files copy in but cannot be edited. Before blaming the cloud provider, look at how the mount was configured. RcloneView exposes every relevant option in one dialog, so you can find the cause without touching the command line. Unlike mount-only tools, RcloneView also syncs and compares folders — on the FREE license.
+You mounted a remote, opened a document, and saving fails, or files copy in but cannot be edited. Before blaming the cloud provider, look at how the mount was configured. RcloneView exposes every relevant option in one dialog, so you can find the cause without touching the command line. RcloneView also syncs and compares folders, with basic features available on the FREE license.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
