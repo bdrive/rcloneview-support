@@ -53,7 +53,7 @@ For detail, enable rclone logging under Settings > Embedded Rclone, set the log 
 
 ## Tune Transfers and Retries
 
-Errors during large runs often come from too much concurrency. In the job's Advanced Settings, lower the number of file transfers and equality checkers (the spec recommends 4 or fewer checkers for slow backends). Keep "Retry entire sync if fails" at its default of 3 so transient network drops recover on their own. For a photographer syncing thousands of RAW files overnight, a modest concurrency often finishes more reliably than an aggressive one.
+Errors during large runs often come from too much concurrency. In the job's Advanced Settings, lower the number of file transfers and equality checkers (4 or fewer checkers is recommended for slow backends). Keep "Retry entire sync if fails" at its default of 3 so transient network drops recover on their own. For a photographer syncing thousands of RAW files overnight, a lower concurrency setting is a reasonable first adjustment when errors appear.
 
 <img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Monitoring transfers live in the Transferring tab of RcloneView" class="img-large img-center" />
 

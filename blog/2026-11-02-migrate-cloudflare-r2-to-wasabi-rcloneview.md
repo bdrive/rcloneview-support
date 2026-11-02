@@ -47,7 +47,7 @@ Next add Wasabi. Enter the Access Key and Secret Key from your Wasabi console an
 
 Open the R2 remote in the left Explorer panel and the Wasabi remote in the right. Browse into the bucket or prefix you want to move. For a studio archive with a few terabytes of media, you might migrate one project prefix first to confirm permissions and naming before committing to the full bucket.
 
-Because both ends are remote, RcloneView runs this as a cloud-to-cloud transfer: data flows through the machine running RcloneView rather than needing a download-then-upload cycle on disk. Drag between panels copies by default when remotes differ, or build a Copy job in the Sync wizard for repeatable runs.
+Because both ends are remote, RcloneView runs this as a cloud-to-cloud transfer between the two remotes, so you don't have to manage a manual download-then-upload step yourself. Drag between panels copies by default when remotes differ, or build a Copy job in the Sync wizard for repeatable runs.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer between two panels in RcloneView" class="img-large img-center" />
 
