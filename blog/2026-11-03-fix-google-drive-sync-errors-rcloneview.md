@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 # Fix Google Drive Sync Errors — Missing Folders, Failed Jobs, and Empty Listings Resolved with RcloneView
 
-> Most Google Drive sync problems are configuration issues — a missing setting, an expired login, or a filter — and RcloneView shows you which one.
+> Many Google Drive sync problems trace back to a missing setting, an expired login, or a filter — and RcloneView helps you find which one.
 
 A Google Drive job that ends Errored, or a remote that lists nothing you expected, is rarely a mystery once you can see the logs. Typical culprits are shared folders that need a specific setting, backed-up computers that need a folder ID, and Google Docs files that behave differently from ordinary files. RcloneView puts the remote settings, job history, and logs in one place so you can narrow it down quickly.
 
@@ -47,9 +47,9 @@ Open Remote Manager from the Remote tab, edit the remote, and check these values
 
 ## Expired Login and Failed Authorization
 
-Google Drive connects through browser OAuth. If every request fails with an authorization error, edit the remote and sign in again so a fresh token is issued. This resolves most sudden failures on a remote that worked before.
+Google Drive connects through browser OAuth. If every request fails with an authorization error, edit the remote and sign in again so a fresh token is issued. This is a common fix for sudden failures on a remote that worked before.
 
-For quota and rate-limit messages, see our dedicated guides on Google Drive rate limits and storage quota. Lowering the number of file transfers in Step 2 of the sync wizard is a safe first step in either case.
+For quota and rate-limit messages, see our dedicated guides on Google Drive rate limits and storage quota. Lowering the number of file transfers in Step 2 of the sync wizard is a reasonable first step in either case.
 
 <img src="/support/images/en/howto/rcloneview-basic/job-history.png" alt="Job History showing an errored Google Drive sync in RcloneView" class="img-large img-center" />
 
