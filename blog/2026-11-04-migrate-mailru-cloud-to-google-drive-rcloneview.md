@@ -31,7 +31,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move your Mail.ru Cloud files into Google Drive with a visual, verifiable workflow instead of manual downloads and re-uploads.
 
-Moving years of documents, scans, and media out of Mail.ru Cloud usually means downloading everything to a laptop and uploading it again. RcloneView, a GUI built on rclone, connects both services as remotes and transfers files directly between them, so your local disk and home connection are not the bottleneck for organizing the move.
+Moving years of documents, scans, and media out of Mail.ru Cloud usually means downloading everything to a laptop and uploading it again. RcloneView, a GUI built on rclone, connects both services as remotes, so you can copy between them from one window and verify the result.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -43,7 +43,7 @@ Open RcloneView and use **New Remote** to add Mail.ru Cloud and Google Drive. Go
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding Mail.ru Cloud and Google Drive remotes in RcloneView" class="img-large img-center" />
 
-RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, so the same setup works for any later migration too.
+RcloneView supports 90+ cloud storage services from one window, on Windows, macOS, and Linux, so the same setup works for any later migration too.
 
 ## Plan the Copy Before Moving Anything
 

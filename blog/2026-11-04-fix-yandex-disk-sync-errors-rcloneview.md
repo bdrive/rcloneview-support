@@ -57,8 +57,6 @@ If errors appear only on large jobs, lower the pressure. In the Sync wizard's Ad
 
 <img src="/support/images/en/howto/rcloneview-advanced/create-job-schedule.png" alt="Advanced job settings and scheduling in RcloneView" class="img-large img-center" />
 
-RcloneView lets you connect S3, Azure, or Backblaze B2 with full read/write on the FREE license, which makes it easy to keep a second copy while you debug a problem remote.
-
 ## Confirm the Fix Without Re-Copying
 
 Run a **Dry Run** to see what would still be transferred, then run the job again. Open **Compare** to check Yandex Disk against the source: left-only or different files show what remains, and you can copy just those.
