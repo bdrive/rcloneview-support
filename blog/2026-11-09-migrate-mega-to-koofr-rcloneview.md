@@ -2,7 +2,7 @@
 slug: migrate-mega-to-koofr-rcloneview
 title: "Migrate MEGA to Koofr — Transfer Files with RcloneView"
 authors:
-  - kai
+  - casey
 description: "Migrate MEGA to Koofr with RcloneView: connect both remotes, preview with a dry run, copy cloud to cloud, and verify results with Folder Compare."
 keywords:
   - migrate MEGA to Koofr
@@ -68,7 +68,7 @@ Finally, use Folder Compare with MEGA on the left and Koofr on the right. Filter
 3. Create a Copy or Sync job and run a Dry Run to preview it.
 4. Run the job, then verify the result with Folder Compare before retiring anything on MEGA.
 
-Keep the MEGA copy until the comparison comes back clean, and the migration carries no risk.
+Keep the MEGA copy until the comparison comes back clean, so the original data stays available while you verify.
 
 ---
 
