@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 > Set an rclone flag once in Settings and have it apply across RcloneView instead of repeating it job by job.
 
-Most RcloneView users never leave the wizard defaults, but some setups need one extra rclone option everywhere: a self-signed certificate on a private server, a custom log location, or an encrypted config file. The Embedded Rclone settings page is where these live. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, and these settings apply to that whole embedded engine.
+Some setups need one extra rclone option everywhere: a self-signed certificate on a private server, a custom log location, or an encrypted config file. The Embedded Rclone settings page is where these live. RcloneView mounts AND syncs 90+ providers from one window, on Windows, macOS, and Linux, and these settings apply to that whole embedded engine.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 

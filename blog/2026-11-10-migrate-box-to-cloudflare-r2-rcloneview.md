@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move years of Box content into Cloudflare R2 object storage without downloading anything to your own disk.
 
-A finance team that has outgrown its Box plan, or a department closing out old projects, often wants an inexpensive object-storage archive instead. RcloneView connects Box and Cloudflare R2 side by side and copies between them directly. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license, and the same goes for R2.
+A finance team that has outgrown its Box plan, or a department closing out old projects, often wants an object-storage archive instead. RcloneView connects Box and Cloudflare R2 side by side and copies between them directly. Connect S3, Azure, or Backblaze B2 with full read/write on the FREE license, and the same goes for R2.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -54,7 +54,7 @@ Box Docs such as Box Notes are not ordinary files. The predefined filters in the
 
 ## Dry Run, Then Copy
 
-Create a Copy job rather than a Sync job for the first pass, so nothing is ever removed from either side. Run it as a Dry Run first: RcloneView lists the files it would copy without transferring them, which is the quickest way to catch a wrong source folder.
+Create a Copy job rather than a Sync job for the first pass, so nothing is ever removed from either side. Run it as a Dry Run first: RcloneView lists the files it would copy without transferring them, which helps catch a wrong source folder.
 
 In the Advanced Settings step, raise the number of file transfers if you have many small files, and enable checksum comparison if you want hash-and-size matching. Then run the job and follow progress in the Transferring tab: percentage, speed and file counts update live.
 
