@@ -61,9 +61,9 @@ To work with cloud files in Dolphin or Thunar, mount the remote. Click the Mount
 
 ## Syncing and Scheduling Backups
 
-Picture a developer workstation with `~/Projects` and `~/Documents`. Create a sync job from the local disk to Backblaze B2, add a `.git/` filter in Step 3, and run a Dry Run to see exactly what will transfer. One-way sync modifies only the destination. Bidirectional sync is in beta, so test it on non-critical folders first.
+Picture a developer workstation with `~/Projects` and `~/Documents`. Create a sync job from the local disk to Backblaze B2, add a `.git/` filter in Step 3, and run a Dry Run to see exactly what will transfer. One-way sync modifies only the destination. Bidirectional sync (Beta) is still experimental, so test it on non-critical folders first.
 
-<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Real-time transfer monitoring in RcloneView during a Linux backup job" class="img-large img-center" />
+<img src="/support/images/en/tutorials/wasabi-real-time-monitoring-transferring.png" alt="Live transfer monitoring in RcloneView during a Linux backup job" class="img-large img-center" />
 
 With a PLUS license, Step 4 adds crontab-style scheduling, so the job runs nightly while RcloneView sits in the tray. RcloneView needs your desktop session to run and cannot run as a systemd service. On a headless Arch server, run `rclone rcd` there and connect to it from your desktop through Connect Manager.
 
