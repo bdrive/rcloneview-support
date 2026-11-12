@@ -41,7 +41,7 @@ Genealogy archives grow in odd shapes. A family historian might hold 40,000 TIFF
 
 Most researchers spread material across services: a Google Drive folder shared with cousins, a Dropbox link from a distant archive, and an external drive of master scans. In RcloneView you add each one as a remote. Google Drive, Dropbox, OneDrive, and pCloud connect through a browser login. Backblaze B2 needs an Application Key ID and key. A Synology NAS can be detected on the local network.
 
-Open up to four Explorer panels side by side and drag a folder of scans from the external drive to a cloud remote. Dragging between different remotes copies, so the originals stay where they are. Thumbnail View lets you check that a folder of scanned photos is the one you meant before you move it.
+Open up to four Explorer panels side by side and drag a folder of scans from the external drive to a cloud remote. Dragging between different remotes copies, so the originals stay where they are.
 
 <img src="/support/images/en/blog/new-remote.png" alt="Adding a cloud storage remote in RcloneView for a genealogy archive" class="img-large img-center" />
 
