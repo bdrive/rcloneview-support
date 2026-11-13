@@ -48,7 +48,7 @@ Once connected, open two Explorer panels — one per remote — and browse the f
 
 For a one-off migration, a **Copy** job is the safer choice: it adds files to pCloud without deleting anything there. Use **Sync** only if you want pCloud to mirror Yandex Disk exactly, including removals.
 
-Create the job in Job Manager. In Step 1, pick a Yandex Disk folder as the source and a pCloud folder as the destination. In Step 2, consider enabling checksum comparison so files are compared by hash plus size, and keep the retry setting (default: 3) for unstable connections. Step 3 lets you skip what you no longer need — for example a max file age, or custom rules that exclude `.iso` images or `.git/` folders.
+Create the job in Job Manager. In Step 1, pick a Yandex Disk folder as the source and a pCloud folder as the destination. In Step 2, consider enabling checksum comparison so files are compared by hash plus size where both sides share a hash type (Yandex Disk uses MD5, and pCloud offers MD5 only on US-region accounts), and keep the retry setting (default: 3) for unstable connections. Step 3 lets you skip what you no longer need — for example a max file age, or custom rules that exclude `.iso` images or `.git/` folders.
 
 Before running, use **Dry Run**. It lists every file that would be copied, so a photographer moving 400 GB of RAW archives can confirm the folder layout is right before committing hours of transfer time.
 
