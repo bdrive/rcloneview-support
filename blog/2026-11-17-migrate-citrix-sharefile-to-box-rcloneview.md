@@ -50,7 +50,7 @@ Open ShareFile in the left panel and Box in the right panel. Browsing both side 
 
 For a one-off migration, a **Copy** job is the cautious choice: it adds files to Box without removing anything already there. Create it from **Home tab > Sync** or the Job Manager, pick the ShareFile folder as source and a Box folder as destination, and give the job a name such as `sharefile-legal-to-box`.
 
-In the Advanced Settings step, enable checksum if both sides report compatible hashes, and keep the number of equality checkers modest if listing feels slow. In the Filtering step you can exclude large installers (`.iso`) or legacy folders you have decided not to keep.
+In the Advanced Settings step, leave checksum off for this pair: checksum comparison needs a hash type both sides share, and ShareFile (MD5) and Box (SHA-1) use different ones, so rclone compares by size and modification time instead. Keep the number of equality checkers modest if listing feels slow. In the Filtering step you can exclude large installers (`.iso`) or legacy folders you have decided not to keep.
 
 Before running, use **Dry Run**. It lists the files that would be copied without transferring anything, so a law office moving 40,000 client documents can confirm the scope first.
 
