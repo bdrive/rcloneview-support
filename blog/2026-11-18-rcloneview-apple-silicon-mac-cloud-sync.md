@@ -74,7 +74,7 @@ Use the Sync wizard to set up a one-way job, for example `~/Projects` to a Backb
 3. Add your cloud remotes with **New Remote** and mount the ones you want to see in Finder.
 4. Create a sync job, check it with a Dry Run, and watch progress in the Transferring tab.
 
-With RcloneView set up, your Mac can mount, sync, and back up every cloud account you use from one place.
+With RcloneView set up, your Mac can mount, sync, and back up the cloud accounts you use from one place.
 
 ---
 

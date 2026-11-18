@@ -60,7 +60,7 @@ On bucket-based storage such as Amazon S3, Wasabi, or Backblaze B2, keep your ex
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Folder Compare showing left-only folders after a sync in RcloneView" class="img-large img-center" />
 
-After the job finishes, open **Folder Compare** on the same two locations to check the result side by side. Unlike mount-only tools, RcloneView also syncs and compares folders, on the FREE license.
+After the job finishes, open **Folder Compare** on the same two locations to check the result side by side. Sync and Folder Compare are both available on the FREE license.
 
 ## Getting Started
 
