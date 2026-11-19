@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > Move your iCloud Drive folders into pCloud with a copy job you can preview, watch, and verify, without staging everything on a local disk first.
 
-People leave iCloud Drive for pCloud for practical reasons: a household that mixes Windows, Linux, and Mac machines, or a freelancer who wants one storage account that works the same on every desktop. Apple offers no direct export to another cloud, so most migrations turn into "download it all to a Mac, then upload it again." RcloneView connects both services at once and copies files between them through rclone, so the transfer runs cloud-to-cloud from one window.
+People leave iCloud Drive for pCloud for practical reasons: a household that mixes Windows, Linux, and Mac machines, or a freelancer who wants one storage account that works the same on every desktop. iCloud Drive has no built-in export to another cloud service, so most migrations turn into "download it all to a Mac, then upload it again." RcloneView connects both services at once and copies files between them through rclone, so the transfer runs cloud-to-cloud from one window.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 

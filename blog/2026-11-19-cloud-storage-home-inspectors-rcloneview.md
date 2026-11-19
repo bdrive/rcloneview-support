@@ -30,7 +30,7 @@ import RvCta from '../src/components/RvCta';
 
 > Every inspection produces hundreds of photos and a signed report. RcloneView helps you keep that record backed up, organized, and retrievable years later.
 
-A typical home inspection produces 200–500 photos, moisture and thermal images, and a finished PDF report delivered to the client and often to an agent. If a buyer raises a dispute three years later, that file set is your evidence. Many solo inspectors and small firms keep it on a single laptop or one consumer cloud account. RcloneView gives you a desktop interface for copying that archive to more than one cloud, checking that the copies match, and finding an old job quickly.
+A typical home inspection produces hundreds of photos, moisture and thermal images, and a finished PDF report delivered to the client and often to an agent. If a buyer raises a dispute three years later, that file set is your evidence. Many solo inspectors and small firms keep it on a single laptop or one consumer cloud account. RcloneView gives you a desktop interface for copying that archive to more than one cloud, checking that the copies match, and finding an old job quickly.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -60,7 +60,7 @@ Inspectors are on the road all day, so a backup that depends on remembering to c
 
 ## Encrypt Client Data and Verify Copies
 
-Reports contain client names, addresses, and photos of home interiors. A **Crypt** remote layered over your archive bucket encrypts file names and contents before they leave your computer. After a large upload, use **Folder Compare** to check your local folder against the cloud copy. Any left-only or different files show up immediately, and **Copy right** fills the gaps.
+Reports contain client names, addresses, and photos of home interiors. A **Crypt** remote layered over your archive bucket encrypts file names and contents before they leave your computer. After a large upload, use **Folder Compare** to check your local folder against the cloud copy. Any left-only or different files show up in the results, and **Copy right** fills the gaps.
 
 <img src="/support/images/en/howto/rcloneview-basic/compare-display-select.png" alt="Comparing a local inspection folder with its cloud backup" class="img-large img-center" />
 
