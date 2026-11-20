@@ -38,7 +38,7 @@ iCloud Drive is convenient while every device you own is an Apple device. Once a
 
 ## Connect iCloud Drive and pCloud as Remotes
 
-Open the **Remote** tab and click **New Remote**. Choose **iCloud Drive** and enter your Apple account credentials, completing any verification prompt Apple sends to your devices. iCloud Drive support requires rclone v1.69 or later; the embedded rclone that ships with RcloneView meets that requirement, so there is nothing extra to install.
+Open the **Remote** tab and click **New Remote**. Choose **iCloud Drive** and enter your Apple account credentials, completing any verification prompt Apple sends to your devices. rclone's iCloud Drive backend does not work with Advanced Data Protection, so that setting must be turned off on your Apple account. iCloud Drive support requires rclone v1.69 or later; the embedded rclone that ships with RcloneView meets that requirement, so there is nothing extra to install.
 
 Next, add **pCloud**. It uses OAuth, so a browser window opens, you sign in, and the remote is saved automatically. No API keys are involved.
 

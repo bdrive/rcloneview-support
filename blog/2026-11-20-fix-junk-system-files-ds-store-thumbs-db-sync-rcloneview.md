@@ -54,7 +54,7 @@ Filters apply to the job every time it runs, including scheduled runs on the PLU
 
 ## Preview, Clean Up, and Verify
 
-Run a **Dry Run** after saving. The preview should no longer list metadata files for transfer. If they still appear, check the spelling and capitalization of each rule, because a typo is the most common reason a filter seems to be ignored.
+Run a **Dry Run** after saving. The preview should no longer list metadata files for transfer. If they still appear, check the spelling and capitalization of each rule, because a typo is a common reason a filter seems to be ignored.
 
 Filters stop new copies from being transferred, but files already in the cloud stay where they are. Open the destination in the Explorer panel, find the leftovers, and delete them with right-click **Delete**. For a full check, open **Compare** between source and destination and use "Show right-only files" to find stray metadata files left from earlier runs. On the PLUS license, Folder Compare with Filter applies the same exclusions to the comparison view.
 
