@@ -54,7 +54,7 @@ For a quick one-off, drag a folder from the Dropbox panel into the Jottacloud pa
 
 ## Build a Repeatable Migration Job
 
-Click **Sync** on the Home tab and pick Dropbox as the source and Jottacloud as the destination. Leave the direction at one-way ("Modifying destination only"). In Advanced Settings, keep the default multi-thread setting, turn on checksum comparison if both sides offer a compatible hash, and use Filtering to skip anything you don't want to bring along.
+Click **Sync** on the Home tab and pick Dropbox as the source and Jottacloud as the destination. Leave the direction at one-way ("Modifying destination only"). In Advanced Settings, keep the default multi-thread setting and leave checksum comparison off (Dropbox and Jottacloud use different hash types, so rclone compares files by size and modification time), and use Filtering to skip anything you don't want to bring along.
 
 Run a **Dry Run** first. It lists every file that would be copied or deleted at the destination, which catches a wrong folder choice before it costs you hours. Then start the real run and watch speed and file counts in the **Transferring** tab.
 
