@@ -28,7 +28,7 @@ import RvCta from '../src/components/RvCta';
 
 # Cloud Storage for Print and Sign Shops — Organize and Back Up Artwork with RcloneView
 
-> Pull client artwork from every cloud it arrives on, keep production files backed up, and find last year's banner in seconds.
+> Pull client artwork from every cloud it arrives on, keep production files backed up, and reopen last year's banner from an organized archive.
 
 A print and sign shop handles files that are large, varied, and often irreplaceable: vector logos, layered PSDs, print-ready PDFs, vehicle wrap templates, and RIP-ready output. Clients send artwork through Google Drive, Dropbox, OneDrive, or Box links, while finished jobs pile up on a workstation or a Synology NAS. RcloneView brings all of these into one GUI so the shop can collect, archive, and back up artwork without juggling browser tabs.
 
@@ -73,7 +73,7 @@ When a customer asks for a reprint, mount the archive bucket as a drive from the
 3. Create a Copy or Sync job from your production folder to one or more backup destinations and preview it with Dry Run.
 4. Mount the archive bucket so past jobs open from any workstation.
 
-With artwork collected, backed up, and searchable, your team spends less time hunting for files and more time printing.
+With artwork collected, backed up, and archived in one place, your team spends less time hunting for files and more time printing.
 
 ---
 
