@@ -54,7 +54,7 @@ Before running the job for real, click **Dry Run**. The simulation lists every f
 
 ## Clean Up Files Already in the Cloud
 
-Filters stop new clutter but do not remove what is already there. Open the cloud folder in one Explorer panel and the local source in another, then use **Compare**. With "Show right-only files" enabled, leftover metadata files on the cloud side stand out quickly, and you can select and delete them directly from the comparison view.
+Filters stop new clutter but do not remove what is already there. Open the cloud folder in one Explorer panel and the local source in another, then use **Compare**. Metadata files that no longer exist locally show up under "Show right-only files"; copies that still exist on both sides appear as same or different files. Either way, you can select the cloud-side copies and delete them directly from the comparison view.
 
 Be careful with one-way sync here. A sync that mirrors the source to the destination deletes destination files that no longer exist at the source, but excluded files are skipped entirely — so a cleanup pass in Compare remains the clearest, most deliberate way to remove them.
 
