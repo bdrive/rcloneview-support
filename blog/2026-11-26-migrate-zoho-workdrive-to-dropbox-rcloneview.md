@@ -48,7 +48,7 @@ Next, add Dropbox. It uses OAuth: a browser window opens, you sign in and approv
 
 Open the two remotes side by side in the Explorer panels and browse to the WorkDrive folder you want to move. You can drag a small folder across for a quick test — dragging between different remotes always copies, never moves, so the source stays intact.
 
-For the full migration, create a job from **Home > Sync**. Set Zoho WorkDrive as the source and a new Dropbox folder (for example, `/WorkDrive-Archive`) as the destination. Use a **Copy** job rather than a one-way Sync for the first pass: Copy never deletes anything on the destination. Then run **Dry Run** to see the exact list of files that will be transferred before a single byte moves.
+For the full migration, open **Job Manager** and add a new job. Set Zoho WorkDrive as the source and a new Dropbox folder (for example, `/WorkDrive-Archive`) as the destination. Use a **Copy** job rather than a one-way Sync for the first pass: Copy does not delete anything on the destination. Then run **Dry Run** to see the exact list of files that will be transferred before a single byte moves.
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer from Zoho WorkDrive to Dropbox in RcloneView" class="img-large img-center" />
 
