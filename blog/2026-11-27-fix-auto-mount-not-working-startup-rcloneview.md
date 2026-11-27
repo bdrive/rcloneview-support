@@ -29,7 +29,7 @@ import RvCta from '../src/components/RvCta';
 
 > If your cloud drive is missing after every reboot, a short checklist usually brings it back for good.
 
-You set up a mount for Google Drive or an S3 bucket, it worked perfectly, and then after a restart the drive letter or mount folder is gone. Auto mount depends on several settings working together: the app must start, the mount must be marked for auto mount, and the operating system must allow it. This guide walks through each cause in RcloneView.
+You set up a mount for Google Drive or an S3 bucket, it worked as expected, and then after a restart the drive letter or mount folder is gone. Auto mount depends on several settings working together: the app must start, the mount must be marked for auto mount, and the operating system must allow it. This guide walks through each cause in RcloneView.
 
 <RvCta imageSrc="/img/rcloneview-preview.png" downloadUrl="https://rcloneview.com/src/download.html" />
 
@@ -55,7 +55,7 @@ Also check **Quit on close**. If it is on, closing the window exits the app and 
 
 **Windows:** If the mount uses a fixed drive letter that a USB stick or network share claimed first, the mount cannot attach. Set **Target** to Auto, or pick a letter nothing else uses.
 
-**Linux:** Mounting requires FUSE (fuse3 recommended). Mounts use nfsmount by default, and the app needs a running X11 or Wayland desktop session. RcloneView is a GUI application and cannot start mounts as a headless systemd service.
+**Linux:** Mounting requires FUSE (fuse3 recommended). Mounts use nfsmount by default, and the app needs GTK+3 and a running X11 or Wayland desktop session. RcloneView is a GUI application and cannot start mounts as a headless systemd service.
 
 **macOS:** If the mount point is inside Desktop, Documents, or Downloads, grant RcloneView access under **Privacy & Security > Files & Folders** or **Full Disk Access**, then restart the app.
 

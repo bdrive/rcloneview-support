@@ -55,7 +55,7 @@ For a full migration, create a job instead. Click **Sync** in the Home tab, pick
 
 <img src="/support/images/en/blog/cloud-to-cloud-transfer-default.png" alt="Cloud-to-cloud transfer from pCloud to Koofr in RcloneView" class="img-large img-center" />
 
-Run a **Dry Run** first. It lists every file that would be copied or deleted, which is the safest way to catch a wrong destination path before real data moves. RcloneView mounts and syncs 90+ providers from one window on Windows, macOS, and Linux, so the same job workflow applies to any pair you migrate later.
+Run a **Dry Run** first. It lists every file that would be copied or deleted, which is a reliable way to catch a wrong destination path before real data moves. RcloneView mounts and syncs 90+ providers from one window on Windows, macOS, and Linux, so the same job workflow applies to any pair you migrate later.
 
 ## Monitor the Transfer and Review History
 
